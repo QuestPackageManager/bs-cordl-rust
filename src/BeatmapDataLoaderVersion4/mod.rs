@@ -43,9 +43,6 @@ pub use LightColorBaseDataConverter_mod::*;
 // class LightColorEventBoxGroupConverter_mod; export all
 mod LightColorEventBoxGroupConverter_mod;
 pub use LightColorEventBoxGroupConverter_mod::*;
-// class LightRotationBaseDataConverter_mod; export all
-mod LightRotationBaseDataConverter_mod;
-pub use LightRotationBaseDataConverter_mod::*;
 // class LightRotationEventBoxGroupConverter_mod; export all
 mod LightRotationEventBoxGroupConverter_mod;
 pub use LightRotationEventBoxGroupConverter_mod::*;

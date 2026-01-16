@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TextElementInfo {
-    pub character: char,
+    pub character: u32,
     pub index: i32,
     pub elementType: crate::UnityEngine::TextCore::Text::TextElementType,
     pub stringLength: i32,

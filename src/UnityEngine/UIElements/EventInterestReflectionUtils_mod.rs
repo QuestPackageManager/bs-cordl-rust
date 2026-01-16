@@ -79,6 +79,8 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
         elementType: quest_hook::libil2cpp::Gc<crate::System::Type>,
         defaultActionCategories: quest_hook::libil2cpp::ByRefMut<i32>,
         defaultActionAtTargetCategories: quest_hook::libil2cpp::ByRefMut<i32>,
+        handleEventTrickleDownCategories: quest_hook::libil2cpp::ByRefMut<i32>,
+        handleEventBubbleUpCategories: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -89,15 +91,17 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                             quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        5usize,
                     >("GetDefaultEventInterests")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDefaultEventInterests", 3usize
+                            "GetDefaultEventInterests", 5usize
                         )
                     })
             });
@@ -109,6 +113,8 @@ impl crate::UnityEngine::UIElements::EventInterestReflectionUtils {
                         elementType,
                         defaultActionCategories,
                         defaultActionAtTargetCategories,
+                        handleEventTrickleDownCategories,
+                        handleEventBubbleUpCategories,
                     ),
                 )?
         };
@@ -158,6 +164,8 @@ for crate::UnityEngine::UIElements::EventInterestReflectionUtils {
 pub struct EventInterestReflectionUtils_DefaultEventInterests {
     pub DefaultActionCategories: i32,
     pub DefaultActionAtTargetCategories: i32,
+    pub HandleEventTrickleDownCategories: i32,
+    pub HandleEventBubbleUpCategories: i32,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+UIElements+EventInterestReflectionUtils+DefaultEventInterests"

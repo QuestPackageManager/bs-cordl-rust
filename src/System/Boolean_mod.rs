@@ -95,10 +95,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Boolean {
 }
 #[cfg(feature = "System+Boolean")]
 impl crate::System::Boolean {
-    pub const False: i32 = 0i32;
-    pub const FalseLiteral: &'static str = "False";
-    pub const True: i32 = 1i32;
-    pub const TrueLiteral: &'static str = "True";
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

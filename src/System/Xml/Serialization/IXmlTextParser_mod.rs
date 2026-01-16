@@ -61,6 +61,31 @@ impl crate::System::Xml::Serialization::IXmlTextParser {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_WhitespaceHandling(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::WhitespaceHandling> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::System::Xml::WhitespaceHandling,
+                        0usize,
+                    >("get_WhitespaceHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_WhitespaceHandling", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::Xml::WhitespaceHandling = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_Normalized(
         &mut self,
         value: bool,
@@ -79,6 +104,32 @@ impl crate::System::Xml::Serialization::IXmlTextParser {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_Normalized", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_WhitespaceHandling(
+        &mut self,
+        value: crate::System::Xml::WhitespaceHandling,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::System::Xml::WhitespaceHandling),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_WhitespaceHandling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_WhitespaceHandling", 1usize
                         )
                     })
             });

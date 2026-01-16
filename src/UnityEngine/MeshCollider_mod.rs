@@ -83,6 +83,31 @@ impl crate::UnityEngine::MeshCollider {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_convex_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_convex_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_convex_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_cookingOptions(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshColliderCookingOptions> {
@@ -105,6 +130,31 @@ impl crate::UnityEngine::MeshCollider {
             });
         let __cordl_ret: crate::UnityEngine::MeshColliderCookingOptions = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_cookingOptions_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::MeshColliderCookingOptions> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::UnityEngine::MeshColliderCookingOptions,
+                        1usize,
+                    >("get_cookingOptions_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_cookingOptions_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::MeshColliderCookingOptions = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -149,6 +199,31 @@ impl crate::UnityEngine::MeshCollider {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sharedMesh_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("get_sharedMesh_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sharedMesh_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -212,6 +287,32 @@ impl crate::UnityEngine::MeshCollider {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_convex_Injected(
+        _unity_self: crate::System::IntPtr,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_convex_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_convex_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_cookingOptions(
         &mut self,
         value: crate::UnityEngine::MeshColliderCookingOptions,
@@ -235,6 +336,35 @@ impl crate::UnityEngine::MeshCollider {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_cookingOptions_Injected(
+        _unity_self: crate::System::IntPtr,
+        value: crate::UnityEngine::MeshColliderCookingOptions,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            crate::UnityEngine::MeshColliderCookingOptions,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_cookingOptions_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cookingOptions_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -287,6 +417,32 @@ impl crate::UnityEngine::MeshCollider {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_sharedMesh_Injected(
+        _unity_self: crate::System::IntPtr,
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_sharedMesh_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sharedMesh_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }

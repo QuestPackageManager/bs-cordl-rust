@@ -3,15 +3,14 @@
 #[derive(Debug)]
 pub struct EventCallbackList {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_List: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
+    pub m_Array: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
                 crate::UnityEngine::UIElements::EventCallbackFunctorBase,
             >,
         >,
     >,
-    pub _trickleDownCallbackCount_k__BackingField: i32,
-    pub _bubbleUpCallbackCount_k__BackingField: i32,
+    pub m_Count: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCallbackList")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -129,43 +128,10 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Contains(
-        &mut self,
-        eventTypeId: i64,
-        callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-        phase: crate::UnityEngine::UIElements::CallbackPhase,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i64,
-                            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-                            crate::UnityEngine::UIElements::CallbackPhase,
-                        ),
-                        bool,
-                        3usize,
-                    >("Contains")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Contains", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventTypeId, callback, phase))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn Find(
         &mut self,
         eventTypeId: i64,
         callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-        phase: crate::UnityEngine::UIElements::CallbackPhase,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackFunctorBase,
@@ -176,28 +142,24 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            i64,
-                            quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-                            crate::UnityEngine::UIElements::CallbackPhase,
-                        ),
+                        (i64, quest_hook::libil2cpp::Gc<crate::System::Delegate>),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventCallbackFunctorBase,
                         >,
-                        3usize,
+                        2usize,
                     >("Find")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Find",
-                            3usize
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventCallbackFunctorBase,
         > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventTypeId, callback, phase))?
+            cordl_method_info.invoke_unchecked(self, (eventTypeId, callback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,7 +185,11 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         &mut self,
         eventTypeId: i64,
         callback: quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-        phase: crate::UnityEngine::UIElements::CallbackPhase,
+        removedFunctor: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+            >,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -233,7 +199,11 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
                         (
                             i64,
                             quest_hook::libil2cpp::Gc<crate::System::Delegate>,
-                            crate::UnityEngine::UIElements::CallbackPhase,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+                                >,
+                            >,
                         ),
                         bool,
                         3usize,
@@ -247,7 +217,8 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (eventTypeId, callback, phase))?
+            cordl_method_info
+                .invoke_unchecked(self, (eventTypeId, callback, removedFunctor))?
         };
         Ok(__cordl_ret.into())
     }
@@ -302,29 +273,13 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), i32, 0usize>("get_Count")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Count", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_Item(
+    pub fn get_Span(
         &mut self,
-        i: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+        crate::System::Span_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+            >,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -332,111 +287,27 @@ impl crate::UnityEngine::UIElements::EventCallbackList {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+                        (),
+                        crate::System::Span_1<
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+                            >,
                         >,
-                        1usize,
-                    >("get_Item")
+                        0usize,
+                    >("get_Span")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Item", 1usize
+                            "get_Span", 0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::EventCallbackFunctorBase,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_bubbleUpCallbackCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), i32, 0usize>("get_bubbleUpCallbackCount")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_bubbleUpCallbackCount", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_trickleDownCallbackCount(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), i32, 0usize>("get_trickleDownCallbackCount")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_trickleDownCallbackCount", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_bubbleUpCallbackCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_bubbleUpCallbackCount")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_bubbleUpCallbackCount", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_trickleDownCallbackCount(
-        &mut self,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_trickleDownCallbackCount")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_trickleDownCallbackCount", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: crate::System::Span_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::EventCallbackFunctorBase,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

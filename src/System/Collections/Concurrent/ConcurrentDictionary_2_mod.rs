@@ -92,8 +92,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::System::Collections::Concurrent::ConcurrentDictionary_2<TKey, TValue> {
-    pub const DefaultCapacity: i32 = 31i32;
-    pub const MaxLockNumber: i32 = 1024i32;
     #[cfg(
         feature = "System+Collections+Concurrent+ConcurrentDictionary_2+DictionaryEnumerator"
     )]

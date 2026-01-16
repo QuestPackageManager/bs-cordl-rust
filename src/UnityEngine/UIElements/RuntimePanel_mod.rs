@@ -198,3 +198,43 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::UIElements::Runti
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+impl AsRef<crate::System::IDisposable> for crate::UnityEngine::UIElements::RuntimePanel {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+impl AsMut<crate::System::IDisposable> for crate::UnityEngine::UIElements::RuntimePanel {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+impl AsRef<crate::UnityEngine::UIElements::IPanel>
+for crate::UnityEngine::UIElements::RuntimePanel {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IPanel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+impl AsMut<crate::UnityEngine::UIElements::IPanel>
+for crate::UnityEngine::UIElements::RuntimePanel {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IPanel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+impl AsRef<crate::UnityEngine::UIElements::IRuntimePanel>
+for crate::UnityEngine::UIElements::RuntimePanel {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IRuntimePanel {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+RuntimePanel")]
+impl AsMut<crate::UnityEngine::UIElements::IRuntimePanel>
+for crate::UnityEngine::UIElements::RuntimePanel {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IRuntimePanel {
+        unsafe { std::mem::transmute(self) }
+    }
+}

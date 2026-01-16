@@ -63,6 +63,31 @@ impl crate::UnityEngine::RenderSettings {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetRenderSettings_Injected() -> quest_hook::libil2cpp::Result<
+        crate::System::IntPtr,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("GetRenderSettings_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRenderSettings_Injected", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -477,6 +502,31 @@ impl crate::UnityEngine::RenderSettings {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_customReflectionTexture_Injected() -> quest_hook::libil2cpp::Result<
+        crate::System::IntPtr,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("get_customReflectionTexture_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_customReflectionTexture_Injected", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_defaultReflection() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Cubemap>,
     > {
@@ -546,6 +596,31 @@ impl crate::UnityEngine::RenderSettings {
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultReflection_Injected() -> quest_hook::libil2cpp::Result<
+        crate::System::IntPtr,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("get_defaultReflection_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultReflection_Injected", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_flareFadeSpeed() -> quest_hook::libil2cpp::Result<f32> {
@@ -797,6 +872,31 @@ impl crate::UnityEngine::RenderSettings {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_skybox_Injected() -> quest_hook::libil2cpp::Result<
+        crate::System::IntPtr,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("get_skybox_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_skybox_Injected", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_subtractiveShadowColor() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Color,
     > {
@@ -868,6 +968,29 @@ impl crate::UnityEngine::RenderSettings {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Light> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sun_Injected() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::IntPtr,
+                        0usize,
+                    >("get_sun_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sun_Injected", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
@@ -1251,6 +1374,31 @@ impl crate::UnityEngine::RenderSettings {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_customReflectionTexture_Injected(
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_customReflectionTexture_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_customReflectionTexture_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_defaultReflectionMode(
         value: crate::UnityEngine::Rendering::DefaultReflectionMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1626,6 +1774,31 @@ impl crate::UnityEngine::RenderSettings {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_skybox_Injected(
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_skybox_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_skybox_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_subtractiveShadowColor(
         value: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1693,6 +1866,31 @@ impl crate::UnityEngine::RenderSettings {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "set_sun",
                             1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_sun_Injected(
+        value: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_sun_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sun_Injected", 1usize
                         )
                     })
             });

@@ -6,6 +6,9 @@ pub struct StandardGameplayInstaller {
     pub _standardSceneSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardGameplaySceneSetupData,
     >,
+    pub _gameplayAdditionalInformation: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayAdditionalInformationSetupData,
+    >,
 }
 #[cfg(feature = "cordl_class_StandardGameplayInstaller")]
 unsafe impl quest_hook::libil2cpp::Type

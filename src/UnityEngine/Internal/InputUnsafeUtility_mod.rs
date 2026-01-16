@@ -89,6 +89,35 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetAxisRaw_Injected(
+        axisName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >),
+                        f32,
+                        1usize,
+                    >("GetAxisRaw_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAxisRaw_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (axisName))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAxisRaw__Unmanaged(
         axisName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         axisNameLen: i32,
@@ -117,6 +146,35 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             });
         let __cordl_ret: f32 = unsafe {
             cordl_method_info.invoke_unchecked((), (axisName, axisNameLen))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAxis_Injected(
+        axisName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >),
+                        f32,
+                        1usize,
+                    >("GetAxis_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAxis_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (axisName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -201,6 +259,35 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetButtonDown_Injected(
+        buttonName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >),
+                        bool,
+                        1usize,
+                    >("GetButtonDown_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetButtonDown_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (buttonName))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetButtonDown__Unmanaged(
         buttonName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         buttonNameLen: i32,
@@ -260,6 +347,35 @@ impl crate::UnityEngine::Internal::InputUnsafeUtility {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (buttonName, buttonNameLen))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetButton_Injected(
+        buttonName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >),
+                        bool,
+                        1usize,
+                    >("GetButton_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetButton_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (buttonName))?
         };
         Ok(__cordl_ret.into())
     }

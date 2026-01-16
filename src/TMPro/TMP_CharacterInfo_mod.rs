@@ -2,14 +2,13 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_CharacterInfo {
+    pub elementType: crate::TMPro::TMP_TextElementType,
     pub character: char,
     pub index: i32,
     pub stringLength: i32,
-    pub elementType: crate::TMPro::TMP_TextElementType,
     pub textElement: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextElement>,
+    pub alternativeGlyph: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Glyph>,
     pub fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
-    pub spriteAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_SpriteAsset>,
-    pub spriteIndex: i32,
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub materialReferenceIndex: i32,
     pub isUsingAlternateTypeface: bool,
@@ -32,6 +31,7 @@ pub struct TMP_CharacterInfo {
     pub descender: f32,
     pub adjustedAscender: f32,
     pub adjustedDescender: f32,
+    pub adjustedHorizontalAdvance: f32,
     pub aspectRatio: f32,
     pub scale: f32,
     pub color: crate::UnityEngine::Color32,

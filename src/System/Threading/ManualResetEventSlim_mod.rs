@@ -44,16 +44,6 @@ impl std::ops::DerefMut for crate::System::Threading::ManualResetEventSlim {
 }
 #[cfg(feature = "System+Threading+ManualResetEventSlim")]
 impl crate::System::Threading::ManualResetEventSlim {
-    pub const DEFAULT_SPIN_SP: i32 = 1i32;
-    pub const Dispose_BitMask: i32 = 1073741824i32;
-    pub const NumWaitersState_BitMask: i32 = 524287i32;
-    pub const NumWaitersState_MaxValue: i32 = 524287i32;
-    pub const NumWaitersState_ShiftCount: i32 = 0i32;
-    pub const SignalledState_BitMask: i32 = -2147483648i32;
-    pub const SignalledState_ShiftCount: i32 = 31i32;
-    pub const SpinCountState_BitMask: i32 = 1073217536i32;
-    pub const SpinCountState_MaxValue: i32 = 2047i32;
-    pub const SpinCountState_ShiftCount: i32 = 19i32;
     pub fn CancellationTokenCallback(
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

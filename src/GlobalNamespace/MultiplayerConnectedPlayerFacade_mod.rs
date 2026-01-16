@@ -346,7 +346,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade {
 #[derive(Debug)]
 pub struct MultiplayerConnectedPlayerFacade_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_3<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         crate::GlobalNamespace::MultiplayerPlayerStartState,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
@@ -377,7 +377,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerConnectedPlayerFacade_Factory {
     type Target = crate::Zenject::PlaceholderFactory_3<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         crate::GlobalNamespace::MultiplayerPlayerStartState,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,

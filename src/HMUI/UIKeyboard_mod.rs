@@ -4,12 +4,17 @@
 pub struct UIKeyboard {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _okButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
-    pub _startsUpperCase: bool,
+    pub _startsCapsLockState: crate::HMUI::CapsLockState,
+    pub _allowAtRuntime: bool,
     pub okButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub keyWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action_1<char>>,
     pub deleteButtonWasPressedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub capsLockStateChangedEvent: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<crate::HMUI::CapsLockState>,
+    >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
-    pub _shouldCapitalize: bool,
+    pub _capsLockState: crate::HMUI::CapsLockState,
+    pub _capsLockUppercaseOnceTime: f32,
     pub _letterBtnTexts: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -50,6 +55,7 @@ impl std::ops::DerefMut for crate::HMUI::UIKeyboard {
 }
 #[cfg(feature = "HMUI+UIKeyboard")]
 impl crate::HMUI::UIKeyboard {
+    pub const kCapsLockPressWindowToToggleUppercase: f32 = 0.2f32;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -180,6 +186,32 @@ impl crate::HMUI::UIKeyboard {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetCapsLockState(
+        &mut self,
+        newState: crate::HMUI::CapsLockState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::HMUI::CapsLockState),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetCapsLockState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCapsLockState", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (newState))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetKeyboardCapitalization(
         &mut self,
         capitalize: bool,
@@ -206,23 +238,19 @@ impl crate::HMUI::UIKeyboard {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__14_0(
+    pub fn Update(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("<Awake>b__14_0")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__14_0", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
                         )
                     })
             });
@@ -231,7 +259,7 @@ impl crate::HMUI::UIKeyboard {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__14_1(
+    pub fn _Awake_b__24_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -242,12 +270,12 @@ impl crate::HMUI::UIKeyboard {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<Awake>b__14_1")
+                    >("<Awake>b__24_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__14_1", 0usize
+                            "<Awake>b__24_0", 0usize
                         )
                     })
             });
@@ -256,7 +284,7 @@ impl crate::HMUI::UIKeyboard {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__14_2(
+    pub fn _Awake_b__24_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -267,12 +295,37 @@ impl crate::HMUI::UIKeyboard {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<Awake>b__14_2")
+                    >("<Awake>b__24_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__14_2", 0usize
+                            "<Awake>b__24_1", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _Awake_b__24_2(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("<Awake>b__24_2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<Awake>b__24_2", 0usize
                         )
                     })
             });
@@ -299,6 +352,36 @@ impl crate::HMUI::UIKeyboard {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_capsLockStateChangedEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::CapsLockState>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::HMUI::CapsLockState>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_capsLockStateChangedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_capsLockStateChangedEvent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -372,6 +455,78 @@ impl crate::HMUI::UIKeyboard {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "add_okButtonWasPressedEvent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_capsLockState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::HMUI::CapsLockState> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::HMUI::CapsLockState,
+                        0usize,
+                    >("get_capsLockState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_capsLockState", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::HMUI::CapsLockState = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_shouldCapitalize(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_shouldCapitalize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shouldCapitalize", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_capsLockStateChangedEvent(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<crate::HMUI::CapsLockState>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<crate::HMUI::CapsLockState>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_capsLockStateChangedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_capsLockStateChangedEvent", 1usize
                         )
                     })
             });

@@ -38,6 +38,8 @@ impl std::ops::DerefMut for crate::UnityEngine::Random {
 }
 #[cfg(feature = "UnityEngine+Random")]
 impl crate::UnityEngine::Random {
+    #[cfg(feature = "UnityEngine+Random+State")]
+    pub type State = crate::UnityEngine::Random_State;
     pub fn ColorHSV_0() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -299,6 +301,58 @@ impl crate::UnityEngine::Random {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_state() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Random_State,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::UnityEngine::Random_State,
+                        0usize,
+                    >("get_state")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_state", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Random_State = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_state_Injected(
+        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Random_State>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Random_State,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("get_state_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_state_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_value() -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -316,6 +370,58 @@ impl crate::UnityEngine::Random {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn set_state(
+        value: crate::UnityEngine::Random_State,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Random_State),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_state")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_state", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_state_Injected(
+        value: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Random_State>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Random_State,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_state_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_state_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Random")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Random {
@@ -326,3 +432,103 @@ impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Random {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "cordl_class_UnityEngine+Random+State")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct Random_State {
+    pub s0: i32,
+    pub s1: i32,
+    pub s2: i32,
+    pub s3: i32,
+}
+#[cfg(feature = "cordl_class_UnityEngine+Random+State")]
+unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::Random_State {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "Random/State";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Random+State")]
+unsafe impl quest_hook::libil2cpp::Argument for crate::UnityEngine::Random_State {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Random+State")]
+unsafe impl quest_hook::libil2cpp::Parameter for crate::UnityEngine::Random_State {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Random+State")]
+unsafe impl quest_hook::libil2cpp::Returned for crate::UnityEngine::Random_State {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Random+State")]
+unsafe impl quest_hook::libil2cpp::Return for crate::UnityEngine::Random_State {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Random+State")]
+unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Random_State {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+Random+State")]
+impl crate::UnityEngine::Random_State {}

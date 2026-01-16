@@ -60,6 +60,32 @@ impl crate::UnityEngine::Video::VideoClip {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetAudioChannelCount_Injected(
+        _unity_self: crate::System::IntPtr,
+        audioTrackIdx: u16,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u16),
+                        u16,
+                        2usize,
+                    >("GetAudioChannelCount_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAudioChannelCount_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: u16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, audioTrackIdx))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAudioLanguage(
         &mut self,
         audioTrackIdx: u16,
@@ -88,6 +114,41 @@ impl crate::UnityEngine::Video::VideoClip {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (audioTrackIdx))? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetAudioLanguage_Injected(
+        _unity_self: crate::System::IntPtr,
+        audioTrackIdx: u16,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            u16,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("GetAudioLanguage_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAudioLanguage_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, audioTrackIdx, ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetAudioSampleRate(
         &mut self,
         audioTrackIdx: u16,
@@ -107,6 +168,32 @@ impl crate::UnityEngine::Video::VideoClip {
             });
         let __cordl_ret: u32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (audioTrackIdx))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAudioSampleRate_Injected(
+        _unity_self: crate::System::IntPtr,
+        audioTrackIdx: u16,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u16),
+                        u32,
+                        2usize,
+                    >("GetAudioSampleRate_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAudioSampleRate_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, audioTrackIdx))?
         };
         Ok(__cordl_ret.into())
     }
@@ -155,6 +242,31 @@ impl crate::UnityEngine::Video::VideoClip {
         let __cordl_ret: u16 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_audioTrackCount_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u16> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u16,
+                        1usize,
+                    >("get_audioTrackCount_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_audioTrackCount_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u16 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_frameCount(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -170,6 +282,31 @@ impl crate::UnityEngine::Video::VideoClip {
                     })
             });
         let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_frameCount_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u64,
+                        1usize,
+                    >("get_frameCount_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_frameCount_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_frameRate(&mut self) -> quest_hook::libil2cpp::Result<f64> {
@@ -189,6 +326,31 @@ impl crate::UnityEngine::Video::VideoClip {
         let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_frameRate_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        f64,
+                        1usize,
+                    >("get_frameRate_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_frameRate_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -206,6 +368,31 @@ impl crate::UnityEngine::Video::VideoClip {
         let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_height_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u32,
+                        1usize,
+                    >("get_height_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_height_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_length(&mut self) -> quest_hook::libil2cpp::Result<f64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -221,6 +408,31 @@ impl crate::UnityEngine::Video::VideoClip {
                     })
             });
         let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_length_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        f64,
+                        1usize,
+                    >("get_length_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_length_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_originalPath(
@@ -250,6 +462,39 @@ impl crate::UnityEngine::Video::VideoClip {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_originalPath_Injected(
+        _unity_self: crate::System::IntPtr,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("get_originalPath_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_originalPath_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_pixelAspectRatioDenominator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<u32> {
@@ -267,6 +512,31 @@ impl crate::UnityEngine::Video::VideoClip {
                     })
             });
         let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_pixelAspectRatioDenominator_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u32,
+                        1usize,
+                    >("get_pixelAspectRatioDenominator_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pixelAspectRatioDenominator_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_pixelAspectRatioNumerator(
@@ -288,6 +558,31 @@ impl crate::UnityEngine::Video::VideoClip {
         let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_pixelAspectRatioNumerator_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u32,
+                        1usize,
+                    >("get_pixelAspectRatioNumerator_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_pixelAspectRatioNumerator_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_sRGB(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -305,6 +600,31 @@ impl crate::UnityEngine::Video::VideoClip {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_sRGB_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_sRGB_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sRGB_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -320,6 +640,31 @@ impl crate::UnityEngine::Video::VideoClip {
                     })
             });
         let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_width_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u32,
+                        1usize,
+                    >("get_width_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_width_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
 }

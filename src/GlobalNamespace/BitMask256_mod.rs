@@ -692,6 +692,20 @@ for crate::GlobalNamespace::BitMask256 {
     }
 }
 #[cfg(feature = "BitMask256")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::BitMask256 {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "BitMask256")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::BitMask256 {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "BitMask256")]
 impl AsRef<
     crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         crate::GlobalNamespace::BitMask256,

@@ -13,6 +13,9 @@ pub struct ScrollView {
     pub _verticalScrollIndicator: quest_hook::libil2cpp::Gc<
         crate::HMUI::VerticalScrollIndicator,
     >,
+    pub _verticalScrollController: quest_hook::libil2cpp::Gc<
+        crate::HMUI::VerticalScrollController,
+    >,
     pub _smooth: f32,
     pub _joystickScrollSpeed: f32,
     pub _joystickQuickSnapMaxTime: f32,
@@ -20,6 +23,7 @@ pub struct ScrollView {
     pub _fixedCellSize: f32,
     pub _scrollItemRelativeThresholdPosition: f32,
     pub _pageStepNormalizedSize: f32,
+    pub _needsScrolling: bool,
     pub _scrollingLastFrame: bool,
     pub _isHoveredByPointer: bool,
     pub _shouldAnimate: bool,
@@ -394,6 +398,32 @@ impl crate::HMUI::ScrollView {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ScrollToByPercentage(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ScrollToByPercentage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ScrollToByPercentage", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ScrollToEnd(
         &mut self,
         animated: bool,
@@ -639,7 +669,7 @@ impl crate::HMUI::ScrollView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__42_0(
+    pub fn _Awake_b__46_0(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::HMUI::ItemForFocussedScrolling>,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -653,12 +683,12 @@ impl crate::HMUI::ScrollView {
                         >),
                         f32,
                         1usize,
-                    >("<Awake>b__42_0")
+                    >("<Awake>b__46_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__42_0", 1usize
+                            "<Awake>b__46_0", 1usize
                         )
                     })
             });
@@ -667,7 +697,7 @@ impl crate::HMUI::ScrollView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__42_2(
+    pub fn _Awake_b__46_2(
         &mut self,
         item: quest_hook::libil2cpp::Gc<crate::HMUI::ItemForFocussedScrolling>,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -681,12 +711,12 @@ impl crate::HMUI::ScrollView {
                         >),
                         f32,
                         1usize,
-                    >("<Awake>b__42_2")
+                    >("<Awake>b__46_2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__42_2", 1usize
+                            "<Awake>b__46_2", 1usize
                         )
                     })
             });
@@ -784,6 +814,23 @@ impl crate::HMUI::ScrollView {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_needsScrolling(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_needsScrolling")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_needsScrolling", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_position(&mut self) -> quest_hook::libil2cpp::Result<f32> {

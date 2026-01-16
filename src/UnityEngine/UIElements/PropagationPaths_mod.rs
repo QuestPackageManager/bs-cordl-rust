@@ -8,11 +8,6 @@ pub struct PropagationPaths {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
-    pub targetElements: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        >,
-    >,
     pub bubbleUpPath: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
@@ -54,11 +49,10 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PropagationPaths {
 }
 #[cfg(feature = "UnityEngine+UIElements+PropagationPaths")]
 impl crate::UnityEngine::UIElements::PropagationPaths {
-    pub const k_DefaultPropagationDepth: i32 = 16i32;
-    pub const k_DefaultTargetCount: i32 = 4i32;
     pub fn Build(
         elem: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+        eventCategories: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PropagationPaths>,
     > {
@@ -74,44 +68,40 @@ impl crate::UnityEngine::UIElements::PropagationPaths {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::EventBase,
                             >,
+                            i32,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::PropagationPaths,
                         >,
-                        2usize,
+                        3usize,
                     >("Build")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Build",
-                            2usize
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::PropagationPaths,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (elem, evt))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (elem, evt, eventCategories))?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object.into())
-    }
-    pub fn Release(
+    pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Release")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Release",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
                             0usize
                         )
                     })
@@ -120,6 +110,13 @@ impl crate::UnityEngine::UIElements::PropagationPaths {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
@@ -151,5 +148,19 @@ for crate::UnityEngine::UIElements::PropagationPaths {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PropagationPaths")]
+impl AsRef<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::PropagationPaths {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PropagationPaths")]
+impl AsMut<crate::System::IDisposable>
+for crate::UnityEngine::UIElements::PropagationPaths {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }

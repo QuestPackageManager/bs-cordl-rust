@@ -45,6 +45,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::BindableElement {
 }
 #[cfg(feature = "UnityEngine+UIElements+BindableElement")]
 impl crate::UnityEngine::UIElements::BindableElement {
+    pub const k_BindingPathTooltip: &'static str = "Default method to define a path to a serialized property. Most often used for Editor extensions and inspectors.";
     #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlFactory")]
     pub type UxmlFactory = crate::UnityEngine::UIElements::BindableElement_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+BindableElement+UxmlTraits")]

@@ -47,6 +47,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::SortColumnDescriptio
 }
 #[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions")]
 impl crate::UnityEngine::UIElements::SortColumnDescriptions {
+    #[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory")]
+    pub type UxmlObjectFactory = crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory;
     #[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory_1")]
     pub type UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory_1<
         T,
@@ -537,6 +539,98 @@ impl AsMut<crate::System::Collections::IEnumerable>
 for crate::UnityEngine::UIElements::SortColumnDescriptions {
     fn as_mut(&mut self) -> &mut crate::System::Collections::IEnumerable {
         unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SortColumnDescriptions_UxmlObjectFactory {
+    __cordl_parent: crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescriptions>,
+    >,
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory"
+)]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "SortColumnDescriptions/UxmlObjectFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory")]
+impl std::ops::Deref
+for crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory {
+    type Target = crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::SortColumnDescriptions>,
+    >;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory")]
+impl std::ops::DerefMut
+for crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory")]
+impl crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+UIElements+SortColumnDescriptions+UxmlObjectFactory"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::SortColumnDescriptions_UxmlObjectFactory {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
 #[cfg(

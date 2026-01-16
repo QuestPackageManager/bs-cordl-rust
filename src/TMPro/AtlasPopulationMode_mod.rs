@@ -4,6 +4,7 @@
 pub enum AtlasPopulationMode {
     #[default]
     Dynamic = 1i32,
+    DynamicOS = 2i32,
     Static = 0i32,
 }
 #[cfg(feature = "cordl_class_TMPro+AtlasPopulationMode")]

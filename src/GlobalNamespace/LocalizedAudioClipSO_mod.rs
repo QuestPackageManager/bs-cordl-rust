@@ -121,7 +121,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::LocalizedAudi
 #[derive(Debug)]
 pub struct LocalizedAudioClipSO_LocalizedAudioClipInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub language: crate::BGLib::Polyglot::Language,
+    pub language: crate::BGLib::Polyglot::LocalizationLanguage,
     pub localizedAudioClip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
 }
 #[cfg(feature = "cordl_class_LocalizedAudioClipSO+LocalizedAudioClipInfo")]

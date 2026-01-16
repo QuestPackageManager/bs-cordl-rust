@@ -53,7 +53,14 @@ impl std::ops::DerefMut for crate::System::Net::Sockets::SafeSocketHandle {
 impl crate::System::Net::Sockets::SafeSocketHandle {
     pub const ABORT_RETRIES: i32 = 10i32;
     pub const SOCKET_CLOSED: i32 = 10004i32;
-    pub fn New(
+    pub fn New_1() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_IntPtr__cordl_bool0(
         preexistingHandle: crate::System::IntPtr,
         ownsHandle: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -130,7 +137,28 @@ impl crate::System::Net::Sockets::SafeSocketHandle {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
+    pub fn _ctor_1(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_IntPtr__cordl_bool0(
         &mut self,
         preexistingHandle: crate::System::IntPtr,
         ownsHandle: bool,

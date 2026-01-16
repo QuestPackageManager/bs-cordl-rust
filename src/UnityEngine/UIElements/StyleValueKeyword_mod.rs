@@ -4,6 +4,8 @@
 pub enum StyleValueKeyword {
     #[default]
     Auto = 2i32,
+    Contain = 8i32,
+    Cover = 7i32,
     False = 5i32,
     Inherit = 0i32,
     Initial = 1i32,

@@ -1,0 +1,111 @@
+#[cfg(feature = "cordl_class_System+Xml+XmlBinaryReaderSession")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct XmlBinaryReaderSession {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub strings: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
+        >,
+    >,
+    pub stringDict: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<
+            i32,
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
+        >,
+    >,
+}
+#[cfg(feature = "cordl_class_System+Xml+XmlBinaryReaderSession")]
+unsafe impl quest_hook::libil2cpp::Type for crate::System::Xml::XmlBinaryReaderSession {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "System.Xml";
+    const CLASS_NAME: &'static str = "XmlBinaryReaderSession";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "System+Xml+XmlBinaryReaderSession")]
+impl std::ops::Deref for crate::System::Xml::XmlBinaryReaderSession {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlBinaryReaderSession")]
+impl std::ops::DerefMut for crate::System::Xml::XmlBinaryReaderSession {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "System+Xml+XmlBinaryReaderSession")]
+impl crate::System::Xml::XmlBinaryReaderSession {
+    pub fn TryLookup(
+        &mut self,
+        key: i32,
+        result: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDictionaryString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Xml::XmlDictionaryString,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryLookup")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryLookup", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_System+Xml+XmlBinaryReaderSession")]
+impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlBinaryReaderSession {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "System+Xml+XmlBinaryReaderSession")]
+impl AsRef<crate::System::Xml::IXmlDictionary>
+for crate::System::Xml::XmlBinaryReaderSession {
+    fn as_ref(&self) -> &crate::System::Xml::IXmlDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "System+Xml+XmlBinaryReaderSession")]
+impl AsMut<crate::System::Xml::IXmlDictionary>
+for crate::System::Xml::XmlBinaryReaderSession {
+    fn as_mut(&mut self) -> &mut crate::System::Xml::IXmlDictionary {
+        unsafe { std::mem::transmute(self) }
+    }
+}

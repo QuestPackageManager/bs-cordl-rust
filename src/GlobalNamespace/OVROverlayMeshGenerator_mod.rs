@@ -3,31 +3,33 @@
 #[derive(Debug)]
 pub struct OVROverlayMeshGenerator {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _Mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-    pub _Verts: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    pub _Tris: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<i32>,
     >,
     pub _UV: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
     >,
-    pub _Tris: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
+    pub _CubeUV: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
     >,
-    pub _Overlay: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay>,
-    pub _MeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
-    pub _MeshCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
-    pub _MeshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _Verts: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
+    >,
     pub _CameraRoot: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    pub _Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-    pub _LastShape: crate::GlobalNamespace::OVROverlay_OverlayShape,
+    pub _LastDestRectLeft: crate::UnityEngine::Rect,
     pub _LastPosition: crate::UnityEngine::Vector3,
     pub _LastRotation: crate::UnityEngine::Quaternion,
     pub _LastScale: crate::UnityEngine::Vector3,
-    pub _LastDestRectLeft: crate::UnityEngine::Rect,
-    pub _LastDestRectRight: crate::UnityEngine::Rect,
+    pub _LastTextureDimension: crate::UnityEngine::Rendering::TextureDimension,
+    pub _LastShape: crate::GlobalNamespace::OVROverlay_OverlayShape,
     pub _LastSrcRectLeft: crate::UnityEngine::Rect,
-    pub _LastTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-    pub _Awake: bool,
+    pub _Mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
+    pub _MeshCollider: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshCollider>,
+    pub _MeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
+    pub _MeshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+    pub _Overlay: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVROverlay>,
+    pub _Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+    pub _PreviewMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "cordl_class_OVROverlayMeshGenerator")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -66,33 +68,15 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVROverlayMeshGenerator {
 impl crate::GlobalNamespace::OVROverlayMeshGenerator {
     #[cfg(feature = "OVROverlayMeshGenerator+CubeFace")]
     pub type CubeFace = crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
-                            0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn BuildCube(
         verts: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector3>,
         >,
         uv: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        cubeUV: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
         triangles: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
@@ -102,7 +86,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         scale: crate::UnityEngine::Vector3,
         worldScale: f32,
         subQuads: i32,
-        expand_coef: f32,
+        expandCoefficient: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -121,6 +105,11 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::Generic::List_1<i32>,
                             >,
                             crate::UnityEngine::Vector3,
@@ -131,13 +120,13 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                             f32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        9usize,
+                        10usize,
                     >("BuildCube")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuildCube", 9usize
+                            "BuildCube", 10usize
                         )
                     })
             });
@@ -148,13 +137,14 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     (
                         verts,
                         uv,
+                        cubeUV,
                         triangles,
                         position,
                         rotation,
                         scale,
                         worldScale,
                         subQuads,
-                        expand_coef,
+                        expandCoefficient,
                     ),
                 )?
         };
@@ -280,7 +270,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         worldScale: f32,
         latitudes: i32,
         longitudes: i32,
-        expand_coef: f32,
+        expandCoefficient: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -336,7 +326,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                         worldScale,
                         latitudes,
                         longitudes,
-                        expand_coef,
+                        expandCoefficient,
                     ),
                 )?
         };
@@ -348,6 +338,9 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         >,
         uvs: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector2>,
+        >,
+        cubeUVs: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<crate::UnityEngine::Vector4>,
         >,
         tris: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<i32>,
@@ -375,6 +368,11 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                                 >,
                             >,
                             quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::Vector4,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::Generic::List_1<i32>,
                             >,
                             crate::GlobalNamespace::OVROverlay_OverlayShape,
@@ -384,13 +382,13 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                             crate::UnityEngine::Rect,
                         ),
                         quest_hook::libil2cpp::Void,
-                        8usize,
+                        9usize,
                     >("GenerateMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateMesh", 8usize
+                            "GenerateMesh", 9usize
                         )
                     })
             });
@@ -398,42 +396,17 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (verts, uvs, tris, shape, position, rotation, scale, rect),
+                    (verts, uvs, cubeUVs, tris, shape, position, rotation, scale, rect),
                 )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetBoundingRect(
-        &mut self,
-        a: crate::UnityEngine::Rect,
-        b: crate::UnityEngine::Rect,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Rect, crate::UnityEngine::Rect),
-                        crate::UnityEngine::Rect,
-                        2usize,
-                    >("GetBoundingRect")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBoundingRect", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Rect = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a, b))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCubeUV(
         face: crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
-        sideUV: crate::UnityEngine::Vector2,
-        expand_coef: f32,
+        sideU: f32,
+        sideV: f32,
+        expandScale: f32,
+        expandOffset: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -442,29 +415,32 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
-                            crate::UnityEngine::Vector2,
+                            f32,
+                            f32,
+                            f32,
                             f32,
                         ),
                         crate::UnityEngine::Vector2,
-                        3usize,
+                        5usize,
                     >("GetCubeUV")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCubeUV", 3usize
+                            "GetCubeUV", 5usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked((), (face, sideUV, expand_coef))?
+            cordl_method_info
+                .invoke_unchecked((), (face, sideU, sideV, expandScale, expandOffset))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetCubeVert(
         face: crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
-        sideUV: crate::UnityEngine::Vector2,
-        expand_coef: f32,
+        sideU: f32,
+        sideV: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -473,7 +449,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     .find_static_method::<
                         (
                             crate::GlobalNamespace::OVROverlayMeshGenerator_CubeFace,
-                            crate::UnityEngine::Vector2,
+                            f32,
                             f32,
                         ),
                         crate::UnityEngine::Vector3,
@@ -488,14 +464,14 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (face, sideUV, expand_coef))?
+            cordl_method_info.invoke_unchecked((), (face, sideU, sideV))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetSphereUV(
         theta: f32,
         phi: f32,
-        expand_coef: f32,
+        expandScale: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -515,7 +491,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked((), (theta, phi, expand_coef))?
+            cordl_method_info.invoke_unchecked((), (theta, phi, expandScale))?
         };
         Ok(__cordl_ret.into())
     }
@@ -545,6 +521,60 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InverseTransformVert(
+        vert: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        scale: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        worldScale: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            f32,
+                        ),
+                        crate::UnityEngine::Vector3,
+                        4usize,
+                    >("InverseTransformVert")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InverseTransformVert", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
+            cordl_method_info.invoke_unchecked((), (vert, position, scale, worldScale))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -552,19 +582,19 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn OnDisable(
+    pub fn OnDestroy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDisable")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnDestroy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnDisable", 0usize
+                            "OnDestroy", 0usize
                         )
                     })
             });
@@ -620,19 +650,23 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Update(
+    pub fn TryUpdateMesh(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("TryUpdateMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
-                            0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryUpdateMesh", 0usize
                         )
                     })
             });
@@ -648,6 +682,7 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
         rotation: crate::UnityEngine::Quaternion,
         scale: crate::UnityEngine::Vector3,
         rect: crate::UnityEngine::Rect,
+        cubemap: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -660,21 +695,25 @@ impl crate::GlobalNamespace::OVROverlayMeshGenerator {
                             crate::UnityEngine::Quaternion,
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Rect,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        6usize,
                     >("UpdateMesh")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateMesh", 5usize
+                            "UpdateMesh", 6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (shape, position, rotation, scale, rect))?
+                .invoke_unchecked(
+                    self,
+                    (shape, position, rotation, scale, rect, cubemap),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -715,13 +754,13 @@ for crate::GlobalNamespace::OVROverlayMeshGenerator {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVROverlayMeshGenerator_CubeFace {
     #[default]
-    Back = 5i32,
-    Bottom = 3i32,
+    Back = 2i32,
+    Bottom = 0i32,
     COUNT = 6i32,
-    Front = 4i32,
-    Left = 1i32,
-    Right = 0i32,
-    Top = 2i32,
+    Front = 1i32,
+    Left = 4i32,
+    Right = 3i32,
+    Top = 5i32,
 }
 #[cfg(feature = "cordl_class_OVROverlayMeshGenerator+CubeFace")]
 unsafe impl quest_hook::libil2cpp::Type

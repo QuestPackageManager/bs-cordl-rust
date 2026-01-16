@@ -383,6 +383,41 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IsDownloadOnly(
+        results: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                        >),
+                        bool,
+                        1usize,
+                    >("IsDownloadOnly")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDownloadOnly", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (results))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadBundleFromDependecies<T>(
         results: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IList_1<
@@ -489,7 +524,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _Start_b__7_0(
+    pub fn _Start_b__8_0(
         &mut self,
         operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -501,12 +536,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::BundledAssetProv
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<Start>b__7_0")
+                    >("<Start>b__8_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Start>b__7_0", 1usize
+                            "<Start>b__8_0", 1usize
                         )
                     })
             });

@@ -19,7 +19,8 @@ pub struct LightPairRotationEventEffect {
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAudioTimeSource,
     >,
-    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _rotationDataL: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LightPairRotationEventEffect_RotationData,
     >,

@@ -2,10 +2,14 @@
 pub mod Burst;
 // namespace Collections;
 pub mod Collections;
+// namespace Hierarchy;
+pub mod Hierarchy;
 // namespace IL2CPP;
 pub mod IL2CPP;
 // namespace IO;
 pub mod IO;
+// namespace IntegerTime;
+pub mod IntegerTime;
 // namespace Jobs;
 pub mod Jobs;
 // namespace Mathematics;
@@ -14,6 +18,8 @@ pub mod Mathematics;
 pub mod Profiling;
 // namespace Properties;
 pub mod Properties;
+// namespace RenderPipelines;
+pub mod RenderPipelines;
 // class ThrowStub_mod; export all
 mod ThrowStub_mod;
 pub use ThrowStub_mod::*;

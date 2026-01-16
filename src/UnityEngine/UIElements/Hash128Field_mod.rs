@@ -50,7 +50,7 @@ impl crate::UnityEngine::UIElements::Hash128Field {
     pub type UxmlFactory = crate::UnityEngine::UIElements::Hash128Field_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Hash128Field+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Hash128Field_UxmlTraits;
-    pub fn ExecuteDefaultAction(
+    pub fn HandleEventBubbleUp(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -64,12 +64,12 @@ impl crate::UnityEngine::UIElements::Hash128Field {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("ExecuteDefaultAction")
+                    >("HandleEventBubbleUp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExecuteDefaultAction", 1usize
+                            "HandleEventBubbleUp", 1usize
                         )
                     })
             });

@@ -43,6 +43,33 @@ impl crate::TMPro::TMP_DefaultControls {
     pub const kWidth: f32 = 160f32;
     #[cfg(feature = "TMPro+TMP_DefaultControls+Resources")]
     pub type Resources = crate::TMPro::TMP_DefaultControls_Resources;
+    pub fn AddComponent<T>(
+        go: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>),
+                        T,
+                        1usize,
+                    >("AddComponent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddComponent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: T = unsafe { cordl_method_info.invoke_unchecked((), (go))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateButton(
         resources: crate::TMPro::TMP_DefaultControls_Resources,
     ) -> quest_hook::libil2cpp::Result<

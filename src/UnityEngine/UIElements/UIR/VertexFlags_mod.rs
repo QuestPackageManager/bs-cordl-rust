@@ -4,7 +4,6 @@
 pub enum VertexFlags {
     #[default]
     IsDynamic = 3i32,
-    IsGraphViewEdge = 10i32,
     IsSolid = 0i32,
     IsSvgGradients = 4i32,
     IsText = 1i32,

@@ -10,9 +10,12 @@ pub struct MaterialPropertyBlockColorSetter {
         crate::GlobalNamespace::MaterialPropertyBlockController,
     >,
     pub _inverseAlpha: bool,
-    pub _multiplyWithAlpha: bool,
     pub _disableOnZeroAlpha: bool,
+    pub _sendAlphaToProperty: bool,
+    pub _alphaProperty: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _multiplyWithAlpha: bool,
     pub _propertyId: i32,
+    pub _alphaPropertyId: i32,
     pub _isInitialized: bool,
 }
 #[cfg(feature = "cordl_class_MaterialPropertyBlockColorSetter")]

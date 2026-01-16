@@ -38,6 +38,31 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::UIPainter2D {
 }
 #[cfg(feature = "UnityEngine+UIElements+UIPainter2D")]
 impl crate::UnityEngine::UIElements::UIPainter2D {
+    pub fn ClearSnapshots(
+        handle: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ClearSnapshots")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearSnapshots", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (handle))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Create(
         computeBBox: bool,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -85,6 +110,69 @@ impl crate::UnityEngine::UIElements::UIPainter2D {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked((), (handle))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExecuteSnapshotFromJob(
+        painterHandle: crate::System::IntPtr,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, i32),
+                        crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                        2usize,
+                    >("ExecuteSnapshotFromJob")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteSnapshotFromJob", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::MeshWriteDataInterface = unsafe {
+            cordl_method_info.invoke_unchecked((), (painterHandle, i))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExecuteSnapshotFromJob_Injected(
+        painterHandle: crate::System::IntPtr,
+        i: i32,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::MeshWriteDataInterface,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::MeshWriteDataInterface,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ExecuteSnapshotFromJob_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExecuteSnapshotFromJob_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (painterHandle, i, ret))?
         };
         Ok(__cordl_ret.into())
     }

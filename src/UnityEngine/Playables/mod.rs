@@ -1,3 +1,6 @@
+// class DataPlayableOutput_mod; export all
+mod DataPlayableOutput_mod;
+pub use DataPlayableOutput_mod::*;
 // class DirectorUpdateMode_mod; export all
 mod DirectorUpdateMode_mod;
 pub use DirectorUpdateMode_mod::*;
@@ -10,6 +13,9 @@ pub use FrameData_mod::*;
 // class FrameRate_mod; export all
 mod FrameRate_mod;
 pub use FrameRate_mod::*;
+// class IDataPlayer_mod; export all
+mod IDataPlayer_mod;
+pub use IDataPlayer_mod::*;
 // class INotificationReceiver_mod; export all
 mod INotificationReceiver_mod;
 pub use INotificationReceiver_mod::*;
@@ -61,6 +67,9 @@ pub use PlayableOutputHandle_mod::*;
 // class PlayableOutput_mod; export all
 mod PlayableOutput_mod;
 pub use PlayableOutput_mod::*;
+// class PlayableSystems_mod; export all
+mod PlayableSystems_mod;
+pub use PlayableSystems_mod::*;
 // class PlayableTraversalMode_mod; export all
 mod PlayableTraversalMode_mod;
 pub use PlayableTraversalMode_mod::*;

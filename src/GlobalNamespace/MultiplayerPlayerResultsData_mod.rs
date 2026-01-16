@@ -4,7 +4,7 @@
 pub struct MultiplayerPlayerResultsData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub multiplayerLevelCompletionResults: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLevelCompletionResults,
@@ -76,7 +76,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerResultsData {
     }
     pub fn New(
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
         multiplayerLevelCompletionResults: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerResultsData {
     pub fn _ctor(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
         multiplayerLevelCompletionResults: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLevelCompletionResults,
@@ -104,7 +104,7 @@ impl crate::GlobalNamespace::MultiplayerPlayerResultsData {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
+                                crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::MultiplayerLevelCompletionResults,

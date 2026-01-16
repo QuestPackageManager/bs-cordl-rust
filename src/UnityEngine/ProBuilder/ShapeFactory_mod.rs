@@ -72,9 +72,8 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
         > = unsafe { cordl_method_info.invoke_unchecked((), (pivotType))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Shape_PivotLocation2(
+    pub fn Instantiate_Shape2(
         shape: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
-        pivotType: crate::UnityEngine::ProBuilder::PivotLocation,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
     > {
@@ -83,28 +82,25 @@ impl crate::UnityEngine::ProBuilder::ShapeFactory {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Shapes::Shape,
-                            >,
-                            crate::UnityEngine::ProBuilder::PivotLocation,
-                        ),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::Shapes::Shape,
+                        >),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::ProBuilder::ProBuilderMesh,
                         >,
-                        2usize,
+                        1usize,
                     >("Instantiate")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Instantiate", 2usize
+                            "Instantiate", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ProBuilder::ProBuilderMesh,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (shape, pivotType))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (shape))? };
         Ok(__cordl_ret.into())
     }
     pub fn Instantiate_Type_PivotLocation1(

@@ -371,7 +371,7 @@ impl crate::System::Xml::XmlException {
             .invoke_void(".ctor", (res, args))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray_Exception_i32_i32_16(
+    pub fn New_Il2CppString_Il2CppArray_Exception_i32_i32_17(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -391,7 +391,7 @@ impl crate::System::Xml::XmlException {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray_Exception_i32_i32_Il2CppString17(
+    pub fn New_Il2CppString_Il2CppArray_Exception_i32_i32_Il2CppString18(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -412,7 +412,7 @@ impl crate::System::Xml::XmlException {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray_IXmlLineInfo10(
+    pub fn New_Il2CppString_Il2CppArray_IXmlLineInfo11(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -427,7 +427,7 @@ impl crate::System::Xml::XmlException {
             .invoke_void(".ctor", (res, args, lineInfo))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray_IXmlLineInfo_Il2CppString11(
+    pub fn New_Il2CppString_Il2CppArray_IXmlLineInfo_Il2CppString12(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -443,7 +443,7 @@ impl crate::System::Xml::XmlException {
             .invoke_void(".ctor", (res, args, lineInfo, sourceUri))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray_i32_i32_14(
+    pub fn New_Il2CppString_Il2CppArray_i32_i32_15(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -459,7 +459,7 @@ impl crate::System::Xml::XmlException {
             .invoke_void(".ctor", (res, args, lineNumber, linePosition))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppArray_i32_i32_Il2CppString15(
+    pub fn New_Il2CppString_Il2CppArray_i32_i32_Il2CppString16(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -486,6 +486,18 @@ impl crate::System::Xml::XmlException {
             .invoke_void(".ctor", (res, arg))?;
         Ok(__cordl_object.into())
     }
+    pub fn New_Il2CppString_Il2CppString_Exception_IXmlLineInfo10(
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (res, arg, innerException, lineInfo))?;
+        Ok(__cordl_object.into())
+    }
     pub fn New_Il2CppString_Il2CppString_IXmlLineInfo9(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -508,7 +520,7 @@ impl crate::System::Xml::XmlException {
             .invoke_void(".ctor", (res, arg, sourceUri))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_i32_i32_12(
+    pub fn New_Il2CppString_Il2CppString_i32_i32_13(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lineNumber: i32,
@@ -520,7 +532,7 @@ impl crate::System::Xml::XmlException {
             .invoke_void(".ctor", (res, arg, lineNumber, linePosition))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_Il2CppString_i32_i32_Il2CppString13(
+    pub fn New_Il2CppString_Il2CppString_i32_i32_Il2CppString14(
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         lineNumber: i32,
@@ -750,7 +762,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray_Exception_i32_i32_16(
+    pub fn _ctor_Il2CppString_Il2CppArray_Exception_i32_i32_17(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
@@ -802,7 +814,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray_Exception_i32_i32_Il2CppString17(
+    pub fn _ctor_Il2CppString_Il2CppArray_Exception_i32_i32_Il2CppString18(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
@@ -858,7 +870,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray_IXmlLineInfo10(
+    pub fn _ctor_Il2CppString_Il2CppArray_IXmlLineInfo11(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
@@ -902,7 +914,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray_IXmlLineInfo_Il2CppString11(
+    pub fn _ctor_Il2CppString_Il2CppArray_IXmlLineInfo_Il2CppString12(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
@@ -950,7 +962,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray_i32_i32_14(
+    pub fn _ctor_Il2CppString_Il2CppArray_i32_i32_15(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
@@ -997,7 +1009,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppArray_i32_i32_Il2CppString15(
+    pub fn _ctor_Il2CppString_Il2CppArray_i32_i32_Il2CppString16(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         args: quest_hook::libil2cpp::Gc<
@@ -1085,6 +1097,45 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn _ctor_Il2CppString_Il2CppString_Exception_IXmlLineInfo10(
+        &mut self,
+        res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        innerException: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        lineInfo: quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
+                            quest_hook::libil2cpp::Gc<crate::System::Xml::IXmlLineInfo>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (res, arg, innerException, lineInfo))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_Il2CppString_Il2CppString_IXmlLineInfo9(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1159,7 +1210,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_i32_i32_12(
+    pub fn _ctor_Il2CppString_Il2CppString_i32_i32_13(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1198,7 +1249,7 @@ impl crate::System::Xml::XmlException {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_Il2CppString_i32_i32_Il2CppString13(
+    pub fn _ctor_Il2CppString_Il2CppString_i32_i32_Il2CppString14(
         &mut self,
         res: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

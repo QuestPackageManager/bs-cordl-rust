@@ -2079,6 +2079,31 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_AppDownloadResult_GetAppInstallResult(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::AppInstallResult> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::Oculus::Platform::AppInstallResult,
+                        1usize,
+                    >("ovr_AppDownloadResult_GetAppInstallResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_AppDownloadResult_GetAppInstallResult", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Oculus::Platform::AppInstallResult = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_AppDownloadResult_GetTimestamp(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<i64> {
@@ -4771,6 +4796,107 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_BillingPlanArray_GetElement(
+        obj: crate::System::IntPtr,
+        index: crate::System::UIntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::UIntPtr),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("ovr_BillingPlanArray_GetElement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_BillingPlanArray_GetElement", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, index))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_BillingPlanArray_GetSize(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::UIntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::UIntPtr,
+                        1usize,
+                    >("ovr_BillingPlanArray_GetSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_BillingPlanArray_GetSize", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::UIntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_BillingPlan_GetPaidOffer(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_BillingPlan_GetPaidOffer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_BillingPlan_GetPaidOffer", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_BillingPlan_GetTrialOffers(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_BillingPlan_GetTrialOffers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_BillingPlan_GetTrialOffers", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_BlockedUserArray_GetElement(
         obj: crate::System::IntPtr,
         index: crate::System::UIntPtr,
@@ -6993,6 +7119,857 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_ContentRating_GetAgeRatingImageUri(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ContentRating_GetAgeRatingImageUri")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetAgeRatingImageUri", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetAgeRatingImageUri_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ContentRating_GetAgeRatingImageUri_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetAgeRatingImageUri_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetAgeRatingText(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ContentRating_GetAgeRatingText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetAgeRatingText", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetAgeRatingText_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ContentRating_GetAgeRatingText_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetAgeRatingText_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetDescriptor(
+        obj: crate::System::IntPtr,
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u32),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("ovr_ContentRating_GetDescriptor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetDescriptor", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, index))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetDescriptor_Native(
+        obj: crate::System::IntPtr,
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u32),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("ovr_ContentRating_GetDescriptor_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetDescriptor_Native", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, index))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetDescriptorsSize(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u32,
+                        1usize,
+                    >("ovr_ContentRating_GetDescriptorsSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetDescriptorsSize", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetInteractiveElement(
+        obj: crate::System::IntPtr,
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u32),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("ovr_ContentRating_GetInteractiveElement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetInteractiveElement", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj, index))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetInteractiveElement_Native(
+        obj: crate::System::IntPtr,
+        index: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u32),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("ovr_ContentRating_GetInteractiveElement_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetInteractiveElement_Native", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, index))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetInteractiveElementsSize(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u32,
+                        1usize,
+                    >("ovr_ContentRating_GetInteractiveElementsSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetInteractiveElementsSize", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetRatingDefinitionUri(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ContentRating_GetRatingDefinitionUri")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetRatingDefinitionUri", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ContentRating_GetRatingDefinitionUri_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ContentRating_GetRatingDefinitionUri_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ContentRating_GetRatingDefinitionUri_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewerArray_GetElement(
+        obj: crate::System::IntPtr,
+        index: crate::System::UIntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::UIntPtr),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("ovr_CowatchViewerArray_GetElement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewerArray_GetElement", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, index))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewerArray_GetNextUrl(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_CowatchViewerArray_GetNextUrl")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewerArray_GetNextUrl", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewerArray_GetNextUrl_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_CowatchViewerArray_GetNextUrl_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewerArray_GetNextUrl_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewerArray_GetSize(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::UIntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::UIntPtr,
+                        1usize,
+                    >("ovr_CowatchViewerArray_GetSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewerArray_GetSize", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::UIntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewerArray_HasNextPage(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("ovr_CowatchViewerArray_HasNextPage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewerArray_HasNextPage", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewerUpdate_GetDataList(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_CowatchViewerUpdate_GetDataList")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewerUpdate_GetDataList", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewerUpdate_GetId(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u64,
+                        1usize,
+                    >("ovr_CowatchViewerUpdate_GetId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewerUpdate_GetId", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewer_GetData(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_CowatchViewer_GetData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewer_GetData", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewer_GetData_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_CowatchViewer_GetData_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewer_GetData_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchViewer_GetId(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u64,
+                        1usize,
+                    >("ovr_CowatchViewer_GetId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchViewer_GetId", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_CowatchingState_GetInSession(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("ovr_CowatchingState_GetInSession")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_CowatchingState_GetInSession", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_GetPresenterData() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        u64,
+                        0usize,
+                    >("ovr_Cowatching_GetPresenterData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_GetPresenterData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_GetViewersData() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        u64,
+                        0usize,
+                    >("ovr_Cowatching_GetViewersData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_GetViewersData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_IsInSession() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), u64, 0usize>("ovr_Cowatching_IsInSession")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_IsInSession", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_JoinSession() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), u64, 0usize>("ovr_Cowatching_JoinSession")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_JoinSession", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_LaunchInviteDialog() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        u64,
+                        0usize,
+                    >("ovr_Cowatching_LaunchInviteDialog")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_LaunchInviteDialog", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_LeaveSession() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), u64, 0usize>("ovr_Cowatching_LeaveSession")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_LeaveSession", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_RequestToPresent() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        u64,
+                        0usize,
+                    >("ovr_Cowatching_RequestToPresent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_RequestToPresent", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_ResignFromPresenting() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        u64,
+                        0usize,
+                    >("ovr_Cowatching_ResignFromPresenting")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_ResignFromPresenting", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_SetPresenterData(
+        video_title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        presenter_data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        u64,
+                        2usize,
+                    >("ovr_Cowatching_SetPresenterData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_SetPresenterData", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (video_title, presenter_data))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_SetPresenterData_Native(
+        video_title: crate::System::IntPtr,
+        presenter_data: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr),
+                        u64,
+                        2usize,
+                    >("ovr_Cowatching_SetPresenterData_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_SetPresenterData_Native", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (video_title, presenter_data))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_SetViewerData(
+        viewer_data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        u64,
+                        1usize,
+                    >("ovr_Cowatching_SetViewerData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_SetViewerData", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (viewer_data))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Cowatching_SetViewerData_Native(
+        viewer_data: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u64,
+                        1usize,
+                    >("ovr_Cowatching_SetViewerData_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Cowatching_SetViewerData_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (viewer_data))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_CrashApplication() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
@@ -7489,6 +8466,58 @@ impl crate::Oculus::Platform::CAPI {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovr_Destination_GetDisplayName_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Destination_GetShareableUri(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_Destination_GetShareableUri")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Destination_GetShareableUri", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Destination_GetShareableUri_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Destination_GetShareableUri_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Destination_GetShareableUri_Native", 1usize
                         )
                     })
             });
@@ -10661,6 +11690,110 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_LaunchDetails_GetLobbySessionID(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_LaunchDetails_GetLobbySessionID")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_LaunchDetails_GetLobbySessionID", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_LaunchDetails_GetLobbySessionID_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_LaunchDetails_GetLobbySessionID_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_LaunchDetails_GetLobbySessionID_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_LaunchDetails_GetMatchSessionID(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_LaunchDetails_GetMatchSessionID")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_LaunchDetails_GetMatchSessionID", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_LaunchDetails_GetMatchSessionID_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_LaunchDetails_GetMatchSessionID_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_LaunchDetails_GetMatchSessionID_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_LaunchDetails_GetTrackingID(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<
@@ -12895,6 +14028,526 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_ManagedInfo_GetDepartment(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetDepartment")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetDepartment", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetDepartment_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetDepartment_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetDepartment_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetEmail(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetEmail")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetEmail", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetEmail_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetEmail_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetEmail_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetEmployeeNumber(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetEmployeeNumber")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetEmployeeNumber", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetEmployeeNumber_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetEmployeeNumber_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetEmployeeNumber_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetExternalId(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetExternalId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetExternalId", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetExternalId_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetExternalId_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetExternalId_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetLocation(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetLocation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetLocation", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetLocation_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetLocation_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetLocation_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetManager(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetManager")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetManager", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetManager_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetManager_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetManager_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetName(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetName", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetName_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetName_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetName_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetOrganizationId(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetOrganizationId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetOrganizationId", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetOrganizationId_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetOrganizationId_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetOrganizationId_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetOrganizationName(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetOrganizationName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetOrganizationName", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetOrganizationName_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetOrganizationName_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetOrganizationName_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetPosition(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_ManagedInfo_GetPosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetPosition", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_ManagedInfo_GetPosition_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_ManagedInfo_GetPosition_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_ManagedInfo_GetPosition_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_Media_ShareToFacebook(
         postTextSuggestion: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -13432,6 +15085,81 @@ impl crate::Oculus::Platform::CAPI {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovr_Message_GetChallengeEntryArray", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Message_GetCowatchViewerArray(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Message_GetCowatchViewerArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Message_GetCowatchViewerArray", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Message_GetCowatchViewerUpdate(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Message_GetCowatchViewerUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Message_GetCowatchViewerUpdate", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Message_GetCowatchingState(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Message_GetCowatchingState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Message_GetCowatchingState", 1usize
                         )
                     })
             });
@@ -14357,6 +16085,31 @@ impl crate::Oculus::Platform::CAPI {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovr_Message_GetPurchaseArray", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Message_GetPushNotificationResult(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Message_GetPushNotificationResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Message_GetPushNotificationResult", 1usize
                         )
                     })
             });
@@ -16961,6 +18714,56 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_PaidOffer_GetPrice(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_PaidOffer_GetPrice")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_PaidOffer_GetPrice", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_PaidOffer_GetSubscriptionTerm(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::OfferTerm> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::Oculus::Platform::OfferTerm,
+                        1usize,
+                    >("ovr_PaidOffer_GetSubscriptionTerm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_PaidOffer_GetSubscriptionTerm", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Oculus::Platform::OfferTerm = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_PartyID_GetID(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<u64> {
@@ -18101,6 +19904,108 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_Product_GetBillingPlans(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Product_GetBillingPlans")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetBillingPlans", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetContentRating(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Product_GetContentRating")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetContentRating", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetCoverUrl(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_Product_GetCoverUrl")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetCoverUrl", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetCoverUrl_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Product_GetCoverUrl_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetCoverUrl_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_Product_GetDescription(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<
@@ -18205,6 +20110,58 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_Product_GetIconUrl(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_Product_GetIconUrl")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetIconUrl", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetIconUrl_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Product_GetIconUrl_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetIconUrl_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_Product_GetName(
         obj: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<
@@ -18249,6 +20206,31 @@ impl crate::Oculus::Platform::CAPI {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "ovr_Product_GetName_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetPrice(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Product_GetPrice")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetPrice", 1usize
                         )
                     })
             });
@@ -18305,6 +20287,83 @@ impl crate::Oculus::Platform::CAPI {
                     })
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetShortDescription(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_Product_GetShortDescription")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetShortDescription", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetShortDescription_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_Product_GetShortDescription_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetShortDescription_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Product_GetType(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::ProductType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::Oculus::Platform::ProductType,
+                        1usize,
+                    >("ovr_Product_GetType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Product_GetType", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Oculus::Platform::ProductType = unsafe {
             cordl_method_info.invoke_unchecked((), (obj))?
         };
         Ok(__cordl_ret.into())
@@ -18762,6 +20821,104 @@ impl crate::Oculus::Platform::CAPI {
         let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (obj))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_Purchase_GetType(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::ProductType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::Oculus::Platform::ProductType,
+                        1usize,
+                    >("ovr_Purchase_GetType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_Purchase_GetType", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Oculus::Platform::ProductType = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_PushNotificationResult_GetId(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("ovr_PushNotificationResult_GetId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_PushNotificationResult_GetId", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_PushNotificationResult_GetId_Native(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_PushNotificationResult_GetId_Native")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_PushNotificationResult_GetId_Native", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_PushNotification_Register() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        u64,
+                        0usize,
+                    >("ovr_PushNotification_Register")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_PushNotification_Register", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn ovr_RejoinDialogResult_GetRejoinSelected(
@@ -20007,6 +22164,155 @@ impl crate::Oculus::Platform::CAPI {
         let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
         Ok(__cordl_ret.into())
     }
+    pub fn ovr_TrialOfferArray_GetElement(
+        obj: crate::System::IntPtr,
+        index: crate::System::UIntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::UIntPtr),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("ovr_TrialOfferArray_GetElement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_TrialOfferArray_GetElement", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, index))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_TrialOfferArray_GetSize(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::UIntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::UIntPtr,
+                        1usize,
+                    >("ovr_TrialOfferArray_GetSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_TrialOfferArray_GetSize", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::UIntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_TrialOffer_GetMaxTermCount(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        i32,
+                        1usize,
+                    >("ovr_TrialOffer_GetMaxTermCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_TrialOffer_GetMaxTermCount", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_TrialOffer_GetPrice(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_TrialOffer_GetPrice")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_TrialOffer_GetPrice", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_TrialOffer_GetTrialTerm(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::OfferTerm> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::Oculus::Platform::OfferTerm,
+                        1usize,
+                    >("ovr_TrialOffer_GetTrialTerm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_TrialOffer_GetTrialTerm", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Oculus::Platform::OfferTerm = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_TrialOffer_GetTrialType(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::Oculus::Platform::OfferType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::Oculus::Platform::OfferType,
+                        1usize,
+                    >("ovr_TrialOffer_GetTrialType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_TrialOffer_GetTrialType", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Oculus::Platform::OfferType = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovr_UnityInitGlobals(
         loggingCB: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -20729,408 +23035,6 @@ impl crate::Oculus::Platform::CAPI {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ovr_UserDataStore_PrivateDeleteEntryByKey(
-        userID: u64,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PrivateDeleteEntryByKey")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PrivateDeleteEntryByKey", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PrivateDeleteEntryByKey_Native(
-        userID: u64,
-        key: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64, crate::System::IntPtr),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PrivateDeleteEntryByKey_Native")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PrivateDeleteEntryByKey_Native", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PrivateGetEntries(
-        userID: u64,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64),
-                        u64,
-                        1usize,
-                    >("ovr_UserDataStore_PrivateGetEntries")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PrivateGetEntries", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PrivateGetEntryByKey(
-        userID: u64,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PrivateGetEntryByKey")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PrivateGetEntryByKey", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PrivateGetEntryByKey_Native(
-        userID: u64,
-        key: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64, crate::System::IntPtr),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PrivateGetEntryByKey_Native")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PrivateGetEntryByKey_Native", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PrivateWriteEntry(
-        userID: u64,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        u64,
-                        3usize,
-                    >("ovr_UserDataStore_PrivateWriteEntry")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PrivateWriteEntry", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PrivateWriteEntry_Native(
-        userID: u64,
-        key: crate::System::IntPtr,
-        value: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64, crate::System::IntPtr, crate::System::IntPtr),
-                        u64,
-                        3usize,
-                    >("ovr_UserDataStore_PrivateWriteEntry_Native")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PrivateWriteEntry_Native", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PublicDeleteEntryByKey(
-        userID: u64,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PublicDeleteEntryByKey")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PublicDeleteEntryByKey", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PublicDeleteEntryByKey_Native(
-        userID: u64,
-        key: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64, crate::System::IntPtr),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PublicDeleteEntryByKey_Native")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PublicDeleteEntryByKey_Native", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PublicGetEntries(
-        userID: u64,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64),
-                        u64,
-                        1usize,
-                    >("ovr_UserDataStore_PublicGetEntries")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PublicGetEntries", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PublicGetEntryByKey(
-        userID: u64,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PublicGetEntryByKey")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PublicGetEntryByKey", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PublicGetEntryByKey_Native(
-        userID: u64,
-        key: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64, crate::System::IntPtr),
-                        u64,
-                        2usize,
-                    >("ovr_UserDataStore_PublicGetEntryByKey_Native")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PublicGetEntryByKey_Native", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PublicWriteEntry(
-        userID: u64,
-        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            u64,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        u64,
-                        3usize,
-                    >("ovr_UserDataStore_PublicWriteEntry")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PublicWriteEntry", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovr_UserDataStore_PublicWriteEntry_Native(
-        userID: u64,
-        key: crate::System::IntPtr,
-        value: crate::System::IntPtr,
-    ) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (u64, crate::System::IntPtr, crate::System::IntPtr),
-                        u64,
-                        3usize,
-                    >("ovr_UserDataStore_PublicWriteEntry_Native")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovr_UserDataStore_PublicWriteEntry_Native", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (userID, key, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn ovr_UserOptions_AddServiceProvider(
         handle: crate::System::IntPtr,
         value: crate::Oculus::Platform::ServiceProvider,
@@ -21678,6 +23582,52 @@ impl crate::Oculus::Platform::CAPI {
                     })
             });
         let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_User_GetLoggedInUserManagedInfo() -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        u64,
+                        0usize,
+                    >("ovr_User_GetLoggedInUserManagedInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_User_GetLoggedInUserManagedInfo", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovr_User_GetManagedInfo(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ovr_User_GetManagedInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovr_User_GetManagedInfo", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ovr_User_GetOculusID(

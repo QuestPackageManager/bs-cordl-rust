@@ -102,4 +102,30 @@ for crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
     }
 }
 #[cfg(feature = "UnityEngine+Experimental+GlobalIllumination+Cookie")]
-impl crate::UnityEngine::Experimental::GlobalIllumination::Cookie {}
+impl crate::UnityEngine::Experimental::GlobalIllumination::Cookie {
+    pub fn Defaults() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Experimental::GlobalIllumination::Cookie,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::UnityEngine::Experimental::GlobalIllumination::Cookie,
+                        0usize,
+                    >("Defaults")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Defaults", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Experimental::GlobalIllumination::Cookie = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+}

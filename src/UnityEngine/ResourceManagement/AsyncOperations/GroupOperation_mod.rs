@@ -73,6 +73,7 @@ for crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation")]
 impl crate::UnityEngine::ResourceManagement::AsyncOperations::GroupOperation {
+    pub const k_MaxDebugNameLength: i32 = 2000i32;
     pub const k_MaxDisplayedLocationLength: i32 = 45i32;
     #[cfg(
         feature = "UnityEngine+ResourceManagement+AsyncOperations+GroupOperation+GroupOperationSettings"

@@ -25,14 +25,14 @@ pub struct SettingsFlowCoordinator {
     pub _settingsApplicator: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsApplicatorSO,
     >,
-    pub _controllerProfilesModel: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::GameSettings::ControllerProfilesModel,
+    pub _controllerProfilesViewController: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController,
     >,
     pub _dropdownDialogPromptViewController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DropdownDialogPromptViewController,
     >,
-    pub _controllerProfilesViewController: quest_hook::libil2cpp::Gc<
-        crate::BeatSaber::GameSettings::ControllerProfilesSettingsViewController,
+    pub _controllerProfilesModel: quest_hook::libil2cpp::Gc<
+        crate::BeatSaber::GameSettings::ControllerProfilesModel,
     >,
     pub _undoSettings: crate::BeatSaber::Settings::Settings,
 }

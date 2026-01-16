@@ -9,6 +9,9 @@ pub struct UnifiedNetworkPlayerModel {
     pub _platformNetworkPlayerModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlatformNetworkPlayerModel,
     >,
+    pub _localServerNetworkPlayerModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::LocalServerNetworkPlayerModel,
+    >,
     pub connectedPlayerManagerCreatedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::INetworkPlayerModel>,
@@ -43,6 +46,7 @@ pub struct UnifiedNetworkPlayerModel {
         crate::GlobalNamespace::PartyMessageHandler,
     >,
     pub _activeNetworkPlayerModelType: crate::GlobalNamespace::UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType,
+    pub _localServerPort_k__BackingField: i32,
 }
 #[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -941,7 +945,9 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel {
     pub fn get_connectedPlayerManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectedPlayerManager>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -950,7 +956,7 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ConnectedPlayerManager,
+                            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
                         >,
                         0usize,
                     >("get_connectedPlayerManager")
@@ -963,7 +969,7 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ConnectedPlayerManager,
+            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1091,6 +1097,23 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_localServerPort(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("get_localServerPort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_localServerPort", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_otherPlayers(
@@ -1548,6 +1571,32 @@ impl crate::GlobalNamespace::UnifiedNetworkPlayerModel {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_localServerPort(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_localServerPort")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_localServerPort", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel")]
 impl quest_hook::libil2cpp::ObjectType
@@ -1621,6 +1670,7 @@ for crate::GlobalNamespace::UnifiedNetworkPlayerModel {
 pub enum UnifiedNetworkPlayerModel_ActiveNetworkPlayerModelType {
     #[default]
     GameLift = 0i32,
+    LocalServer = 2i32,
     Platform = 1i32,
 }
 #[cfg(feature = "cordl_class_UnifiedNetworkPlayerModel+ActiveNetworkPlayerModelType")]

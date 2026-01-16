@@ -8,24 +8,6 @@ pub struct ProviderOperation_1<TObject: quest_hook::libil2cpp::Type> {
         TObject,
     >,
     pub m_ReleaseDependenciesOnFailure: bool,
-    pub m_CompletionCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_4<
-            i32,
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            bool,
-            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        >,
-    >,
-    pub m_GetDepCallback: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<
-            i32,
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::IList_1<
-                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-                >,
-            >,
-        >,
-    >,
     pub m_GetProgressCallback: quest_hook::libil2cpp::Gc<crate::System::Func_1<f32>>,
     pub m_GetDownloadProgressCallback: quest_hook::libil2cpp::Gc<
         crate::System::Func_1<

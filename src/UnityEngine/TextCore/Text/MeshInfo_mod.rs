@@ -3,6 +3,12 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct MeshInfo {
     pub vertexCount: i32,
+    pub vertexData: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            crate::UnityEngine::TextCore::Text::TextCoreVertex,
+        >,
+    >,
+    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub vertices: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
     >,
@@ -12,6 +18,7 @@ pub struct MeshInfo {
     pub tangents: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
+    pub vertexBufferSize: i32,
     pub uvs0: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
@@ -22,7 +29,8 @@ pub struct MeshInfo {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color32>,
     >,
     pub triangles: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-    pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub vertexDataLayout: crate::UnityEngine::TextCore::Text::VertexDataLayout,
+    pub applySDF: bool,
     pub glyphRenderMode: crate::UnityEngine::TextCore::LowLevel::GlyphRenderMode,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+MeshInfo")]
@@ -172,26 +180,27 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
     pub fn ResizeMeshInfo(
         &mut self,
         _cordl_size: i32,
+        isIMGUI: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32),
+                        (i32, bool),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >("ResizeMeshInfo")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResizeMeshInfo", 1usize
+                            "ResizeMeshInfo", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_size))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_size, isIMGUI))?
         };
         Ok(__cordl_ret.into())
     }
@@ -251,22 +260,32 @@ impl crate::UnityEngine::TextCore::Text::MeshInfo {
     pub fn _ctor(
         &mut self,
         _cordl_size: i32,
+        layout: crate::UnityEngine::TextCore::Text::VertexDataLayout,
+        isIMGUI: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .find_method::<
+                        (
+                            i32,
+                            crate::UnityEngine::TextCore::Text::VertexDataLayout,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            1usize
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_size))?
+            cordl_method_info.invoke_unchecked(self, (_cordl_size, layout, isIMGUI))?
         };
         Ok(__cordl_ret.into())
     }

@@ -5,7 +5,7 @@
 #[derive(Debug)]
 pub struct ContentCatalogData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub localHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub LocalHash: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub location: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
     >,
@@ -98,7 +98,7 @@ for crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData 
 #[cfg(feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData")]
 impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData {
     pub const kBytesPerInt32: i32 = 4i32;
-    pub const kVersion: i32 = 1i32;
+    pub const kVersion: i32 = 2i32;
     pub const k_EntryDataItemPerEntry: i32 = 7i32;
     #[cfg(
         feature = "UnityEngine+AddressableAssets+ResourceLocators+ContentCatalogData+Bucket"
@@ -415,6 +415,33 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_BuildResultHash(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_BuildResultHash")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_BuildResultHash", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_InstanceProviderData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -608,6 +635,32 @@ impl crate::UnityEngine::AddressableAssets::ResourceLocators::ContentCatalogData
             });
         let __cordl_ret: crate::UnityEngine::ResourceManagement::Util::ObjectInitializationData = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_BuildResultHash(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_BuildResultHash")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_BuildResultHash", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

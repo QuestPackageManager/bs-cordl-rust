@@ -4,6 +4,7 @@
 pub enum BatchCullingViewType {
     #[default]
     Camera = 1i32,
+    Filtering = 5i32,
     Light = 2i32,
     Picking = 3i32,
     SelectionOutline = 4i32,

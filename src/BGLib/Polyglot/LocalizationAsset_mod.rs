@@ -4,7 +4,6 @@
 pub struct LocalizationAsset {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    pub format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
 }
 #[cfg(feature = "cordl_class_BGLib+Polyglot+LocalizationAsset")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::LocalizationAsset {
@@ -42,68 +41,36 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::LocalizationAsset {
 impl crate::BGLib::Polyglot::LocalizationAsset {
     pub fn New(
         textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-        format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (textAsset, format))?;
+            .invoke_void(".ctor", (textAsset))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
         textAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-        format: crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-                            crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
-                        ),
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        1usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (textAsset, format))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_Format(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::BGLib::Polyglot::GoogleDriveDownloadFormat,
-                        0usize,
-                    >("get_Format")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Format", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::BGLib::Polyglot::GoogleDriveDownloadFormat = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, (textAsset))?
         };
         Ok(__cordl_ret.into())
     }

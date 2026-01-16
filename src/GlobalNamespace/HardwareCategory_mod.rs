@@ -3,9 +3,6 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HardwareCategory {
     #[default]
-    PlayStation4 = 5i32,
-    PlayStation4Pro = 6i32,
-    PlayStation5 = 7i32,
     Quest1 = 1i32,
     Quest2 = 2i32,
     Quest3 = 3i32,

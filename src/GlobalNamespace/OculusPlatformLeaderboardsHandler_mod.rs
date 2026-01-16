@@ -112,9 +112,7 @@ impl crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
         count: i32,
         fromRank: i32,
         scope: crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
-        referencePlayerId: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        >,
+        referencePlayerId: u64,
         completionHandler: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
         >,
@@ -133,9 +131,7 @@ impl crate::GlobalNamespace::OculusPlatformLeaderboardsHandler {
                             i32,
                             i32,
                             crate::GlobalNamespace::PlatformLeaderboardsModel_ScoresScope,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
+                            u64,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::PlatformLeaderboardsModel_GetScoresCompletionHandler,
                             >,

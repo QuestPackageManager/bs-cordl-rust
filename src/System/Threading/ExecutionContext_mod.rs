@@ -437,7 +437,99 @@ impl crate::System::Threading::ExecutionContext {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RunInternal_ExecutionContext_ContextCallback_Il2CppObject0(
+    pub fn RunInternal_ContextCallback_1_ByRefMut2<TState>(
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ContextCallback_1<TState>,
+        >,
+        state: quest_hook::libil2cpp::ByRefMut<TState>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::ExecutionContext,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::ContextCallback_1<TState>,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<TState>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("RunInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RunInternal", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (executionContext, callback, state))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunInternal_ContextCallback_1_ByRefMut__cordl_bool3<TState>(
+        executionContext: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ExecutionContext,
+        >,
+        callback: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::ContextCallback_1<TState>,
+        >,
+        state: quest_hook::libil2cpp::ByRefMut<TState>,
+        preserveSyncCtx: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::ExecutionContext,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::ContextCallback_1<TState>,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<TState>,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("RunInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RunInternal", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (executionContext, callback, state, preserveSyncCtx),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunInternal_ContextCallback_Il2CppObject0(
         executionContext: quest_hook::libil2cpp::Gc<
             crate::System::Threading::ExecutionContext,
         >,
@@ -476,7 +568,7 @@ impl crate::System::Threading::ExecutionContext {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RunInternal__cordl_bool1(
+    pub fn RunInternal_ContextCallback_Il2CppObject__cordl_bool1(
         executionContext: quest_hook::libil2cpp::Gc<
             crate::System::Threading::ExecutionContext,
         >,

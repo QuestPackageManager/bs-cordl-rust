@@ -21,7 +21,7 @@ pub struct MultiplayerLocalActivePlayerInGameMenuViewController {
         crate::UnityEngine::GameObject,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _localPlayerInGameMenuInitData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LocalPlayerInGameMenuInitData,

@@ -633,63 +633,59 @@ impl crate::UnityEngine::Vector3 {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Slerp(
-        a: crate::UnityEngine::Vector3,
-        b: crate::UnityEngine::Vector3,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3, f32),
-                        crate::UnityEngine::Vector3,
-                        3usize,
-                    >("Slerp")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Slerp",
-                            3usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, t))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Slerp_Injected(
-        a: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        b: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        t: f32,
-        ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn SignedAngle(
+        from: crate::UnityEngine::Vector3,
+        to: crate::UnityEngine::Vector3,
+        axis: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            f32,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector3,
                         ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("Slerp_Injected")
+                        f32,
+                        3usize,
+                    >("SignedAngle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Slerp_Injected", 4usize
+                            "SignedAngle", 3usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (a, b, t, ret))?
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (from, to, axis))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SqrMagnitude(
+        vector: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector3),
+                        f32,
+                        1usize,
+                    >("SqrMagnitude")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SqrMagnitude", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (vector))?
         };
         Ok(__cordl_ret.into())
     }

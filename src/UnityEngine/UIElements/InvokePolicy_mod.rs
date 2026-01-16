@@ -5,6 +5,7 @@ pub enum InvokePolicy {
     #[default]
     Default = 0i32,
     IncludeDisabled = 1i32,
+    Once = 2i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+InvokePolicy")]
 unsafe impl quest_hook::libil2cpp::Type

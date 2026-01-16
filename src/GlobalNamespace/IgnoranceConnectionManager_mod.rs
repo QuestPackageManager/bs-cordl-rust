@@ -35,6 +35,9 @@ pub struct IgnoranceConnectionManager {
     pub _userName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
+    pub _compatibilityVersion_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub _channels: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::IgnoranceCore::IgnoranceChannelTypes>,
     >,
@@ -254,16 +257,14 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
     }
     pub fn DisposeAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        crate::System::Threading::Tasks::ValueTask,
                         0usize,
                     >("DisposeAsync")
                     .unwrap_or_else(|e| {
@@ -274,9 +275,9 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetConnection(
@@ -358,6 +359,54 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleConnectionMessage(
+        &mut self,
+        peerId: u32,
+        userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        isConnectionOwner: bool,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("HandleConnectionMessage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleConnectionMessage", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (peerId, userId, userName, isConnectionOwner, compatibilityVersion),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -761,6 +810,9 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
+        compatibilityVersion: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -782,21 +834,29 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<bool>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
                         ),
                         bool,
-                        4usize,
+                        5usize,
                     >("TryParseConnectionMessage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryParseConnectionMessage", 4usize
+                            "TryParseConnectionMessage", 5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (reader, userId, userName, isConnectionOwner))?
+                .invoke_unchecked(
+                    self,
+                    (reader, userId, userName, isConnectionOwner, compatibilityVersion),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1135,6 +1195,33 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_compatibilityVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_compatibilityVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_compatibilityVersion", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_connectionCount(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -1579,6 +1666,32 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_compatibilityVersion(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_compatibilityVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_compatibilityVersion", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_serverUserId(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1719,6 +1832,20 @@ for crate::GlobalNamespace::IgnoranceConnectionManager {
 impl AsMut<crate::GlobalNamespace::IPollable>
 for crate::GlobalNamespace::IgnoranceConnectionManager {
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsRef<crate::System::IAsyncDisposable>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "IgnoranceConnectionManager")]
+impl AsMut<crate::System::IAsyncDisposable>
+for crate::GlobalNamespace::IgnoranceConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }
@@ -1938,6 +2065,9 @@ pub struct IgnoranceConnectionManager_IgnoranceConnection {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub _isConnectionOwner_k__BackingField: bool,
+    pub _compatibilityVersion_k__BackingField: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager+IgnoranceConnection")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -2005,13 +2135,23 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(
                 ".ctor",
-                (connectionManager, peerId, userId, userName, isConnectionOwner),
+                (
+                    connectionManager,
+                    peerId,
+                    userId,
+                    userName,
+                    isConnectionOwner,
+                    compatibilityVersion,
+                ),
             )?;
         Ok(__cordl_object.into())
     }
@@ -2056,6 +2196,9 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2074,15 +2217,18 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        6usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            5usize
+                            6usize
                         )
                     })
             });
@@ -2090,9 +2236,43 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (connectionManager, peerId, userId, userName, isConnectionOwner),
+                    (
+                        connectionManager,
+                        peerId,
+                        userId,
+                        userName,
+                        isConnectionOwner,
+                        compatibilityVersion,
+                    ),
                 )?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_compatibilityVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_compatibilityVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_compatibilityVersion", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_isConnectionOwner(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -2164,6 +2344,32 @@ impl crate::GlobalNamespace::IgnoranceConnectionManager_IgnoranceConnection {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_compatibilityVersion(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_compatibilityVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_compatibilityVersion", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_isConnectionOwner(
@@ -2281,6 +2487,9 @@ pub struct IgnoranceConnectionManager_IgnoranceConnectionParamsBase {
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub enableBackgroundSentry: bool,
+    pub compatibilityVersion: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
 }
 #[cfg(feature = "cordl_class_IgnoranceConnectionManager+IgnoranceConnectionParamsBase")]
 unsafe impl quest_hook::libil2cpp::Type

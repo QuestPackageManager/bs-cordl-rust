@@ -9,7 +9,9 @@ pub struct MainSettingsAsyncLoader {
     pub _hapticFeedbackControllerPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::HapticFeedbackManager,
     >,
-    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _audioManagerConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioManagerConfigSO,
+    >,
     pub _setupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
     pub _commandLineParserResult: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
     pub _settingManager: quest_hook::libil2cpp::Gc<

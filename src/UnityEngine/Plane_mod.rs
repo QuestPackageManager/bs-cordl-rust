@@ -266,7 +266,34 @@ impl crate::UnityEngine::Plane {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Vector3_1(
+    pub fn _ctor_Vector3_0(
+        &mut self,
+        inNormal: crate::UnityEngine::Vector3,
+        inPoint: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inNormal, inPoint))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Vector3_Vector3_2(
         &mut self,
         a: crate::UnityEngine::Vector3,
         b: crate::UnityEngine::Vector3,
@@ -298,17 +325,17 @@ impl crate::UnityEngine::Plane {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Vector3_Vector3_0(
+    pub fn _ctor_f32_1(
         &mut self,
         inNormal: crate::UnityEngine::Vector3,
-        inPoint: crate::UnityEngine::Vector3,
+        d: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
+                        (crate::UnityEngine::Vector3, f32),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >(".ctor")
@@ -321,7 +348,7 @@ impl crate::UnityEngine::Plane {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inNormal, inPoint))?
+            cordl_method_info.invoke_unchecked(self, (inNormal, d))?
         };
         Ok(__cordl_ret.into())
     }

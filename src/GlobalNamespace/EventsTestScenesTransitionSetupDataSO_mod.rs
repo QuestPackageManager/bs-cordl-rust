@@ -3,13 +3,6 @@
 #[derive(Debug)]
 pub struct EventsTestScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    pub _environmentInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::EnvironmentInfoSO,
-    >,
-    pub _eventsTestSceneInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SceneInfo,
-    >,
-    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
 }
 #[cfg(feature = "cordl_class_EventsTestScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -49,22 +42,31 @@ for crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
 impl crate::GlobalNamespace::EventsTestScenesTransitionSetupDataSO {
     pub fn Init(
         &mut self,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::EnvironmentsListModel,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            0usize
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, (environmentsListModel))?
         };
         Ok(__cordl_ret.into())
     }

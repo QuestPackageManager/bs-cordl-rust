@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct BloomPrePassBackgroundNonLightRendererCore {
     __cordl_parent: crate::GlobalNamespace::BloomPrePassNonLightPass,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _keepDefaultRendering: bool,
     pub _useCustomMaterial: bool,
     pub _customMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,

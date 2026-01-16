@@ -502,6 +502,40 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetBindingContext(
+        &mut self,
+        reusableItem: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::ReusableCollectionItem,
+        >,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::ReusableCollectionItem,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetBindingContext")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBindingContext", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (reusableItem, index))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Swap(
         &mut self,
         lhs: i32,
@@ -529,7 +563,7 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _AddItems_g__IsGenericList_15_0(
+    pub fn _AddItems_g__IsGenericList_19_0(
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -540,12 +574,12 @@ impl crate::UnityEngine::UIElements::BaseListViewController {
                         (quest_hook::libil2cpp::Gc<crate::System::Type>),
                         bool,
                         1usize,
-                    >("<AddItems>g__IsGenericList|15_0")
+                    >("<AddItems>g__IsGenericList|19_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<AddItems>g__IsGenericList|15_0", 1usize
+                            "<AddItems>g__IsGenericList|19_0", 1usize
                         )
                     })
             });

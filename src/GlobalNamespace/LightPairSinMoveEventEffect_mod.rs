@@ -18,6 +18,8 @@ pub struct LightPairSinMoveEventEffect {
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAudioTimeSource,
     >,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _movementDataL: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LightPairSinMoveEventEffect_MovementData,
     >,

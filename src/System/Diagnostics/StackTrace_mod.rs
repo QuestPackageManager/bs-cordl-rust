@@ -49,8 +49,6 @@ impl std::ops::DerefMut for crate::System::Diagnostics::StackTrace {
 }
 #[cfg(feature = "System+Diagnostics+StackTrace")]
 impl crate::System::Diagnostics::StackTrace {
-    pub const METHODS_TO_SKIP: i32 = 0i32;
-    pub const prefix: &'static str = "  at ";
     #[cfg(feature = "System+Diagnostics+StackTrace+TraceFormat")]
     pub type TraceFormat = crate::System::Diagnostics::StackTrace_TraceFormat;
     pub fn AddFrames(
@@ -179,6 +177,45 @@ impl crate::System::Diagnostics::StackTrace {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Diagnostics::StackFrame,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFrames(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Diagnostics::StackFrame,
+                                >,
+                            >,
+                        >,
+                        0usize,
+                    >("GetFrames")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFrames", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::System::Diagnostics::StackFrame>,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetFullNameForStackTrace(

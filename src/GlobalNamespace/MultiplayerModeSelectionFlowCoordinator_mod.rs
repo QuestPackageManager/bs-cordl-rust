@@ -38,7 +38,7 @@ pub struct MultiplayerModeSelectionFlowCoordinator {
         crate::BeatSaber::AvatarCore::AvatarSystemCollection,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _fadeInOutController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::FadeInOutController,
@@ -66,9 +66,6 @@ pub struct MultiplayerModeSelectionFlowCoordinator {
     >,
     pub _lobbyGameStateController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ILobbyGameStateController,
-    >,
-    pub _xPlatformAuthFeatureFlag: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::XPlatformAuthFeatureFlag,
     >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
@@ -835,7 +832,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentConnectionErrorDialog_b__53_0(
+    pub fn _PresentConnectionErrorDialog_b__52_0(
         &mut self,
         btnId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -847,12 +844,12 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                         (i32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<PresentConnectionErrorDialog>b__53_0")
+                    >("<PresentConnectionErrorDialog>b__52_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<PresentConnectionErrorDialog>b__53_0", 1usize
+                            "<PresentConnectionErrorDialog>b__52_0", 1usize
                         )
                     })
             });
@@ -861,7 +858,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentConnectionErrorDialog_b__53_1(
+    pub fn _PresentConnectionErrorDialog_b__52_1(
         &mut self,
         btnId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -873,12 +870,12 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                         (i32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<PresentConnectionErrorDialog>b__53_1")
+                    >("<PresentConnectionErrorDialog>b__52_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<PresentConnectionErrorDialog>b__53_1", 1usize
+                            "<PresentConnectionErrorDialog>b__52_1", 1usize
                         )
                     })
             });
@@ -887,7 +884,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentMasterServerUnavailableErrorDialog_b__54_0(
+    pub fn _PresentMasterServerUnavailableErrorDialog_b__53_0(
         &mut self,
         btnId: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -899,12 +896,12 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                         (i32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<PresentMasterServerUnavailableErrorDialog>b__54_0")
+                    >("<PresentMasterServerUnavailableErrorDialog>b__53_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<PresentMasterServerUnavailableErrorDialog>b__54_0", 1usize
+                            "<PresentMasterServerUnavailableErrorDialog>b__53_0", 1usize
                         )
                     })
             });
@@ -913,7 +910,7 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ResolveAndPresentNextFlowCoordinator_b__52_0(
+    pub fn _ResolveAndPresentNextFlowCoordinator_b__51_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -924,12 +921,12 @@ impl crate::GlobalNamespace::MultiplayerModeSelectionFlowCoordinator {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<ResolveAndPresentNextFlowCoordinator>b__52_0")
+                    >("<ResolveAndPresentNextFlowCoordinator>b__51_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<ResolveAndPresentNextFlowCoordinator>b__52_0", 0usize
+                            "<ResolveAndPresentNextFlowCoordinator>b__51_0", 0usize
                         )
                     })
             });

@@ -61,7 +61,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LightWithIdManager {
 }
 #[cfg(feature = "LightWithIdManager")]
 impl crate::GlobalNamespace::LightWithIdManager {
-    pub const kMaxLightId: i32 = 500i32;
+    pub const kMaxLightId: i32 = 550i32;
     pub fn GetColorForId(
         &mut self,
         lightId: i32,

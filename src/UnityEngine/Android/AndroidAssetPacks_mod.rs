@@ -100,8 +100,9 @@ pub struct AndroidAssetPacks_AssetPackManagerDownloadStatusCallback {
         >,
     >,
     pub m_AssetPacks: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
+        crate::System::Collections::Generic::Dictionary_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            crate::UnityEngine::Android::AndroidAssetPackStatus,
         >,
     >,
 }

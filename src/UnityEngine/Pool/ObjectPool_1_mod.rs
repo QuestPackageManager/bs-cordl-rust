@@ -12,6 +12,7 @@ pub struct ObjectPool_1<T: quest_hook::libil2cpp::Type> {
     pub m_ActionOnDestroy: quest_hook::libil2cpp::Gc<crate::System::Action_1<T>>,
     pub m_MaxSize: i32,
     pub m_CollectionCheck: bool,
+    pub m_FreshlyReleased: T,
     pub _CountAll_k__BackingField: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -387,6 +388,20 @@ for crate::UnityEngine::Pool::ObjectPool_1<T> {
 impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::Pool::IObjectPool_1<T>>
 for crate::UnityEngine::Pool::ObjectPool_1<T> {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::Pool::IObjectPool_1<T> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
+impl<T: quest_hook::libil2cpp::Type> AsRef<crate::UnityEngine::Pool::IPool>
+for crate::UnityEngine::Pool::ObjectPool_1<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::Pool::IPool {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+Pool+ObjectPool_1")]
+impl<T: quest_hook::libil2cpp::Type> AsMut<crate::UnityEngine::Pool::IPool>
+for crate::UnityEngine::Pool::ObjectPool_1<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::Pool::IPool {
         unsafe { std::mem::transmute(self) }
     }
 }

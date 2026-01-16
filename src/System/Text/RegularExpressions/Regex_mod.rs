@@ -620,7 +620,14 @@ impl crate::System::Text::RegularExpressions::Regex {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (input, startat))? };
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString0(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString1(
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -629,7 +636,7 @@ impl crate::System::Text::RegularExpressions::Regex {
             .invoke_void(".ctor", (pattern))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_RegexOptions1(
+    pub fn New_Il2CppString_RegexOptions2(
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Text::RegularExpressions::RegexOptions,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -639,7 +646,7 @@ impl crate::System::Text::RegularExpressions::Regex {
             .invoke_void(".ctor", (pattern, options))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_RegexOptions_TimeSpan__cordl_bool2(
+    pub fn New_Il2CppString_RegexOptions_TimeSpan__cordl_bool3(
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Text::RegularExpressions::RegexOptions,
         matchTimeout: crate::System::TimeSpan,
@@ -1252,7 +1259,28 @@ impl crate::System::Text::RegularExpressions::Regex {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString1(
         &mut self,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1278,7 +1306,7 @@ impl crate::System::Text::RegularExpressions::Regex {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_RegexOptions1(
+    pub fn _ctor_Il2CppString_RegexOptions2(
         &mut self,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Text::RegularExpressions::RegexOptions,
@@ -1310,7 +1338,7 @@ impl crate::System::Text::RegularExpressions::Regex {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_RegexOptions_TimeSpan__cordl_bool2(
+    pub fn _ctor_Il2CppString_RegexOptions_TimeSpan__cordl_bool3(
         &mut self,
         pattern: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         options: crate::System::Text::RegularExpressions::RegexOptions,

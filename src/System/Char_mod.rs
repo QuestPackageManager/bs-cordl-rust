@@ -95,13 +95,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Char {
 }
 #[cfg(feature = "System+Char")]
 impl crate::System::Char {
-    pub const HIGH_SURROGATE_START: i32 = 55296i32;
-    pub const LOW_SURROGATE_END: i32 = 57343i32;
-    pub const MaxValue: char = '\u{ffff}';
-    pub const MinValue: char = '\u{0}';
-    pub const UNICODE_PLANE00_END: i32 = 65535i32;
-    pub const UNICODE_PLANE01_START: i32 = 65536i32;
-    pub const UNICODE_PLANE16_END: i32 = 1114111i32;
     pub fn CheckLetter(
         uc: crate::System::Globalization::UnicodeCategory,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -402,23 +395,6 @@ impl crate::System::Char {
         let __cordl_ret: crate::System::Globalization::UnicodeCategory = unsafe {
             cordl_method_info.invoke_unchecked((), (ch))?
         };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetNumericValue(c: char) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(char), f64, 1usize>("GetNumericValue")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNumericValue", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeCode(

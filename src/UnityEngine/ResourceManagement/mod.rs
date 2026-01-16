@@ -6,13 +6,13 @@ pub use ChainOperationTypelessDepedency_1_mod::*;
 // class ChainOperation_2_mod; export all
 mod ChainOperation_2_mod;
 pub use ChainOperation_2_mod::*;
-// namespace Diagnostics;
-pub mod Diagnostics;
 // namespace Exceptions;
 pub mod Exceptions;
 // class IUpdateReceiver_mod; export all
 mod IUpdateReceiver_mod;
 pub use IUpdateReceiver_mod::*;
+// namespace Profiling;
+pub mod Profiling;
 // namespace ResourceLocations;
 pub mod ResourceLocations;
 // class ResourceManager_mod; export all

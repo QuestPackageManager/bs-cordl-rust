@@ -13,7 +13,7 @@ pub struct PlayerTransforms {
     pub _headWorldRot: crate::UnityEngine::Quaternion,
     pub _headPseudoLocalPos: crate::UnityEngine::Vector3,
     pub _headPseudoLocalRot: crate::UnityEngine::Quaternion,
-    pub _headPseudLocalZOnlyPos: crate::UnityEngine::Vector3,
+    pub _headPseudoLocalZOnlyPos: crate::UnityEngine::Vector3,
     pub _leftHandPseudoLocalPos: crate::UnityEngine::Vector3,
     pub _leftHandPseudoLocalRot: crate::UnityEngine::Quaternion,
     pub _rightHandPseudoLocalPos: crate::UnityEngine::Vector3,

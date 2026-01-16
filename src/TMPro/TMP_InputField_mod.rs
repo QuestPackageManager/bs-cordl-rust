@@ -14,7 +14,6 @@ pub struct TMP_InputField {
     pub m_TextViewportRectMask: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UI::RectMask2D,
     >,
-    pub m_CachedViewportRect: crate::UnityEngine::Rect,
     pub m_TextComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub m_TextComponentRectTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::RectTransform,
@@ -105,10 +104,11 @@ pub struct TMP_InputField {
     pub m_PreventCallback: bool,
     pub m_TouchKeyboardAllowsInPlaceEditing: bool,
     pub m_IsTextComponentUpdateRequired: bool,
-    pub m_isLastKeyBackspace: bool,
+    pub m_HasTextBeenRemoved: bool,
     pub m_PointerDownClickStartTime: f32,
     pub m_KeyDownStartTime: f32,
     pub m_DoubleClickDelay: f32,
+    pub m_IsApplePlatform: bool,
     pub m_IsCompositionActive: bool,
     pub m_ShouldUpdateIMEWindowPosition: bool,
     pub m_PreviousIMEInsertionLine: i32,
@@ -118,17 +118,22 @@ pub struct TMP_InputField {
     pub m_ResetOnDeActivation: bool,
     pub m_SelectionStillActive: bool,
     pub m_ReleaseSelection: bool,
+    pub m_LastKeyCode: crate::UnityEngine::KeyCode,
     pub m_PreviouslySelectedObject: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::GameObject,
     >,
+    pub m_KeepTextSelectionVisible: bool,
     pub m_RestoreOriginalTextOnEscape: bool,
     pub m_isRichTextEditingAllowed: bool,
     pub m_LineLimit: i32,
+    pub isAlert: bool,
     pub m_InputValidator: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_InputValidator>,
+    pub m_ShouldActivateOnSelect: bool,
     pub m_isSelected: bool,
     pub m_IsStringPositionDirty: bool,
     pub m_IsCaretPositionDirty: bool,
     pub m_forceRectTransformAdjustment: bool,
+    pub m_IsKeyboardBeingClosedInHoloLens: bool,
     pub m_ProcessingEvent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_InputField")]
@@ -167,6 +172,7 @@ impl std::ops::DerefMut for crate::TMPro::TMP_InputField {
 impl crate::TMPro::TMP_InputField {
     pub const kEmailSpecialCharacters: &'static str = "!#$%&\\'*+-/=?^_`{|}~";
     pub const kHScrollSpeed: f32 = 0.05f32;
+    pub const kOculusQuestDeviceModel: &'static str = "Oculus Quest";
     pub const kVScrollSpeed: f32 = 0.1f32;
     #[cfg(feature = "TMPro+TMP_InputField+CharacterValidation")]
     pub type CharacterValidation = crate::TMPro::TMP_InputField_CharacterValidation;
@@ -368,6 +374,27 @@ impl crate::TMPro::TMP_InputField {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Awake(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Backspace(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -466,6 +493,25 @@ impl crate::TMPro::TMP_InputField {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::IEnumerator,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClampArrayIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(i32), i32, 1usize>("ClampArrayIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClampArrayIndex", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ClampCaretPos(
@@ -756,7 +802,7 @@ impl crate::TMPro::TMP_InputField {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GenerateHightlight(
+    pub fn GenerateHighlight(
         &mut self,
         vbo: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::VertexHelper>,
         roundingOffset: crate::UnityEngine::Vector2,
@@ -774,12 +820,12 @@ impl crate::TMPro::TMP_InputField {
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("GenerateHightlight")
+                    >("GenerateHighlight")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GenerateHightlight", 2usize
+                            "GenerateHighlight", 2usize
                         )
                     })
             });
@@ -970,6 +1016,23 @@ impl crate::TMPro::TMP_InputField {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "InPlaceEditing", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InPlaceEditingChanged(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("InPlaceEditingChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InPlaceEditingChanged", 0usize
                         )
                     })
             });
@@ -1655,6 +1718,36 @@ impl crate::TMPro::TMP_InputField {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn OnCancel(
+        &mut self,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::BaseEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::BaseEventData,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnCancel")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnCancel", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (eventData))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn OnControlClick(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1856,6 +1949,36 @@ impl crate::TMPro::TMP_InputField {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnMove(
+        &mut self,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::AxisEventData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::EventSystems::AxisEventData,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnMove")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "OnMove",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (eventData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2727,6 +2850,25 @@ impl crate::TMPro::TMP_InputField {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn TouchScreenKeyboardShouldBeUsed(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("TouchScreenKeyboardShouldBeUsed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TouchScreenKeyboardShouldBeUsed", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn UnityEngine_UI_ICanvasElement_get_transform(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -2754,6 +2896,31 @@ impl crate::TMPro::TMP_InputField {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn UpdateCaretPositionFromStringIndex(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateCaretPositionFromStringIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateCaretPositionFromStringIndex", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateGeometry(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2771,6 +2938,31 @@ impl crate::TMPro::TMP_InputField {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "UpdateGeometry", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateKeyboardStringPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateKeyboardStringPosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateKeyboardStringPosition", 0usize
                         )
                     })
             });
@@ -2846,6 +3038,31 @@ impl crate::TMPro::TMP_InputField {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "UpdateScrollbar", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateStringIndexFromCaretPosition(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateStringIndexFromCaretPosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateStringIndexFromCaretPosition", 0usize
                         )
                     })
             });
@@ -3432,6 +3649,25 @@ impl crate::TMPro::TMP_InputField {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_isRichTextEditingAllowed", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_keepTextSelectionVisible(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_keepTextSelectionVisible")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_keepTextSelectionVisible", 0usize
                         )
                     })
             });
@@ -4140,6 +4376,23 @@ impl crate::TMPro::TMP_InputField {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_shouldActivateOnSelect(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_shouldActivateOnSelect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shouldActivateOnSelect", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_shouldHideMobileInput(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -4308,6 +4561,35 @@ impl crate::TMPro::TMP_InputField {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_touchScreenKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TouchScreenKeyboard>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TouchScreenKeyboard,
+                        >,
+                        0usize,
+                    >("get_touchScreenKeyboard")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_touchScreenKeyboard", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TouchScreenKeyboard,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_verticalScrollbar(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -4363,6 +4645,23 @@ impl crate::TMPro::TMP_InputField {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "isKeyboardUsingEvents", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn isUWP(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("isUWP")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "isUWP",
+                            0usize
                         )
                     })
             });
@@ -4776,6 +5075,32 @@ impl crate::TMPro::TMP_InputField {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_isRichTextEditingAllowed", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_keepTextSelectionVisible(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_keepTextSelectionVisible")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_keepTextSelectionVisible", 1usize
                         )
                     })
             });
@@ -5454,6 +5779,32 @@ impl crate::TMPro::TMP_InputField {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_shouldActivateOnSelect(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_shouldActivateOnSelect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_shouldActivateOnSelect", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_shouldHideMobileInput(
         &mut self,
         value: bool,
@@ -5709,6 +6060,20 @@ for crate::TMPro::TMP_InputField {
 impl AsMut<crate::UnityEngine::EventSystems::IBeginDragHandler>
 for crate::TMPro::TMP_InputField {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::IBeginDragHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsRef<crate::UnityEngine::EventSystems::ICancelHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_ref(&self) -> &crate::UnityEngine::EventSystems::ICancelHandler {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "TMPro+TMP_InputField")]
+impl AsMut<crate::UnityEngine::EventSystems::ICancelHandler>
+for crate::TMPro::TMP_InputField {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::EventSystems::ICancelHandler {
         unsafe { std::mem::transmute(self) }
     }
 }

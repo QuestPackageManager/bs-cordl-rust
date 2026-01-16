@@ -10,6 +10,10 @@ pub struct TrackLaneRingsManager {
     pub _ringPositionStep: f32,
     pub _spawnAsChildren: bool,
     pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
+    pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
     pub _rings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TrackLaneRing>,

@@ -22,6 +22,7 @@ pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Typ
     pub m_WaitingCache: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::HashSet_1<i32>,
     >,
+    pub m_ScrolledToItemIndex: crate::System::Nullable_1<i32>,
     pub m_ForcedFirstVisibleItem: i32,
     pub m_ForcedLastVisibleItem: i32,
     pub m_StickToBottom: bool,
@@ -56,6 +57,8 @@ pub struct DynamicHeightVirtualizationController_1<T: quest_hook::libil2cpp::Typ
     pub m_IndexOutOfBoundsPredicate: quest_hook::libil2cpp::Gc<
         crate::System::Predicate_1<i32>,
     >,
+    pub m_FillExecuted: bool,
+    pub m_TimeSinceFillScheduledMs: i64,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -578,6 +581,74 @@ impl<
             .invoke_void(".ctor", (collectionView))?;
         Ok(__cordl_object.into())
     }
+    pub fn OnDetachFromPanelEvent(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::DetachFromPanelEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::DetachFromPanelEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnDetachFromPanelEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnDetachFromPanelEvent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnGeometryChangedEvent(
+        &mut self,
+        _cordl__: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::GeometryChangedEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::GeometryChangedEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnGeometryChangedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnGeometryChangedEvent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (_cordl__))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn OnRecycledItemGeometryChanged(
         &mut self,
         item: quest_hook::libil2cpp::Gc<
@@ -1093,6 +1164,63 @@ impl<
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (previousHeight, newHeight))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _GetContentHeightForIndex_g__GetContentHeightFromCachedHeight_69_0(
+        &mut self,
+        index: i32,
+        heightInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
+                T,
+            >,
+        >,
+        _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject<T>>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::DynamicHeightVirtualizationController_1_ContentHeightCacheInfo<
+                                    T,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject<T>,
+                                >,
+                            >,
+                        ),
+                        f32,
+                        3usize,
+                    >(
+                        "<GetContentHeightForIndex>g__GetContentHeightFromCachedHeight|69_0",
+                    )
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<GetContentHeightForIndex>g__GetContentHeightFromCachedHeight|69_0",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (index, heightInfo, _cordl_fixed_empty_name_whitespace),
+                )?
         };
         Ok(__cordl_ret.into())
     }

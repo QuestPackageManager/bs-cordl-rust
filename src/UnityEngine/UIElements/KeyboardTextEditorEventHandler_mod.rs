@@ -42,7 +42,7 @@ for crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
 }
 #[cfg(feature = "UnityEngine+UIElements+KeyboardTextEditorEventHandler")]
 impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
-    pub fn ExecuteDefaultActionAtTarget(
+    pub fn HandleEventBubbleUp(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -56,12 +56,12 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("ExecuteDefaultActionAtTarget")
+                    >("HandleEventBubbleUp")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExecuteDefaultActionAtTarget", 1usize
+                            "HandleEventBubbleUp", 1usize
                         )
                     })
             });
@@ -264,26 +264,27 @@ impl crate::UnityEngine::UIElements::KeyboardTextEditorEventHandler {
     }
     pub fn UpdateLabel(
         &mut self,
+        generatePreview: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (),
+                        (bool),
                         quest_hook::libil2cpp::Void,
-                        0usize,
+                        1usize,
                     >("UpdateLabel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateLabel", 0usize
+                            "UpdateLabel", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, (generatePreview))?
         };
         Ok(__cordl_ret.into())
     }

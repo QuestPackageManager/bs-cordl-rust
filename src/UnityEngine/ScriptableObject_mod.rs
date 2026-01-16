@@ -143,6 +143,32 @@ impl crate::UnityEngine::ScriptableObject {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn CreateScriptableObjectInstanceFromType_Injected(
+        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        applyDefaultsAndReset: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Type>, bool),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("CreateScriptableObjectInstanceFromType_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateScriptableObjectInstanceFromType_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (_cordl_type, applyDefaultsAndReset))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

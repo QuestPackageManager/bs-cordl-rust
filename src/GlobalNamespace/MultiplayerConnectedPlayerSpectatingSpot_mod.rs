@@ -4,10 +4,10 @@
 pub struct MultiplayerConnectedPlayerSpectatingSpot {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _spectatingSpotManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerSpectatingSpotManager,

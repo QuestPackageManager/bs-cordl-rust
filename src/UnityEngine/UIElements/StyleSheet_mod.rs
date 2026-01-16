@@ -52,29 +52,24 @@ pub struct StyleSheet {
             crate::UnityEngine::UIElements::StyleSheets::ScalableImage,
         >,
     >,
-    pub orderedNameSelectors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub tables: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::StyleComplexSelector,
+                crate::System::Collections::Generic::Dictionary_2<
+                    quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::StyleComplexSelector,
+                    >,
+                >,
             >,
         >,
     >,
-    pub orderedTypeSelectors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::StyleComplexSelector,
-            >,
-        >,
+    pub nonEmptyTablesMask: i32,
+    pub firstRootSelector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleComplexSelector,
     >,
-    pub orderedClassSelectors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::StyleComplexSelector,
-            >,
-        >,
+    pub firstWildCardSelector: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::StyleComplexSelector,
     >,
     pub m_IsDefaultStyleSheet: bool,
 }
@@ -114,6 +109,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleSheet {
 impl crate::UnityEngine::UIElements::StyleSheet {
     #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
     pub type ImportStruct = crate::UnityEngine::UIElements::StyleSheet_ImportStruct;
+    #[cfg(feature = "UnityEngine+UIElements+StyleSheet+OrderedSelectorType")]
+    pub type OrderedSelectorType = crate::UnityEngine::UIElements::StyleSheet_OrderedSelectorType;
     pub fn CheckAccess<T>(
         &mut self,
         list: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
@@ -1471,3 +1468,98 @@ for crate::UnityEngine::UIElements::StyleSheet_ImportStruct {
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleSheet+ImportStruct")]
 impl crate::UnityEngine::UIElements::StyleSheet_ImportStruct {}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+OrderedSelectorType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum StyleSheet_OrderedSelectorType {
+    #[default]
+    Class = 2i32,
+    Length = 3i32,
+    Name = 0i32,
+    None = -1i32,
+    Type = 1i32,
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+OrderedSelectorType")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::StyleSheet_OrderedSelectorType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "StyleSheet/OrderedSelectorType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+OrderedSelectorType")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::UIElements::StyleSheet_OrderedSelectorType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+OrderedSelectorType")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::UIElements::StyleSheet_OrderedSelectorType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+OrderedSelectorType")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::UIElements::StyleSheet_OrderedSelectorType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+StyleSheet+OrderedSelectorType")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::UIElements::StyleSheet_OrderedSelectorType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}

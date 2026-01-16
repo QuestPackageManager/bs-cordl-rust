@@ -163,7 +163,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SecureRandomP
 pub struct SecureRandomProvider_SecureRandomState {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _random: quest_hook::libil2cpp::Gc<
-        crate::System::Security::Cryptography::RNGCryptoServiceProvider,
+        crate::System::Security::Cryptography::RandomNumberGenerator,
     >,
     pub _randomBuffer0: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u8>,

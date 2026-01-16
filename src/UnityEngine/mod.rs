@@ -1,3 +1,8 @@
+// namespace AI;
+pub mod AI;
+// class ActivePlayable_mod; export all
+mod ActivePlayable_mod;
+pub use ActivePlayable_mod::*;
 // class AddComponentMenu_mod; export all
 mod AddComponentMenu_mod;
 pub use AddComponentMenu_mod::*;
@@ -6,6 +11,8 @@ mod AdditionalCanvasShaderChannels_mod;
 pub use AdditionalCanvasShaderChannels_mod::*;
 // namespace AddressableAssets;
 pub mod AddressableAssets;
+// namespace Analytics;
+pub mod Analytics;
 // namespace Android;
 pub mod Android;
 // class AndroidJNIHelper_mod; export all
@@ -23,6 +30,9 @@ pub use AndroidJavaClass_mod::*;
 // class AndroidJavaException_mod; export all
 mod AndroidJavaException_mod;
 pub use AndroidJavaException_mod::*;
+// class AndroidJavaObjectUnityOwned_mod; export all
+mod AndroidJavaObjectUnityOwned_mod;
+pub use AndroidJavaObjectUnityOwned_mod::*;
 // class AndroidJavaObject_mod; export all
 mod AndroidJavaObject_mod;
 pub use AndroidJavaObject_mod::*;
@@ -47,6 +57,9 @@ pub use AnimationCullingType_mod::*;
 // class AnimationCurve_mod; export all
 mod AnimationCurve_mod;
 pub use AnimationCurve_mod::*;
+// class AnimationEventBlittable_mod; export all
+mod AnimationEventBlittable_mod;
+pub use AnimationEventBlittable_mod::*;
 // class AnimationEventSource_mod; export all
 mod AnimationEventSource_mod;
 pub use AnimationEventSource_mod::*;
@@ -59,6 +72,9 @@ pub use AnimationPlayMode_mod::*;
 // class AnimationState_mod; export all
 mod AnimationState_mod;
 pub use AnimationState_mod::*;
+// class AnimationUpdateMode_mod; export all
+mod AnimationUpdateMode_mod;
+pub use AnimationUpdateMode_mod::*;
 // class Animation_mod; export all
 mod Animation_mod;
 pub use Animation_mod::*;
@@ -251,6 +267,18 @@ pub use AvatarTarget_mod::*;
 // class Avatar_mod; export all
 mod Avatar_mod;
 pub use Avatar_mod::*;
+// class AwaitableCompletionSource_1_mod; export all
+mod AwaitableCompletionSource_1_mod;
+pub use AwaitableCompletionSource_1_mod::*;
+// class Awaitable_1_mod; export all
+mod Awaitable_1_mod;
+pub use Awaitable_1_mod::*;
+// class Awaitable_mod; export all
+mod Awaitable_mod;
+pub use Awaitable_mod::*;
+// class BatchRendererGroupRuntimeAnalytic_mod; export all
+mod BatchRendererGroupRuntimeAnalytic_mod;
+pub use BatchRendererGroupRuntimeAnalytic_mod::*;
 // class BatteryStatus_mod; export all
 mod BatteryStatus_mod;
 pub use BatteryStatus_mod::*;
@@ -280,6 +308,9 @@ pub use BoneWeight_mod::*;
 // class BootConfigData_mod; export all
 mod BootConfigData_mod;
 pub use BootConfigData_mod::*;
+// class BoundingSphere_mod; export all
+mod BoundingSphere_mod;
+pub use BoundingSphere_mod::*;
 // class BoundsInt_mod; export all
 mod BoundsInt_mod;
 pub use BoundsInt_mod::*;
@@ -331,6 +362,8 @@ pub use CapsulecastCommand_mod::*;
 // class CastHelper_1_mod; export all
 mod CastHelper_1_mod;
 pub use CastHelper_1_mod::*;
+// namespace Categorization;
+pub mod Categorization;
 // class CharacterController_mod; export all
 mod CharacterController_mod;
 pub use CharacterController_mod::*;
@@ -346,6 +379,12 @@ pub use ClassLibraryInitializer_mod::*;
 // class ClosestPointCommand_mod; export all
 mod ClosestPointCommand_mod;
 pub use ClosestPointCommand_mod::*;
+// class ClothSkinningCoefficient_mod; export all
+mod ClothSkinningCoefficient_mod;
+pub use ClothSkinningCoefficient_mod::*;
+// class ClothSphereColliderPair_mod; export all
+mod ClothSphereColliderPair_mod;
+pub use ClothSphereColliderPair_mod::*;
 // class Cloth_mod; export all
 mod Cloth_mod;
 pub use Cloth_mod::*;
@@ -382,9 +421,15 @@ pub use Collision_mod::*;
 // class Color32_mod; export all
 mod Color32_mod;
 pub use Color32_mod::*;
+// class ColorGamutUtility_mod; export all
+mod ColorGamutUtility_mod;
+pub use ColorGamutUtility_mod::*;
 // class ColorGamut_mod; export all
 mod ColorGamut_mod;
 pub use ColorGamut_mod::*;
+// class ColorPrimaries_mod; export all
+mod ColorPrimaries_mod;
+pub use ColorPrimaries_mod::*;
 // class ColorSpace_mod; export all
 mod ColorSpace_mod;
 pub use ColorSpace_mod::*;
@@ -403,6 +448,12 @@ pub use CombineInstance_mod::*;
 // class Component_mod; export all
 mod Component_mod;
 pub use Component_mod::*;
+// class ComputeBufferMode_mod; export all
+mod ComputeBufferMode_mod;
+pub use ComputeBufferMode_mod::*;
+// class ComputeBufferType_mod; export all
+mod ComputeBufferType_mod;
+pub use ComputeBufferType_mod::*;
 // class ComputeBuffer_mod; export all
 mod ComputeBuffer_mod;
 pub use ComputeBuffer_mod::*;
@@ -463,6 +514,9 @@ pub use CullingGroupEvent_mod::*;
 // class CullingGroup_mod; export all
 mod CullingGroup_mod;
 pub use CullingGroup_mod::*;
+// class CullingQueryOptions_mod; export all
+mod CullingQueryOptions_mod;
+pub use CullingQueryOptions_mod::*;
 // class CursorLockMode_mod; export all
 mod CursorLockMode_mod;
 pub use CursorLockMode_mod::*;
@@ -490,15 +544,12 @@ pub use Debug_mod::*;
 // class DefaultExecutionOrder_mod; export all
 mod DefaultExecutionOrder_mod;
 pub use DefaultExecutionOrder_mod::*;
+// class DelayedAttribute_mod; export all
+mod DelayedAttribute_mod;
+pub use DelayedAttribute_mod::*;
 // class DepthTextureMode_mod; export all
 mod DepthTextureMode_mod;
 pub use DepthTextureMode_mod::*;
-// class DetailPrototype_mod; export all
-mod DetailPrototype_mod;
-pub use DetailPrototype_mod::*;
-// class DetailRenderMode_mod; export all
-mod DetailRenderMode_mod;
-pub use DetailRenderMode_mod::*;
 // class DeviceType_mod; export all
 mod DeviceType_mod;
 pub use DeviceType_mod::*;
@@ -604,9 +655,15 @@ pub use FrameTimingManager_mod::*;
 // class FrameTiming_mod; export all
 mod FrameTiming_mod;
 pub use FrameTiming_mod::*;
+// class FrustumPlanes_mod; export all
+mod FrustumPlanes_mod;
+pub use FrustumPlanes_mod::*;
 // class FullScreenMode_mod; export all
 mod FullScreenMode_mod;
 pub use FullScreenMode_mod::*;
+// class GCHandlePool_mod; export all
+mod GCHandlePool_mod;
+pub use GCHandlePool_mod::*;
 // class GL_mod; export all
 mod GL_mod;
 pub use GL_mod::*;
@@ -661,6 +718,9 @@ pub use GUI_mod::*;
 // class GameObject_mod; export all
 mod GameObject_mod;
 pub use GameObject_mod::*;
+// class GeometryUtility_mod; export all
+mod GeometryUtility_mod;
+pub use GeometryUtility_mod::*;
 // class Gizmos_mod; export all
 mod Gizmos_mod;
 pub use Gizmos_mod::*;
@@ -691,9 +751,9 @@ pub use Graphics_mod::*;
 // class GridLayout_mod; export all
 mod GridLayout_mod;
 pub use GridLayout_mod::*;
-// class Grid_mod; export all
-mod Grid_mod;
-pub use Grid_mod::*;
+// class HDRDisplaySupportFlags_mod; export all
+mod HDRDisplaySupportFlags_mod;
+pub use HDRDisplaySupportFlags_mod::*;
 // class HDROutputSettings_mod; export all
 mod HDROutputSettings_mod;
 pub use HDROutputSettings_mod::*;
@@ -703,6 +763,9 @@ pub use Hash128_mod::*;
 // class HashUnsafeUtilities_mod; export all
 mod HashUnsafeUtilities_mod;
 pub use HashUnsafeUtilities_mod::*;
+// class HashUtilities_mod; export all
+mod HashUtilities_mod;
+pub use HashUtilities_mod::*;
 // class HeaderAttribute_mod; export all
 mod HeaderAttribute_mod;
 pub use HeaderAttribute_mod::*;
@@ -751,6 +814,9 @@ pub use ILogger_mod::*;
 // class IMECompositionMode_mod; export all
 mod IMECompositionMode_mod;
 pub use IMECompositionMode_mod::*;
+// class IMGUITextHandle_mod; export all
+mod IMGUITextHandle_mod;
+pub use IMGUITextHandle_mod::*;
 // class IPlayerEditorConnectionNative_mod; export all
 mod IPlayerEditorConnectionNative_mod;
 pub use IPlayerEditorConnectionNative_mod::*;
@@ -772,6 +838,8 @@ pub use ImageEffectAllowedInSceneView_mod::*;
 // class ImagePosition_mod; export all
 mod ImagePosition_mod;
 pub use ImagePosition_mod::*;
+// namespace InputForUI;
+pub mod InputForUI;
 // namespace InputSystem;
 pub mod InputSystem;
 // class Input_mod; export all
@@ -789,6 +857,9 @@ pub use InspectorSortDirection_mod::*;
 // class InspectorSort_mod; export all
 mod InspectorSort_mod;
 pub use InspectorSort_mod::*;
+// class InstantiateParameters_mod; export all
+mod InstantiateParameters_mod;
+pub use InstantiateParameters_mod::*;
 // class IntegratedSubsystemDescriptor_1_mod; export all
 mod IntegratedSubsystemDescriptor_1_mod;
 pub use IntegratedSubsystemDescriptor_1_mod::*;
@@ -801,6 +872,9 @@ pub use IntegratedSubsystem_1_mod::*;
 // class IntegratedSubsystem_mod; export all
 mod IntegratedSubsystem_mod;
 pub use IntegratedSubsystem_mod::*;
+// class IntegrationInfo_mod; export all
+mod IntegrationInfo_mod;
+pub use IntegrationInfo_mod::*;
 // namespace Internal;
 pub mod Internal;
 // class Internal_SubsystemDescriptors_mod; export all
@@ -809,6 +883,8 @@ pub use Internal_SubsystemDescriptors_mod::*;
 // class JNINativeMethod_mod; export all
 mod JNINativeMethod_mod;
 pub use JNINativeMethod_mod::*;
+// namespace Jobs;
+pub mod Jobs;
 // class JointDriveMode_mod; export all
 mod JointDriveMode_mod;
 pub use JointDriveMode_mod::*;
@@ -839,30 +915,39 @@ pub use KeyCode_mod::*;
 // class Keyframe_mod; export all
 mod Keyframe_mod;
 pub use Keyframe_mod::*;
+// class LODFadeMode_mod; export all
+mod LODFadeMode_mod;
+pub use LODFadeMode_mod::*;
 // class LODGroup_mod; export all
 mod LODGroup_mod;
 pub use LODGroup_mod::*;
-// class LOD_mod; export all
-mod LOD_mod;
-pub use LOD_mod::*;
 // class LayerMask_mod; export all
 mod LayerMask_mod;
 pub use LayerMask_mod::*;
 // class LazyLoadReference_1_mod; export all
 mod LazyLoadReference_1_mod;
 pub use LazyLoadReference_1_mod::*;
+// class LightAnchor_mod; export all
+mod LightAnchor_mod;
+pub use LightAnchor_mod::*;
 // class LightBakingOutput_mod; export all
 mod LightBakingOutput_mod;
 pub use LightBakingOutput_mod::*;
 // class LightProbeProxyVolume_mod; export all
 mod LightProbeProxyVolume_mod;
 pub use LightProbeProxyVolume_mod::*;
+// class LightProbesQuery_mod; export all
+mod LightProbesQuery_mod;
+pub use LightProbesQuery_mod::*;
 // class LightProbes_mod; export all
 mod LightProbes_mod;
 pub use LightProbes_mod::*;
 // class LightShadows_mod; export all
 mod LightShadows_mod;
 pub use LightShadows_mod::*;
+// class LightShape_mod; export all
+mod LightShape_mod;
+pub use LightShape_mod::*;
 // class LightType_mod; export all
 mod LightType_mod;
 pub use LightType_mod::*;
@@ -907,6 +992,8 @@ mod Logger_mod;
 pub use Logger_mod::*;
 // namespace LowLevel;
 pub mod LowLevel;
+// namespace LowLevelPhysics;
+pub mod LowLevelPhysics;
 // class LowerResBlitTexture_mod; export all
 mod LowerResBlitTexture_mod;
 pub use LowerResBlitTexture_mod::*;
@@ -955,6 +1042,12 @@ pub use Mesh_mod::*;
 // class MinAttribute_mod; export all
 mod MinAttribute_mod;
 pub use MinAttribute_mod::*;
+// class MipmapLimitDescriptor_mod; export all
+mod MipmapLimitDescriptor_mod;
+pub use MipmapLimitDescriptor_mod::*;
+// class MissingReferenceException_mod; export all
+mod MissingReferenceException_mod;
+pub use MissingReferenceException_mod::*;
 // class MixedLightingMode_mod; export all
 mod MixedLightingMode_mod;
 pub use MixedLightingMode_mod::*;
@@ -982,6 +1075,9 @@ pub use Motion_mod::*;
 // class MultilineAttribute_mod; export all
 mod MultilineAttribute_mod;
 pub use MultilineAttribute_mod::*;
+// class NameFormatter_mod; export all
+mod NameFormatter_mod;
+pub use NameFormatter_mod::*;
 // class NativeClassAttribute_mod; export all
 mod NativeClassAttribute_mod;
 pub use NativeClassAttribute_mod::*;
@@ -1017,8 +1113,6 @@ pub use OverlapCapsuleCommand_mod::*;
 // class OverlapSphereCommand_mod; export all
 mod OverlapSphereCommand_mod;
 pub use OverlapSphereCommand_mod::*;
-// namespace PS4;
-pub mod PS4;
 // class ParticleSystemBakeMeshOptions_mod; export all
 mod ParticleSystemBakeMeshOptions_mod;
 pub use ParticleSystemBakeMeshOptions_mod::*;
@@ -1087,6 +1181,12 @@ pub use PhysicMaterial_mod::*;
 // class Physics2D_mod; export all
 mod Physics2D_mod;
 pub use Physics2D_mod::*;
+// class PhysicsMaterialCombine_mod; export all
+mod PhysicsMaterialCombine_mod;
+pub use PhysicsMaterialCombine_mod::*;
+// class PhysicsMaterial_mod; export all
+mod PhysicsMaterial_mod;
+pub use PhysicsMaterial_mod::*;
 // class PhysicsScene2D_mod; export all
 mod PhysicsScene2D_mod;
 pub use PhysicsScene2D_mod::*;
@@ -1108,6 +1208,9 @@ pub use Plane_mod::*;
 // class PlayMode_mod; export all
 mod PlayMode_mod;
 pub use PlayMode_mod::*;
+// class PlayableSettings_mod; export all
+mod PlayableSettings_mod;
+pub use PlayableSettings_mod::*;
 // namespace Playables;
 pub mod Playables;
 // class PlayerConnectionInternal_mod; export all
@@ -1223,6 +1326,9 @@ pub use RenderMode_mod::*;
 // class RenderSettings_mod; export all
 mod RenderSettings_mod;
 pub use RenderSettings_mod::*;
+// class RenderTargetSetup_mod; export all
+mod RenderTargetSetup_mod;
+pub use RenderTargetSetup_mod::*;
 // class RenderTextureCreationFlags_mod; export all
 mod RenderTextureCreationFlags_mod;
 pub use RenderTextureCreationFlags_mod::*;
@@ -1246,6 +1352,9 @@ mod Renderer_mod;
 pub use Renderer_mod::*;
 // namespace Rendering;
 pub mod Rendering;
+// class RenderingLayerMask_mod; export all
+mod RenderingLayerMask_mod;
+pub use RenderingLayerMask_mod::*;
 // class RenderingPath_mod; export all
 mod RenderingPath_mod;
 pub use RenderingPath_mod::*;
@@ -1299,6 +1408,12 @@ pub use RuntimeInitializeOnLoadMethodAttribute_mod::*;
 // class RuntimePlatform_mod; export all
 mod RuntimePlatform_mod;
 pub use RuntimePlatform_mod::*;
+// class RuntimeTextSettings_mod; export all
+mod RuntimeTextSettings_mod;
+pub use RuntimeTextSettings_mod::*;
+// class ScalableBufferManager_mod; export all
+mod ScalableBufferManager_mod;
+pub use ScalableBufferManager_mod::*;
 // class ScaleMode_mod; export all
 mod ScaleMode_mod;
 pub use ScaleMode_mod::*;
@@ -1353,12 +1468,24 @@ pub use SetupCoroutine_mod::*;
 // class Shader_mod; export all
 mod Shader_mod;
 pub use Shader_mod::*;
+// class ShadowObjectsFilter_mod; export all
+mod ShadowObjectsFilter_mod;
+pub use ShadowObjectsFilter_mod::*;
+// class ShadowmaskMode_mod; export all
+mod ShadowmaskMode_mod;
+pub use ShadowmaskMode_mod::*;
 // class SharedBetweenAnimatorsAttribute_mod; export all
 mod SharedBetweenAnimatorsAttribute_mod;
 pub use SharedBetweenAnimatorsAttribute_mod::*;
 // class SimulationMode_mod; export all
 mod SimulationMode_mod;
 pub use SimulationMode_mod::*;
+// class SimulationOption_mod; export all
+mod SimulationOption_mod;
+pub use SimulationOption_mod::*;
+// class SimulationStage_mod; export all
+mod SimulationStage_mod;
+pub use SimulationStage_mod::*;
 // class SkeletonBone_mod; export all
 mod SkeletonBone_mod;
 pub use SkeletonBone_mod::*;
@@ -1371,6 +1498,9 @@ pub use SkinWeights_mod::*;
 // class SkinnedMeshRenderer_mod; export all
 mod SkinnedMeshRenderer_mod;
 pub use SkinnedMeshRenderer_mod::*;
+// class Skybox_mod; export all
+mod Skybox_mod;
+pub use Skybox_mod::*;
 // class SliderState_mod; export all
 mod SliderState_mod;
 pub use SliderState_mod::*;
@@ -1470,18 +1600,15 @@ pub use SystemInfo_mod::*;
 // class SystemLanguage_mod; export all
 mod SystemLanguage_mod;
 pub use SystemLanguage_mod::*;
+// class TagHandle_mod; export all
+mod TagHandle_mod;
+pub use TagHandle_mod::*;
 // class TerrainCallbacks_mod; export all
 mod TerrainCallbacks_mod;
 pub use TerrainCallbacks_mod::*;
-// class TerrainCollider_mod; export all
-mod TerrainCollider_mod;
-pub use TerrainCollider_mod::*;
 // class TerrainData_mod; export all
 mod TerrainData_mod;
 pub use TerrainData_mod::*;
-// class TerrainLayer_mod; export all
-mod TerrainLayer_mod;
-pub use TerrainLayer_mod::*;
 // namespace TerrainUtils;
 pub mod TerrainUtils;
 // class Terrain_mod; export all
@@ -1499,6 +1626,9 @@ pub use TextAreaAttribute_mod::*;
 // class TextAsset_mod; export all
 mod TextAsset_mod;
 pub use TextAsset_mod::*;
+// class TextClipping_mod; export all
+mod TextClipping_mod;
+pub use TextClipping_mod::*;
 // namespace TextCore;
 pub mod TextCore;
 // class TextEditOp_mod; export all
@@ -1516,6 +1646,9 @@ pub use TextGenerationError_mod::*;
 // class TextGenerationSettings_mod; export all
 mod TextGenerationSettings_mod;
 pub use TextGenerationSettings_mod::*;
+// class TextGeneratorType_mod; export all
+mod TextGeneratorType_mod;
+pub use TextGeneratorType_mod::*;
 // class TextGenerator_mod; export all
 mod TextGenerator_mod;
 pub use TextGenerator_mod::*;
@@ -1586,6 +1719,9 @@ pub use Touch_mod::*;
 // class TrackedReference_mod; export all
 mod TrackedReference_mod;
 pub use TrackedReference_mod::*;
+// class TransferFunction_mod; export all
+mod TransferFunction_mod;
+pub use TransferFunction_mod::*;
 // class TransformDispatchData_mod; export all
 mod TransformDispatchData_mod;
 pub use TransformDispatchData_mod::*;
@@ -1595,12 +1731,6 @@ pub use Transform_mod::*;
 // class TransparencySortMode_mod; export all
 mod TransparencySortMode_mod;
 pub use TransparencySortMode_mod::*;
-// class TreeInstance_mod; export all
-mod TreeInstance_mod;
-pub use TreeInstance_mod::*;
-// class TreePrototype_mod; export all
-mod TreePrototype_mod;
-pub use TreePrototype_mod::*;
 // class TypeDispatchData_mod; export all
 mod TypeDispatchData_mod;
 pub use TypeDispatchData_mod::*;
@@ -1643,6 +1773,8 @@ pub use UnityString_mod::*;
 // class UnitySynchronizationContext_mod; export all
 mod UnitySynchronizationContext_mod;
 pub use UnitySynchronizationContext_mod::*;
+// namespace VFX;
+pub mod VFX;
 // class VRTextureUsage_mod; export all
 mod VRTextureUsage_mod;
 pub use VRTextureUsage_mod::*;
@@ -1684,15 +1816,24 @@ pub use WaitForSecondsRealtime_mod::*;
 // class WaitForSeconds_mod; export all
 mod WaitForSeconds_mod;
 pub use WaitForSeconds_mod::*;
+// class WaitTimeoutMode_mod; export all
+mod WaitTimeoutMode_mod;
+pub use WaitTimeoutMode_mod::*;
 // class WaitUntil_mod; export all
 mod WaitUntil_mod;
 pub use WaitUntil_mod::*;
 // class WaitWhile_mod; export all
 mod WaitWhile_mod;
 pub use WaitWhile_mod::*;
+// class WeightedMode_mod; export all
+mod WeightedMode_mod;
+pub use WeightedMode_mod::*;
 // class WheelFrictionCurve_mod; export all
 mod WheelFrictionCurve_mod;
 pub use WheelFrictionCurve_mod::*;
+// class WhitePoint_mod; export all
+mod WhitePoint_mod;
+pub use WhitePoint_mod::*;
 // class WrapMode_mod; export all
 mod WrapMode_mod;
 pub use WrapMode_mod::*;
@@ -1704,8 +1845,6 @@ pub mod XR;
 // class YieldInstruction_mod; export all
 mod YieldInstruction_mod;
 pub use YieldInstruction_mod::*;
-// namespace Yoga;
-pub mod Yoga;
 // class _AndroidJNIHelper_mod; export all
 mod _AndroidJNIHelper_mod;
 pub use _AndroidJNIHelper_mod::*;

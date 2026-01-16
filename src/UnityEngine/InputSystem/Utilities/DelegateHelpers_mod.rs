@@ -212,12 +212,13 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeCallbacksSafe_Il2CppString_Il2CppObject0(
+    pub fn InvokeCallbacksSafe_ProfilerMarker_Il2CppString_Il2CppObject0(
         callbacks: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::Utilities::CallbackArray_1<
                 quest_hook::libil2cpp::Gc<crate::System::Action>,
             >,
         >,
+        marker: crate::Unity::Profiling::ProfilerMarker,
         callbackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -232,6 +233,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                                     quest_hook::libil2cpp::Gc<crate::System::Action>,
                                 >,
                             >,
+                            crate::Unity::Profiling::ProfilerMarker,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
@@ -240,22 +242,23 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        4usize,
                     >("InvokeCallbacksSafe")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeCallbacksSafe", 3usize
+                            "InvokeCallbacksSafe", 4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (callbacks, callbackName, context))?
+            cordl_method_info
+                .invoke_unchecked((), (callbacks, marker, callbackName, context))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InvokeCallbacksSafe_TValue1_TValue2_Il2CppString_Il2CppObject2<
+    pub fn InvokeCallbacksSafe_TValue1_TValue2_ProfilerMarker_Il2CppString_Il2CppObject2<
         TValue1,
         TValue2,
     >(
@@ -266,6 +269,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
         >,
         argument1: TValue1,
         argument2: TValue2,
+        marker: crate::Unity::Profiling::ProfilerMarker,
         callbackName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         context: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -290,6 +294,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                             >,
                             TValue1,
                             TValue2,
+                            crate::Unity::Profiling::ProfilerMarker,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
@@ -298,13 +303,13 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        6usize,
                     >("InvokeCallbacksSafe")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InvokeCallbacksSafe", 5usize
+                            "InvokeCallbacksSafe", 6usize
                         )
                     })
             });
@@ -312,7 +317,7 @@ impl crate::UnityEngine::InputSystem::Utilities::DelegateHelpers {
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (callbacks, argument1, argument2, callbackName, context),
+                    (callbacks, argument1, argument2, marker, callbackName, context),
                 )?
         };
         Ok(__cordl_ret.into())

@@ -1,3 +1,6 @@
+// class AutoCompletePathVisitor_mod; export all
+mod AutoCompletePathVisitor_mod;
+pub use AutoCompletePathVisitor_mod::*;
 // class ColumnMover_mod; export all
 mod ColumnMover_mod;
 pub use ColumnMover_mod::*;
@@ -28,3 +31,6 @@ pub use MultiColumnHeaderColumnSortIndicator_mod::*;
 // class MultiColumnHeaderColumn_mod; export all
 mod MultiColumnHeaderColumn_mod;
 pub use MultiColumnHeaderColumn_mod::*;
+// class TypePathVisitor_mod; export all
+mod TypePathVisitor_mod;
+pub use TypePathVisitor_mod::*;

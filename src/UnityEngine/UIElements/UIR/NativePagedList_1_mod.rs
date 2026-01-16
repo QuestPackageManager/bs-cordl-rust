@@ -9,8 +9,10 @@ pub struct NativePagedList_1<T: quest_hook::libil2cpp::Type> {
             crate::Unity::Collections::NativeArray_1<T>,
         >,
     >,
-    pub m_CurrentPage: crate::Unity::Collections::NativeArray_1<T>,
-    pub m_CurrentPageCount: i32,
+    pub m_LastPage: crate::Unity::Collections::NativeArray_1<T>,
+    pub m_CountInLastPage: i32,
+    pub m_FirstPageAllocator: crate::Unity::Collections::Allocator,
+    pub m_OtherPagesAllocator: crate::Unity::Collections::Allocator,
     pub m_Enumerator: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             crate::Unity::Collections::NativeSlice_1<T>,
@@ -74,7 +76,11 @@ for crate::UnityEngine::UIElements::UIR::NativePagedList_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UIR::NativePagedList_1<T> {
-    pub fn Add(
+    #[cfg(feature = "UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+    pub type Enumerator = crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<
+        T,
+    >;
+    pub fn Add_ByRefMut0(
         &mut self,
         data: quest_hook::libil2cpp::ByRefMut<T>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -91,6 +97,32 @@ impl<
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (data))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_T1(
+        &mut self,
+        data: T,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(T), quest_hook::libil2cpp::Void, 1usize>("Add")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -159,6 +191,27 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("GetCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCount", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetPages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -202,6 +255,8 @@ impl<
     }
     pub fn New(
         poolCapacity: i32,
+        firstPageAllocator: crate::Unity::Collections::Allocator,
+        otherPagesAllocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -210,7 +265,10 @@ impl<
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (poolCapacity))?;
+            .invoke_void(
+                ".ctor",
+                (poolCapacity, firstPageAllocator, otherPagesAllocator),
+            )?;
         Ok(__cordl_object.into())
     }
     pub fn Reset(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -239,6 +297,8 @@ impl<
     pub fn _ctor(
         &mut self,
         poolCapacity: i32,
+        firstPageAllocator: crate::Unity::Collections::Allocator,
+        otherPagesAllocator: crate::Unity::Collections::Allocator,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -248,17 +308,29 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>(".ctor")
+                    .find_method::<
+                        (
+                            i32,
+                            crate::Unity::Collections::Allocator,
+                            crate::Unity::Collections::Allocator,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            1usize
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (poolCapacity))?
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (poolCapacity, firstPageAllocator, otherPagesAllocator),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -336,5 +408,214 @@ impl<T: quest_hook::libil2cpp::Type> AsMut<crate::System::IDisposable>
 for crate::UnityEngine::UIElements::UIR::NativePagedList_1<T> {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct NativePagedList_1_Enumerator<T: quest_hook::libil2cpp::Type> {
+    pub m_NativePagedList: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::NativePagedList_1<T>,
+    >,
+    pub m_CurrentPage: crate::Unity::Collections::NativeArray_1<T>,
+    pub m_IndexInCurrentPage: i32,
+    pub m_IndexOfCurrentPage: i32,
+    pub m_CountInCurrentPage: i32,
+    __cordl_phantom_T: std::marker::PhantomData<T>,
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<T> {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
+    const CLASS_NAME: &'static str = "NativePagedList`1/Enumerator";
+    fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
+        static CLASS: ::std::sync::OnceLock<
+            &'static quest_hook::libil2cpp::Il2CppClass,
+        > = ::std::sync::OnceLock::new();
+        CLASS
+            .get_or_init(|| {
+                quest_hook::libil2cpp::Il2CppClass::find(
+                        "UnityEngine.UIElements.UIR",
+                        "NativePagedList`1/Enumerator",
+                    )
+                    .unwrap()
+                    .make_generic::<(T)>()
+                    .unwrap()
+                    .unwrap()
+            })
+    }
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Argument
+for crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<T> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<T> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Returned
+for crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<T> {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Return
+for crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<T> {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+unsafe impl<T: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<T> {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+UIR+NativePagedList_1+Enumerator")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::UIR::NativePagedList_1_Enumerator<T> {
+    pub fn GetNext(&mut self) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), T, 0usize>("GetNext")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetNext",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: T = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasNext(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("HasNext")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "HasNext",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        nativePagedList: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::NativePagedList_1<T>,
+        >,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::UIR::NativePagedList_1<T>,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (nativePagedList, offset))?
+        };
+        Ok(__cordl_ret.into())
     }
 }

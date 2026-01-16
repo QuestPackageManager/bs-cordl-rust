@@ -29,19 +29,12 @@ pub struct OVRTrackedKeyboard {
         >,
     >,
     pub activeKeyboardMesh_: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    pub keyboardMeshNodes_: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
-    >,
     pub activeKeyboardMeshRenderer_: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MeshRenderer,
     >,
     pub passthroughQuad_: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    pub opaqueShader_: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub dynamicQualityTexture_: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
     pub untrackedPosition_: crate::UnityEngine::Vector3,
-    pub KeyLabelModeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub PassthroughShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub projectedPassthroughRoot: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Transform,
@@ -49,7 +42,7 @@ pub struct OVRTrackedKeyboard {
     pub projectedPassthroughMesh: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MeshFilter,
     >,
-    pub ProjectedPassthroughKeyLabel: quest_hook::libil2cpp::Gc<
+    pub ProjectedPassthroughMR: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRPassthroughLayer,
     >,
     pub TrackedKeyboardActiveChanged: quest_hook::libil2cpp::Gc<
@@ -1282,7 +1275,7 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRTrackedKey
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRTrackedKeyboard_KeyboardPresentation {
     #[default]
-    PreferKeyLabels = 1i32,
+    PreferMR = 1i32,
     PreferOpaque = 0i32,
 }
 #[cfg(feature = "cordl_class_OVRTrackedKeyboard+KeyboardPresentation")]

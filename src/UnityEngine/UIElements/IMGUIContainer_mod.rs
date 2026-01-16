@@ -15,7 +15,7 @@ pub struct IMGUIContainer {
     >,
     pub m_CachedClippingRect: crate::UnityEngine::Rect,
     pub m_CachedTransform: crate::UnityEngine::Matrix4x4,
-    pub _contextType_k__BackingField: crate::UnityEngine::UIElements::ContextType,
+    pub m_ContextType: crate::UnityEngine::UIElements::ContextType,
     pub lostFocus: bool,
     pub receivedFocus: bool,
     pub focusChangeDirection: quest_hook::libil2cpp::Gc<
@@ -229,34 +229,6 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ExecuteDefaultAction(
-        &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::EventBase,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ExecuteDefaultAction")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExecuteDefaultAction", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (evt))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn GetCurrentClipRect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
@@ -319,6 +291,62 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (container, evt, transform, clipRect))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleEventBubbleUp(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::EventBase,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleEventBubbleUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleEventBubbleUp", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleEventBubbleUpDisabled(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::EventBase,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleEventBubbleUpDisabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleEventBubbleUpDisabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -566,18 +594,14 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
     }
     pub fn OnGenerateVisualContent(
         &mut self,
-        mgc: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::MeshGenerationContext,
-        >,
+        mgc: Blacklisted,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::MeshGenerationContext,
-                        >),
+                        (Blacklisted),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnGenerateVisualContent")
@@ -591,34 +615,6 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (mgc))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ProcessEvent(
-        &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::EventBase,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ProcessEvent")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ProcessEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (evt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -795,7 +791,7 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _DoOnGUI_b__56_0(
+    pub fn _DoOnGUI_b__59_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -806,12 +802,12 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<DoOnGUI>b__56_0")
+                    >("<DoOnGUI>b__59_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<DoOnGUI>b__56_0", 0usize
+                            "<DoOnGUI>b__59_0", 0usize
                         )
                     })
             });
@@ -1117,6 +1113,32 @@ impl crate::UnityEngine::UIElements::IMGUIContainer {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_cullingEnabled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_cullingEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_cullingEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_lastWorldClip(
         &mut self,
         value: crate::UnityEngine::Rect,
@@ -1205,6 +1227,7 @@ pub struct IMGUIContainer_GUIGlobals {
     pub enabled: bool,
     pub changed: bool,
     pub displayIndex: i32,
+    pub pixelsPerPoint: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+IMGUIContainer+GUIGlobals")]
 unsafe impl quest_hook::libil2cpp::Type

@@ -473,6 +473,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
         jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IJumpOffsetYProvider,
         >,
+        timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
         timeSinceHeadNoteJump: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -493,16 +494,19 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IJumpOffsetYProvider,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::TimeHelper,
+                            >,
                             f32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        6usize,
                     >("UpdateMaterialPropertyBlock")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateMaterialPropertyBlock", 5usize
+                            "UpdateMaterialPropertyBlock", 6usize
                         )
                     })
             });
@@ -515,6 +519,7 @@ impl crate::GlobalNamespace::SliderShaderHelper {
                         sliderController,
                         variableMovementDataProvider,
                         jumpOffsetYProvider,
+                        timeHelper,
                         timeSinceHeadNoteJump,
                     ),
                 )?

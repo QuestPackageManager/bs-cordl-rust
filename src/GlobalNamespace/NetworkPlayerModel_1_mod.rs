@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct NetworkPlayerModel_1<T: quest_hook::libil2cpp::Type> {
     __cordl_parent: crate::GlobalNamespace::BaseNetworkPlayerModel,
-    pub _platformUserModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IPlatformUserModel,
+    pub _platform: quest_hook::libil2cpp::Gc<
+        crate::OculusStudios::Platform::Core::IPlatform,
     >,
     pub _authenticationTokenProviderTask: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::Task_1<
@@ -105,8 +105,12 @@ for crate::GlobalNamespace::NetworkPlayerModel_1<T> {
 }
 #[cfg(feature = "NetworkPlayerModel_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_1<T> {
+    pub const kMockedPlatformKey: &'static str = "mock";
+    pub const kOculusMockedPlatformKey: &'static str = "oculus-mock";
+    pub const kOculusPlatformKey: &'static str = "oculus";
     pub const kServerRefreshFrequency: f32 = 10f32;
     pub const kServerTimeoutPeriod: f32 = 21f32;
+    pub const kSteamPlatformKey: &'static str = "steam";
     #[cfg(feature = "NetworkPlayerModel_1+JoinMatchmakingPartyConfig")]
     pub type JoinMatchmakingPartyConfig = crate::GlobalNamespace::NetworkPlayerModel_1_JoinMatchmakingPartyConfig<
         T,
@@ -589,36 +593,6 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
         };
         Ok(__cordl_ret.into())
     }
-    pub fn HandlePlatformUserInfoDidChange(
-        &mut self,
-        newInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("HandlePlatformUserInfoDidChange")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandlePlatformUserInfoDidChange", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newInfo))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn HandlePlayersChanged(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -708,7 +682,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
     }
     pub fn PlayerConnected(
         &mut self,
-        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        player: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -720,7 +696,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -740,7 +716,9 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
     }
     pub fn PlayerDisconnected(
         &mut self,
-        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        player: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -752,7 +730,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -773,7 +751,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
     pub fn PlayerOrderChanged(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -786,7 +764,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -807,7 +785,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
     pub fn PlayerStateChanged(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -820,7 +798,7 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::NetworkPlayerModel_
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -1831,7 +1809,7 @@ pub struct NetworkPlayerModel_1_NetworkPlayer<T: quest_hook::libil2cpp::Type> {
         crate::GlobalNamespace::NetworkPlayerModel_1<T>,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
@@ -2044,7 +2022,7 @@ impl<
             crate::GlobalNamespace::NetworkPlayerModel_1<T>,
         >,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
@@ -2148,7 +2126,7 @@ impl<
             crate::GlobalNamespace::NetworkPlayerModel_1<T>,
         >,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
@@ -2165,7 +2143,7 @@ impl<
                                 crate::GlobalNamespace::NetworkPlayerModel_1<T>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
+                                crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -2344,7 +2322,7 @@ impl<
     pub fn get_connectedPlayer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -2357,7 +2335,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >,
                         0usize,
                     >("get_connectedPlayer")
@@ -2370,7 +2348,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -3286,7 +3264,7 @@ impl<
     pub fn get_connectedPlayer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
     >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -3299,7 +3277,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >,
                         0usize,
                     >("get_connectedPlayer")
@@ -3312,7 +3290,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

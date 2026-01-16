@@ -3,11 +3,12 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum Enumerator_OVREnumerable_1_CollectionType {
     #[default]
-    Enumerable = 4i32,
-    List = 1i32,
+    Enumerable = 5i32,
+    List = 2i32,
     None = 0i32,
-    Queue = 3i32,
-    Set = 2i32,
+    Queue = 4i32,
+    ReadOnlyList = 1i32,
+    Set = 3i32,
 }
 #[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator+CollectionType")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -214,6 +215,27 @@ for crate::GlobalNamespace::OVREnumerable_1<T> {
 impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> {
     #[cfg(feature = "OVREnumerable_1+Enumerator")]
     pub type Enumerator = crate::GlobalNamespace::OVREnumerable_1_Enumerator<T>;
+    pub fn GetCount(&mut self) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("GetCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCount", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetEnumerator(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -312,6 +334,36 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> 
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn TryGetCount(
+        &mut self,
+        count: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<i32>),
+                        bool,
+                        1usize,
+                    >("TryGetCount")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetCount", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (count))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         enumerable: quest_hook::libil2cpp::Gc<
@@ -343,6 +395,35 @@ impl<T: quest_hook::libil2cpp::Type> crate::GlobalNamespace::OVREnumerable_1<T> 
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (enumerable))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Count(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Nullable_1<i32>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::System::Nullable_1<i32>,
+                        0usize,
+                    >("get_Count")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Count", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::Nullable_1<i32> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -389,11 +470,12 @@ pub struct OVREnumerable_1_Enumerator<T: quest_hook::libil2cpp::Type> {
     pub _enumerator: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IEnumerator_1<T>,
     >,
-    pub _list: quest_hook::libil2cpp::Gc<
+    pub _readOnlyList: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IReadOnlyList_1<T>,
     >,
     pub _setEnumerator: crate::System::Collections::Generic::HashSet_1_Enumerator<T>,
     pub _queueEnumerator: crate::System::Collections::Generic::Queue_1_Enumerator<T>,
+    pub _listEnumerator: crate::System::Collections::Generic::List_1_Enumerator<T>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_OVREnumerable_1+Enumerator")]
@@ -559,7 +641,7 @@ impl<
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn MoveNextList(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    pub fn MoveNextReadOnlyList(&mut self) -> quest_hook::libil2cpp::Result<bool>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -568,12 +650,12 @@ impl<
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), bool, 0usize>("MoveNextList")
+                    .find_method::<(), bool, 0usize>("MoveNextReadOnlyList")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MoveNextList", 0usize
+                            "MoveNextReadOnlyList", 0usize
                         )
                     })
             });

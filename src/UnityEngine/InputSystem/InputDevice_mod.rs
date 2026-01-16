@@ -7,6 +7,7 @@ pub struct InputDevice {
     pub m_DeviceId: i32,
     pub m_ParticipantId: i32,
     pub m_DeviceIndex: i32,
+    pub m_CurrentProcessedEventBytesOnUpdate: u32,
     pub m_Description: crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription,
     pub m_LastUpdateTimeInternal: f64,
     pub m_CurrentUpdateStepCount: u32,
@@ -30,6 +31,17 @@ pub struct InputDevice {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         >,
     >,
+    pub m_UpdatedButtons: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::HashSet_1<i32>,
+    >,
+    pub m_ButtonControlsCheckingPressState: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::InputSystem::Controls::ButtonControl,
+            >,
+        >,
+    >,
+    pub m_UseCachePathForButtonPresses: bool,
     pub m_StateOffsetToControlMap: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u32>,
     >,
@@ -930,7 +942,6 @@ impl crate::UnityEngine::InputSystem::InputDevice {
     pub fn WriteChangedControlStatesInternal(
         &mut self,
         statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-        stateSizeInBits: u32,
         deviceStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         parentNode: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
         startOffset: u32,
@@ -944,7 +955,6 @@ impl crate::UnityEngine::InputSystem::InputDevice {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
-                            u32,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppObject,
                             >,
@@ -952,13 +962,13 @@ impl crate::UnityEngine::InputSystem::InputDevice {
                             u32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        4usize,
                     >("WriteChangedControlStatesInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WriteChangedControlStatesInternal", 5usize
+                            "WriteChangedControlStatesInternal", 4usize
                         )
                     })
             });
@@ -966,17 +976,15 @@ impl crate::UnityEngine::InputSystem::InputDevice {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (statePtr, stateSizeInBits, deviceStatePtr, parentNode, startOffset),
+                    (statePtr, deviceStatePtr, parentNode, startOffset),
                 )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn WritePartialChangedControlStatesInternal(
         &mut self,
-        statePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         stateSizeInBits: u32,
         stateOffsetInDeviceInBits: u32,
-        deviceStatePtr: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         parentNode: crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
         startOffset: u32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -986,25 +994,19 @@ impl crate::UnityEngine::InputSystem::InputDevice {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
                             u32,
                             u32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppObject,
-                            >,
                             crate::UnityEngine::InputSystem::InputDevice_ControlBitRangeNode,
                             u32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        6usize,
+                        4usize,
                     >("WritePartialChangedControlStatesInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WritePartialChangedControlStatesInternal", 6usize
+                            "WritePartialChangedControlStatesInternal", 4usize
                         )
                     })
             });
@@ -1012,14 +1014,7 @@ impl crate::UnityEngine::InputSystem::InputDevice {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (
-                        statePtr,
-                        stateSizeInBits,
-                        stateOffsetInDeviceInBits,
-                        deviceStatePtr,
-                        parentNode,
-                        startOffset,
-                    ),
+                    (stateSizeInBits, stateOffsetInDeviceInBits, parentNode, startOffset),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -1124,6 +1119,25 @@ impl crate::UnityEngine::InputSystem::InputDevice {
         let __cordl_ret: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_canDeviceRunInBackground(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_canDeviceRunInBackground")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_canDeviceRunInBackground", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_canRunInBackground(&mut self) -> quest_hook::libil2cpp::Result<bool> {

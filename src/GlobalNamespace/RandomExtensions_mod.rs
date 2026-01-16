@@ -39,14 +39,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::RandomExtensions {
 #[cfg(feature = "RandomExtensions")]
 impl crate::GlobalNamespace::RandomExtensions {
     pub fn GetBool(
-        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Random>),
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>),
                         bool,
                         1usize,
                     >("GetBool")
@@ -64,7 +64,7 @@ impl crate::GlobalNamespace::RandomExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn GetRange(
-        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
         min: f32,
         max: f32,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -73,7 +73,11 @@ impl crate::GlobalNamespace::RandomExtensions {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Random>, f32, f32),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+                            f32,
+                            f32,
+                        ),
                         f32,
                         3usize,
                     >("GetRange")
@@ -87,6 +91,85 @@ impl crate::GlobalNamespace::RandomExtensions {
             });
         let __cordl_ret: f32 = unsafe {
             cordl_method_info.invoke_unchecked((), (random, min, max))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Next(
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+        maxValue: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+                            i32,
+                        ),
+                        i32,
+                        2usize,
+                    >("Next")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Next",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (random, maxValue))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn NextDouble(
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+    ) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>),
+                        f64,
+                        1usize,
+                    >("NextDouble")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NextDouble", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (random))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn NextFloat(
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>),
+                        f32,
+                        1usize,
+                    >("NextFloat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NextFloat", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (random))?
         };
         Ok(__cordl_ret.into())
     }

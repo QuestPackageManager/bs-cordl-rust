@@ -7,6 +7,9 @@ pub use FastBitConverter_mod::*;
 // class INetImmutableSerializable_1_mod; export all
 mod INetImmutableSerializable_1_mod;
 pub use INetImmutableSerializable_1_mod::*;
+// class INetImmutableSerializable_mod; export all
+mod INetImmutableSerializable_mod;
+pub use INetImmutableSerializable_mod::*;
 // class INetSerializable_mod; export all
 mod INetSerializable_mod;
 pub use INetSerializable_mod::*;

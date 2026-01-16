@@ -9,6 +9,7 @@ pub struct InputFieldView {
     pub _placeholderText: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _clearSearchButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _useGlobalKeyboard: bool,
+    pub _useSystemKeyboardIfAvailable: bool,
     pub _keyboardPositionOffset: crate::UnityEngine::Vector3,
     pub _useUppercase: bool,
     pub _textLengthLimit: i32,
@@ -396,7 +397,7 @@ impl crate::HMUI::InputFieldView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__34_0(
+    pub fn _Awake_b__37_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -407,12 +408,12 @@ impl crate::HMUI::InputFieldView {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<Awake>b__34_0")
+                    >("<Awake>b__37_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__34_0", 0usize
+                            "<Awake>b__37_0", 0usize
                         )
                     })
             });
@@ -591,6 +592,25 @@ impl crate::HMUI::InputFieldView {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_useGlobalKeyboard", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useSystemKeyboardIfAvailable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_useSystemKeyboardIfAvailable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useSystemKeyboardIfAvailable", 0usize
                         )
                     })
             });

@@ -7,7 +7,7 @@ pub struct GameplayServerFiniteStateMachine {
         crate::BGNet::Core::ITaskUtility,
     >,
     pub _multiplayerSessionManager_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _ownerUserId_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
@@ -215,7 +215,9 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     pub fn get_multiplayerSessionManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSessionManager>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -224,7 +226,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IMultiplayerSessionManager,
+                            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                         >,
                         0usize,
                     >("get_multiplayerSessionManager")
@@ -237,7 +239,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -435,7 +437,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
     pub fn set_multiplayerSessionManager(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -444,7 +446,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IMultiplayerSessionManager,
+                            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -557,7 +559,7 @@ for crate::GlobalNamespace::GameplayServerFiniteStateMachine {
 pub struct GameplayServerFiniteStateMachine_InitParams {
     pub taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
     pub multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub creatorId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -667,7 +669,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
         &mut self,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         creatorId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -684,7 +686,7 @@ impl crate::GlobalNamespace::GameplayServerFiniteStateMachine_InitParams {
                         (
                             quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSessionManager,
+                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,

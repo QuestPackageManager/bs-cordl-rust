@@ -29,6 +29,8 @@ pub struct TMP_Text {
     pub m_fontColor: crate::UnityEngine::Color,
     pub m_underlineColor: crate::UnityEngine::Color32,
     pub m_strikethroughColor: crate::UnityEngine::Color32,
+    pub m_HighlightState: crate::TMPro::HighlightState,
+    pub m_ConvertToLinearSpace: bool,
     pub m_enableVertexGradient: bool,
     pub m_colorMode: crate::TMPro::ColorMode,
     pub m_fontColorGradient: crate::TMPro::VertexGradient,
@@ -46,6 +48,8 @@ pub struct TMP_Text {
     pub m_faceColor: crate::UnityEngine::Color32,
     pub m_outlineColor: crate::UnityEngine::Color32,
     pub m_outlineWidth: f32,
+    pub m_currentEnvMapRotation: crate::UnityEngine::Vector3,
+    pub m_hasEnvMapProperty: bool,
     pub m_fontSize: f32,
     pub m_currentFontSize: f32,
     pub m_fontSizeBase: f32,
@@ -80,6 +84,7 @@ pub struct TMP_Text {
     pub m_characterSpacing: f32,
     pub m_cSpacing: f32,
     pub m_monoSpacing: f32,
+    pub m_duoSpace: bool,
     pub m_wordSpacing: f32,
     pub m_lineSpacing: f32,
     pub m_lineSpacingDelta: f32,
@@ -89,7 +94,7 @@ pub struct TMP_Text {
     pub m_paragraphSpacing: f32,
     pub m_charWidthMaxAdj: f32,
     pub m_charWidthAdjDelta: f32,
-    pub m_enableWordWrapping: bool,
+    pub m_TextWrappingMode: crate::TMPro::TextWrappingModes,
     pub m_isCharacterWrappingEnabled: bool,
     pub m_isNonBreakingSpace: bool,
     pub m_isIgnoringAlignment: bool,
@@ -100,10 +105,16 @@ pub struct TMP_Text {
     pub parentLinkedComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
     pub m_isTextTruncated: bool,
     pub m_enableKerning: bool,
-    pub m_GlyphHorizontalAdvanceAdjustment: f32,
+    pub m_LastBaseGlyphIndex: i32,
+    pub m_ActiveFontFeatures: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::OTL_FeatureTag,
+        >,
+    >,
     pub m_enableExtraPadding: bool,
     pub checkPaddingRequired: bool,
     pub m_isRichText: bool,
+    pub m_EmojiFallbackSupport: bool,
     pub m_parseCtrlCharacters: bool,
     pub m_isOverlay: bool,
     pub m_isOrthographic: bool,
@@ -156,10 +167,10 @@ pub struct TMP_Text {
         crate::UnityEngine::UI::LayoutElement,
     >,
     pub m_preferredWidth: f32,
-    pub m_renderedWidth: f32,
+    pub m_RenderedWidth: f32,
     pub m_isPreferredWidthDirty: bool,
     pub m_preferredHeight: f32,
-    pub m_renderedHeight: f32,
+    pub m_RenderedHeight: f32,
     pub m_isPreferredHeightDirty: bool,
     pub m_isCalculatingPreferredValues: bool,
     pub m_layoutPriority: i32,
@@ -172,11 +183,11 @@ pub struct TMP_Text {
     pub tag_Indent: f32,
     pub m_indentStack: crate::TMPro::TMP_TextProcessingStack_1<f32>,
     pub tag_NoParsing: bool,
-    pub m_isParsingText: bool,
-    pub m_FXMatrix: crate::UnityEngine::Matrix4x4,
-    pub m_isFXMatrixSet: bool,
+    pub m_isTextLayoutPhase: bool,
+    pub m_FXRotation: crate::UnityEngine::Quaternion,
+    pub m_FXScale: crate::UnityEngine::Vector3,
     pub m_TextProcessingArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+        quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_TextProcessingElement>,
     >,
     pub m_InternalTextProcessingArraySize: i32,
     pub m_internalCharacterInfo: quest_hook::libil2cpp::Gc<
@@ -190,6 +201,7 @@ pub struct TMP_Text {
     pub m_lastVisibleCharacterOfLine: i32,
     pub m_lineNumber: i32,
     pub m_lineVisibleCharacterCount: i32,
+    pub m_lineVisibleSpaceCount: i32,
     pub m_pageNumber: i32,
     pub m_PageAscender: f32,
     pub m_maxTextAscender: f32,
@@ -286,14 +298,16 @@ impl std::ops::DerefMut for crate::TMPro::TMP_Text {
 impl crate::TMPro::TMP_Text {
     #[cfg(feature = "TMPro+TMP_Text+CharacterSubstitution")]
     pub type CharacterSubstitution = crate::TMPro::TMP_Text_CharacterSubstitution;
+    #[cfg(feature = "TMPro+TMP_Text+MissingCharacterEventCallback")]
+    pub type MissingCharacterEventCallback = crate::TMPro::TMP_Text_MissingCharacterEventCallback;
     #[cfg(feature = "TMPro+TMP_Text+SpecialCharacter")]
     pub type SpecialCharacter = crate::TMPro::TMP_Text_SpecialCharacter;
     #[cfg(feature = "TMPro+TMP_Text+TextBackingContainer")]
     pub type TextBackingContainer = crate::TMPro::TMP_Text_TextBackingContainer;
     #[cfg(feature = "TMPro+TMP_Text+TextInputSources")]
     pub type TextInputSources = crate::TMPro::TMP_Text_TextInputSources;
-    #[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
-    pub type UnicodeChar = crate::TMPro::TMP_Text_UnicodeChar;
+    #[cfg(feature = "TMPro+TMP_Text+TextProcessingElement")]
+    pub type TextProcessingElement = crate::TMPro::TMP_Text_TextProcessingElement;
     pub fn AddFloatToInternalTextBackingArray(
         &mut self,
         value: f32,
@@ -385,7 +399,7 @@ impl crate::TMPro::TMP_Text {
         fontSize: quest_hook::libil2cpp::ByRefMut<f32>,
         marginSize: crate::UnityEngine::Vector2,
         isTextAutoSizingEnabled: bool,
-        isWordWrappingEnabled: bool,
+        textWrapMode: crate::TMPro::TextWrappingModes,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -396,7 +410,7 @@ impl crate::TMPro::TMP_Text {
                             quest_hook::libil2cpp::ByRefMut<f32>,
                             crate::UnityEngine::Vector2,
                             bool,
-                            bool,
+                            crate::TMPro::TextWrappingModes,
                         ),
                         crate::UnityEngine::Vector2,
                         4usize,
@@ -413,13 +427,33 @@ impl crate::TMPro::TMP_Text {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (
-                        fontSize,
-                        marginSize,
-                        isTextAutoSizingEnabled,
-                        isWordWrappingEnabled,
-                    ),
+                    (fontSize, marginSize, isTextAutoSizingEnabled, textWrapMode),
                 )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClearMarkupTagAttributes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ClearMarkupTagAttributes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearMarkupTagAttributes", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -680,6 +714,38 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn DoMissingGlyphCallback(
+        &mut self,
+        unicode: i32,
+        stringIndex: i32,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("DoMissingGlyphCallback")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoMissingGlyphCallback", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (unicode, stringIndex, fontAsset))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn DrawTextHighlight(
         &mut self,
         start: crate::UnityEngine::Vector3,
@@ -773,7 +839,6 @@ impl crate::TMPro::TMP_Text {
     pub fn FillCharacterVertexBuffers__cordl_bool1(
         &mut self,
         i: i32,
-        index_X4: i32,
         isVolumetric: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -781,34 +846,7 @@ impl crate::TMPro::TMP_Text {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, i32, bool),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("FillCharacterVertexBuffers")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FillCharacterVertexBuffers", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i, index_X4, isVolumetric))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn FillCharacterVertexBuffers_i32_i32_0(
-        &mut self,
-        i: i32,
-        index_X4: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32, i32),
+                        (i32, bool),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("FillCharacterVertexBuffers")
@@ -821,34 +859,59 @@ impl crate::TMPro::TMP_Text {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i, index_X4))?
+            cordl_method_info.invoke_unchecked(self, (i, isVolumetric))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FillSpriteVertexBuffers(
+    pub fn FillCharacterVertexBuffers_i32_0(
         &mut self,
         i: i32,
-        index_X4: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, i32),
+                        (i32),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        1usize,
+                    >("FillCharacterVertexBuffers")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FillCharacterVertexBuffers", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (i))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn FillSpriteVertexBuffers(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
                     >("FillSpriteVertexBuffers")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FillSpriteVertexBuffers", 2usize
+                            "FillSpriteVertexBuffers", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (i, index_X4))?
+            cordl_method_info.invoke_unchecked(self, (i))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1029,8 +1092,8 @@ impl crate::TMPro::TMP_Text {
     }
     pub fn GetMarkupTagHashCode_Il2CppArray0(
         &mut self,
-        tagDefinition: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
+        styleDefinition: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
         >,
         readIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -1041,7 +1104,7 @@ impl crate::TMPro::TMP_Text {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
+                                quest_hook::libil2cpp::Il2CppArray<u32>,
                             >,
                             i32,
                         ),
@@ -1057,13 +1120,13 @@ impl crate::TMPro::TMP_Text {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tagDefinition, readIndex))?
+            cordl_method_info.invoke_unchecked(self, (styleDefinition, readIndex))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetMarkupTagHashCode_TMP_Text_TextBackingContainer1(
         &mut self,
-        tagDefinition: crate::TMPro::TMP_Text_TextBackingContainer,
+        styleDefinition: crate::TMPro::TMP_Text_TextBackingContainer,
         readIndex: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1084,7 +1147,7 @@ impl crate::TMPro::TMP_Text {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (tagDefinition, readIndex))?
+            cordl_method_info.invoke_unchecked(self, (styleDefinition, readIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1430,6 +1493,33 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetPreferredWidth_Vector2_TextWrappingModes2(
+        &mut self,
+        margin: crate::UnityEngine::Vector2,
+        wrapMode: crate::TMPro::TextWrappingModes,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector2, crate::TMPro::TextWrappingModes),
+                        f32,
+                        2usize,
+                    >("GetPreferredWidth")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPreferredWidth", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (margin, wrapMode))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRenderedHeight_0(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1653,7 +1743,7 @@ impl crate::TMPro::TMP_Text {
     pub fn GetStyleHashCode_ByRefMut_i32_ByRefMut0(
         &mut self,
         text: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         >,
         index: i32,
         closeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -1666,7 +1756,7 @@ impl crate::TMPro::TMP_Text {
                         (
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<i32>,
+                                    quest_hook::libil2cpp::Il2CppArray<u32>,
                                 >,
                             >,
                             i32,
@@ -1884,43 +1974,11 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF16_Il2CppArray1(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                            i32,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetUTF16")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUTF16", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (text, i))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF16_Il2CppArray2(
+    pub fn GetUTF16_Il2CppArray0(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -1932,7 +1990,7 @@ impl crate::TMPro::TMP_Text {
                             >,
                             i32,
                         ),
-                        i32,
+                        u32,
                         2usize,
                     >("GetUTF16")
                     .unwrap_or_else(|e| {
@@ -1943,87 +2001,23 @@ impl crate::TMPro::TMP_Text {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
+        let __cordl_ret: u32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (text, i))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF16_Il2CppString0(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetUTF16")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUTF16", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (text, i))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF16_StringBuilder3(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Text::StringBuilder,
-                            >,
-                            i32,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetUTF16")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUTF16", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (text, i))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF16_TMP_Text_TextBackingContainer4(
+    pub fn GetUTF16_TMP_Text_TextBackingContainer1(
         &mut self,
         text: crate::TMPro::TMP_Text_TextBackingContainer,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::TMP_Text_TextBackingContainer, i32),
-                        i32,
+                        u32,
                         2usize,
                     >("GetUTF16")
                     .unwrap_or_else(|e| {
@@ -2034,48 +2028,16 @@ impl crate::TMPro::TMP_Text {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
+        let __cordl_ret: u32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (text, i))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF32_Il2CppArray1(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<i32>,
-                            >,
-                            i32,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetUTF32")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUTF32", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (text, i))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF32_Il2CppArray2(
+    pub fn GetUTF32_Il2CppArray0(
         &mut self,
         text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -2087,7 +2049,7 @@ impl crate::TMPro::TMP_Text {
                             >,
                             i32,
                         ),
-                        i32,
+                        u32,
                         2usize,
                     >("GetUTF32")
                     .unwrap_or_else(|e| {
@@ -2098,87 +2060,23 @@ impl crate::TMPro::TMP_Text {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
+        let __cordl_ret: u32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (text, i))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUTF32_Il2CppString0(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetUTF32")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUTF32", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (text, i))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF32_StringBuilder3(
-        &mut self,
-        text: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
-        i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Text::StringBuilder,
-                            >,
-                            i32,
-                        ),
-                        i32,
-                        2usize,
-                    >("GetUTF32")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUTF32", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (text, i))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUTF32_TMP_Text_TextBackingContainer4(
+    pub fn GetUTF32_TMP_Text_TextBackingContainer1(
         &mut self,
         text: crate::TMPro::TMP_Text_TextBackingContainer,
         i: i32,
-    ) -> quest_hook::libil2cpp::Result<i32> {
+    ) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::TMPro::TMP_Text_TextBackingContainer, i32),
-                        i32,
+                        u32,
                         2usize,
                     >("GetUTF32")
                     .unwrap_or_else(|e| {
@@ -2189,7 +2087,7 @@ impl crate::TMPro::TMP_Text {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
+        let __cordl_ret: u32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (text, i))?
         };
         Ok(__cordl_ret.into())
@@ -2286,12 +2184,12 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn HexToInt(&mut self, hex: char) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn HexToInt(&mut self, hex: char) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(char), i32, 1usize>("HexToInt")
+                    .find_method::<(char), u32, 1usize>("HexToInt")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -2300,7 +2198,7 @@ impl crate::TMPro::TMP_Text {
                         )
                     })
             });
-        let __cordl_ret: i32 = unsafe {
+        let __cordl_ret: u32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (hex))?
         };
         Ok(__cordl_ret.into())
@@ -2309,7 +2207,9 @@ impl crate::TMPro::TMP_Text {
         &mut self,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -2323,7 +2223,7 @@ impl crate::TMPro::TMP_Text {
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<
-                                        crate::TMPro::TMP_Text_UnicodeChar,
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
                                     >,
                                 >,
                             >,
@@ -2345,13 +2245,56 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn InsertClosingTextStyle(
+        &mut self,
+        style: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
+        charBuffer: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
+            >,
+        >,
+        writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("InsertClosingTextStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InsertClosingTextStyle", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (style, charBuffer, writeIndex))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn InsertNewLine(
         &mut self,
         i: i32,
         baseScale: f32,
         currentElementScale: f32,
         currentEmScale: f32,
-        glyphAdjustment: f32,
         boldSpacingAdjustment: f32,
         characterSpacingAdjustment: f32,
         width: f32,
@@ -2373,18 +2316,17 @@ impl crate::TMPro::TMP_Text {
                             f32,
                             f32,
                             f32,
-                            f32,
                             quest_hook::libil2cpp::ByRefMut<bool>,
                             quest_hook::libil2cpp::ByRefMut<f32>,
                         ),
                         quest_hook::libil2cpp::Void,
-                        11usize,
+                        10usize,
                     >("InsertNewLine")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InsertNewLine", 11usize
+                            "InsertNewLine", 10usize
                         )
                     })
             });
@@ -2397,7 +2339,6 @@ impl crate::TMPro::TMP_Text {
                         baseScale,
                         currentElementScale,
                         currentEmScale,
-                        glyphAdjustment,
                         boldSpacingAdjustment,
                         characterSpacingAdjustment,
                         width,
@@ -2412,14 +2353,15 @@ impl crate::TMPro::TMP_Text {
     pub fn InsertOpeningStyleTag(
         &mut self,
         style: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
-        srcIndex: i32,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -2427,30 +2369,121 @@ impl crate::TMPro::TMP_Text {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
-                            i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<
-                                        crate::TMPro::TMP_Text_UnicodeChar,
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
                                     >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
-                        bool,
-                        4usize,
+                        quest_hook::libil2cpp::Void,
+                        3usize,
                     >("InsertOpeningStyleTag")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InsertOpeningStyleTag", 4usize
+                            "InsertOpeningStyleTag", 3usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (style, charBuffer, writeIndex))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InsertOpeningTextStyle(
+        &mut self,
+        style: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
+        charBuffer: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
+            >,
+        >,
+        writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Style>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("InsertOpeningTextStyle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InsertOpeningTextStyle", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (style, charBuffer, writeIndex))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InsertTextStyleInTextProcessingArray(
+        &mut self,
+        charBuffer: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
+            >,
+        >,
+        writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
+        styleDefinition: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
+                                    >,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u32>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("InsertTextStyleInTextProcessingArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InsertTextStyleInTextProcessingArray", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (style, srcIndex, charBuffer, writeIndex))?
+                .invoke_unchecked(self, (charBuffer, writeIndex, styleDefinition))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2590,6 +2623,60 @@ impl crate::TMPro::TMP_Text {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (targetTextComponent))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidUTF16(
+        &mut self,
+        text: crate::TMPro::TMP_Text_TextBackingContainer,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::TMPro::TMP_Text_TextBackingContainer, i32),
+                        bool,
+                        2usize,
+                    >("IsValidUTF16")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidUTF16", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (text, index))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsValidUTF32(
+        &mut self,
+        text: crate::TMPro::TMP_Text_TextBackingContainer,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::TMPro::TMP_Text_TextBackingContainer, i32),
+                        bool,
+                        2usize,
+                    >("IsValidUTF32")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsValidUTF32", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (text, index))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2905,64 +2992,13 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ReplaceClosingStyleTag_ByRefMut_i32_ByRefMut_ByRefMut0(
+    pub fn ReplaceClosingStyleTag(
         &mut self,
-        sourceText: quest_hook::libil2cpp::ByRefMut<
-            crate::TMPro::TMP_Text_TextBackingContainer,
-        >,
-        srcIndex: i32,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
-            >,
-        >,
-        writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::TMPro::TMP_Text_TextBackingContainer,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<
-                                        crate::TMPro::TMP_Text_UnicodeChar,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >("ReplaceClosingStyleTag")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReplaceClosingStyleTag", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (sourceText, srcIndex, charBuffer, writeIndex))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReplaceClosingStyleTag_ByRefMut_i32_ByRefMut_ByRefMut1(
-        &mut self,
-        sourceText: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
-        >,
-        srcIndex: i32,
-        charBuffer: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -2975,33 +3011,26 @@ impl crate::TMPro::TMP_Text {
                         (
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<i32>,
-                                >,
-                            >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<
-                                        crate::TMPro::TMP_Text_UnicodeChar,
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
                                     >,
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        2usize,
                     >("ReplaceClosingStyleTag")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReplaceClosingStyleTag", 4usize
+                            "ReplaceClosingStyleTag", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (sourceText, srcIndex, charBuffer, writeIndex))?
+            cordl_method_info.invoke_unchecked(self, (charBuffer, writeIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3014,7 +3043,9 @@ impl crate::TMPro::TMP_Text {
         srcOffset: quest_hook::libil2cpp::ByRefMut<i32>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -3033,7 +3064,7 @@ impl crate::TMPro::TMP_Text {
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<
-                                        crate::TMPro::TMP_Text_UnicodeChar,
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
                                     >,
                                 >,
                             >,
@@ -3062,13 +3093,15 @@ impl crate::TMPro::TMP_Text {
     pub fn ReplaceOpeningStyleTag_ByRefMut_i32_ByRefMut_ByRefMut_ByRefMut1(
         &mut self,
         sourceText: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
         >,
         srcIndex: i32,
         srcOffset: quest_hook::libil2cpp::ByRefMut<i32>,
         charBuffer: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
-                quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+                quest_hook::libil2cpp::Il2CppArray<
+                    crate::TMPro::TMP_Text_TextProcessingElement,
+                >,
             >,
         >,
         writeIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -3081,7 +3114,7 @@ impl crate::TMPro::TMP_Text {
                         (
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppArray<i32>,
+                                    quest_hook::libil2cpp::Il2CppArray<u32>,
                                 >,
                             >,
                             i32,
@@ -3089,7 +3122,7 @@ impl crate::TMPro::TMP_Text {
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppArray<
-                                        crate::TMPro::TMP_Text_UnicodeChar,
+                                        crate::TMPro::TMP_Text_TextProcessingElement,
                                     >,
                                 >,
                             >,
@@ -3396,7 +3429,9 @@ impl crate::TMPro::TMP_Text {
     pub fn SetArraySizes(
         &mut self,
         unicodeChars: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::TMPro::TMP_Text_TextProcessingElement,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -3406,7 +3441,7 @@ impl crate::TMPro::TMP_Text {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
-                                crate::TMPro::TMP_Text_UnicodeChar,
+                                crate::TMPro::TMP_Text_TextProcessingElement,
                             >,
                         >),
                         i32,
@@ -3777,7 +3812,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppArray11(
+    pub fn SetText_Il2CppArray12(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -3805,7 +3840,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppArray_i32_i32_12(
+    pub fn SetText_Il2CppArray_i32_i32_13(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         start: i32,
@@ -3839,7 +3874,33 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString__cordl_bool0(
+    pub fn SetText_Il2CppString0(
+        &mut self,
+        sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetText",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (sourceText))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetText_Il2CppString__cordl_bool1(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         syncTextInputBox: bool,
@@ -3871,7 +3932,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_1(
+    pub fn SetText_Il2CppString_f32_2(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -3903,7 +3964,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_2(
+    pub fn SetText_Il2CppString_f32_f32_3(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -3937,7 +3998,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_3(
+    pub fn SetText_Il2CppString_f32_f32_f32_4(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -3973,7 +4034,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_4(
+    pub fn SetText_Il2CppString_f32_f32_f32_f32_5(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -4012,7 +4073,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_5(
+    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_6(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -4053,7 +4114,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_6(
+    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_7(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -4099,7 +4160,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_f32_7(
+    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_f32_8(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -4147,7 +4208,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_f32_f32_8(
+    pub fn SetText_Il2CppString_f32_f32_f32_f32_f32_f32_f32_f32_9(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         arg0: f32,
@@ -4197,7 +4258,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_StringBuilder9(
+    pub fn SetText_StringBuilder10(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -4223,7 +4284,7 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetText_StringBuilder_i32_i32_10(
+    pub fn SetText_StringBuilder_i32_i32_11(
         &mut self,
         sourceText: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         start: i32,
@@ -4446,7 +4507,9 @@ impl crate::TMPro::TMP_Text {
     pub fn ValidateHtmlTag(
         &mut self,
         chars: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::TMPro::TMP_Text_TextProcessingElement,
+            >,
         >,
         startIndex: i32,
         endIndex: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -4459,7 +4522,7 @@ impl crate::TMPro::TMP_Text {
                         (
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
-                                    crate::TMPro::TMP_Text_UnicodeChar,
+                                    crate::TMPro::TMP_Text_TextProcessingElement,
                                 >,
                             >,
                             i32,
@@ -4533,6 +4596,35 @@ impl crate::TMPro::TMP_Text {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "add_OnFontAssetRequest", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_OnMissingCharacter(
+        value: quest_hook::libil2cpp::Gc<
+            crate::TMPro::TMP_Text_MissingCharacterEventCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::TMPro::TMP_Text_MissingCharacterEventCallback,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_OnMissingCharacter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_OnMissingCharacter", 1usize
                         )
                     })
             });
@@ -4803,6 +4895,23 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_emojiFallbackSupport(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_emojiFallbackSupport")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_emojiFallbackSupport", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_enableAutoSizing(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -5025,6 +5134,43 @@ impl crate::TMPro::TMP_Text {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fontFeatures(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::OTL_FeatureTag,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::TextCore::OTL_FeatureTag,
+                            >,
+                        >,
+                        0usize,
+                    >("get_fontFeatures")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fontFeatures", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::OTL_FeatureTag,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_fontMaterial(
@@ -6314,6 +6460,31 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_textWrappingMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::TMPro::TextWrappingModes> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::TMPro::TextWrappingModes,
+                        0usize,
+                    >("get_textWrappingMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_textWrappingMode", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::TMPro::TextWrappingModes = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_tintAllSprites(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6509,6 +6680,35 @@ impl crate::TMPro::TMP_Text {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "remove_OnFontAssetRequest", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_OnMissingCharacter(
+        value: quest_hook::libil2cpp::Gc<
+            crate::TMPro::TMP_Text_MissingCharacterEventCallback,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::TMPro::TMP_Text_MissingCharacterEventCallback,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_OnMissingCharacter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_OnMissingCharacter", 1usize
                         )
                     })
             });
@@ -6798,6 +6998,32 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_emojiFallbackSupport(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_emojiFallbackSupport")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_emojiFallbackSupport", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_enableAutoSizing(
         &mut self,
         value: bool,
@@ -7024,6 +7250,40 @@ impl crate::TMPro::TMP_Text {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_font", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_fontFeatures(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::TextCore::OTL_FeatureTag,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::UnityEngine::TextCore::OTL_FeatureTag,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_fontFeatures")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fontFeatures", 1usize
                         )
                     })
             });
@@ -8140,6 +8400,32 @@ impl crate::TMPro::TMP_Text {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_textWrappingMode(
+        &mut self,
+        value: crate::TMPro::TextWrappingModes,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::TMPro::TextWrappingModes),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_textWrappingMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_textWrappingMode", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_tintAllSprites(
         &mut self,
         value: bool,
@@ -8464,6 +8750,226 @@ impl crate::TMPro::TMP_Text_CharacterSubstitution {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+MissingCharacterEventCallback")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct TMP_Text_MissingCharacterEventCallback {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+MissingCharacterEventCallback")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::TMPro::TMP_Text_MissingCharacterEventCallback {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "TMPro";
+    const CLASS_NAME: &'static str = "TMP_Text/MissingCharacterEventCallback";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "TMPro+TMP_Text+MissingCharacterEventCallback")]
+impl std::ops::Deref for crate::TMPro::TMP_Text_MissingCharacterEventCallback {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Text+MissingCharacterEventCallback")]
+impl std::ops::DerefMut for crate::TMPro::TMP_Text_MissingCharacterEventCallback {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "TMPro+TMP_Text+MissingCharacterEventCallback")]
+impl crate::TMPro::TMP_Text_MissingCharacterEventCallback {
+    pub fn BeginInvoke(
+        &mut self,
+        unicode: i32,
+        stringIndex: i32,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        7usize,
+                    >("BeginInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 7usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        unicode,
+                        stringIndex,
+                        text,
+                        fontAsset,
+                        textComponent,
+                        callback,
+                        object,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("EndInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke(
+        &mut self,
+        unicode: i32,
+        stringIndex: i32,
+        text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        fontAsset: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+        textComponent: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_FontAsset>,
+                            quest_hook::libil2cpp::Gc<crate::TMPro::TMP_Text>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (unicode, stringIndex, text, fontAsset, textComponent),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (object, method))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+MissingCharacterEventCallback")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::TMPro::TMP_Text_MissingCharacterEventCallback {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+SpecialCharacter")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -8599,7 +9105,7 @@ impl crate::TMPro::TMP_Text_SpecialCharacter {
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Text_TextBackingContainer {
     pub m_Array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-    pub m_Count: i32,
+    pub m_Index: i32,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Text+TextBackingContainer")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_TextBackingContainer {
@@ -8794,6 +9300,35 @@ impl crate::TMPro::TMP_Text_TextBackingContainer {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_Text(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<u32>,
+                        >,
+                        0usize,
+                    >("get_Text")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Text", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<u32>,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_Count(
         &mut self,
         value: i32,
@@ -8938,20 +9473,22 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_TextInputSo
         actual
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
-pub struct TMP_Text_UnicodeChar {
-    pub unicode: i32,
+pub struct TMP_Text_TextProcessingElement {
+    pub elementType: crate::TMPro::TextProcessingElementType,
+    pub unicode: u32,
     pub stringIndex: i32,
     pub length: i32,
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
-unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_UnicodeChar {
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::TMPro::TMP_Text_TextProcessingElement {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "TMPro";
-    const CLASS_NAME: &'static str = "TMP_Text/UnicodeChar";
+    const CLASS_NAME: &'static str = "TMP_Text/TextProcessingElement";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -8975,8 +9512,9 @@ unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TMP_Text_UnicodeChar {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
-unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_UnicodeChar {
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::TMPro::TMP_Text_TextProcessingElement {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -8985,8 +9523,9 @@ unsafe impl quest_hook::libil2cpp::Argument for crate::TMPro::TMP_Text_UnicodeCh
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
-unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Text_UnicodeChar {
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::TMPro::TMP_Text_TextProcessingElement {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -8998,8 +9537,9 @@ unsafe impl quest_hook::libil2cpp::Parameter for crate::TMPro::TMP_Text_UnicodeC
         self
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
-unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_UnicodeChar {
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::TMPro::TMP_Text_TextProcessingElement {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
@@ -9012,8 +9552,9 @@ unsafe impl quest_hook::libil2cpp::Returned for crate::TMPro::TMP_Text_UnicodeCh
         }
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
-unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_UnicodeChar {
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::TMPro::TMP_Text_TextProcessingElement {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -9025,8 +9566,9 @@ unsafe impl quest_hook::libil2cpp::Return for crate::TMPro::TMP_Text_UnicodeChar
         actual
     }
 }
-#[cfg(feature = "cordl_class_TMPro+TMP_Text+UnicodeChar")]
-unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Text_UnicodeChar {
+#[cfg(feature = "cordl_class_TMPro+TMP_Text+TextProcessingElement")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::TMPro::TMP_Text_TextProcessingElement {
     type Type = Self;
     fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
@@ -9035,5 +9577,5 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::TMPro::TMP_Text_Unico
         unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
     }
 }
-#[cfg(feature = "TMPro+TMP_Text+UnicodeChar")]
-impl crate::TMPro::TMP_Text_UnicodeChar {}
+#[cfg(feature = "TMPro+TMP_Text+TextProcessingElement")]
+impl crate::TMPro::TMP_Text_TextProcessingElement {}

@@ -6,6 +6,7 @@ pub enum MultiplayerPlacementErrorCode {
     AuthenticationFailed = 5i32,
     ConnectionCanceled = 2i32,
     MatchmakingTimeout = 7i32,
+    MismatchedServerEnvironment = 8i32,
     RequestTimeout = 6i32,
     ServerAtCapacity = 4i32,
     ServerDoesNotExist = 3i32,

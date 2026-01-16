@@ -38,6 +38,32 @@ impl std::ops::DerefMut for crate::UnityEngine::ILogger {
 }
 #[cfg(feature = "UnityEngine+ILogger")]
 impl crate::UnityEngine::ILogger {
+    pub fn IsLogTypeAllowed(
+        &mut self,
+        logType: crate::UnityEngine::LogType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::LogType),
+                        bool,
+                        1usize,
+                    >("IsLogTypeAllowed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsLogTypeAllowed", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (logType))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn LogError(
         &mut self,
         tag: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

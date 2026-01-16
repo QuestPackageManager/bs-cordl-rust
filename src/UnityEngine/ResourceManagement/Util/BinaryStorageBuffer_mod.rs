@@ -1317,6 +1317,10 @@ for crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader")]
 impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
+    #[cfg(
+        feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+    )]
+    pub type StringCreationState = crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState;
     pub fn AddSerializationAdapter(
         &mut self,
         a: quest_hook::libil2cpp::Gc<
@@ -1347,6 +1351,51 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ComputeStringLength(
+        &mut self,
+        id: u32,
+        sep: char,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(u32, char), i32, 2usize>("ComputeStringLength")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ComputeStringLength", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id, sep))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetAutoEncodedStringLength(
+        &mut self,
+        id: u32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(u32), i32, 1usize>("GetAutoEncodedStringLength")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetAutoEncodedStringLength", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBuffer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1374,6 +1423,86 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u8>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCacheStats(
+        &mut self,
+        reqCount: quest_hook::libil2cpp::ByRefMut<i32>,
+        reqHits: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetCacheStats")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCacheStats", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (reqCount, reqHits))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDynamicStringLength(
+        &mut self,
+        id: u32,
+        sep: char,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(u32, char), i32, 2usize>("GetDynamicStringLength")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDynamicStringLength", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id, sep))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStringLengthInternal(
+        &mut self,
+        offset: u32,
+        enc: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (u32, quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>),
+                        i32,
+                        2usize,
+                    >("GetStringLengthInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStringLengthInternal", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (offset, enc))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Init(
@@ -1460,6 +1589,47 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             )?;
         Ok(__cordl_object.into())
     }
+    pub fn ProcessObjectArray<T, C>(
+        &mut self,
+        id: u32,
+        context: C,
+        procFunc: quest_hook::libil2cpp::Gc<crate::System::Action_2<T, C>>,
+        cacheValues: bool,
+    ) -> quest_hook::libil2cpp::Result<u32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        C: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            u32,
+                            C,
+                            quest_hook::libil2cpp::Gc<crate::System::Action_2<T, C>>,
+                            bool,
+                        ),
+                        u32,
+                        4usize,
+                    >("ProcessObjectArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessObjectArray", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (id, context, procFunc, cacheValues))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ReadAutoEncodedString(
         &mut self,
         id: u32,
@@ -1519,11 +1689,54 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (id, sep, cacheValue))? };
         Ok(__cordl_ret.into())
     }
-    pub fn ReadObjectArray_Type_u32__cordl_bool1(
+    pub fn ReadObjectArray_ByRefMut_u32_0<T>(
+        &mut self,
+        results: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<T>>,
+        >,
+        id: u32,
+        cacheValues: bool,
+    ) -> quest_hook::libil2cpp::Result<u32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<T>,
+                                >,
+                            >,
+                            u32,
+                            bool,
+                        ),
+                        u32,
+                        3usize,
+                    >("ReadObjectArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadObjectArray", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (results, id, cacheValues))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadObjectArray_Type_u32__cordl_bool2(
         &mut self,
         t: quest_hook::libil2cpp::Gc<crate::System::Type>,
         id: u32,
         cacheValues: bool,
+        cacheFullArray: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -1536,7 +1749,57 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Type>, u32, bool),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            u32,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                        >,
+                        4usize,
+                    >("ReadObjectArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadObjectArray", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (t, id, cacheValues, cacheFullArray))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadObjectArray_u32__cordl_bool1(
+        &mut self,
+        id: u32,
+        cacheValues: bool,
+        cacheFullArray: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (u32, bool, bool),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
                                 quest_hook::libil2cpp::Gc<
@@ -1558,54 +1821,16 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
             >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (t, id, cacheValues))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id, cacheValues, cacheFullArray))?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn ReadObjectArray_u32__cordl_bool0(
+    pub fn ReadObjectArray_u32__cordl_bool3<T>(
         &mut self,
         id: u32,
         cacheValues: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32, bool),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppObject,
-                                >,
-                            >,
-                        >,
-                        2usize,
-                    >("ReadObjectArray")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadObjectArray", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValues))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReadObjectArray_u32__cordl_bool2<T>(
-        &mut self,
-        id: u32,
-        cacheValues: bool,
+        cacheFullArray: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
     >
@@ -1618,21 +1843,23 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (u32, bool),
+                        (u32, bool, bool),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
-                        2usize,
+                        3usize,
                     >("ReadObjectArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReadObjectArray", 2usize
+                            "ReadObjectArray", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<T>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (id, cacheValues))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id, cacheValues, cacheFullArray))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ReadObject_Type_u32__cordl_bool2(
@@ -1869,6 +2096,36 @@ impl crate::UnityEngine::ResourceManagement::Util::BinaryStorageBuffer_Reader {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (offset, val))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ReadDynamicString_b__29_0(
+        &mut self,
+        chars: crate::System::Span_1<char>,
+        state: crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::System::Span_1<char>,
+                            crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("<ReadDynamicString>b__29_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<ReadDynamicString>b__29_0", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (chars, state))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3265,6 +3522,127 @@ for crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryS
     feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+BuiltinTypesSerializer+ObjectToStringRemap"
 )]
 impl crate::UnityEngine::ResourceManagement::Util::BuiltinTypesSerializer_BinaryStorageBuffer_ObjectToStringRemap {}
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct Reader_BinaryStorageBuffer_StringCreationState {
+    pub id: u32,
+    pub sep: char,
+    pub length: i32,
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.ResourceManagement.Util";
+    const CLASS_NAME: &'static str = "BinaryStorageBuffer/Reader/StringCreationState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(
+    feature = "UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+Reader+StringCreationState"
+)]
+impl crate::UnityEngine::ResourceManagement::Util::Reader_BinaryStorageBuffer_StringCreationState {}
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+Util+BinaryStorageBuffer+TypeSerializer+Data"
 )]

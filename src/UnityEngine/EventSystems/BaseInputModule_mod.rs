@@ -85,6 +85,32 @@ impl crate::UnityEngine::EventSystems::BaseInputModule {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ConvertPointerEventScrollDeltaToTicks(
+        &mut self,
+        scrollDelta: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector2),
+                        crate::UnityEngine::Vector2,
+                        1usize,
+                    >("ConvertPointerEventScrollDeltaToTicks")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertPointerEventScrollDeltaToTicks", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (scrollDelta))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ConvertUIToolkitPointerId(
         &mut self,
         sourcePointerData: quest_hook::libil2cpp::Gc<

@@ -101,6 +101,70 @@ impl crate::UnityEngine::UIElements::VisualTreeHierarchyFlagsUpdater {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn DirtyParentHierarchy(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        flags: crate::UnityEngine::UIElements::VisualElementFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            crate::UnityEngine::UIElements::VisualElementFlags,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("DirtyParentHierarchy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DirtyParentHierarchy", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (ve, flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetChildrenMustDirtyFlags(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        versionChangeType: crate::UnityEngine::UIElements::VersionChangeType,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::VisualElementFlags,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            crate::UnityEngine::UIElements::VersionChangeType,
+                        ),
+                        crate::UnityEngine::UIElements::VisualElementFlags,
+                        2usize,
+                    >("GetChildrenMustDirtyFlags")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetChildrenMustDirtyFlags", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::VisualElementFlags = unsafe {
+            cordl_method_info.invoke_unchecked((), (ve, versionChangeType))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

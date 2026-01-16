@@ -1648,6 +1648,31 @@ impl crate::UnityEngine::UIElements::StyleSheets::InitialStyle {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_unityEditorTextRenderingMode() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::EditorTextRenderingMode,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::UnityEngine::UIElements::EditorTextRenderingMode,
+                        0usize,
+                    >("get_unityEditorTextRenderingMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unityEditorTextRenderingMode", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::EditorTextRenderingMode = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_unityFont() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
     > {
@@ -1879,6 +1904,31 @@ impl crate::UnityEngine::UIElements::StyleSheets::InitialStyle {
                     })
             });
         let __cordl_ret: crate::UnityEngine::TextAnchor = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_unityTextGenerator() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextGeneratorType,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::UnityEngine::TextGeneratorType,
+                        0usize,
+                    >("get_unityTextGenerator")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unityTextGenerator", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::TextGeneratorType = unsafe {
             cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())

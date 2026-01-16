@@ -11,6 +11,11 @@ pub struct OculusPlatformAdditionalContentModel {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
     >,
+    pub _excludedLevels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+    >,
     pub _semaphoreSlim: quest_hook::libil2cpp::Gc<
         crate::System::Threading::SemaphoreSlim,
     >,
@@ -52,6 +57,7 @@ for crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
 }
 #[cfg(feature = "OculusPlatformAdditionalContentModel")]
 impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
+    pub const kStoreEventRegex: &'static str = "^\\/item\\/event\\/\\d+$";
     pub fn CheckForNewEntitlementsAsync(
         &mut self,
         cancellationToken: crate::System::Threading::CancellationToken,
@@ -90,16 +96,104 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetLevelDataVersion(
+    pub fn GetExcludedLevelIdsInternalAsync(
+        &mut self,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::System::Threading::CancellationToken),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<
+                                        quest_hook::libil2cpp::Gc<
+                                            quest_hook::libil2cpp::Il2CppString,
+                                        >,
+                                    >,
+                                >,
+                            >,
+                        >,
+                        1usize,
+                    >("GetExcludedLevelIdsInternalAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExcludedLevelIdsInternalAsync", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    quest_hook::libil2cpp::Il2CppArray<
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                    >,
+                >,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (cancellationToken))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLevelDataAdditionalSkus(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+        >,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+                        >,
+                        1usize,
+                    >("GetLevelDataAdditionalSkus")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLevelDataAdditionalSkus", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetLevelDataVersion(
+        &mut self,
+        additionalSkus: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::BeatmapLevelDataVersion> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OculusLevelProductCollectionModel_AdditionalSkus,
+                        >),
                         crate::GlobalNamespace::BeatmapLevelDataVersion,
                         1usize,
                     >("GetLevelDataVersion")
@@ -112,7 +206,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
                     })
             });
         let __cordl_ret: crate::GlobalNamespace::BeatmapLevelDataVersion = unsafe {
-            cordl_method_info.invoke_unchecked(self, (levelId))?
+            cordl_method_info.invoke_unchecked(self, (additionalSkus))?
         };
         Ok(__cordl_ret.into())
     }
@@ -334,7 +428,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn HasLevelEntitlement(
+    pub fn HasLevelEntitlement_Il2CppString0(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -357,6 +451,36 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (levelId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HasLevelEntitlement_OculusLevelProductCollectionModel_LevelProductData1(
+        &mut self,
+        productData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
+                        >),
+                        bool,
+                        1usize,
+                    >("HasLevelEntitlement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HasLevelEntitlement", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (productData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -665,7 +789,33 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _GetRedirectedLevelPackProductData_g__GetSku_5_0(
+    pub fn _GetExcludedLevelIdsInternalAsync_b__19_0(
+        &mut self,
+        levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        bool,
+                        1usize,
+                    >("<GetExcludedLevelIdsInternalAsync>b__19_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<GetExcludedLevelIdsInternalAsync>b__19_0", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (levelId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _GetRedirectedLevelPackProductData_g__GetSku_7_0(
         levelPackProductData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelPackProductData,
         >,
@@ -682,12 +832,12 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
-                    >("<GetRedirectedLevelPackProductData>g__GetSku|5_0")
+                    >("<GetRedirectedLevelPackProductData>g__GetSku|7_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<GetRedirectedLevelPackProductData>g__GetSku|5_0", 1usize
+                            "<GetRedirectedLevelPackProductData>g__GetSku|7_0", 1usize
                         )
                     })
             });
@@ -696,7 +846,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         > = unsafe { cordl_method_info.invoke_unchecked((), (levelPackProductData))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _HasLevelPackEntitlement_b__19_0(
+    pub fn _HasLevelPackEntitlement_b__25_0(
         &mut self,
         levelProductData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
@@ -712,12 +862,12 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
                         >),
                         bool,
                         1usize,
-                    >("<HasLevelPackEntitlement>b__19_0")
+                    >("<HasLevelPackEntitlement>b__25_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<HasLevelPackEntitlement>b__19_0", 1usize
+                            "<HasLevelPackEntitlement>b__25_0", 1usize
                         )
                     })
             });
@@ -726,7 +876,7 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _OpenLevelProductStoreAsync_g__GetSkuForProductFlow_11_0(
+    pub fn _OpenLevelProductStoreAsync_g__GetSkuForProductFlow_13_0(
         levelProductData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::OculusLevelProductCollectionModel_LevelProductData,
         >,
@@ -743,12 +893,12 @@ impl crate::GlobalNamespace::OculusPlatformAdditionalContentModel {
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
-                    >("<OpenLevelProductStoreAsync>g__GetSkuForProductFlow|11_0")
+                    >("<OpenLevelProductStoreAsync>g__GetSkuForProductFlow|13_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<OpenLevelProductStoreAsync>g__GetSkuForProductFlow|11_0",
+                            "<OpenLevelProductStoreAsync>g__GetSkuForProductFlow|13_0",
                             1usize
                         )
                     })

@@ -113,7 +113,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
     pub type DeviceDescriptionJson = crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription_DeviceDescriptionJson;
     pub fn ComparePropertyToDeviceDescriptor(
         propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        propertyValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        propertyValue: crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
         deviceDescriptor: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -125,9 +125,7 @@ impl crate::UnityEngine::InputSystem::Layouts::InputDeviceDescription {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
+                            crate::UnityEngine::InputSystem::Utilities::JsonParser_JsonString,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,

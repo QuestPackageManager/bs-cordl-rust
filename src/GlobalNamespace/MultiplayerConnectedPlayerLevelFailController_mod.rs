@@ -7,13 +7,13 @@ pub struct MultiplayerConnectedPlayerLevelFailController {
         crate::GlobalNamespace::VFXController,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectManager,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub playerDidFailEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub _wasActive: bool,

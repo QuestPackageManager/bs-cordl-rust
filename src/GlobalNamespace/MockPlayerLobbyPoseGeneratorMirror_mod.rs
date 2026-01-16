@@ -150,7 +150,7 @@ impl crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorMirror {
     }
     pub fn New(
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::NodePoseSyncStateManager,
@@ -189,7 +189,7 @@ impl crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorMirror {
     pub fn _ctor(
         &mut self,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::NodePoseSyncStateManager,
@@ -202,7 +202,7 @@ impl crate::GlobalNamespace::MockPlayerLobbyPoseGeneratorMirror {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSessionManager,
+                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::NodePoseSyncStateManager,

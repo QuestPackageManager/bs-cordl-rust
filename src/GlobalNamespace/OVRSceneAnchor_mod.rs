@@ -8,6 +8,12 @@ pub struct OVRSceneAnchor {
     pub _Anchor_k__BackingField: crate::GlobalNamespace::OVRAnchor,
     pub _IsTracked_k__BackingField: bool,
     pub _pose: crate::System::Nullable_1<crate::GlobalNamespace::OVRPlugin_Posef>,
+    pub _isLocatable: bool,
+    pub _supportedComponents: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+        >,
+    >,
 }
 #[cfg(feature = "cordl_class_OVRSceneAnchor")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneAnchor {
@@ -103,6 +109,39 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetSceneAnchorsOfType<T>(
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<T>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GetSceneAnchorsOfType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSceneAnchorsOfType", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (anchors))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Initialize(
         &mut self,
         anchor: crate::GlobalNamespace::OVRAnchor,
@@ -175,6 +214,32 @@ impl crate::GlobalNamespace::OVRSceneAnchor {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "IsComponentEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (spaceComponentType))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsComponentSupported(
+        &mut self,
+        spaceComponentType: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::OVRPlugin_SpaceComponentType),
+                        bool,
+                        1usize,
+                    >("IsComponentSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsComponentSupported", 1usize
                         )
                     })
             });

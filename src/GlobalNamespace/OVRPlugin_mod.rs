@@ -1,3 +1,715 @@
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct Annotation_Qpl_OVRPlugin_Builder {
+    pub _entries: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry,
+        >,
+    >,
+    pub _ownedStrings: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<crate::System::IntPtr>,
+    >,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/Qpl/Annotation/Builder";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+Qpl+Annotation+Builder")]
+impl crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    #[cfg(feature = "OVRPlugin+Qpl+Annotation+Builder+Entry")]
+    pub type Entry = crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry;
+    pub fn Add_Il2CppObject2(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        2usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Il2CppObject_i32_6(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        3usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Il2CppObject_i32_7(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        3usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Il2CppObject_i32_8(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        3usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Il2CppObject_i32_9(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        3usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Il2CppString1(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        2usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_Qpl_OVRPlugin_Variant0(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        2usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add__cordl_bool5(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        2usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_f64_4(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            f64,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        2usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Add_i64_3(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i64,
+                        ),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        2usize,
+                    >("Add")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Add",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy(
+        &mut self,
+        str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("Copy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Copy",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked(self, (str))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Create() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder,
+                        0usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToNativeArray(
+        &mut self,
+        allocator: crate::Unity::Collections::Allocator,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Collections::NativeArray_1<
+            crate::GlobalNamespace::Qpl_OVRPlugin_Annotation,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::Unity::Collections::Allocator),
+                        crate::Unity::Collections::NativeArray_1<
+                            crate::GlobalNamespace::Qpl_OVRPlugin_Annotation,
+                        >,
+                        1usize,
+                    >("ToNativeArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToNativeArray", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeArray_1<
+            crate::GlobalNamespace::Qpl_OVRPlugin_Annotation,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (allocator))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Count(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("get_Count")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Count", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "OVRPlugin+Qpl+Annotation+Builder")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "OVRPlugin+Qpl+Annotation+Builder")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        todo!()
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct Builder_Annotation_Qpl_OVRPlugin_Entry {
+    pub Key: crate::System::IntPtr,
+    pub Value: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/Qpl/Annotation/Builder/Entry";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation+Builder+Entry")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+Qpl+Annotation+Builder+Entry")]
+impl crate::GlobalNamespace::Builder_Annotation_Qpl_OVRPlugin_Entry {}
 #[cfg(feature = "cordl_class_OVRPlugin+Media+InputVideoBufferType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -326,6 +1038,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin {
 impl crate::GlobalNamespace::OVRPlugin {
     pub const AppPerfFrameStatsMaxCount: i32 = 5i32;
     pub const EventDataBufferSize: i32 = 4000i32;
+    pub const MaxQuerySpacesByGroup: i32 = 1024i32;
     pub const OverlayShapeFlagShift: i32 = 4i32;
     pub const RENDER_MODEL_NULL_KEY: i32 = 0i32;
     pub const SpaceFilterInfoComponentsMaxSize: i32 = 16i32;
@@ -333,6 +1046,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub const SpatialEntityMaxQueryResultsPerEvent: i32 = 128i32;
     pub const isSupportedPlatform: bool = true;
     pub const pluginName: &'static str = "OVRPlugin";
+    #[cfg(feature = "OVRPlugin+ActionTypes")]
+    pub type ActionTypes = crate::GlobalNamespace::OVRPlugin_ActionTypes;
     #[cfg(feature = "OVRPlugin+AppPerfFrameStats")]
     pub type AppPerfFrameStats = crate::GlobalNamespace::OVRPlugin_AppPerfFrameStats;
     #[cfg(feature = "OVRPlugin+AppPerfStats")]
@@ -343,10 +1058,20 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type BlendFactor = crate::GlobalNamespace::OVRPlugin_BlendFactor;
     #[cfg(feature = "OVRPlugin+BodyJointLocation")]
     pub type BodyJointLocation = crate::GlobalNamespace::OVRPlugin_BodyJointLocation;
+    #[cfg(feature = "OVRPlugin+BodyJointSet")]
+    pub type BodyJointSet = crate::GlobalNamespace::OVRPlugin_BodyJointSet;
     #[cfg(feature = "OVRPlugin+BodyState")]
     pub type BodyState = crate::GlobalNamespace::OVRPlugin_BodyState;
+    #[cfg(feature = "OVRPlugin+BodyState4Internal")]
+    pub type BodyState4Internal = crate::GlobalNamespace::OVRPlugin_BodyState4Internal;
     #[cfg(feature = "OVRPlugin+BodyStateInternal")]
     pub type BodyStateInternal = crate::GlobalNamespace::OVRPlugin_BodyStateInternal;
+    #[cfg(feature = "OVRPlugin+BodyTrackingCalibrationInfo")]
+    pub type BodyTrackingCalibrationInfo = crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo;
+    #[cfg(feature = "OVRPlugin+BodyTrackingCalibrationState")]
+    pub type BodyTrackingCalibrationState = crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState;
+    #[cfg(feature = "OVRPlugin+BodyTrackingFidelity2")]
+    pub type BodyTrackingFidelity2 = crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2;
     #[cfg(feature = "OVRPlugin+Bone")]
     pub type Bone = crate::GlobalNamespace::OVRPlugin_Bone;
     #[cfg(feature = "OVRPlugin+BoneCapsule")]
@@ -361,6 +1086,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type BoundaryTestResult = crate::GlobalNamespace::OVRPlugin_BoundaryTestResult;
     #[cfg(feature = "OVRPlugin+BoundaryType")]
     pub type BoundaryType = crate::GlobalNamespace::OVRPlugin_BoundaryType;
+    #[cfg(feature = "OVRPlugin+BoundaryVisibility")]
+    pub type BoundaryVisibility = crate::GlobalNamespace::OVRPlugin_BoundaryVisibility;
     #[cfg(feature = "OVRPlugin+Boundsf")]
     pub type Boundsf = crate::GlobalNamespace::OVRPlugin_Boundsf;
     #[cfg(feature = "OVRPlugin+CameraAnchorType")]
@@ -379,6 +1106,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type CameraIntrinsics = crate::GlobalNamespace::OVRPlugin_CameraIntrinsics;
     #[cfg(feature = "OVRPlugin+CameraStatus")]
     pub type CameraStatus = crate::GlobalNamespace::OVRPlugin_CameraStatus;
+    #[cfg(feature = "OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+    pub type ColocationSessionStartAdvertisementInfo = crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo;
     #[cfg(feature = "OVRPlugin+ColorSpace")]
     pub type ColorSpace = crate::GlobalNamespace::OVRPlugin_ColorSpace;
     #[cfg(feature = "OVRPlugin+Colorf")]
@@ -395,6 +1124,12 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type ControllerState5 = crate::GlobalNamespace::OVRPlugin_ControllerState5;
     #[cfg(feature = "OVRPlugin+ControllerState6")]
     pub type ControllerState6 = crate::GlobalNamespace::OVRPlugin_ControllerState6;
+    #[cfg(feature = "OVRPlugin+DynamicObjectClass")]
+    pub type DynamicObjectClass = crate::GlobalNamespace::OVRPlugin_DynamicObjectClass;
+    #[cfg(feature = "OVRPlugin+DynamicObjectData")]
+    pub type DynamicObjectData = crate::GlobalNamespace::OVRPlugin_DynamicObjectData;
+    #[cfg(feature = "OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+    pub type DynamicObjectTrackedClassesSetInfo = crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo;
     #[cfg(feature = "OVRPlugin+EventDataBuffer")]
     pub type EventDataBuffer = crate::GlobalNamespace::OVRPlugin_EventDataBuffer;
     #[cfg(feature = "OVRPlugin+EventType")]
@@ -413,6 +1148,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type FaceConstants = crate::GlobalNamespace::OVRPlugin_FaceConstants;
     #[cfg(feature = "OVRPlugin+FaceExpression")]
     pub type FaceExpression = crate::GlobalNamespace::OVRPlugin_FaceExpression;
+    #[cfg(feature = "OVRPlugin+FaceExpression2")]
+    pub type FaceExpression2 = crate::GlobalNamespace::OVRPlugin_FaceExpression2;
     #[cfg(feature = "OVRPlugin+FaceExpressionStatus")]
     pub type FaceExpressionStatus = crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus;
     #[cfg(feature = "OVRPlugin+FaceExpressionStatusInternal")]
@@ -425,6 +1162,14 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type FaceState2Internal = crate::GlobalNamespace::OVRPlugin_FaceState2Internal;
     #[cfg(feature = "OVRPlugin+FaceStateInternal")]
     pub type FaceStateInternal = crate::GlobalNamespace::OVRPlugin_FaceStateInternal;
+    #[cfg(feature = "OVRPlugin+FaceTrackingDataSource")]
+    pub type FaceTrackingDataSource = crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource;
+    #[cfg(feature = "OVRPlugin+FaceViseme")]
+    pub type FaceViseme = crate::GlobalNamespace::OVRPlugin_FaceViseme;
+    #[cfg(feature = "OVRPlugin+FaceVisemesState")]
+    pub type FaceVisemesState = crate::GlobalNamespace::OVRPlugin_FaceVisemesState;
+    #[cfg(feature = "OVRPlugin+FaceVisemesStateInternal")]
+    pub type FaceVisemesStateInternal = crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal;
     #[cfg(feature = "OVRPlugin+FeatureType")]
     pub type FeatureType = crate::GlobalNamespace::OVRPlugin_FeatureType;
     #[cfg(feature = "OVRPlugin+FixedFoveatedRenderingLevel")]
@@ -433,12 +1178,20 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type FoveatedRenderingLevel = crate::GlobalNamespace::OVRPlugin_FoveatedRenderingLevel;
     #[cfg(feature = "OVRPlugin+Fovf")]
     pub type Fovf = crate::GlobalNamespace::OVRPlugin_Fovf;
+    #[cfg(feature = "OVRPlugin+FovfPair")]
+    pub type FovfPair = crate::GlobalNamespace::OVRPlugin_FovfPair;
     #[cfg(feature = "OVRPlugin+Frustumf")]
     pub type Frustumf = crate::GlobalNamespace::OVRPlugin_Frustumf;
     #[cfg(feature = "OVRPlugin+Frustumf2")]
     pub type Frustumf2 = crate::GlobalNamespace::OVRPlugin_Frustumf2;
+    #[cfg(feature = "OVRPlugin+FutureState")]
+    pub type FutureState = crate::GlobalNamespace::OVRPlugin_FutureState;
     #[cfg(feature = "OVRPlugin+GUID")]
     pub type GUID = crate::GlobalNamespace::OVRPlugin_GUID;
+    #[cfg(feature = "OVRPlugin+GetBoneSkeleton2Delegate")]
+    pub type GetBoneSkeleton2Delegate = crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton2Delegate;
+    #[cfg(feature = "OVRPlugin+GetBoneSkeleton3Delegate")]
+    pub type GetBoneSkeleton3Delegate = crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton3Delegate;
     #[cfg(feature = "OVRPlugin+Hand")]
     pub type Hand = crate::GlobalNamespace::OVRPlugin_Hand;
     #[cfg(feature = "OVRPlugin+HandFinger")]
@@ -447,10 +1200,16 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type HandFingerPinch = crate::GlobalNamespace::OVRPlugin_HandFingerPinch;
     #[cfg(feature = "OVRPlugin+HandState")]
     pub type HandState = crate::GlobalNamespace::OVRPlugin_HandState;
+    #[cfg(feature = "OVRPlugin+HandState3Internal")]
+    pub type HandState3Internal = crate::GlobalNamespace::OVRPlugin_HandState3Internal;
     #[cfg(feature = "OVRPlugin+HandStateInternal")]
     pub type HandStateInternal = crate::GlobalNamespace::OVRPlugin_HandStateInternal;
     #[cfg(feature = "OVRPlugin+HandStatus")]
     pub type HandStatus = crate::GlobalNamespace::OVRPlugin_HandStatus;
+    #[cfg(feature = "OVRPlugin+HandTrackingState")]
+    pub type HandTrackingState = crate::GlobalNamespace::OVRPlugin_HandTrackingState;
+    #[cfg(feature = "OVRPlugin+HandTrackingStateInternal")]
+    pub type HandTrackingStateInternal = crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal;
     #[cfg(feature = "OVRPlugin+Handedness")]
     pub type Handedness = crate::GlobalNamespace::OVRPlugin_Handedness;
     #[cfg(feature = "OVRPlugin+HapticsAmplitudeEnvelopeVibration")]
@@ -489,8 +1248,6 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type Ktx = crate::GlobalNamespace::OVRPlugin_Ktx;
     #[cfg(feature = "OVRPlugin+LayerDesc")]
     pub type LayerDesc = crate::GlobalNamespace::OVRPlugin_LayerDesc;
-    #[cfg(feature = "OVRPlugin+LayerDescInternal")]
-    pub type LayerDescInternal = crate::GlobalNamespace::OVRPlugin_LayerDescInternal;
     #[cfg(feature = "OVRPlugin+LayerFlags")]
     pub type LayerFlags = crate::GlobalNamespace::OVRPlugin_LayerFlags;
     #[cfg(feature = "OVRPlugin+LayerLayout")]
@@ -513,6 +1270,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type MeshConstants = crate::GlobalNamespace::OVRPlugin_MeshConstants;
     #[cfg(feature = "OVRPlugin+MeshType")]
     pub type MeshType = crate::GlobalNamespace::OVRPlugin_MeshType;
+    #[cfg(feature = "OVRPlugin+MicrogestureType")]
+    pub type MicrogestureType = crate::GlobalNamespace::OVRPlugin_MicrogestureType;
     #[cfg(feature = "OVRPlugin+Node")]
     pub type Node = crate::GlobalNamespace::OVRPlugin_Node;
     #[cfg(feature = "OVRPlugin+OVRP_0_1_0")]
@@ -527,10 +1286,70 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type OVRP_0_5_0 = crate::GlobalNamespace::OVRPlugin_OVRP_0_5_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_0_0")]
     pub type OVRP_1_0_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_0_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_100_0")]
+    pub type OVRP_1_100_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_100_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_101_0")]
+    pub type OVRP_1_101_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_101_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_102_0")]
+    pub type OVRP_1_102_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_102_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_103_0")]
+    pub type OVRP_1_103_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_103_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_104_0")]
+    pub type OVRP_1_104_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_104_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_105_0")]
+    pub type OVRP_1_105_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_105_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_106_0")]
+    pub type OVRP_1_106_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_106_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_107_0")]
+    pub type OVRP_1_107_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_107_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_108_0")]
+    pub type OVRP_1_108_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_108_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_109_0")]
+    pub type OVRP_1_109_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_109_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_10_0")]
     pub type OVRP_1_10_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_110_0")]
+    pub type OVRP_1_110_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_110_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_111_0")]
+    pub type OVRP_1_111_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_111_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_112_0")]
+    pub type OVRP_1_112_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_112_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_113_0")]
+    pub type OVRP_1_113_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_113_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_114_0")]
+    pub type OVRP_1_114_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_114_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_115_0")]
+    pub type OVRP_1_115_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_115_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_116_0")]
+    pub type OVRP_1_116_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_116_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_117_0")]
+    pub type OVRP_1_117_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_117_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_118_0")]
+    pub type OVRP_1_118_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_118_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_119_0")]
+    pub type OVRP_1_119_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_119_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_11_0")]
     pub type OVRP_1_11_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_120_0")]
+    pub type OVRP_1_120_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_120_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_121_0")]
+    pub type OVRP_1_121_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_121_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_122_0")]
+    pub type OVRP_1_122_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_122_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_123_0")]
+    pub type OVRP_1_123_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_123_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_124_0")]
+    pub type OVRP_1_124_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_124_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_125_0")]
+    pub type OVRP_1_125_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_125_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_126_0")]
+    pub type OVRP_1_126_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_126_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_127_0")]
+    pub type OVRP_1_127_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_127_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_128_0")]
+    pub type OVRP_1_128_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_128_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_129_0")]
+    pub type OVRP_1_129_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_129_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_12_0")]
     pub type OVRP_1_12_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_12_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_15_0")]
@@ -675,10 +1494,34 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type OVRP_1_87_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_87_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_88_0")]
     pub type OVRP_1_88_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_89_0")]
+    pub type OVRP_1_89_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_89_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_8_0")]
     pub type OVRP_1_8_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_8_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_90_0")]
+    pub type OVRP_1_90_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_90_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_91_0")]
+    pub type OVRP_1_91_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_91_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_92_0")]
+    pub type OVRP_1_92_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_92_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_93_0")]
+    pub type OVRP_1_93_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_93_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_94_0")]
+    pub type OVRP_1_94_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_94_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_95_0")]
+    pub type OVRP_1_95_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_95_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_96_0")]
+    pub type OVRP_1_96_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_96_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_97_0")]
+    pub type OVRP_1_97_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_97_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_98_0")]
+    pub type OVRP_1_98_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_98_0;
+    #[cfg(feature = "OVRPlugin+OVRP_1_99_0")]
+    pub type OVRP_1_99_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_99_0;
     #[cfg(feature = "OVRPlugin+OVRP_1_9_0")]
     pub type OVRP_1_9_0 = crate::GlobalNamespace::OVRPlugin_OVRP_1_9_0;
+    #[cfg(feature = "OVRPlugin+OptionalBool")]
+    pub type OptionalBool = crate::GlobalNamespace::OVRPlugin_OptionalBool;
     #[cfg(feature = "OVRPlugin+OverlayFlag")]
     pub type OverlayFlag = crate::GlobalNamespace::OVRPlugin_OverlayFlag;
     #[cfg(feature = "OVRPlugin+OverlayShape")]
@@ -723,8 +1566,12 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type RecenterFlags = crate::GlobalNamespace::OVRPlugin_RecenterFlags;
     #[cfg(feature = "OVRPlugin+Rectf")]
     pub type Rectf = crate::GlobalNamespace::OVRPlugin_Rectf;
+    #[cfg(feature = "OVRPlugin+RectfPair")]
+    pub type RectfPair = crate::GlobalNamespace::OVRPlugin_RectfPair;
     #[cfg(feature = "OVRPlugin+Recti")]
     pub type Recti = crate::GlobalNamespace::OVRPlugin_Recti;
+    #[cfg(feature = "OVRPlugin+RectiPair")]
+    pub type RectiPair = crate::GlobalNamespace::OVRPlugin_RectiPair;
     #[cfg(feature = "OVRPlugin+RenderModelFlags")]
     pub type RenderModelFlags = crate::GlobalNamespace::OVRPlugin_RenderModelFlags;
     #[cfg(feature = "OVRPlugin+RenderModelProperties")]
@@ -739,6 +1586,14 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type RoomLayoutInternal = crate::GlobalNamespace::OVRPlugin_RoomLayoutInternal;
     #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
     pub type SceneCaptureRequestInternal = crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal;
+    #[cfg(feature = "OVRPlugin+ShareSpacesGroupRecipientInfo")]
+    pub type ShareSpacesGroupRecipientInfo = crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo;
+    #[cfg(feature = "OVRPlugin+ShareSpacesInfo")]
+    pub type ShareSpacesInfo = crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo;
+    #[cfg(feature = "OVRPlugin+ShareSpacesRecipientInfoBase")]
+    pub type ShareSpacesRecipientInfoBase = crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase;
+    #[cfg(feature = "OVRPlugin+ShareSpacesRecipientType")]
+    pub type ShareSpacesRecipientType = crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType;
     #[cfg(feature = "OVRPlugin+Size3f")]
     pub type Size3f = crate::GlobalNamespace::OVRPlugin_Size3f;
     #[cfg(feature = "OVRPlugin+Sizef")]
@@ -751,6 +1606,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type Skeleton2 = crate::GlobalNamespace::OVRPlugin_Skeleton2;
     #[cfg(feature = "OVRPlugin+Skeleton2Internal")]
     pub type Skeleton2Internal = crate::GlobalNamespace::OVRPlugin_Skeleton2Internal;
+    #[cfg(feature = "OVRPlugin+Skeleton3Internal")]
+    pub type Skeleton3Internal = crate::GlobalNamespace::OVRPlugin_Skeleton3Internal;
     #[cfg(feature = "OVRPlugin+SkeletonConstants")]
     pub type SkeletonConstants = crate::GlobalNamespace::OVRPlugin_SkeletonConstants;
     #[cfg(feature = "OVRPlugin+SkeletonType")]
@@ -759,10 +1616,26 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type SpaceComponentType = crate::GlobalNamespace::OVRPlugin_SpaceComponentType;
     #[cfg(feature = "OVRPlugin+SpaceContainerInternal")]
     pub type SpaceContainerInternal = crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal;
+    #[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+    pub type SpaceDiscoveryFilterInfoComponents = crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents;
+    #[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+    pub type SpaceDiscoveryFilterInfoHeader = crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader;
+    #[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+    pub type SpaceDiscoveryFilterInfoIds = crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds;
+    #[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterType")]
+    pub type SpaceDiscoveryFilterType = crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType;
+    #[cfg(feature = "OVRPlugin+SpaceDiscoveryInfo")]
+    pub type SpaceDiscoveryInfo = crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo;
+    #[cfg(feature = "OVRPlugin+SpaceDiscoveryResult")]
+    pub type SpaceDiscoveryResult = crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult;
+    #[cfg(feature = "OVRPlugin+SpaceDiscoveryResults")]
+    pub type SpaceDiscoveryResults = crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults;
     #[cfg(feature = "OVRPlugin+SpaceFilterInfoComponents")]
     pub type SpaceFilterInfoComponents = crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents;
     #[cfg(feature = "OVRPlugin+SpaceFilterInfoIds")]
     pub type SpaceFilterInfoIds = crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds;
+    #[cfg(feature = "OVRPlugin+SpaceFlags")]
+    pub type SpaceFlags = crate::GlobalNamespace::OVRPlugin_SpaceFlags;
     #[cfg(feature = "OVRPlugin+SpaceLocationFlags")]
     pub type SpaceLocationFlags = crate::GlobalNamespace::OVRPlugin_SpaceLocationFlags;
     #[cfg(feature = "OVRPlugin+SpaceLocationf")]
@@ -773,6 +1646,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type SpaceQueryFilterType = crate::GlobalNamespace::OVRPlugin_SpaceQueryFilterType;
     #[cfg(feature = "OVRPlugin+SpaceQueryInfo")]
     pub type SpaceQueryInfo = crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo;
+    #[cfg(feature = "OVRPlugin+SpaceQueryInfo2")]
+    pub type SpaceQueryInfo2 = crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2;
     #[cfg(feature = "OVRPlugin+SpaceQueryResult")]
     pub type SpaceQueryResult = crate::GlobalNamespace::OVRPlugin_SpaceQueryResult;
     #[cfg(feature = "OVRPlugin+SpaceQueryType")]
@@ -809,6 +1684,8 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type TrackingOrigin = crate::GlobalNamespace::OVRPlugin_TrackingOrigin;
     #[cfg(feature = "OVRPlugin+TriangleMeshInternal")]
     pub type TriangleMeshInternal = crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal;
+    #[cfg(feature = "OVRPlugin+UnifiedConsent")]
+    pub type UnifiedConsent = crate::GlobalNamespace::OVRPlugin_UnifiedConsent;
     #[cfg(feature = "OVRPlugin+UnityOpenXR")]
     pub type UnityOpenXR = crate::GlobalNamespace::OVRPlugin_UnityOpenXR;
     #[cfg(feature = "OVRPlugin+Vector2f")]
@@ -835,6 +1712,10 @@ impl crate::GlobalNamespace::OVRPlugin {
     pub type VirtualKeyboardLocationType = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType;
     #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationState")]
     pub type VirtualKeyboardModelAnimationState = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider")]
+    pub type VirtualKeyboardModelAnimationStateBufferProvider = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider;
+    #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
+    pub type VirtualKeyboardModelAnimationStateHandler = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler;
     #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStates")]
     pub type VirtualKeyboardModelAnimationStates = crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates;
     #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStatesInternal")]
@@ -1022,6 +1903,31 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn CancelFuture(
+        future: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (u64),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("CancelFuture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CancelFuture", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (future))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ChangeVirtualKeyboardTextContext(
         textContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
@@ -1045,6 +1951,69 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
             cordl_method_info.invoke_unchecked((), (textContext))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDynamicObjectTracker(
+        tracker: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("CreateDynamicObjectTracker")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDynamicObjectTracker", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (tracker))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateDynamicObjectTrackerAsync() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTask_1<
+            crate::GlobalNamespace::OVRResult_2<
+                u64,
+                crate::GlobalNamespace::OVRPlugin_Result,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRTask_1<
+                            crate::GlobalNamespace::OVRResult_2<
+                                u64,
+                                crate::GlobalNamespace::OVRPlugin_Result,
+                            >,
+                        >,
+                        0usize,
+                    >("CreateDynamicObjectTrackerAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateDynamicObjectTrackerAsync", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
+            crate::GlobalNamespace::OVRResult_2<
+                u64,
+                crate::GlobalNamespace::OVRPlugin_Result,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn CreateInsightTriangleMesh(
@@ -1232,6 +2201,31 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn DestroyDynamicObjectTracker(
+        tracker: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (u64),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("DestroyDynamicObjectTracker")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyDynamicObjectTracker", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (tracker))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn DestroyInsightPassthroughGeometryInstance(
         geometryInstanceHandle: u64,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1372,6 +2366,39 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn DiscoverSpaces(
+        info: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo,
+        >,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("DiscoverSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DiscoverSpaces", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (info, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn EnqueueDestroyLayer(
         layerID: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -1453,6 +2480,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         hidden: bool,
         secureContent: bool,
         automaticFiltering: bool,
+        premultipledAlpha: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1484,15 +2512,16 @@ impl crate::GlobalNamespace::OVRPlugin {
                             bool,
                             bool,
                             bool,
+                            bool,
                         ),
                         bool,
-                        24usize,
+                        25usize,
                     >("EnqueueSubmitLayer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EnqueueSubmitLayer", 24usize
+                            "EnqueueSubmitLayer", 25usize
                         )
                     })
             });
@@ -1525,12 +2554,13 @@ impl crate::GlobalNamespace::OVRPlugin {
                         hidden,
                         secureContent,
                         automaticFiltering,
+                        premultipledAlpha,
                     ),
                 )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn EnumerateSpaceSupportedComponents(
+    pub fn EnumerateSpaceSupportedComponents_ByRefMut_Il2CppArray0(
         space: u64,
         numSupportedComponents: quest_hook::libil2cpp::ByRefMut<u32>,
         supportedComponents: quest_hook::libil2cpp::Gc<
@@ -1573,6 +2603,42 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn EnumerateSpaceSupportedComponents_u32_ByRefMut_Il2CppObject1(
+        space: u64,
+        capacityInput: u32,
+        countOutput: quest_hook::libil2cpp::ByRefMut<u32>,
+        buffer: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            u32,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("EnumerateSpaceSupportedComponents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EnumerateSpaceSupportedComponents", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (space, capacityInput, countOutput, buffer))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn EraseSpace(
         space: u64,
         location: crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
@@ -1601,6 +2667,207 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (space, location, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn EraseSpaceWithResult(
+        space: u64,
+        location: crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("EraseSpaceWithResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EraseSpaceWithResult", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, location, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn EraseSpaces(
+        spaceCount: u32,
+        spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uuidCount: u32,
+        uuids: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        5usize,
+                    >("EraseSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EraseSpaces", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (spaceCount, spaces, uuidCount, uuids, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetActionStateBoolean(
+        actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetActionStateBoolean")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetActionStateBoolean", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (actionName, result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetActionStateFloat(
+        actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<f32>,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetActionStateFloat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetActionStateFloat", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (actionName, result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetActionStatePose_ByRefMut0(
+        actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Posef>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_Posef,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("GetActionStatePose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetActionStatePose", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (actionName, result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetActionStatePose_OVRPlugin_Hand_ByRefMut1(
+        actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        result: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Posef>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::OVRPlugin_Hand,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_Posef,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetActionStatePose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetActionStatePose", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (actionName, hand, result))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1742,6 +3009,41 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetBodyState4(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        jointSet: crate::GlobalNamespace::OVRPlugin_BodyJointSet,
+        bodyState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_BodyState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            crate::GlobalNamespace::OVRPlugin_BodyJointSet,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_BodyState,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetBodyState4")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBodyState4", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (stepId, jointSet, bodyState))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetBoundaryConfigured() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1839,6 +3141,35 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (boundaryType, points, pointsCount))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetBoundaryVisibility(
+        boundaryVisibility: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("GetBoundaryVisibility")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetBoundaryVisibility", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (boundaryVisibility))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2181,6 +3512,33 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetCurrentInteractionProfileName(
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Hand),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("GetCurrentInteractionProfileName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCurrentInteractionProfileName", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (hand))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCurrentTrackingTransformPose() -> quest_hook::libil2cpp::Result<
         crate::GlobalNamespace::OVRPlugin_Posef,
     > {
@@ -2253,6 +3611,56 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Handedness = unsafe {
             cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDynamicObjectKeyboardSupported(
+        value: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<bool>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("GetDynamicObjectKeyboardSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDynamicObjectKeyboardSupported", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetDynamicObjectTrackerSupported(
+        value: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<bool>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("GetDynamicObjectTrackerSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetDynamicObjectTrackerSupported", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2443,6 +3851,41 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetFaceState2(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        frameIndex: i32,
+        faceState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_FaceState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_FaceState,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetFaceState2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFaceState2", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, faceState))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetFaceStateInternal(
         stepId: crate::GlobalNamespace::OVRPlugin_Step,
         frameIndex: i32,
@@ -2475,6 +3918,39 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (stepId, frameIndex, faceState))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFaceVisemesState(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        faceVisemesState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_FaceVisemesState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_FaceVisemesState,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("GetFaceVisemesState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFaceVisemesState", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (stepId, faceVisemesState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2545,6 +4021,41 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHandTrackingState(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        handTrackingState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_HandTrackingState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            crate::GlobalNamespace::OVRPlugin_Hand,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_HandTrackingState,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetHandTrackingState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHandTrackingState", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (stepId, hand, handTrackingState))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetHeadPoseModifier(
@@ -3890,6 +5401,39 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetSpaceDynamicObjectData(
+        space: u64,
+        data: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_DynamicObjectData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_DynamicObjectData,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("GetSpaceDynamicObjectData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceDynamicObjectData", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, data))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSpaceRoomLayout(
         space: u64,
         roomLayout: quest_hook::libil2cpp::ByRefMut<
@@ -3955,6 +5499,43 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (space, labels))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetSpaceSemanticLabelsNonAlloc(
+        space: u64,
+        buffer: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
+        >,
+        length: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppArray<char>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        bool,
+                        3usize,
+                    >("GetSpaceSemanticLabelsNonAlloc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetSpaceSemanticLabelsNonAlloc", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, buffer, length))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4400,7 +5981,7 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetVirtualKeyboardModelAnimationStates(
+    pub fn GetVirtualKeyboardModelAnimationStates_ByRefMut1(
         animationStates: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStates,
         >,
@@ -4426,6 +6007,43 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
             cordl_method_info.invoke_unchecked((), (animationStates))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetVirtualKeyboardModelAnimationStates_OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider_OVRPlugin_VirtualKeyboardModelAnimationStateHandler0(
+        bufferProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider,
+        >,
+        stateHandler: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("GetVirtualKeyboardModelAnimationStates")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetVirtualKeyboardModelAnimationStates", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (bufferProvider, stateHandler))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4859,6 +6477,27 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IsWideMotionModeHandPosesEnabled() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("IsWideMotionModeHandPosesEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsWideMotionModeHandPosesEnabled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadRenderModel(
         modelKey: u64,
     ) -> quest_hook::libil2cpp::Result<
@@ -5023,6 +6662,39 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn PollFuture(
+        future: u64,
+        state: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_FutureState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_FutureState,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("PollFuture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PollFuture", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (future, state))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn QuerySpaces(
         queryInfo: crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
@@ -5052,6 +6724,64 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn QuerySpaces2(
+        queryInfo: crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("QuerySpaces2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuerySpaces2", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (queryInfo, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn QuerySpacesWithResult(
+        queryInfo: crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("QuerySpacesWithResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "QuerySpacesWithResult", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (queryInfo, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn RecenterTrackingOrigin(
         flags: crate::GlobalNamespace::OVRPlugin_RecenterFlags,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -5074,6 +6804,56 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RequestBodyTrackingFidelity(
+        fidelity: crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2),
+                        bool,
+                        1usize,
+                    >("RequestBodyTrackingFidelity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestBodyTrackingFidelity", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (fidelity))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RequestBoundaryVisibility(
+        boundaryVisibility: crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BoundaryVisibility),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("RequestBoundaryVisibility")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestBoundaryVisibility", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (boundaryVisibility))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5125,6 +6905,27 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn ResetBodyTrackingCalibration() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("ResetBodyTrackingCalibration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ResetBodyTrackingCalibration", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn ResetDefaultExternalCamera() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -5140,6 +6941,42 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RetrieveSpaceDiscoveryResults(
+        requestId: u64,
+        results: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        capacityInput: i32,
+        countOutput: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("RetrieveSpaceDiscoveryResults")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RetrieveSpaceDiscoveryResults", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (requestId, results, capacityInput, countOutput))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn RetrieveSpaceQueryResults_Allocator0(
@@ -5255,7 +7092,43 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SaveSpaceList(
+    pub fn SaveSpaceList_Il2CppObject_u32_OVRPlugin_SpaceStorageLocation_ByRefMut1(
+        spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        numSpaces: u32,
+        location: crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            u32,
+                            crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("SaveSpaceList")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveSpaceList", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (spaces, numSpaces, location, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveSpaceList_NativeArray_1_OVRPlugin_SpaceStorageLocation_ByRefMut0(
         spaces: crate::Unity::Collections::NativeArray_1<u64>,
         location: crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
@@ -5283,6 +7156,39 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
             cordl_method_info.invoke_unchecked((), (spaces, location, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveSpaces(
+        spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("SaveSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveSpaces", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (spaces, count, requestId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -5320,6 +7226,31 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (name, param, source))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SendMicrogestureHint() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_Result,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        0usize,
+                    >("SendMicrogestureHint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SendMicrogestureHint", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -5720,6 +7651,105 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetDeveloperTelemetryConsent(
+        consent: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("SetDeveloperTelemetryConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDeveloperTelemetryConsent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (consent))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDynamicObjectTrackedClasses(
+        tracker: u64,
+        classes: crate::System::ReadOnlySpan_1<
+            crate::GlobalNamespace::OVRPlugin_DynamicObjectClass,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            crate::System::ReadOnlySpan_1<
+                                crate::GlobalNamespace::OVRPlugin_DynamicObjectClass,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("SetDynamicObjectTrackedClasses")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDynamicObjectTrackedClasses", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (tracker, classes))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetDynamicObjectTrackedClassesAsync(
+        tracker: u64,
+        classes: crate::System::ReadOnlySpan_1<
+            crate::GlobalNamespace::OVRPlugin_DynamicObjectClass,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTask_1<
+            crate::GlobalNamespace::OVRResult_1<crate::GlobalNamespace::OVRPlugin_Result>,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            crate::System::ReadOnlySpan_1<
+                                crate::GlobalNamespace::OVRPlugin_DynamicObjectClass,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRTask_1<
+                            crate::GlobalNamespace::OVRResult_1<
+                                crate::GlobalNamespace::OVRPlugin_Result,
+                            >,
+                        >,
+                        2usize,
+                    >("SetDynamicObjectTrackedClassesAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDynamicObjectTrackedClassesAsync", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
+            crate::GlobalNamespace::OVRResult_1<crate::GlobalNamespace::OVRPlugin_Result>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (tracker, classes))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetExternalCameraProperties(
         cameraName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         cameraIntrinsics: quest_hook::libil2cpp::ByRefMut<
@@ -5762,6 +7792,31 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetExternalLayerDynresEnabled(
+        enabled: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("SetExternalLayerDynresEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetExternalLayerDynresEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (enabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetEyeBufferSharpenType(
         sharpenType: crate::GlobalNamespace::OVRPlugin_LayerSharpenType,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -5787,6 +7842,31 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetFaceTrackingVisemesEnabled(
+        enabled: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("SetFaceTrackingVisemesEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFaceTrackingVisemesEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (enabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetHandNodePoseStateLatency(
         latencyInSeconds: f64,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -5809,6 +7889,31 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (latencyInSeconds))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetHandSkeletonVersion(
+        skeletonVersion: crate::GlobalNamespace::OVRHandSkeletonVersion,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRHandSkeletonVersion),
+                        bool,
+                        1usize,
+                    >("SetHandSkeletonVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetHandSkeletonVersion", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (skeletonVersion))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6150,7 +8255,108 @@ impl crate::GlobalNamespace::OVRPlugin {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ShareSpaces(
+    pub fn SetWideMotionModeHandPoses(
+        wideMotionModeFusionHandPoses: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (bool),
+                        bool,
+                        1usize,
+                    >("SetWideMotionModeHandPoses")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetWideMotionModeHandPoses", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (wideMotionModeFusionHandPoses))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShareSpaces_ByRefMut_ByRefMut2(
+        info: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo,
+        >,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ShareSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShareSpaces", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (info, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShareSpaces_Il2CppObject_u32_Il2CppObject_u32_ByRefMut1(
+        spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        numSpaces: u32,
+        userHandles: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        numUsers: u32,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            u32,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        5usize,
+                    >("ShareSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShareSpaces", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (spaces, numSpaces, userHandles, numUsers, requestId),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShareSpaces_NativeArray_1_NativeArray_1_ByRefMut0(
         spaces: crate::Unity::Collections::NativeArray_1<u64>,
         userHandles: crate::Unity::Collections::NativeArray_1<u64>,
         requestId: quest_hook::libil2cpp::ByRefMut<u64>,
@@ -6255,6 +8461,85 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn StartBodyTracking2(
+        jointSet: crate::GlobalNamespace::OVRPlugin_BodyJointSet,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BodyJointSet),
+                        bool,
+                        1usize,
+                    >("StartBodyTracking2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartBodyTracking2", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (jointSet))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartColocationSessionAdvertisement(
+        info: crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("StartColocationSessionAdvertisement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartColocationSessionAdvertisement", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (info, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartColocationSessionDiscovery(
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("StartColocationSessionDiscovery")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartColocationSessionDiscovery", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn StartEyeTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6287,6 +8572,39 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartFaceTracking2(
+        requestedFaceTrackingDataSources: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
+                            >,
+                        >),
+                        bool,
+                        1usize,
+                    >("StartFaceTracking2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartFaceTracking2", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestedFaceTrackingDataSources))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StartKeyboardTracking(
@@ -6327,6 +8645,56 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn StopColocationSessionAdvertisement(
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("StopColocationSessionAdvertisement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopColocationSessionAdvertisement", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StopColocationSessionDiscovery(
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("StopColocationSessionDiscovery")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopColocationSessionDiscovery", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn StopEyeTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6361,6 +8729,23 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn StopFaceTracking2() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), bool, 0usize>("StopFaceTracking2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StopFaceTracking2", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn StopKeyboardTracking() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6376,6 +8761,31 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SuggestBodyTrackingCalibrationOverride(
+        calibrationInfo: crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo),
+                        bool,
+                        1usize,
+                    >("SuggestBodyTrackingCalibrationOverride")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SuggestBodyTrackingCalibrationOverride", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (calibrationInfo))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn SuggestVirtualKeyboardLocation(
@@ -6487,6 +8897,42 @@ impl crate::GlobalNamespace::OVRPlugin {
             });
         let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
             cordl_method_info.invoke_unchecked((), (b))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerVibrationAction(
+        actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        duration: f32,
+        amplitude: f32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::OVRPlugin_Hand,
+                            f32,
+                            f32,
+                        ),
+                        bool,
+                        4usize,
+                    >("TriggerVibrationAction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerVibrationAction", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (actionName, hand, duration, amplitude))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6690,6 +9136,31 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HandSkeletonVersion() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRHandSkeletonVersion,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRHandSkeletonVersion,
+                        0usize,
+                    >("get_HandSkeletonVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HandSkeletonVersion", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRHandSkeletonVersion = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_audioInId() -> quest_hook::libil2cpp::Result<
@@ -7006,6 +9477,40 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_faceTracking2Enabled() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), bool, 0usize>("get_faceTracking2Enabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_faceTracking2Enabled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_faceTracking2Supported() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), bool, 0usize>("get_faceTracking2Supported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_faceTracking2Supported", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_faceTrackingEnabled() -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -7034,6 +9539,27 @@ impl crate::GlobalNamespace::OVRPlugin {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_faceTrackingSupported", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_faceTrackingVisemesSupported() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_faceTrackingVisemesSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_faceTrackingVisemesSupported", 0usize
                         )
                     })
             });
@@ -7496,6 +10022,29 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_premultipliedAlphaLayersSupported() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_premultipliedAlphaLayersSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_premultipliedAlphaLayersSupported", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_productName() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -7767,6 +10316,29 @@ impl crate::GlobalNamespace::OVRPlugin {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_unpremultipliedAlphaLayersSupported() -> quest_hook::libil2cpp::Result<
+        bool,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("get_unpremultipliedAlphaLayersSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unpremultipliedAlphaLayersSupported", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_useDynamicFixedFoveatedRendering() -> quest_hook::libil2cpp::Result<
         bool,
     > {
@@ -7889,6 +10461,31 @@ impl crate::GlobalNamespace::OVRPlugin {
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_HandSkeletonVersion(
+        value: crate::GlobalNamespace::OVRHandSkeletonVersion,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRHandSkeletonVersion),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_HandSkeletonVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_HandSkeletonVersion", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_chromatic(
@@ -8474,6 +11071,101 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ActionTypes")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_ActionTypes {
+    #[default]
+    Boolean = 1i32,
+    Float = 2i32,
+    Pose = 4i32,
+    Vector2 = 3i32,
+    Vibration = 100i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ActionTypes")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_ActionTypes {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/ActionTypes";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ActionTypes")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_ActionTypes {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ActionTypes")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_ActionTypes {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ActionTypes")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_ActionTypes {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ActionTypes")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_ActionTypes {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
     }
 }
 #[cfg(feature = "cordl_class_OVRPlugin+AppPerfFrameStats")]
@@ -9066,6 +11758,99 @@ impl crate::GlobalNamespace::OVRPlugin_BodyJointLocation {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+BodyJointSet")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_BodyJointSet {
+    #[default]
+    FullBody = 1i32,
+    None = -1i32,
+    UpperBody = 0i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyJointSet")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_BodyJointSet {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyJointSet";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyJointSet")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_BodyJointSet {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyJointSet")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_BodyJointSet {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyJointSet")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_BodyJointSet {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyJointSet")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_BodyJointSet {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+BodyState")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -9078,6 +11863,9 @@ pub struct OVRPlugin_BodyState {
     pub Confidence: f32,
     pub SkeletonChangedCount: u32,
     pub Time: f64,
+    pub JointSet: crate::GlobalNamespace::OVRPlugin_BodyJointSet,
+    pub CalibrationStatus: crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState,
+    pub Fidelity: crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BodyState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_BodyState {
@@ -9175,6 +11963,198 @@ for crate::GlobalNamespace::OVRPlugin_BodyState {
 }
 #[cfg(feature = "OVRPlugin+BodyState")]
 impl crate::GlobalNamespace::OVRPlugin_BodyState {}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_BodyState4Internal {
+    pub IsActive: crate::GlobalNamespace::OVRPlugin_Bool,
+    pub Confidence: f32,
+    pub SkeletonChangedCount: u32,
+    pub Time: f64,
+    pub JointLocation_0: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_1: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_2: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_3: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_4: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_5: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_6: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_7: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_8: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_9: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_10: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_11: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_12: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_13: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_14: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_15: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_16: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_17: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_18: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_19: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_20: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_21: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_22: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_23: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_24: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_25: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_26: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_27: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_28: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_29: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_30: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_31: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_32: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_33: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_34: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_35: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_36: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_37: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_38: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_39: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_40: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_41: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_42: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_43: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_44: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_45: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_46: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_47: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_48: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_49: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_50: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_51: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_52: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_53: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_54: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_55: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_56: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_57: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_58: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_59: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_60: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_61: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_62: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_63: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_64: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_65: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_66: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_67: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_68: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_69: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_70: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_71: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_72: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_73: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_74: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_75: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_76: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_77: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_78: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_79: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_80: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_81: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_82: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub JointLocation_83: crate::GlobalNamespace::OVRPlugin_BodyJointLocation,
+    pub CalibrationStatus: crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState,
+    pub Fidelity: crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_BodyState4Internal {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyState4Internal";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_BodyState4Internal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_BodyState4Internal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_BodyState4Internal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_BodyState4Internal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyState4Internal")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_BodyState4Internal {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+BodyState4Internal")]
+impl crate::GlobalNamespace::OVRPlugin_BodyState4Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+BodyStateInternal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -9351,6 +12331,294 @@ for crate::GlobalNamespace::OVRPlugin_BodyStateInternal {
 }
 #[cfg(feature = "OVRPlugin+BodyStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_BodyStateInternal {}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_BodyTrackingCalibrationInfo {
+    pub BodyHeight: f32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyTrackingCalibrationInfo";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+BodyTrackingCalibrationInfo")]
+impl crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo {}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_BodyTrackingCalibrationState {
+    #[default]
+    Calibrating = 2i32,
+    Invalid = 3i32,
+    Valid = 1i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationState")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyTrackingCalibrationState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationState")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationState")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationState")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingCalibrationState")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingFidelity2")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_BodyTrackingFidelity2 {
+    #[default]
+    High = 2i32,
+    Low = 1i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingFidelity2")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2 {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/BodyTrackingFidelity2";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingFidelity2")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2 {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingFidelity2")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2 {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingFidelity2")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2 {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BodyTrackingFidelity2")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2 {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+Bone")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -9633,6 +12901,21 @@ pub enum OVRPlugin_BoneId {
     Body_SpineLower = 2i32,
     Body_SpineMiddle = 3i32,
     Body_SpineUpper = 4i32,
+    FullBody_End = 84i32,
+    FullBody_Invalid = 85i32,
+    FullBody_LeftFootAnkle = 73i32,
+    FullBody_LeftFootAnkleTwist = 72i32,
+    FullBody_LeftFootBall = 76i32,
+    FullBody_LeftFootSubtalar = 74i32,
+    FullBody_LeftFootTransverse = 75i32,
+    FullBody_LeftLowerLeg = 71i32,
+    FullBody_RightFootAnkle = 80i32,
+    FullBody_RightFootAnkleTwist = 79i32,
+    FullBody_RightFootBall = 83i32,
+    FullBody_RightFootSubtalar = 81i32,
+    FullBody_RightFootTransverse = 82i32,
+    FullBody_RightLowerLeg = 78i32,
+    FullBody_RightUpperLeg = 77i32,
     Invalid = -1i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+BoneId")]
@@ -10098,6 +13381,98 @@ for crate::GlobalNamespace::OVRPlugin_BoundaryType {
 #[cfg(feature = "cordl_class_OVRPlugin+BoundaryType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPlugin_BoundaryType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BoundaryVisibility")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_BoundaryVisibility {
+    #[default]
+    NotSuppressed = 1i32,
+    Suppressed = 2i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BoundaryVisibility")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_BoundaryVisibility {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/BoundaryVisibility";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BoundaryVisibility")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_BoundaryVisibility {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BoundaryVisibility")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_BoundaryVisibility {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BoundaryVisibility")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_BoundaryVisibility {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+BoundaryVisibility")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_BoundaryVisibility {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -11012,6 +14387,110 @@ for crate::GlobalNamespace::OVRPlugin_CameraStatus {
         actual
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_ColocationSessionStartAdvertisementInfo {
+    pub PeerMetadataCount: u32,
+    pub GroupMetadata: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/ColocationSessionStartAdvertisementInfo";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+ColocationSessionStartAdvertisementInfo")]
+impl crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+ColorSpace")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -12078,6 +15557,305 @@ impl crate::GlobalNamespace::OVRPlugin_ControllerState6 {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectClass")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_DynamicObjectClass {
+    #[default]
+    Keyboard = 1000587000i32,
+    None = 0i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectClass")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectClass {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/DynamicObjectClass";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectClass")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectClass {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectClass")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectClass {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectClass")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectClass {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectClass")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectClass {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_DynamicObjectData {
+    pub ClassType: crate::GlobalNamespace::OVRPlugin_DynamicObjectClass,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectData {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/DynamicObjectData";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectData {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectData {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectData {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectData {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+DynamicObjectData")]
+impl crate::GlobalNamespace::OVRPlugin_DynamicObjectData {}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_DynamicObjectTrackedClassesSetInfo {
+    pub Classes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub ClassCount: u32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/DynamicObjectTrackedClassesSetInfo";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+DynamicObjectTrackedClassesSetInfo")]
+impl crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo {}
 #[cfg(feature = "cordl_class_OVRPlugin+EventDataBuffer")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -12187,8 +15965,21 @@ impl crate::GlobalNamespace::OVRPlugin_EventDataBuffer {}
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_EventType {
     #[default]
+    BoundaryVisibilityChanged = 510i32,
+    ColocationSessionAdvertisementComplete = 371i32,
+    ColocationSessionDiscoveryComplete = 375i32,
+    ColocationSessionDiscoveryResult = 374i32,
+    ColocationSessionStartAdvertisementComplete = 370i32,
+    ColocationSessionStartDiscoveryComplete = 373i32,
+    ColocationSessionStopAdvertisementComplete = 372i32,
+    ColocationSessionStopDiscoveryComplete = 376i32,
+    CreateDynamicObjectTrackerResult = 650i32,
     DisplayRefreshRateChanged = 1i32,
+    PassthroughLayerResumed = 500i32,
     SceneCaptureComplete = 100i32,
+    SetDynamicObjectTrackedClassesResult = 651i32,
+    SpaceDiscoveryComplete = 301i32,
+    SpaceDiscoveryResultsAvailable = 300i32,
     SpaceEraseComplete = 54i32,
     SpaceListSaveResult = 57i32,
     SpaceQueryComplete = 52i32,
@@ -12196,6 +15987,9 @@ pub enum OVRPlugin_EventType {
     SpaceSaveComplete = 53i32,
     SpaceSetComponentStatusComplete = 50i32,
     SpaceShareResult = 56i32,
+    SpaceShareToGroupsComplete = 58i32,
+    SpacesEraseResult = 303i32,
+    SpacesSaveResult = 302i32,
     SpatialAnchorCreateComplete = 49i32,
     Unknown = 0i32,
     VirtualKeyboardBackspace = 202i32,
@@ -12815,7 +16609,9 @@ for crate::GlobalNamespace::OVRPlugin_EyeTextureFormat {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_FaceConstants {
     #[default]
+    FaceVisemesCount = 15i32,
     MaxFaceExpressions = 63i32,
+    MaxFaceExpressions2 = 70i32,
     MaxFaceRegionConfidences = 2i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceConstants")]
@@ -13046,6 +16842,168 @@ for crate::GlobalNamespace::OVRPlugin_FaceExpression {
 #[cfg(feature = "cordl_class_OVRPlugin+FaceExpression")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPlugin_FaceExpression {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceExpression2")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_FaceExpression2 {
+    #[default]
+    Brow_Lowerer_L = 0i32,
+    Brow_Lowerer_R = 1i32,
+    Cheek_Puff_L = 2i32,
+    Cheek_Puff_R = 3i32,
+    Cheek_Raiser_L = 4i32,
+    Cheek_Raiser_R = 5i32,
+    Cheek_Suck_L = 6i32,
+    Cheek_Suck_R = 7i32,
+    Chin_Raiser_B = 8i32,
+    Chin_Raiser_T = 9i32,
+    Dimpler_L = 10i32,
+    Dimpler_R = 11i32,
+    Eyes_Closed_L = 12i32,
+    Eyes_Closed_R = 13i32,
+    Eyes_Look_Down_L = 14i32,
+    Eyes_Look_Down_R = 15i32,
+    Eyes_Look_Left_L = 16i32,
+    Eyes_Look_Left_R = 17i32,
+    Eyes_Look_Right_L = 18i32,
+    Eyes_Look_Right_R = 19i32,
+    Eyes_Look_Up_L = 20i32,
+    Eyes_Look_Up_R = 21i32,
+    Inner_Brow_Raiser_L = 22i32,
+    Inner_Brow_Raiser_R = 23i32,
+    Invalid = -1i32,
+    Jaw_Drop = 24i32,
+    Jaw_Sideways_Left = 25i32,
+    Jaw_Sideways_Right = 26i32,
+    Jaw_Thrust = 27i32,
+    Lid_Tightener_L = 28i32,
+    Lid_Tightener_R = 29i32,
+    Lip_Corner_Depressor_L = 30i32,
+    Lip_Corner_Depressor_R = 31i32,
+    Lip_Corner_Puller_L = 32i32,
+    Lip_Corner_Puller_R = 33i32,
+    Lip_Funneler_LB = 34i32,
+    Lip_Funneler_LT = 35i32,
+    Lip_Funneler_RB = 36i32,
+    Lip_Funneler_RT = 37i32,
+    Lip_Pressor_L = 38i32,
+    Lip_Pressor_R = 39i32,
+    Lip_Pucker_L = 40i32,
+    Lip_Pucker_R = 41i32,
+    Lip_Stretcher_L = 42i32,
+    Lip_Stretcher_R = 43i32,
+    Lip_Suck_LB = 44i32,
+    Lip_Suck_LT = 45i32,
+    Lip_Suck_RB = 46i32,
+    Lip_Suck_RT = 47i32,
+    Lip_Tightener_L = 48i32,
+    Lip_Tightener_R = 49i32,
+    Lips_Toward = 50i32,
+    Lower_Lip_Depressor_L = 51i32,
+    Lower_Lip_Depressor_R = 52i32,
+    Max = 70i32,
+    Mouth_Left = 53i32,
+    Mouth_Right = 54i32,
+    Nose_Wrinkler_L = 55i32,
+    Nose_Wrinkler_R = 56i32,
+    Outer_Brow_Raiser_L = 57i32,
+    Outer_Brow_Raiser_R = 58i32,
+    Tongue_Back_Dorsal_Velar = 67i32,
+    Tongue_Front_Dorsal_Palate = 65i32,
+    Tongue_Mid_Dorsal_Palate = 66i32,
+    Tongue_Out = 68i32,
+    Tongue_Retreat = 69i32,
+    Tongue_Tip_Alveolar = 64i32,
+    Tongue_Tip_Interdental = 63i32,
+    Upper_Lid_Raiser_L = 59i32,
+    Upper_Lid_Raiser_R = 60i32,
+    Upper_Lip_Raiser_L = 61i32,
+    Upper_Lip_Raiser_R = 62i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceExpression2")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_FaceExpression2 {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceExpression2";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceExpression2")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_FaceExpression2 {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceExpression2")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_FaceExpression2 {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceExpression2")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_FaceExpression2 {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceExpression2")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_FaceExpression2 {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -13397,6 +17355,7 @@ pub struct OVRPlugin_FaceState {
         quest_hook::libil2cpp::Il2CppArray<f32>,
     >,
     pub Status: crate::GlobalNamespace::OVRPlugin_FaceExpressionStatus,
+    pub DataSource: crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
     pub Time: f64,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceState")]
@@ -13562,9 +17521,17 @@ pub struct OVRPlugin_FaceState2Internal {
     pub ExpressionWeights_60: f32,
     pub ExpressionWeights_61: f32,
     pub ExpressionWeights_62: f32,
+    pub ExpressionWeights_63: f32,
+    pub ExpressionWeights_64: f32,
+    pub ExpressionWeights_65: f32,
+    pub ExpressionWeights_66: f32,
+    pub ExpressionWeights_67: f32,
+    pub ExpressionWeights_68: f32,
+    pub ExpressionWeights_69: f32,
     pub ExpressionWeightConfidences_0: f32,
     pub ExpressionWeightConfidences_1: f32,
     pub Status: crate::GlobalNamespace::OVRPlugin_FaceExpressionStatusInternal,
+    pub DataSource: crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
     pub Time: f64,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+FaceState2Internal")]
@@ -13833,6 +17800,430 @@ for crate::GlobalNamespace::OVRPlugin_FaceStateInternal {
 }
 #[cfg(feature = "OVRPlugin+FaceStateInternal")]
 impl crate::GlobalNamespace::OVRPlugin_FaceStateInternal {}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceTrackingDataSource")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_FaceTrackingDataSource {
+    #[default]
+    Audio = 1i32,
+    Count = 2i32,
+    Visual = 0i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceTrackingDataSource")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceTrackingDataSource";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceTrackingDataSource")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceTrackingDataSource")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceTrackingDataSource")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceTrackingDataSource")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceViseme")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_FaceViseme {
+    #[default]
+    AA = 10i32,
+    CH = 6i32,
+    Count = 15i32,
+    DD = 4i32,
+    E = 11i32,
+    FF = 2i32,
+    IH = 12i32,
+    Invalid = -1i32,
+    KK = 5i32,
+    NN = 8i32,
+    OH = 13i32,
+    OU = 14i32,
+    PP = 1i32,
+    RR = 9i32,
+    SIL = 0i32,
+    SS = 7i32,
+    TH = 3i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceViseme")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_FaceViseme {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceViseme";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceViseme")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_FaceViseme {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceViseme")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_FaceViseme {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceViseme")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_FaceViseme {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceViseme")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_FaceViseme {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_FaceVisemesState {
+    pub IsValid: bool,
+    pub Visemes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
+    pub Time: f64,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceVisemesState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+FaceVisemesState")]
+impl crate::GlobalNamespace::OVRPlugin_FaceVisemesState {}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_FaceVisemesStateInternal {
+    pub IsValid: crate::GlobalNamespace::OVRPlugin_Bool,
+    pub Visemes_0: f32,
+    pub Visemes_1: f32,
+    pub Visemes_2: f32,
+    pub Visemes_3: f32,
+    pub Visemes_4: f32,
+    pub Visemes_5: f32,
+    pub Visemes_6: f32,
+    pub Visemes_7: f32,
+    pub Visemes_8: f32,
+    pub Visemes_9: f32,
+    pub Visemes_10: f32,
+    pub Visemes_11: f32,
+    pub Visemes_12: f32,
+    pub Visemes_13: f32,
+    pub Visemes_14: f32,
+    pub Time: f64,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/FaceVisemesStateInternal";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FaceVisemesStateInternal")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+FaceVisemesStateInternal")]
+impl crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+FeatureType")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -14225,6 +18616,163 @@ for crate::GlobalNamespace::OVRPlugin_Fovf {
 }
 #[cfg(feature = "OVRPlugin+Fovf")]
 impl crate::GlobalNamespace::OVRPlugin_Fovf {}
+#[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_FovfPair {
+    pub Fov0: crate::GlobalNamespace::OVRPlugin_Fovf,
+    pub Fov1: crate::GlobalNamespace::OVRPlugin_Fovf,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_FovfPair {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/FovfPair";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_FovfPair {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_FovfPair {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_FovfPair {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_FovfPair {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FovfPair")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_FovfPair {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+FovfPair")]
+impl crate::GlobalNamespace::OVRPlugin_FovfPair {
+    pub fn get_Item(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Fovf> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Fovf,
+                        1usize,
+                    >("get_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Fovf = unsafe {
+            cordl_method_info.invoke_unchecked(self, (i))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_Item(
+        &mut self,
+        i: i32,
+        value: crate::GlobalNamespace::OVRPlugin_Fovf,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, crate::GlobalNamespace::OVRPlugin_Fovf),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Item", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (i, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+Frustumf")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -14434,6 +18982,98 @@ for crate::GlobalNamespace::OVRPlugin_Frustumf2 {
 }
 #[cfg(feature = "OVRPlugin+Frustumf2")]
 impl crate::GlobalNamespace::OVRPlugin_Frustumf2 {}
+#[cfg(feature = "cordl_class_OVRPlugin+FutureState")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_FutureState {
+    #[default]
+    Pending = 1i32,
+    Ready = 2i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FutureState")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_FutureState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/FutureState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FutureState")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_FutureState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FutureState")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_FutureState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FutureState")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_FutureState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+FutureState")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_FutureState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+GUID")]
 #[repr(C)]
 #[derive(Debug)]
@@ -14516,6 +19156,364 @@ impl crate::GlobalNamespace::OVRPlugin_GUID {
 }
 #[cfg(feature = "cordl_class_OVRPlugin+GUID")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_GUID {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton2Delegate")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_GetBoneSkeleton2Delegate {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton2Delegate")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton2Delegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/GetBoneSkeleton2Delegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+GetBoneSkeleton2Delegate")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton2Delegate {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+GetBoneSkeleton2Delegate")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton2Delegate {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+GetBoneSkeleton2Delegate")]
+impl crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton2Delegate {
+    pub fn BeginInvoke(
+        &mut self,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        2usize,
+                    >("BeginInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (callback, object))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bone> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                        crate::GlobalNamespace::OVRPlugin_Bone,
+                        1usize,
+                    >("EndInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bone = unsafe {
+            cordl_method_info.invoke_unchecked(self, (result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bone> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_Bone,
+                        0usize,
+                    >("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bone = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (object, method))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton2Delegate")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton2Delegate {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton3Delegate")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_GetBoneSkeleton3Delegate {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton3Delegate")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton3Delegate {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/GetBoneSkeleton3Delegate";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+GetBoneSkeleton3Delegate")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton3Delegate {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+GetBoneSkeleton3Delegate")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton3Delegate {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+GetBoneSkeleton3Delegate")]
+impl crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton3Delegate {
+    pub fn BeginInvoke(
+        &mut self,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        2usize,
+                    >("BeginInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (callback, object))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bone> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                        crate::GlobalNamespace::OVRPlugin_Bone,
+                        1usize,
+                    >("EndInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bone = unsafe {
+            cordl_method_info.invoke_unchecked(self, (result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bone> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_Bone,
+                        0usize,
+                    >("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bone = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (object, method))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+GetBoneSkeleton3Delegate")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_GetBoneSkeleton3Delegate {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -14811,6 +19809,9 @@ pub struct OVRPlugin_HandState {
     pub BoneRotations: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Quatf>,
     >,
+    pub BonePositions: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Vector3f>,
+    >,
     pub Pinches: crate::GlobalNamespace::OVRPlugin_HandFingerPinch,
     pub PinchStrength: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<f32>,
@@ -14922,6 +19923,152 @@ for crate::GlobalNamespace::OVRPlugin_HandState {
 }
 #[cfg(feature = "OVRPlugin+HandState")]
 impl crate::GlobalNamespace::OVRPlugin_HandState {}
+#[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_HandState3Internal {
+    pub Status: crate::GlobalNamespace::OVRPlugin_HandStatus,
+    pub RootPose: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_0: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_1: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_2: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_3: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_4: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_5: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_6: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_7: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_8: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_9: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_10: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_11: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_12: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_13: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_14: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_15: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_16: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_17: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_18: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_19: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_20: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_21: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_22: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_23: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_24: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub BonePoses_25: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub Pinches: crate::GlobalNamespace::OVRPlugin_HandFingerPinch,
+    pub PinchStrength_0: f32,
+    pub PinchStrength_1: f32,
+    pub PinchStrength_2: f32,
+    pub PinchStrength_3: f32,
+    pub PinchStrength_4: f32,
+    pub PointerPose: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub HandScale: f32,
+    pub HandConfidence: crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+    pub FingerConfidences_0: crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+    pub FingerConfidences_1: crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+    pub FingerConfidences_2: crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+    pub FingerConfidences_3: crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+    pub FingerConfidences_4: crate::GlobalNamespace::OVRPlugin_TrackingConfidence,
+    pub RequestedTimeStamp: f64,
+    pub SampleTimeStamp: f64,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_HandState3Internal {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandState3Internal";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_HandState3Internal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_HandState3Internal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_HandState3Internal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_HandState3Internal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandState3Internal")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_HandState3Internal {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+HandState3Internal")]
+impl crate::GlobalNamespace::OVRPlugin_HandState3Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+HandStateInternal")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -15161,6 +20308,212 @@ for crate::GlobalNamespace::OVRPlugin_HandStatus {
         actual
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_HandTrackingState {
+    pub Microgesture: crate::GlobalNamespace::OVRPlugin_MicrogestureType,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_HandTrackingState {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandTrackingState";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_HandTrackingState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_HandTrackingState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_HandTrackingState {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_HandTrackingState {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingState")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_HandTrackingState {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+HandTrackingState")]
+impl crate::GlobalNamespace::OVRPlugin_HandTrackingState {}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_HandTrackingStateInternal {
+    pub Microgesture: crate::GlobalNamespace::OVRPlugin_MicrogestureType,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/HandTrackingStateInternal";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+HandTrackingStateInternal")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+HandTrackingStateInternal")]
+impl crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal {}
 #[cfg(feature = "cordl_class_OVRPlugin+Handedness")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -17179,12 +22532,8 @@ pub struct OVRPlugin_LayerDesc {
     pub SampleCount: i32,
     pub Format: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     pub LayerFlags: i32,
-    pub Fov: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Fovf>,
-    >,
-    pub VisibleRect: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Rectf>,
-    >,
+    pub Fov: crate::GlobalNamespace::OVRPlugin_FovfPair,
+    pub VisibleRect: crate::GlobalNamespace::OVRPlugin_RectfPair,
     pub MaxViewportSize: crate::GlobalNamespace::OVRPlugin_Sizei,
     pub DepthFormat: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
     pub MotionVectorFormat: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
@@ -17312,176 +22661,6 @@ impl crate::GlobalNamespace::OVRPlugin_LayerDesc {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-}
-#[cfg(feature = "cordl_class_OVRPlugin+LayerDescInternal")]
-#[repr(C)]
-#[derive(Debug, Clone, Default, PartialEq)]
-pub struct OVRPlugin_LayerDescInternal {
-    pub Shape: crate::GlobalNamespace::OVRPlugin_OverlayShape,
-    pub Layout: crate::GlobalNamespace::OVRPlugin_LayerLayout,
-    pub TextureSize: crate::GlobalNamespace::OVRPlugin_Sizei,
-    pub MipLevels: i32,
-    pub SampleCount: i32,
-    pub Format: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
-    pub LayerFlags: i32,
-    pub Fov0: crate::GlobalNamespace::OVRPlugin_Fovf,
-    pub Fov1: crate::GlobalNamespace::OVRPlugin_Fovf,
-    pub VisibleRect0: crate::GlobalNamespace::OVRPlugin_Rectf,
-    pub VisibleRect1: crate::GlobalNamespace::OVRPlugin_Rectf,
-    pub MaxViewportSize: crate::GlobalNamespace::OVRPlugin_Sizei,
-    pub DepthFormat: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
-    pub MotionVectorFormat: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
-    pub MotionVectorDepthFormat: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
-    pub MotionVectorTextureSize: crate::GlobalNamespace::OVRPlugin_Sizei,
-}
-#[cfg(feature = "cordl_class_OVRPlugin+LayerDescInternal")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
-    type Held<'a> = Self;
-    type HeldRaw = Self;
-    const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "OVRPlugin/LayerDescInternal";
-    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
-    }
-    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
-    }
-    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
-    }
-    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
-    }
-}
-#[cfg(feature = "cordl_class_OVRPlugin+LayerDescInternal")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
-    }
-    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
-        self as *mut Self as *mut ::std::ffi::c_void
-    }
-}
-#[cfg(feature = "cordl_class_OVRPlugin+LayerDescInternal")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
-        actual
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
-        self
-    }
-}
-#[cfg(feature = "cordl_class_OVRPlugin+LayerDescInternal")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
-    }
-    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
-        unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
-        }
-    }
-}
-#[cfg(feature = "cordl_class_OVRPlugin+LayerDescInternal")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
-        self
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
-        actual
-    }
-}
-#[cfg(feature = "cordl_class_OVRPlugin+LayerDescInternal")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
-    }
-}
-#[cfg(feature = "OVRPlugin+LayerDescInternal")]
-impl crate::GlobalNamespace::OVRPlugin_LayerDescInternal {
-    pub fn ToLayerDesc(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_LayerDesc> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::OVRPlugin_LayerDesc,
-                        0usize,
-                    >("ToLayerDesc")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToLayerDesc", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_LayerDesc = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor(
-        &mut self,
-        layerDesc: crate::GlobalNamespace::OVRPlugin_LayerDesc,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::OVRPlugin_LayerDesc),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (layerDesc))?
-        };
         Ok(__cordl_ret.into())
     }
 }
@@ -17684,6 +22863,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerLayout {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_LayerSharpenType {
     #[default]
+    Automatic = 262144i32,
     None = 0i32,
     Normal = 8192i32,
     Quality = 65536i32,
@@ -17778,9 +22958,7 @@ for crate::GlobalNamespace::OVRPlugin_LayerSharpenType {
 pub struct OVRPlugin_LayerSubmit {
     pub LayerId: i32,
     pub TextureStage: i32,
-    pub ViewportRect: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::GlobalNamespace::OVRPlugin_Recti>,
-    >,
+    pub ViewportRect: crate::GlobalNamespace::OVRPlugin_RectiPair,
     pub Pose: crate::GlobalNamespace::OVRPlugin_Posef,
     pub LayerSubmitFlags: i32,
 }
@@ -19165,6 +24343,8 @@ pub enum OVRPlugin_MeshType {
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
+    XRHandLeft = 4i32,
+    XRHandRight = 5i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+MeshType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_MeshType {
@@ -19238,6 +24418,103 @@ for crate::GlobalNamespace::OVRPlugin_MeshType {
 #[cfg(feature = "cordl_class_OVRPlugin+MeshType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::OVRPlugin_MeshType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+MicrogestureType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_MicrogestureType {
+    #[default]
+    Invalid = -1i32,
+    NoGesture = 0i32,
+    SwipeBackward = 4i32,
+    SwipeForward = 3i32,
+    SwipeLeft = 1i32,
+    SwipeRight = 2i32,
+    ThumbTap = 5i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+MicrogestureType")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_MicrogestureType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/MicrogestureType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+MicrogestureType")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_MicrogestureType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+MicrogestureType")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_MicrogestureType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+MicrogestureType")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_MicrogestureType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+MicrogestureType")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_MicrogestureType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
@@ -19921,6 +25198,1619 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_100_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_100_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_100_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_100_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_100_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_100_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_100_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_100_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_100_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_100_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_100_0 {
+    pub fn ovrp_GetActionStatePose2(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        value: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Posef>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::OVRPlugin_Hand,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_Posef,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("ovrp_GetActionStatePose2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetActionStatePose2", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (path, hand, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetCurrentInteractionProfileName(
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        interactionProfile: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Hand, crate::System::IntPtr),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_GetCurrentInteractionProfileName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetCurrentInteractionProfileName", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (hand, interactionProfile))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_TriggerVibrationAction(
+        actionName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        duration: f32,
+        amplitude: f32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::OVRPlugin_Hand,
+                            f32,
+                            f32,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_TriggerVibrationAction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_TriggerVibrationAction", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (actionName, hand, duration, amplitude))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_100_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_100_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_101_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_101_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_101_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_101_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_101_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_101_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_101_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_101_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_101_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_101_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_101_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_101_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_101_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_102_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_102_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_102_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_102_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_102_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_102_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_102_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_102_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_102_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_102_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_102_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_102_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_102_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_103_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_103_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_103_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_103_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_103_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_103_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_103_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_103_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_103_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_103_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_103_0 {
+    pub fn ovrp_CancelFuture(
+        future: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (u64),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_CancelFuture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CancelFuture", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (future))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetHandState3(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        frameIndex: i32,
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        handState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_HandState3Internal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            i32,
+                            crate::GlobalNamespace::OVRPlugin_Hand,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_HandState3Internal,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_GetHandState3")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetHandState3", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (stepId, frameIndex, hand, handState))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_PollFuture(
+        future: u64,
+        state: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_FutureState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_FutureState,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_PollFuture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_PollFuture", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (future, state))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QuerySpaces2(
+        queryInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2,
+        >,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_QuerySpaces2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QuerySpaces2", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (queryInfo, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetHandSkeletonVersion(
+        handSkeletonVersion: crate::GlobalNamespace::OVRHandSkeletonVersion,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRHandSkeletonVersion),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SetHandSkeletonVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetHandSkeletonVersion", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (handSkeletonVersion))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_ShareSpaces2(
+        info: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo,
+        >,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_ShareSpaces2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ShareSpaces2", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (info, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_StartColocationAdvertisement(
+        info: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo,
+        >,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_ColocationSessionStartAdvertisementInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_StartColocationAdvertisement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartColocationAdvertisement", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (info, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_StartColocationDiscovery(
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_StartColocationDiscovery")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartColocationDiscovery", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_StopColocationAdvertisement(
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_StopColocationAdvertisement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StopColocationAdvertisement", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_StopColocationDiscovery(
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_StopColocationDiscovery")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StopColocationDiscovery", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_103_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_103_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_104_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_104_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_104_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_104_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_104_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_104_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_104_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_104_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_104_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_104_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_104_0 {
+    pub fn ovrp_CreateDynamicObjectTracker(
+        tracker: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<u64>),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_CreateDynamicObjectTracker")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_CreateDynamicObjectTracker", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (tracker))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_DestroyDynamicObjectTracker(
+        tracker: u64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (u64),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_DestroyDynamicObjectTracker")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DestroyDynamicObjectTracker", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (tracker))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetDynamicObjectKeyboardSupported(
+        value: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetDynamicObjectKeyboardSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetDynamicObjectKeyboardSupported", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetDynamicObjectTrackerSupported(
+        value: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetDynamicObjectTrackerSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetDynamicObjectTrackerSupported", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetFaceTrackingVisemesSupported(
+        faceTrackingVisemesSupported: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_Bool,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetFaceTrackingVisemesSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceTrackingVisemesSupported", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (faceTrackingVisemesSupported))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetFaceVisemesState(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        frameIndex: i32,
+        faceVisemesState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_FaceVisemesStateInternal,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("ovrp_GetFaceVisemesState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceVisemesState", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (stepId, frameIndex, faceVisemesState))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetSpaceDynamicObjectData(
+        space: quest_hook::libil2cpp::ByRefMut<u64>,
+        data: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_DynamicObjectData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_DynamicObjectData,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_GetSpaceDynamicObjectData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSpaceDynamicObjectData", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (space, data))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetDynamicObjectTrackedClasses(
+        tracker: u64,
+        setInfo: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_DynamicObjectTrackedClassesSetInfo,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_SetDynamicObjectTrackedClasses")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetDynamicObjectTrackedClasses", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (tracker, setInfo))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetExternalLayerDynresEnabled(
+        enabled: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SetExternalLayerDynresEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetExternalLayerDynresEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (enabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetFaceTrackingVisemesEnabled(
+        enabled: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SetFaceTrackingVisemesEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetFaceTrackingVisemesEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (enabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_104_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_104_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_105_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_105_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_105_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_105_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_105_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_105_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_105_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_105_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_105_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_105_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_105_0 {
+    pub fn ovrp_QplMarkerStartForJoin(
+        markerId: i32,
+        joinId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancelMarkerIfAppBackgrounded: crate::GlobalNamespace::OVRPlugin_Bool,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                            i32,
+                            i64,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        5usize,
+                    >("ovrp_QplMarkerStartForJoin")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerStartForJoin", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        markerId,
+                        joinId,
+                        cancelMarkerIfAppBackgrounded,
+                        instanceKey,
+                        timestampMs,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_105_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_105_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_106_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_106_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_106_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_106_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_106_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_106_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_106_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_106_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_106_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_106_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_106_0 {
+    pub const OVRP_CONSENT_NOTIFICATION_MAX_LENGTH: i32 = 1024i32;
+    pub const OVRP_CONSENT_SETTINGS_CHANGE_MAX_LENGTH: i32 = 1024i32;
+    pub const OVRP_CONSENT_TEXT_MAX_LENGTH: i32 = 2048i32;
+    pub const OVRP_CONSENT_TITLE_MAX_LENGTH: i32 = 256i32;
+    pub fn ovrp_GetConsentMarkdownText(
+        markdownText: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetConsentMarkdownText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetConsentMarkdownText", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (markdownText))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetConsentNotificationMarkdownText(
+        consentChangeLocationMarkdown: crate::System::IntPtr,
+        markDownText: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_GetConsentNotificationMarkdownText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetConsentNotificationMarkdownText", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (consentChangeLocationMarkdown, markDownText))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetConsentSettingsChangeText(
+        consentSettingsChangeText: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetConsentSettingsChangeText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetConsentSettingsChangeText", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (consentSettingsChangeText))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetConsentTitle(
+        title: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetConsentTitle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetConsentTitle", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (title))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetHandTrackingState(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        frameIndex: i32,
+        hand: crate::GlobalNamespace::OVRPlugin_Hand,
+        handState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            i32,
+                            crate::GlobalNamespace::OVRPlugin_Hand,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_HandTrackingStateInternal,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_GetHandTrackingState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetHandTrackingState", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (stepId, frameIndex, hand, handState))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetUnifiedConsent(
+        toolId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_OptionalBool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_OptionalBool,
+                        1usize,
+                    >("ovrp_GetUnifiedConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetUnifiedConsent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_OptionalBool = unsafe {
+            cordl_method_info.invoke_unchecked((), (toolId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_IsConsentSettingsChangeEnabled(
+        toolId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Bool,
+                        1usize,
+                    >("ovrp_IsConsentSettingsChangeEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsConsentSettingsChangeEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (toolId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SaveUnifiedConsent(
+        toolId: i32,
+        consentValue: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32, crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_SaveUnifiedConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SaveUnifiedConsent", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (toolId, consentValue))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SaveUnifiedConsentWithOlderVersion(
+        toolId: i32,
+        consentValue: crate::GlobalNamespace::OVRPlugin_Bool,
+        consentVersion: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32, crate::GlobalNamespace::OVRPlugin_Bool, i32),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("ovrp_SaveUnifiedConsentWithOlderVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SaveUnifiedConsentWithOlderVersion", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (toolId, consentValue, consentVersion))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SendMicrogestureHint() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_Result,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        0usize,
+                    >("ovrp_SendMicrogestureHint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SendMicrogestureHint", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetNotificationShown(
+        tool: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SetNotificationShown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetNotificationShown", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (tool))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_ShouldShowTelemetryConsentWindow(
+        toolId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Bool,
+                        1usize,
+                    >("ovrp_ShouldShowTelemetryConsentWindow")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ShouldShowTelemetryConsentWindow", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (toolId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_ShouldShowTelemetryNotification(
+        toolId: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Bool,
+                        1usize,
+                    >("ovrp_ShouldShowTelemetryNotification")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ShouldShowTelemetryNotification", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (toolId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_UnityOpenXR_OnAppSpaceChange2(
+        xrSpace: u64,
+        spaceFlags: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (u64, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ovrp_UnityOpenXR_OnAppSpaceChange2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_UnityOpenXR_OnAppSpaceChange2", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (xrSpace, spaceFlags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_106_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_106_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_107_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_107_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_107_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_107_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_107_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_107_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_107_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_107_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_107_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_107_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_107_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_107_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_107_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_108_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_108_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_108_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_108_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_108_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_108_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_108_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_108_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_108_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_108_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_108_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_108_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_108_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_109_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_109_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_109_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_109_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_109_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_109_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_109_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_109_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_109_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_109_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_109_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_109_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_109_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_10_0")]
 #[repr(C)]
 #[derive(Debug)]
@@ -19965,6 +26855,516 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0 {}
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_10_0")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPlugin_OVRP_1_10_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_110_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_110_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_110_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_110_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_110_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_110_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_110_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_110_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_110_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_110_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_110_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_110_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_110_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_111_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_111_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_111_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_111_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_111_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_111_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_111_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_111_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_111_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_111_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_111_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_111_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_111_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_112_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_112_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_112_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_112_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_112_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_112_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_112_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_112_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_112_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_112_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_112_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_112_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_112_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_113_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_113_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_113_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_113_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_113_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_113_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_113_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_113_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_113_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_113_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_113_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_113_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_113_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_114_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_114_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_114_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_114_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_114_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_114_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_114_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_114_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_114_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_114_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_114_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_114_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_114_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_115_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_115_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_115_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_115_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_115_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_115_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_115_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_115_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_115_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_115_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_115_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_115_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_115_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_116_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_116_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_116_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_116_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_116_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_116_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_116_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_116_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_116_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_116_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_116_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_116_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_116_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_117_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_117_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_117_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_117_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_117_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_117_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_117_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_117_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_117_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_117_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_117_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_117_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_117_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_118_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_118_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_118_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_118_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_118_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_118_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_118_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_118_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_118_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_118_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_118_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_118_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_118_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_119_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_119_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_119_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_119_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_119_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_119_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_119_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_119_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_119_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_119_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_119_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_119_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_119_0 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -20067,6 +27467,516 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_11_0")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::OVRPlugin_OVRP_1_11_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_120_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_120_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_120_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_120_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_120_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_120_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_120_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_120_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_120_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_120_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_120_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_120_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_120_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_121_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_121_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_121_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_121_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_121_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_121_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_121_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_121_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_121_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_121_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_121_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_121_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_121_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_122_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_122_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_122_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_122_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_122_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_122_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_122_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_122_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_122_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_122_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_122_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_122_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_122_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_123_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_123_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_123_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_123_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_123_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_123_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_123_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_123_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_123_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_123_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_123_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_123_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_123_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_124_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_124_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_124_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_124_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_124_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_124_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_124_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_124_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_124_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_124_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_124_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_124_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_124_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_125_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_125_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_125_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_125_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_125_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_125_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_125_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_125_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_125_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_125_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_125_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_125_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_125_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_126_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_126_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_126_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_126_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_126_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_126_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_126_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_126_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_126_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_126_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_126_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_126_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_126_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_127_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_127_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_127_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_127_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_127_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_127_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_127_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_127_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_127_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_127_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_127_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_127_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_127_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_128_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_128_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_128_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_128_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_128_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_128_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_128_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_128_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_128_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_128_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_128_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_128_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_128_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_129_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_129_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_129_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_129_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_129_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_129_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_129_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_129_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_129_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_129_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_129_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_129_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_129_0 {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -20252,7 +28162,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
         format: crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
         layerFlags: i32,
         layerDesc: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::OVRPlugin_LayerDescInternal,
+            crate::GlobalNamespace::OVRPlugin_LayerDesc,
         >,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -20271,7 +28181,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                             crate::GlobalNamespace::OVRPlugin_EyeTextureFormat,
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::OVRPlugin_LayerDescInternal,
+                                crate::GlobalNamespace::OVRPlugin_LayerDesc,
                             >,
                         ),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -20330,7 +28240,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
     }
     pub fn ovrp_EnqueueSetupLayer(
         desc: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::OVRPlugin_LayerDescInternal,
+            crate::GlobalNamespace::OVRPlugin_LayerDesc,
         >,
         layerId: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
@@ -20341,7 +28251,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_15_0 {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::OVRPlugin_LayerDescInternal,
+                                crate::GlobalNamespace::OVRPlugin_LayerDesc,
                             >,
                             crate::System::IntPtr,
                         ),
@@ -22846,7 +30756,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
 impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
     pub fn ovrp_EnqueueSetupLayer2(
         desc: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::OVRPlugin_LayerDescInternal,
+            crate::GlobalNamespace::OVRPlugin_LayerDesc,
         >,
         compositionDepth: i32,
         layerId: crate::System::IntPtr,
@@ -22858,7 +30768,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_28_0 {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::OVRPlugin_LayerDescInternal,
+                                crate::GlobalNamespace::OVRPlugin_LayerDesc,
                             >,
                             i32,
                             crate::System::IntPtr,
@@ -29667,7 +37577,7 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ovrp_EnumerateSpaceSupportedComponents(
+    pub fn ovrp_EnumerateSpaceSupportedComponents_ByRefMut0(
         space: quest_hook::libil2cpp::ByRefMut<u64>,
         componentTypesCapacityInput: u32,
         componentTypesCountOutput: quest_hook::libil2cpp::ByRefMut<u32>,
@@ -29694,6 +37604,50 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_72_0 {
                                         crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
                                     >,
                                 >,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_EnumerateSpaceSupportedComponents")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EnumerateSpaceSupportedComponents", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        space,
+                        componentTypesCapacityInput,
+                        componentTypesCountOutput,
+                        componentTypes,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_EnumerateSpaceSupportedComponents_Il2CppObject1(
+        space: quest_hook::libil2cpp::ByRefMut<u64>,
+        componentTypesCapacityInput: u32,
+        componentTypesCountOutput: quest_hook::libil2cpp::ByRefMut<u32>,
+        componentTypes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                            u32,
+                            quest_hook::libil2cpp::ByRefMut<u32>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
                             >,
                         ),
                         crate::GlobalNamespace::OVRPlugin_Result,
@@ -31718,196 +39672,6 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_79_0 {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ovrp_QplCreateMarkerHandle(
-        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                        ),
-                        crate::GlobalNamespace::OVRPlugin_Result,
-                        2usize,
-                    >("ovrp_QplCreateMarkerHandle")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovrp_QplCreateMarkerHandle", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (name, nameHandle))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovrp_QplDestroyMarkerHandle(
-        nameHandle: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32),
-                        crate::GlobalNamespace::OVRPlugin_Result,
-                        1usize,
-                    >("ovrp_QplDestroyMarkerHandle")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovrp_QplDestroyMarkerHandle", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (nameHandle))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovrp_QplMarkerAnnotation(
-        markerId: i32,
-        annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        instanceKey: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            i32,
-                        ),
-                        crate::GlobalNamespace::OVRPlugin_Result,
-                        4usize,
-                    >("ovrp_QplMarkerAnnotation")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovrp_QplMarkerAnnotation", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (markerId, annotationKey, annotationValue, instanceKey),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovrp_QplMarkerEnd(
-        markerId: i32,
-        resultTypeId: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
-        instanceKey: i32,
-        timestampMs: i64,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            i32,
-                            crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
-                            i32,
-                            i64,
-                        ),
-                        crate::GlobalNamespace::OVRPlugin_Result,
-                        4usize,
-                    >("ovrp_QplMarkerEnd")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovrp_QplMarkerEnd", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (markerId, resultTypeId, instanceKey, timestampMs),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovrp_QplMarkerPointCached(
-        markerId: i32,
-        nameHandle: i32,
-        instanceKey: i32,
-        timestampMs: i64,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i32, i64),
-                        crate::GlobalNamespace::OVRPlugin_Result,
-                        4usize,
-                    >("ovrp_QplMarkerPointCached")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovrp_QplMarkerPointCached", 4usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (markerId, nameHandle, instanceKey, timestampMs))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ovrp_QplMarkerStart(
-        markerId: i32,
-        instanceKey: i32,
-        timestampMs: i64,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (i32, i32, i64),
-                        crate::GlobalNamespace::OVRPlugin_Result,
-                        3usize,
-                    >("ovrp_QplMarkerStart")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ovrp_QplMarkerStart", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
-            cordl_method_info.invoke_unchecked((), (markerId, instanceKey, timestampMs))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn ovrp_SaveSpaceList(
         spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         numSpaces: u32,
@@ -32602,6 +40366,232 @@ impl crate::GlobalNamespace::OVRPlugin_OVRP_1_84_0 {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ovrp_QplCreateMarkerHandle(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<i32>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_QplCreateMarkerHandle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplCreateMarkerHandle", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (name, nameHandle))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplDestroyMarkerHandle(
+        nameHandle: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_QplDestroyMarkerHandle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplDestroyMarkerHandle", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (nameHandle))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplMarkerAnnotation(
+        markerId: i32,
+        annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        instanceKey: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_QplMarkerAnnotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerAnnotation", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (markerId, annotationKey, annotationValue, instanceKey),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplMarkerEnd(
+        markerId: i32,
+        resultTypeId: crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            crate::GlobalNamespace::Qpl_OVRPlugin_ResultType,
+                            i32,
+                            i64,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_QplMarkerEnd")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerEnd", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (markerId, resultTypeId, instanceKey, timestampMs),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplMarkerPoint(
+        markerId: i32,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                            i64,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_QplMarkerPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerPoint", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (markerId, name, instanceKey, timestampMs))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplMarkerPointCached(
+        markerId: i32,
+        nameHandle: i32,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32, i32, i32, i64),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_QplMarkerPointCached")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerPointCached", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (markerId, nameHandle, instanceKey, timestampMs))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplMarkerStart(
+        markerId: i32,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32, i32, i64),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("ovrp_QplMarkerStart")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerStart", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (markerId, instanceKey, timestampMs))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ovrp_SetInsightPassthroughStyle2(
         layerId: i32,
         style: quest_hook::libil2cpp::ByRefMut<
@@ -33274,6 +41264,57 @@ for crate::GlobalNamespace::OVRPlugin_OVRP_1_88_0 {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_89_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_89_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_89_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_89_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_89_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_89_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_89_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_89_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_89_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_89_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_89_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_89_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_89_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_8_0")]
 #[repr(C)]
 #[derive(Debug)]
@@ -33620,6 +41661,1388 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_90_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_90_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_90_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_90_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_90_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_90_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_90_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_90_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_90_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_90_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_90_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_90_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_90_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_91_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_91_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_91_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_91_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_91_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_91_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_91_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_91_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_91_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_91_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_91_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_91_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_91_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_92_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_92_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_92_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_92_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_92_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_92_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_92_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_92_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_92_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_92_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_92_0 {
+    pub fn ovrp_GetBodyState4(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        frameIndex: i32,
+        bodyState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_BodyState4Internal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_BodyState4Internal,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("ovrp_GetBodyState4")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBodyState4", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, bodyState))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetFaceState2(
+        stepId: crate::GlobalNamespace::OVRPlugin_Step,
+        frameIndex: i32,
+        faceState: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_FaceState2Internal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_Step,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_FaceState2Internal,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("ovrp_GetFaceState2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceState2", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (stepId, frameIndex, faceState))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetFaceTracking2Enabled(
+        faceTracking2Enabled: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_Bool,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetFaceTracking2Enabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceTracking2Enabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (faceTracking2Enabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetFaceTracking2Supported(
+        faceTracking2Enabled: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_Bool,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetFaceTracking2Supported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetFaceTracking2Supported", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (faceTracking2Enabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetSkeleton3(
+        skeletonType: crate::GlobalNamespace::OVRPlugin_SkeletonType,
+        skeleton: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_Skeleton3Internal,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::GlobalNamespace::OVRPlugin_SkeletonType,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_Skeleton3Internal,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_GetSkeleton3")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetSkeleton3", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (skeletonType, skeleton))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplSetConsent(
+        consent: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_QplSetConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplSetConsent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (consent))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_RequestBodyTrackingFidelity(
+        fidelity: crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BodyTrackingFidelity2),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_RequestBodyTrackingFidelity")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_RequestBodyTrackingFidelity", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (fidelity))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_ResetBodyTrackingCalibration() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_Result,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        0usize,
+                    >("ovrp_ResetBodyTrackingCalibration")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_ResetBodyTrackingCalibration", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_StartBodyTracking2(
+        jointSet: crate::GlobalNamespace::OVRPlugin_BodyJointSet,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BodyJointSet),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_StartBodyTracking2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartBodyTracking2", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (jointSet))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_StartFaceTracking2(
+        requestedDataSources: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
+            >,
+        >,
+        requestedDataSourcesCount: u32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<
+                                    crate::GlobalNamespace::OVRPlugin_FaceTrackingDataSource,
+                                >,
+                            >,
+                            u32,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_StartFaceTracking2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StartFaceTracking2", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (requestedDataSources, requestedDataSourcesCount))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_StopFaceTracking2() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_Result,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        0usize,
+                    >("ovrp_StopFaceTracking2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_StopFaceTracking2", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SuggestBodyTrackingCalibrationOverride(
+        calibrationInfo: crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BodyTrackingCalibrationInfo),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SuggestBodyTrackingCalibrationOverride")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SuggestBodyTrackingCalibrationOverride", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (calibrationInfo))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_92_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_92_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_93_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_93_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_93_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_93_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_93_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_93_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_93_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_93_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_93_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_93_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_93_0 {
+    pub fn ovrp_IsSetWideMotionModeHandPosesEnabled(
+        enabled: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_IsSetWideMotionModeHandPosesEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_IsSetWideMotionModeHandPosesEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (enabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetWideMotionModeHandPoses(
+        wideMotionModeHandPoses: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SetWideMotionModeHandPoses")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetWideMotionModeHandPoses", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (wideMotionModeHandPoses))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_93_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_93_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_94_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_94_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_94_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_94_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_94_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_94_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_94_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_94_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_94_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_94_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_94_0 {}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_94_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_94_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_95_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_95_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_95_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_95_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_95_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_95_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_95_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_95_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_95_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_95_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_95_0 {
+    pub fn ovrp_GetActionStateBoolean(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_Bool,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_GetActionStateBoolean")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetActionStateBoolean", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (path, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetActionStateFloat(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<f32>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_GetActionStateFloat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetActionStateFloat", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (path, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_GetActionStatePose(
+        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRPlugin_Posef>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_Posef,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_GetActionStatePose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetActionStatePose", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (path, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetDeveloperTelemetryConsent(
+        consent: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SetDeveloperTelemetryConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetDeveloperTelemetryConsent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (consent))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_95_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_95_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_96_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_96_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_96_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_96_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_96_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_96_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_96_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_96_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_96_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_96_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_96_0 {
+    pub fn ovrp_QplMarkerAnnotationVariant(
+        markerId: i32,
+        annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotationValue: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+        >,
+        instanceKey: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("ovrp_QplMarkerAnnotationVariant")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerAnnotationVariant", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (markerId, annotationKey, annotationValue, instanceKey),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_QplMarkerPointData(
+        markerId: i32,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotations: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        annotationCount: i32,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            i32,
+                            i64,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        6usize,
+                    >("ovrp_QplMarkerPointData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_QplMarkerPointData", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        markerId,
+                        name,
+                        annotations,
+                        annotationCount,
+                        instanceKey,
+                        timestampMs,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_96_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_96_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_97_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_97_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_97_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_97_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_97_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_97_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_97_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_97_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_97_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_97_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_97_0 {
+    pub fn ovrp_DiscoverSpaces(
+        info: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo,
+        >,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_DiscoverSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_DiscoverSpaces", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (info, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_EraseSpaces(
+        spaceCount: u32,
+        spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        uuidCount: u32,
+        uuids: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        5usize,
+                    >("ovrp_EraseSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_EraseSpaces", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (spaceCount, spaces, uuidCount, uuids, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_RetrieveSpaceDiscoveryResults(
+        requestId: u64,
+        results: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("ovrp_RetrieveSpaceDiscoveryResults")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_RetrieveSpaceDiscoveryResults", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (requestId, results))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SaveSpaces(
+        spaceCount: u32,
+        spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        requestId: quest_hook::libil2cpp::ByRefMut<u64>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u64>,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        3usize,
+                    >("ovrp_SaveSpaces")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SaveSpaces", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (spaceCount, spaces, requestId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_97_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_97_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_98_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_98_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_98_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_98_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_98_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_98_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_98_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_98_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_98_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_98_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_98_0 {
+    pub fn ovrp_GetBoundaryVisibility(
+        boundaryVisibility: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetBoundaryVisibility")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetBoundaryVisibility", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (boundaryVisibility))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_RequestBoundaryVisibility(
+        boundaryVisibility: crate::GlobalNamespace::OVRPlugin_BoundaryVisibility,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_BoundaryVisibility),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_RequestBoundaryVisibility")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_RequestBoundaryVisibility", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (boundaryVisibility))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_98_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_98_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_99_0")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_OVRP_1_99_0 {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_99_0")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_99_0 {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OVRP_1_99_0";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_99_0")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_OVRP_1_99_0 {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_99_0")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_OVRP_1_99_0 {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+OVRP_1_99_0")]
+impl crate::GlobalNamespace::OVRPlugin_OVRP_1_99_0 {
+    pub fn ovrp_GetTrackingPoseEnabledForInvisibleSession(
+        trackingPoseEnabled: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_Bool,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                        >),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_GetTrackingPoseEnabledForInvisibleSession")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_GetTrackingPoseEnabledForInvisibleSession", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (trackingPoseEnabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ovrp_SetTrackingPoseEnabledForInvisibleSession(
+        trackingPoseEnabled: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("ovrp_SetTrackingPoseEnabledForInvisibleSession")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ovrp_SetTrackingPoseEnabledForInvisibleSession", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (trackingPoseEnabled))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_99_0")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_OVRP_1_99_0 {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+OVRP_1_9_0")]
 #[repr(C)]
 #[derive(Debug)]
@@ -33827,6 +43250,99 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRPlugin_OVR
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+OptionalBool")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_OptionalBool {
+    #[default]
+    False = 0i32,
+    True = 1i32,
+    Unknown = 2i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OptionalBool")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_OptionalBool {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/OptionalBool";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OptionalBool")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_OptionalBool {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OptionalBool")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_OptionalBool {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OptionalBool")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_OptionalBool {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+OptionalBool")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_OptionalBool {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+OverlayFlag")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -33843,6 +43359,7 @@ pub enum OVRPlugin_OverlayFlag {
     NoDepth = 4i32,
     None = 0i32,
     OnTop = 1i32,
+    PremultipliedAlpha = 1048576i32,
     SecureContent = 256i32,
     ShapeFlagRangeMask = 240i32,
 }
@@ -35705,8 +45222,14 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
     pub const AutoSetTimeoutMs: i32 = 0i32;
     pub const AutoSetTimestampMs: i64 = -1i64;
     pub const DefaultInstanceKey: i32 = 0i32;
+    #[cfg(feature = "OVRPlugin+Qpl+Annotation")]
+    pub type Annotation = crate::GlobalNamespace::Qpl_OVRPlugin_Annotation;
     #[cfg(feature = "OVRPlugin+Qpl+ResultType")]
     pub type ResultType = crate::GlobalNamespace::Qpl_OVRPlugin_ResultType;
+    #[cfg(feature = "OVRPlugin+Qpl+Variant")]
+    pub type Variant = crate::GlobalNamespace::Qpl_OVRPlugin_Variant;
+    #[cfg(feature = "OVRPlugin+Qpl+VariantType")]
+    pub type VariantType = crate::GlobalNamespace::Qpl_OVRPlugin_VariantType;
     pub fn CreateMarkerHandle(
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         nameHandle: quest_hook::libil2cpp::ByRefMut<i32>,
@@ -35757,7 +45280,7 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn MarkerAnnotation(
+    pub fn MarkerAnnotation_Il2CppString0(
         markerId: i32,
         annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         annotationValue: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -35790,6 +45313,45 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (markerId, annotationKey, annotationValue, instanceKey),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarkerAnnotation_Qpl_OVRPlugin_Variant1(
+        markerId: i32,
+        annotationKey: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotationValue: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+        instanceKey: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("MarkerAnnotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerAnnotation", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     (),
@@ -35864,6 +45426,94 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn MarkerPoint_Il2CppObject_i32_i32_i64_1(
+        markerId: i32,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        annotations: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        annotationCount: i32,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                            i32,
+                            i64,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        6usize,
+                    >("MarkerPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerPoint", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        markerId,
+                        name,
+                        annotations,
+                        annotationCount,
+                        instanceKey,
+                        timestampMs,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarkerPoint_i32_i64_0(
+        markerId: i32,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                            i64,
+                        ),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        4usize,
+                    >("MarkerPoint")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerPoint", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (markerId, name, instanceKey, timestampMs))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn MarkerStart(
         markerId: i32,
         instanceKey: i32,
@@ -35888,6 +45538,78 @@ impl crate::GlobalNamespace::OVRPlugin_Qpl {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked((), (markerId, instanceKey, timestampMs))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarkerStartForJoin(
+        markerId: i32,
+        joinId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancelMarkerIfAppBackgrounded: crate::GlobalNamespace::OVRPlugin_Bool,
+        instanceKey: i32,
+        timestampMs: i64,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::OVRPlugin_Bool,
+                            i32,
+                            i64,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("MarkerStartForJoin")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkerStartForJoin", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        markerId,
+                        joinId,
+                        cancelMarkerIfAppBackgrounded,
+                        instanceKey,
+                        timestampMs,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetConsent(
+        consent: crate::GlobalNamespace::OVRPlugin_Bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::GlobalNamespace::OVRPlugin_Bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetConsent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (consent))?
         };
         Ok(__cordl_ret.into())
     }
@@ -36028,6 +45750,35 @@ impl crate::GlobalNamespace::OVRPlugin_Quatf {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        x: f32,
+        y: f32,
+        z: f32,
+        w: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32, f32, f32, f32),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x, y, z, w))?
+        };
         Ok(__cordl_ret.into())
     }
 }
@@ -36224,6 +45975,163 @@ for crate::GlobalNamespace::OVRPlugin_Rectf {
 }
 #[cfg(feature = "OVRPlugin+Rectf")]
 impl crate::GlobalNamespace::OVRPlugin_Rectf {}
+#[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_RectfPair {
+    pub Rect0: crate::GlobalNamespace::OVRPlugin_Rectf,
+    pub Rect1: crate::GlobalNamespace::OVRPlugin_Rectf,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_RectfPair {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/RectfPair";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_RectfPair {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_RectfPair {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_RectfPair {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_RectfPair {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectfPair")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_RectfPair {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+RectfPair")]
+impl crate::GlobalNamespace::OVRPlugin_RectfPair {
+    pub fn get_Item(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Rectf> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Rectf,
+                        1usize,
+                    >("get_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Rectf = unsafe {
+            cordl_method_info.invoke_unchecked(self, (i))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_Item(
+        &mut self,
+        i: i32,
+        value: crate::GlobalNamespace::OVRPlugin_Rectf,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, crate::GlobalNamespace::OVRPlugin_Rectf),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Item", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (i, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+Recti")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -36324,6 +46232,163 @@ for crate::GlobalNamespace::OVRPlugin_Recti {
 }
 #[cfg(feature = "OVRPlugin+Recti")]
 impl crate::GlobalNamespace::OVRPlugin_Recti {}
+#[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_RectiPair {
+    pub Rect0: crate::GlobalNamespace::OVRPlugin_Recti,
+    pub Rect1: crate::GlobalNamespace::OVRPlugin_Recti,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
+unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_RectiPair {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/RectiPair";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_RectiPair {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_RectiPair {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_RectiPair {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_RectiPair {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+RectiPair")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_RectiPair {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+RectiPair")]
+impl crate::GlobalNamespace::OVRPlugin_RectiPair {
+    pub fn get_Item(
+        &mut self,
+        i: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Recti> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        crate::GlobalNamespace::OVRPlugin_Recti,
+                        1usize,
+                    >("get_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Item", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Recti = unsafe {
+            cordl_method_info.invoke_unchecked(self, (i))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_Item(
+        &mut self,
+        i: i32,
+        value: crate::GlobalNamespace::OVRPlugin_Recti,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, crate::GlobalNamespace::OVRPlugin_Recti),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_Item")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_Item", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (i, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+RenderModelFlags")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -36634,25 +46699,46 @@ impl crate::GlobalNamespace::OVRPlugin_RenderModelPropertiesInternal {}
 pub enum OVRPlugin_Result {
     #[default]
     Failure = -1000i32,
+    Failure_ColocationSessionNetworkFailed = -3002i32,
+    Failure_ColocationSessionNoDiscoveryMethodAvailable = -3003i32,
     Failure_DataIsInvalid = -1008i32,
     Failure_DeprecatedOperation = -1009i32,
     Failure_ErrorInitializationFailed = -1011i32,
     Failure_ErrorLimitReached = -1010i32,
+    Failure_FutureInvalid = -10001i32,
+    Failure_FuturePending = -10000i32,
+    Failure_HandleInvalid = -1013i32,
     Failure_InsufficientSize = -1007i32,
     Failure_InvalidOperation = -1003i32,
     Failure_InvalidParameter = -1001i32,
     Failure_NotInitialized = -1002i32,
     Failure_NotYetImplemented = -1005i32,
     Failure_OperationFailed = -1006i32,
+    Failure_RuntimeUnavailable = -1012i32,
     Failure_SpaceCloudStorageDisabled = -2000i32,
+    Failure_SpaceComponentNotEnabled = -2006i32,
+    Failure_SpaceComponentNotSupported = -2005i32,
+    Failure_SpaceComponentStatusAlreadySet = -2008i32,
+    Failure_SpaceComponentStatusPending = -2007i32,
+    Failure_SpaceGroupNotFound = -2009i32,
+    Failure_SpaceInsufficientResources = -9000i32,
+    Failure_SpaceInsufficientView = -9002i32,
     Failure_SpaceLocalizationFailed = -2002i32,
     Failure_SpaceMappingInsufficient = -2001i32,
     Failure_SpaceNetworkRequestFailed = -2004i32,
     Failure_SpaceNetworkTimeout = -2003i32,
+    Failure_SpacePermissionInsufficient = -9003i32,
+    Failure_SpaceRateLimited = -9004i32,
+    Failure_SpaceStorageAtCapacity = -9001i32,
+    Failure_SpaceTooBright = -9006i32,
+    Failure_SpaceTooDark = -9005i32,
     Failure_Unsupported = -1004i32,
     Success = 0i32,
+    Success_ColocationSessionAlreadyAdvertising = 3001i32,
+    Success_ColocationSessionAlreadyDiscovering = 3002i32,
     Success_EventUnavailable = 1i32,
     Success_Pending = 2i32,
+    Warning_BoundaryVisibilitySuppressionNotAllowed = 9030i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+Result")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlugin_Result {
@@ -37054,6 +47140,408 @@ for crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal {
 }
 #[cfg(feature = "OVRPlugin+SceneCaptureRequestInternal")]
 impl crate::GlobalNamespace::OVRPlugin_SceneCaptureRequestInternal {}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_ShareSpacesGroupRecipientInfo {
+    pub GroupCount: u32,
+    pub GroupUuids: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/ShareSpacesGroupRecipientInfo";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesGroupRecipientInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+ShareSpacesGroupRecipientInfo")]
+impl crate::GlobalNamespace::OVRPlugin_ShareSpacesGroupRecipientInfo {}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_ShareSpacesInfo {
+    pub RecipientType: crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType,
+    pub RecipientInfo: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub SpaceCount: u32,
+    pub Spaces: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/ShareSpacesInfo";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+ShareSpacesInfo")]
+impl crate::GlobalNamespace::OVRPlugin_ShareSpacesInfo {}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_ShareSpacesRecipientInfoBase {}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/ShareSpacesRecipientInfoBase";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientInfoBase")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+ShareSpacesRecipientInfoBase")]
+impl crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientInfoBase {}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_ShareSpacesRecipientType {
+    #[default]
+    Group = 1i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/ShareSpacesRecipientType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+ShareSpacesRecipientType")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_ShareSpacesRecipientType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+Size3f")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -37859,6 +48347,214 @@ for crate::GlobalNamespace::OVRPlugin_Skeleton2Internal {
 }
 #[cfg(feature = "OVRPlugin+Skeleton2Internal")]
 impl crate::GlobalNamespace::OVRPlugin_Skeleton2Internal {}
+#[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_Skeleton3Internal {
+    pub Type: crate::GlobalNamespace::OVRPlugin_SkeletonType,
+    pub NumBones: u32,
+    pub NumBoneCapsules: u32,
+    pub Bones_0: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_1: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_2: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_3: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_4: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_5: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_6: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_7: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_8: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_9: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_10: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_11: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_12: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_13: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_14: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_15: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_16: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_17: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_18: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_19: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_20: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_21: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_22: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_23: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_24: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_25: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_26: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_27: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_28: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_29: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_30: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_31: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_32: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_33: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_34: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_35: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_36: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_37: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_38: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_39: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_40: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_41: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_42: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_43: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_44: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_45: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_46: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_47: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_48: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_49: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_50: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_51: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_52: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_53: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_54: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_55: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_56: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_57: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_58: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_59: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_60: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_61: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_62: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_63: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_64: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_65: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_66: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_67: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_68: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_69: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_70: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_71: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_72: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_73: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_74: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_75: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_76: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_77: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_78: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_79: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_80: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_81: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_82: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub Bones_83: crate::GlobalNamespace::OVRPlugin_Bone,
+    pub BoneCapsules_0: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_1: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_2: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_3: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_4: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_5: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_6: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_7: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_8: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_9: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_10: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_11: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_12: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_13: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_14: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_15: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_16: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_17: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+    pub BoneCapsules_18: crate::GlobalNamespace::OVRPlugin_BoneCapsule,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/Skeleton3Internal";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Skeleton3Internal")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+Skeleton3Internal")]
+impl crate::GlobalNamespace::OVRPlugin_Skeleton3Internal {}
 #[cfg(feature = "cordl_class_OVRPlugin+SkeletonConstants")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -37866,8 +48562,9 @@ pub enum OVRPlugin_SkeletonConstants {
     #[default]
     MaxBodyBones = 70i32,
     MaxBoneCapsules = 19i32,
+    MaxBones = 84i32,
     MaxHandBones = 24i32,
-    MaxNumMicrogestures = 5i32,
+    MaxXRHandBones = 26i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SkeletonConstants")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -37959,9 +48656,12 @@ for crate::GlobalNamespace::OVRPlugin_SkeletonConstants {
 pub enum OVRPlugin_SkeletonType {
     #[default]
     Body = 2i32,
+    FullBody = 3i32,
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
+    XRHandLeft = 4i32,
+    XRHandRight = 5i32,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -38054,6 +48754,7 @@ pub enum OVRPlugin_SpaceComponentType {
     #[default]
     Bounded2D = 3i32,
     Bounded3D = 4i32,
+    DynamicObject = 1000288007i32,
     Locatable = 0i32,
     RoomLayout = 6i32,
     SemanticLabels = 5i32,
@@ -38251,6 +48952,724 @@ for crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal {
 }
 #[cfg(feature = "OVRPlugin+SpaceContainerInternal")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceContainerInternal {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_SpaceDiscoveryFilterInfoComponents {
+    pub Type: crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType,
+    pub Component: crate::GlobalNamespace::OVRPlugin_SpaceComponentType,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceDiscoveryFilterInfoComponents";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoComponents")]
+impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoComponents {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_SpaceDiscoveryFilterInfoHeader {
+    pub Type: crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceDiscoveryFilterInfoHeader";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoHeader")]
+impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoHeader {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_SpaceDiscoveryFilterInfoIds {
+    pub Type: crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType,
+    pub NumIds: i32,
+    pub Ids: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceDiscoveryFilterInfoIds";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+SpaceDiscoveryFilterInfoIds")]
+impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterInfoIds {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_SpaceDiscoveryFilterType {
+    #[default]
+    Component = 3i32,
+    Ids = 2i32,
+    None = 0i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterType")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceDiscoveryFilterType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterType")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterType")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterType")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryFilterType")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryFilterType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_SpaceDiscoveryInfo {
+    pub NumFilters: u32,
+    pub Filters: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceDiscoveryInfo";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryInfo")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+SpaceDiscoveryInfo")]
+impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryInfo {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_SpaceDiscoveryResult {
+    pub Space: u64,
+    pub Uuid: crate::System::Guid,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceDiscoveryResult";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResult")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+SpaceDiscoveryResult")]
+impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResult {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_SpaceDiscoveryResults {
+    pub ResultCapacityInput: u32,
+    pub ResultCountOutput: u32,
+    pub Results: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceDiscoveryResults";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceDiscoveryResults")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+SpaceDiscoveryResults")]
+impl crate::GlobalNamespace::OVRPlugin_SpaceDiscoveryResults {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceFilterInfoComponents")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -38465,6 +49884,98 @@ for crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds {
 }
 #[cfg(feature = "OVRPlugin+SpaceFilterInfoIds")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceFlags")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum OVRPlugin_SpaceFlags {
+    #[default]
+    AllowRecentering = 1i32,
+    None = 0i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceFlags")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceFlags {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceFlags";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceFlags")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceFlags {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceFlags")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceFlags {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceFlags")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceFlags {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceFlags")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceFlags {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceLocationFlags")]
 #[repr(u64)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -38760,6 +50271,7 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType {
 pub enum OVRPlugin_SpaceQueryFilterType {
     #[default]
     Components = 2i32,
+    Group = 3i32,
     Ids = 1i32,
     None = 0i32,
 }
@@ -38957,6 +50469,117 @@ for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo {
 }
 #[cfg(feature = "OVRPlugin+SpaceQueryInfo")]
 impl crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo {}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct OVRPlugin_SpaceQueryInfo2 {
+    pub QueryType: crate::GlobalNamespace::OVRPlugin_SpaceQueryType,
+    pub MaxQuerySpaces: i32,
+    pub Timeout: f64,
+    pub Location: crate::GlobalNamespace::OVRPlugin_SpaceStorageLocation,
+    pub ActionType: crate::GlobalNamespace::OVRPlugin_SpaceQueryActionType,
+    pub FilterType: crate::GlobalNamespace::OVRPlugin_SpaceQueryFilterType,
+    pub IdInfo: crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoIds,
+    pub ComponentsInfo: crate::GlobalNamespace::OVRPlugin_SpaceFilterInfoComponents,
+    pub GroupUuidInfo: crate::System::Guid,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/SpaceQueryInfo2";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryInfo2")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+SpaceQueryInfo2")]
+impl crate::GlobalNamespace::OVRPlugin_SpaceQueryInfo2 {}
 #[cfg(feature = "cordl_class_OVRPlugin+SpaceQueryResult")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -39640,20 +51263,32 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
 pub enum OVRPlugin_SystemHeadset {
     #[default]
     Meta_Link_Quest_3 = 4104i32,
+    Meta_Link_Quest_3S = 4105i32,
     Meta_Link_Quest_Pro = 4103i32,
     Meta_Quest_3 = 11i32,
+    Meta_Quest_3S = 12i32,
     Meta_Quest_Pro = 10i32,
     None = 0i32,
     Oculus_Link_Quest = 4101i32,
     Oculus_Link_Quest_2 = 4102i32,
     Oculus_Quest = 8i32,
     Oculus_Quest_2 = 9i32,
-    PC_Placeholder_4105 = 4105i32,
     PC_Placeholder_4106 = 4106i32,
     PC_Placeholder_4107 = 4107i32,
-    Placeholder_12 = 12i32,
+    PC_Placeholder_4108 = 4108i32,
+    PC_Placeholder_4109 = 4109i32,
+    PC_Placeholder_4110 = 4110i32,
+    PC_Placeholder_4111 = 4111i32,
+    PC_Placeholder_4112 = 4112i32,
+    PC_Placeholder_4113 = 4113i32,
     Placeholder_13 = 13i32,
     Placeholder_14 = 14i32,
+    Placeholder_15 = 15i32,
+    Placeholder_16 = 16i32,
+    Placeholder_17 = 17i32,
+    Placeholder_18 = 18i32,
+    Placeholder_19 = 19i32,
+    Placeholder_20 = 20i32,
     Rift_CB = 4099i32,
     Rift_CV1 = 4098i32,
     Rift_DK1 = 4096i32,
@@ -40166,7 +51801,7 @@ for crate::GlobalNamespace::OVRPlugin_TrackedKeyboardFlags {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum OVRPlugin_TrackedKeyboardPresentationStyles {
     #[default]
-    KeyLabel = 2i32,
+    MR = 2i32,
     Opaque = 1i32,
     Unknown = 0i32,
 }
@@ -40735,6 +52370,323 @@ for crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal {
 }
 #[cfg(feature = "OVRPlugin+TriangleMeshInternal")]
 impl crate::GlobalNamespace::OVRPlugin_TriangleMeshInternal {}
+#[cfg(feature = "cordl_class_OVRPlugin+UnifiedConsent")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_UnifiedConsent {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+UnifiedConsent")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_UnifiedConsent {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/UnifiedConsent";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+UnifiedConsent")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRPlugin_UnifiedConsent {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+UnifiedConsent")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRPlugin_UnifiedConsent {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+UnifiedConsent")]
+impl crate::GlobalNamespace::OVRPlugin_UnifiedConsent {
+    pub const ToolId: i32 = 1i32;
+    pub fn GetConsentMarkdownText() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetConsentMarkdownText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConsentMarkdownText", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConsentNotificationMarkdownText() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetConsentNotificationMarkdownText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConsentNotificationMarkdownText", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConsentSettingsChangeText() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetConsentSettingsChangeText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConsentSettingsChangeText", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetConsentTitle() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetConsentTitle")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetConsentTitle", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetUnifiedConsent() -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<bool>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::Nullable_1<bool>,
+                        0usize,
+                    >("GetUnifiedConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUnifiedConsent", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::Nullable_1<bool> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsConsentSettingsChangeEnabled() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("IsConsentSettingsChangeEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsConsentSettingsChangeEnabled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveUnifiedConsent(
+        consentValue: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (bool),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        1usize,
+                    >("SaveUnifiedConsent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveUnifiedConsent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (consentValue))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SaveUnifiedConsentWithOlderVersion(
+        consentValue: bool,
+        consentVersion: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_Result> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (bool, i32),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        2usize,
+                    >("SaveUnifiedConsentWithOlderVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SaveUnifiedConsentWithOlderVersion", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (consentValue, consentVersion))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetNotificationShown() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRPlugin_Result,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_Result,
+                        0usize,
+                    >("SetNotificationShown")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetNotificationShown", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldShowTelemetryConsentWindow() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("ShouldShowTelemetryConsentWindow")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldShowTelemetryConsentWindow", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ShouldShowTelemetryNotification() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("ShouldShowTelemetryNotification")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ShouldShowTelemetryNotification", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+UnifiedConsent")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_UnifiedConsent {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+UnityOpenXR")]
 #[repr(C)]
 #[derive(Debug)]
@@ -40830,6 +52782,32 @@ impl crate::GlobalNamespace::OVRPlugin_UnityOpenXR {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked((), (xrSpace))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnAppSpaceChange2(
+        xrSpace: u64,
+        spaceFlags: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (u64, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("OnAppSpaceChange2")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnAppSpaceChange2", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (xrSpace, spaceFlags))?
         };
         Ok(__cordl_ret.into())
     }
@@ -41797,6 +53775,7 @@ pub struct OVRPlugin_VirtualKeyboardInputInfo {
     pub inputSource: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputSource,
     pub inputPose: crate::GlobalNamespace::OVRPlugin_Posef,
     pub inputState: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardInputStateFlags,
+    pub inputTrackingOriginType: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardInputInfo")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -42093,6 +54072,7 @@ pub struct OVRPlugin_VirtualKeyboardLocationInfo {
     pub locationType: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType,
     pub pose: crate::GlobalNamespace::OVRPlugin_Posef,
     pub scale: f32,
+    pub trackingOriginType: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardLocationInfo")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -42388,6 +54368,399 @@ for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState {
 }
 #[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationState")]
 impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState {}
+#[cfg(
+    feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(
+    feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider"
+)]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardModelAnimationStateBufferProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider")]
+impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider {
+    pub fn BeginInvoke(
+        &mut self,
+        minimumBufferLength: i32,
+        stateCount: i32,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        4usize,
+                    >("BeginInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (minimumBufferLength, stateCount, callback, object),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndInvoke(
+        &mut self,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("EndInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked(self, (result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke(
+        &mut self,
+        minimumBufferLength: i32,
+        stateCount: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(i32, i32), crate::System::IntPtr, 2usize>("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked(self, (minimumBufferLength, stateCount))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (object, method))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateBufferProvider"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateBufferProvider {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRPlugin_VirtualKeyboardModelAnimationStateHandler {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/VirtualKeyboardModelAnimationStateHandler";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
+impl std::ops::Deref
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
+impl std::ops::DerefMut
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
+impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler {
+    pub fn BeginInvoke(
+        &mut self,
+        state: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+        >,
+        callback: quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::AsyncCallback>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        3usize,
+                    >("BeginInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginInvoke", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (state, callback, object))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn EndInvoke(
+        &mut self,
+        state: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+        >,
+        result: quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::IAsyncResult>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("EndInvoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EndInvoke", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (state, result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Invoke(
+        &mut self,
+        state: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationState,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (state))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (object, method))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStateHandler")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelAnimationStateHandler {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardModelAnimationStates")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -42753,6 +55126,7 @@ impl crate::GlobalNamespace::OVRPlugin_VirtualKeyboardModelVisibility {
 pub struct OVRPlugin_VirtualKeyboardSpaceCreateInfo {
     pub locationType: crate::GlobalNamespace::OVRPlugin_VirtualKeyboardLocationType,
     pub pose: crate::GlobalNamespace::OVRPlugin_Posef,
+    pub trackingOriginType: crate::GlobalNamespace::OVRPlugin_TrackingOrigin,
 }
 #[cfg(feature = "cordl_class_OVRPlugin+VirtualKeyboardSpaceCreateInfo")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -43257,6 +55631,172 @@ unsafe impl quest_hook::libil2cpp::Return for crate::GlobalNamespace::OVRPlugin_
         actual
     }
 }
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct Qpl_OVRPlugin_Annotation {
+    pub Key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub Value: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/Qpl/Annotation";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Annotation")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+Qpl+Annotation")]
+impl crate::GlobalNamespace::Qpl_OVRPlugin_Annotation {
+    #[cfg(feature = "OVRPlugin+Qpl+Annotation+Builder")]
+    pub type Builder = crate::GlobalNamespace::Annotation_Qpl_OVRPlugin_Builder;
+    pub fn _ctor(
+        &mut self,
+        key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        value: crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (key, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_KeyStr(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_KeyStr")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_KeyStr", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+ResultType")]
 #[repr(i16)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -43339,6 +55879,433 @@ for crate::GlobalNamespace::Qpl_OVRPlugin_ResultType {
 #[cfg(feature = "cordl_class_OVRPlugin+Qpl+ResultType")]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::GlobalNamespace::Qpl_OVRPlugin_ResultType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct Qpl_OVRPlugin_Variant {
+    padding: quest_hook::libil2cpp::ValueTypePadding<16usize>,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/Qpl/Variant";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+Variant")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "OVRPlugin+Qpl+Variant")]
+impl crate::GlobalNamespace::Qpl_OVRPlugin_Variant {
+    pub fn From_Il2CppObject0(
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        1usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_Il2CppObject_i32_4(
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        2usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_Il2CppObject_i32_5(
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        2usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_Il2CppObject_i32_6(
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        2usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_Il2CppObject_i32_7(
+        values: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            i32,
+                        ),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        2usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (values, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn From__cordl_bool3(
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (bool),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        1usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_f64_2(
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (f64),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        1usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn From_i64_1(
+        value: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::Qpl_OVRPlugin_Variant> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i64),
+                        crate::GlobalNamespace::Qpl_OVRPlugin_Variant,
+                        1usize,
+                    >("From")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "From",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::Qpl_OVRPlugin_Variant = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+VariantType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum Qpl_OVRPlugin_VariantType {
+    #[default]
+    Bool = 4i32,
+    BoolArray = 8i32,
+    Double = 3i32,
+    DoubleArray = 7i32,
+    Int = 2i32,
+    IntArray = 6i32,
+    None = 0i32,
+    String = 1i32,
+    StringArray = 5i32,
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+VariantType")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::Qpl_OVRPlugin_VariantType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRPlugin/Qpl/VariantType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+VariantType")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::Qpl_OVRPlugin_VariantType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+VariantType")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::Qpl_OVRPlugin_VariantType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+VariantType")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::Qpl_OVRPlugin_VariantType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_OVRPlugin+Qpl+VariantType")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::Qpl_OVRPlugin_VariantType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

@@ -43,6 +43,7 @@ pub struct InputSystemUIInputModule {
     pub m_DeselectOnBackgroundClick: bool,
     pub m_PointerBehavior: crate::UnityEngine::InputSystem::UI::UIPointerBehavior,
     pub m_CursorLockBehavior: crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule_CursorLockBehavior,
+    pub m_ScrollDeltaPerTick: f32,
     pub m_ActionsHooked: bool,
     pub m_NeedToPurgeStalePointers: bool,
     pub m_OnPointDelegate: quest_hook::libil2cpp::Gc<
@@ -94,9 +95,6 @@ pub struct InputSystemUIInputModule {
     pub m_CurrentPointerIndex: i32,
     pub m_CurrentPointerType: crate::UnityEngine::InputSystem::UI::UIPointerType,
     pub m_PointerIds: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<i32>,
-    pub m_PointerTouchControls: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputControl>,
-    >,
     pub m_PointerStates: crate::UnityEngine::InputSystem::Utilities::InlinedArray_1<
         crate::UnityEngine::InputSystem::UI::PointerModel,
     >,
@@ -142,7 +140,7 @@ for crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
 #[cfg(feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule")]
 impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     pub const kClickSpeed: f32 = 0.3f32;
-    pub const kPixelPerLine: f32 = 20f32;
+    pub const kSmallestScrollDeltaPerTick: f32 = 0.00001f32;
     #[cfg(
         feature = "UnityEngine+InputSystem+UI+InputSystemUIInputModule+CursorLockBehavior"
     )]
@@ -311,6 +309,32 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (context))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ConvertPointerEventScrollDeltaToTicks(
+        &mut self,
+        scrollDelta: crate::UnityEngine::Vector2,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Vector2),
+                        crate::UnityEngine::Vector2,
+                        1usize,
+                    >("ConvertPointerEventScrollDeltaToTicks")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertPointerEventScrollDeltaToTicks", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (scrollDelta))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1438,16 +1462,12 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     pub fn RemovePointerAtIndex(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (i32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("RemovePointerAtIndex")
+                    .find_method::<(i32), bool, 1usize>("RemovePointerAtIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1456,7 +1476,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+        let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
@@ -1489,14 +1509,14 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
     pub fn SendPointerExitEventsAndRemovePointer(
         &mut self,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32),
-                        quest_hook::libil2cpp::Void,
+                        bool,
                         1usize,
                     >("SendPointerExitEventsAndRemovePointer")
                     .unwrap_or_else(|e| {
@@ -1507,7 +1527,7 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+        let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (index))?
         };
         Ok(__cordl_ret.into())
@@ -2167,6 +2187,23 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_scrollDeltaPerTick(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), f32, 0usize>("get_scrollDeltaPerTick")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollDeltaPerTick", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_scrollWheel(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -2194,6 +2231,25 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::InputSystem::InputActionReference,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sendPointerHoverToParent(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_sendPointerHoverToParent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sendPointerHoverToParent", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_shouldIgnoreFocus(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -2797,6 +2853,32 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_scrollDeltaPerTick(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_scrollDeltaPerTick")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scrollDeltaPerTick", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_scrollWheel(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -2819,6 +2901,32 @@ impl crate::UnityEngine::InputSystem::UI::InputSystemUIInputModule {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_scrollWheel", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_sendPointerHoverToParent(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_sendPointerHoverToParent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sendPointerHoverToParent", 1usize
                         )
                     })
             });

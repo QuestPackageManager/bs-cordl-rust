@@ -70,7 +70,7 @@ impl crate::UnityEngine::Cursor {
         Ok(__cordl_ret.into())
     }
     pub fn SetCursor_Injected(
-        texture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+        texture: crate::System::IntPtr,
         hotspot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
         cursorMode: crate::UnityEngine::CursorMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -80,7 +80,7 @@ impl crate::UnityEngine::Cursor {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
                             crate::UnityEngine::CursorMode,
                         ),

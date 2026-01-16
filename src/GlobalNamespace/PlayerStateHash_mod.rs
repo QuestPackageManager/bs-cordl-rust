@@ -572,6 +572,20 @@ impl crate::GlobalNamespace::PlayerStateHash {
     }
 }
 #[cfg(feature = "PlayerStateHash")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::PlayerStateHash {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "PlayerStateHash")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::PlayerStateHash {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "PlayerStateHash")]
 impl AsRef<
     crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         crate::GlobalNamespace::PlayerStateHash,

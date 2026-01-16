@@ -40,7 +40,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BakedLightUtils {
 impl crate::GlobalNamespace::BakedLightUtils {
     pub const kDepthOnlyShaderName: &'static str = "Custom/SetDepthOnly";
     pub const kMirrorParentNameToIgnore: &'static str = "PlayersPlace";
-    pub fn ValidateLoadedEnvironmentScene(
+    pub fn ValidateBakedLights(
+        activeSceneRootObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        envScene: crate::UnityEngine::SceneManagement::Scene,
         validateBakedGIEnabled: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -48,20 +50,91 @@ impl crate::GlobalNamespace::BakedLightUtils {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (bool),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::UnityEngine::SceneManagement::Scene,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        3usize,
+                    >("ValidateBakedLights")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateBakedLights", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (activeSceneRootObject, envScene, validateBakedGIEnabled),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateLoadedEnvironmentScene(
+        validateBakedGIEnabled: bool,
+        optionalEnvScene: crate::System::Nullable_1<
+            crate::UnityEngine::SceneManagement::Scene,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            bool,
+                            crate::System::Nullable_1<
+                                crate::UnityEngine::SceneManagement::Scene,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
                     >("ValidateLoadedEnvironmentScene")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateLoadedEnvironmentScene", 1usize
+                            "ValidateLoadedEnvironmentScene", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (validateBakedGIEnabled))?
+            cordl_method_info
+                .invoke_unchecked((), (validateBakedGIEnabled, optionalEnvScene))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateMirrors(
+        activeSceneRootObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        envScene: crate::UnityEngine::SceneManagement::Scene,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+                            crate::UnityEngine::SceneManagement::Scene,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ValidateMirrors")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateMirrors", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (activeSceneRootObject, envScene))?
         };
         Ok(__cordl_ret.into())
     }

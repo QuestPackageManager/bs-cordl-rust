@@ -3,26 +3,28 @@
 #[derive(Debug)]
 pub struct BaseTreeViewController {
     __cordl_parent: crate::UnityEngine::UIElements::CollectionViewController,
-    pub m_TreeItems: quest_hook::libil2cpp::Gc<
+    pub m_Hierarchy: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
+    pub m_HierarchyFlattened: quest_hook::libil2cpp::Gc<
+        crate::Unity::Hierarchy::HierarchyFlattened,
+    >,
+    pub m_HierarchyViewModel: quest_hook::libil2cpp::Gc<
+        crate::Unity::Hierarchy::HierarchyViewModel,
+    >,
+    pub m_IdToNodeDictionary: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             i32,
-            crate::UnityEngine::UIElements::TreeItem,
+            crate::Unity::Hierarchy::HierarchyNode,
         >,
     >,
-    pub m_RootIndices: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<i32>,
+    pub m_TreeViewDataProperty: quest_hook::libil2cpp::Gc<
+        crate::Unity::Hierarchy::IHierarchyProperty_1<i32>,
     >,
-    pub m_ItemWrappers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TreeViewItemWrapper,
-        >,
-    >,
-    pub m_TreeItemIdsWithItemWrappers: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<i32>,
-    >,
-    pub m_WrapperInsertionList: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            crate::UnityEngine::UIElements::TreeViewItemWrapper,
+    pub m_HierarchyHasPendingChanged: bool,
+    pub itemExpandedChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+            >,
         >,
     >,
 }
@@ -83,30 +85,56 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CollapseItem(
+    pub fn ClearIdToNodeDictionary(
         &mut self,
-        id: i32,
-        collapseAllChildren: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, bool),
+                        (),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        0usize,
+                    >("ClearIdToNodeDictionary")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearIdToNodeDictionary", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CollapseItem(
+        &mut self,
+        id: i32,
+        collapseAllChildren: bool,
+        refresh: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, bool, bool),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
                     >("CollapseItem")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CollapseItem", 2usize
+                            "CollapseItem", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, collapseAllChildren))?
+            cordl_method_info.invoke_unchecked(self, (id, collapseAllChildren, refresh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -114,42 +142,36 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         &mut self,
         index: i32,
         collapseAllChildren: bool,
+        refresh: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, bool),
+                        (i32, bool, bool),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("CollapseItemByIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CollapseItemByIndex", 2usize
+                            "CollapseItemByIndex", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index, collapseAllChildren))?
+            cordl_method_info
+                .invoke_unchecked(self, (index, collapseAllChildren, refresh))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateWrappers(
+    pub fn CollapseItemByNode(
         &mut self,
-        treeViewItemIds: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-        depth: i32,
-        wrappers: quest_hook::libil2cpp::ByRefMut<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Collections::Generic::List_1<
-                    crate::UnityEngine::UIElements::TreeViewItemWrapper,
-                >,
-            >,
-        >,
+        node: quest_hook::libil2cpp::ByRefMut<crate::Unity::Hierarchy::HierarchyNode>,
+        collapseAllChildren: bool,
+        refresh: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -157,31 +179,79 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<i32>,
-                            >,
-                            i32,
                             quest_hook::libil2cpp::ByRefMut<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::System::Collections::Generic::List_1<
-                                        crate::UnityEngine::UIElements::TreeViewItemWrapper,
-                                    >,
-                                >,
+                                crate::Unity::Hierarchy::HierarchyNode,
                             >,
+                            bool,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
-                    >("CreateWrappers")
+                    >("CollapseItemByNode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateWrappers", 3usize
+                            "CollapseItemByNode", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (treeViewItemIds, depth, wrappers))?
+            cordl_method_info
+                .invoke_unchecked(self, (node, collapseAllChildren, refresh))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CreateNode(
+        &mut self,
+        parent: quest_hook::libil2cpp::ByRefMut<crate::Unity::Hierarchy::HierarchyNode>,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Hierarchy::HierarchyNode> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::Unity::Hierarchy::HierarchyNode,
+                        >),
+                        crate::Unity::Hierarchy::HierarchyNode,
+                        1usize,
+                    >("CreateNode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateNode", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Hierarchy::HierarchyNode = unsafe {
+            cordl_method_info.invoke_unchecked(self, (parent))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn DisposeHierarchy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("DisposeHierarchy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DisposeHierarchy", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -258,6 +328,61 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (index, expandAllChildren, refresh))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ExpandItemByNode(
+        &mut self,
+        node: quest_hook::libil2cpp::ByRefMut<crate::Unity::Hierarchy::HierarchyNode>,
+        expandAllChildren: bool,
+        refresh: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Hierarchy::HierarchyNode,
+                            >,
+                            bool,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("ExpandItemByNode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ExpandItemByNode", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (node, expandAllChildren, refresh))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Finalize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Finalize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Finalize", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -380,6 +505,86 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetExpandedItemIds(
+        &mut self,
+        list: quest_hook::libil2cpp::Gc<crate::System::Collections::Generic::List_1<i32>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<i32>,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("GetExpandedItemIds")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetExpandedItemIds", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (list))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHierarchyNodeById(
+        &mut self,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Hierarchy::HierarchyNode> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        crate::Unity::Hierarchy::HierarchyNode,
+                        1usize,
+                    >("GetHierarchyNodeById")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHierarchyNodeById", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Hierarchy::HierarchyNode = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHierarchyNodeByIndex(
+        &mut self,
+        index: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Hierarchy::HierarchyNode> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        crate::Unity::Hierarchy::HierarchyNode,
+                        1usize,
+                    >("GetHierarchyNodeByIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHierarchyNodeByIndex", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Hierarchy::HierarchyNode = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetIdForIndex(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -479,37 +684,6 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         let __cordl_ret: i32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (id))?
         };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetRootItemIds(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<i32>,
-                        >,
-                        0usize,
-                    >("GetRootItemIds")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRootItemIds", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<i32>,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn HasChildren(&mut self, id: i32) -> quest_hook::libil2cpp::Result<bool> {
@@ -647,6 +821,29 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IsChildOf(
+        &mut self,
+        childId: i32,
+        id: i32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(i32, i32), bool, 2usize>("IsChildOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsChildOf", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (childId, id))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn IsExpanded(&mut self, id: i32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -705,6 +902,23 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (index))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsViewDataKeyEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("IsViewDataKeyEnabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsViewDataKeyEnabled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Move(
@@ -802,6 +1016,31 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn OnViewDataReadyUpdateNodes(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("OnViewDataReadyUpdateNodes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnViewDataReadyUpdateNodes", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn PostInitRegistration(
         &mut self,
         treeItem: quest_hook::libil2cpp::Gc<
@@ -832,6 +1071,56 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn PreRefresh(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("PreRefresh")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PreRefresh", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaiseItemExpandedChanged(
+        &mut self,
+        id: i32,
+        isExpanded: bool,
+        isAppliedToAllChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, bool, bool),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("RaiseItemExpandedChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaiseItemExpandedChanged", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (id, isExpanded, isAppliedToAllChildren))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn RaiseItemParentChanged(
         &mut self,
         id: i32,
@@ -859,7 +1148,7 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RebuildTree(
+    pub fn UpdateHierarchy(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -870,12 +1159,12 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("RebuildTree")
+                    >("UpdateHierarchy")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RebuildTree", 0usize
+                            "UpdateHierarchy", 0usize
                         )
                     })
             });
@@ -884,28 +1173,78 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RegenerateWrappers(
+    pub fn UpdateIdToNodeDictionary(
         &mut self,
+        id: i32,
+        node: quest_hook::libil2cpp::ByRefMut<crate::Unity::Hierarchy::HierarchyNode>,
+        isAdd: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (),
+                        (
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Hierarchy::HierarchyNode,
+                            >,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RegenerateWrappers")
+                        3usize,
+                    >("UpdateIdToNodeDictionary")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RegenerateWrappers", 0usize
+                            "UpdateIdToNodeDictionary", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, (id, node, isAdd))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateSortOrder(
+        &mut self,
+        newParent: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Hierarchy::HierarchyNode,
+        >,
+        insertedNode: quest_hook::libil2cpp::ByRefMut<
+            crate::Unity::Hierarchy::HierarchyNode,
+        >,
+        insertedIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Hierarchy::HierarchyNode,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Hierarchy::HierarchyNode,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("UpdateSortOrder")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateSortOrder", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (newParent, insertedNode, insertedIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -927,6 +1266,44 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_itemExpandedChanged(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_itemExpandedChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_itemExpandedChanged", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -959,6 +1336,33 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_hierarchy(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
+                        0usize,
+                    >("get_hierarchy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hierarchy", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_itemsSource(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -983,6 +1387,70 @@ impl crate::UnityEngine::UIElements::BaseTreeViewController {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Collections::IList> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_itemExpandedChanged(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+                >,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Action_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_itemExpandedChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_itemExpandedChanged", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_hierarchy(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::Unity::Hierarchy::Hierarchy>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_hierarchy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_hierarchy", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

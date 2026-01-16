@@ -3,6 +3,11 @@
 #[derive(Debug)]
 pub struct SaberTrail {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    pub _determinismConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DeterminismConfig,
+    >,
     pub _trailRendererPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SaberTrailRenderer,
     >,
@@ -66,27 +71,6 @@ impl crate::GlobalNamespace::SaberTrail {
     pub const kIgnoredFramesCount: i32 = 4i32;
     pub const kScaleCheckFramesInterval: i32 = 10i32;
     pub const kSnapshotCapacityMargin: i32 = 3i32;
-    pub fn Awake(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Awake")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
-                            0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn GetTrailWidth(
         &mut self,
         lastAddedData: crate::GlobalNamespace::BladeMovementDataElement,
@@ -110,6 +94,32 @@ impl crate::GlobalNamespace::SaberTrail {
             });
         let __cordl_ret: f32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (lastAddedData))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleDeterminismSet(
+        &mut self,
+        isDeterministic: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleDeterminismSet")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleDeterminismSet", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (isDeterministic))?
         };
         Ok(__cordl_ret.into())
     }
@@ -306,6 +316,27 @@ impl crate::GlobalNamespace::SaberTrail {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (color, movementData))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Start(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

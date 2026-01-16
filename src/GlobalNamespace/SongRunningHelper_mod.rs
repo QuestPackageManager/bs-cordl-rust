@@ -15,6 +15,12 @@ pub struct SongRunningHelper {
     pub _environmentsListModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentsListModel,
     >,
+    pub _gameScenesManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameScenesManager,
+    >,
+    pub _coroutineStarter: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ICoroutineStarter,
+    >,
     pub _playQueue: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Queue_1<
             crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
@@ -58,6 +64,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SongRunningHelper {
 }
 #[cfg(feature = "SongRunningHelper")]
 impl crate::GlobalNamespace::SongRunningHelper {
+    #[cfg(feature = "SongRunningHelper+MessageStrings")]
+    pub type MessageStrings = crate::GlobalNamespace::SongRunningHelper_MessageStrings;
     #[cfg(feature = "SongRunningHelper+QueuedSongParams")]
     pub type QueuedSongParams = crate::GlobalNamespace::SongRunningHelper_QueuedSongParams;
     pub fn EnqueueLevel(
@@ -89,6 +97,7 @@ impl crate::GlobalNamespace::SongRunningHelper {
     pub fn FindBeatmapLevelPackBeatmaps(
         &mut self,
         packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -101,7 +110,12 @@ impl crate::GlobalNamespace::SongRunningHelper {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
                                 quest_hook::libil2cpp::Gc<
@@ -109,13 +123,13 @@ impl crate::GlobalNamespace::SongRunningHelper {
                                 >,
                             >,
                         >,
-                        1usize,
+                        2usize,
                     >("FindBeatmapLevelPackBeatmaps")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FindBeatmapLevelPackBeatmaps", 1usize
+                            "FindBeatmapLevelPackBeatmaps", 2usize
                         )
                     })
             });
@@ -123,7 +137,33 @@ impl crate::GlobalNamespace::SongRunningHelper {
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
             >,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (packId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (packId, ignoreCase))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandlePauseControllerCanPause(
+        &mut self,
+        canPause: quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action_1<bool>>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandlePauseControllerCanPause")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandlePauseControllerCanPause", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (canPause))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -136,14 +176,18 @@ impl crate::GlobalNamespace::SongRunningHelper {
     pub fn StartLevel(
         &mut self,
         queuedSongParams: crate::GlobalNamespace::SongRunningHelper_QueuedSongParams,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::SongRunningHelper_QueuedSongParams),
-                        quest_hook::libil2cpp::Void,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::IEnumerator,
+                        >,
                         1usize,
                     >("StartLevel")
                     .unwrap_or_else(|e| {
@@ -154,98 +198,9 @@ impl crate::GlobalNamespace::SongRunningHelper {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (queuedSongParams))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn StopAllLevels(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("StopAllLevels")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StopAllLevels", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn StopCurrentLevel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("StopCurrentLevel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StopCurrentLevel", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _StartLevel_g__HandleLevelDidFinishCallback_9_0(
-        &mut self,
-        standardLevelScenesTransition: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-        >,
-        results: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelCompletionResults,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("<StartLevel>g__HandleLevelDidFinishCallback|9_0")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<StartLevel>g__HandleLevelDidFinishCallback|9_0", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (standardLevelScenesTransition, results))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (queuedSongParams))? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -269,9 +224,85 @@ impl crate::GlobalNamespace::SongRunningHelper {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_SongsRunning(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_SongsRunning")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_SongsRunning", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_SongRunningHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::SongRunningHelper {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_SongRunningHelper+MessageStrings")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct SongRunningHelper_MessageStrings {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_SongRunningHelper+MessageStrings")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::SongRunningHelper_MessageStrings {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "SongRunningHelper/MessageStrings";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "SongRunningHelper+MessageStrings")]
+impl std::ops::Deref for crate::GlobalNamespace::SongRunningHelper_MessageStrings {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongRunningHelper+MessageStrings")]
+impl std::ops::DerefMut for crate::GlobalNamespace::SongRunningHelper_MessageStrings {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "SongRunningHelper+MessageStrings")]
+impl crate::GlobalNamespace::SongRunningHelper_MessageStrings {
+    pub const kFmtMessageSongStarted: &'static str = "RunSong: Starting song {0}";
+    pub const kFmtMessageSongsRemaining: &'static str = "RunSong: -- There are {0} songs in queue...";
+    pub const kLogPrefix: &'static str = "RunSong: ";
+    pub const kMessageQueueFinished: &'static str = "RunSong: ---Finished the runsong level queue---";
+    pub const kMessageQueueStarted: &'static str = "RunSong: ---Starting the runsong level queue---";
+    pub const kMessageSongFinished: &'static str = "RunSong: -- Finished song";
+    pub const kMessageSongStarted: &'static str = "RunSong: -- Started song";
+}
+#[cfg(feature = "cordl_class_SongRunningHelper+MessageStrings")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::SongRunningHelper_MessageStrings {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }
@@ -298,6 +329,7 @@ pub struct SongRunningHelper_QueuedSongParams {
         >,
     >,
     pub zenMode: bool,
+    pub disablePause: bool,
 }
 #[cfg(feature = "cordl_class_SongRunningHelper+QueuedSongParams")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -405,6 +437,7 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
         songSpeed: crate::GlobalNamespace::GameplayModifiers_SongSpeed,
         recordingToolData: crate::GlobalNamespace::RecordingToolManager_SetupData,
         zenMode: bool,
+        disablePause: bool,
         songFinishedCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
                 quest_hook::libil2cpp::Gc<
@@ -431,6 +464,7 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
                             crate::GlobalNamespace::GameplayModifiers_SongSpeed,
                             crate::GlobalNamespace::RecordingToolManager_SetupData,
                             bool,
+                            bool,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Action_2<
                                     quest_hook::libil2cpp::Gc<
@@ -443,13 +477,13 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        8usize,
+                        9usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            8usize
+                            9usize
                         )
                     })
             });
@@ -465,6 +499,7 @@ impl crate::GlobalNamespace::SongRunningHelper_QueuedSongParams {
                         songSpeed,
                         recordingToolData,
                         zenMode,
+                        disablePause,
                         songFinishedCallback,
                     ),
                 )?

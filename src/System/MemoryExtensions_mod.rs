@@ -38,6 +38,37 @@ impl std::ops::DerefMut for crate::System::MemoryExtensions {
 }
 #[cfg(feature = "System+MemoryExtensions")]
 impl crate::System::MemoryExtensions {
+    pub fn AsSpan_Il2CppArray4<T>(
+        array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Span_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<T>,
+                        >),
+                        crate::System::Span_1<T>,
+                        1usize,
+                    >("AsSpan")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "AsSpan",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::Span_1<T> = unsafe {
+            cordl_method_info.invoke_unchecked((), (array))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn AsSpan_Il2CppArray_i32_0<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         start: i32,
@@ -73,7 +104,7 @@ impl crate::System::MemoryExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn AsSpan_Il2CppArray_i32_i32_4<T>(
+    pub fn AsSpan_Il2CppArray_i32_i32_5<T>(
         array: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<T>>,
         start: i32,
         length: i32,
@@ -382,36 +413,6 @@ impl crate::System::MemoryExtensions {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf<T>(
-        span: crate::System::ReadOnlySpan_1<T>,
-        value: T,
-    ) -> quest_hook::libil2cpp::Result<i32>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::System::ReadOnlySpan_1<T>, T),
-                        i32,
-                        2usize,
-                    >("IndexOf")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (span, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn IndexOfAny<T>(
         span: crate::System::ReadOnlySpan_1<T>,
         values: crate::System::ReadOnlySpan_1<T>,
@@ -442,6 +443,96 @@ impl crate::System::MemoryExtensions {
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info.invoke_unchecked((), (span, values))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_ReadOnlySpan_1_T2<T>(
+        span: crate::System::ReadOnlySpan_1<T>,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::ReadOnlySpan_1<T>, T),
+                        i32,
+                        2usize,
+                    >("IndexOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (span, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Span_1_ReadOnlySpan_1_1<T>(
+        span: crate::System::Span_1<T>,
+        value: crate::System::ReadOnlySpan_1<T>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::Span_1<T>, crate::System::ReadOnlySpan_1<T>),
+                        i32,
+                        2usize,
+                    >("IndexOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (span, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_Span_1_T0<T>(
+        span: crate::System::Span_1<T>,
+        value: T,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::Span_1<T>, T),
+                        i32,
+                        2usize,
+                    >("IndexOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (span, value))?
         };
         Ok(__cordl_ret.into())
     }

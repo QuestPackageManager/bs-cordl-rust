@@ -52,22 +52,6 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::Task {
 }
 #[cfg(feature = "System+Threading+Tasks+Task")]
 impl crate::System::Threading::Tasks::Task {
-    pub const CANCELLATION_REQUESTED: i32 = 1i32;
-    pub const OptionsMask: i32 = 65535i32;
-    pub const TASK_STATE_CANCELED: i32 = 4194304i32;
-    pub const TASK_STATE_CANCELLATIONACKNOWLEDGED: i32 = 1048576i32;
-    pub const TASK_STATE_COMPLETED_MASK: i32 = 23068672i32;
-    pub const TASK_STATE_COMPLETION_RESERVED: i32 = 67108864i32;
-    pub const TASK_STATE_DELEGATE_INVOKED: i32 = 131072i32;
-    pub const TASK_STATE_DISPOSED: i32 = 262144i32;
-    pub const TASK_STATE_EXCEPTIONOBSERVEDBYPARENT: i32 = 524288i32;
-    pub const TASK_STATE_FAULTED: i32 = 2097152i32;
-    pub const TASK_STATE_RAN_TO_COMPLETION: i32 = 16777216i32;
-    pub const TASK_STATE_STARTED: i32 = 65536i32;
-    pub const TASK_STATE_THREAD_WAS_ABORTED: i32 = 134217728i32;
-    pub const TASK_STATE_WAITINGFORACTIVATION: i32 = 33554432i32;
-    pub const TASK_STATE_WAITING_ON_CHILDREN: i32 = 8388608i32;
-    pub const TASK_STATE_WAIT_COMPLETION_NOTIFICATION: i32 = 268435456i32;
     #[cfg(feature = "System+Threading+Tasks+Task+ContingentProperties")]
     pub type ContingentProperties = crate::System::Threading::Tasks::Task_ContingentProperties;
     #[cfg(feature = "System+Threading+Tasks+Task+DelayPromise")]
@@ -889,7 +873,34 @@ impl crate::System::Threading::Tasks::Task {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Delay_TimeSpan_CancellationToken0(
+    pub fn Delay_TimeSpan0(
+        delay: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::TimeSpan),
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        1usize,
+                    >("Delay")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Delay",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (delay))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Delay_TimeSpan_CancellationToken1(
         delay: crate::System::TimeSpan,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
@@ -922,7 +933,7 @@ impl crate::System::Threading::Tasks::Task {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Delay_i32_1(
+    pub fn Delay_i32_2(
         millisecondsDelay: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
@@ -949,7 +960,7 @@ impl crate::System::Threading::Tasks::Task {
         > = unsafe { cordl_method_info.invoke_unchecked((), (millisecondsDelay))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Delay_i32_CancellationToken2(
+    pub fn Delay_i32_CancellationToken3(
         millisecondsDelay: i32,
         cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<
@@ -1788,6 +1799,40 @@ impl crate::System::Threading::Tasks::Task {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = unsafe { cordl_method_info.invoke_unchecked((), (creationOptions))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InternalRunSynchronously(
+        &mut self,
+        scheduler: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::TaskScheduler,
+        >,
+        waitForCompletion: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Threading::Tasks::TaskScheduler,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("InternalRunSynchronously")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InternalRunSynchronously", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (scheduler, waitForCompletion))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalStartNew(
@@ -3596,6 +3641,31 @@ impl crate::System::Threading::Tasks::Task {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Yield() -> quest_hook::libil2cpp::Result<
+        crate::System::Runtime::CompilerServices::YieldAwaitable,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::System::Runtime::CompilerServices::YieldAwaitable,
+                        0usize,
+                    >("Yield")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Yield",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::Runtime::CompilerServices::YieldAwaitable = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor_1(

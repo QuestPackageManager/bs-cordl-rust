@@ -50,6 +50,8 @@ impl crate::Mono::Unity::UnityTls {
     pub type unitytls_key = crate::Mono::Unity::UnityTls_unitytls_key;
     #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
     pub type unitytls_key_ref = crate::Mono::Unity::UnityTls_unitytls_key_ref;
+    #[cfg(feature = "Mono+Unity+UnityTls+unitytls_log_level")]
+    pub type unitytls_log_level = crate::Mono::Unity::UnityTls_unitytls_log_level;
     #[cfg(feature = "Mono+Unity+UnityTls+unitytls_protocol")]
     pub type unitytls_protocol = crate::Mono::Unity::UnityTls_unitytls_protocol;
     #[cfg(feature = "Mono+Unity+UnityTls+unitytls_tlsctx")]
@@ -256,22 +258,29 @@ for crate::Mono::Unity::UnityTls_unitytls_ciphersuite {
 pub enum UnityTls_unitytls_error_code {
     #[default]
     UNITYTLS_BUFFER_OVERFLOW = 5u32,
+    UNITYTLS_DER_PARSE_ERROR = 11u32,
     UNITYTLS_ENTROPY_SOURCE_FAILED = 9u32,
+    UNITYTLS_HANDSHAKE_STEP = 1048584u32,
     UNITYTLS_INTERNAL_ERROR = 7u32,
     UNITYTLS_INVALID_ARGUMENT = 1u32,
     UNITYTLS_INVALID_FORMAT = 2u32,
     UNITYTLS_INVALID_PASSWORD = 3u32,
     UNITYTLS_INVALID_STATE = 4u32,
+    UNITYTLS_KEY_PARSE_ERROR = 12u32,
     UNITYTLS_NOT_SUPPORTED = 8u32,
     UNITYTLS_OUT_OF_MEMORY = 6u32,
+    UNITYTLS_SSL_ERROR = 13u32,
+    UNITYTLS_SSL_NEEDS_VERIFY = 1048583u32,
     UNITYTLS_STREAM_CLOSED = 10u32,
     UNITYTLS_SUCCESS = 0u32,
     UNITYTLS_USER_CUSTOM_ERROR_END = 2097152u32,
     UNITYTLS_USER_CUSTOM_ERROR_START = 1048576u32,
-    UNITYTLS_USER_READ_FAILED = 1048578u32,
-    UNITYTLS_USER_UNKNOWN_ERROR = 1048580u32,
+    UNITYTLS_USER_READ_FAILED = 1048580u32,
+    UNITYTLS_USER_UNKNOWN_ERROR = 1048582u32,
     UNITYTLS_USER_WOULD_BLOCK = 1048577u32,
-    UNITYTLS_USER_WRITE_FAILED = 1048579u32,
+    UNITYTLS_USER_WOULD_BLOCK_READ = 1048578u32,
+    UNITYTLS_USER_WOULD_BLOCK_WRITE = 1048579u32,
+    UNITYTLS_USER_WRITE_FAILED = 1048581u32,
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_error_code")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -562,6 +571,12 @@ pub struct UnityTls_unitytls_interface_struct {
     pub unitytls_random_generate_bytes: quest_hook::libil2cpp::Gc<
         crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_random_generate_bytes_t,
     >,
+    pub unitytls_x509verify_result_to_string: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t,
+    >,
+    pub unitytls_tlsctx_set_trace_level: quest_hook::libil2cpp::Gc<
+        crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t,
+    >,
 }
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -673,6 +688,10 @@ impl crate::Mono::Unity::UnityTls_unitytls_interface_struct {
     )]
     pub type unitytls_tlsctx_set_trace_callback_t = crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_callback_t;
     #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
+    )]
+    pub type unitytls_tlsctx_set_trace_level_t = crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t;
+    #[cfg(
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
     )]
     pub type unitytls_tlsctx_set_x509verify_callback_t = crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_x509verify_callback_t;
@@ -716,6 +735,10 @@ impl crate::Mono::Unity::UnityTls_unitytls_interface_struct {
         feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_explicit_ca_t"
     )]
     pub type unitytls_x509verify_explicit_ca_t = crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t;
+    #[cfg(
+        feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
+    )]
+    pub type unitytls_x509verify_result_to_string_t = crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -957,6 +980,102 @@ for crate::Mono::Unity::UnityTls_unitytls_key_ref {
 }
 #[cfg(feature = "Mono+Unity+UnityTls+unitytls_key_ref")]
 impl crate::Mono::Unity::UnityTls_unitytls_key_ref {}
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_log_level")]
+#[repr(u32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum UnityTls_unitytls_log_level {
+    #[default]
+    UNITYTLS_LOGLEVEL_DEBUG = 4u32,
+    UNITYTLS_LOGLEVEL_ERROR = 1u32,
+    UNITYTLS_LOGLEVEL_FATAL = 0u32,
+    UNITYTLS_LOGLEVEL_INFO = 3u32,
+    UNITYTLS_LOGLEVEL_MAX = 5u32,
+    UNITYTLS_LOGLEVEL_WARN = 2u32,
+}
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_log_level")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::UnityTls_unitytls_log_level {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_log_level";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_log_level")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::Mono::Unity::UnityTls_unitytls_log_level {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_log_level")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::Mono::Unity::UnityTls_unitytls_log_level {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_log_level")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::Mono::Unity::UnityTls_unitytls_log_level {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_log_level")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::Mono::Unity::UnityTls_unitytls_log_level {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
 #[cfg(feature = "cordl_class_Mono+Unity+UnityTls+unitytls_protocol")]
 #[repr(u32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -2611,15 +2730,27 @@ for crate::Mono::Unity::UnityTls_unitytls_x509verify_callback {
 pub enum UnityTls_unitytls_x509verify_result {
     #[default]
     UNITYTLS_X509VERIFY_FATAL_ERROR = 4294967295u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_BAD_KEY = 65536u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_BAD_MD = 16384u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_BAD_PK = 32768u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_EXT_KEY_USAGE = 4096u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_FUTURE = 512u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_KEY_USAGE = 2048u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_MISSING = 64u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_NS_CERT_TYPE = 8192u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_OTHER = 256u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCERT_SKIP_VERIFY = 128u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCRL_BAD_KEY = 524288u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCRL_BAD_MD = 131072u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCRL_BAD_PK = 262144u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCRL_EXPIRED = 32u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCRL_FUTURE = 1024u32,
+    UNITYTLS_X509VERIFY_FLAG_BADCRL_NOT_TRUSTED = 16u32,
     UNITYTLS_X509VERIFY_FLAG_CN_MISMATCH = 4u32,
     UNITYTLS_X509VERIFY_FLAG_EXPIRED = 1u32,
     UNITYTLS_X509VERIFY_FLAG_NOT_TRUSTED = 8u32,
     UNITYTLS_X509VERIFY_FLAG_REVOKED = 2u32,
     UNITYTLS_X509VERIFY_FLAG_UNKNOWN_ERROR = 134217728u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR1 = 65536u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR2 = 131072u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR3 = 262144u32,
-    UNITYTLS_X509VERIFY_FLAG_USER_ERROR4 = 524288u32,
     UNITYTLS_X509VERIFY_FLAG_USER_ERROR5 = 1048576u32,
     UNITYTLS_X509VERIFY_FLAG_USER_ERROR6 = 2097152u32,
     UNITYTLS_X509VERIFY_FLAG_USER_ERROR7 = 4194304u32,
@@ -5473,6 +5604,146 @@ for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_t
     }
 }
 #[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
+)]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_tlsctx_set_trace_level_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
+)]
+impl std::ops::Deref
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
+)]
+impl std::ops::DerefMut
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
+)]
+impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t {
+    pub fn Invoke(
+        &mut self,
+        ctx: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        level: crate::Mono::Unity::UnityTls_unitytls_log_level,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::Mono::Unity::UnityTls_unitytls_log_level,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (ctx, level))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (object, method))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_trace_level_t"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_tlsctx_set_trace_level_t {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
     feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_tlsctx_set_x509verify_callback_t"
 )]
 #[repr(C)]
@@ -7078,6 +7349,142 @@ impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_
 )]
 impl quest_hook::libil2cpp::ObjectType
 for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_explicit_ca_t {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
+)]
+#[repr(C)]
+#[derive(Debug)]
+pub struct unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t {
+    __cordl_parent: crate::System::MulticastDelegate,
+}
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
+)]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "Mono.Unity";
+    const CLASS_NAME: &'static str = "UnityTls/unitytls_interface_struct/unitytls_x509verify_result_to_string_t";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
+)]
+impl std::ops::Deref
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t {
+    type Target = crate::System::MulticastDelegate;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
+)]
+impl std::ops::DerefMut
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(
+    feature = "Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
+)]
+impl crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t {
+    pub fn Invoke(
+        &mut self,
+        v: crate::Mono::Unity::UnityTls_unitytls_x509verify_result,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::Mono::Unity::UnityTls_unitytls_x509verify_result),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        1usize,
+                    >("Invoke")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Invoke",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (v))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New(
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (object, method))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        object: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        method: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::System::IntPtr,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (object, method))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(
+    feature = "cordl_class_Mono+Unity+UnityTls+unitytls_interface_struct+unitytls_x509verify_result_to_string_t"
+)]
+impl quest_hook::libil2cpp::ObjectType
+for crate::Mono::Unity::unitytls_interface_struct_UnityTls_unitytls_x509verify_result_to_string_t {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

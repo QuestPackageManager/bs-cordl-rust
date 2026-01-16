@@ -14,7 +14,7 @@ pub struct MultiplayerDuelScoreManager {
         crate::GlobalNamespace::MultiplayerScoreProvider,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _opponentPlayer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectedPlayer,

@@ -542,6 +542,7 @@ pub struct InputStateBuffers_DoubleBuffers {
     pub deviceToBufferMapping: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppObject,
     >,
+    pub deviceCount: i32,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+LowLevel+InputStateBuffers+DoubleBuffers"

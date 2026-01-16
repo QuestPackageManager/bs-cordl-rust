@@ -6,6 +6,7 @@ pub struct X509ChainImplUnityTls {
     pub elements: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::X509Certificates::X509ChainElementCollection,
     >,
+    pub ownedList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub nativeCertificateChain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
     pub policy: quest_hook::libil2cpp::Gc<
         crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
@@ -133,7 +134,18 @@ impl crate::Mono::Unity::X509ChainImplUnityTls {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New(
+    pub fn New_Il2CppObject_Il2CppObject__cordl_bool1(
+        ownedList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        reverseOrder: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (ownedList, errorState, reverseOrder))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_UnityTls_unitytls_x509list_ref__cordl_bool0(
         nativeCertificateChain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
         reverseOrder: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -164,7 +176,44 @@ impl crate::Mono::Unity::X509ChainImplUnityTls {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
+    pub fn _ctor_Il2CppObject_Il2CppObject__cordl_bool1(
+        &mut self,
+        ownedList: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        errorState: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        reverseOrder: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (ownedList, errorState, reverseOrder))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_UnityTls_unitytls_x509list_ref__cordl_bool0(
         &mut self,
         nativeCertificateChain: crate::Mono::Unity::UnityTls_unitytls_x509list_ref,
         reverseOrder: bool,
@@ -251,43 +300,6 @@ impl crate::Mono::Unity::X509ChainImplUnityTls {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Security::Cryptography::X509Certificates::X509ChainPolicy,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_ChainStatus(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
-            >,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
-                            >,
-                        >,
-                        0usize,
-                    >("get_ChainStatus")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_ChainStatus", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                crate::System::Security::Cryptography::X509Certificates::X509ChainStatus,
-            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

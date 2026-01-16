@@ -39,7 +39,6 @@ impl std::ops::DerefMut for crate::System::Threading::Tasks::StackGuard {
 }
 #[cfg(feature = "System+Threading+Tasks+StackGuard")]
 impl crate::System::Threading::Tasks::StackGuard {
-    pub const MAX_UNCHECKED_INLINING_DEPTH: i32 = 20i32;
     pub fn EndInliningScope(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

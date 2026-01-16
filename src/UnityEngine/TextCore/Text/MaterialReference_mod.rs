@@ -10,7 +10,6 @@ pub struct MaterialReference {
         crate::UnityEngine::TextCore::Text::SpriteAsset,
     >,
     pub material: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    pub isDefaultMaterial: bool,
     pub isFallbackMaterial: bool,
     pub fallbackMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub padding: f32,

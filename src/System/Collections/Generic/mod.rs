@@ -160,6 +160,15 @@ pub use SByteEnumEqualityComparer_1_mod::*;
 // class ShortEnumEqualityComparer_1_mod; export all
 mod ShortEnumEqualityComparer_1_mod;
 pub use ShortEnumEqualityComparer_1_mod::*;
+// class SortedDictionary_2_mod; export all
+mod SortedDictionary_2_mod;
+pub use SortedDictionary_2_mod::*;
+// class SortedList_2_mod; export all
+mod SortedList_2_mod;
+pub use SortedList_2_mod::*;
+// class SortedSet_1_TreeSubSet_mod; export all
+mod SortedSet_1_TreeSubSet_mod;
+pub use SortedSet_1_TreeSubSet_mod::*;
 // class SortedSet_1_mod; export all
 mod SortedSet_1_mod;
 pub use SortedSet_1_mod::*;
@@ -172,6 +181,9 @@ pub use Stack_1_mod::*;
 // class TreeRotation_mod; export all
 mod TreeRotation_mod;
 pub use TreeRotation_mod::*;
+// class TreeSet_1_mod; export all
+mod TreeSet_1_mod;
+pub use TreeSet_1_mod::*;
 // class TreeWalkPredicate_1_mod; export all
 mod TreeWalkPredicate_1_mod;
 pub use TreeWalkPredicate_1_mod::*;

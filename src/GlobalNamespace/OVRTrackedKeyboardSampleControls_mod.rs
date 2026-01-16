@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetPresentationKeyLabels(
+    pub fn SetPresentationMR(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -128,12 +128,12 @@ impl crate::GlobalNamespace::OVRTrackedKeyboardSampleControls {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("SetPresentationKeyLabels")
+                    >("SetPresentationMR")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetPresentationKeyLabels", 0usize
+                            "SetPresentationMR", 0usize
                         )
                     })
             });

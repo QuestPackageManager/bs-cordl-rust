@@ -95,6 +95,71 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::UnityEngine::Color32 
 }
 #[cfg(feature = "UnityEngine+Color32")]
 impl crate::UnityEngine::Color32 {
+    pub fn Equals_Color32_1(
+        &mut self,
+        other: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(crate::UnityEngine::Color32), bool, 1usize>("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Equals_Il2CppObject0(
+        &mut self,
+        other: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>),
+                        bool,
+                        1usize,
+                    >("Equals")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Equals",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (other))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetHashCode(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("GetHashCode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHashCode", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn Lerp(
         a: crate::UnityEngine::Color32,
         b: crate::UnityEngine::Color32,
@@ -282,6 +347,22 @@ impl crate::UnityEngine::Color32 {
             cordl_method_info.invoke_unchecked((), (c))?
         };
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "UnityEngine+Color32")]
+impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Color32>>
+for crate::UnityEngine::Color32 {
+    fn as_ref(&self) -> &crate::System::IEquatable_1<crate::UnityEngine::Color32> {
+        todo!()
+    }
+}
+#[cfg(feature = "UnityEngine+Color32")]
+impl AsMut<crate::System::IEquatable_1<crate::UnityEngine::Color32>>
+for crate::UnityEngine::Color32 {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::System::IEquatable_1<crate::UnityEngine::Color32> {
+        todo!()
     }
 }
 #[cfg(feature = "UnityEngine+Color32")]

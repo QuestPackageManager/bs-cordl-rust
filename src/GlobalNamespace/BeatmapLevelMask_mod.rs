@@ -39,7 +39,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapLevelMask {
 }
 #[cfg(feature = "BeatmapLevelMask")]
 impl crate::GlobalNamespace::BeatmapLevelMask {
-    pub const kBitCount: i32 = 16384i32;
+    pub const kBitCount: i32 = 32768i32;
     pub const kHashBits: i32 = 14i32;
     pub const kHashCount: i32 = 1i32;
     pub const kToStringPrefix: &'static str = "[BeatmapLevelMask ";

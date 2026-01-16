@@ -63,6 +63,9 @@ pub struct MainFlowCoordinator {
     pub _additionalContentModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAdditionalContentModel,
     >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
     pub _menuDestinationRequest: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MenuDestination,
     >,
@@ -278,32 +281,6 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (helpFlowCoordinator))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn HandleHowToPlayViewControllerDidFinish(
-        &mut self,
-        howToPlayOptions: crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::HowToPlayViewController_HowToPlayOptions),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("HandleHowToPlayViewControllerDidFinish")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleHowToPlayViewControllerDidFinish", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (howToPlayOptions))?
         };
         Ok(__cordl_ret.into())
     }
@@ -759,7 +736,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _HandleMainMenuViewControllerDidFinish_b__29_0(
+    pub fn _HandleMainMenuViewControllerDidFinish_b__30_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -770,12 +747,12 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<HandleMainMenuViewControllerDidFinish>b__29_0")
+                    >("<HandleMainMenuViewControllerDidFinish>b__30_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<HandleMainMenuViewControllerDidFinish>b__29_0", 0usize
+                            "<HandleMainMenuViewControllerDidFinish>b__30_0", 0usize
                         )
                     })
             });
@@ -784,7 +761,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__28_0(
+    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__29_0(
         &mut self,
         buttonNumber: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -796,12 +773,12 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                         (i32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<PresentFlowCoordinatorOrAskForTutorial>b__28_0")
+                    >("<PresentFlowCoordinatorOrAskForTutorial>b__29_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<PresentFlowCoordinatorOrAskForTutorial>b__28_0", 1usize
+                            "<PresentFlowCoordinatorOrAskForTutorial>b__29_0", 1usize
                         )
                     })
             });
@@ -810,7 +787,7 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__28_1(
+    pub fn _PresentFlowCoordinatorOrAskForTutorial_b__29_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -821,12 +798,12 @@ impl crate::GlobalNamespace::MainFlowCoordinator {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<PresentFlowCoordinatorOrAskForTutorial>b__28_1")
+                    >("<PresentFlowCoordinatorOrAskForTutorial>b__29_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<PresentFlowCoordinatorOrAskForTutorial>b__28_1", 0usize
+                            "<PresentFlowCoordinatorOrAskForTutorial>b__29_1", 0usize
                         )
                     })
             });

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct BeatmapEditorScenesTransitionSetupDataSO {
-    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
             quest_hook::libil2cpp::Gc<
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
 #[cfg(feature = "BeatmapEditorScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO {
-    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

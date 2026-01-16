@@ -16,9 +16,11 @@ pub struct BatchCullingContext {
     pub viewID: crate::UnityEngine::Rendering::BatchPackedCullingViewID,
     pub cullingLayerMask: u32,
     pub sceneCullingMask: u64,
+    pub splitExclusionMask: u16,
     pub isOrthographic: u8,
     pub receiverPlaneOffset: i32,
     pub receiverPlaneCount: i32,
+    pub occlusionBuffer: crate::System::IntPtr,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingContext")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -133,8 +135,10 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
         inViewID: u64,
         inCullingLayerMask: u32,
         inSceneCullingMask: u64,
+        inExclusionSplitMask: u8,
         inReceiverPlaneOffset: i32,
         inReceiverPlaneCount: i32,
+        inOcclusionBuffer: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -156,17 +160,19 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
                             u64,
                             u32,
                             u64,
+                            u8,
                             i32,
                             i32,
+                            crate::System::IntPtr,
                         ),
                         quest_hook::libil2cpp::Void,
-                        12usize,
+                        14usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            12usize
+                            14usize
                         )
                     })
             });
@@ -185,8 +191,10 @@ impl crate::UnityEngine::Rendering::BatchCullingContext {
                         inViewID,
                         inCullingLayerMask,
                         inSceneCullingMask,
+                        inExclusionSplitMask,
                         inReceiverPlaneOffset,
                         inReceiverPlaneCount,
+                        inOcclusionBuffer,
                     ),
                 )?
         };

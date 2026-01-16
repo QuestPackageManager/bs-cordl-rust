@@ -16,6 +16,12 @@ pub use DownloadHandlerTexture_mod::*;
 // class DownloadHandler_mod; export all
 mod DownloadHandler_mod;
 pub use DownloadHandler_mod::*;
+// class DownloadedTextureFlags_mod; export all
+mod DownloadedTextureFlags_mod;
+pub use DownloadedTextureFlags_mod::*;
+// class DownloadedTextureParams_mod; export all
+mod DownloadedTextureParams_mod;
+pub use DownloadedTextureParams_mod::*;
 // namespace PlayerConnection;
 pub mod PlayerConnection;
 // class UnityWebRequestAssetBundle_mod; export all

@@ -38,9 +38,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Smoothing {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Smoothing")]
 impl crate::UnityEngine::ProBuilder::Smoothing {
-    pub const hardRangeMax: i32 = 42i32;
-    pub const hardRangeMin: i32 = 25i32;
-    pub const smoothRangeMax: i32 = 24i32;
+    pub const smoothRangeMax: i32 = 30i32;
     pub const smoothRangeMin: i32 = 1i32;
     pub const smoothingGroupNone: i32 = 0i32;
     pub fn ApplySmoothingGroups_Il2CppArray1(

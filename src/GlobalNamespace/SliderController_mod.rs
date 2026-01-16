@@ -276,6 +276,7 @@ pub struct SliderController {
     pub _jumpOffsetYProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IJumpOffsetYProvider,
     >,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _sliderDidFinishMovement: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LazyCopyHashSet_1<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ISliderDidFinishJumpEvent>,

@@ -26,6 +26,11 @@ pub struct Columns {
     pub m_PrimaryColumnName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
+    pub propertyChanged: quest_hook::libil2cpp::Gc<
+        crate::System::EventHandler_1<
+            crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+        >,
+    >,
     pub changed: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<crate::UnityEngine::UIElements::ColumnsDataType>,
     >,
@@ -95,6 +100,8 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Columns {
 impl crate::UnityEngine::UIElements::Columns {
     #[cfg(feature = "UnityEngine+UIElements+Columns+StretchMode")]
     pub type StretchMode = crate::UnityEngine::UIElements::Columns_StretchMode;
+    #[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory")]
+    pub type UxmlObjectFactory = crate::UnityEngine::UIElements::Columns_UxmlObjectFactory;
     #[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]
     pub type UxmlObjectFactory_1<T: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<
         T,
@@ -456,6 +463,36 @@ impl crate::UnityEngine::UIElements::Columns {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn NotifyPropertyChanged(
+        &mut self,
+        property: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::BindingId,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::BindingId,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("NotifyPropertyChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "NotifyPropertyChanged", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (property))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn OnColumnChanged(
         &mut self,
         column: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Column>,
@@ -513,6 +550,38 @@ impl crate::UnityEngine::UIElements::Columns {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (column))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnColumnsPropertyChanged(
+        &mut self,
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        args: crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("OnColumnsPropertyChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnColumnsPropertyChanged", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (sender, args))?
         };
         Ok(__cordl_ret.into())
     }
@@ -858,6 +927,40 @@ impl crate::UnityEngine::UIElements::Columns {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "add_columnResized", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn add_propertyChanged(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::EventHandler_1<
+                crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::EventHandler_1<
+                                crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_propertyChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_propertyChanged", 1usize
                         )
                     })
             });
@@ -1363,6 +1466,40 @@ impl crate::UnityEngine::UIElements::Columns {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn remove_propertyChanged(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::System::EventHandler_1<
+                crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::EventHandler_1<
+                                crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_propertyChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_propertyChanged", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_primaryColumnName(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1573,6 +1710,22 @@ for crate::UnityEngine::UIElements::Columns {
         unsafe { std::mem::transmute(self) }
     }
 }
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsRef<crate::UnityEngine::UIElements::INotifyBindablePropertyChanged>
+for crate::UnityEngine::UIElements::Columns {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::INotifyBindablePropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns")]
+impl AsMut<crate::UnityEngine::UIElements::INotifyBindablePropertyChanged>
+for crate::UnityEngine::UIElements::Columns {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::UnityEngine::UIElements::INotifyBindablePropertyChanged {
+        unsafe { std::mem::transmute(self) }
+    }
+}
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+StretchMode")]
 #[repr(i32)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
@@ -1663,6 +1816,90 @@ for crate::UnityEngine::UIElements::Columns_StretchMode {
     }
     fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
         actual
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Columns_UxmlObjectFactory {
+    __cordl_parent: crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
+    >,
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.UIElements";
+    const CLASS_NAME: &'static str = "Columns/UxmlObjectFactory";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory {
+    type Target = crate::UnityEngine::UIElements::Columns_UxmlObjectFactory_1<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
+    >;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory")]
+impl std::ops::DerefMut for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+Columns+UxmlObjectFactory")]
+impl crate::UnityEngine::UIElements::Columns_UxmlObjectFactory {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::Columns_UxmlObjectFactory {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Columns+UxmlObjectFactory_1")]

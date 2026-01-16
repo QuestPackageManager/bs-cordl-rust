@@ -98,6 +98,39 @@ impl crate::UnityEngine::FrameTimingManager {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetLatestTimings_Injected(
+        numFrames: u32,
+        timings: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        u32,
+                        2usize,
+                    >("GetLatestTimings_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLatestTimings_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (numFrames, timings))?
+        };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_UnityEngine+FrameTimingManager")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::FrameTimingManager {

@@ -607,7 +607,42 @@ impl crate::System::Threading::ThreadPool {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UnsafeQueueUserWorkItem(
+    pub fn UnsafeQueueUserWorkItem_Action_1_TState__cordl_bool1<TState>(
+        callBack: quest_hook::libil2cpp::Gc<crate::System::Action_1<TState>>,
+        state: TState,
+        preferLocal: bool,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TState: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Action_1<TState>>,
+                            TState,
+                            bool,
+                        ),
+                        bool,
+                        3usize,
+                    >("UnsafeQueueUserWorkItem")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnsafeQueueUserWorkItem", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (callBack, state, preferLocal))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnsafeQueueUserWorkItem_WaitCallback_Il2CppObject0(
         callBack: quest_hook::libil2cpp::Gc<crate::System::Threading::WaitCallback>,
         state: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<bool> {

@@ -84,7 +84,9 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
         &mut self,
         activePlayers: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -96,7 +98,7 @@ impl crate::GlobalNamespace::MultiplayerResultsPyramidView {
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >),

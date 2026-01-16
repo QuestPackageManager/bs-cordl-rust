@@ -43,7 +43,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
     pub fn ToAuthenticationTokenPlatform(
         platform: crate::GlobalNamespace::UserInfo_Platform,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::AuthenticationToken_Platform,
+        crate::GlobalNamespace::AuthenticationToken_PlatformType,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -51,7 +51,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (crate::GlobalNamespace::UserInfo_Platform),
-                        crate::GlobalNamespace::AuthenticationToken_Platform,
+                        crate::GlobalNamespace::AuthenticationToken_PlatformType,
                         1usize,
                     >("ToAuthenticationTokenPlatform")
                     .unwrap_or_else(|e| {
@@ -62,32 +62,7 @@ impl crate::GlobalNamespace::AuthenticationTokenPlatformExtensions {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = unsafe {
-            cordl_method_info.invoke_unchecked((), (platform))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToUserInfoPlatform(
-        platform: crate::GlobalNamespace::AuthenticationToken_Platform,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::UserInfo_Platform> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::GlobalNamespace::AuthenticationToken_Platform),
-                        crate::GlobalNamespace::UserInfo_Platform,
-                        1usize,
-                    >("ToUserInfoPlatform")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToUserInfoPlatform", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::UserInfo_Platform = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_PlatformType = unsafe {
             cordl_method_info.invoke_unchecked((), (platform))?
         };
         Ok(__cordl_ret.into())

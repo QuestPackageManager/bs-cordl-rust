@@ -3,15 +3,6 @@
 #[derive(Debug)]
 pub struct MultiplayerLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    pub _multiplayerLevelSceneInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SceneInfo,
-    >,
-    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
-    pub _multiplayerEnvironmentInfo: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-        >,
-    >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<
             quest_hook::libil2cpp::Gc<
@@ -42,7 +33,7 @@ pub struct MultiplayerLevelScenesTransitionSetupDataSO {
     pub _beatmapLevelData_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IBeatmapLevelData,
     >,
-    pub _loadedMultiplayerEnvironmentInfo: quest_hook::libil2cpp::Gc<
+    pub _environmentInfo: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentInfoSO,
     >,
 }
@@ -139,35 +130,6 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetOrLoadMultiplayerEnvironmentInfo(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::EnvironmentInfoSO,
-                        >,
-                        0usize,
-                    >("GetOrLoadMultiplayerEnvironmentInfo")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetOrLoadMultiplayerEnvironmentInfo", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentInfoSO,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
     pub fn Init(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -185,6 +147,9 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         practiceSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PracticeSettings,
         >,
@@ -197,7 +162,9 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
         beatmapDataLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapDataLoader,
         >,
-        useTestNoteCutSoundEffects: bool,
+        gameplayAdditionalInformation: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayAdditionalInformation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -227,6 +194,9 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                                 crate::GlobalNamespace::PlayerSpecificSettings,
                             >,
                             quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::EnvironmentsListModel,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::PracticeSettings,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -238,16 +208,18 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::BeatmapDataLoader,
                             >,
-                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayAdditionalInformation,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        12usize,
+                        13usize,
                     >("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            12usize
+                            13usize
                         )
                     })
             });
@@ -263,11 +235,12 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
                         overrideColorScheme,
                         gameplayModifiers,
                         playerSpecificSettings,
+                        environmentsListModel,
                         practiceSettings,
                         audioClipAsyncLoader,
                         settingsManager,
                         beatmapDataLoader,
-                        useTestNoteCutSoundEffects,
+                        gameplayAdditionalInformation,
                     ),
                 )?
         };
@@ -295,34 +268,6 @@ impl crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn InitColorInfo(
-        &mut self,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("InitColorInfo")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitColorInfo", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (overrideColorScheme))?
         };
         Ok(__cordl_ret.into())
     }

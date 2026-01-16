@@ -30,7 +30,6 @@ pub struct StandardLevelGameplayManager {
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
-    pub levelWillStartIntroEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub levelDidStartEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub levelFinishedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
     pub levelFailedEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
@@ -426,32 +425,6 @@ impl crate::GlobalNamespace::StandardLevelGameplayManager {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn add_levelWillStartIntroEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_levelWillStartIntroEvent")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_levelWillStartIntroEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_levelEndStateType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -549,32 +522,6 @@ impl crate::GlobalNamespace::StandardLevelGameplayManager {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "remove_levelFinishedEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn remove_levelWillStartIntroEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_levelWillStartIntroEvent")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_levelWillStartIntroEvent", 1usize
                         )
                     })
             });

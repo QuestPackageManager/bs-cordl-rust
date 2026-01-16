@@ -449,6 +449,31 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn RenderOffscreenPanels() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("RenderOffscreenPanels")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RenderOffscreenPanels", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn RenderOverlaysBeforePriority(
         displayIndex: i32,
         maxPriority: f32,
@@ -475,32 +500,40 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RepaintOffscreenPanels() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
+    pub fn RenderPanel(
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseRuntimePanel,
+        >,
+        restoreState: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::BaseRuntimePanel,
+                            >,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RepaintOffscreenPanels")
+                        2usize,
+                    >("RenderPanel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RepaintOffscreenPanels", 0usize
+                            "RenderPanel", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), (panel, restoreState))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RepaintOverlayPanel(
+    pub fn RepaintPanel(
         panel: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::BaseRuntimePanel,
         >,
@@ -515,17 +548,42 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("RepaintOverlayPanel")
+                    >("RepaintPanel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RepaintOverlayPanel", 1usize
+                            "RepaintPanel", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked((), (panel))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RepaintPanels(
+        onlyOffscreen: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("RepaintPanels")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RepaintPanels", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (onlyOffscreen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -678,9 +736,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateRuntimePanels() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
+    pub fn UpdatePanels() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -689,12 +745,12 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtility {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("UpdateRuntimePanels")
+                    >("UpdatePanels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateRuntimePanels", 0usize
+                            "UpdatePanels", 0usize
                         )
                     })
             });

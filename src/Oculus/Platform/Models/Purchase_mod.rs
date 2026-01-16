@@ -9,6 +9,7 @@ pub struct Purchase {
     pub _cordl_ID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub ReportingId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Type: crate::Oculus::Platform::ProductType,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+Purchase")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Models::Purchase {

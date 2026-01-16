@@ -28,6 +28,9 @@ pub use AndroidPlatform_mod::*;
 // class AppAgeCategory_mod; export all
 mod AppAgeCategory_mod;
 pub use AppAgeCategory_mod::*;
+// class AppInstallResult_mod; export all
+mod AppInstallResult_mod;
+pub use AppInstallResult_mod::*;
 // class AppStatus_mod; export all
 mod AppStatus_mod;
 pub use AppStatus_mod::*;
@@ -49,6 +52,8 @@ pub use AvatarEditorOptions_mod::*;
 // class Avatar_mod; export all
 mod Avatar_mod;
 pub use Avatar_mod::*;
+// namespace BuildingBlocks;
+pub mod BuildingBlocks;
 // class CAPI_mod; export all
 mod CAPI_mod;
 pub use CAPI_mod::*;
@@ -76,6 +81,9 @@ pub use Challenges_mod::*;
 // class Core_mod; export all
 mod Core_mod;
 pub use Core_mod::*;
+// class Cowatching_mod; export all
+mod Cowatching_mod;
+pub use Cowatching_mod::*;
 // class DeviceApplicationIntegrity_mod; export all
 mod DeviceApplicationIntegrity_mod;
 pub use DeviceApplicationIntegrity_mod::*;
@@ -205,12 +213,15 @@ pub use MessageWithChallengeList_mod::*;
 // class MessageWithChallenge_mod; export all
 mod MessageWithChallenge_mod;
 pub use MessageWithChallenge_mod::*;
-// class MessageWithDataStoreUnderPrivateUserDataStore_mod; export all
-mod MessageWithDataStoreUnderPrivateUserDataStore_mod;
-pub use MessageWithDataStoreUnderPrivateUserDataStore_mod::*;
-// class MessageWithDataStoreUnderPublicUserDataStore_mod; export all
-mod MessageWithDataStoreUnderPublicUserDataStore_mod;
-pub use MessageWithDataStoreUnderPublicUserDataStore_mod::*;
+// class MessageWithCowatchViewerList_mod; export all
+mod MessageWithCowatchViewerList_mod;
+pub use MessageWithCowatchViewerList_mod::*;
+// class MessageWithCowatchViewerUpdate_mod; export all
+mod MessageWithCowatchViewerUpdate_mod;
+pub use MessageWithCowatchViewerUpdate_mod::*;
+// class MessageWithCowatchingState_mod; export all
+mod MessageWithCowatchingState_mod;
+pub use MessageWithCowatchingState_mod::*;
 // class MessageWithDestinationList_mod; export all
 mod MessageWithDestinationList_mod;
 pub use MessageWithDestinationList_mod::*;
@@ -316,6 +327,9 @@ pub use MessageWithPurchaseList_mod::*;
 // class MessageWithPurchase_mod; export all
 mod MessageWithPurchase_mod;
 pub use MessageWithPurchase_mod::*;
+// class MessageWithPushNotificationResult_mod; export all
+mod MessageWithPushNotificationResult_mod;
+pub use MessageWithPushNotificationResult_mod::*;
 // class MessageWithRejoinDialogResult_mod; export all
 mod MessageWithRejoinDialogResult_mod;
 pub use MessageWithRejoinDialogResult_mod::*;
@@ -340,9 +354,6 @@ pub use MessageWithUserAccountAgeCategory_mod::*;
 // class MessageWithUserCapabilityList_mod; export all
 mod MessageWithUserCapabilityList_mod;
 pub use MessageWithUserCapabilityList_mod::*;
-// class MessageWithUserDataStoreUpdateResponse_mod; export all
-mod MessageWithUserDataStoreUpdateResponse_mod;
-pub use MessageWithUserDataStoreUpdateResponse_mod::*;
 // class MessageWithUserList_mod; export all
 mod MessageWithUserList_mod;
 pub use MessageWithUserList_mod::*;
@@ -390,6 +401,15 @@ pub use NetSync_mod::*;
 // class Notifications_mod; export all
 mod Notifications_mod;
 pub use Notifications_mod::*;
+// class OculusPlatformExtensions_mod; export all
+mod OculusPlatformExtensions_mod;
+pub use OculusPlatformExtensions_mod::*;
+// class OfferTerm_mod; export all
+mod OfferTerm_mod;
+pub use OfferTerm_mod::*;
+// class OfferType_mod; export all
+mod OfferType_mod;
+pub use OfferType_mod::*;
 // class Packet_mod; export all
 mod Packet_mod;
 pub use Packet_mod::*;
@@ -417,6 +437,12 @@ pub use PlatformInternal_mod::*;
 // class PlatformSettings_mod; export all
 mod PlatformSettings_mod;
 pub use PlatformSettings_mod::*;
+// class ProductType_mod; export all
+mod ProductType_mod;
+pub use ProductType_mod::*;
+// class PushNotification_mod; export all
+mod PushNotification_mod;
+pub use PushNotification_mod::*;
 // class ReportRequestResponse_mod; export all
 mod ReportRequestResponse_mod;
 pub use ReportRequestResponse_mod::*;
@@ -438,8 +464,6 @@ pub use RichPresence_mod::*;
 // class RosterOptions_mod; export all
 mod RosterOptions_mod;
 pub use RosterOptions_mod::*;
-// namespace Samples;
-pub mod Samples;
 // class SdkAccountType_mod; export all
 mod SdkAccountType_mod;
 pub use SdkAccountType_mod::*;
@@ -464,9 +488,6 @@ pub use TimeWindow_mod::*;
 // class UserAgeCategory_mod; export all
 mod UserAgeCategory_mod;
 pub use UserAgeCategory_mod::*;
-// class UserDataStore_mod; export all
-mod UserDataStore_mod;
-pub use UserDataStore_mod::*;
 // class UserOptions_mod; export all
 mod UserOptions_mod;
 pub use UserOptions_mod::*;

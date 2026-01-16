@@ -4,7 +4,7 @@
 pub struct UIKeyboardManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _uiKeyboard: quest_hook::libil2cpp::Gc<crate::HMUI::UIKeyboard>,
-    pub _keyboardModalView: quest_hook::libil2cpp::Gc<crate::HMUI::ModalView>,
+    pub _keyboardModalView: quest_hook::libil2cpp::Gc<crate::HMUI::ModalViewBase>,
     pub _keyboardContainerTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::RectTransform,
     >,
@@ -15,6 +15,9 @@ pub struct UIKeyboardManager {
         crate::GlobalNamespace::IVRInputModule,
     >,
     pub _selectedInput: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+    pub systemKeyboard: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::TouchScreenKeyboard,
+    >,
 }
 #[cfg(feature = "cordl_class_UIKeyboardManager")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::UIKeyboardManager {
@@ -268,6 +271,36 @@ impl crate::GlobalNamespace::UIKeyboardManager {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SummonSystemKeyboardAndWaitForResponse(
+        &mut self,
+        input: quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::HMUI::InputFieldView>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::IEnumerator,
+                        >,
+                        1usize,
+                    >("SummonSystemKeyboardAndWaitForResponse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SummonSystemKeyboardAndWaitForResponse", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (input))? };
         Ok(__cordl_ret.into())
     }
     pub fn TransferKeyboardTo(

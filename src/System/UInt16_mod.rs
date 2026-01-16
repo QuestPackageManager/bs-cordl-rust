@@ -95,8 +95,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::UInt16 {
 }
 #[cfg(feature = "System+UInt16")]
 impl crate::System::UInt16 {
-    pub const MaxValue: u16 = 65535u16;
-    pub const MinValue: u16 = 0u16;
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -895,7 +893,38 @@ impl crate::System::UInt16 {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_Il2CppString_IFormatProvider0(
+    pub fn TryParse_Il2CppString_ByRefMut0(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        result: quest_hook::libil2cpp::ByRefMut<u16>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<u16>,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryParse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParse", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (s, result))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParse_Il2CppString_NumberStyles_IFormatProvider_ByRefMut1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         style: crate::System::Globalization::NumberStyles,
         provider: quest_hook::libil2cpp::Gc<crate::System::IFormatProvider>,
@@ -930,7 +959,7 @@ impl crate::System::UInt16 {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryParse_ReadOnlySpan_1_NumberFormatInfo1(
+    pub fn TryParse_ReadOnlySpan_1_NumberStyles_NumberFormatInfo_ByRefMut2(
         s: crate::System::ReadOnlySpan_1<char>,
         style: crate::System::Globalization::NumberStyles,
         info: quest_hook::libil2cpp::Gc<crate::System::Globalization::NumberFormatInfo>,

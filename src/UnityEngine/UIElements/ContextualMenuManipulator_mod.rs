@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct ContextualMenuManipulator {
-    __cordl_parent: crate::UnityEngine::UIElements::MouseManipulator,
+    __cordl_parent: crate::UnityEngine::UIElements::PointerManipulator,
     pub m_MenuBuilder: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
             quest_hook::libil2cpp::Gc<
@@ -33,7 +33,7 @@ for crate::UnityEngine::UIElements::ContextualMenuManipulator {
 }
 #[cfg(feature = "UnityEngine+UIElements+ContextualMenuManipulator")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::ContextualMenuManipulator {
-    type Target = crate::UnityEngine::UIElements::MouseManipulator;
+    type Target = crate::UnityEngine::UIElements::PointerManipulator;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -147,9 +147,9 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OnMouseDownEventOSX(
+    pub fn OnPointerDownEventOSX(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseDownEvent>,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -157,16 +157,16 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::MouseDownEvent,
+                            crate::UnityEngine::UIElements::IPointerEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("OnMouseDownEventOSX")
+                    >("OnPointerDownEventOSX")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnMouseDownEventOSX", 1usize
+                            "OnPointerDownEventOSX", 1usize
                         )
                     })
             });
@@ -175,9 +175,9 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OnMouseUpDownEvent(
+    pub fn OnPointerMoveEvent(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerMoveEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -185,16 +185,16 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::IMouseEvent,
+                            crate::UnityEngine::UIElements::PointerMoveEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("OnMouseUpDownEvent")
+                    >("OnPointerMoveEvent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnMouseUpDownEvent", 1usize
+                            "OnPointerMoveEvent", 1usize
                         )
                     })
             });
@@ -203,9 +203,9 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OnMouseUpEventOSX(
+    pub fn OnPointerMoveEventOSX(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::MouseUpEvent>,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerMoveEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -213,16 +213,100 @@ impl crate::UnityEngine::UIElements::ContextualMenuManipulator {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::MouseUpEvent,
+                            crate::UnityEngine::UIElements::PointerMoveEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("OnMouseUpEventOSX")
+                    >("OnPointerMoveEventOSX")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnMouseUpEventOSX", 1usize
+                            "OnPointerMoveEventOSX", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPointerUpEvent(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::IPointerEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnPointerUpEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerUpEvent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPointerUpEventOSX(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::IPointerEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnPointerUpEventOSX")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPointerUpEventOSX", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProcessPointerEvent(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::IPointerEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("ProcessPointerEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProcessPointerEvent", 1usize
                         )
                     })
             });

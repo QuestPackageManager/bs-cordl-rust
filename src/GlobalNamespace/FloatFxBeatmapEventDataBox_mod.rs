@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventDataBox {
-    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventDataBox_2<
+    __cordl_parent: crate::GlobalNamespace::FloatFxBeatmapEventDataBox_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >,
@@ -35,7 +35,7 @@ for crate::GlobalNamespace::FloatFxBeatmapEventDataBox {
 }
 #[cfg(feature = "FloatFxBeatmapEventDataBox")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventDataBox {
-    type Target = crate::GlobalNamespace::FxBeatmapEventDataBox_2<
+    type Target = crate::GlobalNamespace::FloatFxBeatmapEventDataBox_2<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBaseData>,
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >;

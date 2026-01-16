@@ -24,7 +24,7 @@ pub struct TutorialBeatmapObjectManager {
     pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::VariableMovementDataProvider,
     >,
-    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
 }
 #[cfg(feature = "cordl_class_TutorialBeatmapObjectManager")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -151,11 +151,11 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init(
-        &mut self,
+    pub fn New(
         initData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
         >,
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
         variableMovementDataProvider: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::VariableMovementDataProvider,
         >,
@@ -168,60 +168,21 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
         obstaclePool: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ObstacleController_Pool,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::VariableMovementDataProvider,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::TutorialNoteController_Pool,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BombNoteController_Pool,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ObstacleController_Pool,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("Init")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            5usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        initData,
-                        variableMovementDataProvider,
-                        tutorialNotePool,
-                        bombNotePool,
-                        obstaclePool,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
+            .invoke_void(
+                ".ctor",
+                (
+                    initData,
+                    random,
+                    variableMovementDataProvider,
+                    tutorialNotePool,
+                    bombNotePool,
+                    obstaclePool,
+                ),
+            )?;
         Ok(__cordl_object.into())
     }
     pub fn ProcessNoteData(
@@ -338,22 +299,70 @@ impl crate::GlobalNamespace::TutorialBeatmapObjectManager {
     }
     pub fn _ctor(
         &mut self,
+        initData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
+        >,
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+        variableMovementDataProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VariableMovementDataProvider,
+        >,
+        tutorialNotePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialNoteController_Pool,
+        >,
+        bombNotePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BombNoteController_Pool,
+        >,
+        obstaclePool: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ObstacleController_Pool,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::TutorialBeatmapObjectManager_InitData,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::VariableMovementDataProvider,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::TutorialNoteController_Pool,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BombNoteController_Pool,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ObstacleController_Pool,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            0usize
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        initData,
+                        random,
+                        variableMovementDataProvider,
+                        tutorialNotePool,
+                        bombNotePool,
+                        obstaclePool,
+                    ),
+                )?
         };
         Ok(__cordl_ret.into())
     }

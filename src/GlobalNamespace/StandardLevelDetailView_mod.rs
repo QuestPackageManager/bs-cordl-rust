@@ -69,6 +69,9 @@ pub struct StandardLevelDetailView {
     pub _cancellationTokenSource: quest_hook::libil2cpp::Gc<
         crate::System::Threading::CancellationTokenSource,
     >,
+    pub _checkExistsCancellationTokenSource: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::CancellationTokenSource,
+    >,
     pub _levelParamsPanelCanvasGroupTween: quest_hook::libil2cpp::Gc<
         crate::Tweening::Tween,
     >,
@@ -210,6 +213,43 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CheckIfBeatmapLevelDataExistsAsync(
+        &mut self,
+        beatmapLevelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        2usize,
+                    >("CheckIfBeatmapLevelDataExistsAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CheckIfBeatmapLevelDataExistsAsync", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (beatmapLevelId, cancellationToken))?
         };
         Ok(__cordl_ret.into())
     }
@@ -739,7 +779,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Awake_b__46_0(
+    pub fn _Awake_b__47_0(
         &mut self,
         _cordl__: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -751,12 +791,12 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                         (bool),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<Awake>b__46_0")
+                    >("<Awake>b__47_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__46_0", 1usize
+                            "<Awake>b__47_0", 1usize
                         )
                     })
             });
@@ -765,7 +805,7 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _CalculateAndSetContentAsync_b__61_0(
+    pub fn _CalculateAndSetContentAsync_b__63_0(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -777,12 +817,12 @@ impl crate::GlobalNamespace::StandardLevelDetailView {
                         (f32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<CalculateAndSetContentAsync>b__61_0")
+                    >("<CalculateAndSetContentAsync>b__63_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<CalculateAndSetContentAsync>b__61_0", 1usize
+                            "<CalculateAndSetContentAsync>b__63_0", 1usize
                         )
                     })
             });

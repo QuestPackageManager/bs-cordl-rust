@@ -51,7 +51,6 @@ impl std::ops::DerefMut for crate::System::Threading::SemaphoreSlim {
 }
 #[cfg(feature = "System+Threading+SemaphoreSlim")]
 impl crate::System::Threading::SemaphoreSlim {
-    pub const NO_MAXIMUM: i32 = 2147483647i32;
     #[cfg(feature = "System+Threading+SemaphoreSlim+TaskNode")]
     pub type TaskNode = crate::System::Threading::SemaphoreSlim_TaskNode;
     pub fn CancellationTokenCanceledEventHandler(

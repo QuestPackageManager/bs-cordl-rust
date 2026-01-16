@@ -11,6 +11,7 @@ pub struct SaberBurnMarkSparkles {
     pub _collider: quest_hook::libil2cpp::Gc<crate::UnityEngine::Collider>,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
     pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _sabers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,

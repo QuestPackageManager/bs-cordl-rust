@@ -12,15 +12,19 @@ pub struct DlcPromoPanelModel {
     pub _analyticsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAnalyticsModel,
     >,
-    pub _dlcPromoPanelData: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DlcPromoPanelDataSO,
-    >,
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerDataModel,
     >,
-    pub _platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
+    pub _telemetryModel: quest_hook::libil2cpp::Gc<
+        crate::Analytics::Model::TelemetryModel,
+    >,
     pub _metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
         crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
+    >,
+    pub _dlcPromoPanels: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelDataSO>,
+        >,
     >,
     pub _notOwnedMusicPackPromoInfos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -46,24 +50,25 @@ pub struct DlcPromoPanelModel {
             >,
         >,
     >,
-    pub _defaultPromoInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+    pub _priorityPromoInfos: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+            >,
+        >,
     >,
     pub _initializationTask: quest_hook::libil2cpp::Gc<
         crate::System::Threading::Tasks::Task,
     >,
-    pub _cacheNextPackDataTask: quest_hook::libil2cpp::Gc<
-        crate::System::Threading::Tasks::Task_1<
-            crate::System::ValueTuple_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                >,
-                bool,
-            >,
-        >,
+    pub _cacheUpdateModelDataTask: quest_hook::libil2cpp::Gc<
+        crate::System::Threading::Tasks::Task,
     >,
     pub _loadDlcPromoPanelDataHandle: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelDataSO>,
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IList_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelDataSO>,
+            >,
+        >,
     >,
     pub _loadPackPromoInfoHandles: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
@@ -109,10 +114,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel {
 }
 #[cfg(feature = "DlcPromoPanelModel")]
 impl crate::GlobalNamespace::DlcPromoPanelModel {
+    pub const kDefaultMaxDisplayCount: i32 = 3i32;
+    pub const kMinNumberOfNotOwnedPacks: i32 = 3i32;
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo")]
     pub type PromoInfo = crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo;
     pub fn BuyLevelButtonWasPressed(
         &mut self,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
         level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
         page: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -124,6 +132,9 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevelPack,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::BeatmapLevel,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -134,18 +145,18 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        4usize,
                     >("BuyLevelButtonWasPressed")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BuyLevelButtonWasPressed", 3usize
+                            "BuyLevelButtonWasPressed", 4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (level, page, customText))?
+            cordl_method_info.invoke_unchecked(self, (pack, level, page, customText))?
         };
         Ok(__cordl_ret.into())
     }
@@ -376,15 +387,11 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     pub fn GetPackDataForMainMenuPromoBannerInternal(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::ValueTuple_2<
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                    >,
-                    bool,
-                >,
+        crate::System::ValueTuple_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
             >,
+            bool,
         >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -393,15 +400,11 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Threading::Tasks::Task_1<
-                                crate::System::ValueTuple_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                                    >,
-                                    bool,
-                                >,
+                        crate::System::ValueTuple_2<
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
                             >,
+                            bool,
                         >,
                         0usize,
                     >("GetPackDataForMainMenuPromoBannerInternal")
@@ -413,15 +416,11 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task_1<
-                crate::System::ValueTuple_2<
-                    quest_hook::libil2cpp::Gc<
-                        crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
-                    >,
-                    bool,
-                >,
+        let __cordl_ret: crate::System::ValueTuple_2<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
             >,
+            bool,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -447,6 +446,58 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleColdplayBuyClicked(
+        &mut self,
+        itemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleColdplayBuyClicked")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleColdplayBuyClicked", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (itemId))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleColdplayPurchased(
+        &mut self,
+        itemId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleColdplayPurchased")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleColdplayPurchased", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (itemId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -550,6 +601,68 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn LevelPackWasPurchased(
+        &mut self,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapLevelPack,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("LevelPackWasPurchased")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LevelPackWasPurchased", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pack))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn LevelWasPurchased(
+        &mut self,
+        pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
+        level: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevelPack,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapLevel,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("LevelWasPurchased")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LevelWasPurchased", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (pack, level))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadPackPromoInfoAsync(
         &mut self,
         pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PackDefinitionSO>,
@@ -594,7 +707,9 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
     }
     pub fn MainMenuDlcPromoBannerWasPressed(
         &mut self,
-        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
         customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -604,7 +719,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
@@ -622,13 +737,15 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (packId, customText))?
+            cordl_method_info.invoke_unchecked(self, (promoInfo, customText))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MainMenuDlcPromoBannerWasShown(
         &mut self,
-        packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
         customText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -638,7 +755,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
@@ -656,7 +773,7 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (packId, customText))?
+            cordl_method_info.invoke_unchecked(self, (promoInfo, customText))?
         };
         Ok(__cordl_ret.into())
     }
@@ -670,13 +787,17 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         analyticsModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IAnalyticsModel,
         >,
-        defaultDlcPromoPanelData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::DlcPromoPanelDataSO,
+        defaultDlcPromoPanels: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelDataSO>,
+            >,
         >,
         playerDataModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerDataModel,
         >,
-        platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
+        telemetryModel: quest_hook::libil2cpp::Gc<
+            crate::Analytics::Model::TelemetryModel,
+        >,
         metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
             crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
         >,
@@ -690,13 +811,50 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                     additionalContentModel,
                     beatmapLevelsModel,
                     analyticsModel,
-                    defaultDlcPromoPanelData,
+                    defaultDlcPromoPanels,
                     playerDataModel,
-                    platformInit,
+                    telemetryModel,
                     metaRemoteAssetsManager,
                 ),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn TryGetPromoGroupId(
+        promoId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoGroupId: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryGetPromoGroupId")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryGetPromoGroupId", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (promoId, promoGroupId))?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateDlcPromoPanelDataAsync(
         &mut self,
@@ -817,13 +975,17 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
         analyticsModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IAnalyticsModel,
         >,
-        defaultDlcPromoPanelData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::DlcPromoPanelDataSO,
+        defaultDlcPromoPanels: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::DlcPromoPanelDataSO>,
+            >,
         >,
         playerDataModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerDataModel,
         >,
-        platformInit: quest_hook::libil2cpp::Gc<crate::BeatSaber::Init::IPlatformInit>,
+        telemetryModel: quest_hook::libil2cpp::Gc<
+            crate::Analytics::Model::TelemetryModel,
+        >,
         metaRemoteAssetsManager: quest_hook::libil2cpp::Gc<
             crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
         >,
@@ -844,13 +1006,17 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                                 crate::GlobalNamespace::IAnalyticsModel,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::DlcPromoPanelDataSO,
+                                crate::System::Collections::Generic::IEnumerable_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::GlobalNamespace::DlcPromoPanelDataSO,
+                                    >,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::PlayerDataModel,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::BeatSaber::Init::IPlatformInit,
+                                crate::Analytics::Model::TelemetryModel,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsManager,
@@ -875,9 +1041,9 @@ impl crate::GlobalNamespace::DlcPromoPanelModel {
                         additionalContentModel,
                         beatmapLevelsModel,
                         analyticsModel,
-                        defaultDlcPromoPanelData,
+                        defaultDlcPromoPanels,
                         playerDataModel,
-                        platformInit,
+                        telemetryModel,
                         metaRemoteAssetsManager,
                     ),
                 )?
@@ -1018,7 +1184,10 @@ for crate::GlobalNamespace::DlcPromoPanelModel {
 pub struct DlcPromoPanelModel_PromoInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
-    pub id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub promoId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub priority: i32,
+    pub maxDisplayCount: i32,
     pub contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
     pub bannerImage: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
     pub bannerPromoText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1061,6 +1230,23 @@ impl std::ops::DerefMut for crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo
 impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
     #[cfg(feature = "DlcPromoPanelModel+PromoInfo+PromoType")]
     pub type PromoType = crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType;
+    pub fn New_Il2CppString_i32_i32_DlcPromoPanelModel_PromoInfo2(
+        promoId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        priority: i32,
+        maxDisplayCount: i32,
+        sourcePromoInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(
+                ".ctor",
+                (promoId, priority, maxDisplayCount, sourcePromoInfo),
+            )?;
+        Ok(__cordl_object.into())
+    }
     pub fn New_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         levelPromoInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PackPromoInfoSO_LevelPromoInfo,
@@ -1073,19 +1259,77 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
             .invoke_void(".ctor", (levelPromoInfo, contentRating))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
+    pub fn New_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag_i32_i32_0(
         promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
-        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         promoBannerInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PromoBannerInfoSO,
         >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
+        maxDisplayCount: i32,
+        priority: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (promoType, id, promoBannerInfo, contentRating))?;
+            .invoke_void(
+                ".ctor",
+                (
+                    promoType,
+                    promoId,
+                    target,
+                    promoBannerInfo,
+                    contentRating,
+                    maxDisplayCount,
+                    priority,
+                ),
+            )?;
         Ok(__cordl_object.into())
+    }
+    pub fn _ctor_Il2CppString_i32_i32_DlcPromoPanelModel_PromoInfo2(
+        &mut self,
+        promoId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        priority: i32,
+        maxDisplayCount: i32,
+        sourcePromoInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (promoId, priority, maxDisplayCount, sourcePromoInfo),
+                )?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor_PackPromoInfoSO_LevelPromoInfo_PlayerSensitivityFlag1(
         &mut self,
@@ -1121,14 +1365,17 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag0(
+    pub fn _ctor_PromoInfo_DlcPromoPanelModel_PromoType_Il2CppString_Il2CppString_PromoBannerInfoSO_PlayerSensitivityFlag_i32_i32_0(
         &mut self,
         promoType: crate::GlobalNamespace::PromoInfo_DlcPromoPanelModel_PromoType,
-        id: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        promoId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        target: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         promoBannerInfo: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PromoBannerInfoSO,
         >,
         contentRating: crate::GlobalNamespace::PlayerSensitivityFlag,
+        maxDisplayCount: i32,
+        priority: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1141,24 +1388,40 @@ impl crate::GlobalNamespace::DlcPromoPanelModel_PromoInfo {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::PromoBannerInfoSO,
                             >,
                             crate::GlobalNamespace::PlayerSensitivityFlag,
+                            i32,
+                            i32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        7usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            4usize
+                            7usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (promoType, id, promoBannerInfo, contentRating))?
+                .invoke_unchecked(
+                    self,
+                    (
+                        promoType,
+                        promoId,
+                        target,
+                        promoBannerInfo,
+                        contentRating,
+                        maxDisplayCount,
+                        priority,
+                    ),
+                )?
         };
         Ok(__cordl_ret.into())
     }

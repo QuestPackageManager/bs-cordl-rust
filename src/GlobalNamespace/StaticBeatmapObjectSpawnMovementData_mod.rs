@@ -43,8 +43,6 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
     pub const kBaseLinesYPos: f32 = 0.25f32;
     pub const kNoteLinesDistance: f32 = 0.6f32;
     pub const kObstacleVerticalOffset: f32 = -0.15f32;
-    pub const kTopLinesYPos: f32 = 1.45f32;
-    pub const kUpperLinesYPos: f32 = 0.85f32;
     pub fn Get2DNoteOffset(
         noteLineIndex: i32,
         noteLinesCount: i32,
@@ -96,23 +94,6 @@ impl crate::GlobalNamespace::StaticBeatmapObjectSpawnMovementData {
         let __cordl_ret: f32 = unsafe {
             cordl_method_info.invoke_unchecked((), (lineLayer))?
         };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_layerHeight() -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(), f32, 0usize>("get_layerHeight")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_layerHeight", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
 }

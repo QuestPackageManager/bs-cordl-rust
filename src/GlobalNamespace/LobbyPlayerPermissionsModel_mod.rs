@@ -7,7 +7,7 @@ pub struct LobbyPlayerPermissionsModel {
         crate::GlobalNamespace::IMenuRpcManager,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _isPartyOwner_k__BackingField: bool,
     pub _hasRecommendBeatmapPermission_k__BackingField: bool,

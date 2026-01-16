@@ -4,7 +4,7 @@
 pub struct MultiplayerConnectedPlayerBeatmapObjectEventManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IGameplayRpcManager,

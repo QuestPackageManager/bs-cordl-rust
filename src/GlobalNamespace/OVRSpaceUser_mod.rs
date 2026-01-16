@@ -117,6 +117,70 @@ impl crate::GlobalNamespace::OVRSpaceUser {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn TryCreate_Il2CppString1(
+        platformUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        spaceUser: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRSpaceUser>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRSpaceUser,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryCreate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryCreate", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (platformUserId, spaceUser))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryCreate_u64_0(
+        platformUserId: u64,
+        spaceUser: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::OVRSpaceUser>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRSpaceUser,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryCreate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryCreate", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (platformUserId, spaceUser))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
         spaceUserId: u64,

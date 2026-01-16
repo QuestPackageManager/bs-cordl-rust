@@ -10,6 +10,9 @@ pub struct OVRVirtualKeyboardSampleControls {
     pub MoveFarButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub DestroyKeyboardButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub keyboard: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRVirtualKeyboard>,
+    pub keyboardPrefab: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRVirtualKeyboard,
+    >,
     pub inputHandler: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRVirtualKeyboardSampleInputHandler,
     >,
@@ -57,6 +60,35 @@ impl crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
     pub const THUMBSTICK_DEADZONE: f32 = 0.2f32;
     #[cfg(feature = "OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
     pub type OVRVirtualKeyboardBackup = crate::GlobalNamespace::OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup;
+    pub fn CreateKeyboard(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerator>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::IEnumerator,
+                        >,
+                        0usize,
+                    >("CreateKeyboard")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateKeyboard", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::IEnumerator,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn DestroyKeyboard(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -363,7 +395,6 @@ for crate::GlobalNamespace::OVRVirtualKeyboardSampleControls {
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
-    pub _textCommitField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
     pub _position: crate::UnityEngine::Vector3,
     pub _rotation: crate::UnityEngine::Quaternion,
     pub _scale: crate::UnityEngine::Vector3,
@@ -391,6 +422,7 @@ pub struct OVRVirtualKeyboardSampleControls_OVRVirtualKeyboardBackup {
     pub _handRaycaster: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::OVRPhysicsRaycaster,
     >,
+    pub _textHandlerField: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::InputField>,
 }
 #[cfg(feature = "cordl_class_OVRVirtualKeyboardSampleControls+OVRVirtualKeyboardBackup")]
 unsafe impl quest_hook::libil2cpp::Type

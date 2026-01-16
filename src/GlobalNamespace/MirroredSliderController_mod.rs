@@ -10,6 +10,7 @@ pub struct MirroredSliderController {
     pub _variableMovementDataProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVariableMovementDataProvider,
     >,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _followedSlider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SliderController,
     >,

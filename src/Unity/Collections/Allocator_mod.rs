@@ -4,6 +4,7 @@
 pub enum Allocator {
     #[default]
     AudioKernel = 5i32,
+    Domain = 6i32,
     FirstUserIndex = 64i32,
     Invalid = 0i32,
     None = 1i32,

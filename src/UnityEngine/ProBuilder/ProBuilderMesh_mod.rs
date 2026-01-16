@@ -113,6 +113,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::ProBuilderMesh {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+ProBuilderMesh")]
 impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
+    pub const k_IconPath: &'static str = "Packages/com.unity.probuilder/Content/Icons/EditableMesh/EditableMesh.png";
     pub const k_MeshFormatVersion: i32 = 2i32;
     pub const k_MeshFormatVersionAutoUVScaleOffset: i32 = 2i32;
     pub const k_MeshFormatVersionSubmeshMaterialRefactor: i32 = 1i32;
@@ -2244,7 +2245,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (i))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _SetSelectedFaces_b__245_0(
+    pub fn _SetSelectedFaces_b__246_0(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -2258,19 +2259,19 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         >),
                         i32,
                         1usize,
-                    >("<SetSelectedFaces>b__245_0")
+                    >("<SetSelectedFaces>b__246_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<SetSelectedFaces>b__245_0", 1usize
+                            "<SetSelectedFaces>b__246_0", 1usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, (x))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _SetSelectedFaces_b__246_0(
+    pub fn _SetSelectedFaces_b__247_0(
         &mut self,
         x: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -2288,12 +2289,12 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                             crate::System::Collections::Generic::IEnumerable_1<i32>,
                         >,
                         1usize,
-                    >("<SetSelectedFaces>b__246_0")
+                    >("<SetSelectedFaces>b__247_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<SetSelectedFaces>b__246_0", 1usize
+                            "<SetSelectedFaces>b__247_0", 1usize
                         )
                     })
             });
@@ -2302,7 +2303,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (x))? };
         Ok(__cordl_ret.into())
     }
-    pub fn _SetSelectedFaces_b__246_1(
+    pub fn _SetSelectedFaces_b__247_1(
         &mut self,
         x: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -2324,12 +2325,12 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                             >,
                         >,
                         1usize,
-                    >("<SetSelectedFaces>b__246_1")
+                    >("<SetSelectedFaces>b__247_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<SetSelectedFaces>b__246_1", 1usize
+                            "<SetSelectedFaces>b__247_1", 1usize
                         )
                     })
             });
@@ -2361,7 +2362,7 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _set_selectedFacesInternal_b__231_0(
+    pub fn _set_selectedFacesInternal_b__232_0(
         &mut self,
         x: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Face>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -2375,12 +2376,12 @@ impl crate::UnityEngine::ProBuilder::ProBuilderMesh {
                         >),
                         i32,
                         1usize,
-                    >("<set_selectedFacesInternal>b__231_0")
+                    >("<set_selectedFacesInternal>b__232_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<set_selectedFacesInternal>b__231_0", 1usize
+                            "<set_selectedFacesInternal>b__232_0", 1usize
                         )
                     })
             });
@@ -5016,7 +5017,6 @@ pub struct ProBuilderMesh_NonVersionedEditScope {
         crate::UnityEngine::ProBuilder::ProBuilderMesh,
     >,
     pub m_VersionIndex: u16,
-    pub m_InstanceVersionIndex: u16,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ProBuilder+ProBuilderMesh+NonVersionedEditScope"

@@ -49,6 +49,9 @@ impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         isConnectionOwner: bool,
+        compatibilityVersion: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -66,21 +69,27 @@ impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                             bool,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        5usize,
                     >("GetConnectionMessage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetConnectionMessage", 4usize
+                            "GetConnectionMessage", 5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (writer, userId, userName, isConnectionOwner))?
+                .invoke_unchecked(
+                    self,
+                    (writer, userId, userName, isConnectionOwner, compatibilityVersion),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -101,6 +110,9 @@ impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         >,
         isConnectionOwner: quest_hook::libil2cpp::ByRefMut<bool>,
+        compatibilityVersion: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -122,21 +134,29 @@ impl crate::GlobalNamespace::GameLiftClientConnectionRequestHandler {
                                 >,
                             >,
                             quest_hook::libil2cpp::ByRefMut<bool>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
                         ),
                         bool,
-                        4usize,
+                        5usize,
                     >("ValidateConnectionMessage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ValidateConnectionMessage", 4usize
+                            "ValidateConnectionMessage", 5usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (reader, userId, userName, isConnectionOwner))?
+                .invoke_unchecked(
+                    self,
+                    (reader, userId, userName, isConnectionOwner, compatibilityVersion),
+                )?
         };
         Ok(__cordl_ret.into())
     }

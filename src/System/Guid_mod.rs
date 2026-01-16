@@ -1144,7 +1144,7 @@ impl crate::System::Guid {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString4(
+    pub fn _ctor_Il2CppString3(
         &mut self,
         g: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1196,43 +1196,7 @@ impl crate::System::Guid {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_i16_i16_Il2CppArray2(
-        &mut self,
-        a: i32,
-        b: i16,
-        c: i16,
-        d: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            i32,
-                            i16,
-                            i16,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u8>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (a, b, c, d))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_i32_i16_i16_u8_u8_u8_u8_u8_u8_u8_u8_3(
+    pub fn _ctor_i32_i16_i16_u8_u8_u8_u8_u8_u8_u8_u8_2(
         &mut self,
         a: i32,
         b: i16,

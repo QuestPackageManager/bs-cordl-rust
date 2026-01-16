@@ -13,9 +13,6 @@ pub use AssetLoadMode_mod::*;
 // class AtlasSpriteProvider_mod; export all
 mod AtlasSpriteProvider_mod;
 pub use AtlasSpriteProvider_mod::*;
-// class BinaryAssetProvider_1_mod; export all
-mod BinaryAssetProvider_1_mod;
-pub use BinaryAssetProvider_1_mod::*;
 // class BinaryDataProvider_mod; export all
 mod BinaryDataProvider_mod;
 pub use BinaryDataProvider_mod::*;
@@ -49,9 +46,6 @@ pub use InstantiationParameters_mod::*;
 // class JsonAssetProvider_mod; export all
 mod JsonAssetProvider_mod;
 pub use JsonAssetProvider_mod::*;
-// class LegacyResourcesProvider_mod; export all
-mod LegacyResourcesProvider_mod;
-pub use LegacyResourcesProvider_mod::*;
 // class ProvideHandle_mod; export all
 mod ProvideHandle_mod;
 pub use ProvideHandle_mod::*;
@@ -73,6 +67,9 @@ pub use SceneProviderExtensions_mod::*;
 // class SceneProvider_mod; export all
 mod SceneProvider_mod;
 pub use SceneProvider_mod::*;
+// class SceneReleaseMode_mod; export all
+mod SceneReleaseMode_mod;
+pub use SceneReleaseMode_mod::*;
 // class TextDataProvider_mod; export all
 mod TextDataProvider_mod;
 pub use TextDataProvider_mod::*;

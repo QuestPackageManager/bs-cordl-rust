@@ -70,9 +70,6 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::Serialization
 }
 #[cfg(feature = "System+Runtime+Serialization+SerializationInfo")]
 impl crate::System::Runtime::Serialization::SerializationInfo {
-    pub const defaultSize: i32 = 4i32;
-    pub const s_mscorlibAssemblySimpleName: &'static str = "mscorlib";
-    pub const s_mscorlibFileName: &'static str = "mscorlib.dll";
     pub fn AddValueInternal(
         &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,

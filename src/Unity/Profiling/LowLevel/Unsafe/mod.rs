@@ -1,6 +1,9 @@
 // class ProfilerCategoryDescription_mod; export all
 mod ProfilerCategoryDescription_mod;
 pub use ProfilerCategoryDescription_mod::*;
+// class ProfilerMarkerData_mod; export all
+mod ProfilerMarkerData_mod;
+pub use ProfilerMarkerData_mod::*;
 // class ProfilerRecorderDescription_mod; export all
 mod ProfilerRecorderDescription_mod;
 pub use ProfilerRecorderDescription_mod::*;

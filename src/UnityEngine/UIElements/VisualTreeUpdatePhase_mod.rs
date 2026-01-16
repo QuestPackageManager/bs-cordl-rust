@@ -4,13 +4,13 @@
 pub enum VisualTreeUpdatePhase {
     #[default]
     Animation = 2i32,
-    Bindings = 1i32,
+    Bindings = 0i32,
     Count = 7i32,
+    DataBinding = 1i32,
     Layout = 4i32,
     Repaint = 6i32,
     Styles = 3i32,
     TransformClip = 5i32,
-    ViewData = 0i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+VisualTreeUpdatePhase")]
 unsafe impl quest_hook::libil2cpp::Type

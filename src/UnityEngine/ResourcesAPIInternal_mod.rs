@@ -102,6 +102,35 @@ impl crate::UnityEngine::ResourcesAPIInternal {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn FindShaderByName_Injected(
+        name: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                        >),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("FindShaderByName_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindShaderByName_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (name))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Load(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
@@ -180,11 +209,17 @@ impl crate::UnityEngine::ResourcesAPIInternal {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadAsyncInternal(
-        path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        _cordl_type: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    pub fn LoadAll_Injected(
+        path: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+        systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>,
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -192,49 +227,65 @@ impl crate::UnityEngine::ResourcesAPIInternal {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Type>,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ResourceRequest>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            >,
+                        >,
                         2usize,
-                    >("LoadAsyncInternal")
+                    >("LoadAll_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadAsyncInternal", 2usize
+                            "LoadAll_Injected", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::ResourceRequest,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (path, _cordl_type))? };
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        > = unsafe {
+            cordl_method_info.invoke_unchecked((), (path, systemTypeInstance))?
+        };
         Ok(__cordl_ret.into())
     }
-    pub fn UnloadAsset(
-        assetToUnload: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn Load_Injected(
+        path: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+        systemTypeInstance: quest_hook::libil2cpp::Gc<crate::System::Type>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UnloadAsset")
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                        ),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("Load_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnloadAsset", 1usize
+                            "Load_Injected", 2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (assetToUnload))?
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (path, systemTypeInstance))?
         };
         Ok(__cordl_ret.into())
     }

@@ -53,6 +53,36 @@ for crate::UnityEngine::InputSystem::Composites::Vector3Composite {
 impl crate::UnityEngine::InputSystem::Composites::Vector3Composite {
     #[cfg(feature = "UnityEngine+InputSystem+Composites+Vector3Composite+Mode")]
     pub type Mode = crate::UnityEngine::InputSystem::Composites::Vector3Composite_Mode;
+    pub fn EvaluateMagnitude(
+        &mut self,
+        context: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                        >),
+                        f32,
+                        1usize,
+                    >("EvaluateMagnitude")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EvaluateMagnitude", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();

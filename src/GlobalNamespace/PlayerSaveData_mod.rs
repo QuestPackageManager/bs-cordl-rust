@@ -326,7 +326,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData {
 }
 #[cfg(feature = "PlayerSaveData")]
 impl crate::GlobalNamespace::PlayerSaveData {
-    pub const kCurrentVersion: &'static str = "2.0.28";
+    pub const kCurrentVersion: &'static str = "2.0.29";
     #[cfg(feature = "PlayerSaveData+ColorOverrideType")]
     pub type ColorOverrideType = crate::GlobalNamespace::PlayerSaveData_ColorOverrideType;
     #[cfg(feature = "PlayerSaveData+ColorScheme")]
@@ -359,6 +359,8 @@ impl crate::GlobalNamespace::PlayerSaveData {
     pub type PlayerSpecificSettings = crate::GlobalNamespace::PlayerSaveData_PlayerSpecificSettings;
     #[cfg(feature = "PlayerSaveData+PracticeSettings")]
     pub type PracticeSettings = crate::GlobalNamespace::PlayerSaveData_PracticeSettings;
+    #[cfg(feature = "PlayerSaveData+PromoCounterData")]
+    pub type PromoCounterData = crate::GlobalNamespace::PlayerSaveData_PromoCounterData;
     #[cfg(feature = "PlayerSaveData+UserAgeCategorySaveData")]
     pub type UserAgeCategorySaveData = crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData;
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -544,9 +546,9 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
         colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
+        obstaclesColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
         environmentColor1: crate::UnityEngine::Color,
-        obstaclesColor: crate::UnityEngine::Color,
         environmentColor0Boost: crate::UnityEngine::Color,
         environmentColor1Boost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -559,9 +561,9 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
                     colorSchemeId,
                     saberAColor,
                     saberBColor,
+                    obstaclesColor,
                     environmentColor0,
                     environmentColor1,
-                    obstaclesColor,
                     environmentColor0Boost,
                     environmentColor1Boost,
                 ),
@@ -573,9 +575,9 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
         colorSchemeId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         saberAColor: crate::UnityEngine::Color,
         saberBColor: crate::UnityEngine::Color,
+        obstaclesColor: crate::UnityEngine::Color,
         environmentColor0: crate::UnityEngine::Color,
         environmentColor1: crate::UnityEngine::Color,
-        obstaclesColor: crate::UnityEngine::Color,
         environmentColor0Boost: crate::UnityEngine::Color,
         environmentColor1Boost: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -615,9 +617,9 @@ impl crate::GlobalNamespace::PlayerSaveData_ColorScheme {
                         colorSchemeId,
                         saberAColor,
                         saberBColor,
+                        obstaclesColor,
                         environmentColor0,
                         environmentColor1,
-                        obstaclesColor,
                         environmentColor0Boost,
                         environmentColor1Boost,
                     ),
@@ -1041,6 +1043,13 @@ pub struct PlayerSaveData_LocalPlayer {
     >,
     pub userAgeCategory: crate::GlobalNamespace::PlayerSaveData_UserAgeCategorySaveData,
     pub desiredSensitivityFlag: crate::GlobalNamespace::PlayerSaveData_PlayerSensitivityFlagSaveData,
+    pub promoCounters: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            quest_hook::libil2cpp::Gc<
+                crate::GlobalNamespace::PlayerSaveData_PromoCounterData,
+            >,
+        >,
+    >,
 }
 #[cfg(feature = "cordl_class_PlayerSaveData+LocalPlayer")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -2196,6 +2205,88 @@ impl crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
 #[cfg(feature = "cordl_class_PlayerSaveData+PracticeSettings")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::PlayerSaveData_PracticeSettings {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_PlayerSaveData+PromoCounterData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct PlayerSaveData_PromoCounterData {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub counter: i32,
+}
+#[cfg(feature = "cordl_class_PlayerSaveData+PromoCounterData")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::PlayerSaveData_PromoCounterData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "PlayerSaveData/PromoCounterData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "PlayerSaveData+PromoCounterData")]
+impl std::ops::Deref for crate::GlobalNamespace::PlayerSaveData_PromoCounterData {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PlayerSaveData+PromoCounterData")]
+impl std::ops::DerefMut for crate::GlobalNamespace::PlayerSaveData_PromoCounterData {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "PlayerSaveData+PromoCounterData")]
+impl crate::GlobalNamespace::PlayerSaveData_PromoCounterData {
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_PlayerSaveData+PromoCounterData")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::PlayerSaveData_PromoCounterData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

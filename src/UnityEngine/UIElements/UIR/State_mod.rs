@@ -6,6 +6,7 @@ pub struct State {
     pub texture: crate::UnityEngine::UIElements::TextureId,
     pub stencilRef: i32,
     pub sdfScale: f32,
+    pub sharpness: f32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+State")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::UIR::State {

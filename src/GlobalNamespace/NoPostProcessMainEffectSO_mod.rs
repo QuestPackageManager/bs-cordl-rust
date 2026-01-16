@@ -4,9 +4,11 @@
 pub struct NoPostProcessMainEffectSO {
     __cordl_parent: crate::GlobalNamespace::MainEffectSO,
     pub _fadeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
+    pub _setAlphaShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub _baseColorBoost: f32,
     pub _baseColorBoostThreshold: f32,
     pub _fadeMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _setAlphaMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
 }
 #[cfg(feature = "cordl_class_NoPostProcessMainEffectSO")]
 unsafe impl quest_hook::libil2cpp::Type

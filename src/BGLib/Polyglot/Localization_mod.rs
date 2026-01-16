@@ -4,10 +4,12 @@
 pub struct Localization {
     __cordl_parent: crate::UnityEngine::ScriptableObject,
     pub supportedLanguages: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::BGLib::Polyglot::Language>,
+        crate::System::Collections::Generic::List_1<
+            crate::BGLib::Polyglot::LocalizationLanguage,
+        >,
     >,
-    pub selectedLanguage: crate::BGLib::Polyglot::Language,
-    pub fallbackLanguage: crate::BGLib::Polyglot::Language,
+    pub selectedLanguage: crate::BGLib::Polyglot::LocalizationLanguage,
+    pub fallbackLanguage: crate::BGLib::Polyglot::LocalizationLanguage,
 }
 #[cfg(feature = "cordl_class_BGLib+Polyglot+Localization")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BGLib::Polyglot::Localization {
@@ -43,32 +45,6 @@ impl std::ops::DerefMut for crate::BGLib::Polyglot::Localization {
 }
 #[cfg(feature = "BGLib+Polyglot+Localization")]
 impl crate::BGLib::Polyglot::Localization {
-    pub const KeyNotFound: &'static str = "[{0}]";
-    pub fn ConvertSystemLanguage(
-        selected: crate::UnityEngine::SystemLanguage,
-    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::SystemLanguage),
-                        crate::BGLib::Polyglot::Language,
-                        1usize,
-                    >("ConvertSystemLanguage")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertSystemLanguage", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
-            cordl_method_info.invoke_unchecked((), (selected))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn Get(
         key: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -96,68 +72,6 @@ impl crate::BGLib::Polyglot::Localization {
         > = unsafe { cordl_method_info.invoke_unchecked((), (key))? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetKeys() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                        >,
-                        0usize,
-                    >("GetKeys")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetKeys",
-                            0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetLanguageDirection(
-        language: crate::BGLib::Polyglot::Language,
-    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::LanguageDirection> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::BGLib::Polyglot::Language),
-                        crate::BGLib::Polyglot::LanguageDirection,
-                        1usize,
-                    >("GetLanguageDirection")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetLanguageDirection", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::BGLib::Polyglot::LanguageDirection = unsafe {
-            cordl_method_info.invoke_unchecked((), (language))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn HasNoSupportedLanguage(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -177,14 +91,14 @@ impl crate::BGLib::Polyglot::Localization {
     }
     pub fn IsLanguageSupported(
         &mut self,
-        language: crate::BGLib::Polyglot::Language,
+        language: crate::BGLib::Polyglot::LocalizationLanguage,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (crate::BGLib::Polyglot::Language),
+                        (crate::BGLib::Polyglot::LocalizationLanguage),
                         bool,
                         1usize,
                     >("IsLanguageSupported")
@@ -281,43 +195,16 @@ impl crate::BGLib::Polyglot::Localization {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_EnglishLanguageName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        0usize,
-                    >("get_EnglishLanguageName")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_EnglishLanguageName", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_FallbackLanguage(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::LocalizationLanguage> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::BGLib::Polyglot::Language,
+                        crate::BGLib::Polyglot::LocalizationLanguage,
                         0usize,
                     >("get_FallbackLanguage")
                     .unwrap_or_else(|e| {
@@ -328,7 +215,7 @@ impl crate::BGLib::Polyglot::Localization {
                         )
                     })
             });
-        let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
+        let __cordl_ret: crate::BGLib::Polyglot::LocalizationLanguage = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -360,39 +247,12 @@ impl crate::BGLib::Polyglot::Localization {
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_LocalizedLanguageName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        0usize,
-                    >("get_LocalizedLanguageName")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_LocalizedLanguageName", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_SupportedLanguages(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
+                crate::BGLib::Polyglot::LocalizationLanguage,
             >,
         >,
     > {
@@ -404,7 +264,7 @@ impl crate::BGLib::Polyglot::Localization {
                         (),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
-                                crate::BGLib::Polyglot::Language,
+                                crate::BGLib::Polyglot::LocalizationLanguage,
                             >,
                         >,
                         0usize,
@@ -419,7 +279,7 @@ impl crate::BGLib::Polyglot::Localization {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                crate::BGLib::Polyglot::Language,
+                crate::BGLib::Polyglot::LocalizationLanguage,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

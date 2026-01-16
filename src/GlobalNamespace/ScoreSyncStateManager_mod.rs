@@ -116,16 +116,14 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
     }
     pub fn get_deltaMessageType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NetworkMessageType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
+                        crate::GlobalNamespace::NetworkMessageType,
                         0usize,
                     >("get_deltaMessageType")
                     .unwrap_or_else(|e| {
@@ -136,7 +134,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::NetworkMessageType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -239,16 +237,14 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
     }
     pub fn get_messageType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NetworkMessageType> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
+                        crate::GlobalNamespace::NetworkMessageType,
                         0usize,
                     >("get_messageType")
                     .unwrap_or_else(|e| {
@@ -259,7 +255,7 @@ impl crate::GlobalNamespace::ScoreSyncStateManager {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::NetworkMessageType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())

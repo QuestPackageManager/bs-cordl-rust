@@ -157,6 +157,36 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
+    pub fn DoAlloc(
+        &mut self,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Collections::NativeSlice_1<T>>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        crate::Unity::Collections::NativeSlice_1<T>,
+                        1usize,
+                    >("DoAlloc")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "DoAlloc",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<T> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (count))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         poolCapacity: i32,
         excessMinCapacity: i32,

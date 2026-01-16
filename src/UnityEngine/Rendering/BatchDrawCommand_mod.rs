@@ -2,15 +2,17 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchDrawCommand {
-    pub visibleOffset: u32,
-    pub visibleCount: u32,
+    pub flags: crate::UnityEngine::Rendering::BatchDrawCommandFlags,
     pub batchID: crate::UnityEngine::Rendering::BatchID,
     pub materialID: crate::UnityEngine::Rendering::BatchMaterialID,
+    pub splitVisibilityMask: u16,
+    pub lightmapIndex: u16,
+    pub sortingPosition: i32,
+    pub visibleOffset: u32,
+    pub visibleCount: u32,
     pub meshID: crate::UnityEngine::Rendering::BatchMeshID,
     pub submeshIndex: u16,
-    pub splitVisibilityMask: u16,
-    pub flags: crate::UnityEngine::Rendering::BatchDrawCommandFlags,
-    pub sortingPosition: i32,
+    pub unusedPadding2: u16,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchDrawCommand")]
 unsafe impl quest_hook::libil2cpp::Type

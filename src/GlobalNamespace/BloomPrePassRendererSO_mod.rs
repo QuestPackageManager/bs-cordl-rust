@@ -11,6 +11,7 @@ pub struct BloomPrePassRendererSO {
             >,
         >,
     >,
+    pub _computeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
     pub _lightsRenderingData: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BloomPrePassLightTypeSO>,
@@ -24,9 +25,6 @@ pub struct BloomPrePassRendererSO {
     >,
     pub _initialized: bool,
     pub _blackTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
-    pub _lowestResBloomTexture: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::RenderTexture,
-    >,
 }
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -63,6 +61,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BloomPrePassRendererSO {
 }
 #[cfg(feature = "BloomPrePassRendererSO")]
 impl crate::GlobalNamespace::BloomPrePassRendererSO {
+    #[cfg(feature = "BloomPrePassRendererSO+InputData")]
+    pub type InputData = crate::GlobalNamespace::BloomPrePassRendererSO_InputData;
     #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
     pub type LightsRenderingData = crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData;
     #[cfg(feature = "BloomPrePassRendererSO+PreallocationData")]
@@ -580,18 +580,161 @@ for crate::GlobalNamespace::BloomPrePassRendererSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
+#[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct BloomPrePassRendererSO_InputData {
+    pub limitAlpha: f32,
+    pub useCollision: f32,
+    pub minAlpha: f32,
+    pub maxAlpha: f32,
+    pub startAlpha: f32,
+    pub endAlpha: f32,
+    pub length: f32,
+    pub calculatedLength: f32,
+    pub multiplyLengthByAlphaBloomFogMultiplier: f32,
+    pub multiplyLengthByAlphaMultiplier: f32,
+    pub center: f32,
+    pub lightWidthMultiplier: f32,
+    pub startWidth: f32,
+    pub endWidth: f32,
+    pub boostToWhite: f32,
+    pub bloomFogIntensityMultiplier: f32,
+    pub color: crate::UnityEngine::Color,
+    pub localToWorldMatrix: crate::UnityEngine::Matrix4x4,
+}
+#[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "BloomPrePassRendererSO/InputData";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_BloomPrePassRendererSO+InputData")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "BloomPrePassRendererSO+InputData")]
+impl crate::GlobalNamespace::BloomPrePassRendererSO_InputData {
+    pub fn GetSize() -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), i32, 0usize>("GetSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetSize",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO+LightsRenderingData")]
 #[repr(C)]
 #[derive(Debug)]
 pub struct BloomPrePassRendererSO_LightsRenderingData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
-    pub lightQuads: quest_hook::libil2cpp::Gc<
+    pub subMeshDescriptor: crate::UnityEngine::Rendering::SubMeshDescriptor,
+    pub vertexDataBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GraphicsBuffer>,
+    pub inputDataBuffer: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeBuffer>,
+    pub inputData: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            crate::GlobalNamespace::BloomPrePassLight_QuadData,
+            crate::GlobalNamespace::BloomPrePassRendererSO_InputData,
         >,
     >,
-    pub subMeshDescriptor: crate::UnityEngine::Rendering::SubMeshDescriptor,
+    pub computeShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::ComputeShader>,
+    pub computeShaderKernel: i32,
+    pub computeShaderGroupSize: i32,
 }
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO+LightsRenderingData")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -630,12 +773,55 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
 }
 #[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
 impl crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
+    pub fn Dispose(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Dispose")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Dispose",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn Prepare(
+        &mut self,
+        numberOfLights: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(i32), quest_hook::libil2cpp::Void, 1usize>("Prepare")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Prepare",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (numberOfLights))?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -667,6 +853,20 @@ for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
+impl AsRef<crate::System::IDisposable>
+for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
+    fn as_ref(&self) -> &crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "BloomPrePassRendererSO+LightsRenderingData")]
+impl AsMut<crate::System::IDisposable>
+for crate::GlobalNamespace::BloomPrePassRendererSO_LightsRenderingData {
+    fn as_mut(&mut self) -> &mut crate::System::IDisposable {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "cordl_class_BloomPrePassRendererSO+PreallocationData")]

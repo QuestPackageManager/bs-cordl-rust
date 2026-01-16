@@ -397,6 +397,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         trigger: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         >,
+        isDisablingAction: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -412,21 +413,25 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::InputSystem::InputActionState_TriggerState,
                             >,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        5usize,
                     >("ChangePhaseOfActionInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ChangePhaseOfActionInternal", 4usize
+                            "ChangePhaseOfActionInternal", 5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (actionIndex, actionState, newPhase, trigger))?
+                .invoke_unchecked(
+                    self,
+                    (actionIndex, actionState, newPhase, trigger, isDisablingAction),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -437,6 +442,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
             crate::UnityEngine::InputSystem::InputActionState_TriggerState,
         >,
         phaseAfterPerformed: crate::UnityEngine::InputSystem::InputActionPhase,
+        phaseAfterCanceled: crate::UnityEngine::InputSystem::InputActionPhase,
         processNextInteractionOnCancel: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -450,16 +456,17 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                                 crate::UnityEngine::InputSystem::InputActionState_TriggerState,
                             >,
                             crate::UnityEngine::InputSystem::InputActionPhase,
+                            crate::UnityEngine::InputSystem::InputActionPhase,
                             bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        5usize,
                     >("ChangePhaseOfInteraction")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ChangePhaseOfInteraction", 4usize
+                            "ChangePhaseOfInteraction", 5usize
                         )
                     })
             });
@@ -471,6 +478,7 @@ impl crate::UnityEngine::InputSystem::InputActionState {
                         newPhase,
                         trigger,
                         phaseAfterPerformed,
+                        phaseAfterCanceled,
                         processNextInteractionOnCancel,
                     ),
                 )?
@@ -2629,27 +2637,36 @@ impl crate::UnityEngine::InputSystem::InputActionState {
         mapIndex: i32,
         bindingIndex: i32,
         interactionIndex: i32,
+        phaseAfterCanceled: crate::UnityEngine::InputSystem::InputActionPhase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, i32, i32),
+                        (
+                            i32,
+                            i32,
+                            i32,
+                            crate::UnityEngine::InputSystem::InputActionPhase,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        4usize,
                     >("ResetInteractionStateAndCancelIfNecessary")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetInteractionStateAndCancelIfNecessary", 3usize
+                            "ResetInteractionStateAndCancelIfNecessary", 4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (mapIndex, bindingIndex, interactionIndex))?
+                .invoke_unchecked(
+                    self,
+                    (mapIndex, bindingIndex, interactionIndex, phaseAfterCanceled),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -5314,7 +5331,7 @@ impl crate::UnityEngine::InputSystem::InputActionState_InteractionState {
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct InputActionState_TriggerState {
-    padding: quest_hook::libil2cpp::ValueTypePadding<48usize>,
+    padding: quest_hook::libil2cpp::ValueTypePadding<56usize>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputActionState+TriggerState")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -5477,6 +5494,23 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
         let __cordl_ret: crate::UnityEngine::InputSystem::TriggerState_InputActionState_Flags = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_frame(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("get_frame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_frame", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_hasMultipleConcurrentActuations(
@@ -5700,6 +5734,23 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_lastCanceledInUpdate", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_lastCompletedInUpdate(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), u32, 0usize>("get_lastCompletedInUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_lastCompletedInUpdate", 0usize
                         )
                     })
             });
@@ -5949,6 +6000,32 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_frame(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_frame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_frame", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_hasMultipleConcurrentActuations(
         &mut self,
         value: bool,
@@ -6123,6 +6200,32 @@ impl crate::UnityEngine::InputSystem::InputActionState_TriggerState {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_lastCanceledInUpdate", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_lastCompletedInUpdate(
+        &mut self,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (u32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_lastCompletedInUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_lastCompletedInUpdate", 1usize
                         )
                     })
             });

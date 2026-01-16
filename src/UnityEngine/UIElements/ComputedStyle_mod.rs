@@ -20,7 +20,6 @@ pub struct ComputedStyle {
     pub visualData: crate::UnityEngine::UIElements::StyleDataRef_1<
         crate::UnityEngine::UIElements::VisualData,
     >,
-    pub yogaNode: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
     pub customProperties: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1632,6 +1631,272 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn StartAnimationInlineBackgroundSize(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        computedStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        backgroundSize: crate::UnityEngine::UIElements::StyleBackgroundSize,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::ComputedStyle,
+                            >,
+                            crate::UnityEngine::UIElements::StyleBackgroundSize,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                        ),
+                        bool,
+                        6usize,
+                    >("StartAnimationInlineBackgroundSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartAnimationInlineBackgroundSize", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        element,
+                        computedStyle,
+                        backgroundSize,
+                        durationMs,
+                        delayMs,
+                        easingCurve,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimationInlineRotate(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        computedStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        rotate: crate::UnityEngine::UIElements::StyleRotate,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::ComputedStyle,
+                            >,
+                            crate::UnityEngine::UIElements::StyleRotate,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                        ),
+                        bool,
+                        6usize,
+                    >("StartAnimationInlineRotate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartAnimationInlineRotate", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (element, computedStyle, rotate, durationMs, delayMs, easingCurve),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimationInlineScale(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        computedStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        scale: crate::UnityEngine::UIElements::StyleScale,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::ComputedStyle,
+                            >,
+                            crate::UnityEngine::UIElements::StyleScale,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                        ),
+                        bool,
+                        6usize,
+                    >("StartAnimationInlineScale")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartAnimationInlineScale", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (element, computedStyle, scale, durationMs, delayMs, easingCurve),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimationInlineTextShadow(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        computedStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        textShadow: crate::UnityEngine::UIElements::StyleTextShadow,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::ComputedStyle,
+                            >,
+                            crate::UnityEngine::UIElements::StyleTextShadow,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                        ),
+                        bool,
+                        6usize,
+                    >("StartAnimationInlineTextShadow")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartAnimationInlineTextShadow", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        element,
+                        computedStyle,
+                        textShadow,
+                        durationMs,
+                        delayMs,
+                        easingCurve,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StartAnimationInlineTransformOrigin(
+        element: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        >,
+        computedStyle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::UIElements::ComputedStyle,
+        >,
+        transformOrigin: crate::UnityEngine::UIElements::StyleTransformOrigin,
+        durationMs: i32,
+        delayMs: i32,
+        easingCurve: quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::UIElements::ComputedStyle,
+                            >,
+                            crate::UnityEngine::UIElements::StyleTransformOrigin,
+                            i32,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::Func_2<f32, f32>>,
+                        ),
+                        bool,
+                        6usize,
+                    >("StartAnimationInlineTransformOrigin")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StartAnimationInlineTransformOrigin", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        element,
+                        computedStyle,
+                        transformOrigin,
+                        durationMs,
+                        delayMs,
+                        easingCurve,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn StartAnimationInlineTranslate(
         element: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
@@ -1678,32 +1943,6 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
                     (),
                     (element, computedStyle, translate, durationMs, delayMs, easingCurve),
                 )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SyncWithLayout(
-        &mut self,
-        targetNode: quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Yoga::YogaNode>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("SyncWithLayout")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SyncWithLayout", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (targetNode))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3312,6 +3551,33 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_unityEditorTextRenderingMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::EditorTextRenderingMode,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::UIElements::EditorTextRenderingMode,
+                        0usize,
+                    >("get_unityEditorTextRenderingMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unityEditorTextRenderingMode", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::EditorTextRenderingMode = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_unityFont(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -3545,6 +3811,31 @@ impl crate::UnityEngine::UIElements::ComputedStyle {
                     })
             });
         let __cordl_ret: crate::UnityEngine::TextAnchor = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_unityTextGenerator(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextGeneratorType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::TextGeneratorType,
+                        0usize,
+                    >("get_unityTextGenerator")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_unityTextGenerator", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::TextGeneratorType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())

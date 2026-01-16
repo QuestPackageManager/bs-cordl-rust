@@ -3,9 +3,10 @@
 #[derive(Debug)]
 pub struct OVRGLTFAnimationNodeMorphTargetHandler {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _MeshData_k__BackingField: crate::GlobalNamespace::OVRMeshData,
+    pub _meshData: crate::GlobalNamespace::OVRMeshData,
     pub Weights: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
-    pub modified: bool,
+    pub _modified: bool,
+    pub _meshModifiableData: crate::GlobalNamespace::OVRMeshAttributes,
 }
 #[cfg(feature = "cordl_class_OVRGLTFAnimationNodeMorphTargetHandler")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -121,57 +122,6 @@ impl crate::GlobalNamespace::OVRGLTFAnimationNodeMorphTargetHandler {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (meshData))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_MeshData(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMeshData> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::OVRMeshData,
-                        0usize,
-                    >("get_MeshData")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_MeshData", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::OVRMeshData = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_MeshData(
-        &mut self,
-        value: crate::GlobalNamespace::OVRMeshData,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::OVRMeshData),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_MeshData")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_MeshData", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

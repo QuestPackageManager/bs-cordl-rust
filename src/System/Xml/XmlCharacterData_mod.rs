@@ -65,6 +65,38 @@ impl crate::System::Xml::XmlCharacterData {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn DecideXPNodeTypeForTextNodes(
+        &mut self,
+        node: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+        xnt: quest_hook::libil2cpp::ByRefMut<crate::System::Xml::XPath::XPathNodeType>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Xml::XmlNode>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::System::Xml::XPath::XPathNodeType,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("DecideXPNodeTypeForTextNodes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DecideXPNodeTypeForTextNodes", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (node, xnt))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         doc: quest_hook::libil2cpp::Gc<crate::System::Xml::XmlDocument>,

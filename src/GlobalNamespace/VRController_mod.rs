@@ -4,7 +4,7 @@
 pub struct VRController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _node: crate::UnityEngine::XR::XRNode,
-    pub _nodeIdx: i32,
+    pub _nodeIndex: i32,
     pub _viewAnchorTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _transformOffset: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::VRControllerTransformOffset,
@@ -18,8 +18,11 @@ pub struct VRController {
             crate::UnityEngine::Pose,
         >,
     >,
+    pub autoPlayActive: bool,
     pub _lastTrackedPosition: crate::UnityEngine::Vector3,
     pub _lastTrackedRotation: crate::UnityEngine::Quaternion,
+    pub _poseFrame: i32,
+    pub _poseValid: bool,
     pub _mouseMode: bool,
 }
 #[cfg(feature = "cordl_class_VRController")]
@@ -542,21 +545,55 @@ impl crate::GlobalNamespace::VRController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_nodeIdx(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn get_nodeIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), i32, 0usize>("get_nodeIdx")
+                    .find_method::<(), i32, 0usize>("get_nodeIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_nodeIdx", 0usize
+                            "get_nodeIndex", 0usize
                         )
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_poseFrame(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("get_poseFrame")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_poseFrame", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_poseValid(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_poseValid")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_poseValid", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_position(
@@ -768,7 +805,7 @@ impl crate::GlobalNamespace::VRController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_nodeIdx(
+    pub fn set_nodeIndex(
         &mut self,
         value: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -780,12 +817,12 @@ impl crate::GlobalNamespace::VRController {
                         (i32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("set_nodeIdx")
+                    >("set_nodeIndex")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_nodeIdx", 1usize
+                            "set_nodeIndex", 1usize
                         )
                     })
             });

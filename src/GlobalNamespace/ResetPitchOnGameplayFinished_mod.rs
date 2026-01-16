@@ -6,7 +6,7 @@ pub struct ResetPitchOnGameplayFinished {
     pub _gameplayLevelSceneTransitionEvents: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
     >,
-    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
 }
 #[cfg(feature = "cordl_class_ResetPitchOnGameplayFinished")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -93,7 +93,7 @@ impl crate::GlobalNamespace::ResetPitchOnGameplayFinished {
         gameplayLevelSceneTransitionEvents: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
         >,
-        audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+        audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -106,7 +106,7 @@ impl crate::GlobalNamespace::ResetPitchOnGameplayFinished {
         gameplayLevelSceneTransitionEvents: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
         >,
-        audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+        audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -118,7 +118,7 @@ impl crate::GlobalNamespace::ResetPitchOnGameplayFinished {
                                 crate::GlobalNamespace::GameplayLevelSceneTransitionEvents,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AudioManagerSO,
+                                crate::GlobalNamespace::AudioManager,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

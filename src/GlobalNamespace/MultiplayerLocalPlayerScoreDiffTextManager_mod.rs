@@ -16,7 +16,7 @@ pub struct MultiplayerLocalPlayerScoreDiffTextManager {
         crate::GlobalNamespace::CoreGameHUDController_InitData,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _timeToNextUpdate: f32,
     pub _wasLocalPlayerLeader: crate::System::Nullable_1<bool>,

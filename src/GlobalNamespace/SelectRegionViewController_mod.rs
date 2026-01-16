@@ -2,7 +2,9 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectRegionViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: crate::GlobalNamespace::CompletableViewController_1<
+        crate::GlobalNamespace::SelectRegionViewController_Region,
+    >,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _regionSelectionDropdown: quest_hook::libil2cpp::Gc<
         crate::HMUI::SimpleTextDropdown,
@@ -10,11 +12,6 @@ pub struct SelectRegionViewController {
     pub _regionLocalizationKeys: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             crate::GlobalNamespace::SelectRegionViewController_RegionToLocalizationKeyPair,
-        >,
-    >,
-    pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<
-            crate::GlobalNamespace::SelectRegionViewController_Region,
         >,
     >,
 }
@@ -40,7 +37,9 @@ for crate::GlobalNamespace::SelectRegionViewController {
 }
 #[cfg(feature = "SelectRegionViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectRegionViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = crate::GlobalNamespace::CompletableViewController_1<
+        crate::GlobalNamespace::SelectRegionViewController_Region,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -149,7 +148,7 @@ impl crate::GlobalNamespace::SelectRegionViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_b__8_0(
+    pub fn _DidActivate_b__5_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -160,12 +159,12 @@ impl crate::GlobalNamespace::SelectRegionViewController {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<DidActivate>b__8_0")
+                    >("<DidActivate>b__5_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<DidActivate>b__8_0", 0usize
+                            "<DidActivate>b__5_0", 0usize
                         )
                     })
             });
@@ -192,74 +191,6 @@ impl crate::GlobalNamespace::SelectRegionViewController {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn add_didPressContinueButtonEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::SelectRegionViewController_Region,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::SelectRegionViewController_Region,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_didPressContinueButtonEvent")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_didPressContinueButtonEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn remove_didPressContinueButtonEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                crate::GlobalNamespace::SelectRegionViewController_Region,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<
-                                crate::GlobalNamespace::SelectRegionViewController_Region,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_didPressContinueButtonEvent")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_didPressContinueButtonEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

@@ -536,6 +536,32 @@ impl crate::System::DateTimeOffset {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ToOffset(
+        &mut self,
+        offset: crate::System::TimeSpan,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTimeOffset> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::System::TimeSpan),
+                        crate::System::DateTimeOffset,
+                        1usize,
+                    >("ToOffset")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToOffset", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTimeOffset = unsafe {
+            cordl_method_info.invoke_unchecked(self, (offset))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ToString_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

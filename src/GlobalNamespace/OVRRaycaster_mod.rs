@@ -6,6 +6,9 @@ pub struct OVRRaycaster {
     pub pointer: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub sortOrder: i32,
     pub m_Canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+    pub m_RayTransformer: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRRayTransformer,
+    >,
     pub m_RaycastResults: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             crate::GlobalNamespace::OVRRaycaster_RaycastHit,
@@ -77,12 +80,16 @@ impl crate::GlobalNamespace::OVRRaycaster {
     pub fn GraphicRaycast(
         &mut self,
         canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        rayTransformer: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRRayTransformer,
+        >,
         ray: crate::UnityEngine::Ray,
         results: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
                 crate::GlobalNamespace::OVRRaycaster_RaycastHit,
             >,
         >,
+        checkOnlyRaycastableGraphics: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -91,26 +98,34 @@ impl crate::GlobalNamespace::OVRRaycaster {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::OVRRayTransformer,
+                            >,
                             crate::UnityEngine::Ray,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::Generic::List_1<
                                     crate::GlobalNamespace::OVRRaycaster_RaycastHit,
                                 >,
                             >,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        5usize,
                     >("GraphicRaycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GraphicRaycast", 3usize
+                            "GraphicRaycast", 5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (canvas, ray, results))?
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (canvas, rayTransformer, ray, results, checkOnlyRaycastableGraphics),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -194,6 +209,48 @@ impl crate::GlobalNamespace::OVRRaycaster {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (rectTransform, ray, worldPos))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RaycastOnRaycastableGraphics(
+        &mut self,
+        eventData: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::EventSystems::PointerEventData,
+        >,
+        resultAppendList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::EventSystems::RaycastResult,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::EventSystems::PointerEventData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::EventSystems::RaycastResult,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("RaycastOnRaycastableGraphics")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RaycastOnRaycastableGraphics", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (eventData, resultAppendList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -281,7 +338,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Raycast_Ray__cordl_bool0(
+    pub fn Raycast_Ray__cordl_bool__cordl_bool0(
         &mut self,
         eventData: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::EventSystems::PointerEventData,
@@ -293,6 +350,7 @@ impl crate::GlobalNamespace::OVRRaycaster {
         >,
         ray: crate::UnityEngine::Ray,
         checkForBlocking: bool,
+        checkOnlyRaycastable: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -310,15 +368,16 @@ impl crate::GlobalNamespace::OVRRaycaster {
                             >,
                             crate::UnityEngine::Ray,
                             bool,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        5usize,
                     >("Raycast")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Raycast",
-                            4usize
+                            5usize
                         )
                     })
             });
@@ -326,7 +385,13 @@ impl crate::GlobalNamespace::OVRRaycaster {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (eventData, resultAppendList, ray, checkForBlocking),
+                    (
+                        eventData,
+                        resultAppendList,
+                        ray,
+                        checkForBlocking,
+                        checkOnlyRaycastable,
+                    ),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -425,6 +490,35 @@ impl crate::GlobalNamespace::OVRRaycaster {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_rayTransformer(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRRayTransformer>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OVRRayTransformer,
+                        >,
+                        0usize,
+                    >("get_rayTransformer")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_rayTransformer", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRRayTransformer,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_sortOrderPriority(&mut self) -> quest_hook::libil2cpp::Result<i32> {

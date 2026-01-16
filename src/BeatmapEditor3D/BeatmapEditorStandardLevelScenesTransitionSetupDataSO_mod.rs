@@ -5,13 +5,6 @@
 #[derive(Debug)]
 pub struct BeatmapEditorStandardLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    pub _standardGameplaySceneInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SceneInfo,
-    >,
-    pub _beatmapEditorGameplaySceneInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SceneInfo,
-    >,
-    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<
             quest_hook::libil2cpp::Gc<
@@ -119,15 +112,6 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
         data: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
         >,
-        beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-        levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-            >,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -168,26 +152,15 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::LevelCompletionResults,
-                                    >,
-                                >,
-                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        13usize,
+                        11usize,
                     >("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            13usize
+                            11usize
                         )
                     })
             });
@@ -207,8 +180,6 @@ impl crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupData
                         audioClipAsyncLoader,
                         settingsManager,
                         data,
-                        beforeSceneSwitchCallback,
-                        levelFinishedCallback,
                     ),
                 )?
         };

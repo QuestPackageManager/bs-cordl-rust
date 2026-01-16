@@ -76,3 +76,9 @@ pub use TcpListener_mod::*;
 // class TransmitFileOptions_mod; export all
 mod TransmitFileOptions_mod;
 pub use TransmitFileOptions_mod::*;
+// class UdpClient_mod; export all
+mod UdpClient_mod;
+pub use UdpClient_mod::*;
+// class UdpReceiveResult_mod; export all
+mod UdpReceiveResult_mod;
+pub use UdpReceiveResult_mod::*;

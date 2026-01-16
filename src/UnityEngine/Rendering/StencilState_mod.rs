@@ -180,6 +180,502 @@ impl crate::UnityEngine::Rendering::StencilState {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn SetCompareFunction(
+        &mut self,
+        value: crate::UnityEngine::Rendering::CompareFunction,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Rendering::CompareFunction),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetCompareFunction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCompareFunction", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetFailOperation(
+        &mut self,
+        value: crate::UnityEngine::Rendering::StencilOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Rendering::StencilOp),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetFailOperation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetFailOperation", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetPassOperation(
+        &mut self,
+        value: crate::UnityEngine::Rendering::StencilOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Rendering::StencilOp),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetPassOperation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetPassOperation", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetZFailOperation(
+        &mut self,
+        value: crate::UnityEngine::Rendering::StencilOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Rendering::StencilOp),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetZFailOperation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetZFailOperation", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_CompareFunction_StencilOp_StencilOp_StencilOp1(
+        &mut self,
+        enabled: bool,
+        readMask: u8,
+        writeMask: u8,
+        compareFunctionFront: crate::UnityEngine::Rendering::CompareFunction,
+        passOperationFront: crate::UnityEngine::Rendering::StencilOp,
+        failOperationFront: crate::UnityEngine::Rendering::StencilOp,
+        zFailOperationFront: crate::UnityEngine::Rendering::StencilOp,
+        compareFunctionBack: crate::UnityEngine::Rendering::CompareFunction,
+        passOperationBack: crate::UnityEngine::Rendering::StencilOp,
+        failOperationBack: crate::UnityEngine::Rendering::StencilOp,
+        zFailOperationBack: crate::UnityEngine::Rendering::StencilOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            bool,
+                            u8,
+                            u8,
+                            crate::UnityEngine::Rendering::CompareFunction,
+                            crate::UnityEngine::Rendering::StencilOp,
+                            crate::UnityEngine::Rendering::StencilOp,
+                            crate::UnityEngine::Rendering::StencilOp,
+                            crate::UnityEngine::Rendering::CompareFunction,
+                            crate::UnityEngine::Rendering::StencilOp,
+                            crate::UnityEngine::Rendering::StencilOp,
+                            crate::UnityEngine::Rendering::StencilOp,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        11usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            11usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        enabled,
+                        readMask,
+                        writeMask,
+                        compareFunctionFront,
+                        passOperationFront,
+                        failOperationFront,
+                        zFailOperationFront,
+                        compareFunctionBack,
+                        passOperationBack,
+                        failOperationBack,
+                        zFailOperationBack,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor__cordl_bool_u8_u8_CompareFunction_StencilOp_StencilOp_StencilOp0(
+        &mut self,
+        enabled: bool,
+        readMask: u8,
+        writeMask: u8,
+        compareFunction: crate::UnityEngine::Rendering::CompareFunction,
+        passOperation: crate::UnityEngine::Rendering::StencilOp,
+        failOperation: crate::UnityEngine::Rendering::StencilOp,
+        zFailOperation: crate::UnityEngine::Rendering::StencilOp,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            bool,
+                            u8,
+                            u8,
+                            crate::UnityEngine::Rendering::CompareFunction,
+                            crate::UnityEngine::Rendering::StencilOp,
+                            crate::UnityEngine::Rendering::StencilOp,
+                            crate::UnityEngine::Rendering::StencilOp,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        7usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            7usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        enabled,
+                        readMask,
+                        writeMask,
+                        compareFunction,
+                        passOperation,
+                        failOperation,
+                        zFailOperation,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_compareFunctionBack(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::CompareFunction> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::CompareFunction,
+                        0usize,
+                    >("get_compareFunctionBack")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_compareFunctionBack", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::CompareFunction = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_compareFunctionFront(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::CompareFunction> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::CompareFunction,
+                        0usize,
+                    >("get_compareFunctionFront")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_compareFunctionFront", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::CompareFunction = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_defaultValue() -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::StencilState,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::UnityEngine::Rendering::StencilState,
+                        0usize,
+                    >("get_defaultValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_defaultValue", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::StencilState = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_enabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_enabled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_failOperationBack(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::StencilOp> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::StencilOp,
+                        0usize,
+                    >("get_failOperationBack")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_failOperationBack", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::StencilOp = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_failOperationFront(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::StencilOp> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::StencilOp,
+                        0usize,
+                    >("get_failOperationFront")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_failOperationFront", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::StencilOp = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_passOperationBack(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::StencilOp> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::StencilOp,
+                        0usize,
+                    >("get_passOperationBack")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_passOperationBack", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::StencilOp = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_passOperationFront(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::StencilOp> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::StencilOp,
+                        0usize,
+                    >("get_passOperationFront")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_passOperationFront", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::StencilOp = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_readMask(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), u8, 0usize>("get_readMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_readMask", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_writeMask(&mut self) -> quest_hook::libil2cpp::Result<u8> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), u8, 0usize>("get_writeMask")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_writeMask", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u8 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zFailOperationBack(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::StencilOp> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::StencilOp,
+                        0usize,
+                    >("get_zFailOperationBack")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zFailOperationBack", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::StencilOp = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_zFailOperationFront(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rendering::StencilOp> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Rendering::StencilOp,
+                        0usize,
+                    >("get_zFailOperationFront")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zFailOperationFront", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::StencilOp = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_compareFunctionBack(
         &mut self,
         value: crate::UnityEngine::Rendering::CompareFunction,

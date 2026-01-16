@@ -18,7 +18,11 @@ pub struct BaseSlider_1<TValueType: quest_hook::libil2cpp::Type> {
     pub _inputTextField_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::TextField,
     >,
+    pub _fillElement_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::VisualElement,
+    >,
     pub m_IsEditingTextField: bool,
+    pub m_Fill: bool,
     pub m_LowValue: TValueType,
     pub m_HighValue: TValueType,
     pub m_PageSize: f32,
@@ -89,9 +93,10 @@ impl<
 > crate::UnityEngine::UIElements::BaseSlider_1<TValueType> {
     #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+SliderKey")]
     pub type SliderKey = crate::UnityEngine::UIElements::BaseSlider_1_SliderKey;
-    #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
-    pub type UxmlTraits = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<
+    #[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
+    pub type UxmlTraits_1<TValueUxmlAttributeType: quest_hook::libil2cpp::Type> = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
         TValueType,
+        TValueUxmlAttributeType,
     >;
     pub fn AdjustDragElement(
         &mut self,
@@ -408,6 +413,38 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
+    pub fn HandleEventBubbleUp(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::EventBase,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleEventBubbleUp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleEventBubbleUp", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         label: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         start: TValueType,
@@ -425,11 +462,9 @@ impl<
             .invoke_void(".ctor", (label, start, end, direction, pageSize))?;
         Ok(__cordl_object.into())
     }
-    pub fn OnInputNavigationMoveEvent(
+    pub fn OnFocusIn(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::NavigationMoveEvent,
-        >,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusInEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -441,16 +476,48 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::NavigationMoveEvent,
+                            crate::UnityEngine::UIElements::FocusInEvent,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("OnInputNavigationMoveEvent")
+                    >("OnFocusIn")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnInputNavigationMoveEvent", 1usize
+                            "OnFocusIn", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnFocusOut(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::FocusOutEvent>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::FocusOutEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnFocusOut")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnFocusOut", 1usize
                         )
                     })
             });
@@ -517,6 +584,40 @@ impl<
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OnNavigationMove", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnNavigationSubmit(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::NavigationSubmitEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::NavigationSubmitEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnNavigationSubmit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnNavigationSubmit", 1usize
                         )
                     })
             });
@@ -994,6 +1095,29 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SliderRange(&mut self) -> quest_hook::libil2cpp::Result<TValueType>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), TValueType, 0usize>("SliderRange")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SliderRange", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: TValueType = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn UnityEngine_UIElements_IValueField_TValueType__StartDragging(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
@@ -1143,6 +1267,36 @@ impl<
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateFill(
+        &mut self,
+        normalizedValue: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UpdateFill")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateFill", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (normalizedValue))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1460,6 +1614,60 @@ impl<
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_fill(&mut self) -> quest_hook::libil2cpp::Result<bool>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_fill")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fill", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_fillElement(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    >
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElement,
+                        >,
+                        0usize,
+                    >("get_fillElement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_fillElement", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::VisualElement,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_highValue(&mut self) -> quest_hook::libil2cpp::Result<TValueType>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1579,6 +1787,29 @@ impl<
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_range(&mut self) -> quest_hook::libil2cpp::Result<TValueType>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), TValueType, 0usize>("get_range")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_range", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: TValueType = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_showInputField(&mut self) -> quest_hook::libil2cpp::Result<bool>
@@ -1840,6 +2071,68 @@ impl<
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_dragElement", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_fill(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_fill")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fill", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_fillElement(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::VisualElement,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_fillElement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_fillElement", 1usize
                         )
                     })
             });
@@ -2220,20 +2513,35 @@ for crate::UnityEngine::UIElements::BaseSlider_1_SliderKey {
         actual
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
 #[repr(C)]
 #[derive(Debug)]
-pub struct BaseSlider_1_UxmlTraits<TValueType: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>,
+pub struct BaseSlider_1_UxmlTraits_1<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
+> {
+    __cordl_parent: crate::UnityEngine::UIElements::BaseFieldTraits_2<
+        TValueType,
+        TValueUxmlAttributeType,
+    >,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
+    __cordl_phantom_TValueUxmlAttributeType: std::marker::PhantomData<
+        TValueUxmlAttributeType,
+    >,
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
-unsafe impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::Type
-for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
+unsafe impl<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::Type
+for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
+    TValueType,
+    TValueUxmlAttributeType,
+> {
     type Held<'a> = ::std::option::Option<&'a mut Self>;
     type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements";
-    const CLASS_NAME: &'static str = "BaseSlider`1/UxmlTraits";
+    const CLASS_NAME: &'static str = "BaseSlider`1/UxmlTraits`1";
     fn class() -> &'static quest_hook::libil2cpp::Il2CppClass {
         static CLASS: ::std::sync::OnceLock<
             &'static quest_hook::libil2cpp::Il2CppClass,
@@ -2242,10 +2550,10 @@ for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
             .get_or_init(|| {
                 quest_hook::libil2cpp::Il2CppClass::find(
                         "UnityEngine.UIElements",
-                        "BaseSlider`1/UxmlTraits",
+                        "BaseSlider`1/UxmlTraits`1",
                     )
                     .unwrap()
-                    .make_generic::<(TValueType)>()
+                    .make_generic::<(TValueType, TValueUxmlAttributeType)>()
                     .unwrap()
                     .unwrap()
             })
@@ -2263,29 +2571,51 @@ for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
         false
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
-impl<TValueType: quest_hook::libil2cpp::Type> std::ops::Deref
-for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
-    type Target = crate::UnityEngine::UIElements::BaseField_1_UxmlTraits<TValueType>;
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
+impl<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
+> std::ops::Deref
+for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
+    TValueType,
+    TValueUxmlAttributeType,
+> {
+    type Target = crate::UnityEngine::UIElements::BaseFieldTraits_2<
+        TValueType,
+        TValueUxmlAttributeType,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
-impl<TValueType: quest_hook::libil2cpp::Type> std::ops::DerefMut
-for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
+impl<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
+> std::ops::DerefMut
+for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
+    TValueType,
+    TValueUxmlAttributeType,
+> {
     fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
         unsafe { &mut self.__cordl_parent }
     }
 }
-#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
+#[cfg(feature = "UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
 impl<
     TValueType: quest_hook::libil2cpp::Type,
-> crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
+    TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
+> crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
+    TValueType,
+    TValueUxmlAttributeType,
+> {
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueUxmlAttributeType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2297,6 +2627,9 @@ impl<
     where
         TValueType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+        TValueUxmlAttributeType: quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
     {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2317,9 +2650,15 @@ impl<
         Ok(__cordl_ret.into())
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits")]
-impl<TValueType: quest_hook::libil2cpp::Type> quest_hook::libil2cpp::ObjectType
-for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<TValueType> {
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+BaseSlider_1+UxmlTraits_1")]
+impl<
+    TValueType: quest_hook::libil2cpp::Type,
+    TValueUxmlAttributeType: quest_hook::libil2cpp::Type,
+> quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
+    TValueType,
+    TValueUxmlAttributeType,
+> {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

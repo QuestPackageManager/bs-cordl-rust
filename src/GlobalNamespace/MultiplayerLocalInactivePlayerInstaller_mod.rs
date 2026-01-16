@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct MultiplayerLocalInactivePlayerInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
-    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
     pub _sceneSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayCoreSceneSetupData,
     >,

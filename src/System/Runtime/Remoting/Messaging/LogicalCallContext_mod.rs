@@ -12,20 +12,6 @@ pub struct LogicalCallContext {
     >,
     pub m_HostContext: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub m_IsCorrelationMgr: bool,
-    pub _sendHeaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Remoting::Messaging::Header,
-            >,
-        >,
-    >,
-    pub _recvHeaders: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<
-                crate::System::Runtime::Remoting::Messaging::Header,
-            >,
-        >,
-    >,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+LogicalCallContext")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -64,7 +50,6 @@ for crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
 }
 #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext")]
 impl crate::System::Runtime::Remoting::Messaging::LogicalCallContext {
-    pub const s_CorrelationMgrSlotName: &'static str = "System.Diagnostics.Trace.CorrelationManagerSlot";
     #[cfg(feature = "System+Runtime+Remoting+Messaging+LogicalCallContext+Reader")]
     pub type Reader = crate::System::Runtime::Remoting::Messaging::LogicalCallContext_Reader;
     pub fn Clone(

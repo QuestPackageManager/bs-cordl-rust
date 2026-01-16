@@ -11,6 +11,8 @@ pub struct SpriteAsset {
     >,
     pub m_FaceInfo: crate::UnityEngine::TextCore::FaceInfo,
     pub m_SpriteAtlasTexture: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+    pub _width_k__BackingField: f32,
+    pub _height_k__BackingField: f32,
     pub m_SpriteCharacterTable: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
             quest_hook::libil2cpp::Gc<
@@ -240,6 +242,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         >,
         hashCode: i32,
         searchFallbacks: bool,
+        searchedSpriteAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<i32>,
+        >,
         spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
@@ -259,18 +264,21 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                             >,
                             i32,
                             bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<i32>,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::TextCore::Text::SpriteAsset,
                         >,
-                        4usize,
+                        5usize,
                     >("SearchForSpriteByHashCodeInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SearchForSpriteByHashCodeInternal", 4usize
+                            "SearchForSpriteByHashCodeInternal", 5usize
                         )
                     })
             });
@@ -280,7 +288,13 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (spriteAssets, hashCode, searchFallbacks, spriteIndex),
+                    (
+                        spriteAssets,
+                        hashCode,
+                        searchFallbacks,
+                        searchedSpriteAssets,
+                        spriteIndex,
+                    ),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -291,6 +305,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         >,
         hashCode: i32,
         searchFallbacks: bool,
+        searchedSpriteAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<i32>,
+        >,
         spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
@@ -306,18 +323,21 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                             >,
                             i32,
                             bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<i32>,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::TextCore::Text::SpriteAsset,
                         >,
-                        4usize,
+                        5usize,
                     >("SearchForSpriteByHashCodeInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SearchForSpriteByHashCodeInternal", 4usize
+                            "SearchForSpriteByHashCodeInternal", 5usize
                         )
                     })
             });
@@ -327,7 +347,13 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (spriteAsset, hashCode, searchFallbacks, spriteIndex),
+                    (
+                        spriteAsset,
+                        hashCode,
+                        searchFallbacks,
+                        searchedSpriteAssets,
+                        spriteIndex,
+                    ),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -389,6 +415,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         >,
         unicode: u32,
         includeFallbacks: bool,
+        searchedSpriteAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<i32>,
+        >,
         spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
@@ -408,18 +437,21 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                             >,
                             u32,
                             bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<i32>,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::TextCore::Text::SpriteAsset,
                         >,
-                        4usize,
+                        5usize,
                     >("SearchForSpriteByUnicodeInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SearchForSpriteByUnicodeInternal", 4usize
+                            "SearchForSpriteByUnicodeInternal", 5usize
                         )
                     })
             });
@@ -429,7 +461,13 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (spriteAssets, unicode, includeFallbacks, spriteIndex),
+                    (
+                        spriteAssets,
+                        unicode,
+                        includeFallbacks,
+                        searchedSpriteAssets,
+                        spriteIndex,
+                    ),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -440,6 +478,9 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         >,
         unicode: u32,
         includeFallbacks: bool,
+        searchedSpriteAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<i32>,
+        >,
         spriteIndex: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::SpriteAsset>,
@@ -455,18 +496,21 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                             >,
                             u32,
                             bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<i32>,
+                            >,
                             quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::TextCore::Text::SpriteAsset,
                         >,
-                        4usize,
+                        5usize,
                     >("SearchForSpriteByUnicodeInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SearchForSpriteByUnicodeInternal", 4usize
+                            "SearchForSpriteByUnicodeInternal", 5usize
                         )
                     })
             });
@@ -476,7 +520,13 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (spriteAsset, unicode, includeFallbacks, spriteIndex),
+                    (
+                        spriteAsset,
+                        unicode,
+                        includeFallbacks,
+                        searchedSpriteAssets,
+                        spriteIndex,
+                    ),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -625,6 +675,23 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         let __cordl_ret: crate::UnityEngine::TextCore::FaceInfo = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_height(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), f32, 0usize>("get_height")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_height", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_spriteCharacterLookupTable(
@@ -786,6 +853,23 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_width(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), f32, 0usize>("get_width")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_width", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_faceInfo(
         &mut self,
         value: crate::UnityEngine::TextCore::FaceInfo,
@@ -804,6 +888,32 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_faceInfo", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_height(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_height")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_height", 1usize
                         )
                     })
             });
@@ -946,6 +1056,32 @@ impl crate::UnityEngine::TextCore::Text::SpriteAsset {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_spriteSheet", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_width(
+        &mut self,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_width")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_width", 1usize
                         )
                     })
             });

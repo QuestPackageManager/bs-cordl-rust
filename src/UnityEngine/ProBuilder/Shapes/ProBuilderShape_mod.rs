@@ -6,16 +6,14 @@ pub struct ProBuilderShape {
     pub m_Shape: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::Shapes::Shape,
     >,
-    pub m_Size: crate::UnityEngine::Vector3,
-    pub m_Rotation: crate::UnityEngine::Quaternion,
+    pub m_ShapeRotation: crate::UnityEngine::Quaternion,
     pub m_Mesh: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ProBuilder::ProBuilderMesh,
     >,
-    pub m_PivotLocation: crate::UnityEngine::ProBuilder::PivotLocation,
-    pub m_PivotPosition: crate::UnityEngine::Vector3,
     pub m_UnmodifiedMeshVersion: u16,
+    pub m_Size: crate::UnityEngine::Vector3,
     pub m_EditionBounds: crate::UnityEngine::Bounds,
-    pub m_ShapeBox: crate::UnityEngine::Bounds,
+    pub m_LocalCenter: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+Shapes+ProBuilderShape")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -52,6 +50,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::Shapes::ProBuilderSh
 }
 #[cfg(feature = "UnityEngine+ProBuilder+Shapes+ProBuilderShape")]
 impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
+    pub const k_IconPath: &'static str = "Packages/com.unity.probuilder/Content/Icons/EditableMesh/EditableMesh.png";
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -80,34 +79,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RebuildPivot(
-        &mut self,
-        _cordl_size: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Quaternion),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("RebuildPivot")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RebuildPivot", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (_cordl_size, rotation))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Rebuild_1(
+    pub fn Rebuild_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -128,11 +100,38 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Rebuild_Bounds_Quaternion_Vector3_0(
+    pub fn Rebuild_Bounds_Quaternion1(
         &mut self,
         bounds: crate::UnityEngine::Bounds,
         rotation: crate::UnityEngine::Quaternion,
-        cornerPivot: crate::UnityEngine::Vector3,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Bounds, crate::UnityEngine::Quaternion),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Rebuild")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Rebuild",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (bounds, rotation))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Rebuild_Vector3_Quaternion_Bounds0(
+        &mut self,
+        pivotPosition: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        bounds: crate::UnityEngine::Bounds,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -140,9 +139,9 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            crate::UnityEngine::Bounds,
-                            crate::UnityEngine::Quaternion,
                             crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::Bounds,
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
@@ -156,41 +155,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (bounds, rotation, cornerPivot))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ResetPivot(
-        &mut self,
-        mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::ProBuilderMesh>,
-        _cordl_size: crate::UnityEngine::Vector3,
-        rotation: crate::UnityEngine::Quaternion,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::ProBuilderMesh,
-                            >,
-                            crate::UnityEngine::Vector3,
-                            crate::UnityEngine::Quaternion,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ResetPivot")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResetPivot", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (mesh, _cordl_size, rotation))?
+            cordl_method_info.invoke_unchecked(self, (pivotPosition, rotation, bounds))?
         };
         Ok(__cordl_ret.into())
     }
@@ -223,32 +188,28 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
     pub fn SetShape(
         &mut self,
         shape: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
-        location: crate::UnityEngine::ProBuilder::PivotLocation,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::ProBuilder::Shapes::Shape,
-                            >,
-                            crate::UnityEngine::ProBuilder::PivotLocation,
-                        ),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::ProBuilder::Shapes::Shape,
+                        >),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        1usize,
                     >("SetShape")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetShape", 2usize
+                            "SetShape", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (shape, location))?
+            cordl_method_info.invoke_unchecked(self, (shape))?
         };
         Ok(__cordl_ret.into())
     }
@@ -278,7 +239,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateComponent(
+    pub fn UpdateShape(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -289,12 +250,12 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("UpdateComponent")
+                    >("UpdateShape")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateComponent", 0usize
+                            "UpdateShape", 0usize
                         )
                     })
             });
@@ -395,106 +356,6 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_pivotGlobalPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Vector3,
-                        0usize,
-                    >("get_pivotGlobalPosition")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_pivotGlobalPosition", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_pivotLocalPosition(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Vector3,
-                        0usize,
-                    >("get_pivotLocalPosition")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_pivotLocalPosition", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_pivotLocation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ProBuilder::PivotLocation> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::ProBuilder::PivotLocation,
-                        0usize,
-                    >("get_pivotLocation")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_pivotLocation", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::ProBuilder::PivotLocation = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_rotation(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::UnityEngine::Quaternion,
-                        0usize,
-                    >("get_rotation")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rotation", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_shape(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -524,7 +385,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_shapeBox(
+    pub fn get_shapeLocalBounds(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -535,16 +396,91 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
                         (),
                         crate::UnityEngine::Bounds,
                         0usize,
-                    >("get_shapeBox")
+                    >("get_shapeLocalBounds")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_shapeBox", 0usize
+                            "get_shapeLocalBounds", 0usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_shapeRotation(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Quaternion> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Quaternion,
+                        0usize,
+                    >("get_shapeRotation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shapeRotation", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Quaternion = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_shapeWorldBounds(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Bounds> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Bounds,
+                        0usize,
+                    >("get_shapeWorldBounds")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shapeWorldBounds", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Bounds = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_shapeWorldCenter(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Vector3,
+                        0usize,
+                    >("get_shapeWorldCenter")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shapeWorldCenter", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -570,85 +506,7 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_pivotGlobalPosition(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_pivotGlobalPosition")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_pivotGlobalPosition", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_pivotLocalPosition(
-        &mut self,
-        value: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_pivotLocalPosition")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_pivotLocalPosition", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_pivotLocation(
-        &mut self,
-        value: crate::UnityEngine::ProBuilder::PivotLocation,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::ProBuilder::PivotLocation),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_pivotLocation")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_pivotLocation", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_rotation(
+    pub fn set_shapeRotation(
         &mut self,
         value: crate::UnityEngine::Quaternion,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -660,40 +518,12 @@ impl crate::UnityEngine::ProBuilder::Shapes::ProBuilderShape {
                         (crate::UnityEngine::Quaternion),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("set_rotation")
+                    >("set_shapeRotation")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_rotation", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_shape(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::ProBuilder::Shapes::Shape>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::ProBuilder::Shapes::Shape,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_shape")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_shape", 1usize
+                            "set_shapeRotation", 1usize
                         )
                     })
             });

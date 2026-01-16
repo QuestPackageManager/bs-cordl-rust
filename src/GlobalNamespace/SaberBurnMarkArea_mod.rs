@@ -11,43 +11,48 @@ pub struct SaberBurnMarkArea {
     pub _textureHeight: i32,
     pub _burnMarksFadeOutStrength: f32,
     pub _fadeOutShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
-    pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
-    pub _saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
-    pub _settingsManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SettingsManager,
+    pub kBufferNames: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        >,
     >,
-    pub _disableBlitTimer: f32,
-    pub _renderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::Renderer>,
-    pub _fadeOutStrengthShaderPropertyID: i32,
+    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _bounds: crate::UnityEngine::Bounds,
+    pub _renderMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _fadeOutMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
+    pub _linePoints: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
     pub _sabers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,
         >,
-    >,
-    pub _plane: crate::UnityEngine::Plane,
-    pub _prevBurnMarkPos: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
-    >,
-    pub _prevBurnMarkPosValid: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
     pub _lineRenderers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::LineRenderer>,
         >,
     >,
-    pub _camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
-    pub _linePoints: quest_hook::libil2cpp::Gc<
+    pub _prevBurnMarkPos: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector3>,
+    >,
+    pub _prevBurnMarkPosValid: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<bool>,
     >,
     pub _renderTextures: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
         >,
     >,
-    pub _emitParams: crate::UnityEngine::ParticleSystem_EmitParams,
-    pub _fadeOutMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
-    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _commandBuffers: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::Rendering::CommandBuffer>,
+        >,
+    >,
+    pub _currentCommandBuffer: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Rendering::CommandBuffer,
+    >,
+    pub _disableBlitTimer: f32,
 }
 #[cfg(feature = "cordl_class_SaberBurnMarkArea")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SaberBurnMarkArea {
@@ -83,9 +88,13 @@ impl std::ops::DerefMut for crate::GlobalNamespace::SaberBurnMarkArea {
 }
 #[cfg(feature = "SaberBurnMarkArea")]
 impl crate::GlobalNamespace::SaberBurnMarkArea {
+    pub const kBufferCount: i32 = 2i32;
     pub const kDisableBlitAfterSecondsThreshold: f32 = 5f32;
+    pub const kSaberCount: i32 = 2i32;
     pub fn GetBurnMarkPos(
-        &mut self,
+        transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        bounds: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+        plane: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Plane>,
         bladeBottomPos: crate::UnityEngine::Vector3,
         bladeTopPos: crate::UnityEngine::Vector3,
         burnMarkPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -94,26 +103,73 @@ impl crate::GlobalNamespace::SaberBurnMarkArea {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
+                    .find_static_method::<
                         (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Bounds>,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Plane>,
                             crate::UnityEngine::Vector3,
                             crate::UnityEngine::Vector3,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                         ),
                         bool,
-                        3usize,
+                        6usize,
                     >("GetBurnMarkPos")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBurnMarkPos", 3usize
+                            "GetBurnMarkPos", 6usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (bladeBottomPos, bladeTopPos, burnMarkPos))?
+                .invoke_unchecked(
+                    (),
+                    (transform, bounds, plane, bladeBottomPos, bladeTopPos, burnMarkPos),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize(
+        &mut self,
+        settingsManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::SettingsManager,
+        >,
+        saberManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SaberManager>,
+        colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SettingsManager,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SaberManager,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ColorManager,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (settingsManager, saberManager, colorManager))?
         };
         Ok(__cordl_ret.into())
     }
@@ -205,53 +261,6 @@ impl crate::GlobalNamespace::SaberBurnMarkArea {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Start(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Start")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
-                            0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn WorldToCameraBurnMarkPos(
-        &mut self,
-        pos: crate::UnityEngine::Vector3,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::Vector3),
-                        crate::UnityEngine::Vector3,
-                        1usize,
-                    >("WorldToCameraBurnMarkPos")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "WorldToCameraBurnMarkPos", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (pos))?
         };
         Ok(__cordl_ret.into())
     }

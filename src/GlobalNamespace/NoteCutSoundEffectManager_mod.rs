@@ -3,7 +3,6 @@
 #[derive(Debug)]
 pub struct NoteCutSoundEffectManager {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
     pub _audioSamplesBeatAlignOffset: f32,
     pub _longCutEffectsAudioClips: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
@@ -19,6 +18,7 @@ pub struct NoteCutSoundEffectManager {
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteCutSoundEffectManager_InitData,
     >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
     pub _beatmapObjectManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectManager,
     >,

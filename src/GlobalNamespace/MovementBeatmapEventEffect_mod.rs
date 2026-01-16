@@ -20,6 +20,7 @@ pub struct MovementBeatmapEventEffect {
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _currentMovementDataIdx: i32,
     pub _currentPositionOffset: crate::UnityEngine::Vector3,
     pub _prevPositionOffset: crate::UnityEngine::Vector3,

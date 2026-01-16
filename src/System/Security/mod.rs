@@ -45,6 +45,9 @@ pub use SecurityException_mod::*;
 // class SecurityManager_mod; export all
 mod SecurityManager_mod;
 pub use SecurityManager_mod::*;
+// class SecurityTreatAsSafeAttribute_mod; export all
+mod SecurityTreatAsSafeAttribute_mod;
+pub use SecurityTreatAsSafeAttribute_mod::*;
 // namespace Util;
 pub mod Util;
 // class XmlSyntaxException_mod; export all

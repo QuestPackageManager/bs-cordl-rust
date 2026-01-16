@@ -3,17 +3,6 @@
 #[derive(Debug)]
 pub struct TutorialScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
-    pub _environmentInfo: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::EnvironmentInfoSO>,
-        >,
-    >,
-    pub _tutorialSceneInfo: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::AssetReferenceT_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
-        >,
-    >,
-    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<
             quest_hook::libil2cpp::Gc<
@@ -21,15 +10,6 @@ pub struct TutorialScenesTransitionSetupDataSO {
             >,
             crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO_TutorialEndStateType,
         >,
-    >,
-    pub _playerSpecificSettings_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::PlayerSpecificSettings,
-    >,
-    pub _loadedEnvironmentInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::EnvironmentInfoSO,
-    >,
-    pub _loadedTutorialSceneInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SceneInfo,
     >,
 }
 #[cfg(feature = "cordl_class_TutorialScenesTransitionSetupDataSO")]
@@ -100,28 +80,50 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
+        gameplayAdditionalInformation: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayAdditionalInformation,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PlayerSpecificSettings,
-                        >),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PlayerSpecificSettings,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::EnvironmentsListModel,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::GameplayAdditionalInformation,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        3usize,
                     >("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            1usize
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playerSpecificSettings))?
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        playerSpecificSettings,
+                        environmentsListModel,
+                        gameplayAdditionalInformation,
+                    ),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -193,35 +195,6 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_playerSpecificSettings(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PlayerSpecificSettings,
-                        >,
-                        0usize,
-                    >("get_playerSpecificSettings")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_playerSpecificSettings", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
     pub fn remove_didFinishEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
@@ -254,34 +227,6 @@ impl crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "remove_didFinishEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_playerSpecificSettings(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::PlayerSpecificSettings,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_playerSpecificSettings")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_playerSpecificSettings", 1usize
                         )
                     })
             });

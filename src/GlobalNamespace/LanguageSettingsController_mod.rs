@@ -6,7 +6,7 @@ pub struct LanguageSettingsController {
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,
-    pub _language: crate::BGLib::Polyglot::Language,
+    pub _language: crate::BGLib::Polyglot::LocalizationLanguage,
 }
 #[cfg(feature = "cordl_class_LanguageSettingsController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -157,14 +157,14 @@ impl crate::GlobalNamespace::LanguageSettingsController {
     }
     pub fn get_language(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::LocalizationLanguage> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::BGLib::Polyglot::Language,
+                        crate::BGLib::Polyglot::LocalizationLanguage,
                         0usize,
                     >("get_language")
                     .unwrap_or_else(|e| {
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::LanguageSettingsController {
                         )
                     })
             });
-        let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
+        let __cordl_ret: crate::BGLib::Polyglot::LocalizationLanguage = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())

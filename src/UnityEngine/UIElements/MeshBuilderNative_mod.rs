@@ -266,7 +266,6 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         sliceLTRB: crate::UnityEngine::Vector4,
         tint: crate::UnityEngine::Color,
         colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-        settingIndexOffset: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
@@ -290,16 +289,15 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                             crate::UnityEngine::Vector4,
                             crate::UnityEngine::Color,
                             crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-                            i32,
                         ),
                         crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                        9usize,
+                        8usize,
                     >("MakeVectorGraphics9SliceBackground")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphics9SliceBackground", 9usize
+                            "MakeVectorGraphics9SliceBackground", 8usize
                         )
                     })
             });
@@ -316,17 +314,18 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         sliceLTRB,
                         tint,
                         colorPage,
-                        settingIndexOffset,
                     ),
                 )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphics9SliceBackground_Injected(
-        svgVertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIElements::Vertex>,
+        svgVertices: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
-        svgIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+        svgIndices: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         svgWidth: f32,
         svgHeight: f32,
         targetRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
@@ -335,7 +334,6 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         colorPage: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
         >,
-        settingIndexOffset: i32,
         ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
@@ -346,13 +344,11 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::UIElements::Vertex,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u16>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             f32,
                             f32,
@@ -362,19 +358,18 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
                             >,
-                            i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::UIElements::MeshWriteDataInterface,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        10usize,
+                        9usize,
                     >("MakeVectorGraphics9SliceBackground_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphics9SliceBackground_Injected", 10usize
+                            "MakeVectorGraphics9SliceBackground_Injected", 9usize
                         )
                     })
             });
@@ -391,7 +386,6 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         sliceLTRB,
                         tint,
                         colorPage,
-                        settingIndexOffset,
                         ret,
                     ),
                 )?
@@ -410,9 +404,6 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         scaleMode: crate::UnityEngine::ScaleMode,
         tint: crate::UnityEngine::Color,
         colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-        settingIndexOffset: i32,
-        finalVertexCount: quest_hook::libil2cpp::ByRefMut<i32>,
-        finalIndexCount: quest_hook::libil2cpp::ByRefMut<i32>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::MeshWriteDataInterface,
     > {
@@ -437,18 +428,15 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                             crate::UnityEngine::ScaleMode,
                             crate::UnityEngine::Color,
                             crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         crate::UnityEngine::UIElements::MeshWriteDataInterface,
-                        12usize,
+                        9usize,
                     >("MakeVectorGraphicsStretchBackground")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphicsStretchBackground", 12usize
+                            "MakeVectorGraphicsStretchBackground", 9usize
                         )
                     })
             });
@@ -466,19 +454,18 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         scaleMode,
                         tint,
                         colorPage,
-                        settingIndexOffset,
-                        finalVertexCount,
-                        finalIndexCount,
                     ),
                 )?
         };
         Ok(__cordl_ret.into())
     }
     pub fn MakeVectorGraphicsStretchBackground_Injected(
-        svgVertices: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::UIElements::Vertex>,
+        svgVertices: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
-        svgIndices: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u16>>,
+        svgIndices: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         svgWidth: f32,
         svgHeight: f32,
         targetRect: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
@@ -488,9 +475,6 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
         colorPage: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
         >,
-        settingIndexOffset: i32,
-        finalVertexCount: quest_hook::libil2cpp::ByRefMut<i32>,
-        finalIndexCount: quest_hook::libil2cpp::ByRefMut<i32>,
         ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::MeshWriteDataInterface,
         >,
@@ -501,13 +485,11 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::UIElements::Vertex,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<u16>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             f32,
                             f32,
@@ -518,21 +500,18 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
                             >,
-                            i32,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::UIElements::MeshWriteDataInterface,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        13usize,
+                        10usize,
                     >("MakeVectorGraphicsStretchBackground_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "MakeVectorGraphicsStretchBackground_Injected", 13usize
+                            "MakeVectorGraphicsStretchBackground_Injected", 10usize
                         )
                     })
             });
@@ -550,9 +529,6 @@ impl crate::UnityEngine::UIElements::MeshBuilderNative {
                         scaleMode,
                         tint,
                         colorPage,
-                        settingIndexOffset,
-                        finalVertexCount,
-                        finalIndexCount,
                         ret,
                     ),
                 )?
@@ -814,13 +790,24 @@ pub struct MeshBuilderNative_NativeRectParams {
     pub rect: crate::UnityEngine::Rect,
     pub subRect: crate::UnityEngine::Rect,
     pub uv: crate::UnityEngine::Rect,
-    pub uvRegion: crate::UnityEngine::Rect,
     pub color: crate::UnityEngine::Color,
     pub scaleMode: crate::UnityEngine::ScaleMode,
+    pub backgroundRepeatInstanceList: crate::System::IntPtr,
+    pub backgroundRepeatInstanceListStartIndex: i32,
+    pub backgroundRepeatInstanceListEndIndex: i32,
     pub topLeftRadius: crate::UnityEngine::Vector2,
     pub topRightRadius: crate::UnityEngine::Vector2,
     pub bottomRightRadius: crate::UnityEngine::Vector2,
     pub bottomLeftRadius: crate::UnityEngine::Vector2,
+    pub backgroundRepeatRect: crate::UnityEngine::Rect,
+    pub texture: crate::System::IntPtr,
+    pub sprite: crate::System::IntPtr,
+    pub vectorImage: crate::System::IntPtr,
+    pub spriteTexture: crate::System::IntPtr,
+    pub spriteVertices: crate::System::IntPtr,
+    pub spriteUVs: crate::System::IntPtr,
+    pub spriteTriangles: crate::System::IntPtr,
+    pub spriteGeomRect: crate::UnityEngine::Rect,
     pub contentSize: crate::UnityEngine::Vector2,
     pub textureSize: crate::UnityEngine::Vector2,
     pub texturePixelsPerPoint: f32,
@@ -831,6 +818,7 @@ pub struct MeshBuilderNative_NativeRectParams {
     pub sliceScale: f32,
     pub rectInset: crate::UnityEngine::Vector4,
     pub colorPage: crate::UnityEngine::UIElements::MeshBuilderNative_NativeColorPage,
+    pub meshFlags: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+MeshBuilderNative+NativeRectParams")]
 unsafe impl quest_hook::libil2cpp::Type

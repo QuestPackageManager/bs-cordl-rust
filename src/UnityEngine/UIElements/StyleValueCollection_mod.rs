@@ -44,6 +44,114 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::StyleValueCollection
 }
 #[cfg(feature = "UnityEngine+UIElements+StyleValueCollection")]
 impl crate::UnityEngine::UIElements::StyleValueCollection {
+    pub fn GetStyleBackground(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleBackground> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                        crate::UnityEngine::UIElements::StyleBackground,
+                        1usize,
+                    >("GetStyleBackground")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStyleBackground", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleBackground = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStyleBackgroundPosition(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleBackgroundPosition,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                        crate::UnityEngine::UIElements::StyleBackgroundPosition,
+                        1usize,
+                    >("GetStyleBackgroundPosition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStyleBackgroundPosition", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleBackgroundPosition = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStyleBackgroundRepeat(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleBackgroundRepeat,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                        crate::UnityEngine::UIElements::StyleBackgroundRepeat,
+                        1usize,
+                    >("GetStyleBackgroundRepeat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStyleBackgroundRepeat", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleBackgroundRepeat = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStyleColor(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleColor> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                        crate::UnityEngine::UIElements::StyleColor,
+                        1usize,
+                    >("GetStyleColor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStyleColor", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleColor = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetStyleFloat(
         &mut self,
         id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
@@ -66,6 +174,60 @@ impl crate::UnityEngine::UIElements::StyleValueCollection {
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::StyleFloat = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStyleFont(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::StyleFont> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                        crate::UnityEngine::UIElements::StyleFont,
+                        1usize,
+                    >("GetStyleFont")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStyleFont", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleFont = unsafe {
+            cordl_method_info.invoke_unchecked(self, (id))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetStyleFontDefinition(
+        &mut self,
+        id: crate::UnityEngine::UIElements::StyleSheets::StylePropertyId,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::StyleFontDefinition,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::UIElements::StyleSheets::StylePropertyId),
+                        crate::UnityEngine::UIElements::StyleFontDefinition,
+                        1usize,
+                    >("GetStyleFontDefinition")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetStyleFontDefinition", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::StyleFontDefinition = unsafe {
             cordl_method_info.invoke_unchecked(self, (id))?
         };
         Ok(__cordl_ret.into())

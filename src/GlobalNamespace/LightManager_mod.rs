@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::LightManager {
     }
     pub fn OnCameraPreRender(
         &mut self,
-        camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        currentCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -86,7 +86,7 @@ impl crate::GlobalNamespace::LightManager {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (camera))?
+            cordl_method_info.invoke_unchecked(self, (currentCamera))?
         };
         Ok(__cordl_ret.into())
     }

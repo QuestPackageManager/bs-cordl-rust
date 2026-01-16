@@ -228,6 +228,31 @@ impl crate::GlobalNamespace::PerformanceConfigurationLog {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn LogGraphicsInfo(
+        sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("LogGraphicsInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogGraphicsInfo", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (sb))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn LogLevelSettings(
         sb: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
         modifiers: crate::GlobalNamespace::GameplayModifierMask,

@@ -3,8 +3,11 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct HapticCapabilities {
     pub _numChannels_k__BackingField: u32,
+    pub _supportsImpulse_k__BackingField: bool,
+    pub _supportsBuffer_k__BackingField: bool,
     pub _frequencyHz_k__BackingField: u32,
     pub _maxBufferSize_k__BackingField: u32,
+    pub _optimalBufferSize_k__BackingField: u32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -103,7 +106,49 @@ for crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+HapticCapabilities")]
 impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
-    pub fn _ctor(
+    pub fn _ctor__cordl_bool__cordl_bool_u32_u32_u32_0(
+        &mut self,
+        numChannels: u32,
+        supportsImpulse: bool,
+        supportsBuffer: bool,
+        frequencyHz: u32,
+        maxBufferSize: u32,
+        optimalBufferSize: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (u32, bool, bool, u32, u32, u32),
+                        quest_hook::libil2cpp::Void,
+                        6usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        numChannels,
+                        supportsImpulse,
+                        supportsBuffer,
+                        frequencyHz,
+                        maxBufferSize,
+                        optimalBufferSize,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_u32_u32_1(
         &mut self,
         numChannels: u32,
         frequencyHz: u32,
@@ -183,82 +228,55 @@ impl crate::UnityEngine::InputSystem::XR::Haptics::HapticCapabilities {
         let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn set_frequencyHz(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_optimalBufferSize(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_frequencyHz")
+                    .find_method::<(), u32, 0usize>("get_optimalBufferSize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_frequencyHz", 1usize
+                            "get_optimalBufferSize", 0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn set_maxBufferSize(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_supportsBuffer(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_maxBufferSize")
+                    .find_method::<(), bool, 0usize>("get_supportsBuffer")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_maxBufferSize", 1usize
+                            "get_supportsBuffer", 0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn set_numChannels(
-        &mut self,
-        value: u32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn get_supportsImpulse(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (u32),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_numChannels")
+                    .find_method::<(), bool, 0usize>("get_supportsImpulse")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_numChannels", 1usize
+                            "get_supportsImpulse", 0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

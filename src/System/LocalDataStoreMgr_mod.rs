@@ -54,9 +54,6 @@ impl std::ops::DerefMut for crate::System::LocalDataStoreMgr {
 }
 #[cfg(feature = "System+LocalDataStoreMgr")]
 impl crate::System::LocalDataStoreMgr {
-    pub const InitialSlotTableSize: i32 = 64i32;
-    pub const LargeSlotTableSizeIncrease: i32 = 128i32;
-    pub const SlotTableDoubleThreshold: i32 = 512i32;
     pub fn AllocateDataSlot(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

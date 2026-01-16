@@ -39,14 +39,16 @@ impl std::ops::DerefMut for crate::UnityEngine::AsyncInstantiateOperationHelper 
 }
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperationHelper")]
 impl crate::UnityEngine::AsyncInstantiateOperationHelper {
-    pub fn SetAsyncInstantiateOperationResult(
+    pub fn CreateAsyncInstantiateOperationResultArray(
         op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
-        result: quest_hook::libil2cpp::Gc<
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -56,26 +58,28 @@ impl crate::UnityEngine::AsyncInstantiateOperationHelper {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::AsyncInstantiateOperation,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                                >,
-                            >,
+                            i32,
                         ),
-                        quest_hook::libil2cpp::Void,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            >,
+                        >,
                         2usize,
-                    >("SetAsyncInstantiateOperationResult")
+                    >("CreateAsyncInstantiateOperationResultArray")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetAsyncInstantiateOperationResult", 2usize
+                            "CreateAsyncInstantiateOperationResultArray", 2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (op, result))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (op, _cordl_size))? };
         Ok(__cordl_ret.into())
     }
 }

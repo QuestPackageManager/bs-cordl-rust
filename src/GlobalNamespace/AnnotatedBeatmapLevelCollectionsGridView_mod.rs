@@ -116,7 +116,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
         gridView: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
         idx: i32,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -127,7 +127,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
                             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GridView>,
                             i32,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour>,
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
                         2usize,
                     >("CellForIdx")
                     .unwrap_or_else(|e| {
@@ -138,7 +138,7 @@ impl crate::GlobalNamespace::AnnotatedBeatmapLevelCollectionsGridView {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::MonoBehaviour> = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Component> = unsafe {
             cordl_method_info.invoke_unchecked(self, (gridView, idx))?
         };
         Ok(__cordl_ret.into())

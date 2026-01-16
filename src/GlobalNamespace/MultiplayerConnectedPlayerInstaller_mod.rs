@@ -25,7 +25,7 @@ pub struct MultiplayerConnectedPlayerInstaller {
         crate::GlobalNamespace::MultiplayerConnectedPlayerObstacleController,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _localPlayerStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
     pub _sceneSetupData: quest_hook::libil2cpp::Gc<

@@ -48,6 +48,9 @@ pub use Gyroscope_mod::*;
 pub mod HID;
 // namespace Haptics;
 pub mod Haptics;
+// class HingeAngle_mod; export all
+mod HingeAngle_mod;
+pub use HingeAngle_mod::*;
 // class HumiditySensor_mod; export all
 mod HumiditySensor_mod;
 pub use HumiditySensor_mod::*;
@@ -218,6 +221,8 @@ pub use PlayerJoinBehavior_mod::*;
 // class PlayerNotifications_mod; export all
 mod PlayerNotifications_mod;
 pub use PlayerNotifications_mod::*;
+// namespace Plugins;
+pub mod Plugins;
 // class Pointer_mod; export all
 mod Pointer_mod;
 pub use Pointer_mod::*;

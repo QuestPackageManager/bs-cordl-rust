@@ -12,15 +12,9 @@ pub struct TMP_Style {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub m_OpeningTagArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
-    pub m_ClosingTagArray: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<i32>,
-    >,
-    pub m_OpeningTagUnicodeArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u32>,
     >,
-    pub m_ClosingTagUnicodeArray: quest_hook::libil2cpp::Gc<
+    pub m_ClosingTagArray: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<u32>,
     >,
 }
@@ -246,7 +240,7 @@ impl crate::TMPro::TMP_Style {
     pub fn get_styleClosingTagArray(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -255,7 +249,7 @@ impl crate::TMPro::TMP_Style {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<i32>,
+                            quest_hook::libil2cpp::Il2CppArray<u32>,
                         >,
                         0usize,
                     >("get_styleClosingTagArray")
@@ -268,7 +262,7 @@ impl crate::TMPro::TMP_Style {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Il2CppArray<u32>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -302,7 +296,7 @@ impl crate::TMPro::TMP_Style {
     pub fn get_styleOpeningTagArray(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -311,7 +305,7 @@ impl crate::TMPro::TMP_Style {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<i32>,
+                            quest_hook::libil2cpp::Il2CppArray<u32>,
                         >,
                         0usize,
                     >("get_styleOpeningTagArray")
@@ -324,7 +318,7 @@ impl crate::TMPro::TMP_Style {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<i32>,
+            quest_hook::libil2cpp::Il2CppArray<u32>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

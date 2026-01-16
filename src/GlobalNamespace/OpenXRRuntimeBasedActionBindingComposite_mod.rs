@@ -43,6 +43,7 @@ for crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
 }
 #[cfg(feature = "OpenXRRuntimeBasedActionBindingComposite")]
 impl crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
+    pub const OCULUS_RUNTIME_NAME: &'static str = "Oculus";
     pub fn EvaluateMagnitude(
         &mut self,
         context: quest_hook::libil2cpp::ByRefMut<
@@ -102,6 +103,66 @@ impl crate::GlobalNamespace::OpenXRRuntimeBasedActionBindingComposite {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ReadOculusRuntimeValue(
+        &mut self,
+        context: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                        >),
+                        f32,
+                        1usize,
+                    >("ReadOculusRuntimeValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadOculusRuntimeValue", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ReadOtherRuntimeValue(
+        &mut self,
+        context: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::InputSystem::InputBindingCompositeContext,
+                        >),
+                        f32,
+                        1usize,
+                    >("ReadOtherRuntimeValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReadOtherRuntimeValue", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context))?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn ReadValue(
         &mut self,

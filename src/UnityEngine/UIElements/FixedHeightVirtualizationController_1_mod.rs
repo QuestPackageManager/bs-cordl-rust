@@ -7,6 +7,7 @@ pub struct FixedHeightVirtualizationController_1<T: quest_hook::libil2cpp::Type>
     __cordl_parent: crate::UnityEngine::UIElements::VerticalVirtualizationController_1<
         T,
     >,
+    pub m_ScrolledToItemIndex: crate::System::Nullable_1<i32>,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(
@@ -210,6 +211,40 @@ impl<
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (collectionView))?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnGeometryChangedEvent(
+        &mut self,
+        _cordl__: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::GeometryChangedEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::GeometryChangedEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnGeometryChangedEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnGeometryChangedEvent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (_cordl__))?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn OnScroll(
         &mut self,

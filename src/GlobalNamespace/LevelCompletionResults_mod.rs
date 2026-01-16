@@ -421,6 +421,20 @@ for crate::GlobalNamespace::LevelCompletionResults {
     }
 }
 #[cfg(feature = "LevelCompletionResults")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::LevelCompletionResults {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LevelCompletionResults")]
 impl AsRef<
     crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,

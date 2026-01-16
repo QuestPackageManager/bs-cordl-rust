@@ -59,9 +59,18 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
         songController: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::SongController,
         >,
+        timeSync: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioTimeSyncController,
+        >,
         gamePause: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
         sceneSetupData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayCoreSceneSetupData,
+        >,
+        objectManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapObjectManager,
+        >,
+        callbackController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
         >,
         overrideConfig: crate::System::Nullable_1<
             crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
@@ -89,23 +98,32 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
                                 crate::GlobalNamespace::SongController,
                             >,
                             quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::AudioTimeSyncController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IGamePause,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::GameplayCoreSceneSetupData,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapObjectManager,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapCallbacksController,
                             >,
                             crate::System::Nullable_1<
                                 crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        8usize,
+                        11usize,
                     >("Initialize")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Initialize", 8usize
+                            "Initialize", 11usize
                         )
                     })
             });
@@ -119,8 +137,11 @@ impl crate::GlobalNamespace::PerformanceToolLauncher {
                         mainCamera,
                         recPlayState,
                         songController,
+                        timeSync,
                         gamePause,
                         sceneSetupData,
+                        objectManager,
+                        callbackController,
                         overrideConfig,
                     ),
                 )?

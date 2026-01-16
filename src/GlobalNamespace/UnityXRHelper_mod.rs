@@ -4,10 +4,10 @@
 pub struct UnityXRHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _leftControllerConfiguration: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::UnityXRController_Configuration,
+        crate::GlobalNamespace::ControllerConfiguration,
     >,
     pub _rightControllerConfiguration: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::UnityXRController_Configuration,
+        crate::GlobalNamespace::ControllerConfiguration,
     >,
     pub _userPresenceActionReference: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputActionReference,
@@ -44,14 +44,11 @@ pub struct UnityXRHelper {
     pub _headOrientationAction: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputAction,
     >,
-    pub _userPresenceAction: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::InputSystem::InputAction,
-    >,
     pub _pauseGameAction: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::InputAction,
     >,
-    pub _scrollingLastFrame: bool,
     pub _userPresence: bool,
+    pub _hasInputFocus: bool,
     pub _isPausePressed: bool,
     pub _wasPausePressedThisFrame: bool,
 }
@@ -89,38 +86,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UnityXRHelper {
 }
 #[cfg(feature = "UnityXRHelper")]
 impl crate::GlobalNamespace::UnityXRHelper {
-    #[cfg(feature = "UnityXRHelper+VRControllerManufacturerName")]
-    pub type VRControllerManufacturerName = crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName;
-    pub fn ControllerFromNode(
-        &mut self,
-        node: crate::UnityEngine::XR::XRNode,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::XR::XRNode),
-                        quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::UnityXRController,
-                        >,
-                        1usize,
-                    >("ControllerFromNode")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ControllerFromNode", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::UnityXRController,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
-        Ok(__cordl_ret.into())
-    }
     pub fn GetAnyJoystickMaxAxis(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
@@ -144,6 +109,36 @@ impl crate::GlobalNamespace::UnityXRHelper {
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetControllerFromNode(
+        &mut self,
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UnityXRController>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::XR::XRNode),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::UnityXRController,
+                        >,
+                        1usize,
+                    >("GetControllerFromNode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetControllerFromNode", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::UnityXRController,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (node))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMenuButton(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -183,7 +178,7 @@ impl crate::GlobalNamespace::UnityXRHelper {
     pub fn GetNodePose(
         &mut self,
         nodeType: crate::UnityEngine::XR::XRNode,
-        idx: i32,
+        id: i32,
         pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         rot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -212,63 +207,11 @@ impl crate::GlobalNamespace::UnityXRHelper {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (nodeType, idx, pos, rot))?
+            cordl_method_info.invoke_unchecked(self, (nodeType, id, pos, rot))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPoseOffsetForManufacturer(
-        &mut self,
-        manufacturerName: crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName),
-                        crate::UnityEngine::Pose,
-                        1usize,
-                    >("GetPoseOffsetForManufacturer")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPoseOffsetForManufacturer", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info.invoke_unchecked(self, (manufacturerName))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetRootPositionOffsetForLegacyNodePose_UnityXRHelper_VRControllerManufacturerName1(
-        &mut self,
-        manufacturerName: crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName),
-                        crate::UnityEngine::Pose,
-                        1usize,
-                    >("GetRootPositionOffsetForLegacyNodePose")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetRootPositionOffsetForLegacyNodePose", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Pose = unsafe {
-            cordl_method_info.invoke_unchecked(self, (manufacturerName))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetRootPositionOffsetForLegacyNodePose_XRNode0(
+    pub fn GetRootPositionOffsetForLegacyNodePose(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Pose> {
@@ -346,6 +289,34 @@ impl crate::GlobalNamespace::UnityXRHelper {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn HandleBoundaryChanged(
+        &mut self,
+        inputSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::XR::XRInputSubsystem,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleBoundaryChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleBoundaryChanged", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inputSystem))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleNewXRNode(
         &mut self,
         state: crate::UnityEngine::XR::XRNodeState,
@@ -372,6 +343,58 @@ impl crate::GlobalNamespace::UnityXRHelper {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn HandlePauseGameCancelled(
+        &mut self,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandlePauseGameCancelled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandlePauseGameCancelled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandlePauseGamePerformed(
+        &mut self,
+        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandlePauseGamePerformed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandlePauseGamePerformed", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (context))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn HandleRemovedXRNode(
         &mut self,
         state: crate::UnityEngine::XR::XRNodeState,
@@ -395,6 +418,34 @@ impl crate::GlobalNamespace::UnityXRHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (state))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn HandleTrackingOriginUpdated(
+        &mut self,
+        inputSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::XR::XRInputSubsystem,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("HandleTrackingOriginUpdated")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleTrackingOriginUpdated", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (inputSystem))?
         };
         Ok(__cordl_ret.into())
     }
@@ -499,166 +550,6 @@ impl crate::GlobalNamespace::UnityXRHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OnPauseGameCancelled(
-        &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnPauseGameCancelled")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnPauseGameCancelled", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnPauseGamePerformed(
-        &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnPauseGamePerformed")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnPauseGamePerformed", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnTrackingOriginUpdated(
-        &mut self,
-        inputSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::XR::XRInputSubsystem,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnTrackingOriginUpdated")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnTrackingOriginUpdated", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inputSystem))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnUserPresenceCanceled(
-        &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnUserPresenceCanceled")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnUserPresenceCanceled", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnUserPresenceStarted(
-        &mut self,
-        context: crate::UnityEngine::InputSystem::InputAction_CallbackContext,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::InputSystem::InputAction_CallbackContext),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnUserPresenceStarted")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnUserPresenceStarted", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (context))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnboundaryChanged(
-        &mut self,
-        inputSystem: quest_hook::libil2cpp::Gc<crate::UnityEngine::XR::XRInputSubsystem>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::XR::XRInputSubsystem,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnboundaryChanged")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnboundaryChanged", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (inputSystem))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn ReadHeadPose(
         &mut self,
         pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -713,6 +604,58 @@ impl crate::GlobalNamespace::UnityXRHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetInputFocus(
+        &mut self,
+        newInputFocus: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetInputFocus")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetInputFocus", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (newInputFocus))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUserPresence(
+        &mut self,
+        newUserPresence: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetUserPresence")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUserPresence", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (newUserPresence))?
         };
         Ok(__cordl_ret.into())
     }
@@ -793,39 +736,7 @@ impl crate::GlobalNamespace::UnityXRHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn TryGetLegacyPoseOffsetForNode_UnityXRHelper_VRControllerManufacturerName1(
-        manufacturerName: crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
-        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                        ),
-                        bool,
-                        3usize,
-                    >("TryGetLegacyPoseOffsetForNode")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TryGetLegacyPoseOffsetForNode", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info
-                .invoke_unchecked((), (manufacturerName, position, rotation))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn TryGetLegacyPoseOffsetForNode_XRNode0(
+    pub fn TryGetLegacyPoseOffsetForNode(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
         position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
@@ -887,6 +798,27 @@ impl crate::GlobalNamespace::UnityXRHelper {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Update(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Update")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Update",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateManufacturerOnNode(
         &mut self,
         node: crate::UnityEngine::XR::XRNode,
@@ -910,6 +842,31 @@ impl crate::GlobalNamespace::UnityXRHelper {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (node))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateUserPresence(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("UpdateUserPresence")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateUserPresence", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1537,32 +1494,6 @@ impl crate::GlobalNamespace::UnityXRHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_userPresence(
-        &mut self,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_userPresence")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_userPresence", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
 }
 #[cfg(feature = "cordl_class_UnityXRHelper")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UnityXRHelper {
@@ -1599,101 +1530,5 @@ impl AsMut<crate::GlobalNamespace::IVerboseLogger>
 for crate::GlobalNamespace::UnityXRHelper {
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IVerboseLogger {
         unsafe { std::mem::transmute(self) }
-    }
-}
-#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
-pub enum UnityXRHelper_VRControllerManufacturerName {
-    #[default]
-    HTC = 1i32,
-    Microsoft = 4i32,
-    Oculus = 2i32,
-    Undefined = 0i32,
-    Unknown = 5i32,
-    Valve = 3i32,
-}
-#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
-    type Held<'a> = Self;
-    type HeldRaw = Self;
-    const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "UnityXRHelper/VRControllerManufacturerName";
-    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
-    }
-    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
-    }
-    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
-    }
-    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
-    }
-}
-#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
-    }
-    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
-        self as *mut Self as *mut ::std::ffi::c_void
-    }
-}
-#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
-        actual
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
-        self
-    }
-}
-#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
-    }
-    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
-        unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
-        }
-    }
-}
-#[cfg(feature = "cordl_class_UnityXRHelper+VRControllerManufacturerName")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::UnityXRHelper_VRControllerManufacturerName {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
-        self
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
-        actual
     }
 }

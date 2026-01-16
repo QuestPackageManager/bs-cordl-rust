@@ -99,6 +99,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
     pub fn GetBeatmapLevelById(
         &mut self,
         levelId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
     > {
@@ -107,21 +108,26 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-                        1usize,
+                        2usize,
                     >("GetBeatmapLevelById")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBeatmapLevelById", 1usize
+                            "GetBeatmapLevelById", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevel,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (levelId, ignoreCase))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetBeatmapLevelPackByBeatmapLevelId(
@@ -157,6 +163,7 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
     pub fn GetBeatmapLevelPackByPackId(
         &mut self,
         packId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        ignoreCase: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     > {
@@ -165,23 +172,28 @@ impl crate::GlobalNamespace::BeatmapLevelsRepository {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            bool,
+                        ),
                         quest_hook::libil2cpp::Gc<
                             crate::GlobalNamespace::BeatmapLevelPack,
                         >,
-                        1usize,
+                        2usize,
                     >("GetBeatmapLevelPackByPackId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBeatmapLevelPackByPackId", 1usize
+                            "GetBeatmapLevelPackByPackId", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelPack,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (packId))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (packId, ignoreCase))? };
         Ok(__cordl_ret.into())
     }
     pub fn New(

@@ -14,6 +14,12 @@ pub struct TutorialInstaller {
     pub _sceneSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::TutorialSceneSetupData,
     >,
+    pub _environmentSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentSceneSetupData,
+    >,
+    pub _gameplayAdditionalInformationSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayAdditionalInformationSetupData,
+    >,
 }
 #[cfg(feature = "cordl_class_TutorialInstaller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::TutorialInstaller {

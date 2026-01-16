@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct FinishTutorialAchievementHandler {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _achievementsModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementsModelSO,
+    pub _platform: quest_hook::libil2cpp::Gc<
+        crate::OculusStudios::Platform::Core::IPlatform,
     >,
     pub _tutorialFinishedSignal: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::Signal,

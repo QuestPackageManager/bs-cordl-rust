@@ -4,7 +4,7 @@
 pub struct MultiplayerConnectedPlayerObservable {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerConnectedPlayerObservable")]
@@ -45,7 +45,7 @@ for crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
 impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     pub fn New(
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -57,7 +57,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
     pub fn _ctor(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -66,7 +66,7 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerObservable {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

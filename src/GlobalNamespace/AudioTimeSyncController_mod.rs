@@ -30,13 +30,15 @@ pub struct AudioTimeSyncController {
     pub _timeScale: f32,
     pub _songTime: f32,
     pub _dspTimeOffset: f64,
-    pub _state: crate::GlobalNamespace::AudioTimeSyncController_State,
+    pub _state: crate::GlobalNamespace::IAudioTimeSource_State,
     pub _songLoadingStarted: bool,
     pub _canStartSong: bool,
     pub _isReady: bool,
     pub _lastFrameDeltaSongTime: f32,
     pub _forceNoAudioSyncOrAudioSyncErrorFixing: bool,
     pub _inBetweenDSPBufferingTimeEstimate: f32,
+    pub _failReportCount: i32,
+    pub _lastState: crate::GlobalNamespace::IAudioTimeSource_State,
 }
 #[cfg(feature = "cordl_class_AudioTimeSyncController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -75,8 +77,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AudioTimeSyncController {
 impl crate::GlobalNamespace::AudioTimeSyncController {
     #[cfg(feature = "AudioTimeSyncController+InitData")]
     pub type InitData = crate::GlobalNamespace::AudioTimeSyncController_InitData;
-    #[cfg(feature = "AudioTimeSyncController+State")]
-    pub type State = crate::GlobalNamespace::AudioTimeSyncController_State;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -326,7 +326,7 @@ impl crate::GlobalNamespace::AudioTimeSyncController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _get_waitUntilAudioIsLoaded_b__32_0(
+    pub fn _get_waitUntilAudioIsLoaded_b__31_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -337,12 +337,12 @@ impl crate::GlobalNamespace::AudioTimeSyncController {
                         (),
                         bool,
                         0usize,
-                    >("<get_waitUntilAudioIsLoaded>b__32_0")
+                    >("<get_waitUntilAudioIsLoaded>b__31_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<get_waitUntilAudioIsLoaded>b__32_0", 0usize
+                            "<get_waitUntilAudioIsLoaded>b__31_0", 0usize
                         )
                     })
             });
@@ -570,16 +570,14 @@ impl crate::GlobalNamespace::AudioTimeSyncController {
     }
     pub fn get_state(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::AudioTimeSyncController_State,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::IAudioTimeSource_State> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::GlobalNamespace::AudioTimeSyncController_State,
+                        crate::GlobalNamespace::IAudioTimeSource_State,
                         0usize,
                     >("get_state")
                     .unwrap_or_else(|e| {
@@ -590,7 +588,7 @@ impl crate::GlobalNamespace::AudioTimeSyncController {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::AudioTimeSyncController_State = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::IAudioTimeSource_State = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -840,98 +838,5 @@ for crate::GlobalNamespace::AudioTimeSyncController_InitData {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
-    }
-}
-#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
-#[repr(i32)]
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
-pub enum AudioTimeSyncController_State {
-    #[default]
-    Paused = 1i32,
-    Playing = 0i32,
-    Stopped = 2i32,
-}
-#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
-unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::AudioTimeSyncController_State {
-    type Held<'a> = Self;
-    type HeldRaw = Self;
-    const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AudioTimeSyncController/State";
-    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
-    }
-    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
-    }
-    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
-    }
-    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
-    }
-}
-#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::AudioTimeSyncController_State {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
-    }
-    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
-        self as *mut Self as *mut ::std::ffi::c_void
-    }
-}
-#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
-unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::AudioTimeSyncController_State {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
-        actual
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
-        self
-    }
-}
-#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::AudioTimeSyncController_State {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
-    }
-    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
-        unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
-        }
-    }
-}
-#[cfg(feature = "cordl_class_AudioTimeSyncController+State")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::AudioTimeSyncController_State {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
-        self
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
-        actual
     }
 }

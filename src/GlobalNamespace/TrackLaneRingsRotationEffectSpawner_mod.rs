@@ -15,7 +15,7 @@ pub struct TrackLaneRingsRotationEffectSpawner {
     pub _beatmapCallbacksController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCallbacksController,
     >,
-    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
     pub _beatmapDataCallbackWrapper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapDataCallbackWrapper,
     >,

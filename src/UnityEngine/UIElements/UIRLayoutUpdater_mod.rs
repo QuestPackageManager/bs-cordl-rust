@@ -5,7 +5,8 @@ pub struct UIRLayoutUpdater {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVisualTreeUpdater,
     pub changeEventsList: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            crate::System::Collections::Generic::KeyValuePair_2<
+            crate::System::ValueTuple_3<
+                crate::UnityEngine::Rect,
                 crate::UnityEngine::Rect,
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
             >,
@@ -51,7 +52,8 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
         &mut self,
         changeEvents: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
+                crate::System::ValueTuple_3<
+                    crate::UnityEngine::Rect,
                     crate::UnityEngine::Rect,
                     quest_hook::libil2cpp::Gc<
                         crate::UnityEngine::UIElements::VisualElement,
@@ -69,7 +71,8 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
                         (
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::Generic::List_1<
-                                    crate::System::Collections::Generic::KeyValuePair_2<
+                                    crate::System::ValueTuple_3<
+                                        crate::UnityEngine::Rect,
                                         crate::UnityEngine::Rect,
                                         quest_hook::libil2cpp::Gc<
                                             crate::UnityEngine::UIElements::VisualElement,
@@ -155,13 +158,67 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn UpdateHierarchyDisplayed(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        changeEvents: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::System::ValueTuple_3<
+                    crate::UnityEngine::Rect,
+                    crate::UnityEngine::Rect,
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::VisualElement,
+                    >,
+                >,
+            >,
+        >,
+        inheritedDisplayed: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::System::ValueTuple_3<
+                                        crate::UnityEngine::Rect,
+                                        crate::UnityEngine::Rect,
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::UIElements::VisualElement,
+                                        >,
+                                    >,
+                                >,
+                            >,
+                            bool,
+                        ),
+                        bool,
+                        3usize,
+                    >("UpdateHierarchyDisplayed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateHierarchyDisplayed", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (ve, changeEvents, inheritedDisplayed))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn UpdateSubTree(
         &mut self,
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        isDisplayed: bool,
         changeEvents: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                crate::System::Collections::Generic::KeyValuePair_2<
+                crate::System::ValueTuple_3<
+                    crate::UnityEngine::Rect,
                     crate::UnityEngine::Rect,
                     quest_hook::libil2cpp::Gc<
                         crate::UnityEngine::UIElements::VisualElement,
@@ -179,10 +236,10 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
-                            bool,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::Generic::List_1<
-                                    crate::System::Collections::Generic::KeyValuePair_2<
+                                    crate::System::ValueTuple_3<
+                                        crate::UnityEngine::Rect,
                                         crate::UnityEngine::Rect,
                                         quest_hook::libil2cpp::Gc<
                                             crate::UnityEngine::UIElements::VisualElement,
@@ -192,18 +249,18 @@ impl crate::UnityEngine::UIElements::UIRLayoutUpdater {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        2usize,
                     >("UpdateSubTree")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateSubTree", 3usize
+                            "UpdateSubTree", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ve, isDisplayed, changeEvents))?
+            cordl_method_info.invoke_unchecked(self, (ve, changeEvents))?
         };
         Ok(__cordl_ret.into())
     }

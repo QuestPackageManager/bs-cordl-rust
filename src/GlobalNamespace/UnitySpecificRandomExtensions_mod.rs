@@ -40,14 +40,14 @@ impl std::ops::DerefMut for crate::GlobalNamespace::UnitySpecificRandomExtension
 #[cfg(feature = "UnitySpecificRandomExtensions")]
 impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
     pub fn InsideUnitSphere(
-        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Random>),
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>),
                         crate::UnityEngine::Vector3,
                         1usize,
                     >("InsideUnitSphere")
@@ -65,14 +65,14 @@ impl crate::GlobalNamespace::UnitySpecificRandomExtensions {
         Ok(__cordl_ret.into())
     }
     pub fn OnUnitSphere(
-        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Random>),
+                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>),
                         crate::UnityEngine::Vector3,
                         1usize,
                     >("OnUnitSphere")

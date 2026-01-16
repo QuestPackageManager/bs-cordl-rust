@@ -3,6 +3,11 @@
 #[derive(Debug)]
 pub struct ObstacleController {
     __cordl_parent: crate::GlobalNamespace::ObstacleControllerBase,
+    pub _layerSwitch: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
+        >,
+    >,
     pub _stretchableObstacle: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StretchableObstacle,
     >,
@@ -100,6 +105,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleController {
 #[cfg(feature = "ObstacleController")]
 impl crate::GlobalNamespace::ObstacleController {
     pub const kAvoidMarkTimeOffset: f32 = 0.15f32;
+    #[cfg(feature = "ObstacleController+Layers")]
+    pub type Layers = crate::GlobalNamespace::ObstacleController_Layers;
     #[cfg(feature = "ObstacleController+Pool")]
     pub type Pool = crate::GlobalNamespace::ObstacleController_Pool;
     pub fn Dissolve(
@@ -921,6 +928,57 @@ impl AsMut<crate::GlobalNamespace::IBeatmapObjectController>
 for crate::GlobalNamespace::ObstacleController {
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatmapObjectController {
         unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "cordl_class_ObstacleController+Layers")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct ObstacleController_Layers {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_ObstacleController+Layers")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::ObstacleController_Layers {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "ObstacleController/Layers";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "ObstacleController+Layers")]
+impl std::ops::Deref for crate::GlobalNamespace::ObstacleController_Layers {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "ObstacleController+Layers")]
+impl std::ops::DerefMut for crate::GlobalNamespace::ObstacleController_Layers {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "ObstacleController+Layers")]
+impl crate::GlobalNamespace::ObstacleController_Layers {}
+#[cfg(feature = "cordl_class_ObstacleController+Layers")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::ObstacleController_Layers {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
 #[cfg(feature = "cordl_class_ObstacleController+Pool")]

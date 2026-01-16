@@ -66,6 +66,37 @@ impl crate::UnityEngine::UIElements::AlignmentUtils {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn RoundToPanelPixelSize(
+        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        v: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            f32,
+                        ),
+                        f32,
+                        2usize,
+                    >("RoundToPanelPixelSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RoundToPanelPixelSize", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (ve, v))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn RoundToPixelGrid(
         v: f32,
         pixelsPerPoint: f32,

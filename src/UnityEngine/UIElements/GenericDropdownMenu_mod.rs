@@ -29,6 +29,11 @@ pub struct GenericDropdownMenu {
     pub m_NavigationManipulator: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::KeyboardNavigationManipulator,
     >,
+    pub m_PositionTop: f32,
+    pub m_PositionLeft: f32,
+    pub m_ContentWidth: f32,
+    pub m_FitContentWidth: bool,
+    pub m_ShownAboveTarget: bool,
     pub _isSingleSelectionDropdown_k__BackingField: bool,
     pub _closeOnParentResize_k__BackingField: bool,
     pub m_MousePosition: crate::UnityEngine::Vector2,
@@ -405,6 +410,23 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetLargestItemWidth(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), f32, 0usize>("GetLargestItemWidth")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetLargestItemWidth", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSelectedIndex(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -561,6 +583,36 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "OnFocusOut", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnInitialDisplay(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::GeometryChangedEvent,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::GeometryChangedEvent,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnInitialDisplay")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnInitialDisplay", 1usize
                         )
                     })
             });
@@ -773,7 +825,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Apply_g__UpdateSelectionDown_39_0(
+    pub fn _Apply_g__UpdateSelectionDown_48_0(
         &mut self,
         newIndex: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
@@ -795,12 +847,12 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("<Apply>g__UpdateSelectionDown|39_0")
+                    >("<Apply>g__UpdateSelectionDown|48_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Apply>g__UpdateSelectionDown|39_0", 2usize
+                            "<Apply>g__UpdateSelectionDown|48_0", 2usize
                         )
                     })
             });
@@ -810,7 +862,7 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Apply_g__UpdateSelectionUp_39_1(
+    pub fn _Apply_g__UpdateSelectionUp_48_1(
         &mut self,
         newIndex: i32,
         _cordl_fixed_empty_name_whitespace: quest_hook::libil2cpp::ByRefMut<
@@ -832,12 +884,12 @@ impl crate::UnityEngine::UIElements::GenericDropdownMenu {
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("<Apply>g__UpdateSelectionUp|39_1")
+                    >("<Apply>g__UpdateSelectionUp|48_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Apply>g__UpdateSelectionUp|39_1", 2usize
+                            "<Apply>g__UpdateSelectionUp|48_1", 2usize
                         )
                     })
             });

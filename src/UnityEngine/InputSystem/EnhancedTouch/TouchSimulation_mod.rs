@@ -25,8 +25,8 @@ pub struct TouchSimulation {
             >,
         >,
     >,
+    pub m_TouchIds: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     pub m_LastTouchId: i32,
-    pub m_PrimaryTouchIndex: i32,
     pub m_OnDeviceChange: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputDevice>,

@@ -5,6 +5,9 @@ pub struct BatchCullingOutput {
     pub drawCommands: crate::Unity::Collections::NativeArray_1<
         crate::UnityEngine::Rendering::BatchCullingOutputDrawCommands,
     >,
+    pub customCullingResult: crate::Unity::Collections::NativeArray_1<
+        crate::System::IntPtr,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchCullingOutput")]
 unsafe impl quest_hook::libil2cpp::Type

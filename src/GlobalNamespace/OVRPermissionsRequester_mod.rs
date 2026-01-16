@@ -42,6 +42,7 @@ impl crate::GlobalNamespace::OVRPermissionsRequester {
     pub const BodyTrackingPermission: &'static str = "com.oculus.permission.BODY_TRACKING";
     pub const EyeTrackingPermission: &'static str = "com.oculus.permission.EYE_TRACKING";
     pub const FaceTrackingPermission: &'static str = "com.oculus.permission.FACE_TRACKING";
+    pub const RecordAudioPermission: &'static str = "android.permission.RECORD_AUDIO";
     pub const ScenePermission: &'static str = "com.oculus.permission.USE_SCENE";
     #[cfg(feature = "OVRPermissionsRequester+Permission")]
     pub type Permission = crate::GlobalNamespace::OVRPermissionsRequester_Permission;
@@ -329,6 +330,7 @@ pub enum OVRPermissionsRequester_Permission {
     BodyTracking = 1i32,
     EyeTracking = 2i32,
     FaceTracking = 0i32,
+    RecordAudio = 4i32,
     Scene = 3i32,
 }
 #[cfg(feature = "cordl_class_OVRPermissionsRequester+Permission")]

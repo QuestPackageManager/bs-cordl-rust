@@ -4,31 +4,31 @@
 pub struct LobbyStateDataModel {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _unifiedNetworkPlayerModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IUnifiedNetworkPlayerModel,
     >,
     pub _connectedPlayers: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
     pub _connectedPlayersById: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
     pub _configuration: crate::GlobalNamespace::GameplayServerConfiguration,
     pub playerConnectedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
     pub playerDisconnectedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
 }
@@ -161,7 +161,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     }
     pub fn HandleMultiplayerSessionManagerPlayerConnected(
         &mut self,
-        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        player: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -169,7 +171,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -189,7 +191,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     }
     pub fn HandleMultiplayerSessionManagerPlayerDisconnected(
         &mut self,
-        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        player: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -197,7 +201,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -247,7 +251,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -259,7 +265,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >),
@@ -283,7 +289,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -295,7 +303,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >),
@@ -347,7 +355,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     > {
@@ -360,7 +370,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >,
@@ -376,7 +386,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -401,7 +413,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     pub fn get_localPlayer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -410,7 +422,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >,
                         0usize,
                     >("get_localPlayer")
@@ -423,7 +435,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -432,7 +444,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     > {
@@ -445,7 +459,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >,
@@ -461,7 +475,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
@@ -470,7 +486,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -482,7 +500,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >),
@@ -506,7 +524,9 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
         &mut self,
         value: quest_hook::libil2cpp::Gc<
             crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -518,7 +538,7 @@ impl crate::GlobalNamespace::LobbyStateDataModel {
                         (quest_hook::libil2cpp::Gc<
                             crate::System::Action_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >),

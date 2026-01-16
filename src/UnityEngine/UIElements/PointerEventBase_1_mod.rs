@@ -29,7 +29,10 @@ pub struct PointerEventBase_1<T: quest_hook::libil2cpp::Type> {
     pub _radiusVariance_k__BackingField: crate::UnityEngine::Vector2,
     pub _modifiers_k__BackingField: crate::UnityEngine::EventModifiers,
     pub _UnityEngine_UIElements_IPointerEventInternal_triggeredByOS_k__BackingField: bool,
-    pub _UnityEngine_UIElements_IPointerEventInternal_recomputeTopElementUnderPointer_k__BackingField: bool,
+    pub _UnityEngine_UIElements_IPointerEventInternal_compatibilityMouseEvent_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IMouseEvent,
+    >,
+    pub _UnityEngine_UIElements_IPointerEventInternal_displayIndex_k__BackingField: i32,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+PointerEventBase_1")]
@@ -87,6 +90,7 @@ for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::PointerEventBase_1<T> {
+    pub const k_DefaultButtonPressure: f32 = 0.5f32;
     pub fn AzimuthAndAlitutudeToTilt(
         altitude: f32,
         azimuth: f32,
@@ -114,6 +118,40 @@ impl<
             });
         let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
             cordl_method_info.invoke_unchecked((), (altitude, azimuth))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Dispatch(
+        &mut self,
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::BaseVisualElementPanel,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Dispatch")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Dispatch", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (panel))?
         };
         Ok(__cordl_ret.into())
     }
@@ -146,13 +184,14 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_EventType_Vector3_Vector2_i32_i32_EventModifiers1(
+    pub fn GetPooled_EventType_Vector3_Vector2_i32_i32_EventModifiers_i32_1(
         eventType: crate::UnityEngine::EventType,
         mousePosition: crate::UnityEngine::Vector3,
         delta: crate::UnityEngine::Vector2,
         button: i32,
         clickCount: i32,
         modifiers: crate::UnityEngine::EventModifiers,
+        displayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -170,15 +209,16 @@ impl<
                             i32,
                             i32,
                             crate::UnityEngine::EventModifiers,
+                            i32,
                         ),
                         T,
-                        6usize,
+                        7usize,
                     >("GetPooled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPooled", 6usize
+                            "GetPooled", 7usize
                         )
                     })
             });
@@ -186,12 +226,20 @@ impl<
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (eventType, mousePosition, delta, button, clickCount, modifiers),
+                    (
+                        eventType,
+                        mousePosition,
+                        delta,
+                        button,
+                        clickCount,
+                        modifiers,
+                        displayIndex,
+                    ),
                 )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_IPointerEvent5(
+    pub fn GetPooled_IPointerEvent6(
         triggerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IPointerEvent,
         >,
@@ -224,7 +272,7 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_IPointerEvent_Vector2_i32_4(
+    pub fn GetPooled_IPointerEvent_Vector2_i32_5(
         triggerEvent: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IPointerEvent,
         >,
@@ -263,9 +311,10 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_PenData_EventModifiers3(
+    pub fn GetPooled_PenData_EventModifiers_i32_3(
         pen: crate::UnityEngine::PenData,
         modifiers: crate::UnityEngine::EventModifiers,
+        displayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -279,26 +328,30 @@ impl<
                         (
                             crate::UnityEngine::PenData,
                             crate::UnityEngine::EventModifiers,
+                            i32,
                         ),
                         T,
-                        2usize,
+                        3usize,
                     >("GetPooled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPooled", 2usize
+                            "GetPooled", 3usize
                         )
                     })
             });
         let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (pen, modifiers))?
+            cordl_method_info.invoke_unchecked((), (pen, modifiers, displayIndex))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetPooled_Touch_EventModifiers2(
-        touch: crate::UnityEngine::Touch,
-        modifiers: crate::UnityEngine::EventModifiers,
+    pub fn GetPooled_PointerEvent_Vector2_Vector2_i32_f32_4(
+        pointerEvent: crate::UnityEngine::InputForUI::PointerEvent,
+        position: crate::UnityEngine::Vector2,
+        deltaPosition: crate::UnityEngine::Vector2,
+        pointerId: i32,
+        deltaTime: f32,
     ) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -309,20 +362,65 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (crate::UnityEngine::Touch, crate::UnityEngine::EventModifiers),
+                        (
+                            crate::UnityEngine::InputForUI::PointerEvent,
+                            crate::UnityEngine::Vector2,
+                            crate::UnityEngine::Vector2,
+                            i32,
+                            f32,
+                        ),
                         T,
-                        2usize,
+                        5usize,
                     >("GetPooled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPooled", 2usize
+                            "GetPooled", 5usize
                         )
                     })
             });
         let __cordl_ret: T = unsafe {
-            cordl_method_info.invoke_unchecked((), (touch, modifiers))?
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (pointerEvent, position, deltaPosition, pointerId, deltaTime),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPooled_Touch_EventModifiers_i32_2(
+        touch: crate::UnityEngine::Touch,
+        modifiers: crate::UnityEngine::EventModifiers,
+        displayIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Touch,
+                            crate::UnityEngine::EventModifiers,
+                            i32,
+                        ),
+                        T,
+                        3usize,
+                    >("GetPooled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPooled", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (touch, modifiers, displayIndex))?
         };
         Ok(__cordl_ret.into())
     }
@@ -565,9 +663,11 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UnityEngine_UIElements_IPointerEventInternal_get_recomputeTopElementUnderPointer(
+    pub fn UnityEngine_UIElements_IPointerEventInternal_get_compatibilityMouseEvent(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<bool>
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
+    >
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -578,21 +678,25 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        bool,
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::IMouseEvent,
+                        >,
                         0usize,
                     >(
-                        "UnityEngine.UIElements.IPointerEventInternal.get_recomputeTopElementUnderPointer",
+                        "UnityEngine.UIElements.IPointerEventInternal.get_compatibilityMouseEvent",
                     )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnityEngine.UIElements.IPointerEventInternal.get_recomputeTopElementUnderPointer",
+                            "UnityEngine.UIElements.IPointerEventInternal.get_compatibilityMouseEvent",
                             0usize
                         )
                     })
             });
-        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IMouseEvent,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn UnityEngine_UIElements_IPointerEventInternal_get_triggeredByOS(
@@ -623,9 +727,9 @@ impl<
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn UnityEngine_UIElements_IPointerEventInternal_set_recomputeTopElementUnderPointer(
+    pub fn UnityEngine_UIElements_IPointerEventInternal_set_compatibilityMouseEvent(
         &mut self,
-        value: bool,
+        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -636,17 +740,50 @@ impl<
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (bool),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::IMouseEvent,
+                        >),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >(
-                        "UnityEngine.UIElements.IPointerEventInternal.set_recomputeTopElementUnderPointer",
+                        "UnityEngine.UIElements.IPointerEventInternal.set_compatibilityMouseEvent",
                     )
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UnityEngine.UIElements.IPointerEventInternal.set_recomputeTopElementUnderPointer",
+                            "UnityEngine.UIElements.IPointerEventInternal.set_compatibilityMouseEvent",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UnityEngine_UIElements_IPointerEventInternal_set_displayIndex(
+        &mut self,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UnityEngine.UIElements.IPointerEventInternal.set_displayIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UnityEngine.UIElements.IPointerEventInternal.set_displayIndex",
                             1usize
                         )
                     })
@@ -2006,6 +2143,24 @@ impl<
 > AsMut<crate::UnityEngine::UIElements::IPointerEventInternal>
 for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
     fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IPointerEventInternal {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::UnityEngine::UIElements::IPointerOrMouseEvent>
+for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
+    fn as_ref(&self) -> &crate::UnityEngine::UIElements::IPointerOrMouseEvent {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "UnityEngine+UIElements+PointerEventBase_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::UnityEngine::UIElements::IPointerOrMouseEvent>
+for crate::UnityEngine::UIElements::PointerEventBase_1<T> {
+    fn as_mut(&mut self) -> &mut crate::UnityEngine::UIElements::IPointerOrMouseEvent {
         unsafe { std::mem::transmute(self) }
     }
 }

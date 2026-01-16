@@ -184,6 +184,28 @@ impl crate::System::DateTime {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn AddMinutes(
+        &mut self,
+        value: f64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(f64), crate::System::DateTime, 1usize>("AddMinutes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddMinutes", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn AddMonths(
         &mut self,
         months: i32,

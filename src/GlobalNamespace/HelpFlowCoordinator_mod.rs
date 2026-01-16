@@ -21,6 +21,9 @@ pub struct HelpFlowCoordinator {
     pub _playerDataModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerDataModel,
     >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
+    >,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::HelpFlowCoordinator>,

@@ -99,23 +99,23 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
         Ok(__cordl_ret.into())
     }
     pub fn LoadSceneAsyncNameIndexInternal_Injected(
-        sceneName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        sceneName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         sceneBuildIndex: i32,
         parameters: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::SceneManagement::LoadSceneParameters,
         >,
         mustCompleteNextFrame: bool,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
@@ -123,7 +123,7 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
                             >,
                             bool,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
+                        crate::System::IntPtr,
                         4usize,
                     >("LoadSceneAsyncNameIndexInternal_Injected")
                     .unwrap_or_else(|e| {
@@ -134,7 +134,7 @@ impl crate::UnityEngine::SceneManagement::SceneManagerAPIInternal {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation> = unsafe {
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     (),

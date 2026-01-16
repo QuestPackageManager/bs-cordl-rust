@@ -305,7 +305,6 @@ pub enum PlatformInternal_MessageTypeInternal {
     Room_GetNamedRooms = 125660812u32,
     Room_GetSocialRooms = 1636310390u32,
     User_CancelRecordingForReportFlow = 65065289u32,
-    User_GetLinkedAccounts = 1469314134u32,
     User_GetUserCapabilities = 303837564u32,
     User_LaunchReportFlow = 1449304081u32,
     User_LaunchReportFlow2 = 2139314275u32,

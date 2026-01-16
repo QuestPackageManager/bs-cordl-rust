@@ -167,7 +167,16 @@ impl crate::System::Net::Http::HttpClient {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_HttpMessageHandler__cordl_bool1(
+    pub fn New_HttpMessageHandler1(
+        handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (handler))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_HttpMessageHandler__cordl_bool2(
         handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
         disposeHandler: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -176,6 +185,57 @@ impl crate::System::Net::Http::HttpClient {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", (handler, disposeHandler))?;
         Ok(__cordl_object.into())
+    }
+    pub fn PostAsync(
+        &mut self,
+        requestUri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
+        content: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpContent>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::System::Uri>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Net::Http::HttpContent,
+                            >,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Net::Http::HttpResponseMessage,
+                                >,
+                            >,
+                        >,
+                        3usize,
+                    >("PostAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "PostAsync", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpResponseMessage>,
+            >,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (requestUri, content, cancellationToken))?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn SendAsyncWorker(
         &mut self,
@@ -444,7 +504,35 @@ impl crate::System::Net::Http::HttpClient {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_HttpMessageHandler__cordl_bool1(
+    pub fn _ctor_HttpMessageHandler1(
+        &mut self,
+        handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::HttpMessageHandler,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (handler))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_HttpMessageHandler__cordl_bool2(
         &mut self,
         handler: quest_hook::libil2cpp::Gc<crate::System::Net::Http::HttpMessageHandler>,
         disposeHandler: bool,

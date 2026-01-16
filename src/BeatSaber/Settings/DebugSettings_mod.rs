@@ -3,6 +3,7 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct DebugSettings {
     pub showBeatmapLevelVersion: bool,
+    pub disableVRTrackingInAutoplayPS4: bool,
 }
 #[cfg(feature = "cordl_class_BeatSaber+Settings+DebugSettings")]
 unsafe impl quest_hook::libil2cpp::Type for crate::BeatSaber::Settings::DebugSettings {

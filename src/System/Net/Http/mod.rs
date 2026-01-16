@@ -4,6 +4,9 @@ pub use ByteArrayContent_mod::*;
 // class ClientCertificateOption_mod; export all
 mod ClientCertificateOption_mod;
 pub use ClientCertificateOption_mod::*;
+// class FormUrlEncodedContent_mod; export all
+mod FormUrlEncodedContent_mod;
+pub use FormUrlEncodedContent_mod::*;
 // namespace Headers;
 pub mod Headers;
 // class HttpClientHandler_mod; export all
@@ -45,6 +48,12 @@ pub use IMonoHttpClientHandler_mod::*;
 // class MonoWebRequestHandler_mod; export all
 mod MonoWebRequestHandler_mod;
 pub use MonoWebRequestHandler_mod::*;
+// class MultipartContent_mod; export all
+mod MultipartContent_mod;
+pub use MultipartContent_mod::*;
+// class MultipartFormDataContent_mod; export all
+mod MultipartFormDataContent_mod;
+pub use MultipartFormDataContent_mod::*;
 // class PlatformHelper_mod; export all
 mod PlatformHelper_mod;
 pub use PlatformHelper_mod::*;

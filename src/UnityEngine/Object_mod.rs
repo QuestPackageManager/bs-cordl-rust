@@ -40,7 +40,10 @@ impl std::ops::DerefMut for crate::UnityEngine::Object {
 #[cfg(feature = "UnityEngine+Object")]
 impl crate::UnityEngine::Object {
     pub const cloneDestroyedMessage: &'static str = "Instantiate failed because the clone was destroyed during creation. This can happen if DestroyImmediate is called in MonoBehaviour.Awake.";
+    pub const kInstanceID_None: i32 = 0i32;
     pub const objectIsNullMessage: &'static str = "The Object you want to instantiate is null.";
+    #[cfg(feature = "UnityEngine+Object+MarshalledUnityObject")]
+    pub type MarshalledUnityObject = crate::UnityEngine::Object_MarshalledUnityObject;
     pub fn CheckNullArgument(
         arg: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
         message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -118,6 +121,32 @@ impl crate::UnityEngine::Object {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn DestroyImmediate_Injected(
+        obj: crate::System::IntPtr,
+        allowDestroyingAssets: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("DestroyImmediate_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DestroyImmediate_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, allowDestroyingAssets))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn DestroyImmediate_Object1(
@@ -222,6 +251,32 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Destroy_Injected(
+        obj: crate::System::IntPtr,
+        t: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, f32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Destroy_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Destroy_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, t))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Destroy_Object1(
         obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -315,6 +370,31 @@ impl crate::UnityEngine::Object {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "DontDestroyOnLoad", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (target))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn DontDestroyOnLoad_Injected(
+        target: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("DontDestroyOnLoad_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DontDestroyOnLoad_Injected", 1usize
                         )
                     })
             });
@@ -613,6 +693,31 @@ impl crate::UnityEngine::Object {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+            cordl_method_info.invoke_unchecked((), (instanceID))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindObjectFromInstanceID_Injected(
+        instanceID: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("FindObjectFromInstanceID_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindObjectFromInstanceID_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (instanceID))?
         };
         Ok(__cordl_ret.into())
@@ -1148,6 +1253,31 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ForceLoadFromInstanceID_Injected(
+        instanceID: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i32),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ForceLoadFromInstanceID_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ForceLoadFromInstanceID_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (instanceID))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetCachedPtr(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -1204,7 +1334,7 @@ impl crate::UnityEngine::Object {
         Ok(__cordl_ret.into())
     }
     pub fn GetName(
-        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -1212,22 +1342,55 @@ impl crate::UnityEngine::Object {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>),
+                    .find_method::<
+                        (),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        1usize,
+                        0usize,
                     >("GetName")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "GetName",
-                            1usize
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (obj))? };
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetName_Injected(
+        _unity_self: crate::System::IntPtr,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetName_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetName_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, ret))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetOffsetOfInstanceIDInCPlusPlusObject() -> quest_hook::libil2cpp::Result<
@@ -1251,6 +1414,80 @@ impl crate::UnityEngine::Object {
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetPtrFromInstanceID(
+        instanceID: i32,
+        objectType: quest_hook::libil2cpp::Gc<crate::System::Type>,
+        isMonoBehaviour: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::System::Type>,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                        ),
+                        crate::System::IntPtr,
+                        3usize,
+                    >("GetPtrFromInstanceID")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPtrFromInstanceID", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (instanceID, objectType, isMonoBehaviour))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_InstantiateParameters_CancellationToken12<T>(
+        original: T,
+        parameters: crate::UnityEngine::InstantiateParameters,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            crate::UnityEngine::InstantiateParameters,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+                        >,
+                        3usize,
+                    >("InstantiateAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateAsync", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (original, parameters, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_T0<T>(
@@ -1401,6 +1638,57 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn InstantiateAsync_Vector3_Quaternion_InstantiateParameters_CancellationToken14<
+        T,
+    >(
+        original: T,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parameters: crate::UnityEngine::InstantiateParameters,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::InstantiateParameters,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+                        >,
+                        5usize,
+                    >("InstantiateAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateAsync", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (original, position, rotation, parameters, cancellationToken),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn InstantiateAsync_i32_4<T>(
         original: T,
         count: i32,
@@ -1433,6 +1721,50 @@ impl crate::UnityEngine::Object {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AsyncInstantiateOperation_1<T>,
         > = unsafe { cordl_method_info.invoke_unchecked((), (original, count))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_i32_InstantiateParameters_CancellationToken13<T>(
+        original: T,
+        count: i32,
+        parameters: crate::UnityEngine::InstantiateParameters,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            i32,
+                            crate::UnityEngine::InstantiateParameters,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+                        >,
+                        4usize,
+                    >("InstantiateAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateAsync", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (original, count, parameters, cancellationToken))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InstantiateAsync_i32_ReadOnlySpan_1_ReadOnlySpan_1_7<T>(
@@ -1479,6 +1811,68 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn InstantiateAsync_i32_ReadOnlySpan_1_ReadOnlySpan_1_InstantiateParameters_CancellationToken16<
+        T,
+    >(
+        original: T,
+        count: i32,
+        positions: crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
+        rotations: crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
+        parameters: crate::UnityEngine::InstantiateParameters,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            i32,
+                            crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
+                            crate::System::ReadOnlySpan_1<
+                                crate::UnityEngine::Quaternion,
+                            >,
+                            crate::UnityEngine::InstantiateParameters,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+                        >,
+                        6usize,
+                    >("InstantiateAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateAsync", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        original,
+                        count,
+                        positions,
+                        rotations,
+                        parameters,
+                        cancellationToken,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn InstantiateAsync_i32_Transform5<T>(
         original: T,
         count: i32,
@@ -1520,7 +1914,7 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InstantiateAsync_i32_Transform_ReadOnlySpan_1_ReadOnlySpan_1_9<T>(
+    pub fn InstantiateAsync_i32_Transform_ReadOnlySpan_1_ReadOnlySpan_1_10<T>(
         original: T,
         count: i32,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -1563,6 +1957,61 @@ impl crate::UnityEngine::Object {
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (original, count, parent, positions, rotations))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_i32_Transform_ReadOnlySpan_1_ReadOnlySpan_1_CancellationToken11<
+        T,
+    >(
+        original: T,
+        count: i32,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        positions: crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
+        rotations: crate::System::ReadOnlySpan_1<crate::UnityEngine::Quaternion>,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::System::ReadOnlySpan_1<crate::UnityEngine::Vector3>,
+                            crate::System::ReadOnlySpan_1<
+                                crate::UnityEngine::Quaternion,
+                            >,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+                        >,
+                        6usize,
+                    >("InstantiateAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateAsync", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (original, count, parent, positions, rotations, cancellationToken),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1612,6 +2061,57 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn InstantiateAsync_i32_Transform_Vector3_Quaternion_CancellationToken9<T>(
+        original: T,
+        count: i32,
+        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            i32,
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+                        >,
+                        6usize,
+                    >("InstantiateAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateAsync", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (original, count, parent, position, rotation, cancellationToken),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn InstantiateAsync_i32_Vector3_Quaternion6<T>(
         original: T,
         count: i32,
@@ -1653,6 +2153,59 @@ impl crate::UnityEngine::Object {
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (original, count, position, rotation))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InstantiateAsync_i32_Vector3_Quaternion_InstantiateParameters_CancellationToken15<
+        T,
+    >(
+        original: T,
+        count: i32,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parameters: crate::UnityEngine::InstantiateParameters,
+        cancellationToken: crate::System::Threading::CancellationToken,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation_1<T>>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            i32,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::InstantiateParameters,
+                            crate::System::Threading::CancellationToken,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+                        >,
+                        6usize,
+                    >("InstantiateAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InstantiateAsync", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::AsyncInstantiateOperation_1<T>,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (original, count, position, rotation, parameters, cancellationToken),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -1714,7 +2267,7 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Object_Transform4(
+    pub fn Instantiate_Object_Transform6(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<
@@ -1745,7 +2298,7 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_Object_Transform__cordl_bool5(
+    pub fn Instantiate_Object_Transform__cordl_bool7(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         instantiateInWorldSpace: bool,
@@ -1848,7 +2401,7 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T6<T>(original: T) -> quest_hook::libil2cpp::Result<T>
+    pub fn Instantiate_T8<T>(original: T) -> quest_hook::libil2cpp::Result<T>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1871,7 +2424,37 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T_Transform9<T>(
+    pub fn Instantiate_T_InstantiateParameters4<T>(
+        original: T,
+        parameters: crate::UnityEngine::InstantiateParameters,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (T, crate::UnityEngine::InstantiateParameters),
+                        T,
+                        2usize,
+                    >("Instantiate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: T = unsafe {
+            cordl_method_info.invoke_unchecked((), (original, parameters))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_T_Transform11<T>(
         original: T,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     ) -> quest_hook::libil2cpp::Result<T>
@@ -1901,7 +2484,7 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T_Transform__cordl_bool10<T>(
+    pub fn Instantiate_T_Transform__cordl_bool12<T>(
         original: T,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
         worldPositionStays: bool,
@@ -1937,7 +2520,7 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T_Vector3_Quaternion7<T>(
+    pub fn Instantiate_T_Vector3_Quaternion9<T>(
         original: T,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -1968,7 +2551,45 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Instantiate_T_Vector3_Quaternion_Transform8<T>(
+    pub fn Instantiate_T_Vector3_Quaternion_InstantiateParameters5<T>(
+        original: T,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parameters: crate::UnityEngine::InstantiateParameters,
+    ) -> quest_hook::libil2cpp::Result<T>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            T,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::InstantiateParameters,
+                        ),
+                        T,
+                        4usize,
+                    >("Instantiate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Instantiate", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: T = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (original, position, rotation, parameters))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Instantiate_T_Vector3_Quaternion_Transform10<T>(
         original: T,
         position: crate::UnityEngine::Vector3,
         rotation: crate::UnityEngine::Quaternion,
@@ -2033,6 +2654,70 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Internal_CloneSingleWithParams(
+        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        parameters: crate::UnityEngine::InstantiateParameters,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            crate::UnityEngine::InstantiateParameters,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        2usize,
+                    >("Internal_CloneSingleWithParams")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_CloneSingleWithParams", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, parameters))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CloneSingleWithParams_Injected(
+        data: crate::System::IntPtr,
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InstantiateParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::InstantiateParameters,
+                            >,
+                        ),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("Internal_CloneSingleWithParams_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_CloneSingleWithParams_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, parameters))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Internal_CloneSingleWithParent(
         data: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
@@ -2062,6 +2747,33 @@ impl crate::UnityEngine::Object {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, parent, worldPositionStays))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_CloneSingleWithParent_Injected(
+        data: crate::System::IntPtr,
+        parent: crate::System::IntPtr,
+        worldPositionStays: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr, bool),
+                        crate::System::IntPtr,
+                        3usize,
+                    >("Internal_CloneSingleWithParent_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_CloneSingleWithParent_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (data, parent, worldPositionStays))?
         };
         Ok(__cordl_ret.into())
@@ -2098,25 +2810,23 @@ impl crate::UnityEngine::Object {
         Ok(__cordl_ret.into())
     }
     pub fn Internal_CloneSingleWithScene_Injected(
-        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        data: crate::System::IntPtr,
         scene: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::SceneManagement::Scene,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::SceneManagement::Scene,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        crate::System::IntPtr,
                         2usize,
                     >("Internal_CloneSingleWithScene_Injected")
                     .unwrap_or_else(|e| {
@@ -2127,22 +2837,46 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (data, scene))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Internal_InstantiateAsyncWithParent(
+    pub fn Internal_CloneSingle_Injected(
+        data: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("Internal_CloneSingle_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_CloneSingle_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (data))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_InstantiateAsyncWithParams(
         original: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
         count: i32,
-        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        parameters: crate::UnityEngine::InstantiateParameters,
         positions: crate::System::IntPtr,
         positionsCount: i32,
         rotations: crate::System::IntPtr,
         rotationsCount: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
-    > {
+        hasManagedCancellationToken: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -2151,39 +2885,95 @@ impl crate::UnityEngine::Object {
                         (
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
                             i32,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::UnityEngine::InstantiateParameters,
                             crate::System::IntPtr,
                             i32,
                             crate::System::IntPtr,
                             i32,
+                            bool,
                         ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation,
-                        >,
-                        7usize,
-                    >("Internal_InstantiateAsyncWithParent")
+                        crate::System::IntPtr,
+                        8usize,
+                    >("Internal_InstantiateAsyncWithParams")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Internal_InstantiateAsyncWithParent", 7usize
+                            "Internal_InstantiateAsyncWithParams", 8usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::AsyncInstantiateOperation,
-        > = unsafe {
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
                         original,
                         count,
-                        parent,
+                        parameters,
                         positions,
                         positionsCount,
                         rotations,
                         rotationsCount,
+                        hasManagedCancellationToken,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_InstantiateAsyncWithParams_Injected(
+        original: crate::System::IntPtr,
+        count: i32,
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InstantiateParameters,
+        >,
+        positions: crate::System::IntPtr,
+        positionsCount: i32,
+        rotations: crate::System::IntPtr,
+        rotationsCount: i32,
+        hasManagedCancellationToken: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::InstantiateParameters,
+                            >,
+                            crate::System::IntPtr,
+                            i32,
+                            crate::System::IntPtr,
+                            i32,
+                            bool,
+                        ),
+                        crate::System::IntPtr,
+                        8usize,
+                    >("Internal_InstantiateAsyncWithParams_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_InstantiateAsyncWithParams_Injected", 8usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        original,
+                        count,
+                        parameters,
+                        positions,
+                        positionsCount,
+                        rotations,
+                        rotationsCount,
+                        hasManagedCancellationToken,
                     ),
                 )?
         };
@@ -2219,6 +3009,82 @@ impl crate::UnityEngine::Object {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
             cordl_method_info.invoke_unchecked((), (data, pos, rot))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_InstantiateSingleWithParams(
+        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        position: crate::UnityEngine::Vector3,
+        rotation: crate::UnityEngine::Quaternion,
+        parameters: crate::UnityEngine::InstantiateParameters,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Quaternion,
+                            crate::UnityEngine::InstantiateParameters,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        4usize,
+                    >("Internal_InstantiateSingleWithParams")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_InstantiateSingleWithParams", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (data, position, rotation, parameters))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Internal_InstantiateSingleWithParams_Injected(
+        data: crate::System::IntPtr,
+        position: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+        rotation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
+        parameters: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::InstantiateParameters,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Quaternion,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::InstantiateParameters,
+                            >,
+                        ),
+                        crate::System::IntPtr,
+                        4usize,
+                    >("Internal_InstantiateSingleWithParams_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Internal_InstantiateSingleWithParams_Injected", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (data, position, rotation, parameters))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2258,27 +3124,25 @@ impl crate::UnityEngine::Object {
         Ok(__cordl_ret.into())
     }
     pub fn Internal_InstantiateSingleWithParent_Injected(
-        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-        parent: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+        data: crate::System::IntPtr,
+        parent: crate::System::IntPtr,
         pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         rot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
+                            crate::System::IntPtr,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Quaternion,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        crate::System::IntPtr,
                         4usize,
                     >("Internal_InstantiateSingleWithParent_Injected")
                     .unwrap_or_else(|e| {
@@ -2289,31 +3153,29 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (data, parent, pos, rot))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn Internal_InstantiateSingle_Injected(
-        data: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        data: crate::System::IntPtr,
         pos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         rot: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Quaternion,
                             >,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                        crate::System::IntPtr,
                         3usize,
                     >("Internal_InstantiateSingle_Injected")
                     .unwrap_or_else(|e| {
@@ -2324,7 +3186,7 @@ impl crate::UnityEngine::Object {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object> = unsafe {
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (data, pos, rot))?
         };
         Ok(__cordl_ret.into())
@@ -2377,6 +3239,31 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IsPersistent_Injected(
+        obj: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("IsPersistent_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsPersistent_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn MarkDirty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -2398,6 +3285,31 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn MarkDirty_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("MarkDirty_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarkDirty_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -2406,8 +3318,36 @@ impl crate::UnityEngine::Object {
         Ok(__cordl_object.into())
     }
     pub fn SetName(
-        obj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        &mut self,
         name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetName")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetName",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (name))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetName_Injected(
+        _unity_self: crate::System::IntPtr,
+        name: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2415,24 +3355,24 @@ impl crate::UnityEngine::Object {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("SetName")
+                    >("SetName_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "SetName",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetName_Injected", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (obj, name))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, name))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2461,6 +3401,39 @@ impl crate::UnityEngine::Object {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToString_Injected(
+        obj: crate::System::IntPtr,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ToString_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToString_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj, ret))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn ToString_Object1(
@@ -2533,6 +3506,31 @@ impl crate::UnityEngine::Object {
             });
         let __cordl_ret: crate::UnityEngine::HideFlags = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_hideFlags_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::HideFlags> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::UnityEngine::HideFlags,
+                        1usize,
+                    >("get_hideFlags_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hideFlags_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::HideFlags = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2672,6 +3670,32 @@ impl crate::UnityEngine::Object {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_hideFlags_Injected(
+        _unity_self: crate::System::IntPtr,
+        value: crate::UnityEngine::HideFlags,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::UnityEngine::HideFlags),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_hideFlags_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_hideFlags_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_name(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -2701,6 +3725,141 @@ impl crate::UnityEngine::Object {
 }
 #[cfg(feature = "cordl_class_UnityEngine+Object")]
 impl quest_hook::libil2cpp::ObjectType for crate::UnityEngine::Object {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Object+MarshalledUnityObject")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct Object_MarshalledUnityObject {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_UnityEngine+Object+MarshalledUnityObject")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Object_MarshalledUnityObject {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "Object/MarshalledUnityObject";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "UnityEngine+Object+MarshalledUnityObject")]
+impl std::ops::Deref for crate::UnityEngine::Object_MarshalledUnityObject {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Object+MarshalledUnityObject")]
+impl std::ops::DerefMut for crate::UnityEngine::Object_MarshalledUnityObject {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Object+MarshalledUnityObject")]
+impl crate::UnityEngine::Object_MarshalledUnityObject {
+    pub fn Marshal<T>(obj: T) -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(T), crate::System::IntPtr, 1usize>("Marshal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Marshal",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn MarshalNotNull<T>(
+        obj: T,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (T),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("MarshalNotNull")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "MarshalNotNull", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (obj))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryThrowEditorNullExceptionObject(
+        unityObj: quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+        paramterName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("TryThrowEditorNullExceptionObject")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryThrowEditorNullExceptionObject", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (unityObj, paramterName))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Object+MarshalledUnityObject")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::Object_MarshalledUnityObject {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

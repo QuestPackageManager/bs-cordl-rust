@@ -92,7 +92,7 @@ impl crate::GlobalNamespace::MockPlayer {
     pub fn Connect(
         &mut self,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         beatmapLevelsModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BeatmapLevelsModel,
@@ -117,7 +117,7 @@ impl crate::GlobalNamespace::MockPlayer {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSessionManager,
+                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::BeatmapLevelsModel,
@@ -714,6 +714,33 @@ impl crate::GlobalNamespace::MockPlayer {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_compatibilityVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_compatibilityVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_compatibilityVersion", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_configuration(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -744,7 +771,7 @@ impl crate::GlobalNamespace::MockPlayer {
     pub fn get_connectedPlayer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -753,7 +780,7 @@ impl crate::GlobalNamespace::MockPlayer {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >,
                         0usize,
                     >("get_connectedPlayer")
@@ -766,7 +793,7 @@ impl crate::GlobalNamespace::MockPlayer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1907,6 +1934,20 @@ impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::MockPlayer {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "MockPlayer")]
+impl AsRef<crate::GlobalNamespace::IBeatSaberConnectedPlayer>
+for crate::GlobalNamespace::MockPlayer {
+    fn as_ref(&self) -> &crate::GlobalNamespace::IBeatSaberConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MockPlayer")]
+impl AsMut<crate::GlobalNamespace::IBeatSaberConnectedPlayer>
+for crate::GlobalNamespace::MockPlayer {
+    fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IBeatSaberConnectedPlayer {
+        unsafe { std::mem::transmute(self) }
     }
 }
 #[cfg(feature = "MockPlayer")]

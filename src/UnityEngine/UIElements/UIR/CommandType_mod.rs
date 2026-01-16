@@ -3,8 +3,11 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum CommandType {
     #[default]
+    BeginDisable = 12i32,
     BlitToPreviousRT = 9i32,
+    CutRenderChain = 14i32,
     Draw = 0i32,
+    EndDisable = 13i32,
     Immediate = 2i32,
     ImmediateCull = 1i32,
     PopDefaultMaterial = 11i32,

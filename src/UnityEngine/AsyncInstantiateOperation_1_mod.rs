@@ -2,8 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AsyncInstantiateOperation_1<T: quest_hook::libil2cpp::Type> {
-    __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
-    pub m_op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
+    __cordl_parent: crate::UnityEngine::AsyncInstantiateOperation,
     __cordl_phantom_T: std::marker::PhantomData<T>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+AsyncInstantiateOperation_1")]
@@ -45,7 +44,7 @@ for crate::UnityEngine::AsyncInstantiateOperation_1<T> {
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperation_1")]
 impl<T: quest_hook::libil2cpp::Type> std::ops::Deref
 for crate::UnityEngine::AsyncInstantiateOperation_1<T> {
-    type Target = crate::UnityEngine::CustomYieldInstruction;
+    type Target = crate::UnityEngine::AsyncInstantiateOperation;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -59,8 +58,51 @@ for crate::UnityEngine::AsyncInstantiateOperation_1<T> {
 }
 #[cfg(feature = "UnityEngine+AsyncInstantiateOperation_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::AsyncInstantiateOperation_1<T> {
+    pub fn CreateResultArray(
+        &mut self,
+        _cordl_size: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        >,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+                            >,
+                        >,
+                        1usize,
+                    >("CreateResultArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateResultArray", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::Object>,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (_cordl_size))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
-        op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
+        ptr: crate::System::IntPtr,
+        cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -69,12 +111,13 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::AsyncInstantiateOperati
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (op))?;
+            .invoke_void(".ctor", (ptr, cancellationToken))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        op: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncInstantiateOperation>,
+        ptr: crate::System::IntPtr,
+        cancellationToken: crate::System::Threading::CancellationToken,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -85,44 +128,24 @@ impl<T: quest_hook::libil2cpp::Type> crate::UnityEngine::AsyncInstantiateOperati
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::AsyncInstantiateOperation,
-                        >),
+                        (
+                            crate::System::IntPtr,
+                            crate::System::Threading::CancellationToken,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            1usize
+                            2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (op))?
+            cordl_method_info.invoke_unchecked(self, (ptr, cancellationToken))?
         };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_keepWaiting(&mut self) -> quest_hook::libil2cpp::Result<bool>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), bool, 0usize>("get_keepWaiting")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_keepWaiting", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

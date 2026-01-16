@@ -47,6 +47,9 @@ pub use DefaultTraceListener_mod::*;
 // class DiagnosticsConfigurationHandler_mod; export all
 mod DiagnosticsConfigurationHandler_mod;
 pub use DiagnosticsConfigurationHandler_mod::*;
+// class EventLogEntryType_mod; export all
+mod EventLogEntryType_mod;
+pub use EventLogEntryType_mod::*;
 // class MonitoringDescriptionAttribute_mod; export all
 mod MonitoringDescriptionAttribute_mod;
 pub use MonitoringDescriptionAttribute_mod::*;
@@ -74,6 +77,12 @@ pub use ProcessWindowStyle_mod::*;
 // class Process_mod; export all
 mod Process_mod;
 pub use Process_mod::*;
+// class SourceLevels_mod; export all
+mod SourceLevels_mod;
+pub use SourceLevels_mod::*;
+// class SourceSwitch_mod; export all
+mod SourceSwitch_mod;
+pub use SourceSwitch_mod::*;
 // class StackFrame_mod; export all
 mod StackFrame_mod;
 pub use StackFrame_mod::*;
@@ -116,6 +125,9 @@ pub use TraceListener_mod::*;
 // class TraceOptions_mod; export all
 mod TraceOptions_mod;
 pub use TraceOptions_mod::*;
+// class TraceSource_mod; export all
+mod TraceSource_mod;
+pub use TraceSource_mod::*;
 // class TraceSwitch_mod; export all
 mod TraceSwitch_mod;
 pub use TraceSwitch_mod::*;

@@ -81,7 +81,7 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         > = unsafe { cordl_method_info.invoke_unchecked((), (file))? };
         Ok(__cordl_ret.into())
     }
-    pub fn LoadLineBreakingRules_0(
+    pub fn LoadLineBreakingRules(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -103,36 +103,6 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn LoadLineBreakingRules_TextAsset_TextAsset1(
-        &mut self,
-        leadingRules: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-        followingRules: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("LoadLineBreakingRules")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadLineBreakingRules", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (leadingRules, followingRules))?
         };
         Ok(__cordl_ret.into())
     }
@@ -164,33 +134,6 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_followingCharacters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-                        0usize,
-                    >("get_followingCharacters")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_followingCharacters", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_followingCharactersLookup(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -218,33 +161,6 @@ impl crate::UnityEngine::TextCore::Text::UnicodeLineBreakingRules {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::HashSet_1<u32>,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_leadingCharacters(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-                        0usize,
-                    >("get_leadingCharacters")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_leadingCharacters", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn get_leadingCharactersLookup(

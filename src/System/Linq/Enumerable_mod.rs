@@ -72,46 +72,7 @@ impl crate::System::Linq::Enumerable {
         TSource: quest_hook::libil2cpp::Type,
         TResult: quest_hook::libil2cpp::Type,
     > = crate::System::Linq::Enumerable_WhereSelectListIterator_2<TSource, TResult>;
-    pub fn Aggregate_Func_3_0<TSource>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
-        func: quest_hook::libil2cpp::Gc<crate::System::Func_3<TSource, TSource, TSource>>,
-    ) -> quest_hook::libil2cpp::Result<TSource>
-    where
-        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<TSource, TSource, TSource>,
-                            >,
-                        ),
-                        TSource,
-                        2usize,
-                    >("Aggregate")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Aggregate", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: TSource = unsafe {
-            cordl_method_info.invoke_unchecked((), (source, func))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Aggregate_TAccumulate_Func_3_1<TSource, TAccumulate>(
+    pub fn Aggregate<TSource, TAccumulate>(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
         >,
@@ -788,45 +749,6 @@ impl crate::System::Linq::Enumerable {
         > = unsafe { cordl_method_info.invoke_unchecked((), (source, defaultValue))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Distinct<TSource>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
-    >
-    where
-        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                        >),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                        >,
-                        1usize,
-                    >("Distinct")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Distinct", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source))? };
-        Ok(__cordl_ret.into())
-    }
     pub fn DistinctIterator<TSource>(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
@@ -868,6 +790,94 @@ impl crate::System::Linq::Enumerable {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "DistinctIterator", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (source, comparer))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Distinct_IEnumerable_1_0<TSource>(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+    >
+    where
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+                        >),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+                        >,
+                        1usize,
+                    >("Distinct")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Distinct", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (source))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Distinct_IEqualityComparer_1_1<TSource>(
+        source: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+        comparer: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEqualityComparer_1<TSource>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+        >,
+    >
+    where
+        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<TSource>,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEqualityComparer_1<
+                                    TSource,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<TSource>,
+                        >,
+                        2usize,
+                    >("Distinct")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Distinct", 2usize
                         )
                     })
             });
@@ -2124,11 +2134,11 @@ impl crate::System::Linq::Enumerable {
         > = unsafe { cordl_method_info.invoke_unchecked((), (source))? };
         Ok(__cordl_ret.into())
     }
-    pub fn SelectIterator<TSource, TResult>(
+    pub fn Select<TSource, TResult>(
         source: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TSource>,
         >,
-        selector: quest_hook::libil2cpp::Gc<crate::System::Func_3<TSource, i32, TResult>>,
+        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<TResult>,
@@ -2150,19 +2160,19 @@ impl crate::System::Linq::Enumerable {
                                 crate::System::Collections::Generic::IEnumerable_1<TSource>,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<TSource, i32, TResult>,
+                                crate::System::Func_2<TSource, TResult>,
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IEnumerable_1<TResult>,
                         >,
                         2usize,
-                    >("SelectIterator")
+                    >("Select")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SelectIterator", 2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Select",
+                            2usize
                         )
                     })
             });
@@ -2281,100 +2291,6 @@ impl crate::System::Linq::Enumerable {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "SelectManyIterator", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, selector))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Select_Func_2_0<TSource, TResult>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
-        selector: quest_hook::libil2cpp::Gc<crate::System::Func_2<TSource, TResult>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        >,
-    >
-    where
-        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_2<TSource, TResult>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TResult>,
-                        >,
-                        2usize,
-                    >("Select")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Select",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (source, selector))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Select_Func_3_1<TSource, TResult>(
-        source: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TSource>,
-        >,
-        selector: quest_hook::libil2cpp::Gc<crate::System::Func_3<TSource, i32, TResult>>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<TResult>,
-        >,
-    >
-    where
-        TSource: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        TResult: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<TSource>,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Func_3<TSource, i32, TResult>,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IEnumerable_1<TResult>,
-                        >,
-                        2usize,
-                    >("Select")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Select",
-                            2usize
                         )
                     })
             });

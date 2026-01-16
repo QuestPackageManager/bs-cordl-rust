@@ -6,7 +6,7 @@
 pub struct ControllerProfilesSettingsViewController {
     __cordl_parent: crate::HMUI::ViewController,
     pub _profilesDropdown: quest_hook::libil2cpp::Gc<crate::HMUI::SimpleTextDropdown>,
-    pub _handlingToggle: quest_hook::libil2cpp::Gc<crate::HMUI::ToggleWithCallbacks>,
+    pub _handlingToggle: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Toggle>,
     pub _interactableCanvasGroups: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::CanvasGroup>,

@@ -21,7 +21,7 @@ pub struct LeaderboardScoreUploader {
     pub _uploadScoreCallback: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
     >,
-    pub _playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _playerId: u64,
     pub _uploading: bool,
     pub _fileStorage: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IFileStorage>,
 }
@@ -102,7 +102,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
         uploadScoreCallback: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
         >,
-        playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -113,9 +113,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::LeaderboardScoreUploader_UploadScoreCallback,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
+                            u64,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -379,9 +377,7 @@ for crate::GlobalNamespace::LeaderboardScoreUploader {
 #[derive(Debug)]
 pub struct LeaderboardScoreUploader_ScoreData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _playerId_k__BackingField: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
+    pub _playerId_k__BackingField: u64,
     pub _beatmapKey_k__BackingField: crate::GlobalNamespace::BeatmapKey,
     pub _gameplayModifiers_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,
@@ -432,7 +428,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::LeaderboardScoreUploader_Sco
 #[cfg(feature = "LeaderboardScoreUploader+ScoreData")]
 impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     pub fn New(
-        playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerId: u64,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
         modifiedScore: i32,
@@ -467,7 +463,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn _ctor(
         &mut self,
-        playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerId: u64,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         multipliedScore: i32,
         modifiedScore: i32,
@@ -486,9 +482,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
+                            u64,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::GlobalNamespace::BeatmapKey,
                             >,
@@ -707,20 +701,12 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_playerId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
+    pub fn get_playerId(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        0usize,
-                    >("get_playerId")
+                    .find_method::<(), u64, 0usize>("get_playerId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -729,9 +715,7 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_badCutsCount(
@@ -972,14 +956,14 @@ impl crate::GlobalNamespace::LeaderboardScoreUploader_ScoreData {
     }
     pub fn set_playerId(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        value: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        (u64),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("set_playerId")

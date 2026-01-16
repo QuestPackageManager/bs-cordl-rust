@@ -8,9 +8,11 @@ pub struct FontAssetCreationSettings {
     pub sourceFontFileGUID: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
+    pub faceIndex: i32,
     pub pointSizeSamplingMode: i32,
     pub pointSize: i32,
     pub padding: i32,
+    pub paddingMode: i32,
     pub packingMode: i32,
     pub atlasWidth: i32,
     pub atlasHeight: i32,

@@ -44,7 +44,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::ClickEvent {
 impl crate::UnityEngine::UIElements::ClickEvent {
     pub fn GetPooled(
         pointerEvent: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::PointerUpEvent,
+            crate::UnityEngine::UIElements::IPointerEvent,
         >,
         clickCount: i32,
     ) -> quest_hook::libil2cpp::Result<
@@ -57,7 +57,7 @@ impl crate::UnityEngine::UIElements::ClickEvent {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::PointerUpEvent,
+                                crate::UnityEngine::UIElements::IPointerEvent,
                             >,
                             i32,
                         ),

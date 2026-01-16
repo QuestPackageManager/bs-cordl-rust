@@ -34,6 +34,7 @@ pub struct CameraProperties {
     pub cameraType: u32,
     pub projectionIsOblique: i32,
     pub isImplicitProjectionMatrix: i32,
+    pub useInteractiveLightBakingData: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+CameraProperties")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -132,6 +133,8 @@ for crate::UnityEngine::Rendering::CameraProperties {
 }
 #[cfg(feature = "UnityEngine+Rendering+CameraProperties")]
 impl crate::UnityEngine::Rendering::CameraProperties {
+    pub const k_NumLayers: i32 = 32i32;
+    pub const k_PlaneCount: i32 = 6i32;
     #[cfg(
         feature = "UnityEngine+Rendering+CameraProperties+_layerCullDistances_e__FixedBuffer"
     )]

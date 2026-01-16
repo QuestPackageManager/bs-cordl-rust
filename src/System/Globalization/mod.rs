@@ -124,6 +124,9 @@ pub use SortKey_mod::*;
 // class SortVersion_mod; export all
 mod SortVersion_mod;
 pub use SortVersion_mod::*;
+// class StringInfo_mod; export all
+mod StringInfo_mod;
+pub use StringInfo_mod::*;
 // class TaiwanCalendar_mod; export all
 mod TaiwanCalendar_mod;
 pub use TaiwanCalendar_mod::*;

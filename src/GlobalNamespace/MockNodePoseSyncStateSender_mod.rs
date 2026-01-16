@@ -4,7 +4,7 @@
 pub struct MockNodePoseSyncStateSender {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
 }
 #[cfg(feature = "cordl_class_MockNodePoseSyncStateSender")]
@@ -102,14 +102,14 @@ impl crate::GlobalNamespace::MockNodePoseSyncStateSender {
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        msm: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (msm))?;
+            .invoke_void(".ctor", (multiplayerSessionManager))?;
         Ok(__cordl_object.into())
     }
     pub fn SendPose(
@@ -147,8 +147,8 @@ impl crate::GlobalNamespace::MockNodePoseSyncStateSender {
     }
     pub fn _ctor(
         &mut self,
-        msm: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+        multiplayerSessionManager: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -157,7 +157,7 @@ impl crate::GlobalNamespace::MockNodePoseSyncStateSender {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IMultiplayerSessionManager,
+                            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -171,7 +171,7 @@ impl crate::GlobalNamespace::MockNodePoseSyncStateSender {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (msm))?
+            cordl_method_info.invoke_unchecked(self, (multiplayerSessionManager))?
         };
         Ok(__cordl_ret.into())
     }

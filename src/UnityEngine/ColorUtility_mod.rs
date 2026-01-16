@@ -38,6 +38,70 @@ impl std::ops::DerefMut for crate::UnityEngine::ColorUtility {
 }
 #[cfg(feature = "UnityEngine+ColorUtility")]
 impl crate::UnityEngine::ColorUtility {
+    pub fn DoTryParseHtmlColor(
+        htmlString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color32>,
+                        ),
+                        bool,
+                        2usize,
+                    >("DoTryParseHtmlColor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoTryParseHtmlColor", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (htmlString, color))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn DoTryParseHtmlColor_Injected(
+        htmlString: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+        color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color32>,
+                        ),
+                        bool,
+                        2usize,
+                    >("DoTryParseHtmlColor_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "DoTryParseHtmlColor_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (htmlString, color))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ToHtmlStringRGB(
         color: crate::UnityEngine::Color,
     ) -> quest_hook::libil2cpp::Result<
@@ -63,6 +127,37 @@ impl crate::UnityEngine::ColorUtility {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked((), (color))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TryParseHtmlString(
+        htmlString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        color: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color>,
+                        ),
+                        bool,
+                        2usize,
+                    >("TryParseHtmlString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TryParseHtmlString", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (htmlString, color))?
+        };
         Ok(__cordl_ret.into())
     }
 }

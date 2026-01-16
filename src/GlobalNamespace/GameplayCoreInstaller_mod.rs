@@ -9,7 +9,6 @@ pub struct GameplayCoreInstaller {
     pub _songTimeTweeningManager: quest_hook::libil2cpp::Gc<
         crate::Tweening::SongTimeTweeningManager,
     >,
-    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
     pub _playerHeightDetectorPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerHeightDetector,
     >,
@@ -31,6 +30,7 @@ pub struct GameplayCoreInstaller {
     pub _songProfilingControllerPrefab: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SongProfilingController,
     >,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
     pub _sceneSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayCoreSceneSetupData,
     >,
@@ -38,6 +38,12 @@ pub struct GameplayCoreInstaller {
         crate::GlobalNamespace::PerceivedLoudnessPerLevelModel,
     >,
     pub _commandLineArguments: crate::BGLib::DotnetExtension::CommandLine::CommandLineParserResult,
+    pub _settingsManager: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _gameplayAdditionalInformationSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayAdditionalInformationSetupData,
+    >,
     pub _performanceToolConfig: crate::System::Nullable_1<
         crate::GlobalNamespace::PerformanceToolLauncher_OverrideConfig,
     >,

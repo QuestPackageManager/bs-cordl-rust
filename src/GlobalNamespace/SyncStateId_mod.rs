@@ -471,6 +471,20 @@ impl crate::GlobalNamespace::SyncStateId {
     }
 }
 #[cfg(feature = "SyncStateId")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::SyncStateId {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "SyncStateId")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::SyncStateId {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "SyncStateId")]
 impl AsRef<
     crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         crate::GlobalNamespace::SyncStateId,

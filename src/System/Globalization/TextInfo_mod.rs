@@ -3,7 +3,6 @@
 #[derive(Debug)]
 pub struct TextInfo {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_listSeparator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_isReadOnly: bool,
     pub m_cultureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub m_cultureData: quest_hook::libil2cpp::Gc<
@@ -14,7 +13,6 @@ pub struct TextInfo {
     pub customCultureName: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
-    pub m_nDataItem: i32,
     pub m_useUserOverride: bool,
     pub m_win32LangID: i32,
 }
@@ -52,7 +50,6 @@ impl std::ops::DerefMut for crate::System::Globalization::TextInfo {
 }
 #[cfg(feature = "System+Globalization+TextInfo")]
 impl crate::System::Globalization::TextInfo {
-    pub const wordSeparatorMask: i32 = 536672256i32;
     pub fn AddNonLetter(
         result: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,

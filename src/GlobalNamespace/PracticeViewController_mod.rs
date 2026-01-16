@@ -3,9 +3,9 @@
 #[derive(Debug)]
 pub struct PracticeViewController {
     __cordl_parent: crate::HMUI::ViewController,
+    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
     pub _songStartSlider: quest_hook::libil2cpp::Gc<crate::HMUI::TimeSlider>,
     pub _speedSlider: quest_hook::libil2cpp::Gc<crate::HMUI::PercentSlider>,
-    pub _levelBar: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelBar>,
     pub _playButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _loader: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _value: quest_hook::libil2cpp::Gc<crate::TMPro::TextMeshProUGUI>,
@@ -82,7 +82,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PracticeViewController {
 #[cfg(feature = "PracticeViewController")]
 impl crate::GlobalNamespace::PracticeViewController {
     pub const kMinValueChangeToInstantPlayPreview: f32 = 3f32;
-    pub const kWaitBeforePlayPreviewAfterPreviewStartValueChanged: f32 = 1f32;
     pub fn CancelSongLoading(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -3,7 +3,7 @@
 #[derive(Debug)]
 pub struct AdaptiveSfxVolume {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AdaptiveSfxVolume_InitData,
     >,

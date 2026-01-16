@@ -19,7 +19,7 @@ pub struct MultiplayerPlayersManager {
         crate::GlobalNamespace::MultiplayerConnectedPlayerFacade,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _beatmapObjectSpawnCenter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectSpawnCenter,
@@ -85,7 +85,7 @@ pub struct MultiplayerPlayersManager {
     >,
     pub _allActiveAtGameStartPlayers: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::IReadOnlyList_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
 }
@@ -252,7 +252,9 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
         localPlayerStartState: crate::GlobalNamespace::MultiplayerPlayerStartState,
         allActiveAtGameStartPlayers: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -266,7 +268,7 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::Generic::IReadOnlyList_1<
                                     quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::IConnectedPlayer,
+                                        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                     >,
                                 >,
                             >,
@@ -603,7 +605,9 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     > {
@@ -616,7 +620,7 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::IReadOnlyList_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >,
@@ -632,7 +636,9 @@ impl crate::GlobalNamespace::MultiplayerPlayersManager {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IReadOnlyList_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

@@ -41,6 +41,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ConnectionFailedReasonMethod
 impl crate::GlobalNamespace::ConnectionFailedReasonMethods {
     pub const kConnectionFailedConnectionCanceled: &'static str = "SERVER_CONNECTION_FAILED_TRY_AGAIN";
     pub const kConnectionFailedFailedToFindMatch: &'static str = "CONNECTION_FAILED_FAILED_TO_FIND_MATCH";
+    pub const kConnectionFailedIncompatibleServerEnvironment: &'static str = "CONNECTION_FAILED_INCOMPATIBLE_SERVER_ENVIRONMENT";
     pub const kConnectionFailedInvalidPassword: &'static str = "CONNECTION_FAILED_INVALID_PASSWORD";
     pub const kConnectionFailedMasterServerCertificateValidationFailed: &'static str = "CONNECTION_FAILED_NETWORK_NOT_CONNECTED";
     pub const kConnectionFailedMasterServerNotAuthenticated: &'static str = "SERVER_CONNECTION_FAILED_TRY_AGAIN";

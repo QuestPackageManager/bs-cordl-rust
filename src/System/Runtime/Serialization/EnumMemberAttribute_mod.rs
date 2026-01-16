@@ -4,6 +4,7 @@
 pub struct EnumMemberAttribute {
     __cordl_parent: crate::System::Attribute,
     pub value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub isValueSetExplicitly: bool,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Serialization+EnumMemberAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -40,6 +41,23 @@ impl std::ops::DerefMut for crate::System::Runtime::Serialization::EnumMemberAtt
 }
 #[cfg(feature = "System+Runtime+Serialization+EnumMemberAttribute")]
 impl crate::System::Runtime::Serialization::EnumMemberAttribute {
+    pub fn get_IsValueSetExplicitly(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_IsValueSetExplicitly")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_IsValueSetExplicitly", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Value(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

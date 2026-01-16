@@ -119,54 +119,6 @@ impl crate::GlobalNamespace::TubeBloomPrePassLight {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ClipPoints(
-        fromPointClipPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-        toPointClipPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-        fromPointViewPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        toPointViewPos: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        fromPointInside: bool,
-        t: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            bool,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("ClipPoints")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ClipPoints", 6usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    (),
-                    (
-                        fromPointClipPos,
-                        toPointClipPos,
-                        fromPointViewPos,
-                        toPointViewPos,
-                        fromPointInside,
-                        t,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn DidRegisterLight(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -192,17 +144,14 @@ impl crate::GlobalNamespace::TubeBloomPrePassLight {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FillMeshData(
+    pub fn FillInputData(
         &mut self,
         lightNum: quest_hook::libil2cpp::ByRefMut<i32>,
-        lightQuads: quest_hook::libil2cpp::Gc<
+        inputData: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
-                crate::GlobalNamespace::BloomPrePassLight_QuadData,
+                crate::GlobalNamespace::BloomPrePassRendererSO_InputData,
             >,
         >,
-        viewMatrix: crate::UnityEngine::Matrix4x4,
-        projectionMatrix: crate::UnityEngine::Matrix4x4,
-        lineWidth: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -213,30 +162,23 @@ impl crate::GlobalNamespace::TubeBloomPrePassLight {
                             quest_hook::libil2cpp::ByRefMut<i32>,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppArray<
-                                    crate::GlobalNamespace::BloomPrePassLight_QuadData,
+                                    crate::GlobalNamespace::BloomPrePassRendererSO_InputData,
                                 >,
                             >,
-                            crate::UnityEngine::Matrix4x4,
-                            crate::UnityEngine::Matrix4x4,
-                            f32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
-                    >("FillMeshData")
+                        2usize,
+                    >("FillInputData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FillMeshData", 5usize
+                            "FillInputData", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (lightNum, lightQuads, viewMatrix, projectionMatrix, lineWidth),
-                )?
+            cordl_method_info.invoke_unchecked(self, (lightNum, inputData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -374,35 +316,6 @@ impl crate::GlobalNamespace::TubeBloomPrePassLight {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ZeroQuad(
-        quad: quest_hook::libil2cpp::ByRefMut<
-            crate::GlobalNamespace::BloomPrePassLight_QuadData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::GlobalNamespace::BloomPrePassLight_QuadData,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("ZeroQuad")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ZeroQuad", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (quad))?
         };
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct AppInitScenesTransitionSetupDataSO {
-    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "cordl_class_AppInitScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -26,7 +26,7 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
 impl std::ops::Deref for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
-    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -39,32 +39,38 @@ impl std::ops::DerefMut for crate::GlobalNamespace::AppInitScenesTransitionSetup
 }
 #[cfg(feature = "AppInitScenesTransitionSetupDataSO")]
 impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
+    pub const kGameInitSceneName: &'static str = "GameInit";
     #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitOverrideStartType")]
     pub type AppInitOverrideStartType = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType;
     #[cfg(feature = "AppInitScenesTransitionSetupDataSO+AppInitSceneSetupData")]
     pub type AppInitSceneSetupData = crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitSceneSetupData;
     pub fn Init(
         &mut self,
+        appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Init")
+                    .find_method::<
+                        (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            0usize
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, (appInitOverrideStartType))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InitAsAppStart(
+    pub fn InitAsDefault(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -75,12 +81,62 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("InitAsAppStart")
+                    >("InitAsDefault")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InitAsAppStart", 0usize
+                            "InitAsDefault", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitAsMultiSceneEditor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("InitAsMultiSceneEditor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitAsMultiSceneEditor", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InitDirectlyToMenu(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("InitDirectlyToMenu")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InitDirectlyToMenu", 0usize
                         )
                     })
             });
@@ -95,32 +151,6 @@ impl crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
-    }
-    pub fn __Init(
-        &mut self,
-        appInitOverrideStartType: crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("__Init")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "__Init",
-                            1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (appInitOverrideStartType))?
-        };
-        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,
@@ -161,8 +191,8 @@ for crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum AppInitScenesTransitionSetupDataSO_AppInitOverrideStartType {
     #[default]
-    AppRestart = 2i32,
-    AppStart = 1i32,
+    Default = 1i32,
+    DirectlyToMenu = 2i32,
     DoNotOverride = 0i32,
     MultiSceneEditor = 3i32,
 }

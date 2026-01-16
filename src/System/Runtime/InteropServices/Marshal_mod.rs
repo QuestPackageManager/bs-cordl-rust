@@ -336,6 +336,42 @@ impl crate::System::Runtime::InteropServices::Marshal {
     }
     pub fn Copy_IntPtr_Il2CppArray_i32_3(
         source: crate::System::IntPtr,
+        destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
+        startIndex: i32,
+        length: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<i32>,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("Copy")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Copy",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (source, destination, startIndex, length))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Copy_IntPtr_Il2CppArray_i32_4(
+        source: crate::System::IntPtr,
         destination: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
         startIndex: i32,
         length: i32,
@@ -746,7 +782,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn PtrToStringAnsi_IntPtr0(
+    pub fn PtrToStringAnsi(
         ptr: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -773,9 +809,8 @@ impl crate::System::Runtime::InteropServices::Marshal {
         > = unsafe { cordl_method_info.invoke_unchecked((), (ptr))? };
         Ok(__cordl_ret.into())
     }
-    pub fn PtrToStringAnsi_i32_1(
+    pub fn PtrToStringUTF8(
         ptr: crate::System::IntPtr,
-        len: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -784,21 +819,21 @@ impl crate::System::Runtime::InteropServices::Marshal {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (crate::System::IntPtr, i32),
+                        (crate::System::IntPtr),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("PtrToStringAnsi")
+                        1usize,
+                    >("PtrToStringUTF8")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "PtrToStringAnsi", 2usize
+                            "PtrToStringUTF8", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (ptr, len))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (ptr))? };
         Ok(__cordl_ret.into())
     }
     pub fn PtrToStringUni_IntPtr0(
@@ -1190,6 +1225,27 @@ impl crate::System::Runtime::InteropServices::Marshal {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SizeOf_2<T>() -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), i32, 0usize>("SizeOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "SizeOf",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn SizeOf_Il2CppObject0(
         structure: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -1215,7 +1271,7 @@ impl crate::System::Runtime::InteropServices::Marshal {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SizeOf_T2<T>(structure: T) -> quest_hook::libil2cpp::Result<i32>
+    pub fn SizeOf_T3<T>(structure: T) -> quest_hook::libil2cpp::Result<i32>
     where
         T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
             + quest_hook::libil2cpp::Returned,
@@ -1259,6 +1315,31 @@ impl crate::System::Runtime::InteropServices::Marshal {
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (t))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn StringToCoTaskMemUTF8(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("StringToCoTaskMemUTF8")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "StringToCoTaskMemUTF8", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (s))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn StringToHGlobalAnsi_Il2CppObject_i32_0(

@@ -48,6 +48,7 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
         fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
         fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
         isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+        populateLigatures: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     > {
@@ -65,17 +66,18 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                             crate::UnityEngine::TextCore::Text::FontStyles,
                             crate::UnityEngine::TextCore::Text::TextFontWeight,
                             quest_hook::libil2cpp::ByRefMut<bool>,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::TextCore::Text::Character,
                         >,
-                        6usize,
+                        7usize,
                     >("GetCharacterFromFontAsset")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCharacterFromFontAsset", 6usize
+                            "GetCharacterFromFontAsset", 7usize
                         )
                     })
             });
@@ -92,6 +94,7 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                         fontStyle,
                         fontWeight,
                         isAlternativeTypeface,
+                        populateLigatures,
                     ),
                 )?
         };
@@ -106,6 +109,7 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
         fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
         fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
         isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+        populateLigatures: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     > {
@@ -123,17 +127,18 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                             crate::UnityEngine::TextCore::Text::FontStyles,
                             crate::UnityEngine::TextCore::Text::TextFontWeight,
                             quest_hook::libil2cpp::ByRefMut<bool>,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::TextCore::Text::Character,
                         >,
-                        6usize,
+                        7usize,
                     >("GetCharacterFromFontAsset_Internal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCharacterFromFontAsset_Internal", 6usize
+                            "GetCharacterFromFontAsset_Internal", 7usize
                         )
                     })
             });
@@ -150,12 +155,13 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                         fontStyle,
                         fontWeight,
                         isAlternativeTypeface,
+                        populateLigatures,
                     ),
                 )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetCharacterFromFontAssets(
+    pub fn GetCharacterFromFontAssetsInternal_FontAsset_List_1_List_1__cordl_bool_FontStyles_TextFontWeight_ByRefMut__cordl_bool0(
         unicode: u32,
         sourceFontAsset: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::FontAsset,
@@ -165,10 +171,16 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                 quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
             >,
         >,
+        OSFallbackList: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            >,
+        >,
         includeFallbacks: bool,
         fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
         fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
         isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+        populateLigatures: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
     > {
@@ -189,21 +201,29 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                                     >,
                                 >,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::TextCore::Text::FontAsset,
+                                    >,
+                                >,
+                            >,
                             bool,
                             crate::UnityEngine::TextCore::Text::FontStyles,
                             crate::UnityEngine::TextCore::Text::TextFontWeight,
                             quest_hook::libil2cpp::ByRefMut<bool>,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::TextCore::Text::Character,
                         >,
-                        7usize,
-                    >("GetCharacterFromFontAssets")
+                        9usize,
+                    >("GetCharacterFromFontAssetsInternal")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCharacterFromFontAssets", 7usize
+                            "GetCharacterFromFontAssetsInternal", 9usize
                         )
                     })
             });
@@ -217,10 +237,79 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
                         unicode,
                         sourceFontAsset,
                         fontAssets,
+                        OSFallbackList,
                         includeFallbacks,
                         fontStyle,
                         fontWeight,
                         isAlternativeTypeface,
+                        populateLigatures,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCharacterFromFontAssetsInternal_List_1__cordl_bool_FontStyles_TextFontWeight_ByRefMut__cordl_bool1(
+        unicode: u32,
+        fontAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
+            >,
+        >,
+        includeFallbacks: bool,
+        fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
+        fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
+        isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+        populateLigatures: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::Character>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::TextCore::Text::FontAsset,
+                                    >,
+                                >,
+                            >,
+                            bool,
+                            crate::UnityEngine::TextCore::Text::FontStyles,
+                            crate::UnityEngine::TextCore::Text::TextFontWeight,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::Character,
+                        >,
+                        7usize,
+                    >("GetCharacterFromFontAssetsInternal")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCharacterFromFontAssetsInternal", 7usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::Character,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        fontAssets,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                        populateLigatures,
                     ),
                 )?
         };
@@ -307,6 +396,80 @@ impl crate::UnityEngine::TextCore::Text::FontAssetUtilities {
         > = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (unicode, spriteAsset, includeFallbacks))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTextElementFromTextAssets(
+        unicode: u32,
+        sourceFontAsset: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::FontAsset,
+        >,
+        textAssets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextAsset>,
+            >,
+        >,
+        includeFallbacks: bool,
+        fontStyle: crate::UnityEngine::TextCore::Text::FontStyles,
+        fontWeight: crate::UnityEngine::TextCore::Text::TextFontWeight,
+        isAlternativeTypeface: quest_hook::libil2cpp::ByRefMut<bool>,
+        populateLigatures: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextElement>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            u32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::TextCore::Text::FontAsset,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::TextCore::Text::TextAsset,
+                                    >,
+                                >,
+                            >,
+                            bool,
+                            crate::UnityEngine::TextCore::Text::FontStyles,
+                            crate::UnityEngine::TextCore::Text::TextFontWeight,
+                            quest_hook::libil2cpp::ByRefMut<bool>,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::TextCore::Text::TextElement,
+                        >,
+                        8usize,
+                    >("GetTextElementFromTextAssets")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTextElementFromTextAssets", 8usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::TextCore::Text::TextElement,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        unicode,
+                        sourceFontAsset,
+                        textAssets,
+                        includeFallbacks,
+                        fontStyle,
+                        fontWeight,
+                        isAlternativeTypeface,
+                        populateLigatures,
+                    ),
+                )?
         };
         Ok(__cordl_ret.into())
     }

@@ -6,13 +6,6 @@ pub struct EventDispatcher {
     pub m_ClickDetector: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ClickDetector,
     >,
-    pub m_DispatchingStrategies: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<
-                crate::UnityEngine::UIElements::IEventDispatchingStrategy,
-            >,
-        >,
-    >,
     pub m_Queue: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Queue_1<
             crate::UnityEngine::UIElements::EventDispatcher_EventRecord,
@@ -22,6 +15,11 @@ pub struct EventDispatcher {
         crate::UnityEngine::UIElements::PointerDispatchState,
     >,
     pub m_GateCount: u32,
+    pub m_GateDepth: u32,
+    pub m_DispatchStackFrame: i32,
+    pub m_CurrentEvent: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::EventBase,
+    >,
     pub m_DispatchContexts: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Stack_1<
             crate::UnityEngine::UIElements::EventDispatcher_DispatchContext,
@@ -65,47 +63,13 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::EventDispatcher {
 }
 #[cfg(feature = "UnityEngine+UIElements+EventDispatcher")]
 impl crate::UnityEngine::UIElements::EventDispatcher {
+    pub const k_MaxGateDepth: i32 = 500i32;
+    pub const k_NumberOfEventsWithEventInfo: i32 = 100i32;
+    pub const k_NumberOfEventsWithStackInfo: i32 = 10i32;
     #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+DispatchContext")]
     pub type DispatchContext = crate::UnityEngine::UIElements::EventDispatcher_DispatchContext;
     #[cfg(feature = "UnityEngine+UIElements+EventDispatcher+EventRecord")]
     pub type EventRecord = crate::UnityEngine::UIElements::EventDispatcher_EventRecord;
-    pub fn ApplyDispatchingStrategies(
-        &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
-        imguiEventIsInitiallyUsed: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::EventBase,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::IPanel,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("ApplyDispatchingStrategies")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyDispatchingStrategies", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (evt, panel, imguiEventIsInitiallyUsed))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn CloseGate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,15 +91,7 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CreateForRuntime(
-        strategies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::IEventDispatchingStrategy,
-                >,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
+    pub fn CreateDefault() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcher>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -143,35 +99,31 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::IEventDispatchingStrategy,
-                                >,
-                            >,
-                        >),
+                        (),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventDispatcher,
                         >,
-                        1usize,
-                    >("CreateForRuntime")
+                        0usize,
+                    >("CreateDefault")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CreateForRuntime", 1usize
+                            "CreateDefault", 0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::EventDispatcher,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (strategies))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn Dispatch(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
         dispatchMode: crate::UnityEngine::UIElements::DispatchMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -184,7 +136,7 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
                                 crate::UnityEngine::UIElements::EventBase,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::IPanel,
+                                crate::UnityEngine::UIElements::BaseVisualElementPanel,
                             >,
                             crate::UnityEngine::UIElements::DispatchMode,
                         ),
@@ -204,19 +156,39 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New(
-        strategies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::IEventDispatchingStrategy,
-                >,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+    pub fn HandleRecursiveState(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::EventBase,
+                        >),
+                        bool,
+                        1usize,
+                    >("HandleRecursiveState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "HandleRecursiveState", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (strategies))?;
+            .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
     pub fn OpenGate(
@@ -243,7 +215,9 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
     pub fn ProcessEvent(
         &mut self,
         evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-        panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+        panel: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::BaseVisualElementPanel,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -255,7 +229,7 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
                                 crate::UnityEngine::UIElements::EventBase,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::IPanel,
+                                crate::UnityEngine::UIElements::BaseVisualElementPanel,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -301,39 +275,22 @@ impl crate::UnityEngine::UIElements::EventDispatcher {
     }
     pub fn _ctor(
         &mut self,
-        strategies: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IList_1<
-                quest_hook::libil2cpp::Gc<
-                    crate::UnityEngine::UIElements::IEventDispatchingStrategy,
-                >,
-            >,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::IList_1<
-                                quest_hook::libil2cpp::Gc<
-                                    crate::UnityEngine::UIElements::IEventDispatchingStrategy,
-                                >,
-                            >,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >(".ctor")
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            1usize
+                            0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (strategies))?
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -533,7 +490,9 @@ impl crate::UnityEngine::UIElements::EventDispatcher_DispatchContext {}
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct EventDispatcher_EventRecord {
     pub m_Event: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-    pub m_Panel: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPanel>,
+    pub m_Panel: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::BaseVisualElementPanel,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventDispatcher+EventRecord")]
 unsafe impl quest_hook::libil2cpp::Type

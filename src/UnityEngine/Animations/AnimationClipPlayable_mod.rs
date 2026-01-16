@@ -200,7 +200,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
         graph: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Playables::PlayableGraph,
         >,
-        clip: quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+        clip: crate::System::IntPtr,
         handle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Playables::PlayableHandle,
         >,
@@ -214,7 +214,7 @@ impl crate::UnityEngine::Animations::AnimationClipPlayable {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Playables::PlayableGraph,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::AnimationClip>,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Playables::PlayableHandle,
                             >,

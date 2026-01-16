@@ -3,10 +3,6 @@
 #[derive(Debug)]
 pub struct Header {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub HeaderNamespace: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub MustUnderstand: bool,
-    pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub Value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "cordl_class_System+Runtime+Remoting+Messaging+Header")]
 unsafe impl quest_hook::libil2cpp::Type

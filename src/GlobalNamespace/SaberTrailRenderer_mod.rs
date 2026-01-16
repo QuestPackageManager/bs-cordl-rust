@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct SaberTrailRenderer {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _meshRenderer: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
     pub _meshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
@@ -17,9 +18,10 @@ pub struct SaberTrailRenderer {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Color>,
     >,
     pub _trailWidth: f32,
-    pub _trailDuration: f32,
-    pub _segmentDuration: f32,
+    pub _inverseTrailDuration: f32,
+    pub _inverseSegmentDuration: f32,
     pub _granularity: i32,
+    pub _inverseGranularity: f32,
     pub _whiteSectionMaxDuration: f32,
 }
 #[cfg(feature = "cordl_class_SaberTrailRenderer")]

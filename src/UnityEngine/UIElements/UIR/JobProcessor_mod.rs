@@ -98,7 +98,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ScheduleCopyClosingMeshJobs(
+    pub fn ScheduleCopyMeshJobs(
         buffer: crate::System::IntPtr,
         jobCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::Unity::Jobs::JobHandle> {
@@ -110,12 +110,12 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                         (crate::System::IntPtr, i32),
                         crate::Unity::Jobs::JobHandle,
                         2usize,
-                    >("ScheduleCopyClosingMeshJobs")
+                    >("ScheduleCopyMeshJobs")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScheduleCopyClosingMeshJobs", 2usize
+                            "ScheduleCopyMeshJobs", 2usize
                         )
                     })
             });
@@ -124,7 +124,7 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ScheduleCopyClosingMeshJobs_Injected(
+    pub fn ScheduleCopyMeshJobs_Injected(
         buffer: crate::System::IntPtr,
         jobCount: i32,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
@@ -143,12 +143,12 @@ impl crate::UnityEngine::UIElements::UIR::JobProcessor {
                         ),
                         quest_hook::libil2cpp::Void,
                         3usize,
-                    >("ScheduleCopyClosingMeshJobs_Injected")
+                    >("ScheduleCopyMeshJobs_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ScheduleCopyClosingMeshJobs_Injected", 3usize
+                            "ScheduleCopyMeshJobs_Injected", 3usize
                         )
                     })
             });

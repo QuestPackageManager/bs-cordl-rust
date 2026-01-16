@@ -120,7 +120,7 @@ impl crate::UnityEngine::UIElements::BoundsIntField {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn __ctor_b__10_0(
+    pub fn __ctor_b__11_0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ChangeEvent_1<crate::UnityEngine::Vector3Int>,
@@ -138,12 +138,12 @@ impl crate::UnityEngine::UIElements::BoundsIntField {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<.ctor>b__10_0")
+                    >("<.ctor>b__11_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<.ctor>b__10_0", 1usize
+                            "<.ctor>b__11_0", 1usize
                         )
                     })
             });
@@ -152,7 +152,7 @@ impl crate::UnityEngine::UIElements::BoundsIntField {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn __ctor_b__10_1(
+    pub fn __ctor_b__11_1(
         &mut self,
         e: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ChangeEvent_1<crate::UnityEngine::Vector3Int>,
@@ -170,12 +170,12 @@ impl crate::UnityEngine::UIElements::BoundsIntField {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<.ctor>b__10_1")
+                    >("<.ctor>b__11_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<.ctor>b__10_1", 1usize
+                            "<.ctor>b__11_1", 1usize
                         )
                     })
             });

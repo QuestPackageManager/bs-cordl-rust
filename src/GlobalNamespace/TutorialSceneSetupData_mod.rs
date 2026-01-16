@@ -3,7 +3,6 @@
 #[derive(Debug)]
 pub struct TutorialSceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
-    pub colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     pub playerSpecificSettings: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlayerSpecificSettings,
     >,
@@ -44,7 +43,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::TutorialSceneSetupData {
 #[cfg(feature = "TutorialSceneSetupData")]
 impl crate::GlobalNamespace::TutorialSceneSetupData {
     pub fn New(
-        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
@@ -52,12 +50,11 @@ impl crate::GlobalNamespace::TutorialSceneSetupData {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (colorScheme, playerSpecificSettings))?;
+            .invoke_void(".ctor", (playerSpecificSettings))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        colorScheme: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
@@ -67,28 +64,22 @@ impl crate::GlobalNamespace::TutorialSceneSetupData {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::PlayerSpecificSettings,
+                        >),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        1usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (colorScheme, playerSpecificSettings))?
+            cordl_method_info.invoke_unchecked(self, (playerSpecificSettings))?
         };
         Ok(__cordl_ret.into())
     }

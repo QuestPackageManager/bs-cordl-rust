@@ -40,11 +40,11 @@ pub struct GameServerPlayersTableView {
     pub _showSongSelection: bool,
     pub _showModifierSelection: bool,
     pub _selectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _sortedConnectedPlayers: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
     pub _lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
@@ -293,7 +293,9 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
         &mut self,
         sortedPlayers: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
         lobbyPlayersDataModel: quest_hook::libil2cpp::Gc<
@@ -314,7 +316,7 @@ impl crate::GlobalNamespace::GameServerPlayersTableView {
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Collections::Generic::List_1<
                                     quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::IConnectedPlayer,
+                                        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                     >,
                                 >,
                             >,

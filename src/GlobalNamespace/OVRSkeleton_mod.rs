@@ -307,6 +307,31 @@ impl crate::GlobalNamespace::OVRSkeleton {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetRequiredBodyJointSet(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRPlugin_BodyJointSet> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::OVRPlugin_BodyJointSet,
+                        0usize,
+                    >("GetRequiredBodyJointSet")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetRequiredBodyJointSet", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRPlugin_BodyJointSet = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetSkeletonType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1150,6 +1175,20 @@ pub enum OVRSkeleton_BoneId {
     Body_SpineLower = 2i32,
     Body_SpineMiddle = 3i32,
     Body_SpineUpper = 4i32,
+    FullBody_End = 84i32,
+    FullBody_LeftFootAnkle = 73i32,
+    FullBody_LeftFootAnkleTwist = 72i32,
+    FullBody_LeftFootBall = 76i32,
+    FullBody_LeftFootSubtalar = 74i32,
+    FullBody_LeftFootTransverse = 75i32,
+    FullBody_LeftLowerLeg = 71i32,
+    FullBody_RightFootAnkle = 80i32,
+    FullBody_RightFootAnkleTwist = 79i32,
+    FullBody_RightFootBall = 83i32,
+    FullBody_RightFootSubtalar = 81i32,
+    FullBody_RightFootTransverse = 82i32,
+    FullBody_RightLowerLeg = 78i32,
+    FullBody_RightUpperLeg = 77i32,
     Invalid = -1i32,
 }
 #[cfg(feature = "cordl_class_OVRSkeleton+BoneId")]
@@ -1843,9 +1882,12 @@ impl crate::GlobalNamespace::OVRSkeleton_SkeletonPoseData {
 pub enum OVRSkeleton_SkeletonType {
     #[default]
     Body = 2i32,
+    FullBody = 3i32,
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
+    XRHandLeft = 4i32,
+    XRHandRight = 5i32,
 }
 #[cfg(feature = "cordl_class_OVRSkeleton+SkeletonType")]
 unsafe impl quest_hook::libil2cpp::Type

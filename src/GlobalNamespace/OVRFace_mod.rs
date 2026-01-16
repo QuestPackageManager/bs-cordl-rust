@@ -7,8 +7,14 @@ pub struct OVRFace {
         crate::GlobalNamespace::OVRFaceExpressions,
     >,
     pub _blendShapeStrengthMultiplier: f32,
+    pub _meshWeightsProviderObject: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::GameObject,
+    >,
     pub _skinnedMeshRenderer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::SkinnedMeshRenderer,
+    >,
+    pub _meshWeightsProvider: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::OVRFace_IMeshWeightsProvider,
     >,
 }
 #[cfg(feature = "cordl_class_OVRFace")]
@@ -45,6 +51,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::OVRFace {
 }
 #[cfg(feature = "OVRFace")]
 impl crate::GlobalNamespace::OVRFace {
+    #[cfg(feature = "OVRFace+IMeshWeightsProvider")]
+    type IMeshWeightsProvider = crate::GlobalNamespace::OVRFace_IMeshWeightsProvider;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -127,6 +135,27 @@ impl crate::GlobalNamespace::OVRFace {
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn OnEnable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("OnEnable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnEnable", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn RetrieveSkinnedMeshRenderer(
         &mut self,
@@ -383,6 +412,120 @@ impl crate::GlobalNamespace::OVRFace {
 }
 #[cfg(feature = "cordl_class_OVRFace")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::OVRFace {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_OVRFace+IMeshWeightsProvider")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct OVRFace_IMeshWeightsProvider {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_OVRFace+IMeshWeightsProvider")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::OVRFace_IMeshWeightsProvider {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "OVRFace/IMeshWeightsProvider";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "OVRFace+IMeshWeightsProvider")]
+impl std::ops::Deref for crate::GlobalNamespace::OVRFace_IMeshWeightsProvider {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRFace+IMeshWeightsProvider")]
+impl std::ops::DerefMut for crate::GlobalNamespace::OVRFace_IMeshWeightsProvider {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "OVRFace+IMeshWeightsProvider")]
+impl crate::GlobalNamespace::OVRFace_IMeshWeightsProvider {
+    pub fn GetWeightValue(
+        &mut self,
+        blendshapeIndex: i32,
+        weightValue: quest_hook::libil2cpp::ByRefMut<f32>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, quest_hook::libil2cpp::ByRefMut<f32>),
+                        bool,
+                        2usize,
+                    >("GetWeightValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWeightValue", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (blendshapeIndex, weightValue))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateWeights(
+        &mut self,
+        faceExpressions: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRFaceExpressions,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::OVRFaceExpressions,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UpdateWeights")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateWeights", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (faceExpressions))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn from_object_mut(
+        object_param: *mut quest_hook::libil2cpp::Il2CppObject,
+    ) -> *mut Self {
+        unsafe { (object_param as *mut Self) }
+    }
+}
+#[cfg(feature = "cordl_class_OVRFace+IMeshWeightsProvider")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::OVRFace_IMeshWeightsProvider {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

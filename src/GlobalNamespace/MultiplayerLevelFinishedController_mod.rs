@@ -10,7 +10,7 @@ pub struct MultiplayerLevelFinishedController {
         crate::GlobalNamespace::IGameplayRpcManager,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _beatmapBasicData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapBasicData,

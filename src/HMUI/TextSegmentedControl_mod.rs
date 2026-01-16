@@ -9,6 +9,8 @@ pub struct TextSegmentedControl {
     pub _fixedCellSizeAmount: f32,
     pub _padding: f32,
     pub _hideCellBackground: bool,
+    pub _enableWordWrapping: bool,
+    pub _textOverflowMode: crate::TMPro::TextOverflowModes,
     pub _firstCellPrefab: quest_hook::libil2cpp::Gc<
         crate::HMUI::TextSegmentedControlCell,
     >,

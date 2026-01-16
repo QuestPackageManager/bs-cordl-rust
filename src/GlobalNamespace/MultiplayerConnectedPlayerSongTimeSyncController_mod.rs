@@ -14,7 +14,7 @@ pub struct MultiplayerConnectedPlayerSongTimeSyncController {
         crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController_InitData,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _songTime_k__BackingField: f32,
     pub _lastFrameDeltaSongTime_k__BackingField: f32,
@@ -289,6 +289,31 @@ impl crate::GlobalNamespace::MultiplayerConnectedPlayerSongTimeSyncController {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_state(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::IAudioTimeSource_State> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::IAudioTimeSource_State,
+                        0usize,
+                    >("get_state")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_state", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::IAudioTimeSource_State = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_timeScale(&mut self) -> quest_hook::libil2cpp::Result<f32> {

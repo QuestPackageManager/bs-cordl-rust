@@ -8,6 +8,7 @@ pub enum RenderTextureCreationFlags {
     BindMS = 2048i32,
     CreatedFromScript = 32i32,
     DynamicallyScalable = 1024i32,
+    DynamicallyScalableExplicit = 131072i32,
     EnableRandomWrite = 16i32,
     EyeTexture = 8i32,
     MipMap = 1i32,

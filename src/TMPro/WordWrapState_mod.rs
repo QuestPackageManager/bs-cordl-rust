@@ -5,6 +5,7 @@ pub struct WordWrapState {
     pub previous_WordBreak: i32,
     pub total_CharacterCount: i32,
     pub visible_CharacterCount: i32,
+    pub visibleSpaceCount: i32,
     pub visible_SpriteCount: i32,
     pub visible_LinkCount: i32,
     pub firstCharacterIndex: i32,
@@ -25,6 +26,8 @@ pub struct WordWrapState {
     pub xAdvance: f32,
     pub preferredWidth: f32,
     pub preferredHeight: f32,
+    pub renderedWidth: f32,
+    pub renderedHeight: f32,
     pub previousLineScale: f32,
     pub wordCount: i32,
     pub fontStyle: crate::TMPro::FontStyles,
@@ -34,7 +37,7 @@ pub struct WordWrapState {
     pub baselineOffset: f32,
     pub lineOffset: f32,
     pub isDrivenLineSpacing: bool,
-    pub glyphHorizontalAdvanceAdjustment: f32,
+    pub lastBaseGlyphIndex: i32,
     pub cSpace: f32,
     pub mSpace: f32,
     pub textInfo: quest_hook::libil2cpp::Gc<crate::TMPro::TMP_TextInfo>,
@@ -42,7 +45,7 @@ pub struct WordWrapState {
     pub vertexColor: crate::UnityEngine::Color32,
     pub underlineColor: crate::UnityEngine::Color32,
     pub strikethroughColor: crate::UnityEngine::Color32,
-    pub highlightColor: crate::UnityEngine::Color32,
+    pub highlightState: crate::TMPro::HighlightState,
     pub basicStyleStack: crate::TMPro::TMP_FontStyleStack,
     pub italicAngleStack: crate::TMPro::TMP_TextProcessingStack_1<i32>,
     pub colorStack: crate::TMPro::TMP_TextProcessingStack_1<crate::UnityEngine::Color32>,
@@ -83,6 +86,8 @@ pub struct WordWrapState {
     pub meshExtents: crate::TMPro::Extents,
     pub tagNoParsing: bool,
     pub isNonBreakingSpace: bool,
+    pub fxRotation: crate::UnityEngine::Quaternion,
+    pub fxScale: crate::UnityEngine::Vector3,
 }
 #[cfg(feature = "cordl_class_TMPro+WordWrapState")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::WordWrapState {

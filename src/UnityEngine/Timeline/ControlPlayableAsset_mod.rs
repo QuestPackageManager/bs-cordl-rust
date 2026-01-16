@@ -14,6 +14,7 @@ pub struct ControlPlayableAsset {
     pub searchHierarchy: bool,
     pub active: bool,
     pub postPlayback: crate::UnityEngine::Timeline::ActivationControlPlayable_PostPlaybackState,
+    pub directorOnClipEnd: crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction,
     pub m_ControlDirectorAsset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableAsset,
     >,

@@ -4,7 +4,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct GetHapticCapabilitiesCommand {
-    padding: quest_hook::libil2cpp::ValueTypePadding<20usize>,
+    padding: quest_hook::libil2cpp::ValueTypePadding<28usize>,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand"
@@ -115,7 +115,7 @@ for crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand {
 }
 #[cfg(feature = "UnityEngine+InputSystem+XR+Haptics+GetHapticCapabilitiesCommand")]
 impl crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand {
-    pub const kSize: i32 = 20i32;
+    pub const kSize: i32 = 28i32;
     pub fn Create() -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::InputSystem::XR::Haptics::GetHapticCapabilitiesCommand,
     > {

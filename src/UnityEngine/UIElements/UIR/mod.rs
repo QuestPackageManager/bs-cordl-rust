@@ -7,6 +7,9 @@ pub use Allocator2D_mod::*;
 // class BMPAlloc_mod; export all
 mod BMPAlloc_mod;
 pub use BMPAlloc_mod::*;
+// class BaseElementBuilder_mod; export all
+mod BaseElementBuilder_mod;
+pub use BaseElementBuilder_mod::*;
 // class BaseShaderInfoStorage_mod; export all
 mod BaseShaderInfoStorage_mod;
 pub use BaseShaderInfoStorage_mod::*;
@@ -25,15 +28,27 @@ pub use BitmapAllocator32_mod::*;
 // class ChainBuilderStats_mod; export all
 mod ChainBuilderStats_mod;
 pub use ChainBuilderStats_mod::*;
+// class ClipMethod_mod; export all
+mod ClipMethod_mod;
+pub use ClipMethod_mod::*;
+// class CommandList_mod; export all
+mod CommandList_mod;
+pub use CommandList_mod::*;
+// class CommandManipulator_mod; export all
+mod CommandManipulator_mod;
+pub use CommandManipulator_mod::*;
 // class CommandType_mod; export all
 mod CommandType_mod;
 pub use CommandType_mod::*;
 // class ConvertMeshJobData_mod; export all
 mod ConvertMeshJobData_mod;
 pub use ConvertMeshJobData_mod::*;
-// class CopyClosingMeshJobData_mod; export all
-mod CopyClosingMeshJobData_mod;
-pub use CopyClosingMeshJobData_mod::*;
+// class CopyMeshJobData_mod; export all
+mod CopyMeshJobData_mod;
+pub use CopyMeshJobData_mod::*;
+// class DefaultElementBuilder_mod; export all
+mod DefaultElementBuilder_mod;
+pub use DefaultElementBuilder_mod::*;
 // class DetachedAllocator_mod; export all
 mod DetachedAllocator_mod;
 pub use DetachedAllocator_mod::*;
@@ -43,6 +58,33 @@ pub use DrawBufferRange_mod::*;
 // class DrawParams_mod; export all
 mod DrawParams_mod;
 pub use DrawParams_mod::*;
+// class EntryFlags_mod; export all
+mod EntryFlags_mod;
+pub use EntryFlags_mod::*;
+// class EntryPool_mod; export all
+mod EntryPool_mod;
+pub use EntryPool_mod::*;
+// class EntryPreProcessor_mod; export all
+mod EntryPreProcessor_mod;
+pub use EntryPreProcessor_mod::*;
+// class EntryProcessor_mod; export all
+mod EntryProcessor_mod;
+pub use EntryProcessor_mod::*;
+// class EntryRecorder_mod; export all
+mod EntryRecorder_mod;
+pub use EntryRecorder_mod::*;
+// class EntryType_mod; export all
+mod EntryType_mod;
+pub use EntryType_mod::*;
+// class Entry_mod; export all
+mod Entry_mod;
+pub use Entry_mod::*;
+// class ExtraRenderChainVEData_mod; export all
+mod ExtraRenderChainVEData_mod;
+pub use ExtraRenderChainVEData_mod::*;
+// class GCHandlePool_mod; export all
+mod GCHandlePool_mod;
+pub use GCHandlePool_mod::*;
 // class GPUBufferAllocator_mod; export all
 mod GPUBufferAllocator_mod;
 pub use GPUBufferAllocator_mod::*;
@@ -58,8 +100,12 @@ pub use GradientRemap_mod::*;
 // class GradientSettingsAtlas_mod; export all
 mod GradientSettingsAtlas_mod;
 pub use GradientSettingsAtlas_mod::*;
-// namespace Implementation;
-pub mod Implementation;
+// class IMeshGenerator_mod; export all
+mod IMeshGenerator_mod;
+pub use IMeshGenerator_mod::*;
+// class ImplicitPool_1_mod; export all
+mod ImplicitPool_1_mod;
+pub use ImplicitPool_1_mod::*;
 // class JobManager_mod; export all
 mod JobManager_mod;
 pub use JobManager_mod::*;
@@ -75,12 +121,24 @@ pub use LinkedPoolItem_1_mod::*;
 // class LinkedPool_1_mod; export all
 mod LinkedPool_1_mod;
 pub use LinkedPool_1_mod::*;
-// class MeshBuilder_mod; export all
-mod MeshBuilder_mod;
-pub use MeshBuilder_mod::*;
+// class MeshGenerationCallback_mod; export all
+mod MeshGenerationCallback_mod;
+pub use MeshGenerationCallback_mod::*;
+// class MeshGenerationDeferrer_mod; export all
+mod MeshGenerationDeferrer_mod;
+pub use MeshGenerationDeferrer_mod::*;
+// class MeshGenerator_mod; export all
+mod MeshGenerator_mod;
+pub use MeshGenerator_mod::*;
 // class MeshHandle_mod; export all
 mod MeshHandle_mod;
 pub use MeshHandle_mod::*;
+// class MeshWriteDataPool_mod; export all
+mod MeshWriteDataPool_mod;
+pub use MeshWriteDataPool_mod::*;
+// class NativeList_1_mod; export all
+mod NativeList_1_mod;
+pub use NativeList_1_mod::*;
 // class NativePagedList_1_mod; export all
 mod NativePagedList_1_mod;
 pub use NativePagedList_1_mod::*;
@@ -114,9 +172,15 @@ pub use RenderDataDirtyTypes_mod::*;
 // class RenderDataFlags_mod; export all
 mod RenderDataFlags_mod;
 pub use RenderDataFlags_mod::*;
-// class ShaderInfoStorageRGBA32_mod; export all
-mod ShaderInfoStorageRGBA32_mod;
-pub use ShaderInfoStorageRGBA32_mod::*;
+// class RenderEvents_mod; export all
+mod RenderEvents_mod;
+pub use RenderEvents_mod::*;
+// class SerializedCommandType_mod; export all
+mod SerializedCommandType_mod;
+pub use SerializedCommandType_mod::*;
+// class SerializedCommand_mod; export all
+mod SerializedCommand_mod;
+pub use SerializedCommand_mod::*;
 // class ShaderInfoStorageRGBAFloat_mod; export all
 mod ShaderInfoStorageRGBAFloat_mod;
 pub use ShaderInfoStorageRGBAFloat_mod::*;
@@ -132,6 +196,9 @@ pub use State_mod::*;
 // class TempAllocator_1_mod; export all
 mod TempAllocator_1_mod;
 pub use TempAllocator_1_mod::*;
+// class TempMeshAllocatorImpl_mod; export all
+mod TempMeshAllocatorImpl_mod;
+pub use TempMeshAllocatorImpl_mod::*;
 // class TextCoreSettings_mod; export all
 mod TextCoreSettings_mod;
 pub use TextCoreSettings_mod::*;
@@ -144,9 +211,6 @@ pub use TextureEntry_mod::*;
 // class TextureSlotManager_mod; export all
 mod TextureSlotManager_mod;
 pub use TextureSlotManager_mod::*;
-// class Transform3x4_mod; export all
-mod Transform3x4_mod;
-pub use Transform3x4_mod::*;
 // class UIRVEShaderInfoAllocator_mod; export all
 mod UIRVEShaderInfoAllocator_mod;
 pub use UIRVEShaderInfoAllocator_mod::*;

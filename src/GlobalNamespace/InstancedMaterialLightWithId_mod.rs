@@ -9,6 +9,7 @@ pub struct InstancedMaterialLightWithId {
     pub _setColorOnly: bool,
     pub _intensity: f32,
     pub _minAlpha: f32,
+    pub _multiplyColorByAlpha: crate::GlobalNamespace::InstancedMaterialLightWithId_MultiplyColorByAlphaType,
     pub _saturateIntensity: bool,
     pub _hdr: bool,
     pub _originalColor: crate::UnityEngine::Color,
@@ -50,6 +51,8 @@ impl std::ops::DerefMut for crate::GlobalNamespace::InstancedMaterialLightWithId
 }
 #[cfg(feature = "InstancedMaterialLightWithId")]
 impl crate::GlobalNamespace::InstancedMaterialLightWithId {
+    #[cfg(feature = "InstancedMaterialLightWithId+MultiplyColorByAlphaType")]
+    pub type MultiplyColorByAlphaType = crate::GlobalNamespace::InstancedMaterialLightWithId_MultiplyColorByAlphaType;
     pub fn AddNecessaryComponents(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -181,5 +184,98 @@ for crate::GlobalNamespace::InstancedMaterialLightWithId {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId+MultiplyColorByAlphaType")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum InstancedMaterialLightWithId_MultiplyColorByAlphaType {
+    #[default]
+    AfterApplyingMinAlpha = 2i32,
+    BeforeApplyingMinAlpha = 1i32,
+    None = 0i32,
+}
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId+MultiplyColorByAlphaType")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::InstancedMaterialLightWithId_MultiplyColorByAlphaType {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "InstancedMaterialLightWithId/MultiplyColorByAlphaType";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId+MultiplyColorByAlphaType")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::GlobalNamespace::InstancedMaterialLightWithId_MultiplyColorByAlphaType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId+MultiplyColorByAlphaType")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::GlobalNamespace::InstancedMaterialLightWithId_MultiplyColorByAlphaType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId+MultiplyColorByAlphaType")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::GlobalNamespace::InstancedMaterialLightWithId_MultiplyColorByAlphaType {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_InstancedMaterialLightWithId+MultiplyColorByAlphaType")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::GlobalNamespace::InstancedMaterialLightWithId_MultiplyColorByAlphaType {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
     }
 }

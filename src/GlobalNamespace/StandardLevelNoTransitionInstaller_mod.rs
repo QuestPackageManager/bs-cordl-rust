@@ -9,6 +9,10 @@ pub struct StandardLevelNoTransitionInstaller {
     pub _standardLevelNoTransitionInstallerData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardLevelNoTransitionInstallerData,
     >,
+    pub recordingRelativePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub playmodeOptions: crate::GlobalNamespace::PlaymodeOptions,
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,

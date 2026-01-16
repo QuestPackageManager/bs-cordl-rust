@@ -4,7 +4,7 @@
 pub struct MultiColumnListView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListView,
     pub m_Columns: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Columns>,
-    pub m_SortingEnabled: bool,
+    pub m_SortingMode: crate::UnityEngine::UIElements::ColumnSortingMode,
     pub m_SortColumnDescriptions: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::SortColumnDescriptions,
     >,
@@ -64,6 +64,38 @@ impl crate::UnityEngine::UIElements::MultiColumnListView {
     pub type UxmlFactory = crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+MultiColumnListView+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::MultiColumnListView_UxmlTraits;
+    pub fn ColumnsChanged(
+        &mut self,
+        sender: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        args: crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppObject,
+                            >,
+                            crate::UnityEngine::UIElements::BindablePropertyChangedEventArgs,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("ColumnsChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ColumnsChanged", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (sender, args))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn CreateViewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -334,6 +366,33 @@ impl crate::UnityEngine::UIElements::MultiColumnListView {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_sortingMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::ColumnSortingMode,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::UIElements::ColumnSortingMode,
+                        0usize,
+                    >("get_sortingMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sortingMode", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::ColumnSortingMode = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_viewController(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -423,24 +482,24 @@ impl crate::UnityEngine::UIElements::MultiColumnListView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_sortingEnabled(
+    pub fn set_sortingMode(
         &mut self,
-        value: bool,
+        value: crate::UnityEngine::UIElements::ColumnSortingMode,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (bool),
+                        (crate::UnityEngine::UIElements::ColumnSortingMode),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("set_sortingEnabled")
+                    >("set_sortingMode")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_sortingEnabled", 1usize
+                            "set_sortingMode", 1usize
                         )
                     })
             });
@@ -557,8 +616,10 @@ for crate::UnityEngine::UIElements::MultiColumnListView_UxmlFactory {
 #[derive(Debug)]
 pub struct MultiColumnListView_UxmlTraits {
     __cordl_parent: crate::UnityEngine::UIElements::BaseListView_UxmlTraits,
-    pub m_SortingEnabled: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    pub m_SortingMode: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlEnumAttributeDescription_1<
+            crate::UnityEngine::UIElements::ColumnSortingMode,
+        >,
     >,
     pub m_Columns: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlObjectAttributeDescription_1<

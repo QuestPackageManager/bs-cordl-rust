@@ -4,6 +4,9 @@
 pub struct WaitWhile {
     __cordl_parent: crate::UnityEngine::CustomYieldInstruction,
     pub m_Predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
+    pub m_TimeoutCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub m_TimeoutMode: crate::UnityEngine::WaitTimeoutMode,
+    pub m_MaxExecutionTime: f64,
 }
 #[cfg(feature = "cordl_class_UnityEngine+WaitWhile")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::WaitWhile {
@@ -39,6 +42,23 @@ impl std::ops::DerefMut for crate::UnityEngine::WaitWhile {
 }
 #[cfg(feature = "UnityEngine+WaitWhile")]
 impl crate::UnityEngine::WaitWhile {
+    pub fn GetTime(&mut self) -> quest_hook::libil2cpp::Result<f64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), f64, 0usize>("GetTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "GetTime",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn New(
         predicate: quest_hook::libil2cpp::Gc<crate::System::Func_1<bool>>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

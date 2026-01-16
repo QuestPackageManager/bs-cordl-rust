@@ -10,3 +10,6 @@ pub use LocationWrapper_mod::*;
 // class ResourceLocationBase_mod; export all
 mod ResourceLocationBase_mod;
 pub use ResourceLocationBase_mod::*;
+// class ResourceLocationComparer_mod; export all
+mod ResourceLocationComparer_mod;
+pub use ResourceLocationComparer_mod::*;

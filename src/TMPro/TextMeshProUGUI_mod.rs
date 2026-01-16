@@ -10,6 +10,7 @@ pub struct TextMeshProUGUI {
     pub m_DelayedMaterialRebuild: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Coroutine,
     >,
+    pub m_ShouldUpdateCulling: bool,
     pub m_ClipRect: crate::UnityEngine::Rect,
     pub m_ValidRect: bool,
     pub OnPreRenderText: quest_hook::libil2cpp::Gc<
@@ -35,6 +36,9 @@ pub struct TextMeshProUGUI {
     pub m_maskOffset: crate::UnityEngine::Vector4,
     pub m_EnvMapMatrix: crate::UnityEngine::Matrix4x4,
     pub m_isRegisteredForEvents: bool,
+    pub materialIndexPairs: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::Dictionary_2<i32, i32>,
+    >,
 }
 #[cfg(feature = "cordl_class_TMPro+TextMeshProUGUI")]
 unsafe impl quest_hook::libil2cpp::Type for crate::TMPro::TextMeshProUGUI {
@@ -1087,8 +1091,10 @@ impl crate::TMPro::TextMeshProUGUI {
     }
     pub fn SetArraySizes(
         &mut self,
-        unicodeChars: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::TMPro::TMP_Text_UnicodeChar>,
+        textProcessingArray: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                crate::TMPro::TMP_Text_TextProcessingElement,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1098,7 +1104,7 @@ impl crate::TMPro::TextMeshProUGUI {
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
                             quest_hook::libil2cpp::Il2CppArray<
-                                crate::TMPro::TMP_Text_UnicodeChar,
+                                crate::TMPro::TMP_Text_TextProcessingElement,
                             >,
                         >),
                         i32,
@@ -1113,7 +1119,7 @@ impl crate::TMPro::TextMeshProUGUI {
                     })
             });
         let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (unicodeChars))?
+            cordl_method_info.invoke_unchecked(self, (textProcessingArray))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1699,6 +1705,31 @@ impl crate::TMPro::TextMeshProUGUI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (flags))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ValidateEnvMapProperty(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ValidateEnvMapProperty")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ValidateEnvMapProperty", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

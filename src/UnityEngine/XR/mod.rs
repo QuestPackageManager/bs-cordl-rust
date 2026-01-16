@@ -54,8 +54,11 @@ pub use MeshId_mod::*;
 // class MeshVertexAttributes_mod; export all
 mod MeshVertexAttributes_mod;
 pub use MeshVertexAttributes_mod::*;
-// namespace Provider;
-pub mod Provider;
+// namespace OpenXR;
+pub mod OpenXR;
+// class TrackingOriginModeFlags_mod; export all
+mod TrackingOriginModeFlags_mod;
+pub use TrackingOriginModeFlags_mod::*;
 // class TrackingSpaceType_mod; export all
 mod TrackingSpaceType_mod;
 pub use TrackingSpaceType_mod::*;

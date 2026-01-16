@@ -263,7 +263,7 @@ impl crate::System::SpanHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_T2<T>(
+    pub fn IndexOf_T_i32_4<T>(
         searchSpace: quest_hook::libil2cpp::ByRefMut<T>,
         value: T,
         length: i32,
@@ -294,7 +294,7 @@ impl crate::System::SpanHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf__cordl_char1(
+    pub fn IndexOf__cordl_char_i32_2(
         searchSpace: quest_hook::libil2cpp::ByRefMut<char>,
         value: char,
         length: i32,
@@ -321,7 +321,85 @@ impl crate::System::SpanHelpers {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_u8_0(
+    pub fn IndexOf_i32_ByRefMut_i32_0(
+        searchSpace: quest_hook::libil2cpp::ByRefMut<u8>,
+        searchSpaceLength: i32,
+        value: quest_hook::libil2cpp::ByRefMut<u8>,
+        valueLength: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<u8>,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<u8>,
+                            i32,
+                        ),
+                        i32,
+                        4usize,
+                    >("IndexOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (searchSpace, searchSpaceLength, value, valueLength),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_i32_ByRefMut_i32_3<T>(
+        searchSpace: quest_hook::libil2cpp::ByRefMut<T>,
+        searchSpaceLength: i32,
+        value: quest_hook::libil2cpp::ByRefMut<T>,
+        valueLength: i32,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<T>,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<T>,
+                            i32,
+                        ),
+                        i32,
+                        4usize,
+                    >("IndexOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (searchSpace, searchSpaceLength, value, valueLength),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IndexOf_u8_i32_1(
         searchSpace: quest_hook::libil2cpp::ByRefMut<u8>,
         value: u8,
         length: i32,

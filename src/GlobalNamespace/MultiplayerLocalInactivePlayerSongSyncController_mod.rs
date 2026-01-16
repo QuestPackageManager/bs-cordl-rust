@@ -13,7 +13,7 @@ pub struct MultiplayerLocalInactivePlayerSongSyncController {
         crate::GlobalNamespace::MultiplayerLocalInactivePlayerSongSyncController_InitData,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,

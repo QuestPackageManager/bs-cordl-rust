@@ -25,7 +25,7 @@ pub struct MultiplayerGameplayAnimator {
     >,
     pub tweeningManager: quest_hook::libil2cpp::Gc<crate::Tweening::TimeTweeningManager>,
     pub connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerGameplayAnimator")]

@@ -64,8 +64,6 @@ for crate::System::Collections::Generic::Queue_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+Queue_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::Queue_1<T> {
-    pub const GrowFactor: i32 = 200i32;
-    pub const MinimumGrow: i32 = 4i32;
     #[cfg(feature = "System+Collections+Generic+Queue_1+Enumerator")]
     pub type Enumerator = crate::System::Collections::Generic::Queue_1_Enumerator<T>;
     pub fn Clear(&mut self) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

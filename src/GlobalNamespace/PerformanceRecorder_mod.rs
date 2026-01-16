@@ -5,12 +5,6 @@ pub struct PerformanceRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub minFpsWindow: f32,
     pub _StartEnabled_k__BackingField: bool,
-    pub _GamePause_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IGamePause,
-    >,
-    pub _SceneSetupData_k__BackingField: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayCoreSceneSetupData,
-    >,
     pub _SettingsManager_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
     >,
@@ -18,10 +12,28 @@ pub struct PerformanceRecorder {
         crate::GlobalNamespace::PlayerSpecificSettings,
     >,
     pub _GameplayModifiers_k__BackingField: crate::GlobalNamespace::GameplayModifierMask,
-    pub _RrecPlayState_k__BackingField: quest_hook::libil2cpp::Gc<
+    pub _RecPlayState_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RecPlayBehaviour_State,
     >,
+    pub _GamePause_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IGamePause,
+    >,
+    pub _SceneSetupData_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::GameplayCoreSceneSetupData,
+    >,
+    pub _ObjectManager_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectManager,
+    >,
+    pub _CallbackController_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapCallbacksController,
+    >,
+    pub _TimeSync_k__BackingField: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AudioTimeSyncController,
+    >,
     pub _frameTimes: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<f32>,
+    >,
+    pub _songTimes: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<f32>,
     >,
     pub _configChecks: quest_hook::libil2cpp::Gc<
@@ -29,6 +41,20 @@ pub struct PerformanceRecorder {
     >,
     pub _configStats: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PerformanceConfigurationStats,
+    >,
+    pub _beatmapItems: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapDataItem>,
+        >,
+    >,
+    pub _beatmapObjectRecorder: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapObjectRecorder,
+    >,
+    pub _beatmapEventRecorder: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventRecorder,
+    >,
+    pub _beatmapEventTweenRecorder: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::BeatmapEventTweenRecorder,
     >,
     pub _profilerMetrics: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::ProfilerMetrics,
@@ -72,7 +98,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PerformanceRecorder {
 }
 #[cfg(feature = "PerformanceRecorder")]
 impl crate::GlobalNamespace::PerformanceRecorder {
-    pub const kFrameCap: i32 = 72000i32;
+    pub const kFramesCapacity: i32 = 72000i32;
     pub fn Awake(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -86,6 +112,56 @@ impl crate::GlobalNamespace::PerformanceRecorder {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Awake",
                             0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ClearRecordingData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ClearRecordingData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearRecordingData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CollectFrameData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("CollectFrameData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CollectFrameData", 0usize
                         )
                     })
             });
@@ -243,6 +319,35 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_CallbackController(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapCallbacksController>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCallbacksController,
+                        >,
+                        0usize,
+                    >("get_CallbackController")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_CallbackController", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_GamePause(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -295,6 +400,35 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_ObjectManager(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectManager>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapObjectManager,
+                        >,
+                        0usize,
+                    >("get_ObjectManager")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_ObjectManager", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapObjectManager,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_PlayerSpecificSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -324,7 +458,7 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_RrecPlayState(
+    pub fn get_RecPlayState(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
@@ -339,12 +473,12 @@ impl crate::GlobalNamespace::PerformanceRecorder {
                             crate::GlobalNamespace::RecPlayBehaviour_State,
                         >,
                         0usize,
-                    >("get_RrecPlayState")
+                    >("get_RecPlayState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_RrecPlayState", 0usize
+                            "get_RecPlayState", 0usize
                         )
                     })
             });
@@ -428,6 +562,65 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_TimeSync(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioTimeSyncController>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::AudioTimeSyncController,
+                        >,
+                        0usize,
+                    >("get_TimeSync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_TimeSync", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioTimeSyncController,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_CallbackController(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapCallbacksController,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapCallbacksController,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_CallbackController")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_CallbackController", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_GamePause(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGamePause>,
@@ -480,6 +673,34 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_ObjectManager(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapObjectManager>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::BeatmapObjectManager,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_ObjectManager")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_ObjectManager", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_PlayerSpecificSettings(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlayerSpecificSettings>,
@@ -508,7 +729,7 @@ impl crate::GlobalNamespace::PerformanceRecorder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_RrecPlayState(
+    pub fn set_RecPlayState(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::RecPlayBehaviour_State>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -522,12 +743,12 @@ impl crate::GlobalNamespace::PerformanceRecorder {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("set_RrecPlayState")
+                    >("set_RecPlayState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_RrecPlayState", 1usize
+                            "set_RecPlayState", 1usize
                         )
                     })
             });
@@ -612,6 +833,34 @@ impl crate::GlobalNamespace::PerformanceRecorder {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_StartEnabled", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_TimeSync(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioTimeSyncController>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::AudioTimeSyncController,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_TimeSync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_TimeSync", 1usize
                         )
                     })
             });

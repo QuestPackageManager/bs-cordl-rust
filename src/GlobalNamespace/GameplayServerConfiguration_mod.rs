@@ -445,6 +445,20 @@ impl crate::GlobalNamespace::GameplayServerConfiguration {
     }
 }
 #[cfg(feature = "GameplayServerConfiguration")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::GameplayServerConfiguration {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "GameplayServerConfiguration")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::GameplayServerConfiguration {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "GameplayServerConfiguration")]
 impl AsRef<
     crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         crate::GlobalNamespace::GameplayServerConfiguration,

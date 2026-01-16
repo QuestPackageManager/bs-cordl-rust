@@ -437,6 +437,20 @@ impl crate::GlobalNamespace::MultiplayerAvatarsData {
     }
 }
 #[cfg(feature = "MultiplayerAvatarsData")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "MultiplayerAvatarsData")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::MultiplayerAvatarsData {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "MultiplayerAvatarsData")]
 impl AsRef<
     crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         crate::GlobalNamespace::MultiplayerAvatarsData,

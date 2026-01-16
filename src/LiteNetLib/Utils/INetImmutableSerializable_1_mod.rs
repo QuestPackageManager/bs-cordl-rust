@@ -92,38 +92,6 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Serialize(
-        &mut self,
-        writer: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataWriter>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
-            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
-    {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::LiteNetLib::Utils::NetDataWriter,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("Serialize")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Serialize", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (writer))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn from_object_mut(
         object_param: *mut quest_hook::libil2cpp::Il2CppObject,
     ) -> *mut Self {
@@ -138,5 +106,23 @@ for crate::LiteNetLib::Utils::INetImmutableSerializable_1<T> {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+INetImmutableSerializable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::LiteNetLib::Utils::INetImmutableSerializable_1<T> {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "LiteNetLib+Utils+INetImmutableSerializable_1")]
+impl<
+    T: quest_hook::libil2cpp::Type,
+> AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::LiteNetLib::Utils::INetImmutableSerializable_1<T> {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        unsafe { std::mem::transmute(self) }
     }
 }

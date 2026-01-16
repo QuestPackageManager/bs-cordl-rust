@@ -3,9 +3,8 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct TMP_Vertex {
     pub position: crate::UnityEngine::Vector3,
-    pub uv: crate::UnityEngine::Vector2,
+    pub uv: crate::UnityEngine::Vector4,
     pub uv2: crate::UnityEngine::Vector2,
-    pub uv4: crate::UnityEngine::Vector2,
     pub color: crate::UnityEngine::Color32,
 }
 #[cfg(feature = "cordl_class_TMPro+TMP_Vertex")]

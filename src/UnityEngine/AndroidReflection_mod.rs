@@ -38,6 +38,32 @@ impl std::ops::DerefMut for crate::UnityEngine::AndroidReflection {
 }
 #[cfg(feature = "UnityEngine+AndroidReflection")]
 impl crate::UnityEngine::AndroidReflection {
+    pub fn CreateInvocationError(
+        ex: quest_hook::libil2cpp::Gc<crate::System::Exception>,
+        methodNotFound: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Exception>, bool),
+                        crate::System::IntPtr,
+                        2usize,
+                    >("CreateInvocationError")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CreateInvocationError", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (ex, methodNotFound))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetConstructorMember(
         jclass: crate::System::IntPtr,
         signature: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -351,37 +377,6 @@ impl crate::UnityEngine::AndroidReflection {
             });
         let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (player, delegateHandle, interfaze))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn SetNativeExceptionOnProxy(
-        proxy: crate::System::IntPtr,
-        e: quest_hook::libil2cpp::Gc<crate::System::Exception>,
-        methodNotFound: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            crate::System::IntPtr,
-                            quest_hook::libil2cpp::Gc<crate::System::Exception>,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        3usize,
-                    >("SetNativeExceptionOnProxy")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetNativeExceptionOnProxy", 3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (proxy, e, methodNotFound))?
         };
         Ok(__cordl_ret.into())
     }

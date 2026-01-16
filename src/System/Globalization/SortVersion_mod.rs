@@ -3,8 +3,6 @@
 #[derive(Debug)]
 pub struct SortVersion {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub m_NlsVersion: i32,
-    pub m_SortId: crate::System::Guid,
 }
 #[cfg(feature = "cordl_class_System+Globalization+SortVersion")]
 unsafe impl quest_hook::libil2cpp::Type for crate::System::Globalization::SortVersion {

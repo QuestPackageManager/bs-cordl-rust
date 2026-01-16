@@ -914,6 +914,35 @@ impl crate::UnityEngine::AndroidJavaObject {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn FromJavaArray<ReturnType>(
+        jobject: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<ReturnType>
+    where
+        ReturnType: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        ReturnType,
+                        1usize,
+                    >("FromJavaArray")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromJavaArray", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: ReturnType = unsafe {
+            cordl_method_info.invoke_unchecked((), (jobject))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn FromJavaArrayDeleteLocalRef<ReturnType>(
         jobject: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<ReturnType>

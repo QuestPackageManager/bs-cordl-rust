@@ -9,9 +9,6 @@ pub struct HealthWarningDisplayViewController {
     pub _healthAndSafetyFullLocalizationKey: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _healthAndSafetyPSLocalizationKey: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
     pub _showShortHealthAndSafety: bool,
 }
 #[cfg(feature = "cordl_class_HealthWarningDisplayViewController")]

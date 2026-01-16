@@ -4,6 +4,12 @@ pub use ASCIIEncoding_ASCIIEncodingSealed_mod::*;
 // class ASCIIEncoding_mod; export all
 mod ASCIIEncoding_mod;
 pub use ASCIIEncoding_mod::*;
+// class Base64Encoding_mod; export all
+mod Base64Encoding_mod;
+pub use Base64Encoding_mod::*;
+// class BinHexEncoding_mod; export all
+mod BinHexEncoding_mod;
+pub use BinHexEncoding_mod::*;
 // class DecoderExceptionFallbackBuffer_mod; export all
 mod DecoderExceptionFallbackBuffer_mod;
 pub use DecoderExceptionFallbackBuffer_mod::*;
@@ -102,6 +108,9 @@ pub use StringBuilderCache_mod::*;
 // class StringBuilder_mod; export all
 mod StringBuilder_mod;
 pub use StringBuilder_mod::*;
+// class SurrogateChar_mod; export all
+mod SurrogateChar_mod;
+pub use SurrogateChar_mod::*;
 // class UTF32Encoding_mod; export all
 mod UTF32Encoding_mod;
 pub use UTF32Encoding_mod::*;

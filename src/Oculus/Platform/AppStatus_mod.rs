@@ -6,6 +6,7 @@ pub enum AppStatus {
     DownloadQueued = 2i32,
     Downloading = 3i32,
     Entitled = 1i32,
+    InstallQueued = 7i32,
     Installed = 5i32,
     Installing = 4i32,
     Uninstalling = 6i32,

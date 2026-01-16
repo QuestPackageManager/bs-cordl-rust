@@ -38,6 +38,7 @@ pub struct LevelPackDetailViewController {
     >,
     pub _pack: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevelPack>,
     pub _blurredPackArtwork: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
+    pub _entitlementStatus: crate::GlobalNamespace::EntitlementStatus,
 }
 #[cfg(feature = "cordl_class_LevelPackDetailViewController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -324,7 +325,7 @@ impl crate::GlobalNamespace::LevelPackDetailViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_b__19_1(
+    pub fn _DidActivate_b__20_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -335,12 +336,12 @@ impl crate::GlobalNamespace::LevelPackDetailViewController {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<DidActivate>b__19_1")
+                    >("<DidActivate>b__20_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<DidActivate>b__19_1", 0usize
+                            "<DidActivate>b__20_1", 0usize
                         )
                     })
             });
@@ -349,7 +350,7 @@ impl crate::GlobalNamespace::LevelPackDetailViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_b__19_2(
+    pub fn _DidActivate_b__20_2(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -360,12 +361,12 @@ impl crate::GlobalNamespace::LevelPackDetailViewController {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<DidActivate>b__19_2")
+                    >("<DidActivate>b__20_2")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<DidActivate>b__19_2", 0usize
+                            "<DidActivate>b__20_2", 0usize
                         )
                     })
             });
@@ -374,7 +375,7 @@ impl crate::GlobalNamespace::LevelPackDetailViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_g__HandleDidPressRefreshButton_19_0(
+    pub fn _DidActivate_g__HandleDidPressRefreshButton_20_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -385,12 +386,12 @@ impl crate::GlobalNamespace::LevelPackDetailViewController {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("<DidActivate>g__HandleDidPressRefreshButton|19_0")
+                    >("<DidActivate>g__HandleDidPressRefreshButton|20_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<DidActivate>g__HandleDidPressRefreshButton|19_0", 0usize
+                            "<DidActivate>g__HandleDidPressRefreshButton|20_0", 0usize
                         )
                     })
             });

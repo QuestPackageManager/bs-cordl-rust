@@ -10,3 +10,6 @@ pub use OnScreenStick_mod::*;
 // class OnScreenSupport_mod; export all
 mod OnScreenSupport_mod;
 pub use OnScreenSupport_mod::*;
+// class UGUIOnScreenControlUtils_mod; export all
+mod UGUIOnScreenControlUtils_mod;
+pub use UGUIOnScreenControlUtils_mod::*;

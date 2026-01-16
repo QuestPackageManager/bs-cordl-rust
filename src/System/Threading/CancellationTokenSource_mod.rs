@@ -60,10 +60,6 @@ impl std::ops::DerefMut for crate::System::Threading::CancellationTokenSource {
 }
 #[cfg(feature = "System+Threading+CancellationTokenSource")]
 impl crate::System::Threading::CancellationTokenSource {
-    pub const CannotBeCanceled: i32 = 0i32;
-    pub const NotCanceledState: i32 = 1i32;
-    pub const NotifyingCompleteState: i32 = 3i32;
-    pub const NotifyingState: i32 = 2i32;
     #[cfg(
         feature = "System+Threading+CancellationTokenSource+Linked1CancellationTokenSource"
     )]

@@ -90,7 +90,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     pub fn AddPlayer(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -145,7 +145,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     pub fn HandleLobbyStateDataModelPlayerConnected(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -154,7 +154,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -175,7 +175,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
     pub fn HandleLobbyStateDataModelPlayerDisconnected(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -184,7 +184,7 @@ impl crate::GlobalNamespace::MultiplayerLobbyAvatarManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

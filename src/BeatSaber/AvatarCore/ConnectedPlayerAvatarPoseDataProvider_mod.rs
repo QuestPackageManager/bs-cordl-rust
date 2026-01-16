@@ -9,7 +9,7 @@ pub struct ConnectedPlayerAvatarPoseDataProvider {
         crate::System::Action_1<crate::BeatSaber::AvatarCore::AvatarPoseData>,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::INodePoseSyncStateManager,
@@ -60,7 +60,7 @@ for crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
 impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
     pub fn New(
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
         nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::INodePoseSyncStateManager,
@@ -102,7 +102,7 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
     pub fn _ctor(
         &mut self,
         connectedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
         nodePoseSyncStateManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::INodePoseSyncStateManager,
@@ -118,7 +118,7 @@ impl crate::BeatSaber::AvatarCore::ConnectedPlayerAvatarPoseDataProvider {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
+                                crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::INodePoseSyncStateManager,

@@ -3,16 +3,15 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum SelectMode {
     #[default]
-    Any = 65535i32,
-    Edge = 4i32,
-    Face = 8i32,
-    InputTool = 128i32,
+    Any = 255i32,
+    Edge = 2i32,
+    Face = 4i32,
+    InputTool = 64i32,
     None = 0i32,
-    Object = 1i32,
-    TextureEdge = 32i32,
-    TextureFace = 16i32,
-    TextureVertex = 64i32,
-    Vertex = 2i32,
+    TextureEdge = 16i32,
+    TextureFace = 32i32,
+    TextureVertex = 8i32,
+    Vertex = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+SelectMode")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::ProBuilder::SelectMode {

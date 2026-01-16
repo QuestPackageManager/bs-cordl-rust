@@ -12,7 +12,7 @@ pub struct LightRotationEventEffect {
     pub _audioTimeSource: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IAudioTimeSource,
     >,
-    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
     pub _transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _startRotation: crate::UnityEngine::Quaternion,
     pub _rotationSpeed: f32,

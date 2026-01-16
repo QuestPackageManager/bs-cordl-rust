@@ -12,6 +12,9 @@ pub use PreserveAttribute_mod::*;
 // class RequiredByNativeCodeAttribute_mod; export all
 mod RequiredByNativeCodeAttribute_mod;
 pub use RequiredByNativeCodeAttribute_mod::*;
+// class RequiredMemberAttribute_mod; export all
+mod RequiredMemberAttribute_mod;
+pub use RequiredMemberAttribute_mod::*;
 // class UsedByNativeCodeAttribute_mod; export all
 mod UsedByNativeCodeAttribute_mod;
 pub use UsedByNativeCodeAttribute_mod::*;

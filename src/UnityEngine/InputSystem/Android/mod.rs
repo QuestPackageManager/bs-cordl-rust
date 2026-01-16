@@ -4,6 +4,9 @@ pub use AndroidAccelerometer_mod::*;
 // class AndroidAmbientTemperature_mod; export all
 mod AndroidAmbientTemperature_mod;
 pub use AndroidAmbientTemperature_mod::*;
+// class AndroidGameRotationVector_mod; export all
+mod AndroidGameRotationVector_mod;
+pub use AndroidGameRotationVector_mod::*;
 // class AndroidGamepadWithDpadAxes_mod; export all
 mod AndroidGamepadWithDpadAxes_mod;
 pub use AndroidGamepadWithDpadAxes_mod::*;
@@ -19,6 +22,9 @@ pub use AndroidGravitySensor_mod::*;
 // class AndroidGyroscope_mod; export all
 mod AndroidGyroscope_mod;
 pub use AndroidGyroscope_mod::*;
+// class AndroidHingeAngle_mod; export all
+mod AndroidHingeAngle_mod;
+pub use AndroidHingeAngle_mod::*;
 // class AndroidJoystick_mod; export all
 mod AndroidJoystick_mod;
 pub use AndroidJoystick_mod::*;

@@ -3,6 +3,15 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchCullingOutputDrawCommands {
     pub drawCommands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub indirectDrawCommands: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub proceduralDrawCommands: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
+    pub proceduralIndirectDrawCommands: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppObject,
+    >,
     pub visibleInstances: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub drawRanges: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
     pub instanceSortingPositions: quest_hook::libil2cpp::Gc<
@@ -12,6 +21,9 @@ pub struct BatchCullingOutputDrawCommands {
         quest_hook::libil2cpp::Il2CppObject,
     >,
     pub drawCommandCount: i32,
+    pub indirectDrawCommandCount: i32,
+    pub proceduralDrawCommandCount: i32,
+    pub proceduralIndirectDrawCommandCount: i32,
     pub visibleInstanceCount: i32,
     pub drawRangeCount: i32,
     pub instanceSortingPositionFloatCount: i32,

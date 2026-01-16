@@ -4,11 +4,13 @@
 pub struct GameplayRpcManager {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _rpcHandler: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::RpcHandler_1<
+        crate::GlobalNamespace::RpcHandler_3<
+            crate::GlobalNamespace::NetworkMessageType,
             crate::GlobalNamespace::GameplayRpcManager_RpcType,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
     pub setGameplaySceneSyncFinishedEvent: quest_hook::libil2cpp::Gc<
@@ -830,7 +832,7 @@ impl crate::GlobalNamespace::GameplayRpcManager {
     }
     pub fn New(
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -1232,7 +1234,7 @@ impl crate::GlobalNamespace::GameplayRpcManager {
     pub fn _ctor(
         &mut self,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -1241,7 +1243,7 @@ impl crate::GlobalNamespace::GameplayRpcManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IMultiplayerSessionManager,
+                            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

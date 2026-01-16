@@ -95,25 +95,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::TimeSpan {
 }
 #[cfg(feature = "System+TimeSpan")]
 impl crate::System::TimeSpan {
-    pub const DaysPerTick: f64 = 0.0000000000011574074074074074f64;
-    pub const HoursPerTick: f64 = 0.000000000027777777777777777f64;
-    pub const MaxMilliSeconds: i64 = 922337203685477i64;
-    pub const MaxSeconds: i64 = 922337203685i64;
-    pub const MillisPerDay: i32 = 86400000i32;
-    pub const MillisPerHour: i32 = 3600000i32;
-    pub const MillisPerMinute: i32 = 60000i32;
-    pub const MillisPerSecond: i32 = 1000i32;
-    pub const MillisecondsPerTick: f64 = 0.0001f64;
-    pub const MinMilliSeconds: i64 = -922337203685477i64;
-    pub const MinSeconds: i64 = -922337203685i64;
-    pub const MinutesPerTick: f64 = 0.0000000016666666666666667f64;
-    pub const SecondsPerTick: f64 = 0.0000001f64;
-    pub const TicksPerDay: i64 = 864000000000i64;
-    pub const TicksPerHour: i64 = 36000000000i64;
-    pub const TicksPerMillisecond: i64 = 10000i64;
-    pub const TicksPerMinute: i64 = 600000000i64;
-    pub const TicksPerSecond: i64 = 10000000i64;
-    pub const TicksPerTenthSecond: i64 = 1000000i64;
     pub fn Add(
         &mut self,
         ts: crate::System::TimeSpan,
@@ -876,6 +857,23 @@ impl crate::System::TimeSpan {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_Hours", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_Milliseconds(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("get_Milliseconds")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Milliseconds", 0usize
                         )
                     })
             });

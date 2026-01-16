@@ -148,6 +148,67 @@ impl crate::GlobalNamespace::OVRRoomLayout {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn FetchAnchorsAsync(
+        &mut self,
+        anchors: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::GlobalNamespace::OVRAnchor,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTask_1<
+            crate::GlobalNamespace::OVRResult_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::GlobalNamespace::OVRAnchor,
+                    >,
+                >,
+                crate::GlobalNamespace::OVRAnchor_FetchResult,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                crate::GlobalNamespace::OVRAnchor,
+                            >,
+                        >),
+                        crate::GlobalNamespace::OVRTask_1<
+                            crate::GlobalNamespace::OVRResult_2<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        crate::GlobalNamespace::OVRAnchor,
+                                    >,
+                                >,
+                                crate::GlobalNamespace::OVRAnchor_FetchResult,
+                            >,
+                        >,
+                        1usize,
+                    >("FetchAnchorsAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FetchAnchorsAsync", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<
+            crate::GlobalNamespace::OVRResult_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        crate::GlobalNamespace::OVRAnchor,
+                    >,
+                >,
+                crate::GlobalNamespace::OVRAnchor_FetchResult,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (anchors))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn FetchLayoutAnchorsAsync(
         &mut self,
         anchors: quest_hook::libil2cpp::Gc<

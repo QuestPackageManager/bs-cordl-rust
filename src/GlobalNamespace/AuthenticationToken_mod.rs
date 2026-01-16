@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct AuthenticationToken {
-    pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
+    pub platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
     pub userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub sessionToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -103,8 +103,8 @@ for crate::GlobalNamespace::AuthenticationToken {
 }
 #[cfg(feature = "AuthenticationToken")]
 impl crate::GlobalNamespace::AuthenticationToken {
-    #[cfg(feature = "AuthenticationToken+Platform")]
-    pub type Platform = crate::GlobalNamespace::AuthenticationToken_Platform;
+    #[cfg(feature = "AuthenticationToken+PlatformType")]
+    pub type PlatformType = crate::GlobalNamespace::AuthenticationToken_PlatformType;
     pub fn CreateFromSerializedData(
         &mut self,
         reader: quest_hook::libil2cpp::Gc<crate::LiteNetLib::Utils::NetDataReader>,
@@ -323,7 +323,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
     }
     pub fn _ctor(
         &mut self,
-        platform: crate::GlobalNamespace::AuthenticationToken_Platform,
+        platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         userName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         sessionToken: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -334,7 +334,7 @@ impl crate::GlobalNamespace::AuthenticationToken {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            crate::GlobalNamespace::AuthenticationToken_Platform,
+                            crate::GlobalNamespace::AuthenticationToken_PlatformType,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
@@ -361,6 +361,20 @@ impl crate::GlobalNamespace::AuthenticationToken {
                 .invoke_unchecked(self, (platform, userId, userName, sessionToken))?
         };
         Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "AuthenticationToken")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::AuthenticationToken {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
+    }
+}
+#[cfg(feature = "AuthenticationToken")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::AuthenticationToken {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        todo!()
     }
 }
 #[cfg(feature = "AuthenticationToken")]
@@ -391,10 +405,10 @@ impl AsMut<
         todo!()
     }
 }
-#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 #[repr(u8)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
-pub enum AuthenticationToken_Platform {
+pub enum AuthenticationToken_PlatformType {
     #[default]
     Oculus = 2u8,
     OculusRift = 1u8,
@@ -407,13 +421,13 @@ pub enum AuthenticationToken_Platform {
     Steam = 3u8,
     Test = 0u8,
 }
-#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Type
-for crate::GlobalNamespace::AuthenticationToken_Platform {
+for crate::GlobalNamespace::AuthenticationToken_PlatformType {
     type Held<'a> = Self;
     type HeldRaw = Self;
     const NAMESPACE: &'static str = "";
-    const CLASS_NAME: &'static str = "AuthenticationToken/Platform";
+    const CLASS_NAME: &'static str = "AuthenticationToken/PlatformType";
     fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         !ty.is_ref()
             && ty
@@ -437,9 +451,9 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
                 .is_assignable_from(ty.class())
     }
 }
-#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Argument
-for crate::GlobalNamespace::AuthenticationToken_Platform {
+for crate::GlobalNamespace::AuthenticationToken_PlatformType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
@@ -448,9 +462,9 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         self as *mut Self as *mut ::std::ffi::c_void
     }
 }
-#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Parameter
-for crate::GlobalNamespace::AuthenticationToken_Platform {
+for crate::GlobalNamespace::AuthenticationToken_PlatformType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
@@ -462,9 +476,9 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         self
     }
 }
-#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Returned
-for crate::GlobalNamespace::AuthenticationToken_Platform {
+for crate::GlobalNamespace::AuthenticationToken_PlatformType {
     type Type = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
@@ -477,9 +491,9 @@ for crate::GlobalNamespace::AuthenticationToken_Platform {
         }
     }
 }
-#[cfg(feature = "cordl_class_AuthenticationToken+Platform")]
+#[cfg(feature = "cordl_class_AuthenticationToken+PlatformType")]
 unsafe impl quest_hook::libil2cpp::Return
-for crate::GlobalNamespace::AuthenticationToken_Platform {
+for crate::GlobalNamespace::AuthenticationToken_PlatformType {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

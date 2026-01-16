@@ -251,12 +251,13 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
         lightEventConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
-        output: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
             >,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -275,26 +276,29 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IBeatmapLightEventConverter,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::BeatmapEventData,
-                                    >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::BeatmapEventData,
                                 >,
                             >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        9usize,
+                        >,
+                        8usize,
                     >("Unpack")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Unpack",
-                            9usize
+                            8usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapEventData>,
+            >,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     self,
@@ -307,7 +311,6 @@ impl crate::GlobalNamespace::BeatmapEventDataBox {
                         maxBeat,
                         beatToTimeConverter,
                         lightEventConverter,
-                        output,
                     ),
                 )?
         };

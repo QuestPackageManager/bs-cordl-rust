@@ -9,6 +9,12 @@ pub struct DeeplinkManagerToDestinationRequestManagerAdapter {
     pub _beatmapCharacteristicCollection: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapCharacteristicCollection,
     >,
+    pub _playerDataModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PlayerDataModel,
+    >,
+    pub _telemetryModel: quest_hook::libil2cpp::Gc<
+        crate::Analytics::Model::TelemetryModel,
+    >,
     pub didSendMenuDestinationRequestEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MenuDestination>,

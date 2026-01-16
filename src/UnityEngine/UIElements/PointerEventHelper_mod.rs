@@ -46,6 +46,7 @@ impl crate::UnityEngine::UIElements::PointerEventHelper {
         button: i32,
         clickCount: i32,
         modifiers: crate::UnityEngine::EventModifiers,
+        displayIndex: i32,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     > {
@@ -61,17 +62,18 @@ impl crate::UnityEngine::UIElements::PointerEventHelper {
                             i32,
                             i32,
                             crate::UnityEngine::EventModifiers,
+                            i32,
                         ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::EventBase,
                         >,
-                        6usize,
+                        7usize,
                     >("GetPooled")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPooled", 6usize
+                            "GetPooled", 7usize
                         )
                     })
             });
@@ -81,7 +83,15 @@ impl crate::UnityEngine::UIElements::PointerEventHelper {
             cordl_method_info
                 .invoke_unchecked(
                     (),
-                    (eventType, mousePosition, delta, button, clickCount, modifiers),
+                    (
+                        eventType,
+                        mousePosition,
+                        delta,
+                        button,
+                        clickCount,
+                        modifiers,
+                        displayIndex,
+                    ),
                 )?
         };
         Ok(__cordl_ret.into())

@@ -38,14 +38,11 @@ impl std::ops::DerefMut for crate::HMUI::IColorStyledComponent {
 }
 #[cfg(feature = "HMUI+IColorStyledComponent")]
 impl crate::HMUI::IColorStyledComponent {
-    pub fn UpdateColorStyle_Color_f32__cordl_bool_GradientDirection_Color_Color1(
+    pub fn LerpColorStyle(
         &mut self,
-        color: crate::UnityEngine::Color,
-        globalLightTintIntensity: f32,
-        gradient: bool,
-        gradientDirection: crate::GlobalNamespace::GradientDirection,
-        color0: crate::UnityEngine::Color,
-        color1: crate::UnityEngine::Color,
+        from: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle>,
+        to: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IReadOnlyColorStyle>,
+        t: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -53,41 +50,31 @@ impl crate::HMUI::IColorStyledComponent {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (
-                            crate::UnityEngine::Color,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IReadOnlyColorStyle,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IReadOnlyColorStyle,
+                            >,
                             f32,
-                            bool,
-                            crate::GlobalNamespace::GradientDirection,
-                            crate::UnityEngine::Color,
-                            crate::UnityEngine::Color,
                         ),
                         quest_hook::libil2cpp::Void,
-                        6usize,
-                    >("UpdateColorStyle")
+                        3usize,
+                    >("LerpColorStyle")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateColorStyle", 6usize
+                            "LerpColorStyle", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        color,
-                        globalLightTintIntensity,
-                        gradient,
-                        gradientDirection,
-                        color0,
-                        color1,
-                    ),
-                )?
+            cordl_method_info.invoke_unchecked(self, (from, to, t))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateColorStyle_IReadOnlyColorStyle0(
+    pub fn UpdateColorStyle(
         &mut self,
         colorStyle: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IReadOnlyColorStyle,

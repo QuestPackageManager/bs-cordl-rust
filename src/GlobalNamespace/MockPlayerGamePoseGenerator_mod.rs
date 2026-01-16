@@ -4,7 +4,7 @@
 pub struct MockPlayerGamePoseGenerator {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub gameplayRpcManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IGameplayRpcManager,
@@ -148,7 +148,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
     }
     pub fn New(
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         gameplayRpcManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IGameplayRpcManager,
@@ -238,7 +238,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
     pub fn _ctor(
         &mut self,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         gameplayRpcManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IGameplayRpcManager,
@@ -252,7 +252,7 @@ impl crate::GlobalNamespace::MockPlayerGamePoseGenerator {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSessionManager,
+                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IGameplayRpcManager,

@@ -372,6 +372,7 @@ impl crate::GlobalNamespace::MirrorRendererSO {
     }
     pub fn RenderMirrorTexture(
         &mut self,
+        currentCamera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
         reflectionPlanePos: crate::UnityEngine::Vector3,
         reflectionPlaneNormal: crate::UnityEngine::Vector3,
     ) -> quest_hook::libil2cpp::Result<
@@ -382,21 +383,28 @@ impl crate::GlobalNamespace::MirrorRendererSO {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (crate::UnityEngine::Vector3, crate::UnityEngine::Vector3),
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::UnityEngine::Vector3,
+                            crate::UnityEngine::Vector3,
+                        ),
                         quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
-                        2usize,
+                        3usize,
                     >("RenderMirrorTexture")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RenderMirrorTexture", 2usize
+                            "RenderMirrorTexture", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (reflectionPlanePos, reflectionPlaneNormal))?
+                .invoke_unchecked(
+                    self,
+                    (currentCamera, reflectionPlanePos, reflectionPlaneNormal),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -464,6 +472,7 @@ pub struct MirrorRendererSO_CameraTransformData {
     pub rotation: crate::UnityEngine::Quaternion,
     pub fov: f32,
     pub stereoEnabled: bool,
+    pub reflectionPlane: crate::UnityEngine::Plane,
 }
 #[cfg(feature = "cordl_class_MirrorRendererSO+CameraTransformData")]
 unsafe impl quest_hook::libil2cpp::Type

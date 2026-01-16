@@ -240,6 +240,23 @@ impl crate::UnityEngine::UIElements::SliderInt {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SliderRange(&mut self) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i32, 0usize>("SliderRange")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SliderRange", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor_0(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -443,7 +460,12 @@ for crate::UnityEngine::UIElements::SliderInt_UxmlFactory {
 #[repr(C)]
 #[derive(Debug)]
 pub struct SliderInt_UxmlTraits {
-    __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<i32>,
+    __cordl_parent: crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
+        i32,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+        >,
+    >,
     pub m_LowValue: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
     >,
@@ -487,7 +509,12 @@ for crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
 }
 #[cfg(feature = "UnityEngine+UIElements+SliderInt+UxmlTraits")]
 impl std::ops::Deref for crate::UnityEngine::UIElements::SliderInt_UxmlTraits {
-    type Target = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits<i32>;
+    type Target = crate::UnityEngine::UIElements::BaseSlider_1_UxmlTraits_1<
+        i32,
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UxmlIntAttributeDescription,
+        >,
+    >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

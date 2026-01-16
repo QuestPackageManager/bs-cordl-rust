@@ -44,7 +44,6 @@ impl std::ops::DerefMut for crate::System::IO::Stream {
 }
 #[cfg(feature = "System+IO+Stream")]
 impl crate::System::IO::Stream {
-    pub const DefaultCopyBufferSize: i32 = 81920i32;
     #[cfg(feature = "System+IO+Stream+NullStream")]
     pub type NullStream = crate::GlobalNamespace::Stream_NullStream;
     #[cfg(feature = "System+IO+Stream+ReadWriteParameters")]

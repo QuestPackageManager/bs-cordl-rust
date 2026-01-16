@@ -884,9 +884,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Decimal {
 }
 #[cfg(feature = "System+Decimal")]
 impl crate::System::Decimal {
-    pub const ScaleMask: i32 = 16711680i32;
-    pub const ScaleShift: i32 = 16i32;
-    pub const SignMask: i32 = -2147483648i32;
     #[cfg(feature = "System+Decimal+DecCalc")]
     pub type DecCalc = crate::System::Decimal_DecCalc;
     pub fn Abs(

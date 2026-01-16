@@ -17,9 +17,6 @@ pub struct ContentCatalogProvider {
             >,
         >,
     >,
-    pub m_RM: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::ResourceManagement::ResourceManager,
-    >,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+AddressableAssets+ResourceProviders+ContentCatalogProvider"
@@ -198,7 +195,8 @@ for crate::UnityEngine::AddressableAssets::ResourceProviders::ContentCatalogProv
 pub enum ContentCatalogProvider_DependencyHashIndex {
     #[default]
     Cache = 1i32,
-    Count = 2i32,
+    Count = 3i32,
+    Local = 2i32,
     Remote = 0i32,
 }
 #[cfg(

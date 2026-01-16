@@ -39,46 +39,124 @@ impl std::ops::DerefMut for crate::GlobalNamespace::ColorSchemeExtensions {
 }
 #[cfg(feature = "ColorSchemeExtensions")]
 impl crate::GlobalNamespace::ColorSchemeExtensions {
-    pub fn ResolveColor(
-        playerOverrideColor: crate::System::Nullable_1<crate::UnityEngine::Color>,
-        usePlayerOverride: bool,
-        useBeatmapOverride: crate::System::Nullable_1<bool>,
-        beatmapOverrideColor: crate::System::Nullable_1<crate::UnityEngine::Color>,
-        environmentColor: crate::UnityEngine::Color,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+    pub fn GetColorSchemeForGameplayOverride(
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayColorScheme,
+        >,
+        beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayColorScheme,
+        >,
+        environmentColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayColorScheme,
+        >,
+        usingBeatmapDefaultEnvironment: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IGameplayColorScheme>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            crate::System::Nullable_1<crate::UnityEngine::Color>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IGameplayColorScheme,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IGameplayColorScheme,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IGameplayColorScheme,
+                            >,
                             bool,
-                            crate::System::Nullable_1<bool>,
-                            crate::System::Nullable_1<crate::UnityEngine::Color>,
-                            crate::UnityEngine::Color,
                         ),
-                        crate::UnityEngine::Color,
-                        5usize,
-                    >("ResolveColor")
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::IGameplayColorScheme,
+                        >,
+                        4usize,
+                    >("GetColorSchemeForGameplayOverride")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResolveColor", 5usize
+                            "GetColorSchemeForGameplayOverride", 4usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IGameplayColorScheme,
+        > = unsafe {
             cordl_method_info
                 .invoke_unchecked(
                     (),
                     (
-                        playerOverrideColor,
-                        usePlayerOverride,
-                        useBeatmapOverride,
-                        beatmapOverrideColor,
-                        environmentColor,
+                        playerOverrideColorScheme,
+                        beatmapOverrideColorScheme,
+                        environmentColorScheme,
+                        usingBeatmapDefaultEnvironment,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetColorSchemeForLightshowOverride(
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILightshowColorScheme,
+        >,
+        playerOverrideLightshowColors: bool,
+        beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILightshowColorScheme,
+        >,
+        environmentColorScheme: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILightshowColorScheme,
+        >,
+        usingBeatmapDefaultEnvironment: bool,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ILightshowColorScheme>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ILightshowColorScheme,
+                            >,
+                            bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ILightshowColorScheme,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::ILightshowColorScheme,
+                            >,
+                            bool,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::ILightshowColorScheme,
+                        >,
+                        5usize,
+                    >("GetColorSchemeForLightshowOverride")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetColorSchemeForLightshowOverride", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ILightshowColorScheme,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (
+                        playerOverrideColorScheme,
+                        playerOverrideLightshowColors,
+                        beatmapOverrideColorScheme,
+                        environmentColorScheme,
+                        usingBeatmapDefaultEnvironment,
                     ),
                 )?
         };
@@ -95,6 +173,7 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
         environmentColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        usingBeatmapDefaultEnvironment: bool,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
     > {
@@ -114,15 +193,16 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::ColorScheme,
                             >,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorScheme>,
-                        4usize,
+                        5usize,
                     >("ResolveColorScheme")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ResolveColorScheme", 4usize
+                            "ResolveColorScheme", 5usize
                         )
                     })
             });
@@ -137,6 +217,7 @@ impl crate::GlobalNamespace::ColorSchemeExtensions {
                         playerOverrideLightshowColors,
                         beatmapOverrideColorScheme,
                         environmentColorScheme,
+                        usingBeatmapDefaultEnvironment,
                     ),
                 )?
         };

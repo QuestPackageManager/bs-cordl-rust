@@ -7,7 +7,7 @@ pub struct MultiplayerLocalActivePlayerGameplayManager {
         crate::GlobalNamespace::GameSongController,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _multiplayerLevelEndActions: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMultiplayerLevelEndActionsListener,

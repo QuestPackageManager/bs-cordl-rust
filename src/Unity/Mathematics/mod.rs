@@ -1,3 +1,6 @@
+// class AffineTransform_mod; export all
+mod AffineTransform_mod;
+pub use AffineTransform_mod::*;
 // class DoNotNormalizeAttribute_mod; export all
 mod DoNotNormalizeAttribute_mod;
 pub use DoNotNormalizeAttribute_mod::*;
@@ -177,6 +180,9 @@ pub use noise_mod::*;
 // class quaternion_mod; export all
 mod quaternion_mod;
 pub use quaternion_mod::*;
+// class svd_mod; export all
+mod svd_mod;
+pub use svd_mod::*;
 // class uint2_mod; export all
 mod uint2_mod;
 pub use uint2_mod::*;

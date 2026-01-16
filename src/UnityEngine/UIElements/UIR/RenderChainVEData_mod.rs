@@ -20,35 +20,32 @@ pub struct RenderChainVEData {
     pub hierarchyDepth: i32,
     pub dirtiedValues: crate::UnityEngine::UIElements::UIR::RenderDataDirtyTypes,
     pub dirtyID: u32,
-    pub firstCommand: quest_hook::libil2cpp::Gc<
+    pub firstHeadCommand: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::RenderChainCommand,
     >,
-    pub lastCommand: quest_hook::libil2cpp::Gc<
+    pub lastHeadCommand: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::RenderChainCommand,
     >,
-    pub firstClosingCommand: quest_hook::libil2cpp::Gc<
+    pub firstTailCommand: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::RenderChainCommand,
     >,
-    pub lastClosingCommand: quest_hook::libil2cpp::Gc<
+    pub lastTailCommand: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::RenderChainCommand,
     >,
-    pub isInChain: bool,
-    pub isHierarchyHidden: bool,
     pub localFlipsWinding: bool,
     pub localTransformScaleZero: bool,
     pub worldFlipsWinding: bool,
     pub worldTransformScaleZero: bool,
-    pub clipMethod: crate::UnityEngine::UIElements::UIR::Implementation::ClipMethod,
+    pub clipMethod: crate::UnityEngine::UIElements::UIR::ClipMethod,
     pub childrenStencilRef: i32,
     pub childrenMaskDepth: i32,
-    pub disableNudging: bool,
-    pub data: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,
-    pub closingData: quest_hook::libil2cpp::Gc<
+    pub headMesh: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::MeshHandle,
+    >,
+    pub tailMesh: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::MeshHandle,
     >,
     pub verticesSpace: crate::UnityEngine::Matrix4x4,
-    pub displacementUVStart: i32,
-    pub displacementUVEnd: i32,
     pub transformID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub clipRectID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub opacityID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -61,12 +58,14 @@ pub struct RenderChainVEData {
     pub borderBottomColorID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub tintColorID: crate::UnityEngine::UIElements::UIR::BMPAlloc,
     pub compositeOpacity: f32,
-    pub backgroundColor: crate::UnityEngine::Color,
+    pub backgroundAlpha: f32,
     pub textures: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::BasicNode_1<
             crate::UnityEngine::UIElements::UIR::TextureEntry,
         >,
     >,
+    pub pendingRepaint: bool,
+    pub pendingHierarchicalRepaint: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderChainVEData")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -215,6 +214,57 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainVEData {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_hasExtraData(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_hasExtraData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasExtraData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_hasExtraMeshes(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_hasExtraMeshes")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasExtraMeshes", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isGroupTransform(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_isGroupTransform")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isGroupTransform", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_isIgnoringDynamicColorHint(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -234,7 +284,24 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainVEData {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_lastClosingOrLastCommand(
+    pub fn get_isInChain(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_isInChain")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isInChain", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_lastTailOrHeadCommand(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
@@ -251,12 +318,12 @@ impl crate::UnityEngine::UIElements::UIR::RenderChainVEData {
                             crate::UnityEngine::UIElements::UIR::RenderChainCommand,
                         >,
                         0usize,
-                    >("get_lastClosingOrLastCommand")
+                    >("get_lastTailOrHeadCommand")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_lastClosingOrLastCommand", 0usize
+                            "get_lastTailOrHeadCommand", 0usize
                         )
                     })
             });

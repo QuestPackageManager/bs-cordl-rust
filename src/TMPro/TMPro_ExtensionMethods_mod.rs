@@ -264,6 +264,50 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GammaToLinear_Color32_0(
+        c: crate::UnityEngine::Color32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Color32),
+                        crate::UnityEngine::Color32,
+                        1usize,
+                    >("GammaToLinear")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GammaToLinear", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (c))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GammaToLinear_u8_1(value: u8) -> quest_hook::libil2cpp::Result<u8> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(u8), u8, 1usize>("GammaToLinear")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GammaToLinear", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u8 = unsafe {
+            cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn IntToString_Il2CppArray0(
         unicodes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<i32>>,
     ) -> quest_hook::libil2cpp::Result<
@@ -380,6 +424,29 @@ impl crate::TMPro::TMPro_ExtensionMethods {
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
             cordl_method_info.invoke_unchecked((), (c1, c2))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TagToInt(
+        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        i32,
+                        1usize,
+                    >("TagToInt")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TagToInt", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn Tint_Color32_0(

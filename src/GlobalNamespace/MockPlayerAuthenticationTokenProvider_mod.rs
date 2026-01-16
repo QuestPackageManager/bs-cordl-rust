@@ -11,7 +11,7 @@ pub struct MockPlayerAuthenticationTokenProvider {
     pub _userName_k__BackingField: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
-    pub _platform_k__BackingField: crate::GlobalNamespace::AuthenticationToken_Platform,
+    pub _platformType_k__BackingField: crate::GlobalNamespace::AuthenticationToken_PlatformType,
     pub _mockTokenData: crate::GlobalNamespace::XPlatformAccessTokenData,
 }
 #[cfg(feature = "cordl_class_MockPlayerAuthenticationTokenProvider")]
@@ -91,7 +91,7 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
         &mut self,
         tokenPlatformEnvironment: crate::GlobalNamespace::PlatformEnvironment,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::AuthenticationToken_Platform,
+        crate::GlobalNamespace::AuthenticationToken_PlatformType,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -99,7 +99,7 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (crate::GlobalNamespace::PlatformEnvironment),
-                        crate::GlobalNamespace::AuthenticationToken_Platform,
+                        crate::GlobalNamespace::AuthenticationToken_PlatformType,
                         1usize,
                     >("GetTokenPlatform")
                     .unwrap_or_else(|e| {
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_PlatformType = unsafe {
             cordl_method_info.invoke_unchecked(self, (tokenPlatformEnvironment))?
         };
         Ok(__cordl_ret.into())
@@ -236,10 +236,10 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_platform(
+    pub fn get_platformType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::AuthenticationToken_Platform,
+        crate::GlobalNamespace::AuthenticationToken_PlatformType,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -247,18 +247,18 @@ impl crate::GlobalNamespace::MockPlayerAuthenticationTokenProvider {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::GlobalNamespace::AuthenticationToken_Platform,
+                        crate::GlobalNamespace::AuthenticationToken_PlatformType,
                         0usize,
-                    >("get_platform")
+                    >("get_platformType")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_platform", 0usize
+                            "get_platformType", 0usize
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_Platform = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::AuthenticationToken_PlatformType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())

@@ -12,7 +12,6 @@ pub struct BaseCompositeField_3<
     >,
     pub m_ShouldUpdateDisplay: bool,
     pub m_ForceUpdateDisplay: bool,
-    pub m_PropertyIndex: i32,
     __cordl_phantom_TValueType: std::marker::PhantomData<TValueType>,
     __cordl_phantom_TField: std::marker::PhantomData<TField>,
     __cordl_phantom_TFieldValue: std::marker::PhantomData<TFieldValue>,

@@ -62,7 +62,6 @@ for crate::System::Collections::Generic::List_1<T> {
 }
 #[cfg(feature = "System+Collections+Generic+List_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1<T> {
-    pub const DefaultCapacity: i32 = 4i32;
     #[cfg(feature = "System+Collections+Generic+List_1+Enumerator")]
     pub type Enumerator = crate::System::Collections::Generic::List_1_Enumerator<T>;
     pub fn Add(
@@ -635,7 +634,38 @@ impl<T: quest_hook::libil2cpp::Type> crate::System::Collections::Generic::List_1
         };
         Ok(__cordl_ret.into())
     }
-    pub fn FindIndex_i32_i32_Predicate_1_1(
+    pub fn FindIndex_i32_Predicate_1_1(
+        &mut self,
+        startIndex: i32,
+        _cordl_match: quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>,
+    ) -> quest_hook::libil2cpp::Result<i32>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, quest_hook::libil2cpp::Gc<crate::System::Predicate_1<T>>),
+                        i32,
+                        2usize,
+                    >("FindIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FindIndex", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (startIndex, _cordl_match))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn FindIndex_i32_i32_Predicate_1_2(
         &mut self,
         startIndex: i32,
         count: i32,

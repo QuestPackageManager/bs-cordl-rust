@@ -670,6 +670,31 @@ impl crate::System::Xml::BinXmlDateTime {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn XsdDateTimeToDateTime(
+        val: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i64),
+                        crate::System::DateTime,
+                        1usize,
+                    >("XsdDateTimeToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XsdDateTimeToDateTime", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked((), (val))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn XsdDateTimeToString(
         val: i64,
     ) -> quest_hook::libil2cpp::Result<
@@ -697,6 +722,31 @@ impl crate::System::Xml::BinXmlDateTime {
         > = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
         Ok(__cordl_ret.into())
     }
+    pub fn XsdDateToDateTime(
+        val: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i64),
+                        crate::System::DateTime,
+                        1usize,
+                    >("XsdDateToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XsdDateToDateTime", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked((), (val))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn XsdDateToString(
         val: i64,
     ) -> quest_hook::libil2cpp::Result<
@@ -722,6 +772,37 @@ impl crate::System::Xml::BinXmlDateTime {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked((), (val))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn XsdKatmaiDateOffsetToDateTime(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                        ),
+                        crate::System::DateTime,
+                        2usize,
+                    >("XsdKatmaiDateOffsetToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XsdKatmaiDateOffsetToDateTime", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, offset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiDateOffsetToDateTimeOffset(
@@ -786,6 +867,37 @@ impl crate::System::Xml::BinXmlDateTime {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn XsdKatmaiDateTimeOffsetToDateTime(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                        ),
+                        crate::System::DateTime,
+                        2usize,
+                    >("XsdKatmaiDateTimeOffsetToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XsdKatmaiDateTimeOffsetToDateTime", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, offset))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn XsdKatmaiDateTimeOffsetToDateTimeOffset(
@@ -980,6 +1092,37 @@ impl crate::System::Xml::BinXmlDateTime {
         > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
         Ok(__cordl_ret.into())
     }
+    pub fn XsdKatmaiTimeOffsetToDateTime(
+        data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<u8>,
+                            >,
+                            i32,
+                        ),
+                        crate::System::DateTime,
+                        2usize,
+                    >("XsdKatmaiTimeOffsetToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XsdKatmaiTimeOffsetToDateTime", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked((), (data, offset))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn XsdKatmaiTimeOffsetToDateTimeOffset(
         data: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u8>>,
         offset: i32,
@@ -1106,6 +1249,31 @@ impl crate::System::Xml::BinXmlDateTime {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked((), (data, offset))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn XsdTimeToDateTime(
+        val: i64,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (i64),
+                        crate::System::DateTime,
+                        1usize,
+                    >("XsdTimeToDateTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "XsdTimeToDateTime", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked((), (val))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn XsdTimeToString(

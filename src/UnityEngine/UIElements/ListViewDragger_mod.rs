@@ -15,6 +15,7 @@ pub struct ListViewDragger {
     >,
     pub m_LeftIndentation: f32,
     pub m_SiblingBottom: f32,
+    pub m_Enabled: bool,
     pub _dragAndDropController_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::ICollectionDragAndDropController,
     >,
@@ -382,6 +383,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IsDraggingDisabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("IsDraggingDisabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsDraggingDisabled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn MakeDragAndDropArgs(
         &mut self,
         dragPosition: crate::UnityEngine::UIElements::ListViewDragger_DragPosition,
@@ -590,7 +608,7 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ApplyDragAndDropUI_g__GeometryChangedCallback_27_0(
+    pub fn _ApplyDragAndDropUI_g__GeometryChangedCallback_31_0(
         &mut self,
         e: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::GeometryChangedEvent,
@@ -606,12 +624,12 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<ApplyDragAndDropUI>g__GeometryChangedCallback|27_0")
+                    >("<ApplyDragAndDropUI>g__GeometryChangedCallback|31_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<ApplyDragAndDropUI>g__GeometryChangedCallback|27_0", 1usize
+                            "<ApplyDragAndDropUI>g__GeometryChangedCallback|31_0", 1usize
                         )
                     })
             });
@@ -679,6 +697,23 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::ICollectionDragAndDropController,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_enabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_enabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_enabled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_targetScrollView(
@@ -763,6 +798,32 @@ impl crate::UnityEngine::UIElements::ListViewDragger {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_dragAndDropController", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_enabled(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_enabled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_enabled", 1usize
                         )
                     })
             });

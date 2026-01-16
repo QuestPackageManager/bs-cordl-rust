@@ -1,3 +1,6 @@
+// class ATGTextEventHandler_mod; export all
+mod ATGTextEventHandler_mod;
+pub use ATGTextEventHandler_mod::*;
 // class AbstractProgressBar_mod; export all
 mod AbstractProgressBar_mod;
 pub use AbstractProgressBar_mod::*;
@@ -28,6 +31,9 @@ pub use AtlasBase_mod::*;
 // class AttachToPanelEvent_mod; export all
 mod AttachToPanelEvent_mod;
 pub use AttachToPanelEvent_mod::*;
+// class Axis_mod; export all
+mod Axis_mod;
+pub use Axis_mod::*;
 // class BackgroundPositionKeyword_mod; export all
 mod BackgroundPositionKeyword_mod;
 pub use BackgroundPositionKeyword_mod::*;
@@ -109,6 +115,51 @@ pub use BaseVisualTreeUpdater_mod::*;
 // class BindableElement_mod; export all
 mod BindableElement_mod;
 pub use BindableElement_mod::*;
+// class BindablePropertyChangedEventArgs_mod; export all
+mod BindablePropertyChangedEventArgs_mod;
+pub use BindablePropertyChangedEventArgs_mod::*;
+// class BindingActivationContext_mod; export all
+mod BindingActivationContext_mod;
+pub use BindingActivationContext_mod::*;
+// class BindingContext_mod; export all
+mod BindingContext_mod;
+pub use BindingContext_mod::*;
+// class BindingId_mod; export all
+mod BindingId_mod;
+pub use BindingId_mod::*;
+// class BindingInfo_mod; export all
+mod BindingInfo_mod;
+pub use BindingInfo_mod::*;
+// class BindingLogLevel_mod; export all
+mod BindingLogLevel_mod;
+pub use BindingLogLevel_mod::*;
+// class BindingMode_mod; export all
+mod BindingMode_mod;
+pub use BindingMode_mod::*;
+// class BindingResult_mod; export all
+mod BindingResult_mod;
+pub use BindingResult_mod::*;
+// class BindingSourceSelectionMode_mod; export all
+mod BindingSourceSelectionMode_mod;
+pub use BindingSourceSelectionMode_mod::*;
+// class BindingStatus_mod; export all
+mod BindingStatus_mod;
+pub use BindingStatus_mod::*;
+// class BindingTarget_mod; export all
+mod BindingTarget_mod;
+pub use BindingTarget_mod::*;
+// class BindingUpdateStage_mod; export all
+mod BindingUpdateStage_mod;
+pub use BindingUpdateStage_mod::*;
+// class BindingUpdateTrigger_mod; export all
+mod BindingUpdateTrigger_mod;
+pub use BindingUpdateTrigger_mod::*;
+// class BindingUpdater_mod; export all
+mod BindingUpdater_mod;
+pub use BindingUpdater_mod::*;
+// class Binding_mod; export all
+mod Binding_mod;
+pub use Binding_mod::*;
 // class BlurEvent_mod; export all
 mod BlurEvent_mod;
 pub use BlurEvent_mod::*;
@@ -130,9 +181,6 @@ pub use Button_mod::*;
 // class CallbackEventHandler_mod; export all
 mod CallbackEventHandler_mod;
 pub use CallbackEventHandler_mod::*;
-// class CallbackPhase_mod; export all
-mod CallbackPhase_mod;
-pub use CallbackPhase_mod::*;
 // class CanStartDragArgs_mod; export all
 mod CanStartDragArgs_mod;
 pub use CanStartDragArgs_mod::*;
@@ -169,6 +217,9 @@ pub use ColumnDataType_mod::*;
 // class ColumnLayout_mod; export all
 mod ColumnLayout_mod;
 pub use ColumnLayout_mod::*;
+// class ColumnSortingMode_mod; export all
+mod ColumnSortingMode_mod;
+pub use ColumnSortingMode_mod::*;
 // class Column_mod; export all
 mod Column_mod;
 pub use Column_mod::*;
@@ -181,9 +232,6 @@ pub use Columns_mod::*;
 // class CommandEventBase_1_mod; export all
 mod CommandEventBase_1_mod;
 pub use CommandEventBase_1_mod::*;
-// class CommandEventDispatchingStrategy_mod; export all
-mod CommandEventDispatchingStrategy_mod;
-pub use CommandEventDispatchingStrategy_mod::*;
 // class ComputedStyle_mod; export all
 mod ComputedStyle_mod;
 pub use ComputedStyle_mod::*;
@@ -208,6 +256,12 @@ pub use ContextualMenuManipulator_mod::*;
 // class ContextualMenuPopulateEvent_mod; export all
 mod ContextualMenuPopulateEvent_mod;
 pub use ContextualMenuPopulateEvent_mod::*;
+// class ConverterGroup_mod; export all
+mod ConverterGroup_mod;
+pub use ConverterGroup_mod::*;
+// class ConverterGroups_mod; export all
+mod ConverterGroups_mod;
+pub use ConverterGroups_mod::*;
 // class CountingBloomFilter_mod; export all
 mod CountingBloomFilter_mod;
 pub use CountingBloomFilter_mod::*;
@@ -220,15 +274,30 @@ pub use CursorManager_mod::*;
 // class Cursor_mod; export all
 mod Cursor_mod;
 pub use Cursor_mod::*;
+// class CustomBinding_mod; export all
+mod CustomBinding_mod;
+pub use CustomBinding_mod::*;
 // class CustomStyleProperty_1_mod; export all
 mod CustomStyleProperty_1_mod;
 pub use CustomStyleProperty_1_mod::*;
 // class CustomStyleResolvedEvent_mod; export all
 mod CustomStyleResolvedEvent_mod;
 pub use CustomStyleResolvedEvent_mod::*;
-// class DefaultDispatchingStrategy_mod; export all
-mod DefaultDispatchingStrategy_mod;
-pub use DefaultDispatchingStrategy_mod::*;
+// class DataBindingManager_mod; export all
+mod DataBindingManager_mod;
+pub use DataBindingManager_mod::*;
+// class DataBindingUtility_mod; export all
+mod DataBindingUtility_mod;
+pub use DataBindingUtility_mod::*;
+// class DataBinding_mod; export all
+mod DataBinding_mod;
+pub use DataBinding_mod::*;
+// class DataSourceContextChanged_mod; export all
+mod DataSourceContextChanged_mod;
+pub use DataSourceContextChanged_mod::*;
+// class DataSourceContext_mod; export all
+mod DataSourceContext_mod;
+pub use DataSourceContext_mod::*;
 // class DefaultDragAndDropClient_mod; export all
 mod DefaultDragAndDropClient_mod;
 pub use DefaultDragAndDropClient_mod::*;
@@ -325,6 +394,12 @@ pub use EasingFunction_mod::*;
 // class EasingMode_mod; export all
 mod EasingMode_mod;
 pub use EasingMode_mod::*;
+// class EditorPanelRootElement_mod; export all
+mod EditorPanelRootElement_mod;
+pub use EditorPanelRootElement_mod::*;
+// class EditorTextRenderingMode_mod; export all
+mod EditorTextRenderingMode_mod;
+pub use EditorTextRenderingMode_mod::*;
 // class ElementUnderPointer_mod; export all
 mod ElementUnderPointer_mod;
 pub use ElementUnderPointer_mod::*;
@@ -373,18 +448,6 @@ pub use EventCategoryFlags_mod::*;
 // class EventCategory_mod; export all
 mod EventCategory_mod;
 pub use EventCategory_mod::*;
-// class EventDebuggerLogCall_mod; export all
-mod EventDebuggerLogCall_mod;
-pub use EventDebuggerLogCall_mod::*;
-// class EventDebuggerLogExecuteDefaultAction_mod; export all
-mod EventDebuggerLogExecuteDefaultAction_mod;
-pub use EventDebuggerLogExecuteDefaultAction_mod::*;
-// class EventDebuggerLogIMGUICall_mod; export all
-mod EventDebuggerLogIMGUICall_mod;
-pub use EventDebuggerLogIMGUICall_mod::*;
-// class EventDebugger_mod; export all
-mod EventDebugger_mod;
-pub use EventDebugger_mod::*;
 // class EventDispatchUtilities_mod; export all
 mod EventDispatchUtilities_mod;
 pub use EventDispatchUtilities_mod::*;
@@ -397,6 +460,9 @@ pub use EventDispatcher_mod::*;
 // class EventInterestAttribute_mod; export all
 mod EventInterestAttribute_mod;
 pub use EventInterestAttribute_mod::*;
+// class EventInterestOptionsInternal_mod; export all
+mod EventInterestOptionsInternal_mod;
+pub use EventInterestOptionsInternal_mod::*;
 // class EventInterestOptions_mod; export all
 mod EventInterestOptions_mod;
 pub use EventInterestOptions_mod::*;
@@ -507,15 +573,24 @@ pub use IBinding_mod::*;
 // class ICollectionDragAndDropController_mod; export all
 mod ICollectionDragAndDropController_mod;
 pub use ICollectionDragAndDropController_mod::*;
-// class ICommandEvent_mod; export all
-mod ICommandEvent_mod;
-pub use ICommandEvent_mod::*;
 // class ICursorManager_mod; export all
 mod ICursorManager_mod;
 pub use ICursorManager_mod::*;
 // class ICustomStyle_mod; export all
 mod ICustomStyle_mod;
 pub use ICustomStyle_mod::*;
+// class IDataSourceProvider_mod; export all
+mod IDataSourceProvider_mod;
+pub use IDataSourceProvider_mod::*;
+// class IDataSourceViewHashProvider_mod; export all
+mod IDataSourceViewHashProvider_mod;
+pub use IDataSourceViewHashProvider_mod::*;
+// class IDebugPanelChangeReceiver_mod; export all
+mod IDebugPanelChangeReceiver_mod;
+pub use IDebugPanelChangeReceiver_mod::*;
+// class IDelayedField_mod; export all
+mod IDelayedField_mod;
+pub use IDelayedField_mod::*;
 // class IDragAndDropController_1_mod; export all
 mod IDragAndDropController_1_mod;
 pub use IDragAndDropController_1_mod::*;
@@ -528,9 +603,6 @@ pub use IEditableElement_mod::*;
 // class IEnumerableExtensions_mod; export all
 mod IEnumerableExtensions_mod;
 pub use IEnumerableExtensions_mod::*;
-// class IEventDispatchingStrategy_mod; export all
-mod IEventDispatchingStrategy_mod;
-pub use IEventDispatchingStrategy_mod::*;
 // class IEventHandler_mod; export all
 mod IEventHandler_mod;
 pub use IEventHandler_mod::*;
@@ -564,9 +636,6 @@ pub use IListDragAndDropArgs_mod::*;
 // class IMGUIContainer_mod; export all
 mod IMGUIContainer_mod;
 pub use IMGUIContainer_mod::*;
-// class IMGUIEventDispatchingStrategy_mod; export all
-mod IMGUIEventDispatchingStrategy_mod;
-pub use IMGUIEventDispatchingStrategy_mod::*;
 // class IMGUIEvent_mod; export all
 mod IMGUIEvent_mod;
 pub use IMGUIEvent_mod::*;
@@ -582,24 +651,30 @@ pub use IMouseEvent_mod::*;
 // class INavigationEvent_mod; export all
 mod INavigationEvent_mod;
 pub use INavigationEvent_mod::*;
+// class INotifyBindablePropertyChanged_mod; export all
+mod INotifyBindablePropertyChanged_mod;
+pub use INotifyBindablePropertyChanged_mod::*;
 // class INotifyValueChangedExtensions_mod; export all
 mod INotifyValueChangedExtensions_mod;
 pub use INotifyValueChangedExtensions_mod::*;
 // class INotifyValueChanged_1_mod; export all
 mod INotifyValueChanged_1_mod;
 pub use INotifyValueChanged_1_mod::*;
+// class IPanelRenderer_mod; export all
+mod IPanelRenderer_mod;
+pub use IPanelRenderer_mod::*;
 // class IPanel_mod; export all
 mod IPanel_mod;
 pub use IPanel_mod::*;
-// class IPointerCaptureEventInternal_mod; export all
-mod IPointerCaptureEventInternal_mod;
-pub use IPointerCaptureEventInternal_mod::*;
 // class IPointerEventInternal_mod; export all
 mod IPointerEventInternal_mod;
 pub use IPointerEventInternal_mod::*;
 // class IPointerEvent_mod; export all
 mod IPointerEvent_mod;
 pub use IPointerEvent_mod::*;
+// class IPointerOrMouseEvent_mod; export all
+mod IPointerOrMouseEvent_mod;
+pub use IPointerOrMouseEvent_mod::*;
 // class IReorderable_mod; export all
 mod IReorderable_mod;
 pub use IReorderable_mod::*;
@@ -609,6 +684,9 @@ pub use IResolvedStyle_mod::*;
 // class IRuntimePanelComponent_mod; export all
 mod IRuntimePanelComponent_mod;
 pub use IRuntimePanelComponent_mod::*;
+// class IRuntimePanel_mod; export all
+mod IRuntimePanel_mod;
+pub use IRuntimePanel_mod::*;
 // class IScheduler_mod; export all
 mod IScheduler_mod;
 pub use IScheduler_mod::*;
@@ -618,9 +696,6 @@ pub use ISerializableJsonDictionary_mod::*;
 // class IStyleDataGroup_1_mod; export all
 mod IStyleDataGroup_1_mod;
 pub use IStyleDataGroup_1_mod::*;
-// class IStylePainter_mod; export all
-mod IStylePainter_mod;
-pub use IStylePainter_mod::*;
 // class IStylePropertyAnimationSystem_mod; export all
 mod IStylePropertyAnimationSystem_mod;
 pub use IStylePropertyAnimationSystem_mod::*;
@@ -657,9 +732,6 @@ pub use IUxmlObjectFactory_1_mod::*;
 // class IValueField_1_mod; export all
 mod IValueField_1_mod;
 pub use IValueField_1_mod::*;
-// class IVisualElementPanelActivatable_mod; export all
-mod IVisualElementPanelActivatable_mod;
-pub use IVisualElementPanelActivatable_mod::*;
 // class IVisualElementScheduledItem_mod; export all
 mod IVisualElementScheduledItem_mod;
 pub use IVisualElementScheduledItem_mod::*;
@@ -678,6 +750,9 @@ pub use ImmediateModeException_mod::*;
 // class InheritedData_mod; export all
 mod InheritedData_mod;
 pub use InheritedData_mod::*;
+// class InlineStyleAccessPropertyBag_mod; export all
+mod InlineStyleAccessPropertyBag_mod;
+pub use InlineStyleAccessPropertyBag_mod::*;
 // class InlineStyleAccess_mod; export all
 mod InlineStyleAccess_mod;
 pub use InlineStyleAccess_mod::*;
@@ -704,9 +779,6 @@ pub use KeyUpEvent_mod::*;
 // class KeyboardEventBase_1_mod; export all
 mod KeyboardEventBase_1_mod;
 pub use KeyboardEventBase_1_mod::*;
-// class KeyboardEventDispatchingStrategy_mod; export all
-mod KeyboardEventDispatchingStrategy_mod;
-pub use KeyboardEventDispatchingStrategy_mod::*;
 // class KeyboardEventExtensions_mod; export all
 mod KeyboardEventExtensions_mod;
 pub use KeyboardEventExtensions_mod::*;
@@ -722,9 +794,14 @@ pub use KeyboardTextEditorEventHandler_mod::*;
 // class Label_mod; export all
 mod Label_mod;
 pub use Label_mod::*;
+// class LanguageDirectionExtensions_mod; export all
+mod LanguageDirectionExtensions_mod;
+pub use LanguageDirectionExtensions_mod::*;
 // class LanguageDirection_mod; export all
 mod LanguageDirection_mod;
 pub use LanguageDirection_mod::*;
+// namespace Layout;
+pub mod Layout;
 // class LayoutData_mod; export all
 mod LayoutData_mod;
 pub use LayoutData_mod::*;
@@ -770,12 +847,21 @@ pub use Manipulator_mod::*;
 // class MeshBuilderNative_mod; export all
 mod MeshBuilderNative_mod;
 pub use MeshBuilderNative_mod::*;
-// class MeshGenerationContextUtils_mod; export all
-mod MeshGenerationContextUtils_mod;
-pub use MeshGenerationContextUtils_mod::*;
+// class MeshGenerationCallbackType_mod; export all
+mod MeshGenerationCallbackType_mod;
+pub use MeshGenerationCallbackType_mod::*;
 // class MeshGenerationContext_mod; export all
 mod MeshGenerationContext_mod;
 pub use MeshGenerationContext_mod::*;
+// class MeshGenerationNodeImpl_mod; export all
+mod MeshGenerationNodeImpl_mod;
+pub use MeshGenerationNodeImpl_mod::*;
+// class MeshGenerationNodeManager_mod; export all
+mod MeshGenerationNodeManager_mod;
+pub use MeshGenerationNodeManager_mod::*;
+// class MeshGenerationNode_mod; export all
+mod MeshGenerationNode_mod;
+pub use MeshGenerationNode_mod::*;
 // class MeshWriteDataInterface_mod; export all
 mod MeshWriteDataInterface_mod;
 pub use MeshWriteDataInterface_mod::*;
@@ -791,9 +877,6 @@ pub use MouseButton_mod::*;
 // class MouseCaptureController_mod; export all
 mod MouseCaptureController_mod;
 pub use MouseCaptureController_mod::*;
-// class MouseCaptureDispatchingStrategy_mod; export all
-mod MouseCaptureDispatchingStrategy_mod;
-pub use MouseCaptureDispatchingStrategy_mod::*;
 // class MouseCaptureEventBase_1_mod; export all
 mod MouseCaptureEventBase_1_mod;
 pub use MouseCaptureEventBase_1_mod::*;
@@ -815,9 +898,6 @@ pub use MouseEnterWindowEvent_mod::*;
 // class MouseEventBase_1_mod; export all
 mod MouseEventBase_1_mod;
 pub use MouseEventBase_1_mod::*;
-// class MouseEventDispatchingStrategy_mod; export all
-mod MouseEventDispatchingStrategy_mod;
-pub use MouseEventDispatchingStrategy_mod::*;
 // class MouseEventsHelper_mod; export all
 mod MouseEventsHelper_mod;
 pub use MouseEventsHelper_mod::*;
@@ -869,9 +949,6 @@ pub use NavigationDeviceType_mod::*;
 // class NavigationEventBase_1_mod; export all
 mod NavigationEventBase_1_mod;
 pub use NavigationEventBase_1_mod::*;
-// class NavigationEventDispatchingStrategy_mod; export all
-mod NavigationEventDispatchingStrategy_mod;
-pub use NavigationEventDispatchingStrategy_mod::*;
 // class NavigationMoveEvent_mod; export all
 mod NavigationMoveEvent_mod;
 pub use NavigationMoveEvent_mod::*;
@@ -908,6 +985,12 @@ pub use PanelEventHandler_mod::*;
 // class PanelRaycaster_mod; export all
 mod PanelRaycaster_mod;
 pub use PanelRaycaster_mod::*;
+// class PanelRenderMode_mod; export all
+mod PanelRenderMode_mod;
+pub use PanelRenderMode_mod::*;
+// class PanelRootElement_mod; export all
+mod PanelRootElement_mod;
+pub use PanelRootElement_mod::*;
 // class PanelScaleMode_mod; export all
 mod PanelScaleMode_mod;
 pub use PanelScaleMode_mod::*;
@@ -929,9 +1012,6 @@ pub use PickingMode_mod::*;
 // class PointerCancelEvent_mod; export all
 mod PointerCancelEvent_mod;
 pub use PointerCancelEvent_mod::*;
-// class PointerCaptureDispatchingStrategy_mod; export all
-mod PointerCaptureDispatchingStrategy_mod;
-pub use PointerCaptureDispatchingStrategy_mod::*;
 // class PointerCaptureEventBase_1_mod; export all
 mod PointerCaptureEventBase_1_mod;
 pub use PointerCaptureEventBase_1_mod::*;
@@ -959,9 +1039,6 @@ pub use PointerEnterEvent_mod::*;
 // class PointerEventBase_1_mod; export all
 mod PointerEventBase_1_mod;
 pub use PointerEventBase_1_mod::*;
-// class PointerEventDispatchingStrategy_mod; export all
-mod PointerEventDispatchingStrategy_mod;
-pub use PointerEventDispatchingStrategy_mod::*;
 // class PointerEventHelper_mod; export all
 mod PointerEventHelper_mod;
 pub use PointerEventHelper_mod::*;
@@ -986,9 +1063,6 @@ pub use PointerOutEvent_mod::*;
 // class PointerOverEvent_mod; export all
 mod PointerOverEvent_mod;
 pub use PointerOverEvent_mod::*;
-// class PointerStationaryEvent_mod; export all
-mod PointerStationaryEvent_mod;
-pub use PointerStationaryEvent_mod::*;
 // class PointerType_mod; export all
 mod PointerType_mod;
 pub use PointerType_mod::*;
@@ -1016,6 +1090,12 @@ pub use PropagationPaths_mod::*;
 // class PropagationPhase_mod; export all
 mod PropagationPhase_mod;
 pub use PropagationPhase_mod::*;
+// class PropertyChangedEvent_mod; export all
+mod PropertyChangedEvent_mod;
+pub use PropertyChangedEvent_mod::*;
+// class PropertyPathInfo_mod; export all
+mod PropertyPathInfo_mod;
+pub use PropertyPathInfo_mod::*;
 // class PseudoStates_mod; export all
 mod PseudoStates_mod;
 pub use PseudoStates_mod::*;
@@ -1028,6 +1108,9 @@ pub use RadioButton_mod::*;
 // class RareData_mod; export all
 mod RareData_mod;
 pub use RareData_mod::*;
+// class ReadOnlyHierarchyViewModelList_mod; export all
+mod ReadOnlyHierarchyViewModelList_mod;
+pub use ReadOnlyHierarchyViewModelList_mod::*;
 // class RectField_mod; export all
 mod RectField_mod;
 pub use RectField_mod::*;
@@ -1046,6 +1129,12 @@ pub use RepeatButton_mod::*;
 // class Repeat_mod; export all
 mod Repeat_mod;
 pub use Repeat_mod::*;
+// class ResolvedStyleAccessPropertyBag_mod; export all
+mod ResolvedStyleAccessPropertyBag_mod;
+pub use ResolvedStyleAccessPropertyBag_mod::*;
+// class ResolvedStyleAccess_mod; export all
+mod ResolvedStyleAccess_mod;
+pub use ResolvedStyleAccess_mod::*;
 // class ReusableCollectionItem_mod; export all
 mod ReusableCollectionItem_mod;
 pub use ReusableCollectionItem_mod::*;
@@ -1109,6 +1198,9 @@ pub use SelectionType_mod::*;
 // class SerializedVirtualizationData_mod; export all
 mod SerializedVirtualizationData_mod;
 pub use SerializedVirtualizationData_mod::*;
+// class SetValueVisitor_1_mod; export all
+mod SetValueVisitor_1_mod;
+pub use SetValueVisitor_1_mod::*;
 // class SetupDragAndDropArgs_mod; export all
 mod SetupDragAndDropArgs_mod;
 pub use SetupDragAndDropArgs_mod::*;
@@ -1136,9 +1228,18 @@ pub use Spacing_mod::*;
 // class StartDragArgs_mod; export all
 mod StartDragArgs_mod;
 pub use StartDragArgs_mod::*;
+// class StyleBackgroundPosition_mod; export all
+mod StyleBackgroundPosition_mod;
+pub use StyleBackgroundPosition_mod::*;
+// class StyleBackgroundRepeat_mod; export all
+mod StyleBackgroundRepeat_mod;
+pub use StyleBackgroundRepeat_mod::*;
 // class StyleBackgroundSize_mod; export all
 mod StyleBackgroundSize_mod;
 pub use StyleBackgroundSize_mod::*;
+// class StyleBackground_mod; export all
+mod StyleBackground_mod;
+pub use StyleBackground_mod::*;
 // class StyleCache_mod; export all
 mod StyleCache_mod;
 pub use StyleCache_mod::*;
@@ -1175,6 +1276,9 @@ pub use StyleKeyword_mod::*;
 // class StyleLength_mod; export all
 mod StyleLength_mod;
 pub use StyleLength_mod::*;
+// class StyleList_1_mod; export all
+mod StyleList_1_mod;
+pub use StyleList_1_mod::*;
 // class StyleMatchingContext_mod; export all
 mod StyleMatchingContext_mod;
 pub use StyleMatchingContext_mod::*;
@@ -1246,6 +1350,9 @@ pub use StyleValueKeywordExtension_mod::*;
 // class StyleValueKeyword_mod; export all
 mod StyleValueKeyword_mod;
 pub use StyleValueKeyword_mod::*;
+// class StyleValuePropertyBag_2_mod; export all
+mod StyleValuePropertyBag_2_mod;
+pub use StyleValuePropertyBag_2_mod::*;
 // class StyleValueType_mod; export all
 mod StyleValueType_mod;
 pub use StyleValueType_mod::*;
@@ -1258,6 +1365,27 @@ pub use StyleVariableResolver_mod::*;
 // class StyleVariable_mod; export all
 mod StyleVariable_mod;
 pub use StyleVariable_mod::*;
+// class TabDragLocationPreview_mod; export all
+mod TabDragLocationPreview_mod;
+pub use TabDragLocationPreview_mod::*;
+// class TabDragPreview_mod; export all
+mod TabDragPreview_mod;
+pub use TabDragPreview_mod::*;
+// class TabDragger_mod; export all
+mod TabDragger_mod;
+pub use TabDragger_mod::*;
+// class TabLayout_mod; export all
+mod TabLayout_mod;
+pub use TabLayout_mod::*;
+// class TabView_mod; export all
+mod TabView_mod;
+pub use TabView_mod::*;
+// class Tab_mod; export all
+mod Tab_mod;
+pub use Tab_mod::*;
+// class TempMeshAllocator_mod; export all
+mod TempMeshAllocator_mod;
+pub use TempMeshAllocator_mod::*;
 // class TemplateAsset_mod; export all
 mod TemplateAsset_mod;
 pub use TemplateAsset_mod::*;
@@ -1273,6 +1401,9 @@ pub use TextEditorEventHandler_mod::*;
 // class TextElement_mod; export all
 mod TextElement_mod;
 pub use TextElement_mod::*;
+// class TextEventHandler_mod; export all
+mod TextEventHandler_mod;
+pub use TextEventHandler_mod::*;
 // class TextField_mod; export all
 mod TextField_mod;
 pub use TextField_mod::*;
@@ -1324,6 +1455,12 @@ pub use TimerEventScheduler_mod::*;
 // class TimerState_mod; export all
 mod TimerState_mod;
 pub use TimerState_mod::*;
+// class ToggleButtonGroupState_mod; export all
+mod ToggleButtonGroupState_mod;
+pub use ToggleButtonGroupState_mod::*;
+// class ToggleButtonGroup_mod; export all
+mod ToggleButtonGroup_mod;
+pub use ToggleButtonGroup_mod::*;
 // class Toggle_mod; export all
 mod Toggle_mod;
 pub use Toggle_mod::*;
@@ -1366,21 +1503,15 @@ pub use Translate_mod::*;
 // class TreeDataController_1_mod; export all
 mod TreeDataController_1_mod;
 pub use TreeDataController_1_mod::*;
-// class TreeData_1_mod; export all
-mod TreeData_1_mod;
-pub use TreeData_1_mod::*;
-// class TreeItem_mod; export all
-mod TreeItem_mod;
-pub use TreeItem_mod::*;
 // class TreeViewController_mod; export all
 mod TreeViewController_mod;
 pub use TreeViewController_mod::*;
+// class TreeViewExpansionChangedArgs_mod; export all
+mod TreeViewExpansionChangedArgs_mod;
+pub use TreeViewExpansionChangedArgs_mod::*;
 // class TreeViewItemData_1_mod; export all
 mod TreeViewItemData_1_mod;
 pub use TreeViewItemData_1_mod::*;
-// class TreeViewItemWrapper_mod; export all
-mod TreeViewItemWrapper_mod;
-pub use TreeViewItemWrapper_mod::*;
 // class TreeViewReorderableDragAndDropController_mod; export all
 mod TreeViewReorderableDragAndDropController_mod;
 pub use TreeViewReorderableDragAndDropController_mod::*;
@@ -1399,6 +1530,9 @@ pub use TwoPaneSplitViewResizer_mod::*;
 // class TwoPaneSplitView_mod; export all
 mod TwoPaneSplitView_mod;
 pub use TwoPaneSplitView_mod::*;
+// class TypeConverterRegistry_mod; export all
+mod TypeConverterRegistry_mod;
+pub use TypeConverterRegistry_mod::*;
 // class TypedUxmlAttributeDescription_1_mod; export all
 mod TypedUxmlAttributeDescription_1_mod;
 pub use TypedUxmlAttributeDescription_1_mod::*;
@@ -1411,9 +1545,9 @@ pub use UIDocument_mod::*;
 // class UIElementsBridge_mod; export all
 mod UIElementsBridge_mod;
 pub use UIElementsBridge_mod::*;
-// class UIElementsPackageUtility_mod; export all
-mod UIElementsPackageUtility_mod;
-pub use UIElementsPackageUtility_mod::*;
+// class UIElementsInitialization_mod; export all
+mod UIElementsInitialization_mod;
+pub use UIElementsInitialization_mod::*;
 // class UIElementsRuntimeUtilityNative_mod; export all
 mod UIElementsRuntimeUtilityNative_mod;
 pub use UIElementsRuntimeUtilityNative_mod::*;
@@ -1443,9 +1577,15 @@ pub use UIRRepaintUpdater_mod::*;
 // class UIRUtility_mod; export all
 mod UIRUtility_mod;
 pub use UIRUtility_mod::*;
+// class UIRenderer_mod; export all
+mod UIRenderer_mod;
+pub use UIRenderer_mod::*;
 // class UITKTextHandle_mod; export all
 mod UITKTextHandle_mod;
 pub use UITKTextHandle_mod::*;
+// class UITKTextJobSystem_mod; export all
+mod UITKTextJobSystem_mod;
+pub use UITKTextJobSystem_mod::*;
 // class UQueryBuilder_1_mod; export all
 mod UQueryBuilder_1_mod;
 pub use UQueryBuilder_1_mod::*;
@@ -1458,6 +1598,9 @@ pub use UQueryState_1_mod::*;
 // class UQuery_mod; export all
 mod UQuery_mod;
 pub use UQuery_mod::*;
+// class UnsafeMeshGenerationNode_mod; export all
+mod UnsafeMeshGenerationNode_mod;
+pub use UnsafeMeshGenerationNode_mod::*;
 // class UnsignedIntegerField_mod; export all
 mod UnsignedIntegerField_mod;
 pub use UnsignedIntegerField_mod::*;
@@ -1467,6 +1610,9 @@ pub use UnsignedLongField_mod::*;
 // class UsageHints_mod; export all
 mod UsageHints_mod;
 pub use UsageHints_mod::*;
+// class UxmlAssetAttributeDescription_1_mod; export all
+mod UxmlAssetAttributeDescription_1_mod;
+pub use UxmlAssetAttributeDescription_1_mod::*;
 // class UxmlAsset_mod; export all
 mod UxmlAsset_mod;
 pub use UxmlAsset_mod::*;
@@ -1485,6 +1631,9 @@ pub use UxmlBoolAttributeDescription_mod::*;
 // class UxmlDoubleAttributeDescription_mod; export all
 mod UxmlDoubleAttributeDescription_mod;
 pub use UxmlDoubleAttributeDescription_mod::*;
+// class UxmlElementAttribute_mod; export all
+mod UxmlElementAttribute_mod;
+pub use UxmlElementAttribute_mod::*;
 // class UxmlEnumAttributeDescription_1_mod; export all
 mod UxmlEnumAttributeDescription_1_mod;
 pub use UxmlEnumAttributeDescription_1_mod::*;
@@ -1503,18 +1652,30 @@ pub use UxmlFloatAttributeDescription_mod::*;
 // class UxmlHash128AttributeDescription_mod; export all
 mod UxmlHash128AttributeDescription_mod;
 pub use UxmlHash128AttributeDescription_mod::*;
+// class UxmlIgnoreAttribute_mod; export all
+mod UxmlIgnoreAttribute_mod;
+pub use UxmlIgnoreAttribute_mod::*;
+// class UxmlImageAttributeDescription_mod; export all
+mod UxmlImageAttributeDescription_mod;
+pub use UxmlImageAttributeDescription_mod::*;
 // class UxmlIntAttributeDescription_mod; export all
 mod UxmlIntAttributeDescription_mod;
 pub use UxmlIntAttributeDescription_mod::*;
 // class UxmlLongAttributeDescription_mod; export all
 mod UxmlLongAttributeDescription_mod;
 pub use UxmlLongAttributeDescription_mod::*;
+// class UxmlNamespaceDefinition_mod; export all
+mod UxmlNamespaceDefinition_mod;
+pub use UxmlNamespaceDefinition_mod::*;
 // class UxmlObjectAsset_mod; export all
 mod UxmlObjectAsset_mod;
 pub use UxmlObjectAsset_mod::*;
 // class UxmlObjectAttributeDescription_1_mod; export all
 mod UxmlObjectAttributeDescription_1_mod;
 pub use UxmlObjectAttributeDescription_1_mod::*;
+// class UxmlObjectAttribute_mod; export all
+mod UxmlObjectAttribute_mod;
+pub use UxmlObjectAttribute_mod::*;
 // class UxmlObjectFactoryRegistry_mod; export all
 mod UxmlObjectFactoryRegistry_mod;
 pub use UxmlObjectFactoryRegistry_mod::*;
@@ -1533,6 +1694,9 @@ pub use UxmlRootElementFactory_mod::*;
 // class UxmlRootElementTraits_mod; export all
 mod UxmlRootElementTraits_mod;
 pub use UxmlRootElementTraits_mod::*;
+// class UxmlSerializedData_mod; export all
+mod UxmlSerializedData_mod;
+pub use UxmlSerializedData_mod::*;
 // class UxmlStringAttributeDescription_mod; export all
 mod UxmlStringAttributeDescription_mod;
 pub use UxmlStringAttributeDescription_mod::*;
@@ -1563,6 +1727,9 @@ pub use UxmlUnsignedIntAttributeDescription_mod::*;
 // class UxmlUnsignedLongAttributeDescription_mod; export all
 mod UxmlUnsignedLongAttributeDescription_mod;
 pub use UxmlUnsignedLongAttributeDescription_mod::*;
+// class UxmlUtility_mod; export all
+mod UxmlUtility_mod;
+pub use UxmlUtility_mod::*;
 // class ValidateCommandEvent_mod; export all
 mod ValidateCommandEvent_mod;
 pub use ValidateCommandEvent_mod::*;
@@ -1629,9 +1796,6 @@ pub use VisualElementFocusRing_mod::*;
 // class VisualElementListPool_mod; export all
 mod VisualElementListPool_mod;
 pub use VisualElementListPool_mod::*;
-// class VisualElementPanelActivator_mod; export all
-mod VisualElementPanelActivator_mod;
-pub use VisualElementPanelActivator_mod::*;
 // class VisualElementStyleSheetSet_mod; export all
 mod VisualElementStyleSheetSet_mod;
 pub use VisualElementStyleSheetSet_mod::*;
@@ -1647,6 +1811,9 @@ pub use VisualTreeAsset_mod::*;
 // class VisualTreeBindingsUpdater_mod; export all
 mod VisualTreeBindingsUpdater_mod;
 pub use VisualTreeBindingsUpdater_mod::*;
+// class VisualTreeDataBindingsUpdater_mod; export all
+mod VisualTreeDataBindingsUpdater_mod;
+pub use VisualTreeDataBindingsUpdater_mod::*;
 // class VisualTreeHierarchyFlagsUpdater_mod; export all
 mod VisualTreeHierarchyFlagsUpdater_mod;
 pub use VisualTreeHierarchyFlagsUpdater_mod::*;
@@ -1662,15 +1829,21 @@ pub use VisualTreeUpdatePhase_mod::*;
 // class VisualTreeUpdater_mod; export all
 mod VisualTreeUpdater_mod;
 pub use VisualTreeUpdater_mod::*;
-// class VisualTreeViewDataUpdater_mod; export all
-mod VisualTreeViewDataUpdater_mod;
-pub use VisualTreeViewDataUpdater_mod::*;
+// class VisualTreeWorldSpaceHierarchyFlagsUpdater_mod; export all
+mod VisualTreeWorldSpaceHierarchyFlagsUpdater_mod;
+pub use VisualTreeWorldSpaceHierarchyFlagsUpdater_mod::*;
 // class WheelEvent_mod; export all
 mod WheelEvent_mod;
 pub use WheelEvent_mod::*;
 // class WhiteSpace_mod; export all
 mod WhiteSpace_mod;
 pub use WhiteSpace_mod::*;
+// class WorldSpaceDataStore_mod; export all
+mod WorldSpaceDataStore_mod;
+pub use WorldSpaceDataStore_mod::*;
+// class WorldSpaceData_mod; export all
+mod WorldSpaceData_mod;
+pub use WorldSpaceData_mod::*;
 // class Wrap_mod; export all
 mod Wrap_mod;
 pub use Wrap_mod::*;

@@ -264,7 +264,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController {
 #[derive(Debug)]
 pub struct MultiplayerLobbyAvatarController_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_2<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLobbyAvatarController,
         >,
@@ -294,7 +294,7 @@ for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerLobbyAvatarController_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerLobbyAvatarController,
         >,

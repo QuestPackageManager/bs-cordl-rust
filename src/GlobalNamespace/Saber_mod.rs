@@ -3,6 +3,7 @@
 #[derive(Debug)]
 pub struct Saber {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _saberBladeTopTransform: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Transform,
     >,

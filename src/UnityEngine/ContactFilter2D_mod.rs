@@ -130,33 +130,6 @@ impl crate::UnityEngine::ContactFilter2D {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn CheckConsistency_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::ContactFilter2D>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ContactFilter2D,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("CheckConsistency_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CheckConsistency_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn CreateLegacyFilter(
         layerMask: i32,
         minDepth: f32,

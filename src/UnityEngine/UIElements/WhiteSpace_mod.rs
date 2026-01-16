@@ -5,6 +5,8 @@ pub enum WhiteSpace {
     #[default]
     NoWrap = 1i32,
     Normal = 0i32,
+    Pre = 2i32,
+    PreWrap = 3i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+WhiteSpace")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::WhiteSpace {

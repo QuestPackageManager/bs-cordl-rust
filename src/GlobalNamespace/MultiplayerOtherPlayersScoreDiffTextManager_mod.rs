@@ -13,7 +13,7 @@ pub struct MultiplayerOtherPlayersScoreDiffTextManager {
         crate::GlobalNamespace::MultiplayerScoreProvider,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _layoutProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLayoutProvider,

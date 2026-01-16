@@ -51,7 +51,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainEffectController {
 }
 #[cfg(feature = "MainEffectController")]
 impl crate::GlobalNamespace::MainEffectController {
-    pub const kMainEffectEnabledKeyword: &'static str = "MAIN_EFFECT_ENABLED";
     pub fn ImageEffectControllerCallback(
         &mut self,
         src: quest_hook::libil2cpp::Gc<crate::UnityEngine::RenderTexture>,
@@ -280,6 +279,35 @@ impl crate::GlobalNamespace::MainEffectController {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_container(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MainEffectContainerSO>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MainEffectContainerSO,
+                        >,
+                        0usize,
+                    >("get_container")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_container", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MainEffectContainerSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_fadeValue(&mut self) -> quest_hook::libil2cpp::Result<f32> {

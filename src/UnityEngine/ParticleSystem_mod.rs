@@ -66,8 +66,12 @@ impl crate::UnityEngine::ParticleSystem {
     pub type MainModule = crate::UnityEngine::ParticleSystem_MainModule;
     #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurve")]
     pub type MinMaxCurve = crate::UnityEngine::ParticleSystem_MinMaxCurve;
+    #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+    pub type MinMaxCurveBlittable = crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable;
     #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradient")]
     pub type MinMaxGradient = crate::UnityEngine::ParticleSystem_MinMaxGradient;
+    #[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+    pub type MinMaxGradientBlittable = crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable;
     #[cfg(feature = "UnityEngine+ParticleSystem+NoiseModule")]
     pub type NoiseModule = crate::UnityEngine::ParticleSystem_NoiseModule;
     #[cfg(feature = "UnityEngine+ParticleSystem+Particle")]
@@ -121,6 +125,31 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn AllocateAxisOfRotationAttribute_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("AllocateAxisOfRotationAttribute_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocateAxisOfRotationAttribute_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn AllocateCustomDataAttribute(
         &mut self,
         stream: crate::UnityEngine::ParticleSystemCustomData,
@@ -144,6 +173,35 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (stream))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn AllocateCustomDataAttribute_Injected(
+        _unity_self: crate::System::IntPtr,
+        stream: crate::UnityEngine::ParticleSystemCustomData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            crate::UnityEngine::ParticleSystemCustomData,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AllocateCustomDataAttribute_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocateCustomDataAttribute_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, stream))?
         };
         Ok(__cordl_ret.into())
     }
@@ -172,6 +230,31 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn AllocateMeshIndexAttribute_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("AllocateMeshIndexAttribute_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AllocateMeshIndexAttribute_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Clear_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -190,6 +273,32 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clear_Injected(
+        _unity_self: crate::System::IntPtr,
+        withChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Clear_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Clear_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, withChildren))?
         };
         Ok(__cordl_ret.into())
     }
@@ -280,8 +389,41 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn EmitOld_Internal_Injected(
+        _unity_self: crate::System::IntPtr,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_Particle,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("EmitOld_Internal_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "EmitOld_Internal_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, particle))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Emit_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         emitParams: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_EmitParams,
         >,
@@ -291,26 +433,27 @@ impl crate::UnityEngine::ParticleSystem {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
+                    .find_static_method::<
                         (
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ParticleSystem_EmitParams,
                             >,
                             i32,
                         ),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("Emit_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Emit_Injected", 2usize
+                            "Emit_Injected", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (emitParams, count))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, emitParams, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -337,6 +480,32 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Emit_Internal_Injected(
+        _unity_self: crate::System::IntPtr,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Emit_Internal_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Emit_Internal_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, count))?
         };
         Ok(__cordl_ret.into())
     }
@@ -491,6 +660,42 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetCustomParticleData_Injected(
+        _unity_self: crate::System::IntPtr,
+        customData: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::BlittableListWrapper,
+        >,
+        streamIndex: crate::UnityEngine::ParticleSystemCustomData,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::BlittableListWrapper,
+                            >,
+                            crate::UnityEngine::ParticleSystemCustomData,
+                        ),
+                        i32,
+                        3usize,
+                    >("GetCustomParticleData_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomParticleData_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (_unity_self, customData, streamIndex))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetManagedJobData(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -516,6 +721,33 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppObject,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetManagedJobData_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+                        1usize,
+                    >("GetManagedJobData_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetManagedJobData_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppObject,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (_unity_self))? };
         Ok(__cordl_ret.into())
     }
     pub fn GetManagedJobHandle(
@@ -544,28 +776,33 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn GetManagedJobHandle_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         ret: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>),
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Jobs::JobHandle,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >("GetManagedJobHandle_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetManagedJobHandle_Injected", 1usize
+                            "GetManagedJobHandle_Injected", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ret))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -600,7 +837,7 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn GetParticleCurrentColor_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         particle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_Particle,
         >,
@@ -610,26 +847,27 @@ impl crate::UnityEngine::ParticleSystem {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
+                    .find_static_method::<
                         (
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ParticleSystem_Particle,
                             >,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Color32>,
                         ),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("GetParticleCurrentColor_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetParticleCurrentColor_Injected", 2usize
+                            "GetParticleCurrentColor_Injected", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (particle, ret))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, particle, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -694,7 +932,7 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn GetParticleCurrentSize3D_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         particle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_Particle,
         >,
@@ -704,26 +942,60 @@ impl crate::UnityEngine::ParticleSystem {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
+                    .find_static_method::<
                         (
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ParticleSystem_Particle,
                             >,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                         ),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("GetParticleCurrentSize3D_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetParticleCurrentSize3D_Injected", 2usize
+                            "GetParticleCurrentSize3D_Injected", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (particle, ret))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, particle, ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetParticleCurrentSize_Injected(
+        _unity_self: crate::System::IntPtr,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_Particle,
+                            >,
+                        ),
+                        f32,
+                        2usize,
+                    >("GetParticleCurrentSize_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParticleCurrentSize_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, particle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -757,6 +1029,39 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetParticleMeshIndex_Injected(
+        _unity_self: crate::System::IntPtr,
+        particle: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Particle,
+        >,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_Particle,
+                            >,
+                        ),
+                        i32,
+                        2usize,
+                    >("GetParticleMeshIndex_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParticleMeshIndex_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, particle))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetParticlesWithNativeArray(
         &mut self,
         particles: crate::System::IntPtr,
@@ -786,6 +1091,39 @@ impl crate::UnityEngine::ParticleSystem {
                 .invoke_unchecked(
                     self,
                     (particles, particlesLength, _cordl_size, offset),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetParticlesWithNativeArray_Injected(
+        _unity_self: crate::System::IntPtr,
+        particles: crate::System::IntPtr,
+        particlesLength: i32,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr, i32, i32, i32),
+                        i32,
+                        5usize,
+                    >("GetParticlesWithNativeArray_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParticlesWithNativeArray_Injected", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (_unity_self, particles, particlesLength, _cordl_size, offset),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -859,6 +1197,44 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: i32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (particles))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetParticles_Injected(
+        _unity_self: crate::System::IntPtr,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::BlittableArrayWrapper,
+        >,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::BlittableArrayWrapper,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        i32,
+                        4usize,
+                    >("GetParticles_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetParticles_Injected", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (_unity_self, particles, _cordl_size, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1054,7 +1430,7 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn GetPlaybackState_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         ret: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_PlaybackState,
         >,
@@ -1063,23 +1439,26 @@ impl crate::UnityEngine::ParticleSystem {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_PlaybackState,
-                        >),
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_PlaybackState,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >("GetPlaybackState_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetPlaybackState_Injected", 1usize
+                            "GetPlaybackState_Injected", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ret))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, ret))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1110,6 +1489,39 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (trailData))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetTrailDataInternal_Injected(
+        _unity_self: crate::System::IntPtr,
+        trailData: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_Trails,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_Trails,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetTrailDataInternal_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetTrailDataInternal_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, trailData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1185,6 +1597,32 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn IsAlive_Injected(
+        _unity_self: crate::System::IntPtr,
+        withChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, bool),
+                        bool,
+                        2usize,
+                    >("IsAlive_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAlive_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, withChildren))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn IsAlive__cordl_bool0(
         &mut self,
         withChildren: bool,
@@ -1235,6 +1673,32 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Pause_Injected(
+        _unity_self: crate::System::IntPtr,
+        withChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Pause_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Pause_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, withChildren))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Pause__cordl_bool0(
         &mut self,
         withChildren: bool,
@@ -1275,6 +1739,32 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Play_Injected(
+        _unity_self: crate::System::IntPtr,
+        withChildren: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Play_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Play_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, withChildren))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1435,6 +1925,42 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetCustomParticleData_Injected(
+        _unity_self: crate::System::IntPtr,
+        customData: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::BlittableListWrapper,
+        >,
+        streamIndex: crate::UnityEngine::ParticleSystemCustomData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::BlittableListWrapper,
+                            >,
+                            crate::UnityEngine::ParticleSystemCustomData,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("SetCustomParticleData_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCustomParticleData_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (_unity_self, customData, streamIndex))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetManagedJobHandle(
         &mut self,
         handle: crate::Unity::Jobs::JobHandle,
@@ -1462,28 +1988,33 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn SetManagedJobHandle_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         handle: quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<crate::Unity::Jobs::JobHandle>),
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::Unity::Jobs::JobHandle,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >("SetManagedJobHandle_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetManagedJobHandle_Injected", 1usize
+                            "SetManagedJobHandle_Injected", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, handle))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1543,6 +2074,39 @@ impl crate::UnityEngine::ParticleSystem {
                 .invoke_unchecked(
                     self,
                     (particles, particlesLength, _cordl_size, offset),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetParticlesWithNativeArray_Injected(
+        _unity_self: crate::System::IntPtr,
+        particles: crate::System::IntPtr,
+        particlesLength: i32,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr, i32, i32, i32),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("SetParticlesWithNativeArray_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetParticlesWithNativeArray_Injected", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (_unity_self, particles, particlesLength, _cordl_size, offset),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -1616,6 +2180,44 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (particles))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetParticles_Injected(
+        _unity_self: crate::System::IntPtr,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::BlittableArrayWrapper,
+        >,
+        _cordl_size: i32,
+        offset: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::BlittableArrayWrapper,
+                            >,
+                            i32,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("SetParticles_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetParticles_Injected", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (_unity_self, particles, _cordl_size, offset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1810,7 +2412,7 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn SetPlaybackState_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         playbackState: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_PlaybackState,
         >,
@@ -1819,23 +2421,26 @@ impl crate::UnityEngine::ParticleSystem {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_PlaybackState,
-                        >),
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_PlaybackState,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >("SetPlaybackState_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetPlaybackState_Injected", 1usize
+                            "SetPlaybackState_Injected", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (playbackState))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, playbackState))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1866,7 +2471,7 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn SetTrails_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         trailData: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_Trails,
         >,
@@ -1875,23 +2480,59 @@ impl crate::UnityEngine::ParticleSystem {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_Trails,
-                        >),
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_Trails,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >("SetTrails_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTrails_Injected", 1usize
+                            "SetTrails_Injected", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (trailData))?
+            cordl_method_info.invoke_unchecked((), (_unity_self, trailData))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Simulate_Injected(
+        _unity_self: crate::System::IntPtr,
+        t: f32,
+        withChildren: bool,
+        restart: bool,
+        fixedTimeStep: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, f32, bool, bool, bool),
+                        quest_hook::libil2cpp::Void,
+                        5usize,
+                    >("Simulate_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Simulate_Injected", 5usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    (),
+                    (_unity_self, t, withChildren, restart, fixedTimeStep),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -2027,6 +2668,38 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Stop_Injected(
+        _unity_self: crate::System::IntPtr,
+        withChildren: bool,
+        stopBehavior: crate::UnityEngine::ParticleSystemStopBehavior,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            bool,
+                            crate::UnityEngine::ParticleSystemStopBehavior,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("Stop_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Stop_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (_unity_self, withChildren, stopBehavior))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Stop__cordl_bool1(
         &mut self,
         withChildren: bool,
@@ -2076,6 +2749,58 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn TriggerSubEmitterForAllParticles(
+        &mut self,
+        subEmitterIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("TriggerSubEmitterForAllParticles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerSubEmitterForAllParticles", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (subEmitterIndex))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerSubEmitterForAllParticles_Injected(
+        _unity_self: crate::System::IntPtr,
+        subEmitterIndex: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("TriggerSubEmitterForAllParticles_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerSubEmitterForAllParticles_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, subEmitterIndex))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn TriggerSubEmitterForParticle(
         &mut self,
         subEmitterIndex: i32,
@@ -2104,7 +2829,7 @@ impl crate::UnityEngine::ParticleSystem {
         Ok(__cordl_ret.into())
     }
     pub fn TriggerSubEmitterForParticle_Injected(
-        &mut self,
+        _unity_self: crate::System::IntPtr,
         subEmitterIndex: i32,
         particle: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_Particle,
@@ -2114,26 +2839,102 @@ impl crate::UnityEngine::ParticleSystem {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
+                    .find_static_method::<
                         (
+                            crate::System::IntPtr,
                             i32,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ParticleSystem_Particle,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("TriggerSubEmitterForParticle_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "TriggerSubEmitterForParticle_Injected", 2usize
+                            "TriggerSubEmitterForParticle_Injected", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (subEmitterIndex, particle))?
+            cordl_method_info
+                .invoke_unchecked((), (_unity_self, subEmitterIndex, particle))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerSubEmitterForParticles(
+        &mut self,
+        subEmitterIndex: i32,
+        particles: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::ParticleSystem_Particle,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::ParticleSystem_Particle,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("TriggerSubEmitterForParticles")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerSubEmitterForParticles", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (subEmitterIndex, particles))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn TriggerSubEmitterForParticles_Injected(
+        _unity_self: crate::System::IntPtr,
+        subEmitterIndex: i32,
+        particles: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::BlittableListWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            i32,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::BlittableListWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("TriggerSubEmitterForParticles_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "TriggerSubEmitterForParticles_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked((), (_unity_self, subEmitterIndex, particles))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2233,6 +3034,23 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (subEmitterIndex))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UserJobCanBeScheduled() -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), bool, 0usize>("UserJobCanBeScheduled")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UserJobCanBeScheduled", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(
@@ -2549,6 +3367,31 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_has3DParticleRotations_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_has3DParticleRotations_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_has3DParticleRotations_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_hasNonUniformParticleSizes(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -2566,6 +3409,31 @@ impl crate::UnityEngine::ParticleSystem {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_hasNonUniformParticleSizes_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_hasNonUniformParticleSizes_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hasNonUniformParticleSizes_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_inheritVelocity(
@@ -2612,6 +3480,31 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_isEmitting_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_isEmitting_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isEmitting_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_isPaused(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2627,6 +3520,31 @@ impl crate::UnityEngine::ParticleSystem {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isPaused_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_isPaused_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isPaused_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_isPlaying(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -2646,6 +3564,31 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_isPlaying_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_isPlaying_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isPlaying_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_isStopped(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2661,6 +3604,31 @@ impl crate::UnityEngine::ParticleSystem {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_isStopped_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_isStopped_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isStopped_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_lifetimeByEmitterSpeed(
@@ -2843,6 +3811,31 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_particleCount_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        i32,
+                        1usize,
+                    >("get_particleCount_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_particleCount_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2896,6 +3889,31 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_proceduralSimulationSupported_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_proceduralSimulationSupported_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_proceduralSimulationSupported_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_randomSeed(&mut self) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -2911,6 +3929,31 @@ impl crate::UnityEngine::ParticleSystem {
                     })
             });
         let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_randomSeed_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u32,
+                        1usize,
+                    >("get_randomSeed_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_randomSeed_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_rotationBySpeed(
@@ -3304,6 +4347,31 @@ impl crate::UnityEngine::ParticleSystem {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_time_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        f32,
+                        1usize,
+                    >("get_time_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_time_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_totalTime(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -3319,6 +4387,31 @@ impl crate::UnityEngine::ParticleSystem {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_totalTime_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        f32,
+                        1usize,
+                    >("get_totalTime_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_totalTime_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_trails(
@@ -3388,6 +4481,31 @@ impl crate::UnityEngine::ParticleSystem {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_useAutoRandomSeed_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_useAutoRandomSeed_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_useAutoRandomSeed_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_velocityOverLifetime(
@@ -3622,6 +4740,32 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_randomSeed_Injected(
+        _unity_self: crate::System::IntPtr,
+        value: u32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, u32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_randomSeed_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_randomSeed_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -3885,6 +5029,32 @@ impl crate::UnityEngine::ParticleSystem {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_time_Injected(
+        _unity_self: crate::System::IntPtr,
+        value: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, f32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_time_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_time_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_useAutoRandomSeed(
         &mut self,
         value: bool,
@@ -3908,6 +5078,32 @@ impl crate::UnityEngine::ParticleSystem {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_useAutoRandomSeed_Injected(
+        _unity_self: crate::System::IntPtr,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, bool),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_useAutoRandomSeed_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_useAutoRandomSeed_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4587,35 +5783,6 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_enabled_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_EmissionModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_EmissionModule,
-                        >),
-                        bool,
-                        1usize,
-                    >("get_enabled_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_enabled_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_rateOverTimeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -4631,35 +5798,6 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_rateOverTimeMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_EmissionModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_EmissionModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_rateOverTimeMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_rateOverTimeMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn set_enabled(
@@ -4685,39 +5823,6 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_enabled_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_EmissionModule,
-        >,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_EmissionModule,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_enabled_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_enabled_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -4747,12 +5852,38 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_rateOverTime_Injected(
+    pub fn set_rateOverTimeBlittable(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_rateOverTimeBlittable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_rateOverTimeBlittable", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_rateOverTimeBlittable_Injected(
         _unity_self: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_EmissionModule,
         >,
         value: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MinMaxCurve,
+            crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -4765,17 +5896,17 @@ impl crate::UnityEngine::ParticleSystem_EmissionModule {
                                 crate::UnityEngine::ParticleSystem_EmissionModule,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MinMaxCurve,
+                                crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("set_rateOverTime_Injected")
+                    >("set_rateOverTimeBlittable_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_rateOverTime_Injected", 2usize
+                            "set_rateOverTimeBlittable_Injected", 2usize
                         )
                     })
             });
@@ -5944,35 +7075,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_duration_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_duration_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_duration_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_gravityModifierMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -5992,35 +7094,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_gravityModifierMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_gravityModifierMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_gravityModifierMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_loop(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6036,35 +7109,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_loop_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        bool,
-                        1usize,
-                    >("get_loop_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_loop_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn get_maxParticles(&mut self) -> quest_hook::libil2cpp::Result<i32> {
@@ -6084,35 +7128,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_maxParticles_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        i32,
-                        1usize,
-                    >("get_maxParticles_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_maxParticles_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_playOnAwake(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6128,35 +7143,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_playOnAwake_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        bool,
-                        1usize,
-                    >("get_playOnAwake_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_playOnAwake_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn get_scalingMode(
@@ -6181,35 +7167,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: crate::UnityEngine::ParticleSystemScalingMode = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_scalingMode_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::ParticleSystemScalingMode> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        crate::UnityEngine::ParticleSystemScalingMode,
-                        1usize,
-                    >("get_scalingMode_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_scalingMode_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::ParticleSystemScalingMode = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6240,37 +7197,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_simulationSpace_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::UnityEngine::ParticleSystemSimulationSpace,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        crate::UnityEngine::ParticleSystemSimulationSpace,
-                        1usize,
-                    >("get_simulationSpace_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_simulationSpace_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::ParticleSystemSimulationSpace = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_simulationSpeed(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6286,35 +7212,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_simulationSpeed_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_simulationSpeed_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_simulationSpeed_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn get_startColor(
@@ -6344,12 +7241,39 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_startColor_Injected(
+    pub fn get_startColorBlittable(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+                        0usize,
+                    >("get_startColorBlittable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_startColorBlittable", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_startColorBlittable_Injected(
         _unity_self: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_MainModule,
         >,
         ret: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MinMaxGradient,
+            crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -6362,17 +7286,17 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                                 crate::UnityEngine::ParticleSystem_MainModule,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MinMaxGradient,
+                                crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("get_startColor_Injected")
+                    >("get_startColorBlittable_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startColor_Injected", 2usize
+                            "get_startColorBlittable_Injected", 2usize
                         )
                     })
             });
@@ -6398,35 +7322,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_startDelayMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startDelayMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startDelayMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_startLifetimeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6444,35 +7339,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_startLifetimeMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startLifetimeMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startLifetimeMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_startRotationMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6488,35 +7354,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_startRotationMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startRotationMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startRotationMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn get_startRotationXMultiplier(
@@ -6538,35 +7375,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_startRotationXMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startRotationXMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startRotationXMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_startRotationYMultiplier(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<f32> {
@@ -6584,35 +7392,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_startRotationYMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startRotationYMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startRotationYMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn get_startRotationZMultiplier(
@@ -6634,35 +7413,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_startRotationZMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startRotationZMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startRotationZMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_startSizeMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6680,35 +7430,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_startSizeMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startSizeMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startSizeMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_startSpeedMultiplier(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -6724,35 +7445,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_startSpeedMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_MainModule,
-                        >),
-                        f32,
-                        1usize,
-                    >("get_startSpeedMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_startSpeedMultiplier_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn set_gravityModifierMultiplier(
@@ -6778,39 +7470,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_gravityModifierMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_gravityModifierMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_gravityModifierMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6840,39 +7499,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_loop_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_loop_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_loop_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_maxParticles(
         &mut self,
         value: i32,
@@ -6896,39 +7522,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_maxParticles_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: i32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            i32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_maxParticles_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_maxParticles_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -6958,39 +7551,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_playOnAwake_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_playOnAwake_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_playOnAwake_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_scalingMode(
         &mut self,
         value: crate::UnityEngine::ParticleSystemScalingMode,
@@ -7014,39 +7574,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_scalingMode_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: crate::UnityEngine::ParticleSystemScalingMode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            crate::UnityEngine::ParticleSystemScalingMode,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_scalingMode_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_scalingMode_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7076,39 +7603,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_simulationSpace_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: crate::UnityEngine::ParticleSystemSimulationSpace,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            crate::UnityEngine::ParticleSystemSimulationSpace,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_simulationSpace_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_simulationSpace_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_simulationSpeed(
         &mut self,
         value: f32,
@@ -7132,39 +7626,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_simulationSpeed_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_simulationSpeed_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_simulationSpeed_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7194,12 +7655,38 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_startColor_Injected(
+    pub fn set_startColorBlittable(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_startColorBlittable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_startColorBlittable", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_startColorBlittable_Injected(
         _unity_self: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_MainModule,
         >,
         value: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MinMaxGradient,
+            crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -7212,17 +7699,17 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
                                 crate::UnityEngine::ParticleSystem_MainModule,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MinMaxGradient,
+                                crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >("set_startColor_Injected")
+                    >("set_startColorBlittable_Injected")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startColor_Injected", 2usize
+                            "set_startColorBlittable_Injected", 2usize
                         )
                     })
             });
@@ -7257,39 +7744,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_startDelayMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startDelayMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startDelayMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_startLifetime(
         &mut self,
         value: crate::UnityEngine::ParticleSystem_MinMaxCurve,
@@ -7313,6 +7767,69 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_startLifetimeBlittable(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_startLifetimeBlittable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_startLifetimeBlittable", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_startLifetimeBlittable_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_MainModule,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_MainModule,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_startLifetimeBlittable_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_startLifetimeBlittable_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7342,76 +7859,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_startLifetimeMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startLifetimeMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startLifetimeMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_startLifetime_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MinMaxCurve,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MinMaxCurve,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startLifetime_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startLifetime_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_startRotationMultiplier(
         &mut self,
         value: f32,
@@ -7435,39 +7882,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_startRotationMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startRotationMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startRotationMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7497,39 +7911,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_startRotationXMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startRotationXMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startRotationXMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_startRotationYMultiplier(
         &mut self,
         value: f32,
@@ -7553,39 +7934,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_startRotationYMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startRotationYMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startRotationYMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7615,39 +7963,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_startRotationZMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startRotationZMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startRotationZMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_startSizeMultiplier(
         &mut self,
         value: f32,
@@ -7671,39 +7986,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_startSizeMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startSizeMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startSizeMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -7733,6 +8015,69 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_startSpeedBlittable(
+        &mut self,
+        value: crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_startSpeedBlittable")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_startSpeedBlittable", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_startSpeedBlittable_Injected(
+        _unity_self: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_MainModule,
+        >,
+        value: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_MainModule,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("set_startSpeedBlittable_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_startSpeedBlittable_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_startSpeedMultiplier(
         &mut self,
         value: f32,
@@ -7756,76 +8101,6 @@ impl crate::UnityEngine::ParticleSystem_MainModule {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_startSpeedMultiplier_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: f32,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            f32,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startSpeedMultiplier_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startSpeedMultiplier_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_startSpeed_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MainModule,
-        >,
-        value: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_MinMaxCurve,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MainModule,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::ParticleSystem_MinMaxCurve,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("set_startSpeed_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_startSpeed_Injected", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self, value))?
         };
         Ok(__cordl_ret.into())
     }
@@ -8065,6 +8340,173 @@ impl crate::UnityEngine::ParticleSystem_MinMaxCurve {
         Ok(__cordl_ret.into())
     }
 }
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct ParticleSystem_MinMaxCurveBlittable {
+    pub m_Mode: crate::UnityEngine::ParticleSystemCurveMode,
+    pub m_CurveMultiplier: f32,
+    pub m_CurveMin: crate::System::IntPtr,
+    pub m_CurveMax: crate::System::IntPtr,
+    pub m_ConstantMin: f32,
+    pub m_ConstantMax: f32,
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "ParticleSystem/MinMaxCurveBlittable";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxCurveBlittable")]
+impl crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable {
+    pub fn FromMixMaxCurve(
+        minMaxCurve: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_MinMaxCurve,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::ParticleSystem_MinMaxCurve,
+                        >),
+                        crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+                        1usize,
+                    >("FromMixMaxCurve")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromMixMaxCurve", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable = unsafe {
+            cordl_method_info.invoke_unchecked((), (minMaxCurve))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit(
+        minMaxCurve: crate::UnityEngine::ParticleSystem_MinMaxCurve,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::ParticleSystem_MinMaxCurve),
+                        crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxCurveBlittable = unsafe {
+            cordl_method_info.invoke_unchecked((), (minMaxCurve))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
 #[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradient")]
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
@@ -8243,6 +8685,230 @@ impl crate::UnityEngine::ParticleSystem_MinMaxGradient {
             });
         let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradient = unsafe {
             cordl_method_info.invoke_unchecked((), (color))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+#[repr(C)]
+#[derive(Debug, Clone, Default, PartialEq)]
+pub struct ParticleSystem_MinMaxGradientBlittable {
+    pub m_Mode: crate::UnityEngine::ParticleSystemGradientMode,
+    pub m_GradientMin: crate::System::IntPtr,
+    pub m_GradientMax: crate::System::IntPtr,
+    pub m_ColorMin: crate::UnityEngine::Color,
+    pub m_ColorMax: crate::UnityEngine::Color,
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine";
+    const CLASS_NAME: &'static str = "ParticleSystem/MinMaxGradientBlittable";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+unsafe impl quest_hook::libil2cpp::ThisArgument
+for crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable {
+    type Type = Self;
+    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
+    }
+    fn invokable(&mut self) -> *mut std::ffi::c_void {
+        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    }
+}
+#[cfg(feature = "UnityEngine+ParticleSystem+MinMaxGradientBlittable")]
+impl crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable {
+    pub fn FromMixMaxGradient(
+        minMaxGradient: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_MinMaxGradient,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::ParticleSystem_MinMaxGradient,
+                        >),
+                        crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+                        1usize,
+                    >("FromMixMaxGradient")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FromMixMaxGradient", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable = unsafe {
+            cordl_method_info.invoke_unchecked((), (minMaxGradient))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ToMinMaxGradient(
+        minMaxGradientBlittable: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxGradient,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+                        >),
+                        crate::UnityEngine::ParticleSystem_MinMaxGradient,
+                        1usize,
+                    >("ToMinMaxGradient")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToMinMaxGradient", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradient = unsafe {
+            cordl_method_info.invoke_unchecked((), (minMaxGradientBlittable))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_ParticleSystem_MinMaxGradient1(
+        minMaxGradient: crate::UnityEngine::ParticleSystem_MinMaxGradient,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::ParticleSystem_MinMaxGradient),
+                        crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable = unsafe {
+            cordl_method_info.invoke_unchecked((), (minMaxGradient))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_ParticleSystem_MinMaxGradientBlittable0(
+        minMaxGradientBlittable: crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ParticleSystem_MinMaxGradient,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::ParticleSystem_MinMaxGradientBlittable),
+                        crate::UnityEngine::ParticleSystem_MinMaxGradient,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ParticleSystem_MinMaxGradient = unsafe {
+            cordl_method_info.invoke_unchecked((), (minMaxGradientBlittable))?
         };
         Ok(__cordl_ret.into())
     }
@@ -9311,9 +9977,7 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
         _unity_self: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_ShapeModule,
         >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -9322,7 +9986,7 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
                         (quest_hook::libil2cpp::ByRefMut<
                             crate::UnityEngine::ParticleSystem_ShapeModule,
                         >),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+                        crate::System::IntPtr,
                         1usize,
                     >("get_meshRenderer_Injected")
                     .unwrap_or_else(|e| {
@@ -9333,7 +9997,7 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer> = unsafe {
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
@@ -9368,7 +10032,7 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
         _unity_self: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ParticleSystem_ShapeModule,
         >,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+        value: crate::System::IntPtr,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -9379,7 +10043,7 @@ impl crate::UnityEngine::ParticleSystem_ShapeModule {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ParticleSystem_ShapeModule,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshRenderer>,
+                            crate::System::IntPtr,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
@@ -9853,9 +10517,7 @@ impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
             crate::UnityEngine::ParticleSystem_SubEmittersModule,
         >,
         index: i32,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -9867,7 +10529,7 @@ impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
                             >,
                             i32,
                         ),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem>,
+                        crate::System::IntPtr,
                         2usize,
                     >("GetSubEmitterSystem_Injected")
                     .unwrap_or_else(|e| {
@@ -9878,7 +10540,7 @@ impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::ParticleSystem> = unsafe {
+        let __cordl_ret: crate::System::IntPtr = unsafe {
             cordl_method_info.invoke_unchecked((), (_unity_self, index))?
         };
         Ok(__cordl_ret.into())
@@ -9924,35 +10586,6 @@ impl crate::UnityEngine::ParticleSystem_SubEmittersModule {
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_subEmittersCount_Injected(
-        _unity_self: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::ParticleSystem_SubEmittersModule,
-        >,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::ParticleSystem_SubEmittersModule,
-                        >),
-                        i32,
-                        1usize,
-                    >("get_subEmittersCount_Injected")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_subEmittersCount_Injected", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (_unity_self))?
-        };
         Ok(__cordl_ret.into())
     }
 }

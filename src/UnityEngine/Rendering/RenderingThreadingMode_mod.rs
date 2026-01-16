@@ -7,6 +7,7 @@ pub enum RenderingThreadingMode {
     LegacyJobified = 3i32,
     MultiThreaded = 2i32,
     NativeGraphicsJobs = 4i32,
+    NativeGraphicsJobsSplitThreading = 6i32,
     NativeGraphicsJobsWithoutRenderThread = 5i32,
     SingleThreaded = 1i32,
 }

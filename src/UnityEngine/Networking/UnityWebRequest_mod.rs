@@ -59,6 +59,8 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
     pub const kHttpVerbHEAD: &'static str = "HEAD";
     pub const kHttpVerbPOST: &'static str = "POST";
     pub const kHttpVerbPUT: &'static str = "PUT";
+    #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+BindingsMarshaller")]
+    pub type BindingsMarshaller = crate::UnityEngine::Networking::UnityWebRequest_BindingsMarshaller;
     #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+Result")]
     pub type Result = crate::UnityEngine::Networking::UnityWebRequest_Result;
     #[cfg(feature = "UnityEngine+Networking+UnityWebRequest+UnityWebRequestError")]
@@ -83,6 +85,31 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Abort_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Abort_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Abort_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -115,6 +142,31 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn BeginWebRequest_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("BeginWebRequest_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "BeginWebRequest_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn Create() -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
@@ -180,66 +232,6 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
-        Ok(__cordl_ret.into())
-    }
-    pub fn EscapeURL_Encoding1(
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        e: quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<crate::System::Text::Encoding>,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("EscapeURL")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EscapeURL", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (s, e))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn EscapeURL_Il2CppString0(
-        s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        1usize,
-                    >("EscapeURL")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EscapeURL", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (s))? };
         Ok(__cordl_ret.into())
     }
     pub fn Finalize(
@@ -319,6 +311,39 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetCustomMethod_Injected(
+        _unity_self: crate::System::IntPtr,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetCustomMethod_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCustomMethod_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetError(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -343,6 +368,33 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetError_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        1usize,
+                    >("GetError_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetError_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -373,6 +425,39 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         > = unsafe { cordl_method_info.invoke_unchecked((), (responseCode))? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetHTTPStatusString_Injected(
+        responseCode: i64,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            i64,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetHTTPStatusString_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHTTPStatusString_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (responseCode, ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetMethod(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -397,6 +482,33 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMethod_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
+                        1usize,
+                    >("GetMethod_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMethod_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -428,6 +540,45 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (name))? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetResponseHeader_Injected(
+        _unity_self: crate::System::IntPtr,
+        name: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("GetResponseHeader_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetResponseHeader_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, name, ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetUrl(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -455,6 +606,39 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetUrl_Injected(
+        _unity_self: crate::System::IntPtr,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetUrl_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUrl_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, ret))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetWebErrorString(
         err: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
     ) -> quest_hook::libil2cpp::Result<
@@ -480,6 +664,39 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked((), (err))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetWebErrorString_Injected(
+        err: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+        ret: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetWebErrorString_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWebErrorString_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (err, ret))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn InternalDestroy(
@@ -610,7 +827,14 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New_Il2CppString0(
+    pub fn New_0() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
+    }
+    pub fn New_Il2CppString_Il2CppString1(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
@@ -620,7 +844,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke_void(".ctor", (url, method))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_DownloadHandler_UploadHandler1(
+    pub fn New_Il2CppString_Il2CppString_DownloadHandler_UploadHandler2(
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         downloadHandler: quest_hook::libil2cpp::Gc<
@@ -636,7 +860,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             .invoke_void(".ctor", (url, method, downloadHandler, uploadHandler))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Uri_DownloadHandler_UploadHandler2(
+    pub fn New_Uri_Il2CppString_DownloadHandler_UploadHandler3(
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         downloadHandler: quest_hook::libil2cpp::Gc<
@@ -670,6 +894,31 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Release_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Release_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Release_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -734,6 +983,34 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetCertificateHandler_Injected(
+        _unity_self: crate::System::IntPtr,
+        ch: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        2usize,
+                    >("SetCertificateHandler_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCertificateHandler_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, ch))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetCustomMethod(
         &mut self,
         customMethodName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -759,6 +1036,41 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
             cordl_method_info.invoke_unchecked(self, (customMethodName))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetCustomMethod_Injected(
+        _unity_self: crate::System::IntPtr,
+        customMethodName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        2usize,
+                    >("SetCustomMethod_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetCustomMethod_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, customMethodName))?
         };
         Ok(__cordl_ret.into())
     }
@@ -792,6 +1104,34 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetDownloadHandler_Injected(
+        _unity_self: crate::System::IntPtr,
+        dh: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        2usize,
+                    >("SetDownloadHandler_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetDownloadHandler_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, dh))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetMethod(
         &mut self,
         methodType: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
@@ -817,6 +1157,37 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
             cordl_method_info.invoke_unchecked(self, (methodType))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetMethod_Injected(
+        _unity_self: crate::System::IntPtr,
+        methodType: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestMethod,
+                        ),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        2usize,
+                    >("SetMethod_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetMethod_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, methodType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -846,6 +1217,32 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetRedirectLimitFromScripting_Injected(
+        _unity_self: crate::System::IntPtr,
+        limit: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, i32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetRedirectLimitFromScripting_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetRedirectLimitFromScripting_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, limit))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetTimeoutMsec(
         &mut self,
         timeout: i32,
@@ -871,6 +1268,34 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
             cordl_method_info.invoke_unchecked(self, (timeout))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetTimeoutMsec_Injected(
+        _unity_self: crate::System::IntPtr,
+        timeout: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, i32),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        2usize,
+                    >("SetTimeoutMsec_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetTimeoutMsec_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, timeout))?
         };
         Ok(__cordl_ret.into())
     }
@@ -904,6 +1329,34 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetUploadHandler_Injected(
+        _unity_self: crate::System::IntPtr,
+        uh: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr, crate::System::IntPtr),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        2usize,
+                    >("SetUploadHandler_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUploadHandler_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, uh))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetUrl(
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -932,7 +1385,63 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString0(
+    pub fn SetUrl_Injected(
+        _unity_self: crate::System::IntPtr,
+        url: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::System::IntPtr,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                        ),
+                        crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError,
+                        2usize,
+                    >("SetUrl_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUrl_Injected", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_UnityWebRequestError = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self, url))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Il2CppString_Il2CppString1(
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -966,7 +1475,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_DownloadHandler_UploadHandler1(
+    pub fn _ctor_Il2CppString_Il2CppString_DownloadHandler_UploadHandler2(
         &mut self,
         url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1013,7 +1522,7 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Uri_DownloadHandler_UploadHandler2(
+    pub fn _ctor_Uri_Il2CppString_DownloadHandler_UploadHandler3(
         &mut self,
         uri: quest_hook::libil2cpp::Gc<crate::System::Uri>,
         method: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1198,6 +1707,31 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_downloadedBytes_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<u64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        u64,
+                        1usize,
+                    >("get_downloadedBytes_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_downloadedBytes_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: u64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_error(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1259,6 +1793,31 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_isModifiable_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        bool,
+                        1usize,
+                    >("get_isModifiable_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isModifiable_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_method(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1303,6 +1862,31 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
         let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_responseCode_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        i64,
+                        1usize,
+                    >("get_responseCode_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_responseCode_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_result(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1327,6 +1911,33 @@ impl crate::UnityEngine::Networking::UnityWebRequest {
             });
         let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_Result = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_result_Injected(
+        _unity_self: crate::System::IntPtr,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Networking::UnityWebRequest_Result,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::IntPtr),
+                        crate::UnityEngine::Networking::UnityWebRequest_Result,
+                        1usize,
+                    >("get_result_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_result_Injected", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Networking::UnityWebRequest_Result = unsafe {
+            cordl_method_info.invoke_unchecked((), (_unity_self))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1703,6 +2314,89 @@ impl AsMut<crate::System::IDisposable>
 for crate::UnityEngine::Networking::UnityWebRequest {
     fn as_mut(&mut self) -> &mut crate::System::IDisposable {
         unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+BindingsMarshaller")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct UnityWebRequest_BindingsMarshaller {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+}
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+BindingsMarshaller")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Networking::UnityWebRequest_BindingsMarshaller {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "UnityEngine.Networking";
+    const CLASS_NAME: &'static str = "UnityWebRequest/BindingsMarshaller";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+BindingsMarshaller")]
+impl std::ops::Deref
+for crate::UnityEngine::Networking::UnityWebRequest_BindingsMarshaller {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+BindingsMarshaller")]
+impl std::ops::DerefMut
+for crate::UnityEngine::Networking::UnityWebRequest_BindingsMarshaller {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "UnityEngine+Networking+UnityWebRequest+BindingsMarshaller")]
+impl crate::UnityEngine::Networking::UnityWebRequest_BindingsMarshaller {
+    pub fn ConvertToNative(
+        unityWebRequest: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::System::IntPtr> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Networking::UnityWebRequest,
+                        >),
+                        crate::System::IntPtr,
+                        1usize,
+                    >("ConvertToNative")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ConvertToNative", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::IntPtr = unsafe {
+            cordl_method_info.invoke_unchecked((), (unityWebRequest))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+BindingsMarshaller")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::Networking::UnityWebRequest_BindingsMarshaller {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }
 #[cfg(feature = "cordl_class_UnityEngine+Networking+UnityWebRequest+Result")]

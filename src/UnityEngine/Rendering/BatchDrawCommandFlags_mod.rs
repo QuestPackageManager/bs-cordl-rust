@@ -7,8 +7,11 @@ pub enum BatchDrawCommandFlags {
     HasMotion = 2i32,
     HasSortingPosition = 8i32,
     IsLightMapped = 4i32,
-    LODCrossFade = 16i32,
+    LODCrossFade = 48i32,
+    LODCrossFadeKeyword = 16i32,
+    LODCrossFadeValuePacked = 32i32,
     None = 0i32,
+    UseLegacyLightmapsKeyword = 64i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchDrawCommandFlags")]
 unsafe impl quest_hook::libil2cpp::Type

@@ -14,7 +14,6 @@ pub struct SimpleLevelStarter {
     pub _beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
     pub _useTestNoteCutSoundEffects: bool,
     pub _overrideStrobeFilterSettingsToAllEffects: bool,
-    pub _recordingTextAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
     pub _prefabBindings: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::Component>,
@@ -35,9 +34,6 @@ pub struct SimpleLevelStarter {
         crate::GlobalNamespace::EnvironmentsListModel,
     >,
     pub _buttonBinder: quest_hook::libil2cpp::Gc<crate::HMUI::ButtonBinder>,
-    pub _gameplayModifiers: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::GameplayModifiers,
-    >,
 }
 #[cfg(feature = "cordl_class_SimpleLevelStarter")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::SimpleLevelStarter {
@@ -253,7 +249,7 @@ impl crate::GlobalNamespace::SimpleLevelStarter {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn _StartLevel_g__AfterSceneSwitchCallback_17_0(
+    pub fn _StartLevel_g__AfterSceneSwitchCallback_15_0(
         &mut self,
         container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -265,12 +261,12 @@ impl crate::GlobalNamespace::SimpleLevelStarter {
                         (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<StartLevel>g__AfterSceneSwitchCallback|17_0")
+                    >("<StartLevel>g__AfterSceneSwitchCallback|15_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<StartLevel>g__AfterSceneSwitchCallback|17_0", 1usize
+                            "<StartLevel>g__AfterSceneSwitchCallback|15_0", 1usize
                         )
                     })
             });

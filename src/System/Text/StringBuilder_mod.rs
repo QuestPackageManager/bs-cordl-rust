@@ -45,14 +45,6 @@ impl std::ops::DerefMut for crate::System::Text::StringBuilder {
 }
 #[cfg(feature = "System+Text+StringBuilder")]
 impl crate::System::Text::StringBuilder {
-    pub const CapacityField: &'static str = "Capacity";
-    pub const DefaultCapacity: i32 = 16i32;
-    pub const IndexLimit: i32 = 1000000i32;
-    pub const MaxCapacityField: &'static str = "m_MaxCapacity";
-    pub const MaxChunkSize: i32 = 8000i32;
-    pub const StringValueField: &'static str = "m_StringValue";
-    pub const ThreadIDField: &'static str = "m_currentThread";
-    pub const WidthLimit: i32 = 1000000i32;
     pub fn AppendCore(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
@@ -1142,7 +1134,7 @@ impl crate::System::Text::StringBuilder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Insert_Il2CppObject_i32_2(
+    pub fn Insert_Il2CppObject_i32_4(
         &mut self,
         index: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -1176,7 +1168,7 @@ impl crate::System::Text::StringBuilder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Insert_Il2CppString0(
+    pub fn Insert_Il2CppString1(
         &mut self,
         index: i32,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1210,7 +1202,43 @@ impl crate::System::Text::StringBuilder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Insert__cordl_char1(
+    pub fn Insert_Il2CppString_i32_0(
+        &mut self,
+        index: i32,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        count: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            i32,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                        3usize,
+                    >("Insert")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Insert",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index, value, count))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Insert__cordl_char2(
         &mut self,
         index: i32,
         value: char,
@@ -1223,6 +1251,35 @@ impl crate::System::Text::StringBuilder {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (i32, char),
+                        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+                        2usize,
+                    >("Insert")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Insert",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (index, value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Insert_i32_3(
+        &mut self,
+        index: i32,
+        value: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, i32),
                         quest_hook::libil2cpp::Gc<crate::System::Text::StringBuilder>,
                         2usize,
                     >("Insert")

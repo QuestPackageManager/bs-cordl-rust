@@ -48,6 +48,7 @@ impl std::ops::DerefMut for crate::UnityEngine::ProBuilder::PolyShape {
 }
 #[cfg(feature = "UnityEngine+ProBuilder+PolyShape")]
 impl crate::UnityEngine::ProBuilder::PolyShape {
+    pub const k_IconPath: &'static str = "Packages/com.unity.probuilder/Content/Icons/EditableMesh/EditableMesh.png";
     #[cfg(feature = "UnityEngine+ProBuilder+PolyShape+PolyEditMode")]
     pub type PolyEditMode = crate::UnityEngine::ProBuilder::PolyShape_PolyEditMode;
     pub fn IsSnapEnabled(&mut self) -> quest_hook::libil2cpp::Result<bool> {

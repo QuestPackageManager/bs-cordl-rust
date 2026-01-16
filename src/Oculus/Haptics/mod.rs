@@ -10,6 +10,9 @@ pub use HapticClipPlayer_mod::*;
 // class HapticClip_mod; export all
 mod HapticClip_mod;
 pub use HapticClip_mod::*;
+// class HapticSource_mod; export all
+mod HapticSource_mod;
+pub use HapticSource_mod::*;
 // class Haptics_mod; export all
 mod Haptics_mod;
 pub use Haptics_mod::*;

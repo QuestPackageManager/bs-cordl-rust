@@ -116,7 +116,7 @@ impl crate::UnityEngine::UIElements::ClickDetector {
         element: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::VisualElement,
         >,
-        position: crate::UnityEngine::Vector2,
+        pe: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -127,7 +127,9 @@ impl crate::UnityEngine::UIElements::ClickDetector {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::VisualElement,
                             >,
-                            crate::UnityEngine::Vector2,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::IPointerEvent,
+                            >,
                         ),
                         bool,
                         2usize,
@@ -141,7 +143,7 @@ impl crate::UnityEngine::UIElements::ClickDetector {
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked((), (element, position))?
+            cordl_method_info.invoke_unchecked((), (element, pe))?
         };
         Ok(__cordl_ret.into())
     }
@@ -152,17 +154,23 @@ impl crate::UnityEngine::UIElements::ClickDetector {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn ProcessEvent(
+    pub fn ProcessEvent<TEvent>(
         &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        evt: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::PointerEventBase_1<TEvent>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TEvent: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::EventBase,
+                            crate::UnityEngine::UIElements::PointerEventBase_1<TEvent>,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

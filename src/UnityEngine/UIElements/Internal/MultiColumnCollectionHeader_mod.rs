@@ -135,6 +135,36 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn CleanupColumnData(
+        &mut self,
+        data: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader_ColumnData,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("CleanupColumnData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CleanupColumnData", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (data))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Dispose(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -810,7 +840,7 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _OnContextualMenuManipulator_b__65_0(
+    pub fn _OnContextualMenuManipulator_b__67_0(
         &mut self,
         a: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::DropdownMenuAction>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -824,12 +854,12 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<OnContextualMenuManipulator>b__65_0")
+                    >("<OnContextualMenuManipulator>b__67_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<OnContextualMenuManipulator>b__65_0", 1usize
+                            "<OnContextualMenuManipulator>b__67_0", 1usize
                         )
                     })
             });
@@ -1216,6 +1246,49 @@ impl crate::UnityEngine::UIElements::Internal::MultiColumnCollectionHeader {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::SortColumnDescriptions,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_sortedColumnReadonly(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::SortColumnDescription,
+                >,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IReadOnlyList_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::SortColumnDescription,
+                                >,
+                            >,
+                        >,
+                        0usize,
+                    >("get_sortedColumnReadonly")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_sortedColumnReadonly", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IReadOnlyList_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::SortColumnDescription,
+                >,
+            >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

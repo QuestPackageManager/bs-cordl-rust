@@ -14,7 +14,7 @@ pub struct MultiplayerPositionDisplay {
         crate::GlobalNamespace::MultiplayerScoreProvider,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _wasFirst: bool,
     pub _isFailed: bool,

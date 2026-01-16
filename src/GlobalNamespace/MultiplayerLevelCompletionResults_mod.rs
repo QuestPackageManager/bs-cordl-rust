@@ -374,6 +374,20 @@ for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
     }
 }
 #[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsRef<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_ref(&self) -> &crate::LiteNetLib::Utils::INetImmutableSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
+impl AsMut<crate::LiteNetLib::Utils::INetImmutableSerializable>
+for crate::GlobalNamespace::MultiplayerLevelCompletionResults {
+    fn as_mut(&mut self) -> &mut crate::LiteNetLib::Utils::INetImmutableSerializable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "MultiplayerLevelCompletionResults")]
 impl AsRef<
     crate::LiteNetLib::Utils::INetImmutableSerializable_1<
         quest_hook::libil2cpp::Gc<

@@ -8,7 +8,11 @@ pub struct BasicUIAudioManager {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Signal>,
         >,
     >,
-    pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+    pub _audioSources: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
+        >,
+    >,
     pub _clickSounds: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,
@@ -16,6 +20,7 @@ pub struct BasicUIAudioManager {
     >,
     pub _minPitch: f32,
     pub _maxPitch: f32,
+    pub _index: i32,
     pub _randomSoundPicker: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::RandomObjectPicker_1<
             quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioClip>,

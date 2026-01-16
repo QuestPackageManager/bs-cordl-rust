@@ -6,6 +6,7 @@ pub struct Destination {
     pub ApiName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub DeeplinkMessage: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ShareableUri: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+Destination")]
 unsafe impl quest_hook::libil2cpp::Type

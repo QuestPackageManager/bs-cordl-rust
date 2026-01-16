@@ -23,9 +23,6 @@ pub struct InitializationOperation {
     pub m_Addressables: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::AddressableAssets::AddressablesImpl,
     >,
-    pub m_Diagnostics: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::AddressableAssets::Utility::ResourceManagerDiagnostics,
-    >,
     pub m_InitGroupOps: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::ResourceManagement::AsyncOperations::InitalizationObjectsOperation,
     >,

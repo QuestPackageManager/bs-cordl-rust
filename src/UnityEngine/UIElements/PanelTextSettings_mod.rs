@@ -39,44 +39,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::PanelTextSettings {
 }
 #[cfg(feature = "UnityEngine+UIElements+PanelTextSettings")]
 impl crate::UnityEngine::UIElements::PanelTextSettings {
-    pub fn GetCachedFontAsset(
-        &mut self,
-        font: quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::FontAsset>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::Font>),
-                        quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::TextCore::Text::FontAsset,
-                        >,
-                        1usize,
-                    >("GetCachedFontAsset")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetCachedFontAsset", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::Text::FontAsset,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (font))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", ())?;
-        Ok(__cordl_object.into())
-    }
-    pub fn UpdateLocalizationFontAsset() -> quest_hook::libil2cpp::Result<
+    pub fn InitializeDefaultPanelTextSettingsIfNull() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -87,12 +50,12 @@ impl crate::UnityEngine::UIElements::PanelTextSettings {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("UpdateLocalizationFontAsset")
+                    >("InitializeDefaultPanelTextSettingsIfNull")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateLocalizationFontAsset", 0usize
+                            "InitializeDefaultPanelTextSettingsIfNull", 0usize
                         )
                     })
             });
@@ -100,6 +63,13 @@ impl crate::UnityEngine::UIElements::PanelTextSettings {
             cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,

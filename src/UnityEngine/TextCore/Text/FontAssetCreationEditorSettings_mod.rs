@@ -7,7 +7,7 @@ pub struct FontAssetCreationEditorSettings {
     >,
     pub faceIndex: i32,
     pub pointSizeSamplingMode: i32,
-    pub pointSize: i32,
+    pub pointSize: f32,
     pub padding: i32,
     pub paddingMode: i32,
     pub packingMode: i32,

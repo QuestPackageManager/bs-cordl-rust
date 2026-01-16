@@ -161,8 +161,8 @@ impl crate::UnityEngine::RectTransformUtility {
     }
     pub fn PixelAdjustPoint_Injected(
         point: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-        elementTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        elementTransform: crate::System::IntPtr,
+        canvas: crate::System::IntPtr,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -172,8 +172,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                            crate::System::IntPtr,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -223,8 +223,8 @@ impl crate::UnityEngine::RectTransformUtility {
         Ok(__cordl_ret.into())
     }
     pub fn PixelAdjustRect_Injected(
-        rectTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-        canvas: quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+        rectTransform: crate::System::IntPtr,
+        canvas: crate::System::IntPtr,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -233,8 +233,8 @@ impl crate::UnityEngine::RectTransformUtility {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Canvas>,
+                            crate::System::IntPtr,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Rect>,
                         ),
                         quest_hook::libil2cpp::Void,
@@ -288,8 +288,8 @@ impl crate::UnityEngine::RectTransformUtility {
     }
     pub fn PointInRectangle_Injected(
         screenPoint: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-        rect: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-        cam: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+        rect: crate::System::IntPtr,
+        cam: crate::System::IntPtr,
         offset: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -299,8 +299,8 @@ impl crate::UnityEngine::RectTransformUtility {
                     .find_static_method::<
                         (
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector2>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
-                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
+                            crate::System::IntPtr,
+                            crate::System::IntPtr,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector4>,
                         ),
                         bool,

@@ -81,10 +81,6 @@ impl<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > crate::System::Runtime::CompilerServices::ConditionalWeakTable_2<TKey, TValue> {
-    pub const COMPACT_FACTOR: f32 = 0.5f32;
-    pub const EXPAND_FACTOR: f32 = 1.1f32;
-    pub const INITIAL_SIZE: i32 = 13i32;
-    pub const LOAD_FACTOR: f32 = 0.7f32;
     #[cfg(
         feature = "System+Runtime+CompilerServices+ConditionalWeakTable_2+CreateValueCallback"
     )]

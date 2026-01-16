@@ -359,40 +359,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Il2CppString0(
-        strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("Compare")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Compare",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (strA, strB))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Compare_Il2CppString_CultureInfo_CompareOptions3(
+    pub fn Compare_Il2CppString_CultureInfo_CompareOptions2(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         culture: quest_hook::libil2cpp::Gc<crate::System::Globalization::CultureInfo>,
@@ -431,7 +398,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Il2CppString_StringComparison2(
+    pub fn Compare_Il2CppString_StringComparison1(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         comparisonType: crate::System::StringComparison,
@@ -466,7 +433,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Il2CppString__cordl_bool1(
+    pub fn Compare_Il2CppString__cordl_bool0(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreCase: bool,
@@ -501,7 +468,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_Il2CppString__cordl_bool_CultureInfo4(
+    pub fn Compare_Il2CppString__cordl_bool_CultureInfo3(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         ignoreCase: bool,
@@ -540,7 +507,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_i32_Il2CppString_i32_i32_5(
+    pub fn Compare_i32_Il2CppString_i32_i32_4(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         indexA: i32,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -579,7 +546,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_i32_Il2CppString_i32_i32_StringComparison7(
+    pub fn Compare_i32_Il2CppString_i32_i32_StringComparison6(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         indexA: i32,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -624,7 +591,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Compare_i32_Il2CppString_i32_i32__cordl_bool6(
+    pub fn Compare_i32_Il2CppString_i32_i32__cordl_bool5(
         strA: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         indexA: i32,
         strB: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -666,6 +633,43 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Concat_IEnumerable_1_3(
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<
+                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::IEnumerable_1<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppString,
+                                >,
+                            >,
+                        >),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("Concat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Concat",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (values))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn Concat_Il2CppArray2(
         args: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -703,7 +707,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (args))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Concat_Il2CppArray6(
+    pub fn Concat_Il2CppArray7(
         values: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -814,7 +818,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (arg0, arg1, arg2))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Concat_Il2CppString_Il2CppString3(
+    pub fn Concat_Il2CppString_Il2CppString4(
         str0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
@@ -849,7 +853,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (str0, str1))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Concat_Il2CppString_Il2CppString_Il2CppString4(
+    pub fn Concat_Il2CppString_Il2CppString_Il2CppString5(
         str0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -888,7 +892,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (str0, str1, str2))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Concat_Il2CppString_Il2CppString_Il2CppString_Il2CppString5(
+    pub fn Concat_Il2CppString_Il2CppString_Il2CppString_Il2CppString6(
         str0: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str1: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         str2: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -1008,6 +1012,33 @@ impl crate::System::String {
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Contains__cordl_char_StringComparison3(
+        &mut self,
+        value: char,
+        comparisonType: crate::System::StringComparison,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (char, crate::System::StringComparison),
+                        bool,
+                        2usize,
+                    >("Contains")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Contains", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value, comparisonType))?
         };
         Ok(__cordl_ret.into())
     }
@@ -2751,7 +2782,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Il2CppString3(
+    pub fn IndexOf_Il2CppString4(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -2777,7 +2808,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Il2CppString_StringComparison5(
+    pub fn IndexOf_Il2CppString_StringComparison6(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         comparisonType: crate::System::StringComparison,
@@ -2809,7 +2840,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Il2CppString_i32_4(
+    pub fn IndexOf_Il2CppString_i32_5(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         startIndex: i32,
@@ -2841,7 +2872,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Il2CppString_i32_StringComparison6(
+    pub fn IndexOf_Il2CppString_i32_StringComparison7(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         startIndex: i32,
@@ -2876,7 +2907,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf_Il2CppString_i32_i32_StringComparison7(
+    pub fn IndexOf_Il2CppString_i32_i32_StringComparison8(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         startIndex: i32,
@@ -2935,6 +2966,33 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IndexOf__cordl_char_StringComparison2(
+        &mut self,
+        value: char,
+        comparisonType: crate::System::StringComparison,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (char, crate::System::StringComparison),
+                        i32,
+                        2usize,
+                    >("IndexOf")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IndexOf",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value, comparisonType))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn IndexOf__cordl_char_i32_1(
         &mut self,
         value: char,
@@ -2958,7 +3016,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn IndexOf__cordl_char_i32_i32_2(
+    pub fn IndexOf__cordl_char_i32_i32_3(
         &mut self,
         value: char,
         startIndex: i32,
@@ -3365,7 +3423,7 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString_IEnumerable_1_3<T>(
+    pub fn Join_Il2CppString_IEnumerable_1_4<T>(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<T>,
@@ -3406,7 +3464,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (separator, values))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString_IEnumerable_1_4(
+    pub fn Join_Il2CppString_IEnumerable_1_5(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         values: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::IEnumerable_1<
@@ -3449,7 +3507,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (separator, values))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString_Il2CppArray2(
+    pub fn Join_Il2CppString_Il2CppArray3(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -3492,7 +3550,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (separator, value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Join_Il2CppString_Il2CppArray_i32_i32_5(
+    pub fn Join_Il2CppString_Il2CppArray_i32_i32_6(
         separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -3542,6 +3600,45 @@ impl crate::System::String {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Join__cordl_char_IEnumerable_1_1<T>(
+        separator: char,
+        values: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::IEnumerable_1<T>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    >
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            char,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::IEnumerable_1<T>,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("Join")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Join",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (separator, values))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn Join__cordl_char_Il2CppArray0(
         separator: char,
         value: quest_hook::libil2cpp::Gc<
@@ -3583,7 +3680,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked((), (separator, value))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Join__cordl_char_Il2CppArray_i32_i32_1(
+    pub fn Join__cordl_char_Il2CppArray_i32_i32_2(
         separator: char,
         value: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -4846,7 +4943,7 @@ impl crate::System::String {
         > = unsafe { cordl_method_info.invoke_unchecked(self, (separator, options))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Split_Il2CppArray_StringSplitOptions5(
+    pub fn Split_Il2CppArray_StringSplitOptions4(
         &mut self,
         separator: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<
@@ -4944,56 +5041,6 @@ impl crate::System::String {
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (separator, count))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Split_Il2CppArray_i32_StringSplitOptions4(
-        &mut self,
-        separator: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        count: i32,
-        options: crate::System::StringSplitOptions,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                            i32,
-                            crate::System::StringSplitOptions,
-                        ),
-                        quest_hook::libil2cpp::Gc<
-                            quest_hook::libil2cpp::Il2CppArray<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
-                        >,
-                        3usize,
-                    >("Split")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Split",
-                            3usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (separator, count, options))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn Split__cordl_char_StringSplitOptions0(

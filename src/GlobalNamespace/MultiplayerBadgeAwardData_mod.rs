@@ -4,7 +4,7 @@
 pub struct MultiplayerBadgeAwardData {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _awardedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _weight: f32,
     pub _title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -77,7 +77,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
     }
     pub fn New(
         awardedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
         weight: f32,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -95,7 +95,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
     pub fn _ctor(
         &mut self,
         awardedPlayer: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         >,
         weight: f32,
         title: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -111,7 +111,7 @@ impl crate::GlobalNamespace::MultiplayerBadgeAwardData {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
+                                crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                             >,
                             f32,
                             quest_hook::libil2cpp::Gc<

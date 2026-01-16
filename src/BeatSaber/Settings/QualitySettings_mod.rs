@@ -15,7 +15,6 @@ pub struct QualitySettings {
     pub obstacles: crate::BeatSaber::Settings::QualitySettings_ObstacleQuality,
     pub screenDisplacementEffects: bool,
     pub smokeGraphics: bool,
-    pub depthTexture: bool,
     pub burnMarkTrails: bool,
     pub maxShockwaveParticles: i32,
     pub maxNumberOfCutSoundEffects: i32,

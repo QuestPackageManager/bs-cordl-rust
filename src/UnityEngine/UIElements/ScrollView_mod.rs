@@ -6,6 +6,7 @@ pub struct ScrollView {
     pub m_FirstLayoutPass: i32,
     pub m_HorizontalScrollerVisibility: crate::UnityEngine::UIElements::ScrollerVisibility,
     pub m_VerticalScrollerVisibility: crate::UnityEngine::UIElements::ScrollerVisibility,
+    pub m_ElasticAnimationIntervalMs: i64,
     pub m_AttachedRootVisualContainer: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -20,7 +21,6 @@ pub struct ScrollView {
     pub m_Elasticity: f32,
     pub m_TouchScrollBehavior: crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior,
     pub m_NestedInteractionKind: crate::UnityEngine::UIElements::ScrollView_NestedInteractionKind,
-    pub m_ElasticAnimationIntervalMs: i64,
     pub _contentViewport_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::VisualElement,
     >,
@@ -1212,7 +1212,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn __ctor_b__126_0(
+    pub fn __ctor_b__138_0(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1224,12 +1224,12 @@ impl crate::UnityEngine::UIElements::ScrollView {
                         (f32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<.ctor>b__126_0")
+                    >("<.ctor>b__138_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<.ctor>b__126_0", 1usize
+                            "<.ctor>b__138_0", 1usize
                         )
                     })
             });
@@ -1238,7 +1238,7 @@ impl crate::UnityEngine::UIElements::ScrollView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn __ctor_b__126_1(
+    pub fn __ctor_b__138_1(
         &mut self,
         value: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1250,12 +1250,12 @@ impl crate::UnityEngine::UIElements::ScrollView {
                         (f32),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<.ctor>b__126_1")
+                    >("<.ctor>b__138_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<.ctor>b__126_1", 1usize
+                            "<.ctor>b__138_1", 1usize
                         )
                     })
             });
@@ -1369,6 +1369,25 @@ impl crate::UnityEngine::UIElements::ScrollView {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_elasticAnimationIntervalMs(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), i64, 0usize>("get_elasticAnimationIntervalMs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_elasticAnimationIntervalMs", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: i64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_elasticity(&mut self) -> quest_hook::libil2cpp::Result<f32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1401,6 +1420,23 @@ impl crate::UnityEngine::UIElements::ScrollView {
                     })
             });
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_horizontalPageSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), f32, 0usize>("get_horizontalPageSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_horizontalPageSize", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_horizontalScroller(
@@ -1701,6 +1737,23 @@ impl crate::UnityEngine::UIElements::ScrollView {
         let __cordl_ret: crate::UnityEngine::UIElements::ScrollView_TouchScrollBehavior = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_verticalPageSize(&mut self) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), f32, 0usize>("get_verticalPageSize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_verticalPageSize", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_verticalScroller(
@@ -2548,9 +2601,6 @@ pub struct ScrollView_UxmlTraits {
     >,
     pub m_Elasticity: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlFloatAttributeDescription,
-    >,
-    pub m_ElasticAnimationIntervalMs: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::UxmlLongAttributeDescription,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+ScrollView+UxmlTraits")]

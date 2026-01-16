@@ -13,14 +13,11 @@ pub struct ElementUnderPointer {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
         >,
     >,
-    pub m_TriggerPointerEvent: quest_hook::libil2cpp::Gc<
+    pub m_TriggerEvent: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IPointerEvent>,
-        >,
-    >,
-    pub m_TriggerMouseEvent: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::IMouseEvent>,
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::IPointerOrMouseEvent,
+            >,
         >,
     >,
     pub m_PickingPointerPositions: quest_hook::libil2cpp::Gc<

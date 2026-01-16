@@ -7,15 +7,15 @@ pub use BoundsPropertyBag_mod::*;
 // class ColorPropertyBag_mod; export all
 mod ColorPropertyBag_mod;
 pub use ColorPropertyBag_mod::*;
-// class DefaultPropertyBagInitializer_mod; export all
-mod DefaultPropertyBagInitializer_mod;
-pub use DefaultPropertyBagInitializer_mod::*;
 // class IAttributes_mod; export all
 mod IAttributes_mod;
 pub use IAttributes_mod::*;
 // class IPropertyBagRegister_mod; export all
 mod IPropertyBagRegister_mod;
 pub use IPropertyBagRegister_mod::*;
+// class PropertiesInitialization_mod; export all
+mod PropertiesInitialization_mod;
+pub use PropertiesInitialization_mod::*;
 // class PropertyBagStore_mod; export all
 mod PropertyBagStore_mod;
 pub use PropertyBagStore_mod::*;

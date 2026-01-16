@@ -41,9 +41,6 @@ impl std::ops::DerefMut for crate::System::Random {
 }
 #[cfg(feature = "System+Random")]
 impl crate::System::Random {
-    pub const MBIG: i32 = 2147483647i32;
-    pub const MSEED: i32 = 161803398i32;
-    pub const MZ: i32 = 0i32;
     pub fn GenerateGlobalSeed() -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD

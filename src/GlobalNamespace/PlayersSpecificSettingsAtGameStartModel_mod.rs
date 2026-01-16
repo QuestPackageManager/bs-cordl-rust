@@ -10,7 +10,7 @@ pub struct PlayersSpecificSettingsAtGameStartModel {
         crate::GlobalNamespace::PlayerSpecificSettingsAtStartNetSerializable,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
 }
 #[cfg(feature = "cordl_class_PlayersSpecificSettingsAtGameStartModel")]
@@ -84,7 +84,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     }
     pub fn New(
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         localPlayerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
@@ -133,7 +133,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     pub fn _ctor(
         &mut self,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         localPlayerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
@@ -146,7 +146,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSessionManager,
+                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::PlayerSpecificSettingsNetSerializable,
@@ -208,7 +208,9 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         >,
     > {
@@ -221,7 +223,7 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
                         quest_hook::libil2cpp::Gc<
                             crate::System::Collections::Generic::List_1<
                                 quest_hook::libil2cpp::Gc<
-                                    crate::GlobalNamespace::IConnectedPlayer,
+                                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                                 >,
                             >,
                         >,
@@ -237,7 +239,9 @@ impl crate::GlobalNamespace::PlayersSpecificSettingsAtGameStartModel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Collections::Generic::List_1<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+                quest_hook::libil2cpp::Gc<
+                    crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+                >,
             >,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())

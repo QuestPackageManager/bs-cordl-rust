@@ -95,13 +95,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::Single {
 }
 #[cfg(feature = "System+Single")]
 impl crate::System::Single {
-    pub const Epsilon: f32 = 0.000000000000000000000000000000000000000000001f32;
-    pub const MaxValue: f32 = 340282350000000000000000000000000000000f32;
-    pub const MinValue: f32 = -340282350000000000000000000000000000000f32;
-    pub const NaN: f32 = std::f64::NAN;
-    pub const NegativeInfinity: f32 = std::f32::NEG_INFINITY;
-    pub const NegativeZero: f32 = -0f32;
-    pub const PositiveInfinity: f32 = std::f32::INFINITY;
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -95,8 +95,6 @@ unsafe impl quest_hook::libil2cpp::ThisArgument for crate::System::UInt64 {
 }
 #[cfg(feature = "System+UInt64")]
 impl crate::System::UInt64 {
-    pub const MaxValue: u64 = 18446744073709551615u64;
-    pub const MinValue: u64 = 0u64;
     pub fn CompareTo_Il2CppObject0(
         &mut self,
         value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

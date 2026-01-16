@@ -1,7 +1,8 @@
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
 #[repr(C)]
-#[derive(Debug, Clone, Default, PartialEq)]
+#[derive(Debug)]
 pub struct UIRVEShaderInfoAllocator {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub m_Storage: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::BaseShaderInfoStorage,
     >,
@@ -11,111 +12,69 @@ pub struct UIRVEShaderInfoAllocator {
     pub m_ColorAllocator: crate::UnityEngine::UIElements::UIR::BitmapAllocator32,
     pub m_TextSettingsAllocator: crate::UnityEngine::UIElements::UIR::BitmapAllocator32,
     pub m_StorageReallyCreated: bool,
-    pub m_VertexTexturingEnabled: bool,
-    pub m_Transforms: crate::Unity::Collections::NativeArray_1<
-        crate::UnityEngine::UIElements::UIR::Transform3x4,
-    >,
-    pub m_ClipRects: crate::Unity::Collections::NativeArray_1<
-        crate::UnityEngine::Vector4,
-    >,
+    pub m_ColorSpace: crate::UnityEngine::ColorSpace,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
 unsafe impl quest_hook::libil2cpp::Type
 for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
-    type Held<'a> = Self;
-    type HeldRaw = Self;
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
     const NAMESPACE: &'static str = "UnityEngine.UIElements.UIR";
     const CLASS_NAME: &'static str = "UIRVEShaderInfoAllocator";
-    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
-    }
     fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && ty
-                .class()
-                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
     }
-    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        !ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
     }
     fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        ty.is_ref()
-            && <Self as quest_hook::libil2cpp::Type>::class()
-                .is_assignable_from(ty.class())
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
-unsafe impl quest_hook::libil2cpp::Argument
-for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
-    }
-    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
-        self as *mut Self as *mut ::std::ffi::c_void
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
+impl std::ops::Deref for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
     }
 }
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
-unsafe impl quest_hook::libil2cpp::Parameter
+#[cfg(feature = "UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
+impl std::ops::DerefMut
 for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
-        actual
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
-        self
-    }
-}
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
-unsafe impl quest_hook::libil2cpp::Returned
-for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
-    type Type = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
-    }
-    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
-        unsafe {
-            quest_hook::libil2cpp::raw::unbox(
-                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
-            )
-        }
-    }
-}
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
-unsafe impl quest_hook::libil2cpp::Return
-for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
-    type Actual = Self;
-    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
-    }
-    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
-        self
-    }
-    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
-        actual
-    }
-}
-#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
-unsafe impl quest_hook::libil2cpp::ThisArgument
-for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
-    type Type = Self;
-    fn matches(method: &quest_hook::libil2cpp::MethodInfo) -> bool {
-        <Self as quest_hook::libil2cpp::Type>::matches_this_argument(method)
-    }
-    fn invokable(&mut self) -> *mut std::ffi::c_void {
-        unsafe { quest_hook::libil2cpp::value_box(self) as *mut std::ffi::c_void }
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
     }
 }
 #[cfg(feature = "UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
 impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
+    pub fn AcquireDefaultShaderInfoTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("AcquireDefaultShaderInfoTexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AcquireDefaultShaderInfoTexture", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn AllocClipRect(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::UIR::BMPAlloc> {
@@ -214,31 +173,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::BMPAlloc = unsafe {
             cordl_method_info.invoke_unchecked(self, (settings))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn AllocToConstantBufferIndex(
-        alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::UIElements::UIR::BMPAlloc),
-                        i32,
-                        1usize,
-                    >("AllocToConstantBufferIndex")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AllocToConstantBufferIndex", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (alloc))?
         };
         Ok(__cordl_ret.into())
     }
@@ -384,27 +318,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
             cordl_method_info.invoke_unchecked(self, (alloc))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Construct(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Construct")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "Construct", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -584,6 +497,15 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn New(
+        colorSpace: crate::UnityEngine::ColorSpace,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (colorSpace))?;
+        Ok(__cordl_object.into())
+    }
     pub fn OpacityAllocToVertexData(
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -635,6 +557,31 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn ReleaseDefaultShaderInfoTexture() -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Void,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ReleaseDefaultShaderInfoTexture")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ReleaseDefaultShaderInfoTexture", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetClipRectValue(
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
@@ -669,7 +616,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
         color: crate::UnityEngine::Color,
-        isEditorContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -679,21 +625,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
                         (
                             crate::UnityEngine::UIElements::UIR::BMPAlloc,
                             crate::UnityEngine::Color,
-                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        2usize,
                     >("SetColorValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetColorValue", 3usize
+                            "SetColorValue", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (alloc, color, isEditorContext))?
+            cordl_method_info.invoke_unchecked(self, (alloc, color))?
         };
         Ok(__cordl_ret.into())
     }
@@ -728,7 +673,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         &mut self,
         alloc: crate::UnityEngine::UIElements::UIR::BMPAlloc,
         settings: crate::UnityEngine::UIElements::UIR::TextCoreSettings,
-        isEditorContext: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -738,21 +682,20 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
                         (
                             crate::UnityEngine::UIElements::UIR::BMPAlloc,
                             crate::UnityEngine::UIElements::UIR::TextCoreSettings,
-                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        2usize,
                     >("SetTextCoreSettingValue")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetTextCoreSettingValue", 3usize
+                            "SetTextCoreSettingValue", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (alloc, settings, isEditorContext))?
+            cordl_method_info.invoke_unchecked(self, (alloc, settings))?
         };
         Ok(__cordl_ret.into())
     }
@@ -838,6 +781,32 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn _ctor(
+        &mut self,
+        colorSpace: crate::UnityEngine::ColorSpace,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::ColorSpace),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (colorSpace))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_atlas(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -863,35 +832,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture> = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_clipRectConstants(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Collections::NativeSlice_1<
-                            crate::UnityEngine::Vector4,
-                        >,
-                        0usize,
-                    >("get_clipRectConstants")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_clipRectConstants", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::Vector4,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_pageHeight() -> quest_hook::libil2cpp::Result<i32> {
@@ -928,35 +868,14 @@ impl crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_transformConstants(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::UIElements::UIR::Transform3x4,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::Unity::Collections::NativeSlice_1<
-                            crate::UnityEngine::UIElements::UIR::Transform3x4,
-                        >,
-                        0usize,
-                    >("get_transformConstants")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_transformConstants", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::UIElements::UIR::Transform3x4,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
+}
+#[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRVEShaderInfoAllocator")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::UnityEngine::UIElements::UIR::UIRVEShaderInfoAllocator {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
     }
 }

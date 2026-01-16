@@ -60,7 +60,7 @@ pub struct MultiplayerResultsPyramidViewAvatar {
     >,
     pub _originalBadgeLocalPos: crate::UnityEngine::Vector3,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
 }
 #[cfg(feature = "cordl_class_MultiplayerResultsPyramidViewAvatar")]
@@ -261,7 +261,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar {
 #[derive(Debug)]
 pub struct MultiplayerResultsPyramidViewAvatar_Factory {
     __cordl_parent: crate::Zenject::PlaceholderFactory_2<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
         >,
@@ -291,7 +291,7 @@ for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
 impl std::ops::Deref
 for crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar_Factory {
     type Target = crate::Zenject::PlaceholderFactory_2<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::MultiplayerResultsPyramidViewAvatar,
         >,

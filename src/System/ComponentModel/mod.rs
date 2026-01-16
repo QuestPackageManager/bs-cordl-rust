@@ -28,6 +28,9 @@ pub use BrowsableAttribute_mod::*;
 // class ByteConverter_mod; export all
 mod ByteConverter_mod;
 pub use ByteConverter_mod::*;
+// class CategoryAttribute_mod; export all
+mod CategoryAttribute_mod;
+pub use CategoryAttribute_mod::*;
 // class CharConverter_mod; export all
 mod CharConverter_mod;
 pub use CharConverter_mod::*;

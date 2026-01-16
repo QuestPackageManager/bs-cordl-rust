@@ -6,9 +6,6 @@ pub struct OculusAdvancedHapticFeedbackPlayer {
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,
     >,
-    pub _oculusVRHelper: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::OculusVRHelper,
-    >,
     pub _hapticPlayerStatesDictionary: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             crate::System::ValueTuple_2<
@@ -119,7 +116,6 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         Ok(__cordl_ret.into())
     }
     pub fn GetHapticClip(
-        &mut self,
         node: crate::UnityEngine::XR::XRNode,
         hapticPreset: quest_hook::libil2cpp::Gc<
             crate::Libraries::HM::HMLib::VR::HapticPresetSO,
@@ -131,7 +127,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
+                    .find_static_method::<
                         (
                             crate::UnityEngine::XR::XRNode,
                             quest_hook::libil2cpp::Gc<
@@ -150,7 +146,7 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<crate::Oculus::Haptics::HapticClip> = unsafe {
-            cordl_method_info.invoke_unchecked(self, (node, hapticPreset))?
+            cordl_method_info.invoke_unchecked((), (node, hapticPreset))?
         };
         Ok(__cordl_ret.into())
     }
@@ -197,6 +193,31 @@ impl crate::GlobalNamespace::OculusAdvancedHapticFeedbackPlayer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsTouchControllerSupported(
+        node: crate::UnityEngine::XR::XRNode,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::XR::XRNode),
+                        bool,
+                        1usize,
+                    >("IsTouchControllerSupported")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsTouchControllerSupported", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (node))?
         };
         Ok(__cordl_ret.into())
     }

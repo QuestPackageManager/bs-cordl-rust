@@ -9,8 +9,8 @@ pub struct PlatformLeaderboardsModel {
     pub _leaderboardScoreUploader: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LeaderboardScoreUploader,
     >,
-    pub _platformUserModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IPlatformUserModel,
+    pub _platform: quest_hook::libil2cpp::Gc<
+        crate::OculusStudios::Platform::Core::IPlatform,
     >,
     pub _platformLeaderboardsHandler: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PlatformLeaderboardsHandler,
@@ -23,7 +23,7 @@ pub struct PlatformLeaderboardsModel {
         crate::GlobalNamespace::HMAsyncRequest,
     >,
     pub _state: crate::GlobalNamespace::PlatformLeaderboardsModel_State,
-    pub _playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub _playerId: u64,
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -294,32 +294,6 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn HandlePlatformUserInfoDidChange(
-        &mut self,
-        newInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("HandlePlatformUserInfoDidChange")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandlePlatformUserInfoDidChange", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newInfo))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -343,14 +317,14 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
     }
     pub fn InitializeForUserInfo(
         &mut self,
-        newInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>,
+        userId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::GlobalNamespace::UserInfo>),
+                        (u64),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("InitializeForUserInfo")
@@ -363,7 +337,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (newInfo))?
+            cordl_method_info.invoke_unchecked(self, (userId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -573,20 +547,12 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_playerId(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
+    pub fn get_playerId(&mut self) -> quest_hook::libil2cpp::Result<u64> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        0usize,
-                    >("get_playerId")
+                    .find_method::<(), u64, 0usize>("get_playerId")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -595,9 +561,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: u64 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn remove_allScoresDidUploadEvent(
@@ -961,7 +925,7 @@ pub struct PlatformLeaderboardsModel_LeaderboardScore {
     pub score: i32,
     pub rank: i32,
     pub playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub playerId: u64,
 }
 #[cfg(feature = "cordl_class_PlatformLeaderboardsModel+LeaderboardScore")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -1034,7 +998,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         score: i32,
         rank: i32,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -1047,7 +1011,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
         score: i32,
         rank: i32,
         playerName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        playerId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        playerId: u64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1060,9 +1024,7 @@ impl crate::GlobalNamespace::PlatformLeaderboardsModel_LeaderboardScore {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
+                            u64,
                         ),
                         quest_hook::libil2cpp::Void,
                         4usize,

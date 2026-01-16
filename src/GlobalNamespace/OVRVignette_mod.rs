@@ -10,6 +10,10 @@ pub struct OVRVignette {
     pub VignetteAspectRatio: f32,
     pub VignetteFalloffDegrees: f32,
     pub VignetteColor: crate::UnityEngine::Color,
+    pub WriteStencil: bool,
+    pub OpaqueStencilValue: i32,
+    pub TransparentStencilValue: i32,
+    pub WriteColor: bool,
     pub _Camera: quest_hook::libil2cpp::Gc<crate::UnityEngine::Camera>,
     pub _OpaqueMeshFilter: quest_hook::libil2cpp::Gc<crate::UnityEngine::MeshFilter>,
     pub _TransparentMeshFilter: quest_hook::libil2cpp::Gc<
@@ -25,6 +29,9 @@ pub struct OVRVignette {
     pub _TransparentMaterial: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub _ShaderScaleAndOffset0Property: i32,
     pub _ShaderScaleAndOffset1Property: i32,
+    pub _ShaderStencilRefProperty: i32,
+    pub _ShaderStencilOpProperty: i32,
+    pub _ShaderColorMaskProperty: i32,
     pub _TransparentScaleAndOffset0: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
@@ -286,6 +293,27 @@ impl crate::GlobalNamespace::OVRVignette {
                     })
             });
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Initialize(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Initialize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Initialize", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {

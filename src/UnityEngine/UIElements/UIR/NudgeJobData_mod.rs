@@ -2,15 +2,13 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct NudgeJobData {
-    pub src: crate::System::IntPtr,
-    pub dst: crate::System::IntPtr,
-    pub count: i32,
-    pub closingSrc: crate::System::IntPtr,
-    pub closingDst: crate::System::IntPtr,
-    pub closingCount: i32,
+    pub headSrc: crate::System::IntPtr,
+    pub headDst: crate::System::IntPtr,
+    pub headCount: i32,
+    pub tailSrc: crate::System::IntPtr,
+    pub tailDst: crate::System::IntPtr,
+    pub tailCount: i32,
     pub transform: crate::UnityEngine::Matrix4x4,
-    pub vertsBeforeUVDisplacement: i32,
-    pub vertsAfterUVDisplacement: i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+NudgeJobData")]
 unsafe impl quest_hook::libil2cpp::Type

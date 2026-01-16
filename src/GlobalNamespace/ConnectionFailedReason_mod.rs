@@ -7,6 +7,7 @@ pub enum ConnectionFailedReason {
     CertificateValidationFailed = 12i32,
     ConnectionCanceled = 2i32,
     FailedToFindMatch = 15i32,
+    IncompatibleServerEnvironment = 16i32,
     InvalidPassword = 8i32,
     MultiplayerApiUnreachable = 9i32,
     NetworkNotConnected = 11i32,

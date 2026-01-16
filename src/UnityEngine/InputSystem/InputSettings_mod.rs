@@ -9,11 +9,13 @@ pub struct InputSettings {
         >,
     >,
     pub m_UpdateMode: crate::UnityEngine::InputSystem::InputSettings_UpdateMode,
+    pub m_ScrollDeltaBehavior: crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior,
     pub m_MaxEventBytesPerUpdate: i32,
     pub m_MaxQueuedEventsPerUpdate: i32,
     pub m_CompensateForScreenOrientation: bool,
     pub m_BackgroundBehavior: crate::UnityEngine::InputSystem::InputSettings_BackgroundBehavior,
     pub m_EditorInputBehaviorInPlayMode: crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode,
+    pub m_InputActionPropertyDrawerMode: crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode,
     pub m_DefaultDeadzoneMin: f32,
     pub m_DefaultDeadzoneMax: f32,
     pub m_DefaultButtonPressPoint: f32,
@@ -73,8 +75,140 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         feature = "UnityEngine+InputSystem+InputSettings+EditorInputBehaviorInPlayMode"
     )]
     pub type EditorInputBehaviorInPlayMode = crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode;
+    #[cfg(
+        feature = "UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode"
+    )]
+    pub type InputActionPropertyDrawerMode = crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode;
+    #[cfg(feature = "UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
+    pub type ScrollDeltaBehavior = crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior;
     #[cfg(feature = "UnityEngine+InputSystem+InputSettings+UpdateMode")]
     pub type UpdateMode = crate::UnityEngine::InputSystem::InputSettings_UpdateMode;
+    pub fn AreEqual(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputSettings>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputSettings>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputSettings,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputSettings,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("AreEqual")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AreEqual", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareFeatureFlag(
+        a: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputSettings>,
+        b: quest_hook::libil2cpp::Gc<crate::UnityEngine::InputSystem::InputSettings>,
+        featureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputSettings,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::InputSystem::InputSettings,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        bool,
+                        3usize,
+                    >("CompareFeatureFlag")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareFeatureFlag", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b, featureName))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareFloats(a: f32, b: f32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(f32, f32), bool, 2usize>("CompareFloats")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareFloats", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompareSets<T>(
+        a: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<T>,
+        b: crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<T>,
+    ) -> quest_hook::libil2cpp::Result<bool>
+    where
+        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                                T,
+                            >,
+                            crate::UnityEngine::InputSystem::Utilities::ReadOnlyArray_1<
+                                T,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("CompareSets")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompareSets", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn IsFeatureEnabled(
         &mut self,
         featureName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
@@ -414,6 +548,33 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_inputActionPropertyDrawerMode(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode,
+                        0usize,
+                    >("get_inputActionPropertyDrawerMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_inputActionPropertyDrawerMode", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_maxEventBytesPerUpdate(&mut self) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -465,6 +626,33 @@ impl crate::UnityEngine::InputSystem::InputSettings {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_scrollDeltaBehavior(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior,
+                        0usize,
+                    >("get_scrollDeltaBehavior")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_scrollDeltaBehavior", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_shortcutKeysConsumeInput(
@@ -875,6 +1063,32 @@ impl crate::UnityEngine::InputSystem::InputSettings {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_inputActionPropertyDrawerMode(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_inputActionPropertyDrawerMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_inputActionPropertyDrawerMode", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_maxEventBytesPerUpdate(
         &mut self,
         value: i32,
@@ -945,6 +1159,32 @@ impl crate::UnityEngine::InputSystem::InputSettings {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_multiTapDelayTime", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_scrollDeltaBehavior(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_scrollDeltaBehavior")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scrollDeltaBehavior", 1usize
                         )
                     })
             });
@@ -1261,6 +1501,203 @@ for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode
 )]
 unsafe impl quest_hook::libil2cpp::Return
 for crate::UnityEngine::InputSystem::InputSettings_EditorInputBehaviorInPlayMode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode"
+)]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum InputSettings_InputActionPropertyDrawerMode {
+    #[default]
+    Compact = 0i32,
+    MultilineBoth = 2i32,
+    MultilineEffective = 1i32,
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode"
+)]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "InputSettings/InputActionPropertyDrawerMode";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode"
+)]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode"
+)]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode"
+)]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(
+    feature = "cordl_class_UnityEngine+InputSystem+InputSettings+InputActionPropertyDrawerMode"
+)]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::InputSettings_InputActionPropertyDrawerMode {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum InputSettings_ScrollDeltaBehavior {
+    #[default]
+    KeepPlatformSpecificInputRange = 1i32,
+    UniformAcrossAllPlatforms = 0i32,
+}
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.InputSystem";
+    const CLASS_NAME: &'static str = "InputSettings/ScrollDeltaBehavior";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputSettings+ScrollDeltaBehavior")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::InputSystem::InputSettings_ScrollDeltaBehavior {
     type Actual = Self;
     fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
         <Self as quest_hook::libil2cpp::Type>::matches_return(ty)

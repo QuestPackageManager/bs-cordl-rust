@@ -605,8 +605,8 @@ impl crate::UnityEngine::PhysicsScene {
         center: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         halfExtents: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        raycastHits: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        raycastHits: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
         orientation: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Quaternion>,
         maxDistance: f32,
@@ -625,10 +625,8 @@ impl crate::UnityEngine::PhysicsScene {
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::Quaternion,
@@ -795,8 +793,8 @@ impl crate::UnityEngine::PhysicsScene {
         p1: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         radius: f32,
         direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        raycastHits: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        raycastHits: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
         maxDistance: f32,
         mask: i32,
@@ -815,10 +813,8 @@ impl crate::UnityEngine::PhysicsScene {
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                             f32,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             f32,
                             i32,
@@ -961,8 +957,8 @@ impl crate::UnityEngine::PhysicsScene {
     pub fn Internal_RaycastNonAlloc_Injected(
         physicsScene: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::PhysicsScene>,
         ray: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
-        raycastHits: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        raycastHits: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
         maxDistance: f32,
         mask: i32,
@@ -978,10 +974,8 @@ impl crate::UnityEngine::PhysicsScene {
                                 crate::UnityEngine::PhysicsScene,
                             >,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Ray>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             f32,
                             i32,
@@ -1267,8 +1261,8 @@ impl crate::UnityEngine::PhysicsScene {
         origin: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         radius: f32,
         direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-        raycastHits: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit>,
+        raycastHits: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
         maxDistance: f32,
         mask: i32,
@@ -1286,10 +1280,8 @@ impl crate::UnityEngine::PhysicsScene {
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                             f32,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             f32,
                             i32,
@@ -2562,6 +2554,38 @@ impl crate::UnityEngine::PhysicsScene {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn RunSimulationStages(
+        &mut self,
+        step: f32,
+        stages: crate::UnityEngine::SimulationStage,
+        options: crate::UnityEngine::SimulationOption,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            f32,
+                            crate::UnityEngine::SimulationStage,
+                            crate::UnityEngine::SimulationOption,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("RunSimulationStages")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RunSimulationStages", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (step, stages, options))?
         };
         Ok(__cordl_ret.into())
     }

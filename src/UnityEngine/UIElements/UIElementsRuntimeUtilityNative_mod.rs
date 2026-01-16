@@ -65,7 +65,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RepaintOffscreenPanels() -> quest_hook::libil2cpp::Result<
+    pub fn RenderOffscreenPanels() -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Void,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -76,12 +76,12 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("RepaintOffscreenPanels")
+                    >("RenderOffscreenPanels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RepaintOffscreenPanels", 0usize
+                            "RenderOffscreenPanels", 0usize
                         )
                     })
             });
@@ -90,28 +90,28 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn RepaintOverlayPanels() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
+    pub fn RepaintPanels(
+        onlyOffscreen: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (),
+                        (bool),
                         quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("RepaintOverlayPanels")
+                        1usize,
+                    >("RepaintPanels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "RepaintOverlayPanels", 0usize
+                            "RepaintPanels", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
+            cordl_method_info.invoke_unchecked((), (onlyOffscreen))?
         };
         Ok(__cordl_ret.into())
     }
@@ -140,9 +140,7 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn UpdateRuntimePanels() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Void,
-    > {
+    pub fn UpdatePanels() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -151,12 +149,12 @@ impl crate::UnityEngine::UIElements::UIElementsRuntimeUtilityNative {
                         (),
                         quest_hook::libil2cpp::Void,
                         0usize,
-                    >("UpdateRuntimePanels")
+                    >("UpdatePanels")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateRuntimePanels", 0usize
+                            "UpdatePanels", 0usize
                         )
                     })
             });

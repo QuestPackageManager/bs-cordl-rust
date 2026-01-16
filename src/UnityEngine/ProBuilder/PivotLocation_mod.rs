@@ -4,7 +4,7 @@
 pub enum PivotLocation {
     #[default]
     Center = 0i32,
-    FirstCorner = 1i32,
+    FirstVertex = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ProBuilder+PivotLocation")]
 unsafe impl quest_hook::libil2cpp::Type

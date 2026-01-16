@@ -4,6 +4,9 @@
 pub struct BeatmapDataLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _lastUsedBeatmapDataCache: crate::GlobalNamespace::LastUsedBeatmapDataCache,
+    pub _refractorDebuggerSettings: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IRefractorDebuggerSettings,
+    >,
 }
 #[cfg(feature = "cordl_class_BeatmapDataLoader")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::BeatmapDataLoader {
@@ -39,6 +42,31 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapDataLoader {
 }
 #[cfg(feature = "BeatmapDataLoader")]
 impl crate::GlobalNamespace::BeatmapDataLoader {
+    pub fn ClearLastUsedBeatmapCache(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ClearLastUsedBeatmapCache")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ClearLastUsedBeatmapCache", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn LoadBasicBeatmapDataAsync(
         &mut self,
         beatmapLevelData: quest_hook::libil2cpp::Gc<

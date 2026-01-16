@@ -38,6 +38,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MainEffectCore {
 }
 #[cfg(feature = "MainEffectCore")]
 impl crate::GlobalNamespace::MainEffectCore {
+    pub const kMainEffectEnabledKeyword: &'static str = "MAIN_EFFECT_ENABLED";
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -69,6 +70,31 @@ impl crate::GlobalNamespace::MainEffectCore {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
                 .invoke_unchecked((), (baseColorBoost, baseColorBoostThreshold))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn UpdateKeyword(
+        enabled: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("UpdateKeyword")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "UpdateKeyword", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (enabled))?
         };
         Ok(__cordl_ret.into())
     }

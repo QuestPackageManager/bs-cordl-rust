@@ -4,7 +4,7 @@
 pub struct SongStartSyncController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _gameplayRpcManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IGameplayRpcManager,

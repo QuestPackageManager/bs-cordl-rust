@@ -90,11 +90,14 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
         lightGroups: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IEnvironmentLightGroups,
         >,
+        boxConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapBoxConverter,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (lightshowSaveData, lightGroups))?;
+            .invoke_void(".ctor", (lightshowSaveData, lightGroups, boxConverter))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
@@ -104,6 +107,9 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
         >,
         lightGroups: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IEnvironmentLightGroups,
+        >,
+        boxConverter: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapBoxConverter,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -118,20 +124,24 @@ impl crate::BeatmapDataLoaderVersion4::LightRotationEventBoxGroupConverter {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IEnvironmentLightGroups,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IBeatmapBoxConverter,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (lightshowSaveData, lightGroups))?
+            cordl_method_info
+                .invoke_unchecked(self, (lightshowSaveData, lightGroups, boxConverter))?
         };
         Ok(__cordl_ret.into())
     }

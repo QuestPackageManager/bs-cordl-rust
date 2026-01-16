@@ -25,7 +25,6 @@ pub struct ChainBuilderStats {
     pub updatedMeshAllocations: u32,
     pub newMeshAllocations: u32,
     pub groupTransformElementsChanged: u32,
-    pub immedateRenderersActive: u32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+ChainBuilderStats")]
 unsafe impl quest_hook::libil2cpp::Type

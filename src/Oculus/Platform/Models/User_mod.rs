@@ -6,6 +6,12 @@ pub struct User {
     pub DisplayName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _cordl_ID: u64,
     pub ImageURL: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub ManagedInfoOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::ManagedInfo,
+    >,
+    pub ManagedInfo: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::ManagedInfo,
+    >,
     pub OculusID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Presence: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub PresenceDeeplinkMessage: quest_hook::libil2cpp::Gc<

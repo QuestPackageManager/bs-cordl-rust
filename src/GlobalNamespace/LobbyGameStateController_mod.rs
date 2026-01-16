@@ -13,7 +13,7 @@ pub struct LobbyGameStateController {
         crate::GlobalNamespace::IMenuRpcManager,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _multiplayerLevelLoader: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLevelLoader,
@@ -32,6 +32,9 @@ pub struct LobbyGameStateController {
     >,
     pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelsModel,
+    >,
+    pub _environmentsListModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::EnvironmentsListModel,
     >,
     pub selectedLevelGameplaySetupDataChangedEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_1<

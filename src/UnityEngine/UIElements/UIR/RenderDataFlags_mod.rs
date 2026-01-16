@@ -3,7 +3,11 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum RenderDataFlags {
     #[default]
-    IsIgnoringDynamicColorHint = 1i32,
+    HasExtraData = 8i32,
+    HasExtraMeshes = 16i32,
+    IsGroupTransform = 2i32,
+    IsIgnoringDynamicColorHint = 4i32,
+    IsInChain = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+RenderDataFlags")]
 unsafe impl quest_hook::libil2cpp::Type

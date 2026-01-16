@@ -3,11 +3,6 @@
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct OVRGLTFScene {
     pub root: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-    pub nodes: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
-        >,
-    >,
     pub animationNodes: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
             crate::GlobalNamespace::OVRGLTFInputNode,

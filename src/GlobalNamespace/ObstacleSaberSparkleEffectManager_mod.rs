@@ -17,6 +17,7 @@ pub struct ObstacleSaberSparkleEffectManager {
         crate::GlobalNamespace::HapticFeedbackManager,
     >,
     pub _colorManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ColorManager>,
+    pub _container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     pub _sabers: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::Saber>,

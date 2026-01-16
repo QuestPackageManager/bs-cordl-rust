@@ -223,9 +223,6 @@ pub use TouchState_mod::*;
 // class TouchscreenState_mod; export all
 mod TouchscreenState_mod;
 pub use TouchscreenState_mod::*;
-// class UseWindowsGamingInputCommand_mod; export all
-mod UseWindowsGamingInputCommand_mod;
-pub use UseWindowsGamingInputCommand_mod::*;
 // class WarpMousePositionCommand_mod; export all
 mod WarpMousePositionCommand_mod;
 pub use WarpMousePositionCommand_mod::*;

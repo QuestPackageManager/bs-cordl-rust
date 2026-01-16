@@ -166,7 +166,41 @@ impl crate::UnityEngine::UIElements::VisualTreeUpdater {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn SetUpdater<T>(
+    pub fn SetUpdater_IVisualTreeUpdater_VisualTreeUpdatePhase0(
+        &mut self,
+        updater: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        >,
+        phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::IVisualTreeUpdater,
+                            >,
+                            crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetUpdater")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUpdater", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (updater, phase))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUpdater_VisualTreeUpdatePhase1<T>(
         &mut self,
         phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>

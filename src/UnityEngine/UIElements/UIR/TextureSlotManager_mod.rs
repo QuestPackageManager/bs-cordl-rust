@@ -56,8 +56,12 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         &mut self,
         id: crate::UnityEngine::UIElements::TextureId,
         sdfScale: f32,
+        sharpness: f32,
         slot: i32,
         mat: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
+        commandList: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::CommandList,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -67,24 +71,32 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
                         (
                             crate::UnityEngine::UIElements::TextureId,
                             f32,
+                            f32,
                             i32,
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::MaterialPropertyBlock,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::UIR::CommandList,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        6usize,
                     >("Bind")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Bind",
-                            4usize
+                            6usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, sdfScale, slot, mat))?
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (id, sdfScale, sharpness, slot, mat, commandList),
+                )?
         };
         Ok(__cordl_ret.into())
     }
@@ -192,21 +204,29 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
         textureWidth: i32,
         textureHeight: i32,
         sdfScale: f32,
+        sharpness: f32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, crate::UnityEngine::UIElements::TextureId, i32, i32, f32),
+                        (
+                            i32,
+                            crate::UnityEngine::UIElements::TextureId,
+                            i32,
+                            i32,
+                            f32,
+                            f32,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        6usize,
                     >("SetGpuData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetGpuData", 5usize
+                            "SetGpuData", 6usize
                         )
                     })
             });
@@ -214,7 +234,7 @@ impl crate::UnityEngine::UIElements::UIR::TextureSlotManager {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (slotIndex, id, textureWidth, textureHeight, sdfScale),
+                    (slotIndex, id, textureWidth, textureHeight, sdfScale, sharpness),
                 )?
         };
         Ok(__cordl_ret.into())

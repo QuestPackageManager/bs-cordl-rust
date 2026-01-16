@@ -3,10 +3,6 @@
 #[derive(Debug)]
 pub struct MissionLevelScenesTransitionSetupDataSO {
     __cordl_parent: crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-    pub _missionGameplaySceneInfo: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::SceneInfo,
-    >,
-    pub _gameCoreSceneInfo: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::SceneInfo>,
     pub didFinishEvent: quest_hook::libil2cpp::Gc<
         crate::System::Action_2<
             quest_hook::libil2cpp::Gc<
@@ -86,7 +82,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel_BeatmapLevelsModel1(
+    pub fn Init(
         &mut self,
         missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -96,9 +92,10 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
             >,
         >,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        playerOverrideLightshowColors: bool,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
         >,
@@ -107,9 +104,6 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
         >,
         environmentsListModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentsListModel,
-        >,
-        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapLevelsModel,
         >,
         audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::AudioClipAsyncLoader,
@@ -121,6 +115,12 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
             crate::GlobalNamespace::BeatmapDataLoader,
         >,
         backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        beatmapLevelsModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatmapLevelsModel,
+        >,
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -147,6 +147,7 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::ColorScheme,
                             >,
+                            bool,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::GameplayModifiers,
                             >,
@@ -155,151 +156,34 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::EnvironmentsListModel,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::AudioClipAsyncLoader,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::SettingsManager,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::BeatmapDataLoader,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::BeatmapLevelsModel,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AudioClipAsyncLoader,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SettingsManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataLoader,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        13usize,
-                    >("Init")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            13usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        missionId,
-                        beatmapKey,
-                        beatmapLevel,
-                        missionObjectives,
-                        overrideColorScheme,
-                        gameplayModifiers,
-                        playerSpecificSettings,
-                        environmentsListModel,
-                        beatmapLevelsModel,
-                        audioClipAsyncLoader,
-                        settingsManager,
-                        beatmapDataLoader,
-                        backButtonText,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn Init_IBeatmapLevelData_ByRefMut_BeatmapLevel_Il2CppArray_ColorScheme_GameplayModifiers_PlayerSpecificSettings_EnvironmentsListModel0(
-        &mut self,
-        missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        beatmapLevelData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatmapLevelData,
-        >,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        missionObjectives: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MissionObjective>,
-            >,
-        >,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
-        playerSpecificSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
-        environmentsListModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentsListModel,
-        >,
-        audioClipAsyncLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AudioClipAsyncLoader,
-        >,
-        settingsManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::SettingsManager,
-        >,
-        beatmapDataLoader: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapDataLoader,
-        >,
-        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IBeatmapLevelData,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::BeatmapKey,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MissionObjective,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::EnvironmentsListModel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AudioClipAsyncLoader,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::SettingsManager,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapDataLoader,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        13usize,
+                        15usize,
                     >("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            13usize
+                            15usize
                         )
                     })
             });
@@ -309,11 +193,11 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                     self,
                     (
                         missionId,
-                        beatmapLevelData,
                         beatmapKey,
                         beatmapLevel,
                         missionObjectives,
-                        overrideColorScheme,
+                        playerOverrideColorScheme,
+                        playerOverrideLightshowColors,
                         gameplayModifiers,
                         playerSpecificSettings,
                         environmentsListModel,
@@ -321,6 +205,8 @@ impl crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO {
                         settingsManager,
                         beatmapDataLoader,
                         backButtonText,
+                        beatmapLevelsModel,
+                        beatmapLevelData,
                     ),
                 )?
         };

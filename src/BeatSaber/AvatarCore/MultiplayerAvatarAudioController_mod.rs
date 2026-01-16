@@ -5,7 +5,7 @@ pub struct MultiplayerAvatarAudioController {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _audioSource: quest_hook::libil2cpp::Gc<crate::UnityEngine::AudioSource>,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
 }
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+MultiplayerAvatarAudioController")]
@@ -103,7 +103,9 @@ impl crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
     }
     pub fn set_connectedPlayer(
         &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        value: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -111,7 +113,7 @@ impl crate::BeatSaber::AvatarCore::MultiplayerAvatarAudioController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

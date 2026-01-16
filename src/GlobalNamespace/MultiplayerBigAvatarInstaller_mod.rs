@@ -4,7 +4,7 @@
 pub struct MultiplayerBigAvatarInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _saberManagerInitData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SaberManager_InitData,

@@ -12,6 +12,7 @@ pub struct FloatArrayMaterialPropertyEffectTarget {
     >,
     pub _propertyName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _valueBounds: crate::UnityEngine::Vector2,
+    pub _granularityMultiplier: f32,
     pub _propertyId: i32,
 }
 #[cfg(feature = "cordl_class_FloatArrayMaterialPropertyEffectTarget")]

@@ -140,10 +140,8 @@ impl crate::GlobalNamespace::PerformanceReport {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ListFrameDurations(
-        frameDurations: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<f32>,
-        >,
+    pub fn ListFrameTimes(
+        frameTimes: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<f32>>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -157,18 +155,18 @@ impl crate::GlobalNamespace::PerformanceReport {
                         >),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         1usize,
-                    >("ListFrameDurations")
+                    >("ListFrameTimes")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ListFrameDurations", 1usize
+                            "ListFrameTimes", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked((), (frameDurations))? };
+        > = unsafe { cordl_method_info.invoke_unchecked((), (frameTimes))? };
         Ok(__cordl_ret.into())
     }
     pub fn ListStat_Il2CppArray0(

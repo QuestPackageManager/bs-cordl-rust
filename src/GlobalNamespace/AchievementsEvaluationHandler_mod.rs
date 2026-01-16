@@ -84,8 +84,8 @@ pub struct AchievementsEvaluationHandler {
     pub _missionNodesManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IMissionNodesManager,
     >,
-    pub _achievementsModel: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AchievementsModelSO,
+    pub _platform: quest_hook::libil2cpp::Gc<
+        crate::OculusStudios::Platform::Core::IPlatform,
     >,
 }
 #[cfg(feature = "cordl_class_AchievementsEvaluationHandler")]

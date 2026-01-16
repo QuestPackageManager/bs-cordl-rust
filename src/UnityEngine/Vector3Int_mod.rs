@@ -309,25 +309,6 @@ impl crate::UnityEngine::Vector3Int {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn get_Item(&mut self, index: i32) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(i32), i32, 1usize>("get_Item")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_Item", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (index))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_one() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -402,6 +383,29 @@ impl crate::UnityEngine::Vector3Int {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_zero() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::UnityEngine::Vector3Int,
+                        0usize,
+                    >("get_zero")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_zero", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3Int = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn op_Addition(
         a: crate::UnityEngine::Vector3Int,
         b: crate::UnityEngine::Vector3Int,
@@ -420,6 +424,32 @@ impl crate::UnityEngine::Vector3Int {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "op_Addition", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3Int = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Division(
+        a: crate::UnityEngine::Vector3Int,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector3Int, i32),
+                        crate::UnityEngine::Vector3Int,
+                        2usize,
+                    >("op_Division")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Division", 2usize
                         )
                     })
             });
@@ -476,6 +506,58 @@ impl crate::UnityEngine::Vector3Int {
             });
         let __cordl_ret: crate::UnityEngine::Vector3 = unsafe {
             cordl_method_info.invoke_unchecked((), (v))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply(
+        a: crate::UnityEngine::Vector3Int,
+        b: i32,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector3Int, i32),
+                        crate::UnityEngine::Vector3Int,
+                        2usize,
+                    >("op_Multiply")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Multiply", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3Int = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Subtraction(
+        a: crate::UnityEngine::Vector3Int,
+        b: crate::UnityEngine::Vector3Int,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector3Int> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector3Int, crate::UnityEngine::Vector3Int),
+                        crate::UnityEngine::Vector3Int,
+                        2usize,
+                    >("op_Subtraction")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Subtraction", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector3Int = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
         };
         Ok(__cordl_ret.into())
     }

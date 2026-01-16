@@ -45,7 +45,7 @@ for crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
 }
 #[cfg(feature = "UnityEngine+ResourceManagement+ResourceProviders+ISceneProvider")]
 impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
-    pub fn ProvideScene_LoadSceneMode0(
+    pub fn ProvideScene_LoadSceneMode__cordl_bool_i32_0(
         &mut self,
         resourceManager: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceManager,
@@ -101,7 +101,72 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::ISceneProvider {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ProvideScene_LoadSceneParameters1(
+    pub fn ProvideScene_LoadSceneParameters_SceneReleaseMode__cordl_bool_i32_2(
+        &mut self,
+        resourceManager: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceManager,
+        >,
+        location: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+        >,
+        loadSceneParameters: crate::UnityEngine::SceneManagement::LoadSceneParameters,
+        releaseMode: crate::UnityEngine::ResourceManagement::ResourceProviders::SceneReleaseMode,
+        activateOnLoad: bool,
+        priority: i32,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ResourceManagement::ResourceManager,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::ResourceManagement::ResourceLocations::IResourceLocation,
+                            >,
+                            crate::UnityEngine::SceneManagement::LoadSceneParameters,
+                            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneReleaseMode,
+                            bool,
+                            i32,
+                        ),
+                        crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+                            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+                        >,
+                        6usize,
+                    >("ProvideScene")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ProvideScene", 6usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::ResourceManagement::AsyncOperations::AsyncOperationHandle_1<
+            crate::UnityEngine::ResourceManagement::ResourceProviders::SceneInstance,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (
+                        resourceManager,
+                        location,
+                        loadSceneParameters,
+                        releaseMode,
+                        activateOnLoad,
+                        priority,
+                    ),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn ProvideScene_LoadSceneParameters__cordl_bool_i32_1(
         &mut self,
         resourceManager: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::ResourceManagement::ResourceManager,

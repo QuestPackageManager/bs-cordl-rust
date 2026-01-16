@@ -4,7 +4,9 @@
 pub enum ParticleSystemSortMode {
     #[default]
     Depth = 4i32,
+    DepthReverse = 6i32,
     Distance = 1i32,
+    DistanceReverse = 5i32,
     None = 0i32,
     OldestInFront = 2i32,
     YoungestInFront = 3i32,

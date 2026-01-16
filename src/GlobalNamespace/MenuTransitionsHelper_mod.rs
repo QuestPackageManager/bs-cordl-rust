@@ -3,8 +3,8 @@
 #[derive(Debug)]
 pub struct MenuTransitionsHelper {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _appInitScenesTransitionSetupDataContainer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::AppInitScenesTransitionSetupDataContainerSO,
+    pub _appInitScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO,
     >,
     pub _standardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
@@ -21,6 +21,21 @@ pub struct MenuTransitionsHelper {
     pub _creditsScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
     >,
+    pub _healthWarningScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
+    >,
+    pub _shaderWarmupSceneSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO,
+    >,
+    pub _menuScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+    >,
+    pub _startupErrorScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
+    >,
+    pub _recordingToolScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
+    >,
     pub _gameScenesManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameScenesManager,
     >,
@@ -35,6 +50,9 @@ pub struct MenuTransitionsHelper {
     >,
     pub _settingsManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::SettingsManager,
+    >,
+    pub _telemetryModel: quest_hook::libil2cpp::Gc<
+        crate::Analytics::Model::TelemetryModel,
     >,
     pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelsModel,
@@ -127,82 +145,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::MenuTransitionsHelper {
 }
 #[cfg(feature = "MenuTransitionsHelper")]
 impl crate::GlobalNamespace::MenuTransitionsHelper {
-    pub fn HandleBeatmapEditorGameSceneDidFinish(
-        &mut self,
-        beatmapEditorStandardLevelScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
-            crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-        >,
-        levelCompletionResults: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::LevelCompletionResults,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::LevelCompletionResults,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("HandleBeatmapEditorGameSceneDidFinish")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleBeatmapEditorGameSceneDidFinish", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        beatmapEditorStandardLevelScenesTransitionSetupData,
-                        levelCompletionResults,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn HandleBeatmapEditorSceneDidFinish(
-        &mut self,
-        beatmapEditorScenesTransitionSetupData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::BeatmapEditorScenesTransitionSetupDataSO,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("HandleBeatmapEditorSceneDidFinish")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HandleBeatmapEditorSceneDidFinish", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (beatmapEditorScenesTransitionSetupData))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn HandleCreditsSceneDidFinish(
         &mut self,
         creditsSceneTransitionSetupData: quest_hook::libil2cpp::Gc<
@@ -569,6 +511,11 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
         >,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
+        afterSceneSwitchCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Action_1<
+                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+            >,
+        >,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
                 quest_hook::libil2cpp::Gc<
@@ -613,6 +560,11 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             >,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
+                                crate::System::Action_1<
+                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                                >,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::System::Action_2<
                                     quest_hook::libil2cpp::Gc<
                                         crate::BeatmapEditor3D::BeatmapEditorStandardLevelScenesTransitionSetupDataSO,
@@ -624,13 +576,13 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        11usize,
+                        12usize,
                     >("StartBeatmapEditorStandardLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartBeatmapEditorStandardLevel", 11usize
+                            "StartBeatmapEditorStandardLevel", 12usize
                         )
                     })
             });
@@ -649,6 +601,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         environmentsListModel,
                         data,
                         beforeSceneSwitchCallback,
+                        afterSceneSwitchCallback,
                         levelFinishedCallback,
                     ),
                 )?
@@ -660,9 +613,10 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         missionId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
+        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::ColorScheme,
         >,
+        playerOverrideLightshowColors: bool,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
         >,
@@ -717,6 +671,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::ColorScheme,
                             >,
+                            bool,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::GameplayModifiers,
                             >,
@@ -756,13 +711,13 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        11usize,
+                        12usize,
                     >("StartMissionLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartMissionLevel", 11usize
+                            "StartMissionLevel", 12usize
                         )
                     })
             });
@@ -774,7 +729,8 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         missionId,
                         beatmapKey,
                         beatmapLevel,
-                        overrideColorScheme,
+                        playerOverrideColorScheme,
+                        playerOverrideLightshowColors,
                         gameplayModifiers,
                         missionObjectives,
                         playerSpecificSettings,
@@ -787,7 +743,7 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartMultiplayerLevel_Action_1_Action_2_Action_1_1(
+    pub fn StartMultiplayerLevel(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -804,17 +760,15 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
         >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
+        >,
         practiceSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PracticeSettings,
         >,
         backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         useTestNoteCutSoundEffects: bool,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-        afterSceneSwitchCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
-        >,
         levelFinishedCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action_2<
                 quest_hook::libil2cpp::Gc<
@@ -855,6 +809,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                                 crate::GlobalNamespace::PlayerSpecificSettings,
                             >,
                             quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::EnvironmentsListModel,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::PracticeSettings,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -862,11 +819,6 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
-                            >,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Action_2<
                                     quest_hook::libil2cpp::Gc<
@@ -906,314 +858,19 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         overrideColorScheme,
                         gameplayModifiers,
                         playerSpecificSettings,
-                        practiceSettings,
-                        backButtonText,
-                        useTestNoteCutSoundEffects,
-                        beforeSceneSwitchCallback,
-                        afterSceneSwitchCallback,
-                        levelFinishedCallback,
-                        didDisconnectCallback,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn StartMultiplayerLevel_Action_2_Action_1_0(
-        &mut self,
-        gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        beatmapLevelData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatmapLevelData,
-        >,
-        overrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
-        playerSpecificSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
-        practiceSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PracticeSettings,
-        >,
-        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        useTestNoteCutSoundEffects: bool,
-        beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-        levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerResultsData>,
-            >,
-        >,
-        didDisconnectCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::GlobalNamespace::DisconnectedReason>,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::BeatmapKey,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatmapLevelData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PracticeSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::MultiplayerResultsData,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    crate::GlobalNamespace::DisconnectedReason,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        13usize,
-                    >("StartMultiplayerLevel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartMultiplayerLevel", 13usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        gameMode,
-                        beatmapKey,
-                        beatmapLevel,
-                        beatmapLevelData,
-                        overrideColorScheme,
-                        gameplayModifiers,
-                        playerSpecificSettings,
-                        practiceSettings,
-                        backButtonText,
-                        useTestNoteCutSoundEffects,
-                        beforeSceneSwitchCallback,
-                        levelFinishedCallback,
-                        didDisconnectCallback,
-                    ),
-                )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn StartStandardLevel_IBeatmapLevelData_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_1(
-        &mut self,
-        gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
-        beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        beatmapLevelData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IBeatmapLevelData,
-        >,
-        overrideEnvironmentSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::OverrideEnvironmentSettings,
-        >,
-        playerOverrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
-        playerOverrideLightshowColors: bool,
-        beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
-        gameplayModifiers: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::GameplayModifiers,
-        >,
-        playerSpecificSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PlayerSpecificSettings,
-        >,
-        practiceSettings: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::PracticeSettings,
-        >,
-        environmentsListModel: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::EnvironmentsListModel,
-        >,
-        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        useTestNoteCutSoundEffects: bool,
-        startPaused: bool,
-        beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
-        afterSceneSwitchCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<
-                quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-            >,
-        >,
-        levelFinishedCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-            >,
-        >,
-        levelRestartedCallback: quest_hook::libil2cpp::Gc<
-            crate::System::Action_2<
-                quest_hook::libil2cpp::Gc<
-                    crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-                >,
-                quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
-            >,
-        >,
-        recordingToolData: crate::System::Nullable_1<
-            crate::GlobalNamespace::RecordingToolManager_SetupData,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::BeatmapKey,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::BeatmapLevel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IBeatmapLevelData,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OverrideEnvironmentSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            bool,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::GameplayModifiers,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PlayerSpecificSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::PracticeSettings,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::EnvironmentsListModel,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::Gc<crate::System::Action>,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_1<
-                                    quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::LevelCompletionResults,
-                                    >,
-                                >,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Action_2<
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::LevelScenesTransitionSetupDataSO,
-                                    >,
-                                    quest_hook::libil2cpp::Gc<
-                                        crate::GlobalNamespace::LevelCompletionResults,
-                                    >,
-                                >,
-                            >,
-                            crate::System::Nullable_1<
-                                crate::GlobalNamespace::RecordingToolManager_SetupData,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        20usize,
-                    >("StartStandardLevel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartStandardLevel", 20usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (
-                        gameMode,
-                        beatmapKey,
-                        beatmapLevel,
-                        beatmapLevelData,
-                        overrideEnvironmentSettings,
-                        playerOverrideColorScheme,
-                        playerOverrideLightshowColors,
-                        beatmapOverrideColorScheme,
-                        gameplayModifiers,
-                        playerSpecificSettings,
-                        practiceSettings,
                         environmentsListModel,
+                        practiceSettings,
                         backButtonText,
                         useTestNoteCutSoundEffects,
-                        startPaused,
                         beforeSceneSwitchCallback,
-                        afterSceneSwitchCallback,
                         levelFinishedCallback,
-                        levelRestartedCallback,
-                        recordingToolData,
+                        didDisconnectCallback,
                     ),
                 )?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn StartStandardLevel_OverrideEnvironmentSettings_ColorScheme__cordl_bool_ColorScheme_GameplayModifiers_PlayerSpecificSettings_PracticeSettings_EnvironmentsListModel_Il2CppString__cordl_bool_Action_Action_1_Action_2_Nullable_1_0(
+    pub fn StartStandardLevel(
         &mut self,
         gameMode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
@@ -1225,9 +882,6 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             crate::GlobalNamespace::ColorScheme,
         >,
         playerOverrideLightshowColors: bool,
-        beatmapOverrideColorScheme: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ColorScheme,
-        >,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
         >,
@@ -1240,9 +894,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         environmentsListModel: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentsListModel,
         >,
-        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        useTestNoteCutSoundEffects: bool,
-        startPaused: bool,
+        gameplayAdditionalInformation: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::GameplayAdditionalInformation,
+        >,
         beforeSceneSwitchToGameplayCallback: quest_hook::libil2cpp::Gc<
             crate::System::Action,
         >,
@@ -1267,6 +921,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                 quest_hook::libil2cpp::Gc<crate::GlobalNamespace::LevelCompletionResults>,
             >,
         >,
+        beatmapLevelData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatmapLevelData,
+        >,
         recordingToolData: crate::System::Nullable_1<
             crate::GlobalNamespace::RecordingToolManager_SetupData,
         >,
@@ -1294,9 +951,6 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             >,
                             bool,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ColorScheme,
-                            >,
-                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::GameplayModifiers,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -1309,10 +963,8 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                                 crate::GlobalNamespace::EnvironmentsListModel,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                                crate::GlobalNamespace::GameplayAdditionalInformation,
                             >,
-                            bool,
-                            bool,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                             quest_hook::libil2cpp::Gc<
                                 crate::System::Action_1<
@@ -1339,18 +991,21 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                                     >,
                                 >,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IBeatmapLevelData,
+                            >,
                             crate::System::Nullable_1<
                                 crate::GlobalNamespace::RecordingToolManager_SetupData,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        19usize,
+                        17usize,
                     >("StartStandardLevel")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartStandardLevel", 19usize
+                            "StartStandardLevel", 17usize
                         )
                     })
             });
@@ -1365,18 +1020,16 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                         overrideEnvironmentSettings,
                         playerOverrideColorScheme,
                         playerOverrideLightshowColors,
-                        beatmapOverrideColorScheme,
                         gameplayModifiers,
                         playerSpecificSettings,
                         practiceSettings,
                         environmentsListModel,
-                        backButtonText,
-                        useTestNoteCutSoundEffects,
-                        startPaused,
+                        gameplayAdditionalInformation,
                         beforeSceneSwitchToGameplayCallback,
                         afterSceneSwitchToGameplayCallback,
                         levelFinishedCallback,
                         levelRestartedCallback,
+                        beatmapLevelData,
                         recordingToolData,
                     ),
                 )?
@@ -1387,6 +1040,9 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         &mut self,
         playerSpecificSettings: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::PlayerSpecificSettings,
+        >,
+        environmentsListModel: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::EnvironmentsListModel,
         >,
         beforeSceneSwitchCallback: quest_hook::libil2cpp::Gc<crate::System::Action>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1399,16 +1055,19 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::PlayerSpecificSettings,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::EnvironmentsListModel,
+                            >,
                             quest_hook::libil2cpp::Gc<crate::System::Action>,
                         ),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("StartTutorial")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StartTutorial", 2usize
+                            "StartTutorial", 3usize
                         )
                     })
             });
@@ -1416,59 +1075,12 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (playerSpecificSettings, beforeSceneSwitchCallback),
+                    (
+                        playerSpecificSettings,
+                        environmentsListModel,
+                        beforeSceneSwitchCallback,
+                    ),
                 )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn StopStandardLevel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("StopStandardLevel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "StopStandardLevel", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _HandleBeatmapEditorSceneDidFinish_b__38_0(
-        &mut self,
-        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("<HandleBeatmapEditorSceneDidFinish>b__38_0")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<HandleBeatmapEditorSceneDidFinish>b__38_0", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (container))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1491,6 +1103,347 @@ impl crate::GlobalNamespace::MenuTransitionsHelper {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_appInitScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_appInitScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_appInitScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AppInitScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_creditsScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_creditsScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_creditsScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::CreditsScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_healthWarningScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_healthWarningScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_healthWarningScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::HealthWarningScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_menuScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_menuScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_menuScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MenuScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_missionLevelScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_missionLevelScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_missionLevelScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MissionLevelScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_multiplayerLevelScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_multiplayerLevelScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_multiplayerLevelScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::MultiplayerLevelScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_recordingToolScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_recordingToolScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_recordingToolScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_shaderWarmupSceneSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_shaderWarmupSceneSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_shaderWarmupSceneSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::ShaderWarmupScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_standardLevelScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_standardLevelScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_standardLevelScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StandardLevelScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_startupErrorScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_startupErrorScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_startupErrorScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::StartupErrorScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_tutorialScenesTransitionSetupData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+                        >,
+                        0usize,
+                    >("get_tutorialScenesTransitionSetupData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_tutorialScenesTransitionSetupData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::TutorialScenesTransitionSetupDataSO,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
 }

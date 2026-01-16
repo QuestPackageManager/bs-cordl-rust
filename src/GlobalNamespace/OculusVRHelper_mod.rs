@@ -17,6 +17,8 @@ pub struct OculusVRHelper {
     pub _hasVrFocus: bool,
     pub _userPresent: bool,
     pub _lastButtonMenuButtonDownFrame: i32,
+    pub _leftControllerConnected: bool,
+    pub _rightControllerConnected: bool,
     pub _disabledEventSystem: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::EventSystems::EventSystem,
     >,

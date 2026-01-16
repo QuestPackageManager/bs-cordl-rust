@@ -3,6 +3,13 @@
 #[derive(Debug)]
 pub struct BaseTreeView {
     __cordl_parent: crate::UnityEngine::UIElements::BaseVerticalCollectionView,
+    pub itemExpandedChanged: quest_hook::libil2cpp::Gc<
+        crate::System::Action_1<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+            >,
+        >,
+    >,
     pub m_AutoExpand: bool,
     pub m_ExpandedItemIds: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::List_1<i32>,
@@ -49,26 +56,27 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
         &mut self,
         id: i32,
         collapseAllChildren: bool,
+        refresh: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, bool),
+                        (i32, bool, bool),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("CollapseItem")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CollapseItem", 2usize
+                            "CollapseItem", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, collapseAllChildren))?
+            cordl_method_info.invoke_unchecked(self, (id, collapseAllChildren, refresh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -159,26 +167,27 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
         &mut self,
         id: i32,
         expandAllChildren: bool,
+        refresh: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (i32, bool),
+                        (i32, bool, bool),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("ExpandItem")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ExpandItem", 2usize
+                            "ExpandItem", 3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (id, expandAllChildren))?
+            cordl_method_info.invoke_unchecked(self, (id, expandAllChildren, refresh))?
         };
         Ok(__cordl_ret.into())
     }
@@ -312,6 +321,36 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
             .invoke_void(".ctor", (itemHeight))?;
         Ok(__cordl_object.into())
     }
+    pub fn OnItemExpandedChanged(
+        &mut self,
+        arg: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::TreeViewExpansionChangedArgs,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnItemExpandedChanged")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnItemExpandedChanged", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (arg))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn OnItemIndexChanged(
         &mut self,
         srcIndex: i32,
@@ -336,34 +375,6 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (srcIndex, dstIndex))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn OnTreeViewPointerUp(
-        &mut self,
-        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PointerUpEvent>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::PointerUpEvent,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("OnTreeViewPointerUp")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnTreeViewPointerUp", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (evt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -512,7 +523,7 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _SetSelectionInternalById_b__47_0(
+    pub fn _SetSelectionInternalById_b__54_0(
         &mut self,
         id: i32,
     ) -> quest_hook::libil2cpp::Result<i32> {
@@ -524,12 +535,12 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
                         (i32),
                         i32,
                         1usize,
-                    >("<SetSelectionInternalById>b__47_0")
+                    >("<SetSelectionInternalById>b__54_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<SetSelectionInternalById>b__47_0", 1usize
+                            "<SetSelectionInternalById>b__54_0", 1usize
                         )
                     })
             });
@@ -731,6 +742,32 @@ impl crate::UnityEngine::UIElements::BaseTreeView {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_expandedItemIds", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_itemsSource(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Collections::IList>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Collections::IList>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_itemsSource")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_itemsSource", 1usize
                         )
                     })
             });

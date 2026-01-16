@@ -67,6 +67,31 @@ impl crate::GlobalNamespace::UIExtensionMethods {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetWorldRect(
+        target: quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Rect> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::RectTransform>),
+                        crate::UnityEngine::Rect,
+                        1usize,
+                    >("GetWorldRect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetWorldRect", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rect = unsafe {
+            cordl_method_info.invoke_unchecked((), (target))?
+        };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_UIExtensionMethods")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::UIExtensionMethods {

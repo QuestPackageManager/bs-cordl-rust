@@ -117,6 +117,37 @@ impl crate::System::Net::Http::Headers::MediaTypeHeaderValue {
             .invoke_void(".ctor", (source))?;
         Ok(__cordl_object.into())
     }
+    pub fn Parse(
+        input: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+                        >,
+                        1usize,
+                    >("Parse")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Parse",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Net::Http::Headers::MediaTypeHeaderValue,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (input))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn System_ICloneable_Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

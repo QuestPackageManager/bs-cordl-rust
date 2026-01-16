@@ -4,6 +4,8 @@
 pub enum NoteLineLayer {
     #[default]
     Base = 0i32,
+    Layer3 = 3i32,
+    Layer4 = 4i32,
     Top = 2i32,
     Upper = 1i32,
 }

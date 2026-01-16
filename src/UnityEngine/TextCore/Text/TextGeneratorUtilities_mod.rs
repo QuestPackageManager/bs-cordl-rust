@@ -357,6 +357,33 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetHorizontalAlignment(
+        anchor: crate::UnityEngine::TextAnchor,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::HorizontalAlignment,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::TextAnchor),
+                        crate::UnityEngine::TextCore::HorizontalAlignment,
+                        1usize,
+                    >("GetHorizontalAlignment")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetHorizontalAlignment", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::HorizontalAlignment = unsafe {
+            cordl_method_info.invoke_unchecked((), (anchor))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetMarkupTagHashCode_Il2CppArray1(
         styleDefinition: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppArray<u32>,
@@ -641,41 +668,35 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn HexCharsToColor_Il2CppArray_i32_0(
-        hexChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
-        tagCount: i32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
+    pub fn GetVerticalAlignment(
+        anchor: crate::UnityEngine::TextAnchor,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::VerticalAlignment> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<char>,
-                            >,
-                            i32,
-                        ),
-                        crate::UnityEngine::Color32,
-                        2usize,
-                    >("HexCharsToColor")
+                        (crate::UnityEngine::TextAnchor),
+                        crate::UnityEngine::TextCore::VerticalAlignment,
+                        1usize,
+                    >("GetVerticalAlignment")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "HexCharsToColor", 2usize
+                            "GetVerticalAlignment", 1usize
                         )
                     })
             });
-        let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (hexChars, tagCount))?
+        let __cordl_ret: crate::UnityEngine::TextCore::VerticalAlignment = unsafe {
+            cordl_method_info.invoke_unchecked((), (anchor))?
         };
         Ok(__cordl_ret.into())
     }
-    pub fn HexCharsToColor_i32_1(
+    pub fn HexCharsToColor(
         hexChars: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<char>>,
         startIndex: i32,
-        length: i32,
+        tagCount: i32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -701,7 +722,7 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
                     })
             });
         let __cordl_ret: crate::UnityEngine::Color32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (hexChars, startIndex, length))?
+            cordl_method_info.invoke_unchecked((), (hexChars, startIndex, tagCount))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1198,6 +1219,40 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
         Ok(__cordl_ret.into())
     }
+    pub fn IsEmoji(c: u32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(u32), bool, 1usize>("IsEmoji")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "IsEmoji",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsEmojiPresentationForm(c: u32) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(u32), bool, 1usize>("IsEmojiPresentationForm")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsEmojiPresentationForm", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (c))? };
+        Ok(__cordl_ret.into())
+    }
     pub fn IsHangul(c: u32) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1342,33 +1397,6 @@ impl crate::UnityEngine::TextCore::Text::TextGeneratorUtilities {
             });
         let __cordl_ret: crate::UnityEngine::Color = unsafe {
             cordl_method_info.invoke_unchecked((), (c1, c2))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn PackUV(
-        x: f32,
-        y: f32,
-        scale: f32,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (f32, f32, f32),
-                        crate::UnityEngine::Vector2,
-                        3usize,
-                    >("PackUV")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), "PackUV",
-                            3usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Vector2 = unsafe {
-            cordl_method_info.invoke_unchecked((), (x, y, scale))?
         };
         Ok(__cordl_ret.into())
     }

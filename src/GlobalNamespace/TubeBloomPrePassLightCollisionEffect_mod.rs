@@ -7,6 +7,8 @@ pub struct TubeBloomPrePassLightCollisionEffect {
         crate::GlobalNamespace::TubeBloomPrePassLight,
     >,
     pub _environmentLayerMask: crate::UnityEngine::LayerMask,
+    pub _useScale: bool,
+    pub _scaleTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _showHitPoint: bool,
     pub _hitPointGameObject: quest_hook::libil2cpp::Gc<crate::UnityEngine::GameObject>,
     pub _hitPointTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

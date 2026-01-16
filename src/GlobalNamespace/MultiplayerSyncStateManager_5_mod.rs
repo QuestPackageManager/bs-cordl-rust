@@ -10,7 +10,7 @@ pub struct MultiplayerSyncStateManager_5<
 > {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _localState: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LocalMultiplayerSyncState_3<TStateTable, TType, TState>,
@@ -331,7 +331,9 @@ impl<
     }
     pub fn HandlePlayerConnected(
         &mut self,
-        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        player: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -351,7 +353,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -790,9 +792,7 @@ impl<
     }
     pub fn get_deltaMessageType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NetworkMessageType>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -811,7 +811,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
+                        crate::GlobalNamespace::NetworkMessageType,
                         0usize,
                     >("get_deltaMessageType")
                     .unwrap_or_else(|e| {
@@ -822,7 +822,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::NetworkMessageType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -1045,9 +1045,7 @@ impl<
     }
     pub fn get_messageType(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
-    >
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::NetworkMessageType>
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
             + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
@@ -1066,7 +1064,7 @@ impl<
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::GlobalNamespace::MultiplayerSessionManager_MessageType,
+                        crate::GlobalNamespace::NetworkMessageType,
                         0usize,
                     >("get_messageType")
                     .unwrap_or_else(|e| {
@@ -1077,7 +1075,7 @@ impl<
                         )
                     })
             });
-        let __cordl_ret: crate::GlobalNamespace::MultiplayerSessionManager_MessageType = unsafe {
+        let __cordl_ret: crate::GlobalNamespace::NetworkMessageType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -1085,7 +1083,9 @@ impl<
     pub fn get_multiplayerSessionManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IMultiplayerSessionManager>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
+        >,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -1106,7 +1106,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IMultiplayerSessionManager,
+                            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                         >,
                         0usize,
                     >("get_multiplayerSessionManager")
@@ -1119,7 +1119,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

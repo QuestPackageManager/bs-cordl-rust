@@ -1,3 +1,6 @@
+// class ArrayHelper_2_mod; export all
+mod ArrayHelper_2_mod;
+pub use ArrayHelper_2_mod::*;
 // class AsyncHelper_mod; export all
 mod AsyncHelper_mod;
 pub use AsyncHelper_mod::*;
@@ -7,6 +10,9 @@ pub use AttributePSVIInfo_mod::*;
 // class AttributeProperties_mod; export all
 mod AttributeProperties_mod;
 pub use AttributeProperties_mod::*;
+// class Base64Decoder_mod; export all
+mod Base64Decoder_mod;
+pub use Base64Decoder_mod::*;
 // class Base64Encoder_mod; export all
 mod Base64Encoder_mod;
 pub use Base64Encoder_mod::*;
@@ -37,6 +43,12 @@ pub use BitStack_mod::*;
 // class Bits_mod; export all
 mod Bits_mod;
 pub use Bits_mod::*;
+// class BooleanArrayHelperWithDictionaryString_mod; export all
+mod BooleanArrayHelperWithDictionaryString_mod;
+pub use BooleanArrayHelperWithDictionaryString_mod::*;
+// class BooleanArrayHelperWithString_mod; export all
+mod BooleanArrayHelperWithString_mod;
+pub use BooleanArrayHelperWithString_mod::*;
 // class ByteStack_mod; export all
 mod ByteStack_mod;
 pub use ByteStack_mod::*;
@@ -52,9 +64,30 @@ pub use CharEntityEncoderFallback_mod::*;
 // class ConformanceLevel_mod; export all
 mod ConformanceLevel_mod;
 pub use ConformanceLevel_mod::*;
+// class DateTimeArrayHelperWithDictionaryString_mod; export all
+mod DateTimeArrayHelperWithDictionaryString_mod;
+pub use DateTimeArrayHelperWithDictionaryString_mod::*;
+// class DateTimeArrayHelperWithString_mod; export all
+mod DateTimeArrayHelperWithString_mod;
+pub use DateTimeArrayHelperWithString_mod::*;
+// class DecimalArrayHelperWithDictionaryString_mod; export all
+mod DecimalArrayHelperWithDictionaryString_mod;
+pub use DecimalArrayHelperWithDictionaryString_mod::*;
+// class DecimalArrayHelperWithString_mod; export all
+mod DecimalArrayHelperWithString_mod;
+pub use DecimalArrayHelperWithString_mod::*;
+// class DocumentXPathNavigator_mod; export all
+mod DocumentXPathNavigator_mod;
+pub use DocumentXPathNavigator_mod::*;
 // class DomNameTable_mod; export all
 mod DomNameTable_mod;
 pub use DomNameTable_mod::*;
+// class DoubleArrayHelperWithDictionaryString_mod; export all
+mod DoubleArrayHelperWithDictionaryString_mod;
+pub use DoubleArrayHelperWithDictionaryString_mod::*;
+// class DoubleArrayHelperWithString_mod; export all
+mod DoubleArrayHelperWithString_mod;
+pub use DoubleArrayHelperWithString_mod::*;
 // class DtdParser_mod; export all
 mod DtdParser_mod;
 pub use DtdParser_mod::*;
@@ -67,6 +100,9 @@ pub use ElementProperties_mod::*;
 // class EmptyEnumerator_mod; export all
 mod EmptyEnumerator_mod;
 pub use EmptyEnumerator_mod::*;
+// class EncodingStreamWrapper_mod; export all
+mod EncodingStreamWrapper_mod;
+pub use EncodingStreamWrapper_mod::*;
 // class EntityHandling_mod; export all
 mod EntityHandling_mod;
 pub use EntityHandling_mod::*;
@@ -76,6 +112,12 @@ pub use ExceptionType_mod::*;
 // class Formatting_mod; export all
 mod Formatting_mod;
 pub use Formatting_mod::*;
+// class GuidArrayHelperWithDictionaryString_mod; export all
+mod GuidArrayHelperWithDictionaryString_mod;
+pub use GuidArrayHelperWithDictionaryString_mod::*;
+// class GuidArrayHelperWithString_mod; export all
+mod GuidArrayHelperWithString_mod;
+pub use GuidArrayHelperWithString_mod::*;
 // class HWStack_mod; export all
 mod HWStack_mod;
 pub use HWStack_mod::*;
@@ -124,6 +166,9 @@ pub use IDtdParser_mod::*;
 // class IValidationEventHandling_mod; export all
 mod IValidationEventHandling_mod;
 pub use IValidationEventHandling_mod::*;
+// class IXmlDictionary_mod; export all
+mod IXmlDictionary_mod;
+pub use IXmlDictionary_mod::*;
 // class IXmlLineInfo_mod; export all
 mod IXmlLineInfo_mod;
 pub use IXmlLineInfo_mod::*;
@@ -136,6 +181,24 @@ pub use IncrementalReadDecoder_mod::*;
 // class IncrementalReadDummyDecoder_mod; export all
 mod IncrementalReadDummyDecoder_mod;
 pub use IncrementalReadDummyDecoder_mod::*;
+// class Int16ArrayHelperWithDictionaryString_mod; export all
+mod Int16ArrayHelperWithDictionaryString_mod;
+pub use Int16ArrayHelperWithDictionaryString_mod::*;
+// class Int16ArrayHelperWithString_mod; export all
+mod Int16ArrayHelperWithString_mod;
+pub use Int16ArrayHelperWithString_mod::*;
+// class Int32ArrayHelperWithDictionaryString_mod; export all
+mod Int32ArrayHelperWithDictionaryString_mod;
+pub use Int32ArrayHelperWithDictionaryString_mod::*;
+// class Int32ArrayHelperWithString_mod; export all
+mod Int32ArrayHelperWithString_mod;
+pub use Int32ArrayHelperWithString_mod::*;
+// class Int64ArrayHelperWithDictionaryString_mod; export all
+mod Int64ArrayHelperWithDictionaryString_mod;
+pub use Int64ArrayHelperWithDictionaryString_mod::*;
+// class Int64ArrayHelperWithString_mod; export all
+mod Int64ArrayHelperWithString_mod;
+pub use Int64ArrayHelperWithString_mod::*;
 // class LineInfo_mod; export all
 mod LineInfo_mod;
 pub use LineInfo_mod::*;
@@ -153,12 +216,21 @@ pub use NewLineHandling_mod::*;
 // class OnRemoveWriter_mod; export all
 mod OnRemoveWriter_mod;
 pub use OnRemoveWriter_mod::*;
+// class OnXmlDictionaryReaderClose_mod; export all
+mod OnXmlDictionaryReaderClose_mod;
+pub use OnXmlDictionaryReaderClose_mod::*;
 // class OpenedHost_mod; export all
 mod OpenedHost_mod;
 pub use OpenedHost_mod::*;
 // class PositionInfo_mod; export all
 mod PositionInfo_mod;
 pub use PositionInfo_mod::*;
+// class PrefixHandleType_mod; export all
+mod PrefixHandleType_mod;
+pub use PrefixHandleType_mod::*;
+// class PrefixHandle_mod; export all
+mod PrefixHandle_mod;
+pub use PrefixHandle_mod::*;
 // class QueryOutputWriter_mod; export all
 mod QueryOutputWriter_mod;
 pub use QueryOutputWriter_mod::*;
@@ -187,6 +259,15 @@ mod SecureStringHasher_mod;
 pub use SecureStringHasher_mod::*;
 // namespace Serialization;
 pub mod Serialization;
+// class SingleArrayHelperWithDictionaryString_mod; export all
+mod SingleArrayHelperWithDictionaryString_mod;
+pub use SingleArrayHelperWithDictionaryString_mod::*;
+// class SingleArrayHelperWithString_mod; export all
+mod SingleArrayHelperWithString_mod;
+pub use SingleArrayHelperWithString_mod::*;
+// class StringHandle_mod; export all
+mod StringHandle_mod;
+pub use StringHandle_mod::*;
 // class TernaryTreeReadOnly_mod; export all
 mod TernaryTreeReadOnly_mod;
 pub use TernaryTreeReadOnly_mod::*;
@@ -196,6 +277,12 @@ pub use TextEncodedRawTextWriter_mod::*;
 // class TextUtf8RawTextWriter_mod; export all
 mod TextUtf8RawTextWriter_mod;
 pub use TextUtf8RawTextWriter_mod::*;
+// class TimeSpanArrayHelperWithDictionaryString_mod; export all
+mod TimeSpanArrayHelperWithDictionaryString_mod;
+pub use TimeSpanArrayHelperWithDictionaryString_mod::*;
+// class TimeSpanArrayHelperWithString_mod; export all
+mod TimeSpanArrayHelperWithString_mod;
+pub use TimeSpanArrayHelperWithString_mod::*;
 // class TriState_mod; export all
 mod TriState_mod;
 pub use TriState_mod::*;
@@ -232,6 +319,9 @@ pub use Ucs4Encoding4321_mod::*;
 // class Ucs4Encoding_mod; export all
 mod Ucs4Encoding_mod;
 pub use Ucs4Encoding_mod::*;
+// class UniqueId_mod; export all
+mod UniqueId_mod;
+pub use UniqueId_mod::*;
 // class ValidateNames_mod; export all
 mod ValidateNames_mod;
 pub use ValidateNames_mod::*;
@@ -241,6 +331,12 @@ pub use ValidatingReaderNodeData_mod::*;
 // class ValidationType_mod; export all
 mod ValidationType_mod;
 pub use ValidationType_mod::*;
+// class ValueHandleType_mod; export all
+mod ValueHandleType_mod;
+pub use ValueHandleType_mod::*;
+// class ValueHandle_mod; export all
+mod ValueHandle_mod;
+pub use ValueHandle_mod::*;
 // class WhitespaceHandling_mod; export all
 mod WhitespaceHandling_mod;
 pub use WhitespaceHandling_mod::*;
@@ -276,12 +372,30 @@ pub use XmlAttribute_mod::*;
 // class XmlAutoDetectWriter_mod; export all
 mod XmlAutoDetectWriter_mod;
 pub use XmlAutoDetectWriter_mod::*;
+// class XmlBaseReader_mod; export all
+mod XmlBaseReader_mod;
+pub use XmlBaseReader_mod::*;
+// class XmlBaseWriter_mod; export all
+mod XmlBaseWriter_mod;
+pub use XmlBaseWriter_mod::*;
+// class XmlBinaryNodeType_mod; export all
+mod XmlBinaryNodeType_mod;
+pub use XmlBinaryNodeType_mod::*;
+// class XmlBinaryReaderSession_mod; export all
+mod XmlBinaryReaderSession_mod;
+pub use XmlBinaryReaderSession_mod::*;
+// class XmlBufferReader_mod; export all
+mod XmlBufferReader_mod;
+pub use XmlBufferReader_mod::*;
 // class XmlCDataSection_mod; export all
 mod XmlCDataSection_mod;
 pub use XmlCDataSection_mod::*;
 // class XmlCachedStream_mod; export all
 mod XmlCachedStream_mod;
 pub use XmlCachedStream_mod::*;
+// class XmlCanonicalWriter_mod; export all
+mod XmlCanonicalWriter_mod;
+pub use XmlCanonicalWriter_mod::*;
 // class XmlCharType_mod; export all
 mod XmlCharType_mod;
 pub use XmlCharType_mod::*;
@@ -305,12 +419,39 @@ pub mod XmlConfiguration;
 // class XmlConvert_mod; export all
 mod XmlConvert_mod;
 pub use XmlConvert_mod::*;
+// class XmlConverter_mod; export all
+mod XmlConverter_mod;
+pub use XmlConverter_mod::*;
 // class XmlDateTimeSerializationMode_mod; export all
 mod XmlDateTimeSerializationMode_mod;
 pub use XmlDateTimeSerializationMode_mod::*;
 // class XmlDeclaration_mod; export all
 mod XmlDeclaration_mod;
 pub use XmlDeclaration_mod::*;
+// class XmlDictionaryReaderQuotaTypes_mod; export all
+mod XmlDictionaryReaderQuotaTypes_mod;
+pub use XmlDictionaryReaderQuotaTypes_mod::*;
+// class XmlDictionaryReaderQuotas_mod; export all
+mod XmlDictionaryReaderQuotas_mod;
+pub use XmlDictionaryReaderQuotas_mod::*;
+// class XmlDictionaryReader_XmlWrappedReader_mod; export all
+mod XmlDictionaryReader_XmlWrappedReader_mod;
+pub use XmlDictionaryReader_XmlWrappedReader_mod::*;
+// class XmlDictionaryReader_mod; export all
+mod XmlDictionaryReader_mod;
+pub use XmlDictionaryReader_mod::*;
+// class XmlDictionaryString_mod; export all
+mod XmlDictionaryString_mod;
+pub use XmlDictionaryString_mod::*;
+// class XmlDictionaryWriter_XmlWrappedWriter_mod; export all
+mod XmlDictionaryWriter_XmlWrappedWriter_mod;
+pub use XmlDictionaryWriter_XmlWrappedWriter_mod::*;
+// class XmlDictionaryWriter_mod; export all
+mod XmlDictionaryWriter_mod;
+pub use XmlDictionaryWriter_mod::*;
+// class XmlDictionary_mod; export all
+mod XmlDictionary_mod;
+pub use XmlDictionary_mod::*;
 // class XmlDocumentFragment_mod; export all
 mod XmlDocumentFragment_mod;
 pub use XmlDocumentFragment_mod::*;
@@ -341,6 +482,9 @@ pub use XmlEntity_mod::*;
 // class XmlEventCache_mod; export all
 mod XmlEventCache_mod;
 pub use XmlEventCache_mod::*;
+// class XmlExceptionHelper_mod; export all
+mod XmlExceptionHelper_mod;
+pub use XmlExceptionHelper_mod::*;
 // class XmlException_mod; export all
 mod XmlException_mod;
 pub use XmlException_mod::*;
@@ -392,6 +536,9 @@ pub use XmlNodeReader_mod::*;
 // class XmlNodeType_mod; export all
 mod XmlNodeType_mod;
 pub use XmlNodeType_mod::*;
+// class XmlNodeWriter_mod; export all
+mod XmlNodeWriter_mod;
+pub use XmlNodeWriter_mod::*;
 // class XmlNode_mod; export all
 mod XmlNode_mod;
 pub use XmlNode_mod::*;
@@ -431,6 +578,9 @@ pub use XmlResolver_mod::*;
 // class XmlSignificantWhitespace_mod; export all
 mod XmlSignificantWhitespace_mod;
 pub use XmlSignificantWhitespace_mod::*;
+// class XmlSigningNodeWriter_mod; export all
+mod XmlSigningNodeWriter_mod;
+pub use XmlSigningNodeWriter_mod::*;
 // class XmlSpace_mod; export all
 mod XmlSpace_mod;
 pub use XmlSpace_mod::*;
@@ -440,6 +590,9 @@ pub use XmlSqlBinaryReader_mod::*;
 // class XmlStandalone_mod; export all
 mod XmlStandalone_mod;
 pub use XmlStandalone_mod::*;
+// class XmlStreamNodeWriter_mod; export all
+mod XmlStreamNodeWriter_mod;
+pub use XmlStreamNodeWriter_mod::*;
 // class XmlTextEncoder_mod; export all
 mod XmlTextEncoder_mod;
 pub use XmlTextEncoder_mod::*;
@@ -461,6 +614,15 @@ pub use XmlText_mod::*;
 // class XmlTokenizedType_mod; export all
 mod XmlTokenizedType_mod;
 pub use XmlTokenizedType_mod::*;
+// class XmlUTF8NodeWriter_mod; export all
+mod XmlUTF8NodeWriter_mod;
+pub use XmlUTF8NodeWriter_mod::*;
+// class XmlUTF8TextReader_mod; export all
+mod XmlUTF8TextReader_mod;
+pub use XmlUTF8TextReader_mod::*;
+// class XmlUTF8TextWriter_mod; export all
+mod XmlUTF8TextWriter_mod;
+pub use XmlUTF8TextWriter_mod::*;
 // class XmlUnspecifiedAttribute_mod; export all
 mod XmlUnspecifiedAttribute_mod;
 pub use XmlUnspecifiedAttribute_mod::*;

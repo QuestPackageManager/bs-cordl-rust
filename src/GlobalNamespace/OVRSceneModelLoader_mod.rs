@@ -104,6 +104,31 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn OnLoadSceneModelFailedPermissionNotGranted(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("OnLoadSceneModelFailedPermissionNotGranted")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnLoadSceneModelFailedPermissionNotGranted", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn OnNewSceneModelAvailable(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -250,6 +275,31 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn RequestScenePermissionAsync() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTask_1<bool>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRTask_1<bool>,
+                        0usize,
+                    >("RequestScenePermissionAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RequestScenePermissionAsync", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Start(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -268,6 +318,32 @@ impl crate::GlobalNamespace::OVRSceneModelLoader {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _RequestScenePermissionAsync_g__RequestPermissionOnAndroid_9_0() -> quest_hook::libil2cpp::Result<
+        crate::GlobalNamespace::OVRTask_1<bool>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (),
+                        crate::GlobalNamespace::OVRTask_1<bool>,
+                        0usize,
+                    >("<RequestScenePermissionAsync>g__RequestPermissionOnAndroid|9_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<RequestScenePermissionAsync>g__RequestPermissionOnAndroid|9_0",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
+            cordl_method_info.invoke_unchecked((), ())?
         };
         Ok(__cordl_ret.into())
     }

@@ -14,6 +14,7 @@ pub struct TextStyleSheet {
             quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextStyle>,
         >,
     >,
+    pub styleLookupLock: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
 }
 #[cfg(feature = "cordl_class_UnityEngine+TextCore+Text+TextStyleSheet")]
 unsafe impl quest_hook::libil2cpp::Type

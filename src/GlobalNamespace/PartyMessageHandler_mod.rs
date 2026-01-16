@@ -6,11 +6,11 @@ pub struct PartyMessageHandler {
     pub _serializer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NetworkPacketSerializer_2<
             crate::GlobalNamespace::PartyMessageHandler_MessageType,
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
         >,
     >,
     pub _connectedPlayerManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ConnectedPlayerManager,
+        crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
     >,
     pub connectToMasterServerEvent: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::PartyMessageHandler_ConnectToMasterServerDelegate,
@@ -137,7 +137,7 @@ impl crate::GlobalNamespace::PartyMessageHandler {
     }
     pub fn New(
         connectedPlayerManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ConnectedPlayerManager,
+            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -149,7 +149,7 @@ impl crate::GlobalNamespace::PartyMessageHandler {
     pub fn _ctor(
         &mut self,
         connectedPlayerManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ConnectedPlayerManager,
+            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -158,7 +158,7 @@ impl crate::GlobalNamespace::PartyMessageHandler {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ConnectedPlayerManager,
+                            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,

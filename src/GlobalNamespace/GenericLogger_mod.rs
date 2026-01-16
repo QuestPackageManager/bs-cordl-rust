@@ -38,7 +38,7 @@ impl std::ops::DerefMut for crate::GlobalNamespace::GenericLogger {
 }
 #[cfg(feature = "GenericLogger")]
 impl crate::GlobalNamespace::GenericLogger {
-    pub const kVerboseLogDefineSymbol: &'static str = "BS_VERBOSE_LOGGING";
+    pub const kVerboseLogDefineSymbol: &'static str = "BG_VERBOSE_LOGGING";
     #[cfg(feature = "GenericLogger+ScopedStopwatch")]
     pub type ScopedStopwatch = crate::GlobalNamespace::GenericLogger_ScopedStopwatch;
     pub fn Format(

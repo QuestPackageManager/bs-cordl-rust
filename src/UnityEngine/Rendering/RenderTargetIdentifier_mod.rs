@@ -107,6 +107,7 @@ for crate::UnityEngine::Rendering::RenderTargetIdentifier {
 }
 #[cfg(feature = "UnityEngine+Rendering+RenderTargetIdentifier")]
 impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
+    pub const AllDepthSlices: i32 = -1i32;
     pub fn Equals_Il2CppObject1(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
@@ -229,7 +230,106 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Texture2(
+    pub fn _ctor_Il2CppString1(
+        &mut self,
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (name))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_RenderBuffer_i32_CubemapFace_i32_7(
+        &mut self,
+        buf: crate::UnityEngine::RenderBuffer,
+        mipLevel: i32,
+        cubeFace: crate::UnityEngine::CubemapFace,
+        depthSlice: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::RenderBuffer,
+                            i32,
+                            crate::UnityEngine::CubemapFace,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (buf, mipLevel, cubeFace, depthSlice))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_RenderTargetIdentifier_i32_CubemapFace_i32_4(
+        &mut self,
+        renderTargetIdentifier: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+        mipLevel: i32,
+        cubeFace: crate::UnityEngine::CubemapFace,
+        depthSlice: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::Rendering::RenderTargetIdentifier,
+                            i32,
+                            crate::UnityEngine::CubemapFace,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (renderTargetIdentifier, mipLevel, cubeFace, depthSlice),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_Texture5(
         &mut self,
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -255,7 +355,42 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_i32_1(
+    pub fn _ctor_Texture_i32_CubemapFace_i32_6(
+        &mut self,
+        tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+        mipLevel: i32,
+        cubeFace: crate::UnityEngine::CubemapFace,
+        depthSlice: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
+                            i32,
+                            crate::UnityEngine::CubemapFace,
+                            i32,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (tex, mipLevel, cubeFace, depthSlice))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_i32_2(
         &mut self,
         nameID: i32,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -274,6 +409,65 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (nameID))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_i32_i32_CubemapFace_i32_3(
+        &mut self,
+        nameID: i32,
+        mipLevel: i32,
+        cubeFace: crate::UnityEngine::CubemapFace,
+        depthSlice: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32, i32, crate::UnityEngine::CubemapFace, i32),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (nameID, mipLevel, cubeFace, depthSlice))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Equality(
+        lhs: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+        rhs: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Rendering::RenderTargetIdentifier,
+                            crate::UnityEngine::Rendering::RenderTargetIdentifier,
+                        ),
+                        bool,
+                        2usize,
+                    >("op_Equality")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Equality", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }
@@ -304,7 +498,34 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_Texture2(
+    pub fn op_Implicit_Il2CppString1(
+        name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        crate::UnityEngine::Rendering::RenderTargetIdentifier,
+                        1usize,
+                    >("op_Implicit")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Implicit", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Rendering::RenderTargetIdentifier = unsafe {
+            cordl_method_info.invoke_unchecked((), (name))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Implicit_Texture3(
         tex: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::RenderTargetIdentifier,
@@ -331,7 +552,7 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn op_Implicit_i32_1(
+    pub fn op_Implicit_i32_2(
         nameID: i32,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::Rendering::RenderTargetIdentifier,
@@ -355,6 +576,35 @@ impl crate::UnityEngine::Rendering::RenderTargetIdentifier {
             });
         let __cordl_ret: crate::UnityEngine::Rendering::RenderTargetIdentifier = unsafe {
             cordl_method_info.invoke_unchecked((), (nameID))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
+        lhs: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+        rhs: crate::UnityEngine::Rendering::RenderTargetIdentifier,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Rendering::RenderTargetIdentifier,
+                            crate::UnityEngine::Rendering::RenderTargetIdentifier,
+                        ),
+                        bool,
+                        2usize,
+                    >("op_Inequality")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Inequality", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (lhs, rhs))?
         };
         Ok(__cordl_ret.into())
     }

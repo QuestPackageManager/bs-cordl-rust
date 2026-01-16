@@ -213,7 +213,7 @@ impl crate::UnityEngine::Vector4 {
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Normalize(
+    pub fn Normalize_1(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -231,6 +231,31 @@ impl crate::UnityEngine::Vector4 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Normalize_Vector4_0(
+        a: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector4),
+                        crate::UnityEngine::Vector4,
+                        1usize,
+                    >("Normalize")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Normalize", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -257,6 +282,35 @@ impl crate::UnityEngine::Vector4 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (scale))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Set(
+        &mut self,
+        newX: f32,
+        newY: f32,
+        newZ: f32,
+        newW: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32, f32, f32, f32),
+                        quest_hook::libil2cpp::Void,
+                        4usize,
+                    >("Set")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Set",
+                            4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (newX, newY, newZ, newW))?
         };
         Ok(__cordl_ret.into())
     }
@@ -351,7 +405,35 @@ impl crate::UnityEngine::Vector4 {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor(
+    pub fn _ctor_f32_1(
+        &mut self,
+        x: f32,
+        y: f32,
+        z: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32, f32, f32),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x, y, z))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_f32_f32_0(
         &mut self,
         x: f32,
         y: f32,
@@ -377,6 +459,33 @@ impl crate::UnityEngine::Vector4 {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (x, y, z, w))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn _ctor_f32_f32_2(
+        &mut self,
+        x: f32,
+        y: f32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (f32, f32),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (x, y))?
         };
         Ok(__cordl_ret.into())
     }
@@ -414,6 +523,31 @@ impl crate::UnityEngine::Vector4 {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_normalized(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Vector4,
+                        0usize,
+                    >("get_normalized")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_normalized", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn get_one() -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
@@ -683,7 +817,7 @@ impl crate::UnityEngine::Vector4 {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn op_Multiply(
+    pub fn op_Multiply_Vector4_f32_0(
         a: crate::UnityEngine::Vector4,
         d: f32,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
@@ -706,6 +840,32 @@ impl crate::UnityEngine::Vector4 {
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
             cordl_method_info.invoke_unchecked((), (a, d))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Multiply_f32_Vector4_1(
+        d: f32,
+        a: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (f32, crate::UnityEngine::Vector4),
+                        crate::UnityEngine::Vector4,
+                        2usize,
+                    >("op_Multiply")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Multiply", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            cordl_method_info.invoke_unchecked((), (d, a))?
         };
         Ok(__cordl_ret.into())
     }
@@ -732,6 +892,31 @@ impl crate::UnityEngine::Vector4 {
             });
         let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
             cordl_method_info.invoke_unchecked((), (a, b))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_UnaryNegation(
+        a: crate::UnityEngine::Vector4,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector4> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::Vector4),
+                        crate::UnityEngine::Vector4,
+                        1usize,
+                    >("op_UnaryNegation")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_UnaryNegation", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Vector4 = unsafe {
+            cordl_method_info.invoke_unchecked((), (a))?
         };
         Ok(__cordl_ret.into())
     }

@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct DoesNotRequireDomainReloadInitAttribute {
-    __cordl_parent: crate::UnityEngine::PropertyAttribute,
+    __cordl_parent: crate::System::Attribute,
 }
 #[cfg(feature = "cordl_class_DoesNotRequireDomainReloadInitAttribute")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
 #[cfg(feature = "DoesNotRequireDomainReloadInitAttribute")]
 impl std::ops::Deref
 for crate::GlobalNamespace::DoesNotRequireDomainReloadInitAttribute {
-    type Target = crate::UnityEngine::PropertyAttribute;
+    type Target = crate::System::Attribute;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

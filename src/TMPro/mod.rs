@@ -1,3 +1,6 @@
+// class AlternateSubstitutionRecord_mod; export all
+mod AlternateSubstitutionRecord_mod;
+pub use AlternateSubstitutionRecord_mod::*;
 // class AtlasPopulationMode_mod; export all
 mod AtlasPopulationMode_mod;
 pub use AtlasPopulationMode_mod::*;
@@ -7,6 +10,9 @@ pub use CaretInfo_mod::*;
 // class CaretPosition_mod; export all
 mod CaretPosition_mod;
 pub use CaretPosition_mod::*;
+// class CharacterElement_mod; export all
+mod CharacterElement_mod;
+pub use CharacterElement_mod::*;
 // class CodePoint_mod; export all
 mod CodePoint_mod;
 pub use CodePoint_mod::*;
@@ -55,6 +61,9 @@ pub use FontStyles_mod::*;
 // class FontWeight_mod; export all
 mod FontWeight_mod;
 pub use FontWeight_mod::*;
+// class GlyphAnchorPoint_mod; export all
+mod GlyphAnchorPoint_mod;
+pub use GlyphAnchorPoint_mod::*;
 // class GlyphPairKey_mod; export all
 mod GlyphPairKey_mod;
 pub use GlyphPairKey_mod::*;
@@ -85,6 +94,24 @@ pub use KerningPair_mod::*;
 // class KerningTable_mod; export all
 mod KerningTable_mod;
 pub use KerningTable_mod::*;
+// class LigatureSubstitutionRecord_mod; export all
+mod LigatureSubstitutionRecord_mod;
+pub use LigatureSubstitutionRecord_mod::*;
+// class MarkPositionAdjustment_mod; export all
+mod MarkPositionAdjustment_mod;
+pub use MarkPositionAdjustment_mod::*;
+// class MarkToBaseAdjustmentRecord_mod; export all
+mod MarkToBaseAdjustmentRecord_mod;
+pub use MarkToBaseAdjustmentRecord_mod::*;
+// class MarkToMarkAdjustmentRecord_mod; export all
+mod MarkToMarkAdjustmentRecord_mod;
+pub use MarkToMarkAdjustmentRecord_mod::*;
+// class MarkupAttribute_mod; export all
+mod MarkupAttribute_mod;
+pub use MarkupAttribute_mod::*;
+// class MarkupElement_mod; export all
+mod MarkupElement_mod;
+pub use MarkupElement_mod::*;
 // class MarkupTag_mod; export all
 mod MarkupTag_mod;
 pub use MarkupTag_mod::*;
@@ -103,6 +130,9 @@ pub use MaterialReference_mod::*;
 // class Mesh_Extents_mod; export all
 mod Mesh_Extents_mod;
 pub use Mesh_Extents_mod::*;
+// class MultipleSubstitutionRecord_mod; export all
+mod MultipleSubstitutionRecord_mod;
+pub use MultipleSubstitutionRecord_mod::*;
 // class RichTextTagAttribute_mod; export all
 mod RichTextTagAttribute_mod;
 pub use RichTextTagAttribute_mod::*;
@@ -112,6 +142,9 @@ pub use SetPropertyUtility_mod::*;
 // class ShaderUtilities_mod; export all
 mod ShaderUtilities_mod;
 pub use ShaderUtilities_mod::*;
+// class SingleSubstitutionRecord_mod; export all
+mod SingleSubstitutionRecord_mod;
+pub use SingleSubstitutionRecord_mod::*;
 // namespace SpriteAssetUtilities;
 pub mod SpriteAssetUtilities;
 // class TMP_Asset_mod; export all
@@ -135,6 +168,9 @@ pub use TMP_DefaultControls_mod::*;
 // class TMP_Dropdown_mod; export all
 mod TMP_Dropdown_mod;
 pub use TMP_Dropdown_mod::*;
+// class TMP_DynamicFontAssetUtilities_mod; export all
+mod TMP_DynamicFontAssetUtilities_mod;
+pub use TMP_DynamicFontAssetUtilities_mod::*;
 // class TMP_FontAssetUtilities_mod; export all
 mod TMP_FontAssetUtilities_mod;
 pub use TMP_FontAssetUtilities_mod::*;
@@ -318,9 +354,18 @@ pub use TextMeshPro_mod::*;
 // class TextOverflowModes_mod; export all
 mod TextOverflowModes_mod;
 pub use TextOverflowModes_mod::*;
+// class TextProcessingElementType_mod; export all
+mod TextProcessingElementType_mod;
+pub use TextProcessingElementType_mod::*;
+// class TextProcessingElement_mod; export all
+mod TextProcessingElement_mod;
+pub use TextProcessingElement_mod::*;
 // class TextRenderFlags_mod; export all
 mod TextRenderFlags_mod;
 pub use TextRenderFlags_mod::*;
+// class TextWrappingModes_mod; export all
+mod TextWrappingModes_mod;
+pub use TextWrappingModes_mod::*;
 // class TextureMappingOptions_mod; export all
 mod TextureMappingOptions_mod;
 pub use TextureMappingOptions_mod::*;

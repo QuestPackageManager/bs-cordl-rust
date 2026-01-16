@@ -107,11 +107,6 @@ for crate::GlobalNamespace::SavedData_VRControllersRecorder_KeyframeSerializable
 #[derive(Debug)]
 pub struct VRControllersRecorder {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
-    pub _recordingTextAsset: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    pub _recordingFileName: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppString,
-    >,
-    pub _mode: crate::GlobalNamespace::VRControllersRecorder_Mode,
     pub _dontMoveHead: bool,
     pub _changeToNonVRCamera: bool,
     pub _adjustSabersPositionBasedOnHeadPosition: bool,
@@ -133,6 +128,10 @@ pub struct VRControllersRecorder {
     pub _audioTimeSyncController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::AudioTimeSyncController,
     >,
+    pub _recordingRelativePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub _mode: crate::GlobalNamespace::VRControllersRecorder_Mode,
     pub _controller0Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _controller1Transform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
     pub _hasHead: bool,
@@ -182,6 +181,8 @@ impl crate::GlobalNamespace::VRControllersRecorder {
     pub const kRecorderVersion: u32 = 1u32;
     pub const kSavedDataRecorderVersion: u32 = 0u32;
     pub const kSavedDataWithOffsetRecorderVersion: u32 = 1u32;
+    #[cfg(feature = "VRControllersRecorder+InitData")]
+    pub type InitData = crate::GlobalNamespace::VRControllersRecorder_InitData;
     #[cfg(feature = "VRControllersRecorder+Keyframe")]
     pub type Keyframe = crate::GlobalNamespace::VRControllersRecorder_Keyframe;
     #[cfg(feature = "VRControllersRecorder+Mode")]
@@ -341,6 +342,45 @@ impl crate::GlobalNamespace::VRControllersRecorder {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (controller, poseOffset))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn InjectDependencies(
+        &mut self,
+        audioTimeSyncController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::AudioTimeSyncController,
+        >,
+        initData: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::VRControllersRecorder_InitData,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::AudioTimeSyncController,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::VRControllersRecorder_InitData,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("InjectDependencies")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "InjectDependencies", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info
+                .invoke_unchecked(self, (audioTimeSyncController, initData))?
         };
         Ok(__cordl_ret.into())
     }
@@ -666,6 +706,32 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn SetBeatmapEditorPlaybackSettings(
+        &mut self,
+        recordingData: crate::GlobalNamespace::BeatmapEditorStartTestLevelData_RecordingData,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::GlobalNamespace::BeatmapEditorStartTestLevelData_RecordingData),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("SetBeatmapEditorPlaybackSettings")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetBeatmapEditorPlaybackSettings", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (recordingData))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn SetDefaultSettings(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -925,33 +991,6 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_mode(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        crate::GlobalNamespace::VRControllersRecorder_Mode,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        crate::GlobalNamespace::VRControllersRecorder_Mode,
-                        0usize,
-                    >("get_mode")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_mode", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::GlobalNamespace::VRControllersRecorder_Mode = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn get_path(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -977,60 +1016,6 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_recordingFileName(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        0usize,
-                    >("get_recordingFileName")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_recordingFileName", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_recordingTextAsset(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-                        0usize,
-                    >("get_recordingTextAsset")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_recordingTextAsset", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn set_changeToNonVRCamera(
@@ -1059,88 +1044,112 @@ impl crate::GlobalNamespace::VRControllersRecorder {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_mode(
-        &mut self,
-        value: crate::GlobalNamespace::VRControllersRecorder_Mode,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::GlobalNamespace::VRControllersRecorder_Mode),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_mode")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_mode", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_recordingFileName(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_recordingFileName")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_recordingFileName", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn set_recordingTextAsset(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::UnityEngine::TextAsset>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_recordingTextAsset")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_recordingTextAsset", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
 }
 #[cfg(feature = "cordl_class_VRControllersRecorder")]
 impl quest_hook::libil2cpp::ObjectType
 for crate::GlobalNamespace::VRControllersRecorder {
+    fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
+    }
+    fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
+        quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_VRControllersRecorder+InitData")]
+#[repr(C)]
+#[derive(Debug)]
+pub struct VRControllersRecorder_InitData {
+    __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub recordingRelativePath: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
+    pub mode: crate::GlobalNamespace::VRControllersRecorder_Mode,
+}
+#[cfg(feature = "cordl_class_VRControllersRecorder+InitData")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::GlobalNamespace::VRControllersRecorder_InitData {
+    type Held<'a> = ::std::option::Option<&'a mut Self>;
+    type HeldRaw = *mut Self;
+    const NAMESPACE: &'static str = "";
+    const CLASS_NAME: &'static str = "VRControllersRecorder/InitData";
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.class().is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_argument(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::class().is_assignable_from(ty.class())
+    }
+    fn matches_value_parameter(_: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        false
+    }
+}
+#[cfg(feature = "VRControllersRecorder+InitData")]
+impl std::ops::Deref for crate::GlobalNamespace::VRControllersRecorder_InitData {
+    type Target = quest_hook::libil2cpp::Il2CppObject;
+    fn deref(&self) -> &<Self as std::ops::Deref>::Target {
+        unsafe { &self.__cordl_parent }
+    }
+}
+#[cfg(feature = "VRControllersRecorder+InitData")]
+impl std::ops::DerefMut for crate::GlobalNamespace::VRControllersRecorder_InitData {
+    fn deref_mut(&mut self) -> &mut <Self as std::ops::Deref>::Target {
+        unsafe { &mut self.__cordl_parent }
+    }
+}
+#[cfg(feature = "VRControllersRecorder+InitData")]
+impl crate::GlobalNamespace::VRControllersRecorder_InitData {
+    pub fn New(
+        recordingRelativePath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        mode: crate::GlobalNamespace::VRControllersRecorder_Mode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", (recordingRelativePath, mode))?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+        recordingRelativePath: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+        mode: crate::GlobalNamespace::VRControllersRecorder_Mode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            crate::GlobalNamespace::VRControllersRecorder_Mode,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (recordingRelativePath, mode))?
+        };
+        Ok(__cordl_ret.into())
+    }
+}
+#[cfg(feature = "cordl_class_VRControllersRecorder+InitData")]
+impl quest_hook::libil2cpp::ObjectType
+for crate::GlobalNamespace::VRControllersRecorder_InitData {
     fn as_object(&self) -> &quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object(&self.__cordl_parent)
     }

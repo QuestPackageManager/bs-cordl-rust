@@ -13,9 +13,9 @@ pub struct JobManager {
             crate::UnityEngine::UIElements::UIR::ConvertMeshJobData,
         >,
     >,
-    pub m_CopyClosingMeshJobs: quest_hook::libil2cpp::Gc<
+    pub m_CopyMeshJobs: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::NativePagedList_1<
-            crate::UnityEngine::UIElements::UIR::CopyClosingMeshJobData,
+            crate::UnityEngine::UIElements::UIR::CopyMeshJobData,
         >,
     >,
     pub m_JobMerger: quest_hook::libil2cpp::Gc<
@@ -121,7 +121,7 @@ impl crate::UnityEngine::UIElements::UIR::JobManager {
     pub fn Add_ByRefMut2(
         &mut self,
         job: quest_hook::libil2cpp::ByRefMut<
-            crate::UnityEngine::UIElements::UIR::CopyClosingMeshJobData,
+            crate::UnityEngine::UIElements::UIR::CopyMeshJobData,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -130,7 +130,7 @@ impl crate::UnityEngine::UIElements::UIR::JobManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::ByRefMut<
-                            crate::UnityEngine::UIElements::UIR::CopyClosingMeshJobData,
+                            crate::UnityEngine::UIElements::UIR::CopyMeshJobData,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -145,31 +145,6 @@ impl crate::UnityEngine::UIElements::UIR::JobManager {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (job))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn CompleteClosingMeshJobs(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("CompleteClosingMeshJobs")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "CompleteClosingMeshJobs", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -190,6 +165,31 @@ impl crate::UnityEngine::UIElements::UIR::JobManager {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "CompleteConvertMeshJobs", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn CompleteCopyMeshJobs(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("CompleteCopyMeshJobs")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CompleteCopyMeshJobs", 0usize
                         )
                     })
             });

@@ -23,6 +23,9 @@ pub struct FirstPersonFlyingController {
     pub _originalStereoTargetEyeMask: crate::UnityEngine::StereoTargetEyeMask,
     pub _originalCameraFov: f32,
     pub _overrideDisableMovement: bool,
+    pub _pausedController: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::PauseController,
+    >,
 }
 #[cfg(feature = "cordl_class_FirstPersonFlyingController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -69,6 +72,9 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
             crate::UnityEngine::SpatialTracking::TrackedPoseDriver,
         >,
         overrideDisableMovement: bool,
+        pausedController: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::PauseController,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -90,15 +96,18 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
                                 crate::UnityEngine::SpatialTracking::TrackedPoseDriver,
                             >,
                             bool,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::PauseController,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        6usize,
+                        7usize,
                     >("Inject")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Inject",
-                            6usize
+                            7usize
                         )
                     })
             });
@@ -113,6 +122,7 @@ impl crate::GlobalNamespace::FirstPersonFlyingController {
                         controller1,
                         trackedPoseDriver,
                         overrideDisableMovement,
+                        pausedController,
                     ),
                 )?
         };

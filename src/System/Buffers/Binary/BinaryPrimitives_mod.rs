@@ -58,26 +58,7 @@ impl crate::System::Buffers::Binary::BinaryPrimitives {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ReverseEndianness_i64_1(value: i64) -> quest_hook::libil2cpp::Result<i64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(i64), i64, 1usize>("ReverseEndianness")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReverseEndianness", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: i64 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReverseEndianness_u16_2(value: u16) -> quest_hook::libil2cpp::Result<u16> {
+    pub fn ReverseEndianness_u16_1(value: u16) -> quest_hook::libil2cpp::Result<u16> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -96,7 +77,7 @@ impl crate::System::Buffers::Binary::BinaryPrimitives {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn ReverseEndianness_u32_3(value: u32) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn ReverseEndianness_u32_2(value: u32) -> quest_hook::libil2cpp::Result<u32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -111,25 +92,6 @@ impl crate::System::Buffers::Binary::BinaryPrimitives {
                     })
             });
         let __cordl_ret: u32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ReverseEndianness_u64_4(value: u64) -> quest_hook::libil2cpp::Result<u64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(u64), u64, 1usize>("ReverseEndianness")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ReverseEndianness", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: u64 = unsafe {
             cordl_method_info.invoke_unchecked((), (value))?
         };
         Ok(__cordl_ret.into())

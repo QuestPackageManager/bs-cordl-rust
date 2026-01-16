@@ -39,23 +39,6 @@ impl std::ops::DerefMut for crate::System::Globalization::CharUnicodeInfo {
 }
 #[cfg(feature = "System+Globalization+CharUnicodeInfo")]
 impl crate::System::Globalization::CharUnicodeInfo {
-    pub fn GetNumericValue(ch: char) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(char), f64, 1usize>("GetNumericValue")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNumericValue", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (ch))? };
-        Ok(__cordl_ret.into())
-    }
     pub fn GetUnicodeCategory_Il2CppString_i32_1(
         s: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
@@ -227,23 +210,6 @@ impl crate::System::Globalization::CharUnicodeInfo {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn InternalGetNumericValue(ch: i32) -> quest_hook::libil2cpp::Result<f64> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(i32), f64, 1usize>("InternalGetNumericValue")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "InternalGetNumericValue", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (ch))? };
-        Ok(__cordl_ret.into())
-    }
     pub fn InternalGetUnicodeCategory_ByRefMut1(
         str: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         index: i32,
@@ -306,6 +272,29 @@ impl crate::System::Globalization::CharUnicodeInfo {
         let __cordl_ret: crate::System::Globalization::UnicodeCategory = unsafe {
             cordl_method_info.invoke_unchecked((), (value, index))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsCombiningCategory(
+        uc: crate::System::Globalization::UnicodeCategory,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::System::Globalization::UnicodeCategory),
+                        bool,
+                        1usize,
+                    >("IsCombiningCategory")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsCombiningCategory", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (uc))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsWhiteSpace_Il2CppString_i32_0(
@@ -448,106 +437,6 @@ impl crate::System::Globalization::CharUnicodeInfo {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_CategoryLevel3Index", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_NumericLevel1Index() -> quest_hook::libil2cpp::Result<
-        crate::System::ReadOnlySpan_1<u8>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::System::ReadOnlySpan_1<u8>,
-                        0usize,
-                    >("get_NumericLevel1Index")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NumericLevel1Index", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_NumericLevel2Index() -> quest_hook::libil2cpp::Result<
-        crate::System::ReadOnlySpan_1<u8>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::System::ReadOnlySpan_1<u8>,
-                        0usize,
-                    >("get_NumericLevel2Index")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NumericLevel2Index", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_NumericLevel3Index() -> quest_hook::libil2cpp::Result<
-        crate::System::ReadOnlySpan_1<u8>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::System::ReadOnlySpan_1<u8>,
-                        0usize,
-                    >("get_NumericLevel3Index")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NumericLevel3Index", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::System::ReadOnlySpan_1<u8> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_NumericValues() -> quest_hook::libil2cpp::Result<
-        crate::System::ReadOnlySpan_1<u8>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        crate::System::ReadOnlySpan_1<u8>,
-                        0usize,
-                    >("get_NumericValues")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_NumericValues", 0usize
                         )
                     })
             });

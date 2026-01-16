@@ -135,7 +135,7 @@ for crate::GlobalNamespace::LevelFailedTextOverride {
 #[derive(Debug)]
 pub struct LevelFailedTextOverride_LanguageOverride {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub _language: crate::BGLib::Polyglot::Language,
+    pub _language: crate::BGLib::Polyglot::LocalizationLanguage,
     pub _overrideText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_LevelFailedTextOverride+LanguageOverride")]
@@ -205,14 +205,14 @@ impl crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {
     }
     pub fn get_language(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::Language> {
+    ) -> quest_hook::libil2cpp::Result<crate::BGLib::Polyglot::LocalizationLanguage> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        crate::BGLib::Polyglot::Language,
+                        crate::BGLib::Polyglot::LocalizationLanguage,
                         0usize,
                     >("get_language")
                     .unwrap_or_else(|e| {
@@ -223,7 +223,7 @@ impl crate::GlobalNamespace::LevelFailedTextOverride_LanguageOverride {
                         )
                     })
             });
-        let __cordl_ret: crate::BGLib::Polyglot::Language = unsafe {
+        let __cordl_ret: crate::BGLib::Polyglot::LocalizationLanguage = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())

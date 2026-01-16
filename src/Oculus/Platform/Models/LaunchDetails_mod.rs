@@ -9,6 +9,8 @@ pub struct LaunchDetails {
     >,
     pub LaunchSource: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub LaunchType: crate::Oculus::Platform::LaunchType,
+    pub LobbySessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub MatchSessionID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub TrackingID: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub UsersOptional: quest_hook::libil2cpp::Gc<
         crate::Oculus::Platform::Models::UserList,

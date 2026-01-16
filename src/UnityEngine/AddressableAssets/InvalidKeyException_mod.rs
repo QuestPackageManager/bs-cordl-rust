@@ -50,15 +50,113 @@ impl std::ops::DerefMut for crate::UnityEngine::AddressableAssets::InvalidKeyExc
 #[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException")]
 impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
     pub const BaseInvalidKeyMessageFormat: &'static str = "{0}, Key={1}, Type={2}";
-    pub fn GetCSVString(
+    pub const IntersectionAvailableMessageFormat: &'static str = "\\nAn Intersection exists for Type={0}";
+    pub const KeyAvailableAsTypeMessageFormat: &'static str = "\\nType={0} exists for {1}";
+    pub const MergeModeBaseMessageFormat: &'static str = "{0} No {1} of Assets between {2} with Type={3}";
+    pub const MergeModeNoLocationMessageFormat: &'static str = "\\nNo Location found for Key={0}";
+    pub const MultipleTypeMismatchMessageFormat: &'static str = "{0} No Asset found for Key={1} with Type={2}. Key exists as multiple Types={3}, which is not assignable from the requested Type={2}";
+    pub const MultipleTypesMessageFormat: &'static str = "{0} Enumerable key contains multiple Types. {1}, all Keys are expected to be strings";
+    pub const NoLocationMessageFormat: &'static str = "{0} No Location found for Key={1}";
+    pub const NoMergeModeMessageFormat: &'static str = "{0} No MergeMode is set to merge the multiple keys requested. {1}, Type={2}";
+    pub const TypeMismatchMessageFormat: &'static str = "{0} No Asset found for Key={1} with Type={2}. Key exists as Type={3}, which is not assignable from the requested Type={2}";
+    pub const UnionAvailableForKeysMessageFormat: &'static str = "\\nUnion of Type={0} found with {1}";
+    pub const UnionAvailableForKeysWithoutOtherMessageFormat: &'static str = "\\nUnion of Type={0} found with {1}. Without {2}";
+    #[cfg(feature = "UnityEngine+AddressableAssets+InvalidKeyException+Format")]
+    pub type Format = crate::UnityEngine::AddressableAssets::InvalidKeyException_Format;
+    pub fn FormatMergeModeMessage(
         &mut self,
-        enumerator: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::IEnumerable_1<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        format: crate::UnityEngine::AddressableAssets::InvalidKeyException_Format,
+        keysAvailable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        keysUnavailable: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typeString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::AddressableAssets::InvalidKeyException_Format,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        4usize,
+                    >("FormatMergeModeMessage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatMergeModeMessage", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (format, keysAvailable, keysUnavailable, typeString),
+                )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatMessage(
+        &mut self,
+        format: crate::UnityEngine::AddressableAssets::InvalidKeyException_Format,
+        foundWithTypeString: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::AddressableAssets::InvalidKeyException_Format,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("FormatMessage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatMessage", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (format, foundWithTypeString))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatMultipleAssignableTypesMessage(
+        &mut self,
+        keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typesAvailableForKey: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
             >,
         >,
-        prefixSingle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        prefixPlural: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -69,11 +167,119 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::IEnumerable_1<
-                                    quest_hook::libil2cpp::Gc<
-                                        quest_hook::libil2cpp::Il2CppString,
-                                    >,
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
                                 >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("FormatMultipleAssignableTypesMessage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatMultipleAssignableTypesMessage", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (keyString, typesAvailableForKey))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatNotFoundMessage(
+        &mut self,
+        keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        1usize,
+                    >("FormatNotFoundMessage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatNotFoundMessage", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (keyString))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn FormatTypeNotAssignableMessage(
+        &mut self,
+        keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        typesAvailableForKey: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::HashSet_1<
+                quest_hook::libil2cpp::Gc<crate::System::Type>,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::HashSet_1<
+                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        2usize,
+                    >("FormatTypeNotAssignableMessage")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "FormatTypeNotAssignableMessage", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (keyString, typesAvailableForKey))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCSVString(
+        enumerator: quest_hook::libil2cpp::Gc<crate::System::Collections::IEnumerable>,
+        prefixSingle: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        prefixPlural: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::IEnumerable,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
@@ -97,8 +303,35 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe {
             cordl_method_info
-                .invoke_unchecked(self, (enumerator, prefixSingle, prefixPlural))?
+                .invoke_unchecked((), (enumerator, prefixSingle, prefixPlural))?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetKeyString(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("GetKeyString")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetKeyString", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn GetMessageForSingleKey(
@@ -165,122 +398,6 @@ impl crate::UnityEngine::AddressableAssets::InvalidKeyException {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (keys))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetMultipleAssignableTypesMessage(
-        &mut self,
-        keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        typesAvailableForKey: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("GetMultipleAssignableTypesMessage")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetMultipleAssignableTypesMessage", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (keyString, typesAvailableForKey))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetNotFoundMessage(
-        &mut self,
-        keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        1usize,
-                    >("GetNotFoundMessage")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetNotFoundMessage", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (keyString))? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetTypeNotAssignableMessage(
-        &mut self,
-        keyString: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        typesAvailableForKey: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::HashSet_1<
-                quest_hook::libil2cpp::Gc<crate::System::Type>,
-            >,
-        >,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::HashSet_1<
-                                    quest_hook::libil2cpp::Gc<crate::System::Type>,
-                                >,
-                            >,
-                        ),
-                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                        2usize,
-                    >("GetTypeNotAssignableMessage")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTypeNotAssignableMessage", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppString,
-        > = unsafe {
-            cordl_method_info.invoke_unchecked(self, (keyString, typesAvailableForKey))?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn GetTypeToKeys(
@@ -923,5 +1040,106 @@ for crate::UnityEngine::AddressableAssets::InvalidKeyException {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException+Format")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum InvalidKeyException_Format {
+    #[default]
+    IntersectionAvailable = 9i32,
+    KeyAvailableAsType = 10i32,
+    MergeModeBase = 6i32,
+    MultipleTypeMismatch = 5i32,
+    MultipleTypesRequested = 2i32,
+    NoLocation = 3i32,
+    NoMergeMode = 1i32,
+    StandardMessage = 0i32,
+    TypeMismatch = 4i32,
+    UnionAvailableForKeys = 7i32,
+    UnionAvailableForKeysWithoutOther = 8i32,
+}
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException+Format")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::AddressableAssets::InvalidKeyException_Format {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.AddressableAssets";
+    const CLASS_NAME: &'static str = "InvalidKeyException/Format";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException+Format")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::AddressableAssets::InvalidKeyException_Format {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException+Format")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::AddressableAssets::InvalidKeyException_Format {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException+Format")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::AddressableAssets::InvalidKeyException_Format {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+AddressableAssets+InvalidKeyException+Format")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::AddressableAssets::InvalidKeyException_Format {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
     }
 }

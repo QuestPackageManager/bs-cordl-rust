@@ -10,6 +10,12 @@ pub struct OVRPassthroughLayer {
     pub overridePerLayerColorScaleAndOffset: bool,
     pub colorScale: crate::UnityEngine::Vector4,
     pub colorOffset: crate::UnityEngine::Vector4,
+    pub PassthroughLayerResumed: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    pub passthroughLayerResumed: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::Events::UnityEvent_1<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRPassthroughLayer>,
+        >,
+    >,
     pub colorMapEditorType_: crate::GlobalNamespace::OVRPassthroughLayer_ColorMapEditorType,
     pub colorMapEditorGradient: quest_hook::libil2cpp::Gc<crate::UnityEngine::Gradient>,
     pub colorMapEditorContrast: f32,
@@ -420,6 +426,29 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn IsUserDefinedAndDoesNotContainSurfaceGeometry(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        bool,
+                        0usize,
+                    >("IsUserDefinedAndDoesNotContainSurfaceGeometry")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsUserDefinedAndDoesNotContainSurfaceGeometry", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn LateUpdate(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -508,6 +537,32 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn OnPassthroughLayerResumed(
+        &mut self,
+        layerId: i32,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (i32),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("OnPassthroughLayerResumed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "OnPassthroughLayerResumed", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (layerId))?
         };
         Ok(__cordl_ret.into())
     }
@@ -905,6 +960,32 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn add_PassthroughLayerResumed(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("add_PassthroughLayerResumed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "add_PassthroughLayerResumed", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_colorMapEditorType(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1014,6 +1095,32 @@ impl crate::GlobalNamespace::OVRPassthroughLayer {
                     })
             });
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn remove_PassthroughLayerResumed(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("remove_PassthroughLayerResumed")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "remove_PassthroughLayerResumed", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn set_colorMapEditorType(

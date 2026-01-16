@@ -30,8 +30,22 @@ pub struct UIRenderDevice {
             >,
         >,
     >,
+    pub m_CommandLists: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::CommandList,
+                    >,
+                >,
+            >,
+        >,
+    >,
     pub m_Fences: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppArray<u32>>,
-    pub m_StandardMatProps: quest_hook::libil2cpp::Gc<
+    pub m_ConstantProps: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::MaterialPropertyBlock,
+    >,
+    pub m_BatchProps: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MaterialPropertyBlock,
     >,
     pub m_FrameIndex: u32,
@@ -48,8 +62,10 @@ pub struct UIRenderDevice {
     pub m_TextureSlotManager: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::TextureSlotManager,
     >,
-    pub _maxVerticesPerPage_k__BackingField: u32,
     pub _breakBatches_k__BackingField: bool,
+    pub _isFlat_k__BackingField: bool,
+    pub _drawsInCameras_k__BackingField: bool,
+    pub currentFrameCommandListCount: i32,
     pub _disposed_k__BackingField: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice")]
@@ -290,32 +306,28 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         st: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
         >,
-        allowMaterialChange: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
-                            >,
-                            bool,
-                        ),
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::UIElements::UIR::UIRenderDevice_EvaluationState,
+                        >),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        1usize,
                     >("ApplyBatchState")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ApplyBatchState", 2usize
+                            "ApplyBatchState", 1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (st, allowMaterialChange))?
+            cordl_method_info.invoke_unchecked(self, (st))?
         };
         Ok(__cordl_ret.into())
     }
@@ -436,24 +448,23 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn DrawRanges<I, T>(
+    pub fn DrawRanges(
         &mut self,
         ib: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
+            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<u16>,
         >,
         vb: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
+            crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<
+                crate::UnityEngine::UIElements::Vertex,
+            >,
         >,
         ranges: crate::Unity::Collections::NativeSlice_1<
             crate::UnityEngine::UIElements::UIR::DrawBufferRange,
         >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
-    where
-        I: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-        T: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
-            + quest_hook::libil2cpp::Returned,
-    {
+        commandList: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::CommandList,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -461,28 +472,35 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<I>,
+                                crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<
+                                    u16,
+                                >,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<T>,
+                                crate::UnityEngine::UIElements::UIR::Utility_GPUBuffer_1<
+                                    crate::UnityEngine::UIElements::Vertex,
+                                >,
                             >,
                             crate::Unity::Collections::NativeSlice_1<
                                 crate::UnityEngine::UIElements::UIR::DrawBufferRange,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::UIR::CommandList,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        4usize,
                     >("DrawRanges")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "DrawRanges", 3usize
+                            "DrawRanges", 4usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (ib, vb, ranges))?
+            cordl_method_info.invoke_unchecked(self, (ib, vb, ranges, commandList))?
         };
         Ok(__cordl_ret.into())
     }
@@ -496,14 +514,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         gradientSettings: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         shaderInfo: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
         pixelsPerPoint: f32,
-        transforms: crate::Unity::Collections::NativeSlice_1<
-            crate::UnityEngine::UIElements::UIR::Transform3x4,
-        >,
-        clipRects: crate::Unity::Collections::NativeSlice_1<crate::UnityEngine::Vector4>,
-        stateMatProps: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::MaterialPropertyBlock,
-        >,
-        allowMaterialChange: bool,
         immediateException: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<crate::System::Exception>,
         >,
@@ -522,28 +532,18 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
                             quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture>,
                             f32,
-                            crate::Unity::Collections::NativeSlice_1<
-                                crate::UnityEngine::UIElements::UIR::Transform3x4,
-                            >,
-                            crate::Unity::Collections::NativeSlice_1<
-                                crate::UnityEngine::Vector4,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::MaterialPropertyBlock,
-                            >,
-                            bool,
                             quest_hook::libil2cpp::ByRefMut<
                                 quest_hook::libil2cpp::Gc<crate::System::Exception>,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        11usize,
+                        7usize,
                     >("EvaluateChain")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "EvaluateChain", 11usize
+                            "EvaluateChain", 7usize
                         )
                     })
             });
@@ -558,10 +558,6 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                         gradientSettings,
                         shaderInfo,
                         pixelsPerPoint,
-                        transforms,
-                        clipRects,
-                        stateMatProps,
-                        allowMaterialChange,
                         immediateException,
                     ),
                 )?
@@ -680,6 +676,9 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         rangesStart: quest_hook::libil2cpp::ByRefMut<i32>,
         rangesCount: i32,
         curPage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
+        commandList: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::UIR::CommandList,
+        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -696,15 +695,18 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::UIR::Page,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::UIR::CommandList,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        6usize,
                     >("KickRanges")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "KickRanges", 5usize
+                            "KickRanges", 6usize
                         )
                     })
             });
@@ -712,7 +714,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (ranges, rangesReady, rangesStart, rangesCount, curPage),
+                    (ranges, rangesReady, rangesStart, rangesCount, curPage, commandList),
                 )?
         };
         Ok(__cordl_ret.into())
@@ -1330,54 +1332,102 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_defaultShaderInfoTexARGB8() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub fn get_commandLists(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::CommandList,
+                        >,
+                    >,
+                >,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
+                    .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                        quest_hook::libil2cpp::Gc<
+                            quest_hook::libil2cpp::Il2CppArray<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::System::Collections::Generic::List_1<
+                                        quest_hook::libil2cpp::Gc<
+                                            crate::UnityEngine::UIElements::UIR::CommandList,
+                                        >,
+                                    >,
+                                >,
+                            >,
+                        >,
                         0usize,
-                    >("get_defaultShaderInfoTexARGB8")
+                    >("get_commandLists")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_defaultShaderInfoTexARGB8", 0usize
+                            "get_commandLists", 0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<
+                quest_hook::libil2cpp::Gc<
+                    crate::System::Collections::Generic::List_1<
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::UIR::CommandList,
+                        >,
+                    >,
+                >,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_defaultShaderInfoTexFloat() -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+    pub fn get_currentFrameCommandLists(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::CommandList,
+                >,
+            >,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
+                    .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D>,
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Collections::Generic::List_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::UnityEngine::UIElements::UIR::CommandList,
+                                >,
+                            >,
+                        >,
                         0usize,
-                    >("get_defaultShaderInfoTexFloat")
+                    >("get_currentFrameCommandLists")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_defaultShaderInfoTexFloat", 0usize
+                            "get_currentFrameCommandLists", 0usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Texture2D> = unsafe {
-            cordl_method_info.invoke_unchecked((), ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::UIElements::UIR::CommandList,
+                >,
+            >,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_disposed(&mut self) -> quest_hook::libil2cpp::Result<bool> {
@@ -1397,6 +1447,40 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_drawsInCameras(&mut self) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), bool, 0usize>("get_drawsInCameras")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_drawsInCameras", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_frameIndex(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), u32, 0usize>("get_frameIndex")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_frameIndex", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_fullyCreated(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -1414,12 +1498,29 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
         let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn get_maxVerticesPerPage(&mut self) -> quest_hook::libil2cpp::Result<u32> {
+    pub fn get_isFlat(&mut self) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), u32, 0usize>("get_maxVerticesPerPage")
+                    .find_method::<(), bool, 0usize>("get_isFlat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_isFlat", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_maxVerticesPerPage() -> quest_hook::libil2cpp::Result<u32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(), u32, 0usize>("get_maxVerticesPerPage")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
@@ -1428,45 +1529,7 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                         )
                     })
             });
-        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_shaderModelIs35() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<(), bool, 0usize>("get_shaderModelIs35")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_shaderModelIs35", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_vertexTexturingIsAvailable() -> quest_hook::libil2cpp::Result<bool> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (),
-                        bool,
-                        0usize,
-                    >("get_vertexTexturingIsAvailable")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_vertexTexturingIsAvailable", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), ())? };
+        let __cordl_ret: u32 = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
     pub fn set_breakBatches(
@@ -1513,6 +1576,58 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_disposed", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_drawsInCameras(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_drawsInCameras")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_drawsInCameras", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_isFlat(
+        &mut self,
+        value: bool,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (bool),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_isFlat")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_isFlat", 1usize
                         )
                     })
             });
@@ -1768,6 +1883,17 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_AllocToUpdate {}
 pub struct UIRenderDevice_DeviceToFree {
     pub handle: u32,
     pub page: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
+    pub commandLists: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppArray<
+            quest_hook::libil2cpp::Gc<
+                crate::System::Collections::Generic::List_1<
+                    quest_hook::libil2cpp::Gc<
+                        crate::UnityEngine::UIElements::UIR::CommandList,
+                    >,
+                >,
+            >,
+        >,
+    >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice+DeviceToFree")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -1895,7 +2021,9 @@ pub struct UIRenderDevice_DrawStatistics {
     pub currentFrameIndex: i32,
     pub totalIndices: u32,
     pub commandCount: u32,
+    pub skippedCommandCount: u32,
     pub drawCommandCount: u32,
+    pub disableCommandCount: u32,
     pub materialSetCount: u32,
     pub drawRangeCount: u32,
     pub drawRangeCallCount: u32,
@@ -2003,15 +2131,18 @@ impl crate::UnityEngine::UIElements::UIR::UIRenderDevice_DrawStatistics {}
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct UIRenderDevice_EvaluationState {
-    pub stateMatProps: quest_hook::libil2cpp::Gc<
+    pub activeCommandList: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UIR::CommandList,
+    >,
+    pub constantProps: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::MaterialPropertyBlock,
     >,
+    pub batchProps: quest_hook::libil2cpp::Gc<crate::UnityEngine::MaterialPropertyBlock>,
     pub defaultMat: quest_hook::libil2cpp::Gc<crate::UnityEngine::Material>,
     pub curState: crate::UnityEngine::UIElements::UIR::State,
     pub curPage: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::Page>,
     pub mustApplyMaterial: bool,
-    pub mustApplyCommonBlock: bool,
-    pub mustApplyStateBlock: bool,
+    pub mustApplyBatchProps: bool,
     pub mustApplyStencil: bool,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+UIR+UIRenderDevice+EvaluationState")]

@@ -16,6 +16,7 @@ pub struct PyramidBloomRendererSO {
     pub kLegacyAutoExposureKeyword: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppString,
     >,
+    pub _legacyAutoExposureGlobalKeyword: crate::UnityEngine::Rendering::GlobalKeyword,
     pub _initialized: bool,
 }
 #[cfg(feature = "cordl_class_PyramidBloomRendererSO")]

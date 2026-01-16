@@ -3,6 +3,8 @@
 #[derive(Debug)]
 pub struct FloatingTransformEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _positionMultiplier: crate::UnityEngine::Vector3,
     pub _rotationMultiplier: crate::UnityEngine::Vector3,
     pub _rotationTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,

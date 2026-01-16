@@ -213,12 +213,65 @@ impl crate::System::CurrentSystemTimeZone {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetUtcOffsetFromUniversalTime(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+        isAmbiguousLocalDst: quest_hook::libil2cpp::ByRefMut<bool>,
+    ) -> quest_hook::libil2cpp::Result<i64> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::System::DateTime, quest_hook::libil2cpp::ByRefMut<bool>),
+                        i64,
+                        2usize,
+                    >("GetUtcOffsetFromUniversalTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetUtcOffsetFromUniversalTime", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i64 = unsafe {
+            cordl_method_info.invoke_unchecked(self, (_cordl_time, isAmbiguousLocalDst))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
+    }
+    pub fn ToLocalTime(
+        &mut self,
+        _cordl_time: crate::System::DateTime,
+    ) -> quest_hook::libil2cpp::Result<crate::System::DateTime> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::System::DateTime),
+                        crate::System::DateTime,
+                        1usize,
+                    >("ToLocalTime")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToLocalTime", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::DateTime = unsafe {
+            cordl_method_info.invoke_unchecked(self, (_cordl_time))?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn _ctor(
         &mut self,

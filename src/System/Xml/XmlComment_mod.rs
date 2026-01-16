@@ -239,6 +239,31 @@ impl crate::System::Xml::XmlComment {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_XPNodeType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::System::Xml::XPath::XPathNodeType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::System::Xml::XPath::XPathNodeType,
+                        0usize,
+                    >("get_XPNodeType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_XPNodeType", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::Xml::XPath::XPathNodeType = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "cordl_class_System+Xml+XmlComment")]
 impl quest_hook::libil2cpp::ObjectType for crate::System::Xml::XmlComment {

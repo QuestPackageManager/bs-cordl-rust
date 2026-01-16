@@ -3,9 +3,11 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum HierarchyChangeType {
     #[default]
-    Add = 0i32,
-    Move = 2i32,
-    Remove = 1i32,
+    AddedToParent = 0i32,
+    AttachedToPanel = 3i32,
+    ChildrenReordered = 2i32,
+    DetachedFromPanel = 4i32,
+    RemovedFromParent = 1i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+HierarchyChangeType")]
 unsafe impl quest_hook::libil2cpp::Type

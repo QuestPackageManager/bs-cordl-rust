@@ -35,6 +35,17 @@ pub struct AssetBundleResource {
     pub m_LastDownloadedByteCount: u64,
     pub m_TimeoutTimer: f32,
     pub m_TimeoutOverFrames: i32,
+    pub m_DownloadOnly: bool,
+    pub m_LastFrameCount: i32,
+    pub m_TimeSecSinceLastUpdate: f32,
+    pub m_RequestRetryCallback: quest_hook::libil2cpp::Gc<
+        crate::System::Func_2<
+            quest_hook::libil2cpp::Gc<
+                crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
+            >,
+            bool,
+        >,
+    >,
 }
 #[cfg(
     feature = "cordl_class_UnityEngine+ResourceManagement+ResourceProviders+AssetBundleResource"
@@ -107,6 +118,36 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (webRequestQueueOperation))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn AddBundleToProfiler(
+        &mut self,
+        status: crate::UnityEngine::ResourceManagement::Profiling::ContentStatus,
+        source: crate::UnityEngine::ResourceManagement::Util::BundleSource,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::UnityEngine::ResourceManagement::Profiling::ContentStatus,
+                            crate::UnityEngine::ResourceManagement::Util::BundleSource,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AddBundleToProfiler")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AddBundleToProfiler", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (status, source))?
         };
         Ok(__cordl_ret.into())
     }
@@ -602,11 +643,44 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn RemoveBundleFromProfiler(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("RemoveBundleFromProfiler")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "RemoveBundleFromProfiler", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Start(
         &mut self,
         provideHandle: crate::UnityEngine::ResourceManagement::ResourceProviders::ProvideHandle,
         unloadOp: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::AssetBundleUnloadOperation,
+        >,
+        requestRetryCallback: quest_hook::libil2cpp::Gc<
+            crate::System::Func_2<
+                quest_hook::libil2cpp::Gc<
+                    crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
+                >,
+                bool,
+            >,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -619,20 +693,29 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::AssetBundleUnloadOperation,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Func_2<
+                                    quest_hook::libil2cpp::Gc<
+                                        crate::UnityEngine::ResourceManagement::Util::UnityWebRequestResult,
+                                    >,
+                                    bool,
+                                >,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        2usize,
+                        3usize,
                     >("Start")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Start",
-                            2usize
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (provideHandle, unloadOp))?
+            cordl_method_info
+                .invoke_unchecked(self, (provideHandle, unloadOp, requestRetryCallback))?
         };
         Ok(__cordl_ret.into())
     }
@@ -733,7 +816,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _AddBeginWebRequestHandler_b__39_0(
+    pub fn _AddBeginWebRequestHandler_b__45_0(
         &mut self,
         asyncOp: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::Networking::UnityWebRequestAsyncOperation,
@@ -749,12 +832,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<AddBeginWebRequestHandler>b__39_0")
+                    >("<AddBeginWebRequestHandler>b__45_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<AddBeginWebRequestHandler>b__39_0", 1usize
+                            "<AddBeginWebRequestHandler>b__45_0", 1usize
                         )
                     })
             });
@@ -763,7 +846,7 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _GetAssetPreloadRequest_b__26_0(
+    pub fn _GetAssetPreloadRequest_b__30_0(
         &mut self,
         operation: quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -775,12 +858,12 @@ impl crate::UnityEngine::ResourceManagement::ResourceProviders::AssetBundleResou
                         (quest_hook::libil2cpp::Gc<crate::UnityEngine::AsyncOperation>),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("<GetAssetPreloadRequest>b__26_0")
+                    >("<GetAssetPreloadRequest>b__30_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<GetAssetPreloadRequest>b__26_0", 1usize
+                            "<GetAssetPreloadRequest>b__30_0", 1usize
                         )
                     })
             });

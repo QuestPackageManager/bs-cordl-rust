@@ -12,7 +12,7 @@ pub struct MultiplayerScoreRingManager {
         crate::GlobalNamespace::MultiplayerPlayersManager,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _spawnCenter: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapObjectSpawnCenter,

@@ -9,6 +9,12 @@ pub struct TextValueFieldTraits_2<
         TValueType,
         TValueUxmlAttributeType,
     >,
+    pub m_PlaceholderText: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlStringAttributeDescription,
+    >,
+    pub m_HidePlaceholderOnFocus: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
+    >,
     pub m_IsReadOnly: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UxmlBoolAttributeDescription,
     >,

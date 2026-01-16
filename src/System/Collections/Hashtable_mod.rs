@@ -53,16 +53,6 @@ impl std::ops::DerefMut for crate::System::Collections::Hashtable {
 }
 #[cfg(feature = "System+Collections+Hashtable")]
 impl crate::System::Collections::Hashtable {
-    pub const ComparerName: &'static str = "Comparer";
-    pub const HashCodeProviderName: &'static str = "HashCodeProvider";
-    pub const HashPrime: i32 = 101i32;
-    pub const HashSizeName: &'static str = "HashSize";
-    pub const InitialSize: i32 = 3i32;
-    pub const KeyComparerName: &'static str = "KeyComparer";
-    pub const KeysName: &'static str = "Keys";
-    pub const LoadFactorName: &'static str = "LoadFactor";
-    pub const ValuesName: &'static str = "Values";
-    pub const VersionName: &'static str = "Version";
     #[cfg(feature = "System+Collections+Hashtable+HashtableDebugView")]
     pub type HashtableDebugView = crate::System::Collections::Hashtable_HashtableDebugView;
     #[cfg(feature = "System+Collections+Hashtable+HashtableEnumerator")]

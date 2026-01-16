@@ -2,17 +2,24 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct PlatformInstaller {
-    __cordl_parent: crate::Zenject::Installer_3<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-        >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformInstaller>,
+    __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncInstaller,
+    pub _setupData: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
+    pub _appIdentification: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AppIdentificationSO,
     >,
-    pub _isTest: bool,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkConfigSO,
+    >,
+    pub _achievementIdsModel: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::AchievementIdsModelSO,
+    >,
     pub _mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
     >,
+    pub _platform: quest_hook::libil2cpp::Gc<
+        crate::OculusStudios::Platform::Core::IPlatform,
+    >,
+    pub _loggingCategory: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_PlatformInstaller")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformInstaller {
@@ -35,13 +42,7 @@ unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::PlatformInst
 }
 #[cfg(feature = "PlatformInstaller")]
 impl std::ops::Deref for crate::GlobalNamespace::PlatformInstaller {
-    type Target = crate::Zenject::Installer_3<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AppInitSetupData>,
-        quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-        >,
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::PlatformInstaller>,
-    >;
+    type Target = crate::BGLib::AppFlow::Initialization::AsyncInstaller;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -54,179 +55,41 @@ impl std::ops::DerefMut for crate::GlobalNamespace::PlatformInstaller {
 }
 #[cfg(feature = "PlatformInstaller")]
 impl crate::GlobalNamespace::PlatformInstaller {
-    pub fn BindAchievementsHandler(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn InitializeAnalyticsEventsDispatcherAsync(
+        telemetry: quest_hook::libil2cpp::Gc<crate::Analytics::Model::TelemetryModel>,
+        platform: quest_hook::libil2cpp::Gc<
+            crate::OculusStudios::Platform::Core::IPlatform,
+        >,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindAchievementsHandler")
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Analytics::Model::TelemetryModel,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::OculusStudios::Platform::Core::IPlatform,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        2usize,
+                    >("InitializeAnalyticsEventsDispatcherAsync")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindAchievementsHandler", 0usize
+                            "InitializeAnalyticsEventsDispatcherAsync", 2usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn BindAdditionalContentModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindAdditionalContentModel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindAdditionalContentModel", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn BindAnalyticsModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindAnalyticsModel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindAnalyticsModel", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn BindBeatmapDataAssetFileModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindBeatmapDataAssetFileModel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindBeatmapDataAssetFileModel", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn BindMockPlatformAdditionalContentModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindMockPlatformAdditionalContentModel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindMockPlatformAdditionalContentModel", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn BindPSPlusHandler(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindPSPlusHandler")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindPSPlusHandler", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn BindPlatformUserModel(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("BindPlatformUserModel")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "BindPlatformUserModel", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (telemetry, platform))? };
         Ok(__cordl_ret.into())
     }
     pub fn InstallBindings(
@@ -254,31 +117,12 @@ impl crate::GlobalNamespace::PlatformInstaller {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn New(
-        appInitSetupData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AppInitSetupData,
-        >,
-        mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-        >,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (appInitSetupData, mockPlatformAdditionalContentModelInitialData),
-            )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn _ctor(
+    pub fn LoadResourcesBeforeInstall(
         &mut self,
-        appInitSetupData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::AppInitSetupData,
+        registry: quest_hook::libil2cpp::Gc<
+            crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
         >,
-        mockPlatformAdditionalContentModelInitialData: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-        >,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -287,29 +131,87 @@ impl crate::GlobalNamespace::PlatformInstaller {
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::AppInitSetupData,
+                                crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::MockPlatformAdditionalContentModelInitialDataSO,
-                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
                         ),
                         quest_hook::libil2cpp::Void,
                         2usize,
-                    >(".ctor")
+                    >("LoadResourcesBeforeInstall")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadResourcesBeforeInstall", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (appInitSetupData, mockPlatformAdditionalContentModelInitialData),
-                )?
+            cordl_method_info.invoke_unchecked(self, (registry, container))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn LoadResourcesBeforeInstallAsync(
+        &mut self,
+        registry: quest_hook::libil2cpp::Gc<
+            crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+        >,
+        container: quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::BGLib::AppFlow::Initialization::AsyncInstaller_IInstallerRegistry,
+                            >,
+                            quest_hook::libil2cpp::Gc<crate::Zenject::DiContainer>,
+                        ),
+                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        2usize,
+                    >("LoadResourcesBeforeInstallAsync")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadResourcesBeforeInstallAsync", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, (registry, container))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
+        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
+            .instantiate();
+        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
+            .invoke_void(".ctor", ())?;
+        Ok(__cordl_object.into())
+    }
+    pub fn _ctor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>(".ctor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }

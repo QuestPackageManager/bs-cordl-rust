@@ -4,6 +4,7 @@
 pub enum DisconnectedReason {
     #[default]
     ClientConnectionClosed = 8i32,
+    IncompatibleServerAPI = 11i32,
     Kicked = 4i32,
     MasterServerUnreachable = 7i32,
     NetworkDisconnected = 9i32,

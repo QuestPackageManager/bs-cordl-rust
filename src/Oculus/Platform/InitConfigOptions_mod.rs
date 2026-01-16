@@ -4,6 +4,7 @@
 pub enum InitConfigOptions {
     #[default]
     DisableP2pNetworking = 484335070u32,
+    EnableCowatching = 2110899310u32,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+InitConfigOptions")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::InitConfigOptions {

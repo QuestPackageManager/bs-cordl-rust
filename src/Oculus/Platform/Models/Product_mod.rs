@@ -3,10 +3,27 @@
 #[derive(Debug)]
 pub struct Product {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
+    pub BillingPlansOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::BillingPlanList,
+    >,
+    pub BillingPlans: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::BillingPlanList,
+    >,
+    pub ContentRatingOptional: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::ContentRating,
+    >,
+    pub ContentRating: quest_hook::libil2cpp::Gc<
+        crate::Oculus::Platform::Models::ContentRating,
+    >,
+    pub CoverUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Description: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub FormattedPrice: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub IconUrl: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Name: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Price: quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::Price>,
+    pub ShortDescription: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub Sku: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub Type: crate::Oculus::Platform::ProductType,
 }
 #[cfg(feature = "cordl_class_Oculus+Platform+Models+Product")]
 unsafe impl quest_hook::libil2cpp::Type for crate::Oculus::Platform::Models::Product {

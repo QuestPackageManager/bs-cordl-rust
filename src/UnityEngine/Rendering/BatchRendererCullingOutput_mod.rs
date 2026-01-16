@@ -15,8 +15,12 @@ pub struct BatchRendererCullingOutput {
     pub cullingFlags: crate::UnityEngine::Rendering::BatchCullingFlags,
     pub viewID: u64,
     pub cullingLayerMask: u32,
+    pub splitExclusionMask: u8,
     pub sceneCullingMask: u64,
     pub drawCommands: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+    pub brgId: u32,
+    pub occlusionBuffer: crate::System::IntPtr,
+    pub customCullingResult: crate::System::IntPtr,
 }
 #[cfg(feature = "cordl_class_UnityEngine+Rendering+BatchRendererCullingOutput")]
 unsafe impl quest_hook::libil2cpp::Type

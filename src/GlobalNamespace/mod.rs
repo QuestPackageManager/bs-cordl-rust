@@ -16,9 +16,6 @@ pub use AchievementSO_mod::*;
 // class AchievementsEvaluationHandler_mod; export all
 mod AchievementsEvaluationHandler_mod;
 pub use AchievementsEvaluationHandler_mod::*;
-// class AchievementsModelSO_mod; export all
-mod AchievementsModelSO_mod;
-pub use AchievementsModelSO_mod::*;
 // class ActivateOnPlatform_mod; export all
 mod ActivateOnPlatform_mod;
 pub use ActivateOnPlatform_mod::*;
@@ -31,6 +28,9 @@ pub use AdditionalContentModel_mod::*;
 // class AddressablesConstants_mod; export all
 mod AddressablesConstants_mod;
 pub use AddressablesConstants_mod::*;
+// class AlertViewHUD_mod; export all
+mod AlertViewHUD_mod;
+pub use AlertViewHUD_mod::*;
 // class AlphaFloatFxGroupEffectTarget_mod; export all
 mod AlphaFloatFxGroupEffectTarget_mod;
 pub use AlphaFloatFxGroupEffectTarget_mod::*;
@@ -46,6 +46,9 @@ pub use AlphabetScrollbarInfoBeatmapLevelHelper_mod::*;
 // class AlwaysVisibleQuad_mod; export all
 mod AlwaysVisibleQuad_mod;
 pub use AlwaysVisibleQuad_mod::*;
+// class AnalyticsPostResponse_mod; export all
+mod AnalyticsPostResponse_mod;
+pub use AnalyticsPostResponse_mod::*;
 // class AnchorIntoParent_mod; export all
 mod AnchorIntoParent_mod;
 pub use AnchorIntoParent_mod::*;
@@ -67,9 +70,9 @@ pub use AnnotatedBeatmapLevelCollectionsGridView_mod::*;
 // class AnnotatedBeatmapLevelCollectionsViewController_mod; export all
 mod AnnotatedBeatmapLevelCollectionsViewController_mod;
 pub use AnnotatedBeatmapLevelCollectionsViewController_mod::*;
-// class AppInitScenesTransitionSetupDataContainerSO_mod; export all
-mod AppInitScenesTransitionSetupDataContainerSO_mod;
-pub use AppInitScenesTransitionSetupDataContainerSO_mod::*;
+// class AppIdentificationSO_mod; export all
+mod AppIdentificationSO_mod;
+pub use AppIdentificationSO_mod::*;
 // class AppInitScenesTransitionSetupDataSO_mod; export all
 mod AppInitScenesTransitionSetupDataSO_mod;
 pub use AppInitScenesTransitionSetupDataSO_mod::*;
@@ -97,9 +100,6 @@ pub use ArcVisibilityTypeSettingsDropdown_mod::*;
 // class ArcVisibilityType_mod; export all
 mod ArcVisibilityType_mod;
 pub use ArcVisibilityType_mod::*;
-// class ArgumentBase_mod; export all
-mod ArgumentBase_mod;
-pub use ArgumentBase_mod::*;
 // class ArrayExtension_mod; export all
 mod ArrayExtension_mod;
 pub use ArrayExtension_mod::*;
@@ -145,9 +145,12 @@ pub use AudioLatencyViewController_mod::*;
 // class AudioListenerController_mod; export all
 mod AudioListenerController_mod;
 pub use AudioListenerController_mod::*;
-// class AudioManagerSO_mod; export all
-mod AudioManagerSO_mod;
-pub use AudioManagerSO_mod::*;
+// class AudioManagerConfigSO_mod; export all
+mod AudioManagerConfigSO_mod;
+pub use AudioManagerConfigSO_mod::*;
+// class AudioManager_mod; export all
+mod AudioManager_mod;
+pub use AudioManager_mod::*;
 // class AudioPitchGainEffect_mod; export all
 mod AudioPitchGainEffect_mod;
 pub use AudioPitchGainEffect_mod::*;
@@ -271,9 +274,6 @@ pub use BaseNetworkPlayerModel_mod::*;
 // class BaseNoteVisuals_mod; export all
 mod BaseNoteVisuals_mod;
 pub use BaseNoteVisuals_mod::*;
-// class BasePlatformInit_mod; export all
-mod BasePlatformInit_mod;
-pub use BasePlatformInit_mod::*;
 // class BaseStateTransition_1_mod; export all
 mod BaseStateTransition_1_mod;
 pub use BaseStateTransition_1_mod::*;
@@ -331,9 +331,42 @@ pub use BeatLineManager_mod::*;
 // class BeatLine_mod; export all
 mod BeatLine_mod;
 pub use BeatLine_mod::*;
+// class BeatSaberConnectedPlayerFactory_mod; export all
+mod BeatSaberConnectedPlayerFactory_mod;
+pub use BeatSaberConnectedPlayerFactory_mod::*;
+// class BeatSaberConnectedPlayerManager_mod; export all
+mod BeatSaberConnectedPlayerManager_mod;
+pub use BeatSaberConnectedPlayerManager_mod::*;
+// class BeatSaberConnectedPlayer_mod; export all
+mod BeatSaberConnectedPlayer_mod;
+pub use BeatSaberConnectedPlayer_mod::*;
+// class BeatSaberDisconnectedPlayer_mod; export all
+mod BeatSaberDisconnectedPlayer_mod;
+pub use BeatSaberDisconnectedPlayer_mod::*;
+// class BeatSaberInit_mod; export all
+mod BeatSaberInit_mod;
+pub use BeatSaberInit_mod::*;
+// class BeatSaberMultiplayerSessionManager_mod; export all
+mod BeatSaberMultiplayerSessionManager_mod;
+pub use BeatSaberMultiplayerSessionManager_mod::*;
+// class BeatSaberNetworkConstants_mod; export all
+mod BeatSaberNetworkConstants_mod;
+pub use BeatSaberNetworkConstants_mod::*;
+// class BeatSaberNetworkUtility_mod; export all
+mod BeatSaberNetworkUtility_mod;
+pub use BeatSaberNetworkUtility_mod::*;
+// class BeatSaberPlayerIdentityPacketData_mod; export all
+mod BeatSaberPlayerIdentityPacketData_mod;
+pub use BeatSaberPlayerIdentityPacketData_mod::*;
 // class BeatSaberSessionEventType_mod; export all
 mod BeatSaberSessionEventType_mod;
 pub use BeatSaberSessionEventType_mod::*;
+// class BeatSaberX509CertificateUtility_mod; export all
+mod BeatSaberX509CertificateUtility_mod;
+pub use BeatSaberX509CertificateUtility_mod::*;
+// class BeatSaberXRFeature_mod; export all
+mod BeatSaberXRFeature_mod;
+pub use BeatSaberXRFeature_mod::*;
 // class BeatToTimeAndRotationConverter_mod; export all
 mod BeatToTimeAndRotationConverter_mod;
 pub use BeatToTimeAndRotationConverter_mod::*;
@@ -343,6 +376,9 @@ pub use BeatToTimeConverter_mod::*;
 // class BeatmapBasicData_mod; export all
 mod BeatmapBasicData_mod;
 pub use BeatmapBasicData_mod::*;
+// class BeatmapBoxConverterNoConvert_mod; export all
+mod BeatmapBoxConverterNoConvert_mod;
+pub use BeatmapBoxConverterNoConvert_mod::*;
 // class BeatmapCallbacksController_mod; export all
 mod BeatmapCallbacksController_mod;
 pub use BeatmapCallbacksController_mod::*;
@@ -427,6 +463,9 @@ pub use BeatmapDataObstaclesMergingTransform_mod::*;
 // class BeatmapDataSortedListForTypeAndIds_1_mod; export all
 mod BeatmapDataSortedListForTypeAndIds_1_mod;
 pub use BeatmapDataSortedListForTypeAndIds_1_mod::*;
+// class BeatmapDataStats_mod; export all
+mod BeatmapDataStats_mod;
+pub use BeatmapDataStats_mod::*;
 // class BeatmapDataStrobeFilterTransform_mod; export all
 mod BeatmapDataStrobeFilterTransform_mod;
 pub use BeatmapDataStrobeFilterTransform_mod::*;
@@ -496,9 +535,15 @@ pub use BeatmapEventDataProcessor_1_mod::*;
 // class BeatmapEventData_mod; export all
 mod BeatmapEventData_mod;
 pub use BeatmapEventData_mod::*;
+// class BeatmapEventRecorder_mod; export all
+mod BeatmapEventRecorder_mod;
+pub use BeatmapEventRecorder_mod::*;
 // class BeatmapEventTransitionType_mod; export all
 mod BeatmapEventTransitionType_mod;
 pub use BeatmapEventTransitionType_mod::*;
+// class BeatmapEventTweenRecorder_mod; export all
+mod BeatmapEventTweenRecorder_mod;
+pub use BeatmapEventTweenRecorder_mod::*;
 // class BeatmapEventTypeExtensions_mod; export all
 mod BeatmapEventTypeExtensions_mod;
 pub use BeatmapEventTypeExtensions_mod::*;
@@ -547,6 +592,15 @@ pub use BeatmapLevelLoader_mod::*;
 // class BeatmapLevelMask_mod; export all
 mod BeatmapLevelMask_mod;
 pub use BeatmapLevelMask_mod::*;
+// class BeatmapLevelOrPackIdAttribute_mod; export all
+mod BeatmapLevelOrPackIdAttribute_mod;
+pub use BeatmapLevelOrPackIdAttribute_mod::*;
+// class BeatmapLevelOrPackIdFilterExtensions_mod; export all
+mod BeatmapLevelOrPackIdFilterExtensions_mod;
+pub use BeatmapLevelOrPackIdFilterExtensions_mod::*;
+// class BeatmapLevelOrPackIdFilter_mod; export all
+mod BeatmapLevelOrPackIdFilter_mod;
+pub use BeatmapLevelOrPackIdFilter_mod::*;
 // class BeatmapLevelPackGroup_mod; export all
 mod BeatmapLevelPackGroup_mod;
 pub use BeatmapLevelPackGroup_mod::*;
@@ -607,6 +661,9 @@ pub use BeatmapObjectExecutionRatingsRecorder_mod::*;
 // class BeatmapObjectManager_mod; export all
 mod BeatmapObjectManager_mod;
 pub use BeatmapObjectManager_mod::*;
+// class BeatmapObjectRecorder_mod; export all
+mod BeatmapObjectRecorder_mod;
+pub use BeatmapObjectRecorder_mod::*;
 // class BeatmapObjectSpawnCenter_mod; export all
 mod BeatmapObjectSpawnCenter_mod;
 pub use BeatmapObjectSpawnCenter_mod::*;
@@ -631,6 +688,9 @@ pub use BeatmapObjectsInstaller_mod::*;
 // class BeatmapSaveDataHelpers_mod; export all
 mod BeatmapSaveDataHelpers_mod;
 pub use BeatmapSaveDataHelpers_mod::*;
+// class BeatmapSceneIdFilter_mod; export all
+mod BeatmapSceneIdFilter_mod;
+pub use BeatmapSceneIdFilter_mod::*;
 // class BeatmapSelectionView_mod; export all
 mod BeatmapSelectionView_mod;
 pub use BeatmapSelectionView_mod::*;
@@ -775,6 +835,9 @@ pub use BloomPrePassNonLightPass_mod::*;
 // class BloomPrePassRenderDataSO_mod; export all
 mod BloomPrePassRenderDataSO_mod;
 pub use BloomPrePassRenderDataSO_mod::*;
+// class BloomPrePassRendererFeature_mod; export all
+mod BloomPrePassRendererFeature_mod;
+pub use BloomPrePassRendererFeature_mod::*;
 // class BloomPrePassRendererSO_mod; export all
 mod BloomPrePassRendererSO_mod;
 pub use BloomPrePassRendererSO_mod::*;
@@ -886,9 +949,6 @@ pub use CenterStageScreenController_mod::*;
 // class ClickButtonWithCommandArgument_mod; export all
 mod ClickButtonWithCommandArgument_mod;
 pub use ClickButtonWithCommandArgument_mod::*;
-// class ClientCertificateValidator_mod; export all
-mod ClientCertificateValidator_mod;
-pub use ClientCertificateValidator_mod::*;
 // class ClothRandomFluctuation_mod; export all
 mod ClothRandomFluctuation_mod;
 pub use ClothRandomFluctuation_mod::*;
@@ -967,6 +1027,9 @@ pub use ColorSchemeDropdown_mod::*;
 // class ColorSchemeExtensions_mod; export all
 mod ColorSchemeExtensions_mod;
 pub use ColorSchemeExtensions_mod::*;
+// class ColorSchemeIdAttribute_mod; export all
+mod ColorSchemeIdAttribute_mod;
+pub use ColorSchemeIdAttribute_mod::*;
 // class ColorSchemeNetSerializable_mod; export all
 mod ColorSchemeNetSerializable_mod;
 pub use ColorSchemeNetSerializable_mod::*;
@@ -1045,9 +1108,15 @@ pub use CommandBufferOwners_mod::*;
 // class ComparisonOperation_mod; export all
 mod ComparisonOperation_mod;
 pub use ComparisonOperation_mod::*;
-// class CompetetiveActivitySO_mod; export all
-mod CompetetiveActivitySO_mod;
-pub use CompetetiveActivitySO_mod::*;
+// class CompatibilityVersion_mod; export all
+mod CompatibilityVersion_mod;
+pub use CompatibilityVersion_mod::*;
+// class CompletableViewController_1_mod; export all
+mod CompletableViewController_1_mod;
+pub use CompletableViewController_1_mod::*;
+// class CompletableViewController_mod; export all
+mod CompletableViewController_mod;
+pub use CompletableViewController_mod::*;
 // class ComponentExtensions_mod; export all
 mod ComponentExtensions_mod;
 pub use ComponentExtensions_mod::*;
@@ -1075,9 +1144,15 @@ pub use ConfigSerializer_mod::*;
 // class ConnectedPlayerHelpers_mod; export all
 mod ConnectedPlayerHelpers_mod;
 pub use ConnectedPlayerHelpers_mod::*;
+// class ConnectedPlayerManager_3_mod; export all
+mod ConnectedPlayerManager_3_mod;
+pub use ConnectedPlayerManager_3_mod::*;
 // class ConnectedPlayerManager_mod; export all
 mod ConnectedPlayerManager_mod;
 pub use ConnectedPlayerManager_mod::*;
+// class ConnectedPlayer_3_mod; export all
+mod ConnectedPlayer_3_mod;
+pub use ConnectedPlayer_3_mod::*;
 // class ConnectionErrorDialogViewController_mod; export all
 mod ConnectionErrorDialogViewController_mod;
 pub use ConnectionErrorDialogViewController_mod::*;
@@ -1090,18 +1165,15 @@ pub use ConnectionFailedReasonMethods_mod::*;
 // class ConnectionFailedReason_mod; export all
 mod ConnectionFailedReason_mod;
 pub use ConnectionFailedReason_mod::*;
-// class ConsoleCommandBase_mod; export all
-mod ConsoleCommandBase_mod;
-pub use ConsoleCommandBase_mod::*;
 // class ConstructorStringExtensions_mod; export all
 mod ConstructorStringExtensions_mod;
 pub use ConstructorStringExtensions_mod::*;
 // class ContinuousFireEffect_mod; export all
 mod ContinuousFireEffect_mod;
 pub use ContinuousFireEffect_mod::*;
-// class ControllersTransformSettingsViewController_mod; export all
-mod ControllersTransformSettingsViewController_mod;
-pub use ControllersTransformSettingsViewController_mod::*;
+// class ControllerConfiguration_mod; export all
+mod ControllerConfiguration_mod;
+pub use ControllerConfiguration_mod::*;
 // class CopyPosition_mod; export all
 mod CopyPosition_mod;
 pub use CopyPosition_mod::*;
@@ -1222,15 +1294,9 @@ pub use DeactivateAfterFirstFrame_mod::*;
 // class DeactivateAnimatorOnInputFocusCapture_mod; export all
 mod DeactivateAnimatorOnInputFocusCapture_mod;
 pub use DeactivateAnimatorOnInputFocusCapture_mod::*;
-// class DeactivateMenuControllersOnFocusCaptureOrTrackingLost_mod; export all
-mod DeactivateMenuControllersOnFocusCaptureOrTrackingLost_mod;
-pub use DeactivateMenuControllersOnFocusCaptureOrTrackingLost_mod::*;
-// class DebugConsoleController_mod; export all
-mod DebugConsoleController_mod;
-pub use DebugConsoleController_mod::*;
-// class DebugConsoleExtensionMethods_mod; export all
-mod DebugConsoleExtensionMethods_mod;
-pub use DebugConsoleExtensionMethods_mod::*;
+// class DeactivateVRControllersOnFocusCapture_mod; export all
+mod DeactivateVRControllersOnFocusCapture_mod;
+pub use DeactivateVRControllersOnFocusCapture_mod::*;
 // class DebugSettingsViewController_mod; export all
 mod DebugSettingsViewController_mod;
 pub use DebugSettingsViewController_mod::*;
@@ -1249,9 +1315,6 @@ pub use DefaultEnvironmentEvents_mod::*;
 // class DefaultSceneStart_mod; export all
 mod DefaultSceneStart_mod;
 pub use DefaultSceneStart_mod::*;
-// class DefaultScenesTransitionsFromInit_mod; export all
-mod DefaultScenesTransitionsFromInit_mod;
-pub use DefaultScenesTransitionsFromInit_mod::*;
 // class DefaultUnityXRHapticsHandler_mod; export all
 mod DefaultUnityXRHapticsHandler_mod;
 pub use DefaultUnityXRHapticsHandler_mod::*;
@@ -1294,6 +1357,9 @@ pub use DirectionalLightWithLightGroupIds_mod::*;
 // class DirectionalLight_mod; export all
 mod DirectionalLight_mod;
 pub use DirectionalLight_mod::*;
+// class DisableForVisualTestComparator_mod; export all
+mod DisableForVisualTestComparator_mod;
+pub use DisableForVisualTestComparator_mod::*;
 // class DisableGCWhileEnabled_mod; export all
 mod DisableGCWhileEnabled_mod;
 pub use DisableGCWhileEnabled_mod::*;
@@ -1312,9 +1378,6 @@ pub use DisableOnNonSteam_mod::*;
 // class DisableOnPlatform_mod; export all
 mod DisableOnPlatform_mod;
 pub use DisableOnPlatform_mod::*;
-// class DisableSpatializerOnUnsupportedPlatforms_mod; export all
-mod DisableSpatializerOnUnsupportedPlatforms_mod;
-pub use DisableSpatializerOnUnsupportedPlatforms_mod::*;
 // class DisableWhenMirrorIsEnabled_mod; export all
 mod DisableWhenMirrorIsEnabled_mod;
 pub use DisableWhenMirrorIsEnabled_mod::*;
@@ -1399,9 +1462,6 @@ pub use EffectPoolsManualInstaller_mod::*;
 // class EmitParticles_mod; export all
 mod EmitParticles_mod;
 pub use EmitParticles_mod::*;
-// class EmptyPlatformAchievementsHandler_mod; export all
-mod EmptyPlatformAchievementsHandler_mod;
-pub use EmptyPlatformAchievementsHandler_mod::*;
 // class EmptyPosesSerializer_mod; export all
 mod EmptyPosesSerializer_mod;
 pub use EmptyPosesSerializer_mod::*;
@@ -1417,6 +1477,9 @@ pub use EnableOnVisible_mod::*;
 // class EnableRendererWithLightId_mod; export all
 mod EnableRendererWithLightId_mod;
 pub use EnableRendererWithLightId_mod::*;
+// class EnableUnpremultipliedAlpha_mod; export all
+mod EnableUnpremultipliedAlpha_mod;
+pub use EnableUnpremultipliedAlpha_mod::*;
 // class EnabledTransitionSO_mod; export all
 mod EnabledTransitionSO_mod;
 pub use EnabledTransitionSO_mod::*;
@@ -1471,6 +1534,15 @@ pub use EnvironmentEffectsFilterPresetDropdown_mod::*;
 // class EnvironmentEffectsFilterPreset_mod; export all
 mod EnvironmentEffectsFilterPreset_mod;
 pub use EnvironmentEffectsFilterPreset_mod::*;
+// class EnvironmentIdAttribute_mod; export all
+mod EnvironmentIdAttribute_mod;
+pub use EnvironmentIdAttribute_mod::*;
+// class EnvironmentIdFilterExtensions_mod; export all
+mod EnvironmentIdFilterExtensions_mod;
+pub use EnvironmentIdFilterExtensions_mod::*;
+// class EnvironmentIdFilter_mod; export all
+mod EnvironmentIdFilter_mod;
+pub use EnvironmentIdFilter_mod::*;
 // class EnvironmentInfoSO_mod; export all
 mod EnvironmentInfoSO_mod;
 pub use EnvironmentInfoSO_mod::*;
@@ -1543,6 +1615,9 @@ pub use EventsTestScenesTransitionSetupDataSO_mod::*;
 // class ExceptionExtensions_mod; export all
 mod ExceptionExtensions_mod;
 pub use ExceptionExtensions_mod::*;
+// class ExclusiveFetchRequestAttribute_mod; export all
+mod ExclusiveFetchRequestAttribute_mod;
+pub use ExclusiveFetchRequestAttribute_mod::*;
 // class ExpiringDictionary_2_mod; export all
 mod ExpiringDictionary_2_mod;
 pub use ExpiringDictionary_2_mod::*;
@@ -1552,9 +1627,6 @@ pub use ExplicitContentWarningViewController_mod::*;
 // class ExtensionMethods_mod; export all
 mod ExtensionMethods_mod;
 pub use ExtensionMethods_mod::*;
-// class ExternalCamerasManager_mod; export all
-mod ExternalCamerasManager_mod;
-pub use ExternalCamerasManager_mod::*;
 // class FPSCounterUIController_mod; export all
 mod FPSCounterUIController_mod;
 pub use FPSCounterUIController_mod::*;
@@ -1573,9 +1645,6 @@ pub use FadeOutInstantly_mod::*;
 // class FadeOutOnSceneTransitionStart_mod; export all
 mod FadeOutOnSceneTransitionStart_mod;
 pub use FadeOutOnSceneTransitionStart_mod::*;
-// class FadeOutSongPreviewPlayerOnSceneTransitionStart_mod; export all
-mod FadeOutSongPreviewPlayerOnSceneTransitionStart_mod;
-pub use FadeOutSongPreviewPlayerOnSceneTransitionStart_mod::*;
 // class FakeMirrorObjectsInstaller_mod; export all
 mod FakeMirrorObjectsInstaller_mod;
 pub use FakeMirrorObjectsInstaller_mod::*;
@@ -1648,9 +1717,6 @@ pub use FirstPersonFlyingControllerEnableHandler_mod::*;
 // class FirstPersonFlyingController_mod; export all
 mod FirstPersonFlyingController_mod;
 pub use FirstPersonFlyingController_mod::*;
-// class FixedScenesScenesTransitionSetupDataSO_mod; export all
-mod FixedScenesScenesTransitionSetupDataSO_mod;
-pub use FixedScenesScenesTransitionSetupDataSO_mod::*;
 // class FixedSizeQueue_1_mod; export all
 mod FixedSizeQueue_1_mod;
 pub use FixedSizeQueue_1_mod::*;
@@ -1669,9 +1735,15 @@ pub use FloatArrayMaterialPropertyEffectTarget_mod::*;
 // class FloatFxBaseData_mod; export all
 mod FloatFxBaseData_mod;
 pub use FloatFxBaseData_mod::*;
+// class FloatFxBeatmapEventDataBox_2_mod; export all
+mod FloatFxBeatmapEventDataBox_2_mod;
+pub use FloatFxBeatmapEventDataBox_2_mod::*;
 // class FloatFxBeatmapEventDataBox_mod; export all
 mod FloatFxBeatmapEventDataBox_mod;
 pub use FloatFxBeatmapEventDataBox_mod::*;
+// class FloatFxBeatmapEventDataProcessor_1_mod; export all
+mod FloatFxBeatmapEventDataProcessor_1_mod;
+pub use FloatFxBeatmapEventDataProcessor_1_mod::*;
 // class FloatFxBeatmapEventDataProcessor_mod; export all
 mod FloatFxBeatmapEventDataProcessor_mod;
 pub use FloatFxBeatmapEventDataProcessor_mod::*;
@@ -1693,15 +1765,36 @@ pub use FloatFxGroupEffect_mod::*;
 // class FloatFxGroup_mod; export all
 mod FloatFxGroup_mod;
 pub use FloatFxGroup_mod::*;
+// class FloatLocalScaleEffect_mod; export all
+mod FloatLocalScaleEffect_mod;
+pub use FloatLocalScaleEffect_mod::*;
 // class FloatMaterialPropertyEffectTarget_mod; export all
 mod FloatMaterialPropertyEffectTarget_mod;
 pub use FloatMaterialPropertyEffectTarget_mod::*;
+// class FloatSDFPointScaleEffect_mod; export all
+mod FloatSDFPointScaleEffect_mod;
+pub use FloatSDFPointScaleEffect_mod::*;
 // class FloatSO_mod; export all
 mod FloatSO_mod;
 pub use FloatSO_mod::*;
 // class FloatSignal_mod; export all
 mod FloatSignal_mod;
 pub use FloatSignal_mod::*;
+// class FloatTextureProcessor3DMappingFloatEffectTarget_mod; export all
+mod FloatTextureProcessor3DMappingFloatEffectTarget_mod;
+pub use FloatTextureProcessor3DMappingFloatEffectTarget_mod::*;
+// class FloatTextureProcessor3DMappingVectorEffectTarget_mod; export all
+mod FloatTextureProcessor3DMappingVectorEffectTarget_mod;
+pub use FloatTextureProcessor3DMappingVectorEffectTarget_mod::*;
+// class FloatTextureProcessor3DMaterialSwitchEffectTarget_mod; export all
+mod FloatTextureProcessor3DMaterialSwitchEffectTarget_mod;
+pub use FloatTextureProcessor3DMaterialSwitchEffectTarget_mod::*;
+// class FloatTextureProcessor3DParameterEffectTarget_mod; export all
+mod FloatTextureProcessor3DParameterEffectTarget_mod;
+pub use FloatTextureProcessor3DParameterEffectTarget_mod::*;
+// class FloatTextureProcessor3DPresetEffectTarget_mod; export all
+mod FloatTextureProcessor3DPresetEffectTarget_mod;
+pub use FloatTextureProcessor3DPresetEffectTarget_mod::*;
 // class FloatTransitionSO_mod; export all
 mod FloatTransitionSO_mod;
 pub use FloatTransitionSO_mod::*;
@@ -1753,18 +1846,12 @@ pub use FriendsViewController_mod::*;
 // class FullComboMissionObjectiveChecker_mod; export all
 mod FullComboMissionObjectiveChecker_mod;
 pub use FullComboMissionObjectiveChecker_mod::*;
+// class FullScreenPassRendererFeature_mod; export all
+mod FullScreenPassRendererFeature_mod;
+pub use FullScreenPassRendererFeature_mod::*;
 // class FxBaseData_mod; export all
 mod FxBaseData_mod;
 pub use FxBaseData_mod::*;
-// class FxBeatmapEventDataBox_2_mod; export all
-mod FxBeatmapEventDataBox_2_mod;
-pub use FxBeatmapEventDataBox_2_mod::*;
-// class FxBeatmapEventDataProcessor_1_mod; export all
-mod FxBeatmapEventDataProcessor_1_mod;
-pub use FxBeatmapEventDataProcessor_1_mod::*;
-// class FxBeatmapEventData_mod; export all
-mod FxBeatmapEventData_mod;
-pub use FxBeatmapEventData_mod::*;
 // class GameCoreSceneSetupData_mod; export all
 mod GameCoreSceneSetupData_mod;
 pub use GameCoreSceneSetupData_mod::*;
@@ -1864,6 +1951,12 @@ pub use GameStateType_mod::*;
 // class GameState_mod; export all
 mod GameState_mod;
 pub use GameState_mod::*;
+// class GameplayAdditionalInformationSetupData_mod; export all
+mod GameplayAdditionalInformationSetupData_mod;
+pub use GameplayAdditionalInformationSetupData_mod::*;
+// class GameplayAdditionalInformation_mod; export all
+mod GameplayAdditionalInformation_mod;
+pub use GameplayAdditionalInformation_mod::*;
 // class GameplayCoreInstaller_mod; export all
 mod GameplayCoreInstaller_mod;
 pub use GameplayCoreInstaller_mod::*;
@@ -1942,15 +2035,6 @@ pub use GeometryTools_mod::*;
 // class GetAssetBundleFileResult_mod; export all
 mod GetAssetBundleFileResult_mod;
 pub use GetAssetBundleFileResult_mod::*;
-// class GetXPlatformAccessTokenRequestSony_mod; export all
-mod GetXPlatformAccessTokenRequestSony_mod;
-pub use GetXPlatformAccessTokenRequestSony_mod::*;
-// class GetXPlatformAccessTokenRequestSteam_mod; export all
-mod GetXPlatformAccessTokenRequestSteam_mod;
-pub use GetXPlatformAccessTokenRequestSteam_mod::*;
-// class GetXPlatformAccessTokenResponse_mod; export all
-mod GetXPlatformAccessTokenResponse_mod;
-pub use GetXPlatformAccessTokenResponse_mod::*;
 // class GhostDuplicationEffect_mod; export all
 mod GhostDuplicationEffect_mod;
 pub use GhostDuplicationEffect_mod::*;
@@ -1987,42 +2071,21 @@ pub use GraphicSettingsConditionalActivator_mod::*;
 // class GraphicSettingsViewController_mod; export all
 mod GraphicSettingsViewController_mod;
 pub use GraphicSettingsViewController_mod::*;
+// class GridElementController_mod; export all
+mod GridElementController_mod;
+pub use GridElementController_mod::*;
 // class GridView_mod; export all
 mod GridView_mod;
 pub use GridView_mod::*;
 // class GroundShadow_mod; export all
 mod GroundShadow_mod;
 pub use GroundShadow_mod::*;
-// class GroupPresenceSample_mod; export all
-mod GroupPresenceSample_mod;
-pub use GroupPresenceSample_mod::*;
 // class GuestNameButtonsListItem_mod; export all
 mod GuestNameButtonsListItem_mod;
 pub use GuestNameButtonsListItem_mod::*;
 // class GuestNameButtonsListItemsList_mod; export all
 mod GuestNameButtonsListItemsList_mod;
 pub use GuestNameButtonsListItemsList_mod::*;
-// class HEU_AssetEventReceiverTest_mod; export all
-mod HEU_AssetEventReceiverTest_mod;
-pub use HEU_AssetEventReceiverTest_mod::*;
-// class HEU_BoundingVolume_mod; export all
-mod HEU_BoundingVolume_mod;
-pub use HEU_BoundingVolume_mod::*;
-// class HEU_ExampleEvergreenQuery_mod; export all
-mod HEU_ExampleEvergreenQuery_mod;
-pub use HEU_ExampleEvergreenQuery_mod::*;
-// class HEU_ExampleInstanceCustomAttribute_mod; export all
-mod HEU_ExampleInstanceCustomAttribute_mod;
-pub use HEU_ExampleInstanceCustomAttribute_mod::*;
-// class HEU_ScriptCallbackExample_mod; export all
-mod HEU_ScriptCallbackExample_mod;
-pub use HEU_ScriptCallbackExample_mod::*;
-// class HEU_ScriptMeshInputUVLayoutExample_mod; export all
-mod HEU_ScriptMeshInputUVLayoutExample_mod;
-pub use HEU_ScriptMeshInputUVLayoutExample_mod::*;
-// class HEU_ScriptParameterExample_mod; export all
-mod HEU_ScriptParameterExample_mod;
-pub use HEU_ScriptParameterExample_mod::*;
 // class HMAsyncRequest_mod; export all
 mod HMAsyncRequest_mod;
 pub use HMAsyncRequest_mod::*;
@@ -2038,9 +2101,6 @@ pub use HandsMovementMissionObjectiveChecker_mod::*;
 // class HapticFeedbackManager_mod; export all
 mod HapticFeedbackManager_mod;
 pub use HapticFeedbackManager_mod::*;
-// class HapticsAudioClipPlayer_mod; export all
-mod HapticsAudioClipPlayer_mod;
-pub use HapticsAudioClipPlayer_mod::*;
 // class HardwareCategories_mod; export all
 mod HardwareCategories_mod;
 pub use HardwareCategories_mod::*;
@@ -2065,15 +2125,9 @@ pub use HealthWarningDisplayViewController_mod::*;
 // class HealthWarningFlowCoordinator_mod; export all
 mod HealthWarningFlowCoordinator_mod;
 pub use HealthWarningFlowCoordinator_mod::*;
-// class HealthWarningNoTransitionInstaller_mod; export all
-mod HealthWarningNoTransitionInstaller_mod;
-pub use HealthWarningNoTransitionInstaller_mod::*;
 // class HealthWarningSceneSetupData_mod; export all
 mod HealthWarningSceneSetupData_mod;
 pub use HealthWarningSceneSetupData_mod::*;
-// class HealthWarningSceneSetup_mod; export all
-mod HealthWarningSceneSetup_mod;
-pub use HealthWarningSceneSetup_mod::*;
 // class HealthWarningScenesTransitionSetupDataSO_mod; export all
 mod HealthWarningScenesTransitionSetupDataSO_mod;
 pub use HealthWarningScenesTransitionSetupDataSO_mod::*;
@@ -2089,15 +2143,15 @@ pub use HelpMenuViewController_mod::*;
 // class HelpNavigationController_mod; export all
 mod HelpNavigationController_mod;
 pub use HelpNavigationController_mod::*;
-// class HierarchyIgnorePrefabOverrides_mod; export all
-mod HierarchyIgnorePrefabOverrides_mod;
-pub use HierarchyIgnorePrefabOverrides_mod::*;
 // class HologramRays_mod; export all
 mod HologramRays_mod;
 pub use HologramRays_mod::*;
 // class HowToPlayViewController_mod; export all
 mod HowToPlayViewController_mod;
 pub use HowToPlayViewController_mod::*;
+// class HttpBadRequestException_mod; export all
+mod HttpBadRequestException_mod;
+pub use HttpBadRequestException_mod::*;
 // class HydraulicCarJumpEffect_mod; export all
 mod HydraulicCarJumpEffect_mod;
 pub use HydraulicCarJumpEffect_mod::*;
@@ -2116,6 +2170,9 @@ pub use IAdditionalContentModel_mod::*;
 // class IAnalyticsModel_mod; export all
 mod IAnalyticsModel_mod;
 pub use IAnalyticsModel_mod::*;
+// class IAppIdentification_mod; export all
+mod IAppIdentification_mod;
+pub use IAppIdentification_mod::*;
 // class IAssetSongAudioClipProvider_mod; export all
 mod IAssetSongAudioClipProvider_mod;
 pub use IAssetSongAudioClipProvider_mod::*;
@@ -2140,12 +2197,21 @@ pub use IBakedLightWithRenderer_mod::*;
 // class IBeatEffectDidFinishEvent_mod; export all
 mod IBeatEffectDidFinishEvent_mod;
 pub use IBeatEffectDidFinishEvent_mod::*;
+// class IBeatSaberConnectedPlayer_mod; export all
+mod IBeatSaberConnectedPlayer_mod;
+pub use IBeatSaberConnectedPlayer_mod::*;
 // class IBeatSaberLogger_mod; export all
 mod IBeatSaberLogger_mod;
 pub use IBeatSaberLogger_mod::*;
+// class IBeatSaberMultiplayerSessionManager_mod; export all
+mod IBeatSaberMultiplayerSessionManager_mod;
+pub use IBeatSaberMultiplayerSessionManager_mod::*;
 // class IBeatToTimeConverter_mod; export all
 mod IBeatToTimeConverter_mod;
 pub use IBeatToTimeConverter_mod::*;
+// class IBeatmapBoxConverter_mod; export all
+mod IBeatmapBoxConverter_mod;
+pub use IBeatmapBoxConverter_mod::*;
 // class IBeatmapDataAssetFileModel_mod; export all
 mod IBeatmapDataAssetFileModel_mod;
 pub use IBeatmapDataAssetFileModel_mod::*;
@@ -2197,6 +2263,9 @@ pub use IComponentRefresher_mod::*;
 // class IConnectedPlayerBeatmapObjectEventManager_mod; export all
 mod IConnectedPlayerBeatmapObjectEventManager_mod;
 pub use IConnectedPlayerBeatmapObjectEventManager_mod::*;
+// class IConnectedPlayerFactory_3_mod; export all
+mod IConnectedPlayerFactory_3_mod;
+pub use IConnectedPlayerFactory_3_mod::*;
 // class IConnectedPlayer_mod; export all
 mod IConnectedPlayer_mod;
 pub use IConnectedPlayer_mod::*;
@@ -2230,6 +2299,9 @@ pub use ICutScoreBufferDidChangeReceiver_mod::*;
 // class ICutScoreBufferDidFinishReceiver_mod; export all
 mod ICutScoreBufferDidFinishReceiver_mod;
 pub use ICutScoreBufferDidFinishReceiver_mod::*;
+// class IDType_mod; export all
+mod IDType_mod;
+pub use IDType_mod::*;
 // class IDeeplinkManager_mod; export all
 mod IDeeplinkManager_mod;
 pub use IDeeplinkManager_mod::*;
@@ -2287,6 +2359,9 @@ pub use IGameNoteMirrorable_mod::*;
 // class IGamePause_mod; export all
 mod IGamePause_mod;
 pub use IGamePause_mod::*;
+// class IGameplayColorScheme_mod; export all
+mod IGameplayColorScheme_mod;
+pub use IGameplayColorScheme_mod::*;
 // class IGameplayRpcManager_mod; export all
 mod IGameplayRpcManager_mod;
 pub use IGameplayRpcManager_mod::*;
@@ -2335,9 +2410,15 @@ pub use ILevelStartController_mod::*;
 // class ILightGroup_mod; export all
 mod ILightGroup_mod;
 pub use ILightGroup_mod::*;
+// class ILightTransformGroup_mod; export all
+mod ILightTransformGroup_mod;
+pub use ILightTransformGroup_mod::*;
 // class ILightWithId_mod; export all
 mod ILightWithId_mod;
 pub use ILightWithId_mod::*;
+// class ILightshowColorScheme_mod; export all
+mod ILightshowColorScheme_mod;
+pub use ILightshowColorScheme_mod::*;
 // class ILobbyGameStateControllerBase_mod; export all
 mod ILobbyGameStateControllerBase_mod;
 pub use ILobbyGameStateControllerBase_mod::*;
@@ -2386,9 +2467,15 @@ pub use IMultiplayerObservable_mod::*;
 // class IMultiplayerRichPresenceData_mod; export all
 mod IMultiplayerRichPresenceData_mod;
 pub use IMultiplayerRichPresenceData_mod::*;
-// class IMultiplayerSessionManager_mod; export all
-mod IMultiplayerSessionManager_mod;
-pub use IMultiplayerSessionManager_mod::*;
+// class IMultiplayerSessionManager_1_mod; export all
+mod IMultiplayerSessionManager_1_mod;
+pub use IMultiplayerSessionManager_1_mod::*;
+// class IMultiplayerSessionManager_4_mod; export all
+mod IMultiplayerSessionManager_4_mod;
+pub use IMultiplayerSessionManager_4_mod::*;
+// class IMultiplayerSessionMessageProcessor_2_mod; export all
+mod IMultiplayerSessionMessageProcessor_2_mod;
+pub use IMultiplayerSessionMessageProcessor_2_mod::*;
 // class IMultiplayerSpectatingSpot_mod; export all
 mod IMultiplayerSpectatingSpot_mod;
 pub use IMultiplayerSpectatingSpot_mod::*;
@@ -2476,12 +2563,6 @@ pub use IPacketPool_1_mod::*;
 // class IPacketPool_mod; export all
 mod IPacketPool_mod;
 pub use IPacketPool_mod::*;
-// class IPlatformAchievementsHandler_mod; export all
-mod IPlatformAchievementsHandler_mod;
-pub use IPlatformAchievementsHandler_mod::*;
-// class IPlatformUserModel_mod; export all
-mod IPlatformUserModel_mod;
-pub use IPlatformUserModel_mod::*;
 // class IPlayerDataModel_mod; export all
 mod IPlayerDataModel_mod;
 pub use IPlayerDataModel_mod::*;
@@ -2503,6 +2584,9 @@ pub use IPreviewMediaData_mod::*;
 // class IQuickPlaySetupModel_mod; export all
 mod IQuickPlaySetupModel_mod;
 pub use IQuickPlaySetupModel_mod::*;
+// class IRandom_mod; export all
+mod IRandom_mod;
+pub use IRandom_mod::*;
 // class IReadOnlyColorStyle_mod; export all
 mod IReadOnlyColorStyle_mod;
 pub use IReadOnlyColorStyle_mod::*;
@@ -2521,6 +2605,9 @@ pub use IReadonlyCutScoreBuffer_mod::*;
 // class IReferenceCountingCache_2_mod; export all
 mod IReferenceCountingCache_2_mod;
 pub use IReferenceCountingCache_2_mod::*;
+// class IRefractorDebuggerSettings_mod; export all
+mod IRefractorDebuggerSettings_mod;
+pub use IRefractorDebuggerSettings_mod::*;
 // class IRefreshable_mod; export all
 mod IRefreshable_mod;
 pub use IRefreshable_mod::*;
@@ -2569,12 +2656,6 @@ pub use IServerBeatmapProviderManager_mod::*;
 // class IServerBeatmapProvider_mod; export all
 mod IServerBeatmapProvider_mod;
 pub use IServerBeatmapProvider_mod::*;
-// class IServerSongPackProviderManager_mod; export all
-mod IServerSongPackProviderManager_mod;
-pub use IServerSongPackProviderManager_mod::*;
-// class IServerSongPackProvider_mod; export all
-mod IServerSongPackProvider_mod;
-pub use IServerSongPackProvider_mod::*;
 // class ISliderDidDissolveEvent_mod; export all
 mod ISliderDidDissolveEvent_mod;
 pub use ISliderDidDissolveEvent_mod::*;
@@ -2590,18 +2671,6 @@ pub use ISliderHeadDidMovePastCutMarkEvent_mod::*;
 // class ISliderTailDidMovePastCutMarkEvent_mod; export all
 mod ISliderTailDidMovePastCutMarkEvent_mod;
 pub use ISliderTailDidMovePastCutMarkEvent_mod::*;
-// class ISonyCommerceHelper_mod; export all
-mod ISonyCommerceHelper_mod;
-pub use ISonyCommerceHelper_mod::*;
-// class ISonyOnlineServicesAvailabilityModel_mod; export all
-mod ISonyOnlineServicesAvailabilityModel_mod;
-pub use ISonyOnlineServicesAvailabilityModel_mod::*;
-// class ISonyPSPremiumHelper_mod; export all
-mod ISonyPSPremiumHelper_mod;
-pub use ISonyPSPremiumHelper_mod::*;
-// class ISonyPlatformManager_mod; export all
-mod ISonyPlatformManager_mod;
-pub use ISonyPlatformManager_mod::*;
 // class ISortedListItemProcessor_1_mod; export all
 mod ISortedListItemProcessor_1_mod;
 pub use ISortedListItemProcessor_1_mod::*;
@@ -2683,6 +2752,12 @@ pub use IncDecSettingsController_mod::*;
 // class IndexFilter_mod; export all
 mod IndexFilter_mod;
 pub use IndexFilter_mod::*;
+// class InitialDestinationResolver_mod; export all
+mod InitialDestinationResolver_mod;
+pub use InitialDestinationResolver_mod::*;
+// class InlineLinkAttribute_mod; export all
+mod InlineLinkAttribute_mod;
+pub use InlineLinkAttribute_mod::*;
 // class InputActions_mod; export all
 mod InputActions_mod;
 pub use InputActions_mod::*;
@@ -2701,6 +2776,9 @@ pub use IntFxBaseData_mod::*;
 // class IntVfxBeatmapEventDataBox_mod; export all
 mod IntVfxBeatmapEventDataBox_mod;
 pub use IntVfxBeatmapEventDataBox_mod::*;
+// class InternalPlatformInstaller_mod; export all
+mod InternalPlatformInstaller_mod;
+pub use InternalPlatformInstaller_mod::*;
 // class InternetConnectionChecker_mod; export all
 mod InternetConnectionChecker_mod;
 pub use InternetConnectionChecker_mod::*;
@@ -2746,6 +2824,9 @@ pub use KawaseBloomMainEffectSO_mod::*;
 // class KawaseBlurRendererSO_mod; export all
 mod KawaseBlurRendererSO_mod;
 pub use KawaseBlurRendererSO_mod::*;
+// class KickPlayerPacket_mod; export all
+mod KickPlayerPacket_mod;
+pub use KickPlayerPacket_mod::*;
 // class KnucklesUnityXRHapticsHandler_mod; export all
 mod KnucklesUnityXRHapticsHandler_mod;
 pub use KnucklesUnityXRHapticsHandler_mod::*;
@@ -2794,6 +2875,9 @@ pub use LeaderboardUploadData_mod::*;
 // class LeaderboardViewController_mod; export all
 mod LeaderboardViewController_mod;
 pub use LeaderboardViewController_mod::*;
+// class LerpMask_mod; export all
+mod LerpMask_mod;
+pub use LerpMask_mod::*;
 // class LevelBar_mod; export all
 mod LevelBar_mod;
 pub use LevelBar_mod::*;
@@ -2998,6 +3082,9 @@ pub use LightRotationGroup_mod::*;
 // class LightSwitchEventEffect_mod; export all
 mod LightSwitchEventEffect_mod;
 pub use LightSwitchEventEffect_mod::*;
+// class LightTransformGroupType_mod; export all
+mod LightTransformGroupType_mod;
+pub use LightTransformGroupType_mod::*;
 // class LightTransformGroup_3_mod; export all
 mod LightTransformGroup_3_mod;
 pub use LightTransformGroup_3_mod::*;
@@ -3085,9 +3172,6 @@ pub use LiteNetLibConnectionManager_mod::*;
 // class LoadBeatmapLevelDataResult_mod; export all
 mod LoadBeatmapLevelDataResult_mod;
 pub use LoadBeatmapLevelDataResult_mod::*;
-// class LoadGameLoaderAfterSplashScreen_mod; export all
-mod LoadGameLoaderAfterSplashScreen_mod;
-pub use LoadGameLoaderAfterSplashScreen_mod::*;
 // class LoadingControl_mod; export all
 mod LoadingControl_mod;
 pub use LoadingControl_mod::*;
@@ -3145,6 +3229,15 @@ pub use LocalMultiplayerSyncState_3_mod::*;
 // class LocalPlayerInGameMenuInitData_mod; export all
 mod LocalPlayerInGameMenuInitData_mod;
 pub use LocalPlayerInGameMenuInitData_mod::*;
+// class LocalServerConnectionManager_mod; export all
+mod LocalServerConnectionManager_mod;
+pub use LocalServerConnectionManager_mod::*;
+// class LocalServerConnectionRequestHandler_mod; export all
+mod LocalServerConnectionRequestHandler_mod;
+pub use LocalServerConnectionRequestHandler_mod::*;
+// class LocalServerNetworkPlayerModel_mod; export all
+mod LocalServerNetworkPlayerModel_mod;
+pub use LocalServerNetworkPlayerModel_mod::*;
 // class LocalStateBuffer_3_mod; export all
 mod LocalStateBuffer_3_mod;
 pub use LocalStateBuffer_3_mod::*;
@@ -3187,6 +3280,9 @@ pub use MainEffectCore_mod::*;
 // class MainEffectGraphicsSettingsPresetsSO_mod; export all
 mod MainEffectGraphicsSettingsPresetsSO_mod;
 pub use MainEffectGraphicsSettingsPresetsSO_mod::*;
+// class MainEffectRendererFeature_mod; export all
+mod MainEffectRendererFeature_mod;
+pub use MainEffectRendererFeature_mod::*;
 // class MainEffectSO_mod; export all
 mod MainEffectSO_mod;
 pub use MainEffectSO_mod::*;
@@ -3277,6 +3373,9 @@ pub use MaterialSwapTransitionSO_mod::*;
 // class MathfExtra_mod; export all
 mod MathfExtra_mod;
 pub use MathfExtra_mod::*;
+// class MaxHeightVerticalLayoutGroup_mod; export all
+mod MaxHeightVerticalLayoutGroup_mod;
+pub use MaxHeightVerticalLayoutGroup_mod::*;
 // class MediaAsyncLoader_mod; export all
 mod MediaAsyncLoader_mod;
 pub use MediaAsyncLoader_mod::*;
@@ -3322,6 +3421,9 @@ pub use MenuTransitionsHelper_mod::*;
 // class MeshRendererSwitchEventEffect_mod; export all
 mod MeshRendererSwitchEventEffect_mod;
 pub use MeshRendererSwitchEventEffect_mod::*;
+// class MirrorCamera_mod; export all
+mod MirrorCamera_mod;
+pub use MirrorCamera_mod::*;
 // class MirrorRendererGraphicsSettingsPresets_mod; export all
 mod MirrorRendererGraphicsSettingsPresets_mod;
 pub use MirrorRendererGraphicsSettingsPresets_mod::*;
@@ -3547,9 +3649,6 @@ pub use MockPlatformAdditionalContentModel_mod::*;
 // class MockPlatformEntitlement_mod; export all
 mod MockPlatformEntitlement_mod;
 pub use MockPlatformEntitlement_mod::*;
-// class MockPlatformUserModel_mod; export all
-mod MockPlatformUserModel_mod;
-pub use MockPlatformUserModel_mod::*;
 // class MockPlayerAuthenticationTokenProvider_mod; export all
 mod MockPlayerAuthenticationTokenProvider_mod;
 pub use MockPlayerAuthenticationTokenProvider_mod::*;
@@ -3985,9 +4084,6 @@ pub use MultiplayerPositionDisplay_mod::*;
 // class MultiplayerPositionHUDController_mod; export all
 mod MultiplayerPositionHUDController_mod;
 pub use MultiplayerPositionHUDController_mod::*;
-// class MultiplayerPsPlusFeatureNotifier_mod; export all
-mod MultiplayerPsPlusFeatureNotifier_mod;
-pub use MultiplayerPsPlusFeatureNotifier_mod::*;
 // class MultiplayerResultsData_mod; export all
 mod MultiplayerResultsData_mod;
 pub use MultiplayerResultsData_mod::*;
@@ -4018,9 +4114,15 @@ pub use MultiplayerScoreRingItem_mod::*;
 // class MultiplayerScoreRingManager_mod; export all
 mod MultiplayerScoreRingManager_mod;
 pub use MultiplayerScoreRingManager_mod::*;
-// class MultiplayerSessionManager_mod; export all
-mod MultiplayerSessionManager_mod;
-pub use MultiplayerSessionManager_mod::*;
+// class MultiplayerSessionInitializer_mod; export all
+mod MultiplayerSessionInitializer_mod;
+pub use MultiplayerSessionInitializer_mod::*;
+// class MultiplayerSessionManager_5_mod; export all
+mod MultiplayerSessionManager_5_mod;
+pub use MultiplayerSessionManager_5_mod::*;
+// class MultiplayerSessionType_mod; export all
+mod MultiplayerSessionType_mod;
+pub use MultiplayerSessionType_mod::*;
 // class MultiplayerSettingsPanelController_mod; export all
 mod MultiplayerSettingsPanelController_mod;
 pub use MultiplayerSettingsPanelController_mod::*;
@@ -4105,6 +4207,9 @@ pub use NetworkConfigSO_mod::*;
 // class NetworkConstants_mod; export all
 mod NetworkConstants_mod;
 pub use NetworkConstants_mod::*;
+// class NetworkMessageType_mod; export all
+mod NetworkMessageType_mod;
+pub use NetworkMessageType_mod::*;
 // class NetworkPacketSerializer_2_mod; export all
 mod NetworkPacketSerializer_2_mod;
 pub use NetworkPacketSerializer_2_mod::*;
@@ -4156,18 +4261,12 @@ pub use NoInvitePlatformHandler_mod::*;
 // class NoPauseGamePause_mod; export all
 mod NoPauseGamePause_mod;
 pub use NoPauseGamePause_mod::*;
-// class NoPlatformInit_mod; export all
-mod NoPlatformInit_mod;
-pub use NoPlatformInit_mod::*;
 // class NoPostProcessMainEffectSO_mod; export all
 mod NoPostProcessMainEffectSO_mod;
 pub use NoPostProcessMainEffectSO_mod::*;
 // class NoRichPresencePlatformHandler_mod; export all
 mod NoRichPresencePlatformHandler_mod;
 pub use NoRichPresencePlatformHandler_mod::*;
-// class NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO_mod; export all
-mod NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO_mod;
-pub use NoSetupDataSingleFixedSceneScenesTransitionSetupDataSO_mod::*;
 // class NoTransitionButtonSelectableStateController_mod; export all
 mod NoTransitionButtonSelectableStateController_mod;
 pub use NoTransitionButtonSelectableStateController_mod::*;
@@ -4342,9 +4441,6 @@ pub use OVRAudioSourceTest_mod::*;
 // class OVRAutoDestroyInMRC_mod; export all
 mod OVRAutoDestroyInMRC_mod;
 pub use OVRAutoDestroyInMRC_mod::*;
-// class OVRBinaryChunk_mod; export all
-mod OVRBinaryChunk_mod;
-pub use OVRBinaryChunk_mod::*;
 // class OVRBody_mod; export all
 mod OVRBody_mod;
 pub use OVRBody_mod::*;
@@ -4363,9 +4459,9 @@ pub use OVRBounded2D_mod::*;
 // class OVRBounded3D_mod; export all
 mod OVRBounded3D_mod;
 pub use OVRBounded3D_mod::*;
-// class OVRCameraComposition_mod; export all
-mod OVRCameraComposition_mod;
-pub use OVRCameraComposition_mod::*;
+// class OVRBuildInfo_mod; export all
+mod OVRBuildInfo_mod;
+pub use OVRBuildInfo_mod::*;
 // class OVRCameraRig_mod; export all
 mod OVRCameraRig_mod;
 pub use OVRCameraRig_mod::*;
@@ -4375,6 +4471,9 @@ pub use OVRChromaticAberration_mod::*;
 // class OVRChunkType_mod; export all
 mod OVRChunkType_mod;
 pub use OVRChunkType_mod::*;
+// class OVRColocationSession_mod; export all
+mod OVRColocationSession_mod;
+pub use OVRColocationSession_mod::*;
 // class OVRCompositionUtil_mod; export all
 mod OVRCompositionUtil_mod;
 pub use OVRCompositionUtil_mod::*;
@@ -4414,15 +4513,21 @@ pub use OVRDebugInfo_mod::*;
 // class OVRDeserialize_mod; export all
 mod OVRDeserialize_mod;
 pub use OVRDeserialize_mod::*;
-// class OVRDirectComposition_mod; export all
-mod OVRDirectComposition_mod;
-pub use OVRDirectComposition_mod::*;
 // class OVRDisplay_mod; export all
 mod OVRDisplay_mod;
 pub use OVRDisplay_mod::*;
+// class OVRDynamicObject_mod; export all
+mod OVRDynamicObject_mod;
+pub use OVRDynamicObject_mod::*;
+// class OVREnumExtensions_mod; export all
+mod OVREnumExtensions_mod;
+pub use OVREnumExtensions_mod::*;
 // class OVREnumerable_1_mod; export all
 mod OVREnumerable_1_mod;
 pub use OVREnumerable_1_mod::*;
+// class OVREnumerable_mod; export all
+mod OVREnumerable_mod;
+pub use OVREnumerable_mod::*;
 // class OVRExtensions_mod; export all
 mod OVRExtensions_mod;
 pub use OVRExtensions_mod::*;
@@ -4438,6 +4543,9 @@ pub use OVRFaceExpressions_mod::*;
 // class OVRFace_mod; export all
 mod OVRFace_mod;
 pub use OVRFace_mod::*;
+// class OVRFuture_mod; export all
+mod OVRFuture_mod;
+pub use OVRFuture_mod::*;
 // class OVRGLTFAccessor_mod; export all
 mod OVRGLTFAccessor_mod;
 pub use OVRGLTFAccessor_mod::*;
@@ -4465,9 +4573,6 @@ pub use OVRGLTFType_mod::*;
 // class OVRGazePointer_mod; export all
 mod OVRGazePointer_mod;
 pub use OVRGazePointer_mod::*;
-// class OVRGearVrControllerTest_mod; export all
-mod OVRGearVrControllerTest_mod;
-pub use OVRGearVrControllerTest_mod::*;
 // class OVRGrabbable_mod; export all
 mod OVRGrabbable_mod;
 pub use OVRGrabbable_mod::*;
@@ -4477,9 +4582,15 @@ pub use OVRGrabber_mod::*;
 // class OVRGridCube_mod; export all
 mod OVRGridCube_mod;
 pub use OVRGridCube_mod::*;
+// class OVRHandSkeletonVersion_mod; export all
+mod OVRHandSkeletonVersion_mod;
+pub use OVRHandSkeletonVersion_mod::*;
 // class OVRHandTest_mod; export all
 mod OVRHandTest_mod;
 pub use OVRHandTest_mod::*;
+// class OVRHandTrackingWideMotionModeSample_mod; export all
+mod OVRHandTrackingWideMotionModeSample_mod;
+pub use OVRHandTrackingWideMotionModeSample_mod::*;
 // class OVRHand_mod; export all
 mod OVRHand_mod;
 pub use OVRHand_mod::*;
@@ -4492,6 +4603,12 @@ pub use OVRHaptics_mod::*;
 // class OVRHeadsetEmulator_mod; export all
 mod OVRHeadsetEmulator_mod;
 pub use OVRHeadsetEmulator_mod::*;
+// class OVRHumanBodyBonesMappingsInterface_mod; export all
+mod OVRHumanBodyBonesMappingsInterface_mod;
+pub use OVRHumanBodyBonesMappingsInterface_mod::*;
+// class OVRInputRayData_mod; export all
+mod OVRInputRayData_mod;
+pub use OVRInputRayData_mod::*;
 // class OVRInput_mod; export all
 mod OVRInput_mod;
 pub use OVRInput_mod::*;
@@ -4531,6 +4648,15 @@ pub use OVRMeshRenderer_mod::*;
 // class OVRMesh_mod; export all
 mod OVRMesh_mod;
 pub use OVRMesh_mod::*;
+// class OVRMetricsToolSDK_mod; export all
+mod OVRMetricsToolSDK_mod;
+pub use OVRMetricsToolSDK_mod::*;
+// class OVRMicrogestureEventSource_mod; export all
+mod OVRMicrogestureEventSource_mod;
+pub use OVRMicrogestureEventSource_mod::*;
+// class OVRMicrogesturesSample_mod; export all
+mod OVRMicrogesturesSample_mod;
+pub use OVRMicrogesturesSample_mod::*;
 // class OVRMixedRealityCaptureConfigurationExtensions_mod; export all
 mod OVRMixedRealityCaptureConfigurationExtensions_mod;
 pub use OVRMixedRealityCaptureConfigurationExtensions_mod::*;
@@ -4552,12 +4678,15 @@ pub use OVRModeParms_mod::*;
 // class OVRMonoscopic_mod; export all
 mod OVRMonoscopic_mod;
 pub use OVRMonoscopic_mod::*;
-// class OVRMultimodalHandsAndControllersSample_mod; export all
-mod OVRMultimodalHandsAndControllersSample_mod;
-pub use OVRMultimodalHandsAndControllersSample_mod::*;
 // class OVRNativeBuffer_mod; export all
 mod OVRNativeBuffer_mod;
 pub use OVRNativeBuffer_mod::*;
+// class OVRNativeList_1_mod; export all
+mod OVRNativeList_1_mod;
+pub use OVRNativeList_1_mod::*;
+// class OVRNativeList_mod; export all
+mod OVRNativeList_mod;
+pub use OVRNativeList_mod::*;
 // class OVRNetwork_mod; export all
 mod OVRNetwork_mod;
 pub use OVRNetwork_mod::*;
@@ -4570,6 +4699,12 @@ pub use OVRObjectPool_mod::*;
 // class OVROnCompleteListener_mod; export all
 mod OVROnCompleteListener_mod;
 pub use OVROnCompleteListener_mod::*;
+// class OVROverlayCanvasSettings_mod; export all
+mod OVROverlayCanvasSettings_mod;
+pub use OVROverlayCanvasSettings_mod::*;
+// class OVROverlayCanvas_mod; export all
+mod OVROverlayCanvas_mod;
+pub use OVROverlayCanvas_mod::*;
 // class OVROverlayMeshGenerator_mod; export all
 mod OVROverlayMeshGenerator_mod;
 pub use OVROverlayMeshGenerator_mod::*;
@@ -4609,6 +4744,12 @@ pub use OVRProfilerScope_mod::*;
 // class OVRProgressIndicator_mod; export all
 mod OVRProgressIndicator_mod;
 pub use OVRProgressIndicator_mod::*;
+// class OVRRayHelper_mod; export all
+mod OVRRayHelper_mod;
+pub use OVRRayHelper_mod::*;
+// class OVRRayTransformer_mod; export all
+mod OVRRayTransformer_mod;
+pub use OVRRayTransformer_mod::*;
 // class OVRRaycaster_mod; export all
 mod OVRRaycaster_mod;
 pub use OVRRaycaster_mod::*;
@@ -4621,18 +4762,33 @@ pub use OVRResetOrientation_mod::*;
 // class OVRResources_mod; export all
 mod OVRResources_mod;
 pub use OVRResources_mod::*;
+// class OVRResultStatus_mod; export all
+mod OVRResultStatus_mod;
+pub use OVRResultStatus_mod::*;
+// class OVRResult_1_mod; export all
+mod OVRResult_1_mod;
+pub use OVRResult_1_mod::*;
+// class OVRResult_2_mod; export all
+mod OVRResult_2_mod;
+pub use OVRResult_2_mod::*;
+// class OVRResult_mod; export all
+mod OVRResult_mod;
+pub use OVRResult_mod::*;
 // class OVRRoomLayout_mod; export all
 mod OVRRoomLayout_mod;
 pub use OVRRoomLayout_mod::*;
+// class OVRRuntimeAssetsBase_mod; export all
+mod OVRRuntimeAssetsBase_mod;
+pub use OVRRuntimeAssetsBase_mod::*;
 // class OVRRuntimeController_mod; export all
 mod OVRRuntimeController_mod;
 pub use OVRRuntimeController_mod::*;
 // class OVRRuntimeSettings_mod; export all
 mod OVRRuntimeSettings_mod;
 pub use OVRRuntimeSettings_mod::*;
-// class OVRSandwichComposition_mod; export all
-mod OVRSandwichComposition_mod;
-pub use OVRSandwichComposition_mod::*;
+// class OVRSampledEventSender_mod; export all
+mod OVRSampledEventSender_mod;
+pub use OVRSampledEventSender_mod::*;
 // class OVRSceneAnchor_mod; export all
 mod OVRSceneAnchor_mod;
 pub use OVRSceneAnchor_mod::*;
@@ -4669,6 +4825,9 @@ pub use OVRSceneVolumeMeshFilter_mod::*;
 // class OVRSceneVolume_mod; export all
 mod OVRSceneVolume_mod;
 pub use OVRSceneVolume_mod::*;
+// class OVRScene_mod; export all
+mod OVRScene_mod;
+pub use OVRScene_mod::*;
 // class OVRScreenFade_mod; export all
 mod OVRScreenFade_mod;
 pub use OVRScreenFade_mod::*;
@@ -4681,6 +4840,9 @@ pub use OVRSemanticLabels_mod::*;
 // class OVRSharable_mod; export all
 mod OVRSharable_mod;
 pub use OVRSharable_mod::*;
+// class OVRSimultaneousHandsAndControllersSample_mod; export all
+mod OVRSimultaneousHandsAndControllersSample_mod;
+pub use OVRSimultaneousHandsAndControllersSample_mod::*;
 // class OVRSkeletonRenderer_mod; export all
 mod OVRSkeletonRenderer_mod;
 pub use OVRSkeletonRenderer_mod::*;
@@ -4708,6 +4870,9 @@ pub use OVRStorable_mod::*;
 // class OVRSystemPerfMetrics_mod; export all
 mod OVRSystemPerfMetrics_mod;
 pub use OVRSystemPerfMetrics_mod::*;
+// class OVRTaskBuilder_1_mod; export all
+mod OVRTaskBuilder_1_mod;
+pub use OVRTaskBuilder_1_mod::*;
 // class OVRTask_1_mod; export all
 mod OVRTask_1_mod;
 pub use OVRTask_1_mod::*;
@@ -4759,6 +4924,9 @@ pub use OVRVirtualKeyboardControllerInputHandler_mod::*;
 // class OVRVirtualKeyboardHandInputHandler_mod; export all
 mod OVRVirtualKeyboardHandInputHandler_mod;
 pub use OVRVirtualKeyboardHandInputHandler_mod::*;
+// class OVRVirtualKeyboardInputFieldTextHandler_mod; export all
+mod OVRVirtualKeyboardInputFieldTextHandler_mod;
+pub use OVRVirtualKeyboardInputFieldTextHandler_mod::*;
 // class OVRVirtualKeyboardSampleControls_mod; export all
 mod OVRVirtualKeyboardSampleControls_mod;
 pub use OVRVirtualKeyboardSampleControls_mod::*;
@@ -4846,9 +5014,6 @@ pub use OculusBeatmapDataAssetFileModel_mod::*;
 // class OculusDeeplinkManager_mod; export all
 mod OculusDeeplinkManager_mod;
 pub use OculusDeeplinkManager_mod::*;
-// class OculusInit_mod; export all
-mod OculusInit_mod;
-pub use OculusInit_mod::*;
 // class OculusInvitePlatformHandler_mod; export all
 mod OculusInvitePlatformHandler_mod;
 pub use OculusInvitePlatformHandler_mod::*;
@@ -4858,33 +5023,18 @@ pub use OculusLevelProductCollectionModel_mod::*;
 // class OculusLevelProductPacksSO_mod; export all
 mod OculusLevelProductPacksSO_mod;
 pub use OculusLevelProductPacksSO_mod::*;
-// class OculusMRCManager_mod; export all
-mod OculusMRCManager_mod;
-pub use OculusMRCManager_mod::*;
 // class OculusMetrics_mod; export all
 mod OculusMetrics_mod;
 pub use OculusMetrics_mod::*;
 // class OculusNetworkPlayerModel_mod; export all
 mod OculusNetworkPlayerModel_mod;
 pub use OculusNetworkPlayerModel_mod::*;
-// class OculusPlatformAchievementHandler_mod; export all
-mod OculusPlatformAchievementHandler_mod;
-pub use OculusPlatformAchievementHandler_mod::*;
 // class OculusPlatformAdditionalContentModel_mod; export all
 mod OculusPlatformAdditionalContentModel_mod;
 pub use OculusPlatformAdditionalContentModel_mod::*;
-// class OculusPlatformExtensions_mod; export all
-mod OculusPlatformExtensions_mod;
-pub use OculusPlatformExtensions_mod::*;
 // class OculusPlatformLeaderboardsHandler_mod; export all
 mod OculusPlatformLeaderboardsHandler_mod;
 pub use OculusPlatformLeaderboardsHandler_mod::*;
-// class OculusPlatformUserModel_mod; export all
-mod OculusPlatformUserModel_mod;
-pub use OculusPlatformUserModel_mod::*;
-// class OculusRequestExtensions_mod; export all
-mod OculusRequestExtensions_mod;
-pub use OculusRequestExtensions_mod::*;
 // class OculusRichPresencePlatformHandler_mod; export all
 mod OculusRichPresencePlatformHandler_mod;
 pub use OculusRichPresencePlatformHandler_mod::*;
@@ -4894,12 +5044,6 @@ pub use OculusTestExperiment_mod::*;
 // class OculusVRHelper_mod; export all
 mod OculusVRHelper_mod;
 pub use OculusVRHelper_mod::*;
-// class OculusXPlatformAccessTokenRequestOperation_mod; export all
-mod OculusXPlatformAccessTokenRequestOperation_mod;
-pub use OculusXPlatformAccessTokenRequestOperation_mod::*;
-// class OculusXRPlugin_mod; export all
-mod OculusXRPlugin_mod;
-pub use OculusXRPlugin_mod::*;
 // class OffsetByBeatmapObjectSpawnCenter_mod; export all
 mod OffsetByBeatmapObjectSpawnCenter_mod;
 pub use OffsetByBeatmapObjectSpawnCenter_mod::*;
@@ -4924,9 +5068,6 @@ pub use OpenXRRuntimeBasedActionBindingComposite_mod::*;
 // class OperationResultExtensions_mod; export all
 mod OperationResultExtensions_mod;
 pub use OperationResultExtensions_mod::*;
-// class OptionalArgument_1_mod; export all
-mod OptionalArgument_1_mod;
-pub use OptionalArgument_1_mod::*;
 // class OptionsViewController_mod; export all
 mod OptionsViewController_mod;
 pub use OptionsViewController_mod::*;
@@ -4945,60 +5086,9 @@ pub use OverrideEnvironmentSettings_mod::*;
 // class OvrToolMetrics_mod; export all
 mod OvrToolMetrics_mod;
 pub use OvrToolMetrics_mod::*;
-// class PCAppInit_mod; export all
-mod PCAppInit_mod;
-pub use PCAppInit_mod::*;
-// class PS4ActivePublisherSKUSettingsSO_mod; export all
-mod PS4ActivePublisherSKUSettingsSO_mod;
-pub use PS4ActivePublisherSKUSettingsSO_mod::*;
-// class PS4AppInit_mod; export all
-mod PS4AppInit_mod;
-pub use PS4AppInit_mod::*;
-// class PS4ApplicationCategory_mod; export all
-mod PS4ApplicationCategory_mod;
-pub use PS4ApplicationCategory_mod::*;
-// class PS4LevelProductPacksSO_mod; export all
-mod PS4LevelProductPacksSO_mod;
-pub use PS4LevelProductPacksSO_mod::*;
-// class PS4PlatformAdditionalContentModel_mod; export all
-mod PS4PlatformAdditionalContentModel_mod;
-pub use PS4PlatformAdditionalContentModel_mod::*;
-// class PS4PublisherSKUSettingsSO_mod; export all
-mod PS4PublisherSKUSettingsSO_mod;
-pub use PS4PublisherSKUSettingsSO_mod::*;
-// class PS5ActivityDataSO_mod; export all
-mod PS5ActivityDataSO_mod;
-pub use PS5ActivityDataSO_mod::*;
-// class PS5ActivityIdsModelSO_mod; export all
-mod PS5ActivityIdsModelSO_mod;
-pub use PS5ActivityIdsModelSO_mod::*;
-// class PS5AdvancedHapticsPlayerController_mod; export all
-mod PS5AdvancedHapticsPlayerController_mod;
-pub use PS5AdvancedHapticsPlayerController_mod::*;
-// class PS5AppInit_mod; export all
-mod PS5AppInit_mod;
-pub use PS5AppInit_mod::*;
-// class PS5LevelProductPacksSO_mod; export all
-mod PS5LevelProductPacksSO_mod;
-pub use PS5LevelProductPacksSO_mod::*;
-// class PS5PlatformAdditionalContentModel_mod; export all
-mod PS5PlatformAdditionalContentModel_mod;
-pub use PS5PlatformAdditionalContentModel_mod::*;
-// class PS5PublisherSKUSettingsSO_mod; export all
-mod PS5PublisherSKUSettingsSO_mod;
-pub use PS5PublisherSKUSettingsSO_mod::*;
-// class PS5SharedPackageSKUsSO_mod; export all
-mod PS5SharedPackageSKUsSO_mod;
-pub use PS5SharedPackageSKUsSO_mod::*;
 // class PSSortingLayer_mod; export all
 mod PSSortingLayer_mod;
 pub use PSSortingLayer_mod::*;
-// class PSVR2Helper_mod; export all
-mod PSVR2Helper_mod;
-pub use PSVR2Helper_mod::*;
-// class PSVRHelper_mod; export all
-mod PSVRHelper_mod;
-pub use PSVRHelper_mod::*;
 // class PackBuyOption_mod; export all
 mod PackBuyOption_mod;
 pub use PackBuyOption_mod::*;
@@ -5122,12 +5212,18 @@ pub use PerformanceVisualizer_mod::*;
 // class PerlinNoise_mod; export all
 mod PerlinNoise_mod;
 pub use PerlinNoise_mod::*;
+// class PersistentAudioNoiseController_mod; export all
+mod PersistentAudioNoiseController_mod;
+pub use PersistentAudioNoiseController_mod::*;
 // class PersistentScriptableObject_mod; export all
 mod PersistentScriptableObject_mod;
 pub use PersistentScriptableObject_mod::*;
 // class PhysicsPositionsMovementEventEffect_mod; export all
 mod PhysicsPositionsMovementEventEffect_mod;
 pub use PhysicsPositionsMovementEventEffect_mod::*;
+// class PingPacket_mod; export all
+mod PingPacket_mod;
+pub use PingPacket_mod::*;
 // class PingUtility_mod; export all
 mod PingUtility_mod;
 pub use PingUtility_mod::*;
@@ -5137,12 +5233,6 @@ pub use PlatformAuthenticationTokenProvider_mod::*;
 // class PlatformEnvironment_mod; export all
 mod PlatformEnvironment_mod;
 pub use PlatformEnvironment_mod::*;
-// class PlatformException_mod; export all
-mod PlatformException_mod;
-pub use PlatformException_mod::*;
-// class PlatformInstallerSO_mod; export all
-mod PlatformInstallerSO_mod;
-pub use PlatformInstallerSO_mod::*;
 // class PlatformInstaller_mod; export all
 mod PlatformInstaller_mod;
 pub use PlatformInstaller_mod::*;
@@ -5155,15 +5245,18 @@ pub use PlatformLeaderboardsHandler_mod::*;
 // class PlatformLeaderboardsModel_mod; export all
 mod PlatformLeaderboardsModel_mod;
 pub use PlatformLeaderboardsModel_mod::*;
+// class PlatformLogger_mod; export all
+mod PlatformLogger_mod;
+pub use PlatformLogger_mod::*;
 // class PlatformNetworkPlayerModel_mod; export all
 mod PlatformNetworkPlayerModel_mod;
 pub use PlatformNetworkPlayerModel_mod::*;
+// class PlatformUpdater_mod; export all
+mod PlatformUpdater_mod;
+pub use PlatformUpdater_mod::*;
 // class PlatformUserAuthTokenData_mod; export all
 mod PlatformUserAuthTokenData_mod;
 pub use PlatformUserAuthTokenData_mod::*;
-// class PlatformUserModelUtils_mod; export all
-mod PlatformUserModelUtils_mod;
-pub use PlatformUserModelUtils_mod::*;
 // class PlayAudioOnGameEventController_mod; export all
 mod PlayAudioOnGameEventController_mod;
 pub use PlayAudioOnGameEventController_mod::*;
@@ -5179,6 +5272,12 @@ pub use PlayerAgreements_mod::*;
 // class PlayerAllOverallStatsData_mod; export all
 mod PlayerAllOverallStatsData_mod;
 pub use PlayerAllOverallStatsData_mod::*;
+// class PlayerAvatarPacket_mod; export all
+mod PlayerAvatarPacket_mod;
+pub use PlayerAvatarPacket_mod::*;
+// class PlayerConnectedPacket_mod; export all
+mod PlayerConnectedPacket_mod;
+pub use PlayerConnectedPacket_mod::*;
 // class PlayerDataAsyncLoader_mod; export all
 mod PlayerDataAsyncLoader_mod;
 pub use PlayerDataAsyncLoader_mod::*;
@@ -5197,6 +5296,9 @@ pub use PlayerDataModel_mod::*;
 // class PlayerData_mod; export all
 mod PlayerData_mod;
 pub use PlayerData_mod::*;
+// class PlayerDisconnectedPacket_mod; export all
+mod PlayerDisconnectedPacket_mod;
+pub use PlayerDisconnectedPacket_mod::*;
 // class PlayerHeadAndObstacleInteraction_mod; export all
 mod PlayerHeadAndObstacleInteraction_mod;
 pub use PlayerHeadAndObstacleInteraction_mod::*;
@@ -5209,6 +5311,9 @@ pub use PlayerHeightSettingsController_mod::*;
 // class PlayerHeightToJumpOffsetYProvider_mod; export all
 mod PlayerHeightToJumpOffsetYProvider_mod;
 pub use PlayerHeightToJumpOffsetYProvider_mod::*;
+// class PlayerIdentityPacket_1_mod; export all
+mod PlayerIdentityPacket_1_mod;
+pub use PlayerIdentityPacket_1_mod::*;
 // class PlayerLevelStatsData_mod; export all
 mod PlayerLevelStatsData_mod;
 pub use PlayerLevelStatsData_mod::*;
@@ -5224,9 +5329,6 @@ pub use PlayerNameEqualityComparer_mod::*;
 // class PlayerOptionsViewController_mod; export all
 mod PlayerOptionsViewController_mod;
 pub use PlayerOptionsViewController_mod::*;
-// class PlayerPrefsStorage_mod; export all
-mod PlayerPrefsStorage_mod;
-pub use PlayerPrefsStorage_mod::*;
 // class PlayerSaveDataConvertor_mod; export all
 mod PlayerSaveDataConvertor_mod;
 pub use PlayerSaveDataConvertor_mod::*;
@@ -5245,6 +5347,9 @@ pub use PlayerSensitivityFlag_mod::*;
 // class PlayerSettingsPanelController_mod; export all
 mod PlayerSettingsPanelController_mod;
 pub use PlayerSettingsPanelController_mod::*;
+// class PlayerSortOrderPacket_mod; export all
+mod PlayerSortOrderPacket_mod;
+pub use PlayerSortOrderPacket_mod::*;
 // class PlayerSpaceConvertor_mod; export all
 mod PlayerSpaceConvertor_mod;
 pub use PlayerSpaceConvertor_mod::*;
@@ -5260,6 +5365,9 @@ pub use PlayerSpecificSettings_mod::*;
 // class PlayerStateHash_mod; export all
 mod PlayerStateHash_mod;
 pub use PlayerStateHash_mod::*;
+// class PlayerStatePacket_mod; export all
+mod PlayerStatePacket_mod;
+pub use PlayerStatePacket_mod::*;
 // class PlayerStatisticsViewController_mod; export all
 mod PlayerStatisticsViewController_mod;
 pub use PlayerStatisticsViewController_mod::*;
@@ -5290,12 +5398,21 @@ pub use PlayingMultiplayerRichPresenceData_mod::*;
 // class PlayingTutorialPresenceData_mod; export all
 mod PlayingTutorialPresenceData_mod;
 pub use PlayingTutorialPresenceData_mod::*;
+// class PlaymodeOptionsExtensions_mod; export all
+mod PlaymodeOptionsExtensions_mod;
+pub use PlaymodeOptionsExtensions_mod::*;
+// class PlaymodeOptions_mod; export all
+mod PlaymodeOptions_mod;
+pub use PlaymodeOptions_mod::*;
 // class PointLightWithIds_mod; export all
 mod PointLightWithIds_mod;
 pub use PointLightWithIds_mod::*;
 // class PointLight_mod; export all
 mod PointLight_mod;
 pub use PointLight_mod::*;
+// class PongPacket_mod; export all
+mod PongPacket_mod;
+pub use PongPacket_mod::*;
 // class PoolableSerializable_mod; export all
 mod PoolableSerializable_mod;
 pub use PoolableSerializable_mod::*;
@@ -5374,12 +5491,6 @@ pub use ProfanityFilter_mod::*;
 // class ProfilerMetrics_mod; export all
 mod ProfilerMetrics_mod;
 pub use ProfilerMetrics_mod::*;
-// class ProgressActivitySO_mod; export all
-mod ProgressActivitySO_mod;
-pub use ProgressActivitySO_mod::*;
-// class ProgressActivitySubtaskSO_mod; export all
-mod ProgressActivitySubtaskSO_mod;
-pub use ProgressActivitySubtaskSO_mod::*;
 // class PromoBannerInfoSO_mod; export all
 mod PromoBannerInfoSO_mod;
 pub use PromoBannerInfoSO_mod::*;
@@ -5401,9 +5512,6 @@ pub use QuantizedMathf_mod::*;
 // class QuaternionSerializable_mod; export all
 mod QuaternionSerializable_mod;
 pub use QuaternionSerializable_mod::*;
-// class QuestAppInit_mod; export all
-mod QuestAppInit_mod;
-pub use QuestAppInit_mod::*;
 // class QuestGraphicSettingsViewController_mod; export all
 mod QuestGraphicSettingsViewController_mod;
 pub use QuestGraphicSettingsViewController_mod::*;
@@ -5479,9 +5587,6 @@ pub use RecordingToolManager_mod::*;
 // class RecordingToolSceneSetupData_mod; export all
 mod RecordingToolSceneSetupData_mod;
 pub use RecordingToolSceneSetupData_mod::*;
-// class RecordingToolSceneSetup_mod; export all
-mod RecordingToolSceneSetup_mod;
-pub use RecordingToolSceneSetup_mod::*;
 // class RecordingToolScenesTransitionSetupDataSO_mod; export all
 mod RecordingToolScenesTransitionSetupDataSO_mod;
 pub use RecordingToolScenesTransitionSetupDataSO_mod::*;
@@ -5542,6 +5647,9 @@ pub use RemoteProcedureCall_mod::*;
 // class RemoteStateBuffer_3_mod; export all
 mod RemoteStateBuffer_3_mod;
 pub use RemoteStateBuffer_3_mod::*;
+// class RenderGraphCompilationCache_mod; export all
+mod RenderGraphCompilationCache_mod;
+pub use RenderGraphCompilationCache_mod::*;
 // class RenderTextureExtensions_mod; export all
 mod RenderTextureExtensions_mod;
 pub use RenderTextureExtensions_mod::*;
@@ -5551,18 +5659,12 @@ pub use RenderTextureFromPostEffect_mod::*;
 // class RenderingParamsSetupApplicator_mod; export all
 mod RenderingParamsSetupApplicator_mod;
 pub use RenderingParamsSetupApplicator_mod::*;
-// class ReportingCallbackSample_mod; export all
-mod ReportingCallbackSample_mod;
-pub use ReportingCallbackSample_mod::*;
-// class RequiredArgument_1_mod; export all
-mod RequiredArgument_1_mod;
-pub use RequiredArgument_1_mod::*;
-// class ResetLocalLeaderboardOnKey_mod; export all
-mod ResetLocalLeaderboardOnKey_mod;
-pub use ResetLocalLeaderboardOnKey_mod::*;
 // class ResetPitchOnGameplayFinished_mod; export all
 mod ResetPitchOnGameplayFinished_mod;
 pub use ResetPitchOnGameplayFinished_mod::*;
+// class ResettableRandom_mod; export all
+mod ResettableRandom_mod;
+pub use ResettableRandom_mod::*;
 // class ResizablePanel_mod; export all
 mod ResizablePanel_mod;
 pub use ResizablePanel_mod::*;
@@ -5596,6 +5698,9 @@ pub use RomanNumerals_mod::*;
 // class RoomAdjustSettingsViewController_mod; export all
 mod RoomAdjustSettingsViewController_mod;
 pub use RoomAdjustSettingsViewController_mod::*;
+// class RoomMeshAnchor_mod; export all
+mod RoomMeshAnchor_mod;
+pub use RoomMeshAnchor_mod::*;
 // class RotateBySpawnRotation_mod; export all
 mod RotateBySpawnRotation_mod;
 pub use RotateBySpawnRotation_mod::*;
@@ -5605,9 +5710,9 @@ pub use Rotate_mod::*;
 // class RotationTimeProcessor_mod; export all
 mod RotationTimeProcessor_mod;
 pub use RotationTimeProcessor_mod::*;
-// class RpcHandler_1_mod; export all
-mod RpcHandler_1_mod;
-pub use RpcHandler_1_mod::*;
+// class RpcHandler_3_mod; export all
+mod RpcHandler_3_mod;
+pub use RpcHandler_3_mod::*;
 // class RpcPool_mod; export all
 mod RpcPool_mod;
 pub use RpcPool_mod::*;
@@ -5623,6 +5728,12 @@ pub use RuntimeLightWithIds_mod::*;
 // class RuntimeLightWithLightGroupIds_mod; export all
 mod RuntimeLightWithLightGroupIds_mod;
 pub use RuntimeLightWithLightGroupIds_mod::*;
+// class SDFArrayManager_mod; export all
+mod SDFArrayManager_mod;
+pub use SDFArrayManager_mod::*;
+// class SDFPoint_mod; export all
+mod SDFPoint_mod;
+pub use SDFPoint_mod::*;
 // class SOVariableAttribute_mod; export all
 mod SOVariableAttribute_mod;
 pub use SOVariableAttribute_mod::*;
@@ -5698,9 +5809,9 @@ pub use ScaleRectTransformViewStateTransition_mod::*;
 // class SceneCameraBloomPrePass_mod; export all
 mod SceneCameraBloomPrePass_mod;
 pub use SceneCameraBloomPrePass_mod::*;
-// class SceneInfo_mod; export all
-mod SceneInfo_mod;
-pub use SceneInfo_mod::*;
+// class SceneIdAttribute_mod; export all
+mod SceneIdAttribute_mod;
+pub use SceneIdAttribute_mod::*;
 // class SceneSetupData_mod; export all
 mod SceneSetupData_mod;
 pub use SceneSetupData_mod::*;
@@ -5710,6 +5821,9 @@ pub use SceneStartHandler_mod::*;
 // class SceneStartSyncController_mod; export all
 mod SceneStartSyncController_mod;
 pub use SceneStartSyncController_mod::*;
+// class SceneTransitionAudioFadeController_mod; export all
+mod SceneTransitionAudioFadeController_mod;
+pub use SceneTransitionAudioFadeController_mod::*;
 // class SceneTransitionFadingExtensions_mod; export all
 mod SceneTransitionFadingExtensions_mod;
 pub use SceneTransitionFadingExtensions_mod::*;
@@ -5758,6 +5872,18 @@ pub use ScreenCaptureAfterDelay_mod::*;
 // class ScreenCaptureCache_mod; export all
 mod ScreenCaptureCache_mod;
 pub use ScreenCaptureCache_mod::*;
+// class ScreenDisplacementEffectDrawPass_mod; export all
+mod ScreenDisplacementEffectDrawPass_mod;
+pub use ScreenDisplacementEffectDrawPass_mod::*;
+// class ScreenDisplacementEffectGrabPass_mod; export all
+mod ScreenDisplacementEffectGrabPass_mod;
+pub use ScreenDisplacementEffectGrabPass_mod::*;
+// class ScreenDisplacementEffectRendererFeature_mod; export all
+mod ScreenDisplacementEffectRendererFeature_mod;
+pub use ScreenDisplacementEffectRendererFeature_mod::*;
+// class ScreenshotLevelStarter_mod; export all
+mod ScreenshotLevelStarter_mod;
+pub use ScreenshotLevelStarter_mod::*;
 // class ScreenshotRecorder_mod; export all
 mod ScreenshotRecorder_mod;
 pub use ScreenshotRecorder_mod::*;
@@ -5827,6 +5953,9 @@ pub use ServerSettingsViewController_mod::*;
 // class ServiceEnvironment_mod; export all
 mod ServiceEnvironment_mod;
 pub use ServiceEnvironment_mod::*;
+// class SetAnimationPlayAutomatically_mod; export all
+mod SetAnimationPlayAutomatically_mod;
+pub use SetAnimationPlayAutomatically_mod::*;
 // class SetApplicationVersionText_mod; export all
 mod SetApplicationVersionText_mod;
 pub use SetApplicationVersionText_mod::*;
@@ -5890,6 +6019,12 @@ pub use ShaderWarmupSceneStart_mod::*;
 // class ShaderWarmupScenesTransitionSetupDataSO_mod; export all
 mod ShaderWarmupScenesTransitionSetupDataSO_mod;
 pub use ShaderWarmupScenesTransitionSetupDataSO_mod::*;
+// class SharedSpatialAnchorCoreBuildingBlock_mod; export all
+mod SharedSpatialAnchorCoreBuildingBlock_mod;
+pub use SharedSpatialAnchorCoreBuildingBlock_mod::*;
+// class SharedSpatialAnchorErrorHandler_mod; export all
+mod SharedSpatialAnchorErrorHandler_mod;
+pub use SharedSpatialAnchorErrorHandler_mod::*;
 // class ShockwaveEffect_mod; export all
 mod ShockwaveEffect_mod;
 pub use ShockwaveEffect_mod::*;
@@ -5932,6 +6067,9 @@ pub use SimpleLevelStarter_mod::*;
 // class SimpleMemoryPool_1_mod; export all
 mod SimpleMemoryPool_1_mod;
 pub use SimpleMemoryPool_1_mod::*;
+// class SimpleRandom_mod; export all
+mod SimpleRandom_mod;
+pub use SimpleRandom_mod::*;
 // class SimpleScriptableObjectsPool_1_mod; export all
 mod SimpleScriptableObjectsPool_1_mod;
 pub use SimpleScriptableObjectsPool_1_mod::*;
@@ -5947,9 +6085,6 @@ pub use SimpleTextWithIconTableCell_mod::*;
 // class SimpleValueMissionObjectiveChecker_mod; export all
 mod SimpleValueMissionObjectiveChecker_mod;
 pub use SimpleValueMissionObjectiveChecker_mod::*;
-// class SingleFixedSceneScenesTransitionSetupDataSO_mod; export all
-mod SingleFixedSceneScenesTransitionSetupDataSO_mod;
-pub use SingleFixedSceneScenesTransitionSetupDataSO_mod::*;
 // class SinglePlayerLevelSelectionFlowCoordinator_mod; export all
 mod SinglePlayerLevelSelectionFlowCoordinator_mod;
 pub use SinglePlayerLevelSelectionFlowCoordinator_mod::*;
@@ -6100,51 +6235,6 @@ pub use SongTimeSyncedVideoPlayer_mod::*;
 // class SongTimeToShaderWriter_mod; export all
 mod SongTimeToShaderWriter_mod;
 pub use SongTimeToShaderWriter_mod::*;
-// class SonyAchievementIdsModelSO_mod; export all
-mod SonyAchievementIdsModelSO_mod;
-pub use SonyAchievementIdsModelSO_mod::*;
-// class SonyBackgroundExecutionHelper_mod; export all
-mod SonyBackgroundExecutionHelper_mod;
-pub use SonyBackgroundExecutionHelper_mod::*;
-// class SonyContentVersion_mod; export all
-mod SonyContentVersion_mod;
-pub use SonyContentVersion_mod::*;
-// class SonyLeaderboardIdsModel_mod; export all
-mod SonyLeaderboardIdsModel_mod;
-pub use SonyLeaderboardIdsModel_mod::*;
-// class SonyLeaderboardIdsSO_mod; export all
-mod SonyLeaderboardIdsSO_mod;
-pub use SonyLeaderboardIdsSO_mod::*;
-// class SonyLevelPacksPriceModel_mod; export all
-mod SonyLevelPacksPriceModel_mod;
-pub use SonyLevelPacksPriceModel_mod::*;
-// class SonyLevelProductCollectionModel_mod; export all
-mod SonyLevelProductCollectionModel_mod;
-pub use SonyLevelProductCollectionModel_mod::*;
-// class SonyLevelProductPackSO_mod; export all
-mod SonyLevelProductPackSO_mod;
-pub use SonyLevelProductPackSO_mod::*;
-// class SonyLevelProductPackSourceSO_mod; export all
-mod SonyLevelProductPackSourceSO_mod;
-pub use SonyLevelProductPackSourceSO_mod::*;
-// class SonyNetworkPlayerModel_mod; export all
-mod SonyNetworkPlayerModel_mod;
-pub use SonyNetworkPlayerModel_mod::*;
-// class SonyOnGoingToBackgroundSaveHandler_mod; export all
-mod SonyOnGoingToBackgroundSaveHandler_mod;
-pub use SonyOnGoingToBackgroundSaveHandler_mod::*;
-// class SonyPlatformAdditionalContentModel_mod; export all
-mod SonyPlatformAdditionalContentModel_mod;
-pub use SonyPlatformAdditionalContentModel_mod::*;
-// class SonyPublisherSKUSettingsSO_mod; export all
-mod SonyPublisherSKUSettingsSO_mod;
-pub use SonyPublisherSKUSettingsSO_mod::*;
-// class SonyPublishingHelper_mod; export all
-mod SonyPublishingHelper_mod;
-pub use SonyPublishingHelper_mod::*;
-// class SonyVersion_mod; export all
-mod SonyVersion_mod;
-pub use SonyVersion_mod::*;
 // class SortExtensions_mod; export all
 mod SortExtensions_mod;
 pub use SortExtensions_mod::*;
@@ -6187,6 +6277,9 @@ pub use SphereCuttableBySaber_mod::*;
 // class SplineUtils_mod; export all
 mod SplineUtils_mod;
 pub use SplineUtils_mod::*;
+// class SpriteArrayLightWithId_mod; export all
+mod SpriteArrayLightWithId_mod;
+pub use SpriteArrayLightWithId_mod::*;
 // class SpriteAsyncLoader_mod; export all
 mod SpriteAsyncLoader_mod;
 pub use SpriteAsyncLoader_mod::*;
@@ -6283,9 +6376,6 @@ pub use StartMiddleEndButtonsGroup_mod::*;
 // class StartupErrorFlowCoordinator_mod; export all
 mod StartupErrorFlowCoordinator_mod;
 pub use StartupErrorFlowCoordinator_mod::*;
-// class StartupErrorNoTransitionInstaller_mod; export all
-mod StartupErrorNoTransitionInstaller_mod;
-pub use StartupErrorNoTransitionInstaller_mod::*;
 // class StartupErrorSceneSetupData_mod; export all
 mod StartupErrorSceneSetupData_mod;
 pub use StartupErrorSceneSetupData_mod::*;
@@ -6313,15 +6403,15 @@ pub use StaticEnvironmentLights_mod::*;
 // class StaticJumpOffsetYProvider_mod; export all
 mod StaticJumpOffsetYProvider_mod;
 pub use StaticJumpOffsetYProvider_mod::*;
+// class StaticOverridableSpriteColor_mod; export all
+mod StaticOverridableSpriteColor_mod;
+pub use StaticOverridableSpriteColor_mod::*;
 // class StaticPacketPoolProvider_mod; export all
 mod StaticPacketPoolProvider_mod;
 pub use StaticPacketPoolProvider_mod::*;
 // class StaticPreviewMediaData_mod; export all
 mod StaticPreviewMediaData_mod;
 pub use StaticPreviewMediaData_mod::*;
-// class SteamInit_mod; export all
-mod SteamInit_mod;
-pub use SteamInit_mod::*;
 // class SteamLevelProductCollectionModel_mod; export all
 mod SteamLevelProductCollectionModel_mod;
 pub use SteamLevelProductCollectionModel_mod::*;
@@ -6340,6 +6430,9 @@ pub use StepFloatMaterialPropertyEffectTarget_mod::*;
 // class StepValuePicker_mod; export all
 mod StepValuePicker_mod;
 pub use StepValuePicker_mod::*;
+// class StopPreviewPlayerOnTransitionDidFinish_mod; export all
+mod StopPreviewPlayerOnTransitionDidFinish_mod;
+pub use StopPreviewPlayerOnTransitionDidFinish_mod::*;
 // class StoragePreference_mod; export all
 mod StoragePreference_mod;
 pub use StoragePreference_mod::*;
@@ -6361,6 +6454,12 @@ pub use StringListSO_mod::*;
 // class StringSignal_mod; export all
 mod StringSignal_mod;
 pub use StringSignal_mod::*;
+// class SwitchGameObjectArrayEffectTarget_mod; export all
+mod SwitchGameObjectArrayEffectTarget_mod;
+pub use SwitchGameObjectArrayEffectTarget_mod::*;
+// class SwitchGameObjectEffectTarget_mod; export all
+mod SwitchGameObjectEffectTarget_mod;
+pub use SwitchGameObjectEffectTarget_mod::*;
 // class SwitchSettingsController_mod; export all
 mod SwitchSettingsController_mod;
 pub use SwitchSettingsController_mod::*;
@@ -6376,6 +6475,9 @@ pub use SyncStateId_mod::*;
 // class SyncText_mod; export all
 mod SyncText_mod;
 pub use SyncText_mod::*;
+// class SyncTimePacket_mod; export all
+mod SyncTimePacket_mod;
+pub use SyncTimePacket_mod::*;
 // class SyncTimeProvider_mod; export all
 mod SyncTimeProvider_mod;
 pub use SyncTimeProvider_mod::*;
@@ -6397,6 +6499,9 @@ pub use TagPropertyAttribute_mod::*;
 // class TaskExtensions_mod; export all
 mod TaskExtensions_mod;
 pub use TaskExtensions_mod::*;
+// class TelemetryModelInstaller_mod; export all
+mod TelemetryModelInstaller_mod;
+pub use TelemetryModelInstaller_mod::*;
 // class TestAnalyticsModel_mod; export all
 mod TestAnalyticsModel_mod;
 pub use TestAnalyticsModel_mod::*;
@@ -6409,6 +6514,9 @@ pub use TestInvitePlatformHandler_mod::*;
 // class TestPlatformLeaderboardsHandler_mod; export all
 mod TestPlatformLeaderboardsHandler_mod;
 pub use TestPlatformLeaderboardsHandler_mod::*;
+// class TestSceneUsage_mod; export all
+mod TestSceneUsage_mod;
+pub use TestSceneUsage_mod::*;
 // class TextButton_mod; export all
 mod TextButton_mod;
 pub use TextButton_mod::*;
@@ -6439,6 +6547,21 @@ pub use TextureEffectSO_mod::*;
 // class TextureIntSwitchEventEffect_mod; export all
 mod TextureIntSwitchEventEffect_mod;
 pub use TextureIntSwitchEventEffect_mod::*;
+// class TextureProcessor3DAsset_mod; export all
+mod TextureProcessor3DAsset_mod;
+pub use TextureProcessor3DAsset_mod::*;
+// class TextureProcessor3DBehaviour_mod; export all
+mod TextureProcessor3DBehaviour_mod;
+pub use TextureProcessor3DBehaviour_mod::*;
+// class TextureProcessor3DMixerBehaviour_mod; export all
+mod TextureProcessor3DMixerBehaviour_mod;
+pub use TextureProcessor3DMixerBehaviour_mod::*;
+// class TextureProcessor3DTrack_mod; export all
+mod TextureProcessor3DTrack_mod;
+pub use TextureProcessor3DTrack_mod::*;
+// class TextureProcessor3D_mod; export all
+mod TextureProcessor3D_mod;
+pub use TextureProcessor3D_mod::*;
 // class ThreadStaticPacketPool_1_mod; export all
 mod ThreadStaticPacketPool_1_mod;
 pub use ThreadStaticPacketPool_1_mod::*;
@@ -6559,9 +6682,6 @@ pub use TutorialController_mod::*;
 // class TutorialInstaller_mod; export all
 mod TutorialInstaller_mod;
 pub use TutorialInstaller_mod::*;
-// class TutorialNoTransitionInstaller_mod; export all
-mod TutorialNoTransitionInstaller_mod;
-pub use TutorialNoTransitionInstaller_mod::*;
 // class TutorialNoteController_mod; export all
 mod TutorialNoteController_mod;
 pub use TutorialNoteController_mod::*;
@@ -6586,6 +6706,9 @@ pub use TutorialScenesTransitionSetupDataSO_mod::*;
 // class TutorialSongController_mod; export all
 mod TutorialSongController_mod;
 pub use TutorialSongController_mod::*;
+// class UIEditorSetup_mod; export all
+mod UIEditorSetup_mod;
+pub use UIEditorSetup_mod::*;
 // class UIExtensionMethods_mod; export all
 mod UIExtensionMethods_mod;
 pub use UIExtensionMethods_mod::*;
@@ -6616,6 +6739,9 @@ pub use UnityEditorBeatmapLevelDataAssetFileModel_mod::*;
 // class UnityLightWithId_mod; export all
 mod UnityLightWithId_mod;
 pub use UnityLightWithId_mod::*;
+// class UnityPlayerLoopManager_mod; export all
+mod UnityPlayerLoopManager_mod;
+pub use UnityPlayerLoopManager_mod::*;
 // class UnityScenesHelper_mod; export all
 mod UnityScenesHelper_mod;
 pub use UnityScenesHelper_mod::*;
@@ -6640,9 +6766,6 @@ pub use UpdateConnectionStateReason_mod::*;
 // class UseOnlyForReflectionProbeBaking_mod; export all
 mod UseOnlyForReflectionProbeBaking_mod;
 pub use UseOnlyForReflectionProbeBaking_mod::*;
-// class UserAgeCategory_mod; export all
-mod UserAgeCategory_mod;
-pub use UserAgeCategory_mod::*;
 // class UserInfo_mod; export all
 mod UserInfo_mod;
 pub use UserInfo_mod::*;
@@ -6655,12 +6778,18 @@ pub use VFXController_mod::*;
 // class VRCenterAdjust_mod; export all
 mod VRCenterAdjust_mod;
 pub use VRCenterAdjust_mod::*;
+// class VRControllerManufacturer_mod; export all
+mod VRControllerManufacturer_mod;
+pub use VRControllerManufacturer_mod::*;
 // class VRControllerTransformOffset_mod; export all
 mod VRControllerTransformOffset_mod;
 pub use VRControllerTransformOffset_mod::*;
 // class VRController_mod; export all
 mod VRController_mod;
 pub use VRController_mod::*;
+// class VRControllersRecorderExtensions_mod; export all
+mod VRControllersRecorderExtensions_mod;
+pub use VRControllersRecorderExtensions_mod::*;
 // class VRControllersRecorder_mod; export all
 mod VRControllersRecorder_mod;
 pub use VRControllersRecorder_mod::*;
@@ -6760,21 +6889,27 @@ pub use X509CertificateUtility_mod::*;
 // class XPlatformAccessTokenData_mod; export all
 mod XPlatformAccessTokenData_mod;
 pub use XPlatformAccessTokenData_mod::*;
-// class XPlatformAccessTokenFetchException_mod; export all
-mod XPlatformAccessTokenFetchException_mod;
-pub use XPlatformAccessTokenFetchException_mod::*;
-// class XPlatformAuthFeatureFlag_mod; export all
-mod XPlatformAuthFeatureFlag_mod;
-pub use XPlatformAuthFeatureFlag_mod::*;
 // class XRSubsystemHelper_mod; export all
 mod XRSubsystemHelper_mod;
 pub use XRSubsystemHelper_mod::*;
+// class ZenjectExtensions_mod; export all
+mod ZenjectExtensions_mod;
+pub use ZenjectExtensions_mod::*;
 // class ZenjectSafeBehaviour_mod; export all
 mod ZenjectSafeBehaviour_mod;
 pub use ZenjectSafeBehaviour_mod::*;
+// class _BurstDirectCallInitializer_mod; export all
+mod _BurstDirectCallInitializer_mod;
+pub use _BurstDirectCallInitializer_mod::*;
 // class _Module__mod; export all
 mod _Module__mod;
 pub use _Module__mod::*;
 // class _PrivateImplementationDetails__mod; export all
 mod _PrivateImplementationDetails__mod;
 pub use _PrivateImplementationDetails__mod::*;
+// class __JobReflectionRegistrationOutput__15867191014387474753_mod; export all
+mod __JobReflectionRegistrationOutput__15867191014387474753_mod;
+pub use __JobReflectionRegistrationOutput__15867191014387474753_mod::*;
+// class __JobReflectionRegistrationOutput__1652832624114795843_mod; export all
+mod __JobReflectionRegistrationOutput__1652832624114795843_mod;
+pub use __JobReflectionRegistrationOutput__1652832624114795843_mod::*;

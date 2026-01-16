@@ -226,7 +226,34 @@ impl crate::System::Math {
         let __cordl_ret: f64 = unsafe { cordl_method_info.invoke_unchecked((), (a))? };
         Ok(__cordl_ret.into())
     }
-    pub fn Clamp(value: i32, min: i32, max: i32) -> quest_hook::libil2cpp::Result<i32> {
+    pub fn Clamp_f32_f32_f32_1(
+        value: f32,
+        min: f32,
+        max: f32,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(f32, f32, f32), f32, 3usize>("Clamp")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Clamp",
+                            3usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (value, min, max))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Clamp_i32_i32_i32_0(
+        value: i32,
+        min: i32,
+        max: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {

@@ -1,0 +1,10 @@
+// namespace Enums;
+pub mod Enums;
+// namespace InputTypes;
+pub mod InputTypes;
+// namespace Models;
+pub mod Models;
+// namespace Mutations;
+pub mod Mutations;
+// namespace Queries;
+pub mod Queries;

@@ -93,6 +93,69 @@ impl<
         };
         Ok(__cordl_ret.into())
     }
+    pub fn GetProperties_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+    >
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+                        0usize,
+                    >("GetProperties")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProperties", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Properties::PropertyCollection_1<TContainer> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetProperties_ByRefMut1(
+        &mut self,
+        container: quest_hook::libil2cpp::ByRefMut<TContainer>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+    >
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<TContainer>),
+                        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+                        1usize,
+                    >("GetProperties")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetProperties", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Properties::PropertyCollection_1<TContainer> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (container))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Instantiate(&mut self) -> quest_hook::libil2cpp::Result<TContainer>
     where
         TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -183,6 +246,153 @@ impl<
             });
         let __cordl_ret: crate::Unity::Properties::InstantiationKind = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unity_Properties_IPropertyBag_Accept(
+        &mut self,
+        visitor: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBagVisitor,
+        >,
+        container: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Unity::Properties::IPropertyBagVisitor,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    quest_hook::libil2cpp::Il2CppObject,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Unity.Properties.IPropertyBag.Accept")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unity.Properties.IPropertyBag.Accept", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (visitor, container))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unity_Properties_IPropertyBag_TContainer__Accept(
+        &mut self,
+        visitor: quest_hook::libil2cpp::Gc<
+            crate::Unity::Properties::IPropertyBagVisitor,
+        >,
+        container: quest_hook::libil2cpp::ByRefMut<TContainer>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::Unity::Properties::IPropertyBagVisitor,
+                            >,
+                            quest_hook::libil2cpp::ByRefMut<TContainer>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("Unity.Properties.IPropertyBag<TContainer>.Accept")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unity.Properties.IPropertyBag<TContainer>.Accept", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (visitor, container))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unity_Properties_IPropertyBag_TContainer__GetProperties_0(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+    >
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+                        0usize,
+                    >("Unity.Properties.IPropertyBag<TContainer>.GetProperties")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unity.Properties.IPropertyBag<TContainer>.GetProperties",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Properties::PropertyCollection_1<TContainer> = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Unity_Properties_IPropertyBag_TContainer__GetProperties_ByRefMut1(
+        &mut self,
+        container: quest_hook::libil2cpp::ByRefMut<TContainer>,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+    >
+    where
+        TContainer: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
+            + quest_hook::libil2cpp::Argument + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<TContainer>),
+                        crate::Unity::Properties::PropertyCollection_1<TContainer>,
+                        1usize,
+                    >("Unity.Properties.IPropertyBag<TContainer>.GetProperties")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "Unity.Properties.IPropertyBag<TContainer>.GetProperties",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Properties::PropertyCollection_1<TContainer> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (container))?
         };
         Ok(__cordl_ret.into())
     }

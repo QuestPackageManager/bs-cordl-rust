@@ -52,6 +52,12 @@ pub use AssetFileDownloadUpdate_mod::*;
 // class AvatarEditorResult_mod; export all
 mod AvatarEditorResult_mod;
 pub use AvatarEditorResult_mod::*;
+// class BillingPlanList_mod; export all
+mod BillingPlanList_mod;
+pub use BillingPlanList_mod::*;
+// class BillingPlan_mod; export all
+mod BillingPlan_mod;
+pub use BillingPlan_mod::*;
 // class BlockedUserList_mod; export all
 mod BlockedUserList_mod;
 pub use BlockedUserList_mod::*;
@@ -70,6 +76,21 @@ pub use ChallengeList_mod::*;
 // class Challenge_mod; export all
 mod Challenge_mod;
 pub use Challenge_mod::*;
+// class ContentRating_mod; export all
+mod ContentRating_mod;
+pub use ContentRating_mod::*;
+// class CowatchViewerList_mod; export all
+mod CowatchViewerList_mod;
+pub use CowatchViewerList_mod::*;
+// class CowatchViewerUpdate_mod; export all
+mod CowatchViewerUpdate_mod;
+pub use CowatchViewerUpdate_mod::*;
+// class CowatchViewer_mod; export all
+mod CowatchViewer_mod;
+pub use CowatchViewer_mod::*;
+// class CowatchingState_mod; export all
+mod CowatchingState_mod;
+pub use CowatchingState_mod::*;
 // class DeserializableList_1_mod; export all
 mod DeserializableList_1_mod;
 pub use DeserializableList_1_mod::*;
@@ -151,6 +172,9 @@ pub use LivestreamingStatus_mod::*;
 // class LivestreamingVideoStats_mod; export all
 mod LivestreamingVideoStats_mod;
 pub use LivestreamingVideoStats_mod::*;
+// class ManagedInfo_mod; export all
+mod ManagedInfo_mod;
+pub use ManagedInfo_mod::*;
 // class MicrophoneAvailabilityState_mod; export all
 mod MicrophoneAvailabilityState_mod;
 pub use MicrophoneAvailabilityState_mod::*;
@@ -178,6 +202,9 @@ pub use NetSyncVoipAttenuationValue_mod::*;
 // class OrgScopedID_mod; export all
 mod OrgScopedID_mod;
 pub use OrgScopedID_mod::*;
+// class PaidOffer_mod; export all
+mod PaidOffer_mod;
+pub use PaidOffer_mod::*;
 // class PartyID_mod; export all
 mod PartyID_mod;
 pub use PartyID_mod::*;
@@ -199,6 +226,9 @@ pub use PingResult_mod::*;
 // class PlatformInitialize_mod; export all
 mod PlatformInitialize_mod;
 pub use PlatformInitialize_mod::*;
+// class Price_mod; export all
+mod Price_mod;
+pub use Price_mod::*;
 // class ProductList_mod; export all
 mod ProductList_mod;
 pub use ProductList_mod::*;
@@ -211,6 +241,9 @@ pub use PurchaseList_mod::*;
 // class Purchase_mod; export all
 mod Purchase_mod;
 pub use Purchase_mod::*;
+// class PushNotificationResult_mod; export all
+mod PushNotificationResult_mod;
+pub use PushNotificationResult_mod::*;
 // class RejoinDialogResult_mod; export all
 mod RejoinDialogResult_mod;
 pub use RejoinDialogResult_mod::*;
@@ -232,6 +265,12 @@ pub use SupplementaryMetric_mod::*;
 // class SystemVoipState_mod; export all
 mod SystemVoipState_mod;
 pub use SystemVoipState_mod::*;
+// class TrialOfferList_mod; export all
+mod TrialOfferList_mod;
+pub use TrialOfferList_mod::*;
+// class TrialOffer_mod; export all
+mod TrialOffer_mod;
+pub use TrialOffer_mod::*;
 // class UserAccountAgeCategory_mod; export all
 mod UserAccountAgeCategory_mod;
 pub use UserAccountAgeCategory_mod::*;

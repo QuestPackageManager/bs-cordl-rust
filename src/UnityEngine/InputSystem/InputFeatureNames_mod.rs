@@ -42,9 +42,9 @@ impl crate::UnityEngine::InputSystem::InputFeatureNames {
     pub const kDisableUnityRemoteSupport: &'static str = "DISABLE_UNITY_REMOTE_SUPPORT";
     pub const kParanoidReadValueCachingChecks: &'static str = "PARANOID_READ_VALUE_CACHING_CHECKS";
     pub const kRunPlayerUpdatesInEditMode: &'static str = "RUN_PLAYER_UPDATES_IN_EDIT_MODE";
+    pub const kUseIMGUIEditorForAssets: &'static str = "USE_IMGUI_EDITOR_FOR_ASSETS";
     pub const kUseOptimizedControls: &'static str = "USE_OPTIMIZED_CONTROLS";
     pub const kUseReadValueCaching: &'static str = "USE_READ_VALUE_CACHING";
-    pub const kUseWindowsGamingInputBackend: &'static str = "USE_WINDOWS_GAMING_INPUT_BACKEND";
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+InputFeatureNames")]
 impl quest_hook::libil2cpp::ObjectType

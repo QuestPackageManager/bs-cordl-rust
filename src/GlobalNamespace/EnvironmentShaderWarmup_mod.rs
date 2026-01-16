@@ -12,6 +12,9 @@ pub struct EnvironmentShaderWarmup {
     pub _gameScenesManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameScenesManager,
     >,
+    pub _audioTimeSource: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IAudioTimeSource,
+    >,
     pub _parentingTransform: quest_hook::libil2cpp::Gc<crate::UnityEngine::Transform>,
 }
 #[cfg(feature = "cordl_class_EnvironmentShaderWarmup")]

@@ -16,7 +16,7 @@ pub struct NoteDebrisSpawner {
     pub _burstSliderElementNotesDebrisPool: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::NoteDebris_Pool,
     >,
-    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
     pub _determinismConfig: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::DeterminismConfig,
     >,

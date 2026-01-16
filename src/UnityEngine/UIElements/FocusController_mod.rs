@@ -246,6 +246,9 @@ impl crate::UnityEngine::UIElements::FocusController {
     }
     pub fn FocusNextInDirection(
         &mut self,
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        >,
         direction: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::FocusChangeDirection,
         >,
@@ -257,25 +260,71 @@ impl crate::UnityEngine::UIElements::FocusController {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::FocusChangeDirection,
-                        >),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Focusable,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::FocusChangeDirection,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Gc<
                             crate::UnityEngine::UIElements::Focusable,
                         >,
-                        1usize,
+                        2usize,
                     >("FocusNextInDirection")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "FocusNextInDirection", 1usize
+                            "FocusNextInDirection", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::Focusable,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, (direction))? };
+        > = unsafe {
+            cordl_method_info.invoke_unchecked(self, (currentFocusable, direction))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetFocusTargets(
+        f: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::Focusable>,
+        outTargets: quest_hook::libil2cpp::Gc<
+            crate::System::Collections::Generic::List_1<
+                crate::UnityEngine::UIElements::FocusController_FocusedElement,
+            >,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Focusable,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::System::Collections::Generic::List_1<
+                                    crate::UnityEngine::UIElements::FocusController_FocusedElement,
+                                >,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("GetFocusTargets")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetFocusTargets", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (f, outTargets))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetFocusableParentForPointerEvent(
@@ -432,6 +481,34 @@ impl crate::UnityEngine::UIElements::FocusController {
                         dispatchMode,
                     ),
                 )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IgnoreEvent(
+        &mut self,
+        evt: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::EventBase,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("IgnoreEvent")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IgnoreEvent", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (evt))?
         };
         Ok(__cordl_ret.into())
     }
@@ -656,6 +733,9 @@ impl crate::UnityEngine::UIElements::FocusController {
     }
     pub fn SwitchFocusOnEvent(
         &mut self,
+        currentFocusable: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::Focusable,
+        >,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventBase>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -663,22 +743,27 @@ impl crate::UnityEngine::UIElements::FocusController {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::EventBase,
-                        >),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::Focusable,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::EventBase,
+                            >,
+                        ),
                         quest_hook::libil2cpp::Void,
-                        1usize,
+                        2usize,
                     >("SwitchFocusOnEvent")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SwitchFocusOnEvent", 1usize
+                            "SwitchFocusOnEvent", 2usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (e))?
+            cordl_method_info.invoke_unchecked(self, (currentFocusable, e))?
         };
         Ok(__cordl_ret.into())
     }
@@ -988,7 +1073,7 @@ pub struct FocusController_FocusedElement {
         crate::UnityEngine::UIElements::VisualElement,
     >,
     pub m_FocusedElement: quest_hook::libil2cpp::Gc<
-        crate::UnityEngine::UIElements::Focusable,
+        crate::UnityEngine::UIElements::VisualElement,
     >,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+FocusController+FocusedElement")]

@@ -140,6 +140,31 @@ impl crate::Unity::Profiling::LowLevel::Unsafe::ProfilerRecorderDescription {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn get_Flags(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::Unity::Profiling::LowLevel::MarkerFlags> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::Unity::Profiling::LowLevel::MarkerFlags,
+                        0usize,
+                    >("get_Flags")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_Flags", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::Unity::Profiling::LowLevel::MarkerFlags = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_Name(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

@@ -219,8 +219,8 @@ impl crate::UnityEngine::PhysicsScene2D {
         direction: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
         distance: f32,
         layerMask: i32,
-        results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+        results: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -236,10 +236,8 @@ impl crate::UnityEngine::PhysicsScene2D {
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Vector3>,
                             f32,
                             i32,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit2D,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                         ),
                         i32,
@@ -474,8 +472,8 @@ impl crate::UnityEngine::PhysicsScene2D {
         contactFilter: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ContactFilter2D,
         >,
-        results: quest_hook::libil2cpp::Gc<
-            quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::RaycastHit2D>,
+        results: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -493,10 +491,8 @@ impl crate::UnityEngine::PhysicsScene2D {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ContactFilter2D,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppArray<
-                                    crate::UnityEngine::RaycastHit2D,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                         ),
                         i32,
@@ -576,8 +572,8 @@ impl crate::UnityEngine::PhysicsScene2D {
         contactFilter: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::ContactFilter2D,
         >,
-        results: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<crate::UnityEngine::RaycastHit2D>,
+        results: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::BlittableListWrapper,
         >,
     ) -> quest_hook::libil2cpp::Result<i32> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -595,10 +591,8 @@ impl crate::UnityEngine::PhysicsScene2D {
                             quest_hook::libil2cpp::ByRefMut<
                                 crate::UnityEngine::ContactFilter2D,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::System::Collections::Generic::List_1<
-                                    crate::UnityEngine::RaycastHit2D,
-                                >,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::BlittableListWrapper,
                             >,
                         ),
                         i32,

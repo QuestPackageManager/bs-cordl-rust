@@ -14,7 +14,7 @@ pub struct RenderChainCommand {
     pub next: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::UIR::RenderChainCommand,
     >,
-    pub closing: bool,
+    pub isTail: bool,
     pub _cordl_type: crate::UnityEngine::UIElements::UIR::CommandType,
     pub state: crate::UnityEngine::UIElements::UIR::State,
     pub mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::UIR::MeshHandle>,

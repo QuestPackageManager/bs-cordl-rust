@@ -14,7 +14,7 @@ pub struct GetMultiplayerInstanceRequest {
         quest_hook::libil2cpp::Il2CppString,
     >,
     pub privateGameCode: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    pub platform: crate::GlobalNamespace::AuthenticationToken_Platform,
+    pub platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
     pub authUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub gameliftRegionLatencies: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -24,6 +24,7 @@ pub struct GetMultiplayerInstanceRequest {
     >,
     pub ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub customLocation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
 }
 #[cfg(feature = "cordl_class_BGNet+Core+GameLift+GetMultiplayerInstanceRequest")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -129,7 +130,7 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         userId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         beatmapLevelSelectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
         gameplayServerConfiguration: crate::GlobalNamespace::GameplayServerConfiguration,
-        platform: crate::GlobalNamespace::AuthenticationToken_Platform,
+        platform: crate::GlobalNamespace::AuthenticationToken_PlatformType,
         authUserId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         singleUseAuthToken: quest_hook::libil2cpp::Gc<
             quest_hook::libil2cpp::Il2CppString,
@@ -146,6 +147,7 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
         >,
         ticketId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         placementId: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        customLocation: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -162,7 +164,7 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
                             >,
                             crate::GlobalNamespace::BeatmapLevelSelectionMask,
                             crate::GlobalNamespace::GameplayServerConfiguration,
-                            crate::GlobalNamespace::AuthenticationToken_Platform,
+                            crate::GlobalNamespace::AuthenticationToken_PlatformType,
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
@@ -189,15 +191,18 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
                             quest_hook::libil2cpp::Gc<
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        13usize,
+                        14usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            13usize
+                            14usize
                         )
                     })
             });
@@ -219,6 +224,7 @@ impl crate::BGNet::Core::GameLift::GetMultiplayerInstanceRequest {
                         gameliftRegionLatencies,
                         ticketId,
                         placementId,
+                        customLocation,
                     ),
                 )?
         };

@@ -15,6 +15,7 @@ pub enum AndroidSensorType {
     GyroscopeUncalibrated = 16i32,
     HeartBeat = 31i32,
     HeartRate = 21i32,
+    HingeAngle = 36i32,
     Light = 5i32,
     LinearAcceleration = 10i32,
     LowLatencyOffBodyDetect = 34i32,

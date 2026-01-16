@@ -68,7 +68,7 @@ for crate::UnityEngine::UIElements::UIR::BasicNode_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::UIElements::UIR::BasicNode_1<T> {
-    pub fn AppendTo(
+    pub fn InsertFirst(
         &mut self,
         first: quest_hook::libil2cpp::ByRefMut<
             quest_hook::libil2cpp::Gc<
@@ -92,12 +92,12 @@ impl<
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
-                    >("AppendTo")
+                    >("InsertFirst")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "AppendTo", 1usize
+                            "InsertFirst", 1usize
                         )
                     })
             });

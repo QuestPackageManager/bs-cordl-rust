@@ -1,6 +1,3 @@
-// class BSAppInit_mod; export all
-mod BSAppInit_mod;
-pub use BSAppInit_mod::*;
 // class BSRuntimePlatform_mod; export all
 mod BSRuntimePlatform_mod;
 pub use BSRuntimePlatform_mod::*;
@@ -12,9 +9,9 @@ mod GameVersion_mod;
 pub use GameVersion_mod::*;
 // namespace Generated;
 pub mod Generated;
-// class IPlatformInit_mod; export all
-mod IPlatformInit_mod;
-pub use IPlatformInit_mod::*;
+// class InitArguments_mod; export all
+mod InitArguments_mod;
+pub use InitArguments_mod::*;
 // class RuntimePlatformType_mod; export all
 mod RuntimePlatformType_mod;
 pub use RuntimePlatformType_mod::*;

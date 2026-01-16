@@ -6,11 +6,9 @@ pub struct StandardGameplaySceneSetupData {
     pub autoRestart: bool,
     pub beatmapKey: crate::GlobalNamespace::BeatmapKey,
     pub beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-    pub backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub gameplayModifiers: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::GameplayModifiers,
     >,
-    pub startPaused: bool,
 }
 #[cfg(feature = "cordl_class_StandardGameplaySceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -51,25 +49,16 @@ impl crate::GlobalNamespace::StandardGameplaySceneSetupData {
         autoRestart: bool,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
         >,
-        startPaused: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
             .invoke_void(
                 ".ctor",
-                (
-                    autoRestart,
-                    beatmapKey,
-                    beatmapLevel,
-                    backButtonText,
-                    gameplayModifiers,
-                    startPaused,
-                ),
+                (autoRestart, beatmapKey, beatmapLevel, gameplayModifiers),
             )?;
         Ok(__cordl_object.into())
     }
@@ -78,11 +67,9 @@ impl crate::GlobalNamespace::StandardGameplaySceneSetupData {
         autoRestart: bool,
         beatmapKey: quest_hook::libil2cpp::ByRefMut<crate::GlobalNamespace::BeatmapKey>,
         beatmapLevel: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapLevel>,
-        backButtonText: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         gameplayModifiers: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::GameplayModifiers,
         >,
-        startPaused: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -98,21 +85,17 @@ impl crate::GlobalNamespace::StandardGameplaySceneSetupData {
                                 crate::GlobalNamespace::BeatmapLevel,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
-                            >,
-                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::GameplayModifiers,
                             >,
-                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        6usize,
+                        4usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            6usize
+                            4usize
                         )
                     })
             });
@@ -120,14 +103,7 @@ impl crate::GlobalNamespace::StandardGameplaySceneSetupData {
             cordl_method_info
                 .invoke_unchecked(
                     self,
-                    (
-                        autoRestart,
-                        beatmapKey,
-                        beatmapLevel,
-                        backButtonText,
-                        gameplayModifiers,
-                        startPaused,
-                    ),
+                    (autoRestart, beatmapKey, beatmapLevel, gameplayModifiers),
                 )?
         };
         Ok(__cordl_ret.into())

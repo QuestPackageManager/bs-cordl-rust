@@ -43,6 +43,21 @@ pub struct OVRPlayerController {
     pub buttonRotation: f32,
     pub ReadyToSnapTurn: bool,
     pub playerControllerEnabled: bool,
+    pub moveForwardAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub moveLeftAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub moveRightAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub moveBackAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
+    pub runAction: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::InputSystem::InputAction,
+    >,
 }
 #[cfg(feature = "cordl_class_OVRPlayerController")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRPlayerController {

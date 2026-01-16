@@ -1,3 +1,6 @@
+// class ATGMeshInfo_mod; export all
+mod ATGMeshInfo_mod;
+pub use ATGMeshInfo_mod::*;
 // class AtlasPopulationMode_mod; export all
 mod AtlasPopulationMode_mod;
 pub use AtlasPopulationMode_mod::*;
@@ -16,9 +19,24 @@ pub use ColorUtilities_mod::*;
 // class Extents_mod; export all
 mod Extents_mod;
 pub use Extents_mod::*;
+// class FastAction_1_mod; export all
+mod FastAction_1_mod;
+pub use FastAction_1_mod::*;
+// class FastAction_2_mod; export all
+mod FastAction_2_mod;
+pub use FastAction_2_mod::*;
+// class FastAction_3_mod; export all
+mod FastAction_3_mod;
+pub use FastAction_3_mod::*;
+// class FastAction_mod; export all
+mod FastAction_mod;
+pub use FastAction_mod::*;
 // class FontAssetCreationEditorSettings_mod; export all
 mod FontAssetCreationEditorSettings_mod;
 pub use FontAssetCreationEditorSettings_mod::*;
+// class FontAssetFactory_mod; export all
+mod FontAssetFactory_mod;
+pub use FontAssetFactory_mod::*;
 // class FontAssetUtilities_mod; export all
 mod FontAssetUtilities_mod;
 pub use FontAssetUtilities_mod::*;
@@ -58,15 +76,30 @@ pub use MaterialReferenceManager_mod::*;
 // class MaterialReference_mod; export all
 mod MaterialReference_mod;
 pub use MaterialReference_mod::*;
+// class MeshInfoBindings_mod; export all
+mod MeshInfoBindings_mod;
+pub use MeshInfoBindings_mod::*;
 // class MeshInfo_mod; export all
 mod MeshInfo_mod;
 pub use MeshInfo_mod::*;
+// class NativeTextElementInfo_mod; export all
+mod NativeTextElementInfo_mod;
+pub use NativeTextElementInfo_mod::*;
+// class NativeTextInfo_mod; export all
+mod NativeTextInfo_mod;
+pub use NativeTextInfo_mod::*;
+// class OTL_FeatureTag_mod; export all
+mod OTL_FeatureTag_mod;
+pub use OTL_FeatureTag_mod::*;
 // class Offset_mod; export all
 mod Offset_mod;
 pub use Offset_mod::*;
 // class PageInfo_mod; export all
 mod PageInfo_mod;
 pub use PageInfo_mod::*;
+// class RenderedText_mod; export all
+mod RenderedText_mod;
+pub use RenderedText_mod::*;
 // class RichTextTagAttribute_mod; export all
 mod RichTextTagAttribute_mod;
 pub use RichTextTagAttribute_mod::*;
@@ -97,6 +130,9 @@ pub use TextBackingContainer_mod::*;
 // class TextColorGradient_mod; export all
 mod TextColorGradient_mod;
 pub use TextColorGradient_mod::*;
+// class TextCoreVertex_mod; export all
+mod TextCoreVertex_mod;
+pub use TextCoreVertex_mod::*;
 // class TextElementInfo_mod; export all
 mod TextElementInfo_mod;
 pub use TextElementInfo_mod::*;
@@ -106,9 +142,15 @@ pub use TextElementType_mod::*;
 // class TextElement_mod; export all
 mod TextElement_mod;
 pub use TextElement_mod::*;
+// class TextEventManager_mod; export all
+mod TextEventManager_mod;
+pub use TextEventManager_mod::*;
 // class TextFontWeight_mod; export all
 mod TextFontWeight_mod;
 pub use TextFontWeight_mod::*;
+// class TextGenerationInfo_mod; export all
+mod TextGenerationInfo_mod;
+pub use TextGenerationInfo_mod::*;
 // class TextGenerationSettings_mod; export all
 mod TextGenerationSettings_mod;
 pub use TextGenerationSettings_mod::*;
@@ -118,6 +160,12 @@ pub use TextGeneratorUtilities_mod::*;
 // class TextGenerator_mod; export all
 mod TextGenerator_mod;
 pub use TextGenerator_mod::*;
+// class TextHandlePermanentCache_mod; export all
+mod TextHandlePermanentCache_mod;
+pub use TextHandlePermanentCache_mod::*;
+// class TextHandleTemporaryCache_mod; export all
+mod TextHandleTemporaryCache_mod;
+pub use TextHandleTemporaryCache_mod::*;
 // class TextHandle_mod; export all
 mod TextHandle_mod;
 pub use TextHandle_mod::*;
@@ -127,6 +175,9 @@ pub use TextInfo_mod::*;
 // class TextInputSource_mod; export all
 mod TextInputSource_mod;
 pub use TextInputSource_mod::*;
+// class TextLib_mod; export all
+mod TextLib_mod;
+pub use TextLib_mod::*;
 // class TextOverflowMode_mod; export all
 mod TextOverflowMode_mod;
 pub use TextOverflowMode_mod::*;
@@ -142,6 +193,9 @@ pub use TextProcessingStack_1_mod::*;
 // class TextResourceManager_mod; export all
 mod TextResourceManager_mod;
 pub use TextResourceManager_mod::*;
+// class TextSelectionService_mod; export all
+mod TextSelectionService_mod;
+pub use TextSelectionService_mod::*;
 // class TextSettings_mod; export all
 mod TextSettings_mod;
 pub use TextSettings_mod::*;
@@ -169,6 +223,9 @@ pub use TextureMapping_mod::*;
 // class UnicodeLineBreakingRules_mod; export all
 mod UnicodeLineBreakingRules_mod;
 pub use UnicodeLineBreakingRules_mod::*;
+// class VertexDataLayout_mod; export all
+mod VertexDataLayout_mod;
+pub use VertexDataLayout_mod::*;
 // class VertexSortingOrder_mod; export all
 mod VertexSortingOrder_mod;
 pub use VertexSortingOrder_mod::*;

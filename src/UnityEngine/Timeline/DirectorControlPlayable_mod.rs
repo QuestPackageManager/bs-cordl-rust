@@ -6,6 +6,7 @@ pub struct DirectorControlPlayable {
     pub director: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::Playables::PlayableDirector,
     >,
+    pub pauseAction: crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction,
     pub m_SyncTime: bool,
     pub m_AssetDuration: f64,
 }
@@ -44,6 +45,8 @@ impl std::ops::DerefMut for crate::UnityEngine::Timeline::DirectorControlPlayabl
 }
 #[cfg(feature = "UnityEngine+Timeline+DirectorControlPlayable")]
 impl crate::UnityEngine::Timeline::DirectorControlPlayable {
+    #[cfg(feature = "UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
+    pub type PauseAction = crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction;
     pub fn Create(
         graph: crate::UnityEngine::Playables::PlayableGraph,
         director: quest_hook::libil2cpp::Gc<
@@ -438,5 +441,97 @@ for crate::UnityEngine::Timeline::DirectorControlPlayable {
     }
     fn as_object_mut(&mut self) -> &mut quest_hook::libil2cpp::Il2CppObject {
         quest_hook::libil2cpp::ObjectType::as_object_mut(&mut self.__cordl_parent)
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
+#[repr(i32)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
+pub enum DirectorControlPlayable_PauseAction {
+    #[default]
+    PauseDirector = 1i32,
+    StopDirector = 0i32,
+}
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
+unsafe impl quest_hook::libil2cpp::Type
+for crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction {
+    type Held<'a> = Self;
+    type HeldRaw = Self;
+    const NAMESPACE: &'static str = "UnityEngine.Timeline";
+    const CLASS_NAME: &'static str = "DirectorControlPlayable/PauseAction";
+    fn matches_value_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_reference_argument(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && ty
+                .class()
+                .is_assignable_from(<Self as quest_hook::libil2cpp::Type>::class())
+    }
+    fn matches_value_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        !ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+    fn matches_reference_parameter(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        ty.is_ref()
+            && <Self as quest_hook::libil2cpp::Type>::class()
+                .is_assignable_from(ty.class())
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
+unsafe impl quest_hook::libil2cpp::Argument
+for crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_argument(ty)
+    }
+    fn invokable(&mut self) -> *mut ::std::ffi::c_void {
+        self as *mut Self as *mut ::std::ffi::c_void
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
+unsafe impl quest_hook::libil2cpp::Parameter
+for crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_value_parameter(ty)
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Parameter>::Actual) -> Self {
+        actual
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Parameter>::Actual {
+        self
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
+unsafe impl quest_hook::libil2cpp::Returned
+for crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction {
+    type Type = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_returned(ty)
+    }
+    fn from_object(object: Option<&mut quest_hook::libil2cpp::Il2CppObject>) -> Self {
+        unsafe {
+            quest_hook::libil2cpp::raw::unbox(
+                quest_hook::libil2cpp::WrapRaw::raw(object.unwrap()),
+            )
+        }
+    }
+}
+#[cfg(feature = "cordl_class_UnityEngine+Timeline+DirectorControlPlayable+PauseAction")]
+unsafe impl quest_hook::libil2cpp::Return
+for crate::UnityEngine::Timeline::DirectorControlPlayable_PauseAction {
+    type Actual = Self;
+    fn matches(ty: &quest_hook::libil2cpp::Il2CppType) -> bool {
+        <Self as quest_hook::libil2cpp::Type>::matches_return(ty)
+    }
+    fn into_actual(self) -> <Self as quest_hook::libil2cpp::Return>::Actual {
+        self
+    }
+    fn from_actual(actual: <Self as quest_hook::libil2cpp::Return>::Actual) -> Self {
+        actual
     }
 }

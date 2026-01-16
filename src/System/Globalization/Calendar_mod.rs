@@ -41,45 +41,6 @@ impl std::ops::DerefMut for crate::System::Globalization::Calendar {
 }
 #[cfg(feature = "System+Globalization+Calendar")]
 impl crate::System::Globalization::Calendar {
-    pub const CAL_CHINESELUNISOLAR: i32 = 15i32;
-    pub const CAL_GREGORIAN: i32 = 1i32;
-    pub const CAL_GREGORIAN_ARABIC: i32 = 10i32;
-    pub const CAL_GREGORIAN_ME_FRENCH: i32 = 9i32;
-    pub const CAL_GREGORIAN_US: i32 = 2i32;
-    pub const CAL_GREGORIAN_XLIT_ENGLISH: i32 = 11i32;
-    pub const CAL_GREGORIAN_XLIT_FRENCH: i32 = 12i32;
-    pub const CAL_HEBREW: i32 = 8i32;
-    pub const CAL_HIJRI: i32 = 6i32;
-    pub const CAL_JAPAN: i32 = 3i32;
-    pub const CAL_JAPANESELUNISOLAR: i32 = 14i32;
-    pub const CAL_JULIAN: i32 = 13i32;
-    pub const CAL_KOREA: i32 = 5i32;
-    pub const CAL_KOREANLUNISOLAR: i32 = 20i32;
-    pub const CAL_LUNAR_ETO_CHN: i32 = 17i32;
-    pub const CAL_LUNAR_ETO_KOR: i32 = 18i32;
-    pub const CAL_LUNAR_ETO_ROKUYOU: i32 = 19i32;
-    pub const CAL_PERSIAN: i32 = 22i32;
-    pub const CAL_SAKA: i32 = 16i32;
-    pub const CAL_TAIWAN: i32 = 4i32;
-    pub const CAL_TAIWANLUNISOLAR: i32 = 21i32;
-    pub const CAL_THAI: i32 = 7i32;
-    pub const CAL_UMALQURA: i32 = 23i32;
-    pub const CurrentEra: i32 = 0i32;
-    pub const DaysPer100Years: i32 = 36524i32;
-    pub const DaysPer400Years: i32 = 146097i32;
-    pub const DaysPer4Years: i32 = 1461i32;
-    pub const DaysPerYear: i32 = 365i32;
-    pub const DaysTo10000: i32 = 3652059i32;
-    pub const MaxMillis: i64 = 315537897600000i64;
-    pub const MillisPerDay: i32 = 86400000i32;
-    pub const MillisPerHour: i32 = 3600000i32;
-    pub const MillisPerMinute: i32 = 60000i32;
-    pub const MillisPerSecond: i32 = 1000i32;
-    pub const TicksPerDay: i64 = 864000000000i64;
-    pub const TicksPerHour: i64 = 36000000000i64;
-    pub const TicksPerMillisecond: i64 = 10000i64;
-    pub const TicksPerMinute: i64 = 600000000i64;
-    pub const TicksPerSecond: i64 = 10000000i64;
     pub fn Clone(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<

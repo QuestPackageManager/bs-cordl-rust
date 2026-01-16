@@ -39,19 +39,10 @@ impl std::ops::DerefMut for crate::GlobalNamespace::NetworkConstants {
 #[cfg(feature = "NetworkConstants")]
 impl crate::GlobalNamespace::NetworkConstants {
     pub const backgroundedState: &'static str = "backgrounded";
-    pub const dedicatedServerState: &'static str = "dedicated_server";
-    pub const finishedLevel: &'static str = "finished_level";
-    pub const isActive: &'static str = "is_active";
-    pub const kDedicatedServerMasterServerMessageType: u32 = 2u32;
-    pub const kGameLiftMessageType: u32 = 3u32;
-    pub const kHandshakeMessageType: u32 = 3192347326u32;
     pub const kProtocolVersion: u32 = 9u32;
-    pub const kUserMasterServerMessageType: u32 = 1u32;
     pub const playerState: &'static str = "player";
     pub const spectatingState: &'static str = "spectating";
     pub const terminatingState: &'static str = "terminating";
-    pub const wantsToPlayNextLevel: &'static str = "wants_to_play_next_level";
-    pub const wasActiveAtLevelStart: &'static str = "was_active_at_level_start";
 }
 #[cfg(feature = "cordl_class_NetworkConstants")]
 impl quest_hook::libil2cpp::ObjectType for crate::GlobalNamespace::NetworkConstants {

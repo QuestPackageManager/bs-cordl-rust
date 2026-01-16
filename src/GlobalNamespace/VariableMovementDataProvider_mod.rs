@@ -68,8 +68,9 @@ impl std::ops::DerefMut for crate::GlobalNamespace::VariableMovementDataProvider
 }
 #[cfg(feature = "VariableMovementDataProvider")]
 impl crate::GlobalNamespace::VariableMovementDataProvider {
-    pub const kInitMoveDistance: f32 = 200f32;
+    pub const kInitMoveSpeed: f32 = 200f32;
     pub const kMinNoteJumpMovementSpeed: f32 = 0.01f32;
+    pub const kMoveDistance: f32 = 100f32;
     pub const kMoveDuration: f32 = 0.5f32;
     #[cfg(feature = "VariableMovementDataProvider+InterpolationData")]
     pub type InterpolationData = crate::GlobalNamespace::VariableMovementDataProvider_InterpolationData;

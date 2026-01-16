@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct RecordingToolScenesTransitionSetupDataSO {
-    __cordl_parent: crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO,
+    __cordl_parent: crate::GlobalNamespace::ScenesTransitionSetupDataSO,
 }
 #[cfg(feature = "cordl_class_RecordingToolScenesTransitionSetupDataSO")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -27,7 +27,7 @@ for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
 #[cfg(feature = "RecordingToolScenesTransitionSetupDataSO")]
 impl std::ops::Deref
 for crate::GlobalNamespace::RecordingToolScenesTransitionSetupDataSO {
-    type Target = crate::GlobalNamespace::SingleFixedSceneScenesTransitionSetupDataSO;
+    type Target = crate::GlobalNamespace::ScenesTransitionSetupDataSO;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }

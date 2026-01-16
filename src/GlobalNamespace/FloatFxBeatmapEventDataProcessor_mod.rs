@@ -2,7 +2,7 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventDataProcessor {
-    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<
+    __cordl_parent: crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >,
 }
@@ -28,7 +28,7 @@ for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
 }
 #[cfg(feature = "FloatFxBeatmapEventDataProcessor")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor {
-    type Target = crate::GlobalNamespace::FxBeatmapEventDataProcessor_1<
+    type Target = crate::GlobalNamespace::FloatFxBeatmapEventDataProcessor_1<
         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
     >;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {

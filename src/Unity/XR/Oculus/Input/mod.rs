@@ -1,9 +1,6 @@
 // class GearVRTrackedController_mod; export all
 mod GearVRTrackedController_mod;
 pub use GearVRTrackedController_mod::*;
-// class OculusGoController_mod; export all
-mod OculusGoController_mod;
-pub use OculusGoController_mod::*;
 // class OculusHMDExtended_mod; export all
 mod OculusHMDExtended_mod;
 pub use OculusHMDExtended_mod::*;

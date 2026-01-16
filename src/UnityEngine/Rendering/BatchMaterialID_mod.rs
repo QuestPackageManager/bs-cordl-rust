@@ -170,6 +170,35 @@ impl crate::UnityEngine::Rendering::BatchMaterialID {
         let __cordl_ret: i32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn op_Equality(
+        a: crate::UnityEngine::Rendering::BatchMaterialID,
+        b: crate::UnityEngine::Rendering::BatchMaterialID,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::Rendering::BatchMaterialID,
+                            crate::UnityEngine::Rendering::BatchMaterialID,
+                        ),
+                        bool,
+                        2usize,
+                    >("op_Equality")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "op_Equality", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (a, b))?
+        };
+        Ok(__cordl_ret.into())
+    }
 }
 #[cfg(feature = "UnityEngine+Rendering+BatchMaterialID")]
 impl AsRef<crate::System::IEquatable_1<crate::UnityEngine::Rendering::BatchMaterialID>>

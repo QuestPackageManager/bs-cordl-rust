@@ -6,6 +6,7 @@ pub struct TMP_LineInfo {
     pub characterCount: i32,
     pub visibleCharacterCount: i32,
     pub spaceCount: i32,
+    pub visibleSpaceCount: i32,
     pub wordCount: i32,
     pub firstCharacterIndex: i32,
     pub firstVisibleCharacterIndex: i32,

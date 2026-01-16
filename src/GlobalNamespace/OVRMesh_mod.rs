@@ -7,6 +7,7 @@ pub struct OVRMesh {
         crate::GlobalNamespace::OVRMesh_IOVRMeshDataProvider,
     >,
     pub _meshType: crate::GlobalNamespace::OVRMesh_MeshType,
+    pub _loadedMeshType: crate::GlobalNamespace::OVRMesh_MeshType,
     pub _mesh: quest_hook::libil2cpp::Gc<crate::UnityEngine::Mesh>,
     pub _IsInitialized_k__BackingField: bool,
 }
@@ -65,6 +66,31 @@ impl crate::GlobalNamespace::OVRMesh {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetMeshType(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRMesh_MeshType> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::GlobalNamespace::OVRMesh_MeshType,
+                        0usize,
+                    >("GetMeshType")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetMeshType", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRMesh_MeshType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
@@ -368,6 +394,8 @@ pub enum OVRMesh_MeshType {
     HandLeft = 0i32,
     HandRight = 1i32,
     None = -1i32,
+    XRHandLeft = 4i32,
+    XRHandRight = 5i32,
 }
 #[cfg(feature = "cordl_class_OVRMesh+MeshType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRMesh_MeshType {

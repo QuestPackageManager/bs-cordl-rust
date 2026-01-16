@@ -114,6 +114,9 @@ pub use ICustomAttributeProvider_mod::*;
 // class IReflectableType_mod; export all
 mod IReflectableType_mod;
 pub use IReflectableType_mod::*;
+// class InterfaceMapping_mod; export all
+mod InterfaceMapping_mod;
+pub use InterfaceMapping_mod::*;
 // class IntrospectionExtensions_mod; export all
 mod IntrospectionExtensions_mod;
 pub use IntrospectionExtensions_mod::*;
@@ -123,6 +126,9 @@ pub use InvalidFilterCriteriaException_mod::*;
 // class LocalVariableInfo_mod; export all
 mod LocalVariableInfo_mod;
 pub use LocalVariableInfo_mod::*;
+// class ManifestResourceInfo_mod; export all
+mod ManifestResourceInfo_mod;
+pub use ManifestResourceInfo_mod::*;
 // class MemberFilter_mod; export all
 mod MemberFilter_mod;
 pub use MemberFilter_mod::*;
@@ -195,6 +201,9 @@ pub use PropertyInfo_mod::*;
 // class ReflectionTypeLoadException_mod; export all
 mod ReflectionTypeLoadException_mod;
 pub use ReflectionTypeLoadException_mod::*;
+// class ResourceLocation_mod; export all
+mod ResourceLocation_mod;
+pub use ResourceLocation_mod::*;
 // class RtFieldInfo_mod; export all
 mod RtFieldInfo_mod;
 pub use RtFieldInfo_mod::*;

@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
     }
     pub fn GetLocalizedMessage(
         data: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::MultiplayerStatusData>,
-        language: crate::BGLib::Polyglot::Language,
+        language: crate::BGLib::Polyglot::LocalizationLanguage,
     ) -> quest_hook::libil2cpp::Result<
         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     > {
@@ -87,7 +87,7 @@ impl crate::GlobalNamespace::MultiplayerUnavailableReasonMethods {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::MultiplayerStatusData,
                             >,
-                            crate::BGLib::Polyglot::Language,
+                            crate::BGLib::Polyglot::LocalizationLanguage,
                         ),
                         quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
                         2usize,

@@ -58,7 +58,6 @@ for crate::System::Runtime::Serialization::SafeSerializationManager {
 }
 #[cfg(feature = "System+Runtime+Serialization+SafeSerializationManager")]
 impl crate::System::Runtime::Serialization::SafeSerializationManager {
-    pub const RealTypeSerializationName: &'static str = "CLR_SafeSerializationManager_RealType";
     pub fn CompleteDeserialization(
         &mut self,
         deserializedObject: quest_hook::libil2cpp::Gc<

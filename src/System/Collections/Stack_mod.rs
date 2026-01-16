@@ -46,7 +46,6 @@ impl std::ops::DerefMut for crate::System::Collections::Stack {
 }
 #[cfg(feature = "System+Collections+Stack")]
 impl crate::System::Collections::Stack {
-    pub const _defaultCapacity: i32 = 10i32;
     #[cfg(feature = "System+Collections+Stack+StackDebugView")]
     pub type StackDebugView = crate::System::Collections::Stack_StackDebugView;
     #[cfg(feature = "System+Collections+Stack+StackEnumerator")]

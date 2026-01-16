@@ -30,6 +30,7 @@ pub struct DualShockGamepad {
     pub _R3_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::InputSystem::Controls::ButtonControl,
     >,
+    pub _hidDescriptor_k__BackingField: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
 }
 #[cfg(feature = "cordl_class_UnityEngine+InputSystem+DualShock+DualShockGamepad")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -407,6 +408,33 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
         > = unsafe { cordl_method_info.invoke_unchecked((), ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_hidDescriptor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+                        0usize,
+                    >("get_hidDescriptor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_hidDescriptor", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_optionsButton(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -706,6 +734,32 @@ impl crate::UnityEngine::InputSystem::DualShock::DualShockGamepad {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked((), (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_hidDescriptor(
+        &mut self,
+        value: crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::InputSystem::HID::HID_HIDDeviceDescriptor),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_hidDescriptor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_hidDescriptor", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

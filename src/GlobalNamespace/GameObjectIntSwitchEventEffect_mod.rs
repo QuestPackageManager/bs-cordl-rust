@@ -4,6 +4,7 @@
 pub struct GameObjectIntSwitchEventEffect {
     __cordl_parent: crate::UnityEngine::MonoBehaviour,
     pub _beatmapEventType: crate::GlobalNamespace::BasicBeatmapEventType,
+    pub _ignoreOnFail: bool,
     pub _defaultValue: i32,
     pub _gameObjectsValueLists: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<

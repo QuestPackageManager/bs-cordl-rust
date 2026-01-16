@@ -3,10 +3,14 @@
 #[derive(Debug)]
 pub struct TextGenerationSettings {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
-    pub text: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    pub m_RenderedText: crate::UnityEngine::TextCore::Text::RenderedText,
+    pub m_CachedRenderedText: quest_hook::libil2cpp::Gc<
+        quest_hook::libil2cpp::Il2CppString,
+    >,
     pub screenRect: crate::UnityEngine::Rect,
     pub margins: crate::UnityEngine::Vector4,
-    pub scale: f32,
+    pub pixelsPerPoint: f32,
+    pub isEditorRenderingModeBitmap: bool,
     pub fontAsset: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::TextCore::Text::FontAsset,
     >,
@@ -23,7 +27,6 @@ pub struct TextGenerationSettings {
     >,
     pub textAlignment: crate::UnityEngine::TextCore::Text::TextAlignment,
     pub overflowMode: crate::UnityEngine::TextCore::Text::TextOverflowMode,
-    pub wordWrap: bool,
     pub wordWrappingRatio: f32,
     pub color: crate::UnityEngine::Color,
     pub fontColorGradient: quest_hook::libil2cpp::Gc<
@@ -39,12 +42,18 @@ pub struct TextGenerationSettings {
     pub autoSize: bool,
     pub fontSizeMin: f32,
     pub fontSizeMax: f32,
-    pub enableKerning: bool,
+    pub fontFeatures: quest_hook::libil2cpp::Gc<
+        crate::System::Collections::Generic::List_1<
+            crate::UnityEngine::TextCore::Text::OTL_FeatureTag,
+        >,
+    >,
+    pub emojiFallbackSupport: bool,
     pub richText: bool,
     pub isRightToLeft: bool,
     pub extraPadding: f32,
     pub parseControlCharacters: bool,
     pub isOrthographic: bool,
+    pub isPlaceholder: bool,
     pub tagNoParsing: bool,
     pub characterSpacing: f32,
     pub wordSpacing: f32,
@@ -64,6 +73,7 @@ pub struct TextGenerationSettings {
     pub uvLineOffset: f32,
     pub geometrySortingOrder: crate::UnityEngine::TextCore::Text::VertexSortingOrder,
     pub inverseYAxis: bool,
+    pub isIMGUI: bool,
     pub charWidthMaxAdj: f32,
     pub inputSource: crate::UnityEngine::TextCore::Text::TextInputSource,
 }
@@ -230,7 +240,61 @@ impl crate::UnityEngine::TextCore::Text::TextGenerationSettings {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn op_Equality(
+    pub fn get_renderedText(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::Text::RenderedText,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::TextCore::Text::RenderedText,
+                        0usize,
+                    >("get_renderedText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_renderedText", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::Text::RenderedText = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_text(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_text")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_text", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn op_Inequality(
         left: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::TextCore::Text::TextGenerationSettings,
         >,
@@ -253,17 +317,69 @@ impl crate::UnityEngine::TextCore::Text::TextGenerationSettings {
                         ),
                         bool,
                         2usize,
-                    >("op_Equality")
+                    >("op_Inequality")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "op_Equality", 2usize
+                            "op_Inequality", 2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
             cordl_method_info.invoke_unchecked((), (left, right))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_renderedText(
+        &mut self,
+        value: crate::UnityEngine::TextCore::Text::RenderedText,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::TextCore::Text::RenderedText),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_renderedText")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_renderedText", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_text(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_text")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_text", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
         };
         Ok(__cordl_ret.into())
     }

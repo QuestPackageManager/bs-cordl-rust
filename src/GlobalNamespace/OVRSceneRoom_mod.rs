@@ -14,36 +14,11 @@ pub struct OVRSceneRoom {
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
         >,
     >,
-    pub _walls: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-        >,
-    >,
-    pub _orderedRoomGuids: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::Dictionary_2<crate::System::Guid, i32>,
-    >,
-    pub _wallOrderComparer: quest_hook::libil2cpp::Gc<
-        crate::System::Comparison_1<
-            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-        >,
-    >,
     pub _sceneAnchor: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRSceneAnchor>,
     pub _sceneManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::OVRSceneManager,
     >,
-    pub _uuidToQuery: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::HashSet_1<crate::System::Guid>,
-    >,
-    pub _roomAnchors: quest_hook::libil2cpp::Gc<
-        crate::System::Collections::Generic::List_1<crate::GlobalNamespace::OVRAnchor>,
-    >,
-    pub _taskCount: i32,
-    pub _onFetchAnchorsCompleted: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<bool>,
-    >,
-    pub _onAnchorLocalizationCompleted: quest_hook::libil2cpp::Gc<
-        crate::System::Action_2<bool, crate::GlobalNamespace::OVRAnchor>,
-    >,
+    pub _uuid: crate::System::Guid,
 }
 #[cfg(feature = "cordl_class_OVRSceneRoom")]
 unsafe impl quest_hook::libil2cpp::Type for crate::GlobalNamespace::OVRSceneRoom {
@@ -100,31 +75,6 @@ impl crate::GlobalNamespace::OVRSceneRoom {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn GetUuidsToQuery(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("GetUuidsToQuery")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUuidsToQuery", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn IOVRSceneComponent_Initialize(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -152,22 +102,115 @@ impl crate::GlobalNamespace::OVRSceneRoom {
     }
     pub fn LoadRoom(
         &mut self,
+        floor: crate::System::Guid,
+        ceiling: crate::System::Guid,
+        walls: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+        >,
+    ) -> quest_hook::libil2cpp::Result<crate::GlobalNamespace::OVRTask_1<bool>> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            crate::System::Guid,
+                            crate::System::Guid,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppArray<crate::System::Guid>,
+                            >,
+                        ),
+                        crate::GlobalNamespace::OVRTask_1<bool>,
+                        3usize,
+                    >("LoadRoom")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LoadRoom", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::GlobalNamespace::OVRTask_1<bool> = unsafe {
+            cordl_method_info.invoke_unchecked(self, (floor, ceiling, walls))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Log(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("LoadRoom")
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Log")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadRoom", 0usize
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Log",
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
+            cordl_method_info.invoke_unchecked(self, (message))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogError(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("LogError")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogError", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (message))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn LogWarning(
+        &mut self,
+        message: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("LogWarning")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "LogWarning", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (message))?
         };
         Ok(__cordl_ret.into())
     }
@@ -199,150 +242,65 @@ impl crate::GlobalNamespace::OVRSceneRoom {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn OnFetchAnchorsCompleted(
-        &mut self,
-        success: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+    pub fn _LoadRoom_g__GetPlane_19_1(
+        uuid: crate::System::Guid,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool),
-                        quest_hook::libil2cpp::Void,
+                    .find_static_method::<
+                        (crate::System::Guid),
+                        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
                         1usize,
-                    >("OnFetchAnchorsCompleted")
+                    >("<LoadRoom>g__GetPlane|19_1")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnFetchAnchorsCompleted", 1usize
+                            "<LoadRoom>g__GetPlane|19_1", 1usize
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (success))?
-        };
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::OVRScenePlane,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (uuid))? };
         Ok(__cordl_ret.into())
     }
-    pub fn OnLocalizationCompleted(
-        &mut self,
-        success: bool,
-        anchor: crate::GlobalNamespace::OVRAnchor,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (bool, crate::GlobalNamespace::OVRAnchor),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >("OnLocalizationCompleted")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "OnLocalizationCompleted", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (success, anchor))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn UpdateRoomInformation(
-        &mut self,
-        plane: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::OVRScenePlane,
-                        >),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("UpdateRoomInformation")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "UpdateRoomInformation", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (plane))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _Awake_b__24_0(
-        &mut self,
-        planeA: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-        planeB: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-    ) -> quest_hook::libil2cpp::Result<i32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRScenePlane,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRScenePlane,
-                            >,
-                        ),
-                        i32,
-                        2usize,
-                    >("<Awake>b__24_0")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>b__24_0", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: i32 = unsafe {
-            cordl_method_info.invoke_unchecked(self, (planeA, planeB))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _Awake_g__TryGetUuid_24_1(
-        &mut self,
-        plane: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
-        index: quest_hook::libil2cpp::ByRefMut<i32>,
+    pub fn _LoadRoom_g__TryGetPlane_19_0(
+        uuid: crate::System::Guid,
+        plane: quest_hook::libil2cpp::ByRefMut<
+            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::OVRScenePlane>,
+        >,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
+                    .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::OVRScenePlane,
+                            crate::System::Guid,
+                            quest_hook::libil2cpp::ByRefMut<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::GlobalNamespace::OVRScenePlane,
+                                >,
                             >,
-                            quest_hook::libil2cpp::ByRefMut<i32>,
                         ),
                         bool,
                         2usize,
-                    >("<Awake>g__TryGetUuid|24_1")
+                    >("<LoadRoom>g__TryGetPlane|19_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Awake>g__TryGetUuid|24_1", 2usize
+                            "<LoadRoom>g__TryGetPlane|19_0", 2usize
                         )
                     })
             });
         let __cordl_ret: bool = unsafe {
-            cordl_method_info.invoke_unchecked(self, (plane, index))?
+            cordl_method_info.invoke_unchecked((), (uuid, plane))?
         };
         Ok(__cordl_ret.into())
     }

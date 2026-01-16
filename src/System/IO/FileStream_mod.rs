@@ -580,7 +580,7 @@ impl crate::System::IO::FileStream {
             .invoke_void(".ctor", (path, mode, access, share, bufferSize, useAsync))?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
+    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions8(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -598,7 +598,7 @@ impl crate::System::IO::FileStream {
             )?;
         Ok(__cordl_object.into())
     }
-    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
+    pub fn New_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool7(
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
         access: crate::System::IO::FileAccess,
@@ -643,32 +643,6 @@ impl crate::System::IO::FileStream {
                 ".ctor",
                 (handle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
             )?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SafeFileHandle_FileAccess7(
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, access))?;
-        Ok(__cordl_object.into())
-    }
-    pub fn New_SafeFileHandle_FileAccess_i32__cordl_bool8(
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-        bufferSize: i32,
-        isAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
-        let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
-            .instantiate();
-        quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (handle, access, bufferSize, isAsync))?;
         Ok(__cordl_object.into())
     }
     pub fn Read(
@@ -1321,7 +1295,7 @@ impl crate::System::IO::FileStream {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions10(
+    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool_FileOptions8(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -1367,7 +1341,7 @@ impl crate::System::IO::FileStream {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool9(
+    pub fn _ctor_Il2CppString_FileMode_FileAccess_FileShare_i32__cordl_bool__cordl_bool7(
         &mut self,
         path: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         mode: crate::System::IO::FileMode,
@@ -1487,79 +1461,6 @@ impl crate::System::IO::FileStream {
                     self,
                     (handle, access, ownsHandle, bufferSize, isAsync, isConsoleWrapper),
                 )?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SafeFileHandle_FileAccess7(
-        &mut self,
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-                            >,
-                            crate::System::IO::FileAccess,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        2usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            2usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (handle, access))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn _ctor_SafeFileHandle_FileAccess_i32__cordl_bool8(
-        &mut self,
-        handle: quest_hook::libil2cpp::Gc<
-            crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-        >,
-        access: crate::System::IO::FileAccess,
-        bufferSize: i32,
-        isAsync: bool,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::Microsoft::Win32::SafeHandles::SafeFileHandle,
-                            >,
-                            crate::System::IO::FileAccess,
-                            i32,
-                            bool,
-                        ),
-                        quest_hook::libil2cpp::Void,
-                        4usize,
-                    >(".ctor")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            4usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (handle, access, bufferSize, isAsync))?
         };
         Ok(__cordl_ret.into())
     }

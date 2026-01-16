@@ -4,7 +4,7 @@
 pub struct MultiplayerLevelLoader {
     __cordl_parent: quest_hook::libil2cpp::Il2CppObject,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _beatmapLevelsModel: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BeatmapLevelsModel,

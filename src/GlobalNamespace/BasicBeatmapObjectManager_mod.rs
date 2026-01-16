@@ -12,7 +12,10 @@ pub struct BasicBeatmapObjectManager {
     pub _initData: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::BasicBeatmapObjectManager_InitData,
     >,
-    pub _random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+    pub _random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+    pub _determinismConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::DeterminismConfig,
+    >,
     pub _basicGameNotePoolContainer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MemoryPoolContainer_1<
             quest_hook::libil2cpp::Gc<crate::GlobalNamespace::GameNoteController>,
@@ -182,7 +185,10 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
         initData: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::BasicBeatmapObjectManager_InitData,
         >,
-        random: quest_hook::libil2cpp::Gc<crate::System::Random>,
+        random: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+        determinismConfig: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::DeterminismConfig,
+        >,
         variableMovementDataProvider: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::VariableMovementDataProvider,
         >,
@@ -214,7 +220,10 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::BasicBeatmapObjectManager_InitData,
                             >,
-                            quest_hook::libil2cpp::Gc<crate::System::Random>,
+                            quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IRandom>,
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::DeterminismConfig,
+                            >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::VariableMovementDataProvider,
                             >,
@@ -238,13 +247,13 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
                             >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        9usize,
+                        10usize,
                     >("Init")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
-                            9usize
+                            10usize
                         )
                     })
             });
@@ -255,6 +264,7 @@ impl crate::GlobalNamespace::BasicBeatmapObjectManager {
                     (
                         initData,
                         random,
+                        determinismConfig,
                         variableMovementDataProvider,
                         basicGameNotePool,
                         burstSliderHeadGameNotePool,

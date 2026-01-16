@@ -8,9 +8,6 @@ pub struct GameLiftConnectionManager {
     pub _connectionManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IConnectionManager,
     >,
-    pub _certificateValidator: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::ICertificateValidator,
-    >,
     pub _code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
     pub _selectionMask: crate::GlobalNamespace::BeatmapLevelSelectionMask,
@@ -208,16 +205,14 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
     }
     pub fn DisposeAsync(
         &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
-    > {
+    ) -> quest_hook::libil2cpp::Result<crate::System::Threading::Tasks::ValueTask> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (),
-                        quest_hook::libil2cpp::Gc<crate::System::Threading::Tasks::Task>,
+                        crate::System::Threading::Tasks::ValueTask,
                         0usize,
                     >("DisposeAsync")
                     .unwrap_or_else(|e| {
@@ -228,9 +223,9 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
                         )
                     })
             });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Threading::Tasks::Task,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        let __cordl_ret: crate::System::Threading::Tasks::ValueTask = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GameLiftConnectToServer(
@@ -295,6 +290,72 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnection,
         > = unsafe { cordl_method_info.invoke_unchecked(self, (index))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetGameLiftPlayerSessionInfo(
+        &mut self,
+        authenticationTokenProvider: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IAuthenticationTokenProvider,
+        >,
+        cancellationToken: crate::System::Threading::CancellationToken,
+        secret: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        code: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                >,
+            >,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IAuthenticationTokenProvider,
+                            >,
+                            crate::System::Threading::CancellationToken,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                            quest_hook::libil2cpp::Gc<
+                                quest_hook::libil2cpp::Il2CppString,
+                            >,
+                        ),
+                        quest_hook::libil2cpp::Gc<
+                            crate::System::Threading::Tasks::Task_1<
+                                quest_hook::libil2cpp::Gc<
+                                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                                >,
+                            >,
+                        >,
+                        4usize,
+                    >("GetGameLiftPlayerSessionInfo")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetGameLiftPlayerSessionInfo", 4usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::System::Threading::Tasks::Task_1<
+                quest_hook::libil2cpp::Gc<
+                    crate::BGNet::Core::GameLift::PlayerSessionInfo,
+                >,
+            >,
+        > = unsafe {
+            cordl_method_info
+                .invoke_unchecked(
+                    self,
+                    (authenticationTokenProvider, cancellationToken, secret, code),
+                )?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn GetPublicServers(
@@ -613,23 +674,17 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
-    pub fn New_ITimeProvider_ITaskUtility_IConnectionManager_ICertificateValidator1(
+    pub fn New_ITimeProvider_ITaskUtility_IConnectionManager1(
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         connectionManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnectionManager,
         >,
-        certificateValidator: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ICertificateValidator,
-        >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(
-                ".ctor",
-                (timeProvider, taskUtility, connectionManager, certificateValidator),
-            )?;
+            .invoke_void(".ctor", (timeProvider, taskUtility, connectionManager))?;
         Ok(__cordl_object.into())
     }
     pub fn PollUpdate(
@@ -745,15 +800,12 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _ctor_ITimeProvider_ITaskUtility_IConnectionManager_ICertificateValidator1(
+    pub fn _ctor_ITimeProvider_ITaskUtility_IConnectionManager1(
         &mut self,
         timeProvider: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITimeProvider>,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         connectionManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IConnectionManager,
-        >,
-        certificateValidator: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ICertificateValidator,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -767,27 +819,21 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IConnectionManager,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::ICertificateValidator,
-                            >,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        3usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            4usize
+                            3usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
-                .invoke_unchecked(
-                    self,
-                    (timeProvider, taskUtility, connectionManager, certificateValidator),
-                )?
+                .invoke_unchecked(self, (timeProvider, taskUtility, connectionManager))?
         };
         Ok(__cordl_ret.into())
     }
@@ -1042,6 +1088,33 @@ impl crate::GlobalNamespace::GameLiftConnectionManager {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "get_code", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            quest_hook::libil2cpp::Il2CppString,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_compatibilityVersion(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+                        0usize,
+                    >("get_compatibilityVersion")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_compatibilityVersion", 0usize
                         )
                     })
             });
@@ -1582,6 +1655,20 @@ for crate::GlobalNamespace::GameLiftConnectionManager {
 impl AsMut<crate::GlobalNamespace::IPollable>
 for crate::GlobalNamespace::GameLiftConnectionManager {
     fn as_mut(&mut self) -> &mut crate::GlobalNamespace::IPollable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameLiftConnectionManager")]
+impl AsRef<crate::System::IAsyncDisposable>
+for crate::GlobalNamespace::GameLiftConnectionManager {
+    fn as_ref(&self) -> &crate::System::IAsyncDisposable {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "GameLiftConnectionManager")]
+impl AsMut<crate::System::IAsyncDisposable>
+for crate::GlobalNamespace::GameLiftConnectionManager {
+    fn as_mut(&mut self) -> &mut crate::System::IAsyncDisposable {
         unsafe { std::mem::transmute(self) }
     }
 }

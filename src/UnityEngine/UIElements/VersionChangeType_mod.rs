@@ -3,10 +3,13 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default)]
 pub enum VersionChangeType {
     #[default]
+    BindingRegistration = 262144i32,
     Bindings = 1i32,
     BorderRadius = 128i32,
     BorderWidth = 256i32,
     Color = 8192i32,
+    DataSource = 524288i32,
+    DisableRendering = 131072i32,
     EventCallbackCategories = 65536i32,
     Hierarchy = 4i32,
     Layout = 8i32,

@@ -39,41 +39,6 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::TextUtilities {
 }
 #[cfg(feature = "UnityEngine+UIElements+TextUtilities")]
 impl crate::UnityEngine::UIElements::TextUtilities {
-    pub fn ConvertPixelUnitsToTextCoreRelativeUnits(
-        ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
-        fontAsset: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::TextCore::Text::FontAsset,
-        >,
-    ) -> quest_hook::libil2cpp::Result<f32> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::UIElements::VisualElement,
-                            >,
-                            quest_hook::libil2cpp::Gc<
-                                crate::UnityEngine::TextCore::Text::FontAsset,
-                            >,
-                        ),
-                        f32,
-                        2usize,
-                    >("ConvertPixelUnitsToTextCoreRelativeUnits")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertPixelUnitsToTextCoreRelativeUnits", 2usize
-                        )
-                    })
-            });
-        let __cordl_ret: f32 = unsafe {
-            cordl_method_info.invoke_unchecked((), (ve, fontAsset))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn GetFontAsset(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<
@@ -107,6 +72,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
     }
     pub fn GetTextCoreSettingsForElement(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
+        ignoreColors: bool,
     ) -> quest_hook::libil2cpp::Result<
         crate::UnityEngine::UIElements::UIR::TextCoreSettings,
     > {
@@ -115,29 +81,32 @@ impl crate::UnityEngine::UIElements::TextUtilities {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::VisualElement,
-                        >),
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::VisualElement,
+                            >,
+                            bool,
+                        ),
                         crate::UnityEngine::UIElements::UIR::TextCoreSettings,
-                        1usize,
+                        2usize,
                     >("GetTextCoreSettingsForElement")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetTextCoreSettingsForElement", 1usize
+                            "GetTextCoreSettingsForElement", 2usize
                         )
                     })
             });
         let __cordl_ret: crate::UnityEngine::UIElements::UIR::TextCoreSettings = unsafe {
-            cordl_method_info.invoke_unchecked((), (ve))?
+            cordl_method_info.invoke_unchecked((), (ve, ignoreColors))?
         };
         Ok(__cordl_ret.into())
     }
     pub fn GetTextSettingsFrom(
         ve: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::VisualElement>,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::PanelTextSettings>,
+        quest_hook::libil2cpp::Gc<crate::UnityEngine::TextCore::Text::TextSettings>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -148,7 +117,7 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                             crate::UnityEngine::UIElements::VisualElement,
                         >),
                         quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::PanelTextSettings,
+                            crate::UnityEngine::TextCore::Text::TextSettings,
                         >,
                         1usize,
                     >("GetTextSettingsFrom")
@@ -161,8 +130,33 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::PanelTextSettings,
+            crate::UnityEngine::TextCore::Text::TextSettings,
         > = unsafe { cordl_method_info.invoke_unchecked((), (ve))? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn IsAdvancedTextEnabledForElement(
+        te: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::TextElement,
+                        >),
+                        bool,
+                        1usize,
+                    >("IsAdvancedTextEnabledForElement")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "IsAdvancedTextEnabledForElement", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe { cordl_method_info.invoke_unchecked((), (te))? };
         Ok(__cordl_ret.into())
     }
     pub fn IsFontAssigned(
@@ -192,7 +186,9 @@ impl crate::UnityEngine::UIElements::TextUtilities {
     }
     pub fn MeasureVisualElementTextSize(
         te: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::TextElement>,
-        textToMeasure: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        textToMeasure: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::TextCore::Text::RenderedText,
+        >,
         width: f32,
         widthMode: crate::UnityEngine::UIElements::VisualElement_MeasureMode,
         height: f32,
@@ -207,8 +203,8 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                             quest_hook::libil2cpp::Gc<
                                 crate::UnityEngine::UIElements::TextElement,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::TextCore::Text::RenderedText,
                             >,
                             f32,
                             crate::UnityEngine::UIElements::VisualElement_MeasureMode,
@@ -232,6 +228,88 @@ impl crate::UnityEngine::UIElements::TextUtilities {
                     (),
                     (te, textToMeasure, width, widthMode, height, heightMode),
                 )?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn toTextCore_TextOverflow_OverflowInternal1(
+        textOverflow: crate::UnityEngine::UIElements::TextOverflow,
+        overflow: crate::UnityEngine::UIElements::OverflowInternal,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::TextOverflow> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::UnityEngine::UIElements::TextOverflow,
+                            crate::UnityEngine::UIElements::OverflowInternal,
+                        ),
+                        crate::UnityEngine::TextCore::TextOverflow,
+                        2usize,
+                    >("toTextCore")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "toTextCore", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::TextOverflow = unsafe {
+            cordl_method_info.invoke_unchecked((), (textOverflow, overflow))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn toTextCore_WhiteSpace__cordl_bool0(
+        whiteSpace: crate::UnityEngine::UIElements::WhiteSpace,
+        isInputField: bool,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::TextCore::WhiteSpace> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::UIElements::WhiteSpace, bool),
+                        crate::UnityEngine::TextCore::WhiteSpace,
+                        2usize,
+                    >("toTextCore")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "toTextCore", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::WhiteSpace = unsafe {
+            cordl_method_info.invoke_unchecked((), (whiteSpace, isInputField))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn toTextWrappingMode(
+        whiteSpace: crate::UnityEngine::UIElements::WhiteSpace,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::TextCore::Text::TextWrappingMode,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::UIElements::WhiteSpace),
+                        crate::UnityEngine::TextCore::Text::TextWrappingMode,
+                        1usize,
+                    >("toTextWrappingMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "toTextWrappingMode", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::TextCore::Text::TextWrappingMode = unsafe {
+            cordl_method_info.invoke_unchecked((), (whiteSpace))?
         };
         Ok(__cordl_ret.into())
     }

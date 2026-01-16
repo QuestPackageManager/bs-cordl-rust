@@ -2,7 +2,10 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct FloatFxBeatmapEventData {
-    __cordl_parent: crate::GlobalNamespace::FxBeatmapEventData,
+    __cordl_parent: crate::GlobalNamespace::BeatmapEventData,
+    pub groupId: i32,
+    pub elementId: i32,
+    pub usePreviousEventValue: bool,
     pub _value_k__BackingField: f32,
     pub _easeType_k__BackingField: crate::GlobalNamespace::EaseType,
 }
@@ -28,7 +31,7 @@ for crate::GlobalNamespace::FloatFxBeatmapEventData {
 }
 #[cfg(feature = "FloatFxBeatmapEventData")]
 impl std::ops::Deref for crate::GlobalNamespace::FloatFxBeatmapEventData {
-    type Target = crate::GlobalNamespace::FxBeatmapEventData;
+    type Target = crate::GlobalNamespace::BeatmapEventData;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -115,6 +118,28 @@ impl crate::GlobalNamespace::FloatFxBeatmapEventData {
                 (_cordl_time, groupId, elementId, usePreviousEventValue, value, easeType),
             )?;
         Ok(__cordl_object.into())
+    }
+    pub fn SubtypeIdentifier(
+        groupId: i32,
+        elementId: i32,
+    ) -> quest_hook::libil2cpp::Result<i32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<(i32, i32), i32, 2usize>("SubtypeIdentifier")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SubtypeIdentifier", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: i32 = unsafe {
+            cordl_method_info.invoke_unchecked((), (groupId, elementId))?
+        };
+        Ok(__cordl_ret.into())
     }
     pub fn UpdateBy(
         &mut self,
@@ -209,6 +234,64 @@ impl crate::GlobalNamespace::FloatFxBeatmapEventData {
         let __cordl_ret: crate::GlobalNamespace::EaseType = unsafe {
             cordl_method_info.invoke_unchecked(self, ())?
         };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_nextSameTypeEventData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::FloatFxBeatmapEventData,
+                        >,
+                        0usize,
+                    >("get_nextSameTypeEventData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_nextSameTypeEventData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FloatFxBeatmapEventData,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_previousSameTypeEventData(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::FloatFxBeatmapEventData>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::GlobalNamespace::FloatFxBeatmapEventData,
+                        >,
+                        0usize,
+                    >("get_previousSameTypeEventData")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_previousSameTypeEventData", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::FloatFxBeatmapEventData,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
     pub fn get_value(&mut self) -> quest_hook::libil2cpp::Result<f32> {

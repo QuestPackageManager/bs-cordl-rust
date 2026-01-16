@@ -65,6 +65,41 @@ impl crate::UnityEngine::ScreenCapture {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn CaptureScreenshot_Injected(
+        filename: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+        superSize: i32,
+        CaptureMode: crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
+                            >,
+                            i32,
+                            crate::UnityEngine::ScreenCapture_StereoScreenCaptureMode,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        3usize,
+                    >("CaptureScreenshot_Injected")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CaptureScreenshot_Injected", 3usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked((), (filename, superSize, CaptureMode))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn CaptureScreenshot_i32_ScreenCapture_StereoScreenCaptureMode1(
         filename: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         superSize: i32,
@@ -115,6 +150,7 @@ pub enum ScreenCapture_StereoScreenCaptureMode {
     #[default]
     BothEyes = 3i32,
     LeftEye = 1i32,
+    MotionVectors = 4i32,
     RightEye = 2i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+ScreenCapture+StereoScreenCaptureMode")]

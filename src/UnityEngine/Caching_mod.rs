@@ -64,7 +64,9 @@ impl crate::UnityEngine::Caching {
         Ok(__cordl_ret.into())
     }
     pub fn AddCache_Injected(
-        cachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cachePath: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         isReadonly: bool,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -74,8 +76,8 @@ impl crate::UnityEngine::Caching {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             bool,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
@@ -215,7 +217,9 @@ impl crate::UnityEngine::Caching {
         Ok(__cordl_ret.into())
     }
     pub fn ClearCachedVersionInternal_Injected(
-        assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assetBundleName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -224,8 +228,8 @@ impl crate::UnityEngine::Caching {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
                         ),
@@ -280,7 +284,9 @@ impl crate::UnityEngine::Caching {
         Ok(__cordl_ret.into())
     }
     pub fn ClearCachedVersions_Injected(
-        assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        assetBundleName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
         keepInputVersion: bool,
     ) -> quest_hook::libil2cpp::Result<bool> {
@@ -290,8 +296,8 @@ impl crate::UnityEngine::Caching {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
                             bool,
@@ -370,7 +376,9 @@ impl crate::UnityEngine::Caching {
         Ok(__cordl_ret.into())
     }
     pub fn GetCacheByPath_Injected(
-        cachePath: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        cachePath: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         ret: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -379,8 +387,8 @@ impl crate::UnityEngine::Caching {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Cache>,
                         ),
@@ -461,8 +469,12 @@ impl crate::UnityEngine::Caching {
         Ok(__cordl_ret.into())
     }
     pub fn IsVersionCached_Injected(
-        url: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-        assetBundleName: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
+        url: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
+        assetBundleName: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Bindings::ManagedSpanWrapper,
+        >,
         hash: quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
     ) -> quest_hook::libil2cpp::Result<bool> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -471,11 +483,11 @@ impl crate::UnityEngine::Caching {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_static_method::<
                         (
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
-                            quest_hook::libil2cpp::Gc<
-                                quest_hook::libil2cpp::Il2CppString,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::UnityEngine::Bindings::ManagedSpanWrapper,
                             >,
                             quest_hook::libil2cpp::ByRefMut<crate::UnityEngine::Hash128>,
                         ),

@@ -103,6 +103,42 @@ for crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder {
 }
 #[cfg(feature = "System+Runtime+CompilerServices+AsyncTaskMethodBuilder")]
 impl crate::System::Runtime::CompilerServices::AsyncTaskMethodBuilder {
+    pub fn AwaitOnCompleted<TAwaiter, TStateMachine>(
+        &mut self,
+        awaiter: quest_hook::libil2cpp::ByRefMut<TAwaiter>,
+        stateMachine: quest_hook::libil2cpp::ByRefMut<TStateMachine>,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
+    where
+        TAwaiter: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        TStateMachine: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::ByRefMut<TAwaiter>,
+                            quest_hook::libil2cpp::ByRefMut<TStateMachine>,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("AwaitOnCompleted")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "AwaitOnCompleted", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (awaiter, stateMachine))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(
         &mut self,
         awaiter: quest_hook::libil2cpp::ByRefMut<TAwaiter>,

@@ -74,7 +74,7 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             crate::GlobalNamespace::MultiplayerBadgesProvider,
         >,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
@@ -110,7 +110,7 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
             crate::GlobalNamespace::MultiplayerBadgesProvider,
         >,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -139,7 +139,7 @@ impl crate::GlobalNamespace::MultiplayerResultsData {
                                 crate::GlobalNamespace::MultiplayerBadgesProvider,
                             >,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSessionManager,
+                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                             >,
                         ),
                         quest_hook::libil2cpp::Void,

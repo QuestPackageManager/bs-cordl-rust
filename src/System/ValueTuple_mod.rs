@@ -314,6 +314,38 @@ impl crate::System::ValueTuple {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Create<T1, T2>(
+        item1: T1,
+        item2: T2,
+    ) -> quest_hook::libil2cpp::Result<crate::System::ValueTuple_2<T1, T2>>
+    where
+        T1: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+        T2: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
+            + quest_hook::libil2cpp::Returned,
+    {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (T1, T2),
+                        crate::System::ValueTuple_2<T1, T2>,
+                        2usize,
+                    >("Create")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Create",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::System::ValueTuple_2<T1, T2> = unsafe {
+            cordl_method_info.invoke_unchecked((), (item1, item2))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Equals_Il2CppObject0(
         &mut self,
         obj: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppObject>,

@@ -2,15 +2,14 @@
 #[repr(C)]
 #[derive(Debug)]
 pub struct SelectLanguageViewController {
-    __cordl_parent: crate::HMUI::ViewController,
+    __cordl_parent: crate::GlobalNamespace::CompletableViewController,
     pub _continueButton: quest_hook::libil2cpp::Gc<crate::UnityEngine::UI::Button>,
     pub _languageSettingsController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LanguageSettingsController,
     >,
     pub didChangeLanguageEvent: quest_hook::libil2cpp::Gc<
-        crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+        crate::System::Action_1<crate::BGLib::Polyglot::LocalizationLanguage>,
     >,
-    pub didPressContinueButtonEvent: quest_hook::libil2cpp::Gc<crate::System::Action>,
 }
 #[cfg(feature = "cordl_class_SelectLanguageViewController")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -34,7 +33,7 @@ for crate::GlobalNamespace::SelectLanguageViewController {
 }
 #[cfg(feature = "SelectLanguageViewController")]
 impl std::ops::Deref for crate::GlobalNamespace::SelectLanguageViewController {
-    type Target = crate::HMUI::ViewController;
+    type Target = crate::GlobalNamespace::CompletableViewController;
     fn deref(&self) -> &<Self as std::ops::Deref>::Target {
         unsafe { &self.__cordl_parent }
     }
@@ -133,31 +132,6 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _DidActivate_b__8_0(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Void,
-                        0usize,
-                    >("<DidActivate>b__8_0")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<DidActivate>b__8_0", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -182,7 +156,7 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
     pub fn add_didChangeLanguageEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+            crate::System::Action_1<crate::BGLib::Polyglot::LocalizationLanguage>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -191,7 +165,9 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+                            crate::System::Action_1<
+                                crate::BGLib::Polyglot::LocalizationLanguage,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -209,36 +185,10 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn add_didPressContinueButtonEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("add_didPressContinueButtonEvent")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "add_didPressContinueButtonEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn remove_didChangeLanguageEvent(
         &mut self,
         value: quest_hook::libil2cpp::Gc<
-            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+            crate::System::Action_1<crate::BGLib::Polyglot::LocalizationLanguage>,
         >,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -247,7 +197,9 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Action_1<crate::BGLib::Polyglot::Language>,
+                            crate::System::Action_1<
+                                crate::BGLib::Polyglot::LocalizationLanguage,
+                            >,
                         >),
                         quest_hook::libil2cpp::Void,
                         1usize,
@@ -257,32 +209,6 @@ impl crate::GlobalNamespace::SelectLanguageViewController {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "remove_didChangeLanguageEvent", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn remove_didPressContinueButtonEvent(
-        &mut self,
-        value: quest_hook::libil2cpp::Gc<crate::System::Action>,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (quest_hook::libil2cpp::Gc<crate::System::Action>),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("remove_didPressContinueButtonEvent")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "remove_didPressContinueButtonEvent", 1usize
                         )
                     })
             });

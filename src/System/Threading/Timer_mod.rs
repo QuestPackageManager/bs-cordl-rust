@@ -46,7 +46,6 @@ impl std::ops::DerefMut for crate::System::Threading::Timer {
 }
 #[cfg(feature = "System+Threading+Timer")]
 impl crate::System::Threading::Timer {
-    pub const MaxValue: i64 = 4294967294i64;
     #[cfg(feature = "System+Threading+Timer+Scheduler")]
     pub type Scheduler = crate::System::Threading::Timer_Scheduler;
     #[cfg(feature = "System+Threading+Timer+TimerComparer")]

@@ -14,7 +14,7 @@ pub struct TMP_MeshInfo {
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
     pub uvs0: quest_hook::libil2cpp::Gc<
-        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,
+        quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector4>,
     >,
     pub uvs2: quest_hook::libil2cpp::Gc<
         quest_hook::libil2cpp::Il2CppArray<crate::UnityEngine::Vector2>,

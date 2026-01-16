@@ -26,7 +26,7 @@ pub struct MultiplayerController {
         crate::GlobalNamespace::FadeInOutController,
     >,
     pub _multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IMultiplayerSessionManager,
+        crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
     >,
     pub _introAnimationController: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerIntroAnimationController,

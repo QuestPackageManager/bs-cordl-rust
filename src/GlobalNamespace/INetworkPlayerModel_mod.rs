@@ -338,7 +338,9 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
     pub fn get_connectedPlayerManager(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::ConnectedPlayerManager>,
+        quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
+        >,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -347,7 +349,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::ConnectedPlayerManager,
+                            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
                         >,
                         0usize,
                     >("get_connectedPlayerManager")
@@ -360,7 +362,7 @@ impl crate::GlobalNamespace::INetworkPlayerModel {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::ConnectedPlayerManager,
+            crate::GlobalNamespace::BeatSaberConnectedPlayerManager,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

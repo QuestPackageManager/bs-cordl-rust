@@ -37,6 +37,12 @@ pub use CallSite_1_mod::*;
 // class CallSite_mod; export all
 mod CallSite_mod;
 pub use CallSite_mod::*;
+// class CallerFilePathAttribute_mod; export all
+mod CallerFilePathAttribute_mod;
+pub use CallerFilePathAttribute_mod::*;
+// class CallerLineNumberAttribute_mod; export all
+mod CallerLineNumberAttribute_mod;
+pub use CallerLineNumberAttribute_mod::*;
 // class CallerMemberNameAttribute_mod; export all
 mod CallerMemberNameAttribute_mod;
 pub use CallerMemberNameAttribute_mod::*;
@@ -208,3 +214,6 @@ pub use ValueTaskAwaiter_1_mod::*;
 // class ValueTaskAwaiter_mod; export all
 mod ValueTaskAwaiter_mod;
 pub use ValueTaskAwaiter_mod::*;
+// class YieldAwaitable_mod; export all
+mod YieldAwaitable_mod;
+pub use YieldAwaitable_mod::*;

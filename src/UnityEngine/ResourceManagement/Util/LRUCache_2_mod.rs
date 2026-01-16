@@ -5,6 +5,8 @@ pub struct LRUCache_2<
     TKey: quest_hook::libil2cpp::Type,
     TValue: quest_hook::libil2cpp::Type,
 > {
+    pub requestHits: i32,
+    pub requestCount: i32,
     pub entryLimit: i32,
     pub cache: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::Dictionary_2<
@@ -14,6 +16,9 @@ pub struct LRUCache_2<
     >,
     pub lru: quest_hook::libil2cpp::Gc<
         crate::System::Collections::Generic::LinkedList_1<TKey>,
+    >,
+    pub nodeCache: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::ResourceManagement::Util::LinkedListNodeCache_1<TKey>,
     >,
     __cordl_phantom_TKey: std::marker::PhantomData<TKey>,
     __cordl_phantom_TValue: std::marker::PhantomData<TValue>,

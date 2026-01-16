@@ -111,6 +111,33 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
         > = unsafe { cordl_method_info.invoke_unchecked((), (styleValue))? };
         Ok(__cordl_ret.into())
     }
+    pub fn ToLayoutValue(
+        length: crate::UnityEngine::UIElements::Length,
+    ) -> quest_hook::libil2cpp::Result<
+        crate::UnityEngine::UIElements::Layout::LayoutValue,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (crate::UnityEngine::UIElements::Length),
+                        crate::UnityEngine::UIElements::Layout::LayoutValue,
+                        1usize,
+                    >("ToLayoutValue")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ToLayoutValue", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::UIElements::Layout::LayoutValue = unsafe {
+            cordl_method_info.invoke_unchecked((), (length))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ToLength_StyleKeyword0(
         keyword: crate::UnityEngine::UIElements::StyleKeyword,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::UIElements::Length> {
@@ -233,31 +260,6 @@ impl crate::UnityEngine::UIElements::StyleValueExtensions {
             });
         let __cordl_ret: crate::UnityEngine::UIElements::Translate = unsafe {
             cordl_method_info.invoke_unchecked((), (keyword))?
-        };
-        Ok(__cordl_ret.into())
-    }
-    pub fn ToYogaValue(
-        length: crate::UnityEngine::UIElements::Length,
-    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Yoga::YogaValue> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_static_method::<
-                        (crate::UnityEngine::UIElements::Length),
-                        crate::UnityEngine::Yoga::YogaValue,
-                        1usize,
-                    >("ToYogaValue")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ToYogaValue", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: crate::UnityEngine::Yoga::YogaValue = unsafe {
-            cordl_method_info.invoke_unchecked((), (length))?
         };
         Ok(__cordl_ret.into())
     }

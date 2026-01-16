@@ -8,6 +8,7 @@ pub enum Justify {
     FlexStart = 0i32,
     SpaceAround = 4i32,
     SpaceBetween = 3i32,
+    SpaceEvenly = 5i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+Justify")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::UIElements::Justify {

@@ -63,7 +63,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
     pub fn New(
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         gameplayRpcManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IGameplayRpcManager,
@@ -182,7 +182,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
         &mut self,
         taskUtility: quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
         multiplayerSessionManager: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IMultiplayerSessionManager,
+            crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
         >,
         gameplayRpcManager: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IGameplayRpcManager,
@@ -208,7 +208,7 @@ impl crate::GlobalNamespace::MockPlayerFiniteStateMachine {
                         (
                             quest_hook::libil2cpp::Gc<crate::BGNet::Core::ITaskUtility>,
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IMultiplayerSessionManager,
+                                crate::GlobalNamespace::IBeatSaberMultiplayerSessionManager,
                             >,
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IGameplayRpcManager,

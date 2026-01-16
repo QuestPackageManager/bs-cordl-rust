@@ -90,3 +90,23 @@ for crate::Unity::Properties::IProperty_1<TContainer> {
         unsafe { std::mem::transmute(self) }
     }
 }
+#[cfg(feature = "Unity+Properties+IProperty_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsRef<crate::Unity::Properties::IPropertyAccept_1<TContainer>>
+for crate::Unity::Properties::IProperty_1<TContainer> {
+    fn as_ref(&self) -> &crate::Unity::Properties::IPropertyAccept_1<TContainer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}
+#[cfg(feature = "Unity+Properties+IProperty_1")]
+impl<
+    TContainer: quest_hook::libil2cpp::Type,
+> AsMut<crate::Unity::Properties::IPropertyAccept_1<TContainer>>
+for crate::Unity::Properties::IProperty_1<TContainer> {
+    fn as_mut(
+        &mut self,
+    ) -> &mut crate::Unity::Properties::IPropertyAccept_1<TContainer> {
+        unsafe { std::mem::transmute(self) }
+    }
+}

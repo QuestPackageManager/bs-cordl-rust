@@ -53,6 +53,32 @@ impl crate::UnityEngine::UIElements::Image {
     pub type UxmlFactory = crate::UnityEngine::UIElements::Image_UxmlFactory;
     #[cfg(feature = "UnityEngine+UIElements+Image+UxmlTraits")]
     pub type UxmlTraits = crate::UnityEngine::UIElements::Image_UxmlTraits;
+    pub fn CalculateUV(
+        &mut self,
+        srcRect: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Rect),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("CalculateUV")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "CalculateUV", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (srcRect))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn ClearProperty(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -228,18 +254,14 @@ impl crate::UnityEngine::UIElements::Image {
     }
     pub fn OnGenerateVisualContent(
         &mut self,
-        mgc: quest_hook::libil2cpp::Gc<
-            crate::UnityEngine::UIElements::MeshGenerationContext,
-        >,
+        mgc: Blacklisted,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (quest_hook::libil2cpp::Gc<
-                            crate::UnityEngine::UIElements::MeshGenerationContext,
-                        >),
+                        (Blacklisted),
                         quest_hook::libil2cpp::Void,
                         1usize,
                     >("OnGenerateVisualContent")
@@ -292,6 +314,7 @@ impl crate::UnityEngine::UIElements::Image {
         dst: quest_hook::libil2cpp::ByRefMut<T0>,
         alt0: quest_hook::libil2cpp::ByRefMut<T1>,
         alt1: quest_hook::libil2cpp::ByRefMut<T2>,
+        binding: crate::UnityEngine::UIElements::BindingId,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void>
     where
         T0: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Argument
@@ -311,20 +334,21 @@ impl crate::UnityEngine::UIElements::Image {
                             quest_hook::libil2cpp::ByRefMut<T0>,
                             quest_hook::libil2cpp::ByRefMut<T1>,
                             quest_hook::libil2cpp::ByRefMut<T2>,
+                            crate::UnityEngine::UIElements::BindingId,
                         ),
                         quest_hook::libil2cpp::Void,
-                        4usize,
+                        5usize,
                     >("SetProperty")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "SetProperty", 4usize
+                            "SetProperty", 5usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (src, dst, alt0, alt1))?
+            cordl_method_info.invoke_unchecked(self, (src, dst, alt0, alt1, binding))?
         };
         Ok(__cordl_ret.into())
     }
@@ -604,6 +628,58 @@ impl crate::UnityEngine::UIElements::Image {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn set_scaleMode(
+        &mut self,
+        value: crate::UnityEngine::ScaleMode,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::ScaleMode),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_scaleMode")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_scaleMode", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_sourceRect(
+        &mut self,
+        value: crate::UnityEngine::Rect,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Rect),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_sourceRect")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_sourceRect", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn set_sprite(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::Sprite>,
@@ -622,6 +698,32 @@ impl crate::UnityEngine::UIElements::Image {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_sprite", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_tintColor(
+        &mut self,
+        value: crate::UnityEngine::Color,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (crate::UnityEngine::Color),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_tintColor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_tintColor", 1usize
                         )
                     })
             });

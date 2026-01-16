@@ -81,14 +81,14 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
     pub fn UpdateAvatarFromOptionalData(
         &mut self,
         data: crate::BeatSaber::AvatarCore::OptionalAvatarData,
-        playbackDelaySeconds: f32,
+        playbackDelayMs: i64,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (crate::BeatSaber::AvatarCore::OptionalAvatarData, f32),
+                        (crate::BeatSaber::AvatarCore::OptionalAvatarData, i64),
                         quest_hook::libil2cpp::Void,
                         2usize,
                     >("UpdateAvatarFromOptionalData")
@@ -101,7 +101,7 @@ impl crate::BeatSaber::BeatAvatarAdapter::BeatAvatar {
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (data, playbackDelaySeconds))?
+            cordl_method_info.invoke_unchecked(self, (data, playbackDelayMs))?
         };
         Ok(__cordl_ret.into())
     }

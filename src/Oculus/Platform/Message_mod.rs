@@ -631,15 +631,10 @@ impl crate::Oculus::Platform::Message {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
-    pub fn GetDataStore(
+    pub fn GetCowatchViewerList(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
-        >,
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::CowatchViewerList>,
     > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -648,30 +643,78 @@ impl crate::Oculus::Platform::Message {
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::Dictionary_2<
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                                quest_hook::libil2cpp::Gc<
-                                    quest_hook::libil2cpp::Il2CppString,
-                                >,
-                            >,
+                            crate::Oculus::Platform::Models::CowatchViewerList,
                         >,
                         0usize,
-                    >("GetDataStore")
+                    >("GetCowatchViewerList")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetDataStore", 0usize
+                            "GetCowatchViewerList", 0usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::Dictionary_2<
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-                quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-            >,
+            crate::Oculus::Platform::Models::CowatchViewerList,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCowatchViewerUpdate(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::CowatchViewerUpdate>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::CowatchViewerUpdate,
+                        >,
+                        0usize,
+                    >("GetCowatchViewerUpdate")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCowatchViewerUpdate", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::CowatchViewerUpdate,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn GetCowatchingState(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<crate::Oculus::Platform::Models::CowatchingState>,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::CowatchingState,
+                        >,
+                        0usize,
+                    >("GetCowatchingState")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCowatchingState", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::CowatchingState,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -1708,6 +1751,37 @@ impl crate::Oculus::Platform::Message {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetPushNotificationResult(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PushNotificationResult,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::Oculus::Platform::Models::PushNotificationResult,
+                        >,
+                        0usize,
+                    >("GetPushNotificationResult")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetPushNotificationResult", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::Oculus::Platform::Models::PushNotificationResult,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn GetRejoinDialogResult(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1964,37 +2038,6 @@ impl crate::Oculus::Platform::Message {
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::Oculus::Platform::Models::UserCapabilityList,
-        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn GetUserDataStoreUpdateResponse(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-        >,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<
-                            crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
-                        >,
-                        0usize,
-                    >("GetUserDataStoreUpdateResponse")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetUserDataStoreUpdateResponse", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::Oculus::Platform::Models::UserDataStoreUpdateResponse,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
@@ -2725,6 +2768,17 @@ pub enum Message_MessageType {
     Challenges_Join = 556040297u32,
     Challenges_Leave = 694228709u32,
     Challenges_UpdateInfo = 292929120u32,
+    Cowatching_GetNextCowatchViewerArrayPage = 490748210u32,
+    Cowatching_GetPresenterData = 1233536821u32,
+    Cowatching_GetViewersData = 1557635663u32,
+    Cowatching_IsInSession = 1696286852u32,
+    Cowatching_JoinSession = 1669899604u32,
+    Cowatching_LaunchInviteDialog = 580072087u32,
+    Cowatching_LeaveSession = 1017005773u32,
+    Cowatching_RequestToPresent = 2138684586u32,
+    Cowatching_ResignFromPresenting = 1263124994u32,
+    Cowatching_SetPresenterData = 1830586630u32,
+    Cowatching_SetViewerData = 1021044774u32,
     DeviceApplicationIntegrity_GetIntegrityToken = 846310362u32,
     Entitlement_GetIsViewerEntitled = 409688241u32,
     GroupPresence_Clear = 1839897795u32,
@@ -2764,6 +2818,14 @@ pub enum Message_MessageType {
     Notification_AbuseReport_ReportButtonPressed = 608644972u32,
     Notification_ApplicationLifecycle_LaunchIntentChanged = 78859427u32,
     Notification_AssetFile_DownloadUpdate = 803015885u32,
+    Notification_Cowatching_ApiNotReady = 1711880577u32,
+    Notification_Cowatching_ApiReady = 160786067u32,
+    Notification_Cowatching_InSessionChanged = 234434835u32,
+    Notification_Cowatching_Initialized = 1960397043u32,
+    Notification_Cowatching_PresenterDataChanged = 1309118190u32,
+    Notification_Cowatching_SessionStarted = 1931580316u32,
+    Notification_Cowatching_SessionStopped = 1239866362u32,
+    Notification_Cowatching_ViewersDataChanged = 1760752127u32,
     Notification_GroupPresence_InvitationsSent = 1738179766u32,
     Notification_GroupPresence_JoinIntentReceived = 2000194038u32,
     Notification_GroupPresence_LeaveIntentReceived = 1194846749u32,
@@ -2782,6 +2844,7 @@ pub enum Message_MessageType {
     Platform_InitializeStandaloneOculus = 1375260172u32,
     Platform_InitializeWindowsAsynchronous = 1839708815u32,
     Platform_InitializeWithAccessToken = 896085803u32,
+    PushNotification_Register = 1715112799u32,
     RichPresence_Clear = 1471632051u32,
     RichPresence_GetDestinations = 1483681044u32,
     RichPresence_GetNextDestinationArrayPage = 1731624773u32,
@@ -2789,19 +2852,13 @@ pub enum Message_MessageType {
     Unknown = 0u32,
     UserAgeCategory_Get = 567009472u32,
     UserAgeCategory_Report = 776853718u32,
-    UserDataStore_PrivateDeleteEntryByKey = 1552510782u32,
-    UserDataStore_PrivateGetEntries = 1821016616u32,
-    UserDataStore_PrivateGetEntryByKey = 470188825u32,
-    UserDataStore_PrivateWriteEntry = 1104315019u32,
-    UserDataStore_PublicDeleteEntryByKey = 500557307u32,
-    UserDataStore_PublicGetEntries = 377310146u32,
-    UserDataStore_PublicGetEntryByKey = 425486022u32,
-    UserDataStore_PublicWriteEntry = 875973130u32,
     User_Get = 1808768583u32,
     User_GetAccessToken = 111696574u32,
     User_GetBlockedUsers = 2099254614u32,
+    User_GetLinkedAccounts = 1469314134u32,
     User_GetLoggedInUser = 1131361373u32,
     User_GetLoggedInUserFriends = 1484532365u32,
+    User_GetLoggedInUserManagedInfo = 1891252974u32,
     User_GetNextBlockedUserArrayPage = 2083192267u32,
     User_GetNextUserArrayPage = 645723971u32,
     User_GetNextUserCapabilityArrayPage = 587854745u32,

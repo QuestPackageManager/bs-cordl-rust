@@ -5,6 +5,8 @@ pub struct ContactPoint2D {
     pub m_Point: crate::UnityEngine::Vector2,
     pub m_Normal: crate::UnityEngine::Vector2,
     pub m_RelativeVelocity: crate::UnityEngine::Vector2,
+    pub m_Friction: f32,
+    pub m_Bounciness: f32,
     pub m_Separation: f32,
     pub m_NormalImpulse: f32,
     pub m_TangentImpulse: f32,

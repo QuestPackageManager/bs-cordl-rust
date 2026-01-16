@@ -4,7 +4,7 @@
 pub struct LobbyAvatarInstaller {
     __cordl_parent: crate::Zenject::MonoInstaller,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
 }
 #[cfg(feature = "cordl_class_BeatSaber+AvatarCore+LobbyAvatarInstaller")]

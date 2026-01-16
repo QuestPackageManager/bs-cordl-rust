@@ -5,8 +5,8 @@ pub enum EventCategoryFlags {
     #[default]
     All = -1i32,
     None = 0i32,
-    TargetOnly = 2768i32,
-    TriggeredByOS = 81974i32,
+    TargetOnly = 5536i32,
+    TriggeredByOS = 426094i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+UIElements+EventCategoryFlags")]
 unsafe impl quest_hook::libil2cpp::Type

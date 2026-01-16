@@ -18,9 +18,12 @@ pub struct Panel {
     pub m_HierarchyVersion: u32,
     pub m_MarkerBeforeUpdate: crate::Unity::Profiling::ProfilerMarker,
     pub m_MarkerUpdate: crate::Unity::Profiling::ProfilerMarker,
+    pub m_MarkerRender: crate::Unity::Profiling::ProfilerMarker,
     pub m_MarkerLayout: crate::Unity::Profiling::ProfilerMarker,
     pub m_MarkerBindings: crate::Unity::Profiling::ProfilerMarker,
+    pub m_MarkerDataBinding: crate::Unity::Profiling::ProfilerMarker,
     pub m_MarkerAnimations: crate::Unity::Profiling::ProfilerMarker,
+    pub m_MarkerPanelChangeReceiver: crate::Unity::Profiling::ProfilerMarker,
     pub _dispatcher_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::EventDispatcher,
     >,
@@ -42,11 +45,13 @@ pub struct Panel {
     >,
     pub _IMGUIEventInterests_k__BackingField: crate::UnityEngine::EventInterests,
     pub m_JustReceivedFocus: bool,
+    pub m_PanelChangeReceiver: quest_hook::libil2cpp::Gc<
+        crate::UnityEngine::UIElements::IDebugPanelChangeReceiver,
+    >,
     pub _IMGUIContainersCount_k__BackingField: i32,
     pub _rootIMGUIContainer_k__BackingField: quest_hook::libil2cpp::Gc<
         crate::UnityEngine::UIElements::IMGUIContainer,
     >,
-    pub m_StandardShader: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
     pub m_Atlas: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::AtlasBase>,
     pub m_ValidatingLayout: bool,
 }
@@ -84,6 +89,7 @@ impl std::ops::DerefMut for crate::UnityEngine::UIElements::Panel {
 }
 #[cfg(feature = "UnityEngine+UIElements+Panel")]
 impl crate::UnityEngine::UIElements::Panel {
+    pub const k_DefaultPixelsPerUnit: i32 = 100i32;
     pub fn ApplyStyles(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -507,6 +513,27 @@ impl crate::UnityEngine::UIElements::Panel {
         };
         Ok(__cordl_ret.into())
     }
+    pub fn Render(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<(), quest_hook::libil2cpp::Void, 0usize>("Render")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Render",
+                            0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn Repaint(
         &mut self,
         e: quest_hook::libil2cpp::Gc<crate::UnityEngine::Event>,
@@ -530,6 +557,40 @@ impl crate::UnityEngine::UIElements::Panel {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (e))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn SetUpdater(
+        &mut self,
+        updater: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IVisualTreeUpdater,
+        >,
+        phase: crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (
+                            quest_hook::libil2cpp::Gc<
+                                crate::UnityEngine::UIElements::IVisualTreeUpdater,
+                            >,
+                            crate::UnityEngine::UIElements::VisualTreeUpdatePhase,
+                        ),
+                        quest_hook::libil2cpp::Void,
+                        2usize,
+                    >("SetUpdater")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "SetUpdater", 2usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (updater, phase))?
         };
         Ok(__cordl_ret.into())
     }
@@ -675,7 +736,7 @@ impl crate::UnityEngine::UIElements::Panel {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn _Pick_g__PixelOf_101_0(
+    pub fn _Pick_g__PixelOf_105_0(
         p: crate::UnityEngine::Vector2,
     ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Vector2Int> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
@@ -686,12 +747,12 @@ impl crate::UnityEngine::UIElements::Panel {
                         (crate::UnityEngine::Vector2),
                         crate::UnityEngine::Vector2Int,
                         1usize,
-                    >("<Pick>g__PixelOf|101_0")
+                    >("<Pick>g__PixelOf|105_0")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "<Pick>g__PixelOf|101_0", 1usize
+                            "<Pick>g__PixelOf|105_0", 1usize
                         )
                     })
             });
@@ -736,6 +797,31 @@ impl crate::UnityEngine::UIElements::Panel {
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info
                 .invoke_unchecked(self, (ownerObject, contextType, dispatcher))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn get_HyperlinkColor(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<crate::UnityEngine::Color> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        crate::UnityEngine::Color,
+                        0usize,
+                    >("get_HyperlinkColor")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_HyperlinkColor", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: crate::UnityEngine::Color = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
         };
         Ok(__cordl_ret.into())
     }
@@ -1047,6 +1133,37 @@ impl crate::UnityEngine::UIElements::Panel {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn get_panelChangeReceiver(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<
+        quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IDebugPanelChangeReceiver,
+        >,
+    > {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::IDebugPanelChangeReceiver,
+                        >,
+                        0usize,
+                    >("get_panelChangeReceiver")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "get_panelChangeReceiver", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IDebugPanelChangeReceiver,
+        > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn get_rootIMGUIContainer(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
@@ -1132,33 +1249,6 @@ impl crate::UnityEngine::UIElements::Panel {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::UnityEngine::UIElements::IScheduler,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
-        Ok(__cordl_ret.into())
-    }
-    pub fn get_standardShader(
-        &mut self,
-    ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
-    > {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (),
-                        quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader>,
-                        0usize,
-                    >("get_standardShader")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "get_standardShader", 0usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Gc<crate::UnityEngine::Shader> = unsafe {
-            cordl_method_info.invoke_unchecked(self, ())?
-        };
         Ok(__cordl_ret.into())
     }
     pub fn get_styleAnimationSystem(
@@ -1347,32 +1437,6 @@ impl crate::UnityEngine::UIElements::Panel {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn set_contextType(
-        &mut self,
-        value: crate::UnityEngine::UIElements::ContextType,
-    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
-        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
-        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
-            .get_or_init(|| {
-                <Self as quest_hook::libil2cpp::Type>::class()
-                    .find_method::<
-                        (crate::UnityEngine::UIElements::ContextType),
-                        quest_hook::libil2cpp::Void,
-                        1usize,
-                    >("set_contextType")
-                    .unwrap_or_else(|e| {
-                        panic!(
-                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
-                            < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "set_contextType", 1usize
-                        )
-                    })
-            });
-        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info.invoke_unchecked(self, (value))?
-        };
-        Ok(__cordl_ret.into())
-    }
     pub fn set_dispatcher(
         &mut self,
         value: quest_hook::libil2cpp::Gc<crate::UnityEngine::UIElements::EventDispatcher>,
@@ -1475,6 +1539,36 @@ impl crate::UnityEngine::UIElements::Panel {
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
                             "set_ownerObject", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (value))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn set_panelChangeReceiver(
+        &mut self,
+        value: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::UIElements::IDebugPanelChangeReceiver,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::UIElements::IDebugPanelChangeReceiver,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("set_panelChangeReceiver")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "set_panelChangeReceiver", 1usize
                         )
                     })
             });

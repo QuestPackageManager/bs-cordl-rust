@@ -10,6 +10,7 @@ pub struct FlyingGameHUDRotation {
     pub _environmentSpawnRotation: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::EnvironmentSpawnRotation,
     >,
+    pub _timeHelper: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::TimeHelper>,
     pub _prevYAngle: f32,
     pub _yAngle: f32,
 }

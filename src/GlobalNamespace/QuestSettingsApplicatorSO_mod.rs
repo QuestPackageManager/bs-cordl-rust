@@ -78,6 +78,40 @@ impl crate::GlobalNamespace::QuestSettingsApplicatorSO {
             .invoke_void(".ctor", ())?;
         Ok(__cordl_object.into())
     }
+    pub fn _ApplyGraphicSettings_g__ConvertProcessorPerformanceLevel_0_0(
+        settings: crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel,
+        result: quest_hook::libil2cpp::ByRefMut<
+            crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
+        >,
+    ) -> quest_hook::libil2cpp::Result<bool> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_static_method::<
+                        (
+                            crate::BeatSaber::Settings::QuestSettings_SuggestedPerformanceLevel,
+                            quest_hook::libil2cpp::ByRefMut<
+                                crate::GlobalNamespace::OVRPlugin_ProcessorPerformanceLevel,
+                            >,
+                        ),
+                        bool,
+                        2usize,
+                    >("<ApplyGraphicSettings>g__ConvertProcessorPerformanceLevel|0_0")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "<ApplyGraphicSettings>g__ConvertProcessorPerformanceLevel|0_0",
+                            2usize
+                        )
+                    })
+            });
+        let __cordl_ret: bool = unsafe {
+            cordl_method_info.invoke_unchecked((), (settings, result))?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn _ctor(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {

@@ -2,6 +2,7 @@
 #[repr(C)]
 #[derive(Debug, Clone, Default, PartialEq)]
 pub struct BatchDrawRange {
+    pub drawCommandsType: crate::UnityEngine::Rendering::BatchDrawCommandType,
     pub drawCommandsBegin: u32,
     pub drawCommandsCount: u32,
     pub filterSettings: crate::UnityEngine::Rendering::BatchFilterSettings,

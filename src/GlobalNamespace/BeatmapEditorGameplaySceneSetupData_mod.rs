@@ -4,8 +4,6 @@
 pub struct BeatmapEditorGameplaySceneSetupData {
     __cordl_parent: crate::GlobalNamespace::SceneSetupData,
     pub data: crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
-    pub recordVRMovement: bool,
-    pub playVRMovement: bool,
 }
 #[cfg(feature = "cordl_class_BeatmapEditorGameplaySceneSetupData")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -43,8 +41,6 @@ impl std::ops::DerefMut for crate::GlobalNamespace::BeatmapEditorGameplaySceneSe
 #[cfg(feature = "BeatmapEditorGameplaySceneSetupData")]
 impl crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
     pub fn New(
-        recordVRMovement: bool,
-        playVRMovement: bool,
         data: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
         >,
@@ -52,13 +48,11 @@ impl crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
         quest_hook::libil2cpp::ObjectType::as_object_mut(__cordl_object)
-            .invoke_void(".ctor", (recordVRMovement, playVRMovement, data))?;
+            .invoke_void(".ctor", (data))?;
         Ok(__cordl_object.into())
     }
     pub fn _ctor(
         &mut self,
-        recordVRMovement: bool,
-        playVRMovement: bool,
         data: quest_hook::libil2cpp::ByRefMut<
             crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
         >,
@@ -68,27 +62,22 @@ impl crate::GlobalNamespace::BeatmapEditorGameplaySceneSetupData {
             .get_or_init(|| {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
-                        (
-                            bool,
-                            bool,
-                            quest_hook::libil2cpp::ByRefMut<
-                                crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
-                            >,
-                        ),
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::GlobalNamespace::BeatmapEditorStartTestLevelData,
+                        >),
                         quest_hook::libil2cpp::Void,
-                        3usize,
+                        1usize,
                     >(".ctor")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(), ".ctor",
-                            3usize
+                            1usize
                         )
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
-            cordl_method_info
-                .invoke_unchecked(self, (recordVRMovement, playVRMovement, data))?
+            cordl_method_info.invoke_unchecked(self, (data))?
         };
         Ok(__cordl_ret.into())
     }

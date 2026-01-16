@@ -167,6 +167,8 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
         lightEventConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
+        ignoreColorEvents: bool,
+        ignoreRotationLoopCount: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -189,15 +191,17 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IBeatmapLightEventConverter,
                             >,
+                            bool,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        5usize,
+                        7usize,
                     >("ConvertEventBoxGroups")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "ConvertEventBoxGroups", 5usize
+                            "ConvertEventBoxGroups", 7usize
                         )
                     })
             });
@@ -211,6 +215,8 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
                         bpmTimeProcessor,
                         environmentLightGroups,
                         lightEventConverter,
+                        ignoreColorEvents,
+                        ignoreRotationLoopCount,
                     ),
                 )?
         };
@@ -299,6 +305,9 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
         >,
         beatmapDifficulty: crate::GlobalNamespace::BeatmapDifficulty,
         loadingForDesignatedEnvironment: bool,
+        targetEnvironmentInfo: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IEnvironmentInfo,
+        >,
         environmentKeywords: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::EnvironmentKeywords,
         >,
@@ -338,6 +347,9 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
                             crate::GlobalNamespace::BeatmapDifficulty,
                             bool,
                             quest_hook::libil2cpp::Gc<
+                                crate::GlobalNamespace::IEnvironmentInfo,
+                            >,
+                            quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::EnvironmentKeywords,
                             >,
                             quest_hook::libil2cpp::Gc<
@@ -354,13 +366,13 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
                             >,
                         ),
                         quest_hook::libil2cpp::Gc<crate::GlobalNamespace::BeatmapData>,
-                        11usize,
+                        12usize,
                     >("GetBeatmapDataFromSaveData")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "GetBeatmapDataFromSaveData", 11usize
+                            "GetBeatmapDataFromSaveData", 12usize
                         )
                     })
             });
@@ -377,6 +389,7 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
                         defaultLightshowSaveData,
                         beatmapDifficulty,
                         loadingForDesignatedEnvironment,
+                        targetEnvironmentInfo,
                         environmentKeywords,
                         environmentLightGroups,
                         gameplayModifiers,
@@ -616,6 +629,8 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
         lightEventConverter: quest_hook::libil2cpp::Gc<
             crate::GlobalNamespace::IBeatmapLightEventConverter,
         >,
+        ignoreColorEvents: bool,
+        ignoreRotationLoopCount: bool,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
@@ -641,15 +656,17 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
                             quest_hook::libil2cpp::Gc<
                                 crate::GlobalNamespace::IBeatmapLightEventConverter,
                             >,
+                            bool,
+                            bool,
                         ),
                         quest_hook::libil2cpp::Void,
-                        6usize,
+                        8usize,
                     >("LoadLightshow")
                     .unwrap_or_else(|e| {
                         panic!(
                             "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
                             < Self as quest_hook::libil2cpp::Type > ::class(),
-                            "LoadLightshow", 6usize
+                            "LoadLightshow", 8usize
                         )
                     })
             });
@@ -664,6 +681,8 @@ impl crate::BeatmapDataLoaderVersion4::BeatmapDataLoader {
                         environmentKeywords,
                         environmentLightGroups,
                         lightEventConverter,
+                        ignoreColorEvents,
+                        ignoreRotationLoopCount,
                     ),
                 )?
         };

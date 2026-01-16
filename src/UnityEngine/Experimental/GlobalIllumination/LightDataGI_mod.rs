@@ -142,7 +142,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_ByRefMut0(
+    pub fn Init_ByRefMut0(
         &mut self,
         light: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight,
@@ -180,7 +180,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_ByRefMut1(
+    pub fn Init_ByRefMut1(
         &mut self,
         light: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::PointLight,
@@ -218,7 +218,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_ByRefMut2(
+    pub fn Init_ByRefMut2(
         &mut self,
         light: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::SpotLight,
@@ -256,7 +256,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_ByRefMut3(
+    pub fn Init_ByRefMut3(
         &mut self,
         light: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::RectangleLight,
@@ -294,7 +294,7 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
         };
         Ok(__cordl_ret.into())
     }
-    pub fn Init_ByRefMut_ByRefMut4(
+    pub fn Init_ByRefMut4(
         &mut self,
         light: quest_hook::libil2cpp::ByRefMut<
             crate::UnityEngine::Experimental::GlobalIllumination::DiscLight,
@@ -329,6 +329,96 @@ impl crate::UnityEngine::Experimental::GlobalIllumination::LightDataGI {
             });
         let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
             cordl_method_info.invoke_unchecked(self, (light, cookie))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init_ByRefMut5(
+        &mut self,
+        light: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Experimental::GlobalIllumination::DirectionalLight,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (light))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init_ByRefMut6(
+        &mut self,
+        light: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Experimental::GlobalIllumination::PointLight,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Experimental::GlobalIllumination::PointLight,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (light))?
+        };
+        Ok(__cordl_ret.into())
+    }
+    pub fn Init_ByRefMut7(
+        &mut self,
+        light: quest_hook::libil2cpp::ByRefMut<
+            crate::UnityEngine::Experimental::GlobalIllumination::SpotLight,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::ByRefMut<
+                            crate::UnityEngine::Experimental::GlobalIllumination::SpotLight,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("Init")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(), "Init",
+                            1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (light))?
         };
         Ok(__cordl_ret.into())
     }

@@ -11,7 +11,9 @@ pub struct LocalMultiplayerSyncState_3<
         TType,
         TState,
     >,
-    pub _player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+    pub _player: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+    >,
     pub _stateBuffer: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::LocalStateBuffer_3<TStateTable, TType, TState>,
     >,
@@ -123,7 +125,9 @@ impl<
         Ok(__cordl_ret.into())
     }
     pub fn New(
-        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        player: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
@@ -350,7 +354,9 @@ impl<
     }
     pub fn _ctor(
         &mut self,
-        player: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        player: quest_hook::libil2cpp::Gc<
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
+        >,
         fullStateUpdateFrequency: i64,
         deltaUpdateFrequency: i64,
         _cordl_size: i32,
@@ -384,7 +390,7 @@ impl<
                     .find_method::<
                         (
                             quest_hook::libil2cpp::Gc<
-                                crate::GlobalNamespace::IConnectedPlayer,
+                                crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                             >,
                             i64,
                             i64,
@@ -461,7 +467,7 @@ impl<
     pub fn get_player(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<
-        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IConnectedPlayer>,
+        quest_hook::libil2cpp::Gc<crate::GlobalNamespace::IBeatSaberConnectedPlayer>,
     >
     where
         TStateTable: quest_hook::libil2cpp::Type + quest_hook::libil2cpp::Type
@@ -478,7 +484,7 @@ impl<
                     .find_method::<
                         (),
                         quest_hook::libil2cpp::Gc<
-                            crate::GlobalNamespace::IConnectedPlayer,
+                            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
                         >,
                         0usize,
                     >("get_player")
@@ -491,7 +497,7 @@ impl<
                     })
             });
         let __cordl_ret: quest_hook::libil2cpp::Gc<
-            crate::GlobalNamespace::IConnectedPlayer,
+            crate::GlobalNamespace::IBeatSaberConnectedPlayer,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }

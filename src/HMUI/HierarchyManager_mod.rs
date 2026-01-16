@@ -46,7 +46,7 @@ impl crate::HMUI::HierarchyManager {
     pub fn HandleBeforeDismissingScenes(
         &mut self,
         _cordl__: quest_hook::libil2cpp::Gc<
-            crate::System::Collections::Generic::List_1<
+            crate::System::Collections::Generic::IReadOnlyList_1<
                 quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
             >,
         >,
@@ -57,7 +57,7 @@ impl crate::HMUI::HierarchyManager {
                 <Self as quest_hook::libil2cpp::Type>::class()
                     .find_method::<
                         (quest_hook::libil2cpp::Gc<
-                            crate::System::Collections::Generic::List_1<
+                            crate::System::Collections::Generic::IReadOnlyList_1<
                                 quest_hook::libil2cpp::Gc<
                                     quest_hook::libil2cpp::Il2CppString,
                                 >,

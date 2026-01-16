@@ -408,6 +408,29 @@ impl crate::GlobalNamespace::NoteData {
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
         Ok(__cordl_ret.into())
     }
+    pub fn GetCutDirectionAngleOffsetForSlider(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<f32> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        f32,
+                        0usize,
+                    >("GetCutDirectionAngleOffsetForSlider")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "GetCutDirectionAngleOffsetForSlider", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: f32 = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
     pub fn MarkAsSliderHead(
         &mut self,
     ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
@@ -1604,6 +1627,8 @@ pub enum NoteData_ScoringType {
     ArcHeadArcTail = 6i32,
     ArcTail = 3i32,
     ChainHead = 4i32,
+    ChainHeadArcHead = 9i32,
+    ChainHeadArcHeadArcTail = 10i32,
     ChainHeadArcTail = 7i32,
     ChainLink = 5i32,
     ChainLinkArcHead = 8i32,

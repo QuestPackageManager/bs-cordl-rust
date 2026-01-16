@@ -117,7 +117,6 @@ for crate::System::Memory_1<T> {
 }
 #[cfg(feature = "System+Memory_1")]
 impl<T: quest_hook::libil2cpp::Type> crate::System::Memory_1<T> {
-    pub const RemoveFlagsBitMask: i32 = 2147483647i32;
     pub fn CombineHashCodes_i32_1(
         h1: i32,
         h2: i32,

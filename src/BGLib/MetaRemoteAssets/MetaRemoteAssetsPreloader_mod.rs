@@ -3,6 +3,9 @@
 #[derive(Debug)]
 pub struct MetaRemoteAssetsPreloader {
     __cordl_parent: crate::BGLib::AppFlow::Initialization::AsyncPreloader,
+    pub _networkConfig: quest_hook::libil2cpp::Gc<
+        crate::GlobalNamespace::NetworkConfigSO,
+    >,
 }
 #[cfg(feature = "cordl_class_BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 unsafe impl quest_hook::libil2cpp::Type
@@ -39,6 +42,31 @@ impl std::ops::DerefMut for crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPrel
 }
 #[cfg(feature = "BGLib+MetaRemoteAssets+MetaRemoteAssetsPreloader")]
 impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
+    pub fn ApplyAddressablesOverrides(
+        &mut self,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (),
+                        quest_hook::libil2cpp::Void,
+                        0usize,
+                    >("ApplyAddressablesOverrides")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "ApplyAddressablesOverrides", 0usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, ())?
+        };
+        Ok(__cordl_ret.into())
+    }
     pub fn New() -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Gc<Self>> {
         let __cordl_object: &mut Self = <Self as quest_hook::libil2cpp::Type>::class()
             .instantiate();
@@ -71,6 +99,36 @@ impl crate::BGLib::MetaRemoteAssets::MetaRemoteAssetsPreloader {
         let __cordl_ret: quest_hook::libil2cpp::Gc<
             crate::System::Threading::Tasks::Task,
         > = unsafe { cordl_method_info.invoke_unchecked(self, ())? };
+        Ok(__cordl_ret.into())
+    }
+    pub fn WebRequestOverride(
+        &mut self,
+        request: quest_hook::libil2cpp::Gc<
+            crate::UnityEngine::Networking::UnityWebRequest,
+        >,
+    ) -> quest_hook::libil2cpp::Result<quest_hook::libil2cpp::Void> {
+        static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
+        let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
+            .get_or_init(|| {
+                <Self as quest_hook::libil2cpp::Type>::class()
+                    .find_method::<
+                        (quest_hook::libil2cpp::Gc<
+                            crate::UnityEngine::Networking::UnityWebRequest,
+                        >),
+                        quest_hook::libil2cpp::Void,
+                        1usize,
+                    >("WebRequestOverride")
+                    .unwrap_or_else(|e| {
+                        panic!(
+                            "no matching methods found for non-void {}.{}({}) Cause: {e:?}",
+                            < Self as quest_hook::libil2cpp::Type > ::class(),
+                            "WebRequestOverride", 1usize
+                        )
+                    })
+            });
+        let __cordl_ret: quest_hook::libil2cpp::Void = unsafe {
+            cordl_method_info.invoke_unchecked(self, (request))?
+        };
         Ok(__cordl_ret.into())
     }
     pub fn _ctor(

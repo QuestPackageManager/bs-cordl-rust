@@ -2030,7 +2030,9 @@ impl crate::System::TimeZoneInfo {
     pub fn TZif_CreateTransitionTimeFromPosixRule(
         date: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
         _cordl_time: quest_hook::libil2cpp::Gc<quest_hook::libil2cpp::Il2CppString>,
-    ) -> quest_hook::libil2cpp::Result<crate::System::TimeZoneInfo_TransitionTime> {
+    ) -> quest_hook::libil2cpp::Result<
+        crate::System::Nullable_1<crate::System::TimeZoneInfo_TransitionTime>,
+    > {
         static METHOD: std::sync::OnceLock<&'static quest_hook::libil2cpp::MethodInfo> = std::sync::OnceLock::new();
         let cordl_method_info: &'static quest_hook::libil2cpp::MethodInfo = METHOD
             .get_or_init(|| {
@@ -2044,7 +2046,9 @@ impl crate::System::TimeZoneInfo {
                                 quest_hook::libil2cpp::Il2CppString,
                             >,
                         ),
-                        crate::System::TimeZoneInfo_TransitionTime,
+                        crate::System::Nullable_1<
+                            crate::System::TimeZoneInfo_TransitionTime,
+                        >,
                         2usize,
                     >("TZif_CreateTransitionTimeFromPosixRule")
                     .unwrap_or_else(|e| {
@@ -2055,9 +2059,9 @@ impl crate::System::TimeZoneInfo {
                         )
                     })
             });
-        let __cordl_ret: crate::System::TimeZoneInfo_TransitionTime = unsafe {
-            cordl_method_info.invoke_unchecked((), (date, _cordl_time))?
-        };
+        let __cordl_ret: crate::System::Nullable_1<
+            crate::System::TimeZoneInfo_TransitionTime,
+        > = unsafe { cordl_method_info.invoke_unchecked((), (date, _cordl_time))? };
         Ok(__cordl_ret.into())
     }
     pub fn TZif_GenerateAdjustmentRule(

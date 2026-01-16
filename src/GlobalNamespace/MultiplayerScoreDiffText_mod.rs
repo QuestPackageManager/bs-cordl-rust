@@ -15,7 +15,7 @@ pub struct MultiplayerScoreDiffText {
         crate::Tweening::TimeTweeningManager,
     >,
     pub _connectedPlayer: quest_hook::libil2cpp::Gc<
-        crate::GlobalNamespace::IConnectedPlayer,
+        crate::GlobalNamespace::IBeatSaberConnectedPlayer,
     >,
     pub _leadPlayerProvider: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::MultiplayerLeadPlayerProvider,

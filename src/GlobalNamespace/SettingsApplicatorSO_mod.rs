@@ -24,7 +24,7 @@ pub struct SettingsApplicatorSO {
     pub _hapticFeedbackManager: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::HapticFeedbackManager,
     >,
-    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManagerSO>,
+    pub _audioManager: quest_hook::libil2cpp::Gc<crate::GlobalNamespace::AudioManager>,
     pub _vrPlatformHelper: quest_hook::libil2cpp::Gc<
         crate::GlobalNamespace::IVRPlatformHelper,
     >,

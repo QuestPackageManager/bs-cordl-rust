@@ -125,6 +125,7 @@ for crate::UnityEngine::TextCore::Text::TextProcessingStack_1<T> {
 impl<
     T: quest_hook::libil2cpp::Type,
 > crate::UnityEngine::TextCore::Text::TextProcessingStack_1<T> {
+    pub const k_DefaultCapacity: i32 = 4i32;
     pub fn Add(
         &mut self,
         item: T,

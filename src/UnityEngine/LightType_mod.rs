@@ -4,10 +4,13 @@
 pub enum LightType {
     #[default]
     Area = 3i32,
+    Box = 6i32,
     Directional = 1i32,
     Disc = 4i32,
     Point = 2i32,
+    Pyramid = 5i32,
     Spot = 0i32,
+    Tube = 7i32,
 }
 #[cfg(feature = "cordl_class_UnityEngine+LightType")]
 unsafe impl quest_hook::libil2cpp::Type for crate::UnityEngine::LightType {
